@@ -1,0 +1,828 @@
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccihMUub.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"ADCserial.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.section	.text.isr_timer,"ax",%progbits
+  20              		.align	2
+  21              		.global	isr_timer
+  22              		.thumb
+  23              		.thumb_func
+  24              		.type	isr_timer, %function
+  25              	isr_timer:
+  26              	.LFB63:
+  27              		.file 1 "ADCserial.c"
+   1:ADCserial.c   **** /* ========================================
+   2:ADCserial.c   ****  *
+   3:ADCserial.c   ****  * Copyright YOUR COMPANY, THE YEAR
+   4:ADCserial.c   ****  * All Rights Reserved
+   5:ADCserial.c   ****  * UNPUBLISHED, LICENSED SOFTWARE.
+   6:ADCserial.c   ****  *
+   7:ADCserial.c   ****  * CONFIDENTIAL AND PROPRIETARY INFORMATION
+   8:ADCserial.c   ****  * WHICH IS THE PROPERTY OF your company.
+   9:ADCserial.c   ****  *
+  10:ADCserial.c   ****  * ========================================
+  11:ADCserial.c   **** */
+  12:ADCserial.c   **** 
+  13:ADCserial.c   **** /* [] END OF FILE */
+  14:ADCserial.c   **** #include "ADCserial.h"
+  15:ADCserial.c   **** 
+  16:ADCserial.c   **** int test = 0;
+  17:ADCserial.c   **** 
+  18:ADCserial.c   **** CY_ISR(isr_timer)
+  19:ADCserial.c   **** {
+  28              		.loc 1 19 0
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32              		@ link register save eliminated.
+  33 0000 7047     		bx	lr
+  34              		.cfi_endproc
+  35              	.LFE63:
+  36              		.size	isr_timer, .-isr_timer
+  37 0002 00BF     		.section	.text.set_pin,"ax",%progbits
+  38              		.align	2
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccihMUub.s 			page 2
+
+
+  39              		.global	set_pin
+  40              		.thumb
+  41              		.thumb_func
+  42              		.type	set_pin, %function
+  43              	set_pin:
+  44              	.LFB64:
+  20:ADCserial.c   ****     switch(test)
+  21:ADCserial.c   ****     {
+  22:ADCserial.c   ****         case 0:
+  23:ADCserial.c   ****         {
+  24:ADCserial.c   ****             
+  25:ADCserial.c   ****         }
+  26:ADCserial.c   ****         break;
+  27:ADCserial.c   ****         
+  28:ADCserial.c   ****         case 1:
+  29:ADCserial.c   ****         {
+  30:ADCserial.c   ****             
+  31:ADCserial.c   ****         }
+  32:ADCserial.c   ****         break;
+  33:ADCserial.c   ****     }
+  34:ADCserial.c   ****     
+  35:ADCserial.c   ****     
+  36:ADCserial.c   ****     
+  37:ADCserial.c   **** }
+  38:ADCserial.c   **** 
+  39:ADCserial.c   **** void set_pin(char value)
+  40:ADCserial.c   **** {
+  45              		.loc 1 40 0
+  46              		.cfi_startproc
+  47              		@ args = 0, pretend = 0, frame = 0
+  48              		@ frame_needed = 0, uses_anonymous_args = 0
+  49              		@ link register save eliminated.
+  50              	.LVL0:
+  51 0000 7047     		bx	lr
+  52              		.cfi_endproc
+  53              	.LFE64:
+  54              		.size	set_pin, .-set_pin
+  55 0002 00BF     		.section	.text.ADC_init,"ax",%progbits
+  56              		.align	2
+  57              		.global	ADC_init
+  58              		.thumb
+  59              		.thumb_func
+  60              		.type	ADC_init, %function
+  61              	ADC_init:
+  62              	.LFB65:
+  41:ADCserial.c   ****     
+  42:ADCserial.c   **** }
+  43:ADCserial.c   **** 
+  44:ADCserial.c   **** void ADC_init(int gain)
+  45:ADCserial.c   **** {
+  63              		.loc 1 45 0
+  64              		.cfi_startproc
+  65              		@ args = 0, pretend = 0, frame = 0
+  66              		@ frame_needed = 0, uses_anonymous_args = 0
+  67              	.LVL1:
+  68              		.loc 1 45 0
+  69 0000 08B5     		push	{r3, lr}
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccihMUub.s 			page 3
+
+
+  70              		.cfi_def_cfa_offset 8
+  71              		.cfi_offset 3, -8
+  72              		.cfi_offset 14, -4
+  46:ADCserial.c   ****     test = 0;
+  73              		.loc 1 46 0
+  74 0002 0022     		movs	r2, #0
+  75 0004 034B     		ldr	r3, .L5
+  76 0006 1A60     		str	r2, [r3]
+  47:ADCserial.c   ****     Timer_1_ClearFIFO();
+  77              		.loc 1 47 0
+  78 0008 FFF7FEFF 		bl	Timer_1_ClearFIFO
+  79              	.LVL2:
+  48:ADCserial.c   ****     Timer_1_Start();
+  80              		.loc 1 48 0
+  81 000c FFF7FEFF 		bl	Timer_1_Start
+  82              	.LVL3:
+  83 0010 08BD     		pop	{r3, pc}
+  84              	.L6:
+  85 0012 00BF     		.align	2
+  86              	.L5:
+  87 0014 00000000 		.word	.LANCHOR0
+  88              		.cfi_endproc
+  89              	.LFE65:
+  90              		.size	ADC_init, .-ADC_init
+  91              		.section	.text.ADC_read,"ax",%progbits
+  92              		.align	2
+  93              		.global	ADC_read
+  94              		.thumb
+  95              		.thumb_func
+  96              		.type	ADC_read, %function
+  97              	ADC_read:
+  98              	.LFB66:
+  49:ADCserial.c   ****     
+  50:ADCserial.c   ****     
+  51:ADCserial.c   **** }
+  52:ADCserial.c   **** 
+  53:ADCserial.c   **** int ADC_read()
+  54:ADCserial.c   **** {
+  99              		.loc 1 54 0
+ 100              		.cfi_startproc
+ 101              		@ args = 0, pretend = 0, frame = 0
+ 102              		@ frame_needed = 0, uses_anonymous_args = 0
+ 103 0000 08B5     		push	{r3, lr}
+ 104              		.cfi_def_cfa_offset 8
+ 105              		.cfi_offset 3, -8
+ 106              		.cfi_offset 14, -4
+  55:ADCserial.c   ****     test = 1;
+ 107              		.loc 1 55 0
+ 108 0002 0122     		movs	r2, #1
+ 109 0004 024B     		ldr	r3, .L9
+ 110 0006 1A60     		str	r2, [r3]
+  56:ADCserial.c   ****     Timer_1_Start();
+ 111              		.loc 1 56 0
+ 112 0008 FFF7FEFF 		bl	Timer_1_Start
+ 113              	.LVL4:
+  57:ADCserial.c   ****     
+  58:ADCserial.c   **** }
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccihMUub.s 			page 4
+
+
+ 114              		.loc 1 58 0
+ 115 000c 08BD     		pop	{r3, pc}
+ 116              	.L10:
+ 117 000e 00BF     		.align	2
+ 118              	.L9:
+ 119 0010 00000000 		.word	.LANCHOR0
+ 120              		.cfi_endproc
+ 121              	.LFE66:
+ 122              		.size	ADC_read, .-ADC_read
+ 123              		.global	test
+ 124              		.bss
+ 125              		.align	2
+ 126              		.set	.LANCHOR0,. + 0
+ 127              		.type	test, %object
+ 128              		.size	test, 4
+ 129              	test:
+ 130 0000 00000000 		.space	4
+ 131              		.text
+ 132              	.Letext0:
+ 133              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
+ 134              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
+ 135              		.file 4 "Generated_Source\\PSoC5/core_cm3.h"
+ 136              		.file 5 "Generated_Source\\PSoC5/Timer_1.h"
+ 137              		.section	.debug_info,"",%progbits
+ 138              	.Ldebug_info0:
+ 139 0000 67010000 		.4byte	0x167
+ 140 0004 0400     		.2byte	0x4
+ 141 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 142 000a 04       		.byte	0x4
+ 143 000b 01       		.uleb128 0x1
+ 144 000c 37000000 		.4byte	.LASF25
+ 145 0010 0C       		.byte	0xc
+ 146 0011 63010000 		.4byte	.LASF26
+ 147 0015 1D010000 		.4byte	.LASF27
+ 148 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 149 001d 00000000 		.4byte	0
+ 150 0021 00000000 		.4byte	.Ldebug_line0
+ 151 0025 02       		.uleb128 0x2
+ 152 0026 01       		.byte	0x1
+ 153 0027 06       		.byte	0x6
+ 154 0028 9F010000 		.4byte	.LASF0
+ 155 002c 02       		.uleb128 0x2
+ 156 002d 01       		.byte	0x1
+ 157 002e 08       		.byte	0x8
+ 158 002f 29000000 		.4byte	.LASF1
+ 159 0033 02       		.uleb128 0x2
+ 160 0034 02       		.byte	0x2
+ 161 0035 05       		.byte	0x5
+ 162 0036 CC010000 		.4byte	.LASF2
+ 163 003a 02       		.uleb128 0x2
+ 164 003b 02       		.byte	0x2
+ 165 003c 07       		.byte	0x7
+ 166 003d FC000000 		.4byte	.LASF3
+ 167 0041 03       		.uleb128 0x3
+ 168 0042 B7010000 		.4byte	.LASF9
+ 169 0046 02       		.byte	0x2
+ 170 0047 3F       		.byte	0x3f
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccihMUub.s 			page 5
+
+
+ 171 0048 4C000000 		.4byte	0x4c
+ 172 004c 02       		.uleb128 0x2
+ 173 004d 04       		.byte	0x4
+ 174 004e 05       		.byte	0x5
+ 175 004f 6F010000 		.4byte	.LASF4
+ 176 0053 02       		.uleb128 0x2
+ 177 0054 04       		.byte	0x4
+ 178 0055 07       		.byte	0x7
+ 179 0056 CA000000 		.4byte	.LASF5
+ 180 005a 02       		.uleb128 0x2
+ 181 005b 08       		.byte	0x8
+ 182 005c 05       		.byte	0x5
+ 183 005d 00000000 		.4byte	.LASF6
+ 184 0061 02       		.uleb128 0x2
+ 185 0062 08       		.byte	0x8
+ 186 0063 07       		.byte	0x7
+ 187 0064 E5000000 		.4byte	.LASF7
+ 188 0068 04       		.uleb128 0x4
+ 189 0069 04       		.byte	0x4
+ 190 006a 05       		.byte	0x5
+ 191 006b 696E7400 		.ascii	"int\000"
+ 192 006f 02       		.uleb128 0x2
+ 193 0070 04       		.byte	0x4
+ 194 0071 07       		.byte	0x7
+ 195 0072 14000000 		.4byte	.LASF8
+ 196 0076 03       		.uleb128 0x3
+ 197 0077 D6010000 		.4byte	.LASF10
+ 198 007b 03       		.byte	0x3
+ 199 007c 2C       		.byte	0x2c
+ 200 007d 41000000 		.4byte	0x41
+ 201 0081 02       		.uleb128 0x2
+ 202 0082 04       		.byte	0x4
+ 203 0083 04       		.byte	0x4
+ 204 0084 C6010000 		.4byte	.LASF11
+ 205 0088 02       		.uleb128 0x2
+ 206 0089 08       		.byte	0x8
+ 207 008a 04       		.byte	0x4
+ 208 008b 82010000 		.4byte	.LASF12
+ 209 008f 02       		.uleb128 0x2
+ 210 0090 01       		.byte	0x1
+ 211 0091 08       		.byte	0x8
+ 212 0092 5E010000 		.4byte	.LASF13
+ 213 0096 02       		.uleb128 0x2
+ 214 0097 08       		.byte	0x8
+ 215 0098 04       		.byte	0x4
+ 216 0099 AB010000 		.4byte	.LASF14
+ 217 009d 02       		.uleb128 0x2
+ 218 009e 04       		.byte	0x4
+ 219 009f 07       		.byte	0x7
+ 220 00a0 F0010000 		.4byte	.LASF15
+ 221 00a4 05       		.uleb128 0x5
+ 222 00a5 78010000 		.4byte	.LASF28
+ 223 00a9 01       		.byte	0x1
+ 224 00aa 12       		.byte	0x12
+ 225 00ab 00000000 		.4byte	.LFB63
+ 226 00af 02000000 		.4byte	.LFE63-.LFB63
+ 227 00b3 01       		.uleb128 0x1
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccihMUub.s 			page 6
+
+
+ 228 00b4 9C       		.byte	0x9c
+ 229 00b5 06       		.uleb128 0x6
+ 230 00b6 21000000 		.4byte	.LASF16
+ 231 00ba 01       		.byte	0x1
+ 232 00bb 27       		.byte	0x27
+ 233 00bc 00000000 		.4byte	.LFB64
+ 234 00c0 02000000 		.4byte	.LFE64-.LFB64
+ 235 00c4 01       		.uleb128 0x1
+ 236 00c5 9C       		.byte	0x9c
+ 237 00c6 D8000000 		.4byte	0xd8
+ 238 00ca 07       		.uleb128 0x7
+ 239 00cb 0E000000 		.4byte	.LASF18
+ 240 00cf 01       		.byte	0x1
+ 241 00d0 27       		.byte	0x27
+ 242 00d1 8F000000 		.4byte	0x8f
+ 243 00d5 01       		.uleb128 0x1
+ 244 00d6 50       		.byte	0x50
+ 245 00d7 00       		.byte	0
+ 246 00d8 06       		.uleb128 0x6
+ 247 00d9 DC000000 		.4byte	.LASF17
+ 248 00dd 01       		.byte	0x1
+ 249 00de 2C       		.byte	0x2c
+ 250 00df 00000000 		.4byte	.LFB65
+ 251 00e3 18000000 		.4byte	.LFE65-.LFB65
+ 252 00e7 01       		.uleb128 0x1
+ 253 00e8 9C       		.byte	0x9c
+ 254 00e9 0F010000 		.4byte	0x10f
+ 255 00ed 08       		.uleb128 0x8
+ 256 00ee C5000000 		.4byte	.LASF19
+ 257 00f2 01       		.byte	0x1
+ 258 00f3 2C       		.byte	0x2c
+ 259 00f4 68000000 		.4byte	0x68
+ 260 00f8 00000000 		.4byte	.LLST0
+ 261 00fc 09       		.uleb128 0x9
+ 262 00fd 0C000000 		.4byte	.LVL2
+ 263 0101 54010000 		.4byte	0x154
+ 264 0105 09       		.uleb128 0x9
+ 265 0106 10000000 		.4byte	.LVL3
+ 266 010a 5F010000 		.4byte	0x15f
+ 267 010e 00       		.byte	0
+ 268 010f 0A       		.uleb128 0xa
+ 269 0110 89010000 		.4byte	.LASF20
+ 270 0114 01       		.byte	0x1
+ 271 0115 35       		.byte	0x35
+ 272 0116 68000000 		.4byte	0x68
+ 273 011a 00000000 		.4byte	.LFB66
+ 274 011e 14000000 		.4byte	.LFE66-.LFB66
+ 275 0122 01       		.uleb128 0x1
+ 276 0123 9C       		.byte	0x9c
+ 277 0124 32010000 		.4byte	0x132
+ 278 0128 09       		.uleb128 0x9
+ 279 0129 0C000000 		.4byte	.LVL4
+ 280 012d 5F010000 		.4byte	0x15f
+ 281 0131 00       		.byte	0
+ 282 0132 0B       		.uleb128 0xb
+ 283 0133 92010000 		.4byte	.LASF21
+ 284 0137 04       		.byte	0x4
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccihMUub.s 			page 7
+
+
+ 285 0138 1207     		.2byte	0x712
+ 286 013a 3E010000 		.4byte	0x13e
+ 287 013e 0C       		.uleb128 0xc
+ 288 013f 76000000 		.4byte	0x76
+ 289 0143 0D       		.uleb128 0xd
+ 290 0144 C1010000 		.4byte	.LASF22
+ 291 0148 01       		.byte	0x1
+ 292 0149 10       		.byte	0x10
+ 293 014a 68000000 		.4byte	0x68
+ 294 014e 05       		.uleb128 0x5
+ 295 014f 03       		.byte	0x3
+ 296 0150 00000000 		.4byte	test
+ 297 0154 0E       		.uleb128 0xe
+ 298 0155 DE010000 		.4byte	.LASF23
+ 299 0159 DE010000 		.4byte	.LASF23
+ 300 015d 05       		.byte	0x5
+ 301 015e 86       		.byte	0x86
+ 302 015f 0E       		.uleb128 0xe
+ 303 0160 0F010000 		.4byte	.LASF24
+ 304 0164 0F010000 		.4byte	.LASF24
+ 305 0168 05       		.byte	0x5
+ 306 0169 5A       		.byte	0x5a
+ 307 016a 00       		.byte	0
+ 308              		.section	.debug_abbrev,"",%progbits
+ 309              	.Ldebug_abbrev0:
+ 310 0000 01       		.uleb128 0x1
+ 311 0001 11       		.uleb128 0x11
+ 312 0002 01       		.byte	0x1
+ 313 0003 25       		.uleb128 0x25
+ 314 0004 0E       		.uleb128 0xe
+ 315 0005 13       		.uleb128 0x13
+ 316 0006 0B       		.uleb128 0xb
+ 317 0007 03       		.uleb128 0x3
+ 318 0008 0E       		.uleb128 0xe
+ 319 0009 1B       		.uleb128 0x1b
+ 320 000a 0E       		.uleb128 0xe
+ 321 000b 55       		.uleb128 0x55
+ 322 000c 17       		.uleb128 0x17
+ 323 000d 11       		.uleb128 0x11
+ 324 000e 01       		.uleb128 0x1
+ 325 000f 10       		.uleb128 0x10
+ 326 0010 17       		.uleb128 0x17
+ 327 0011 00       		.byte	0
+ 328 0012 00       		.byte	0
+ 329 0013 02       		.uleb128 0x2
+ 330 0014 24       		.uleb128 0x24
+ 331 0015 00       		.byte	0
+ 332 0016 0B       		.uleb128 0xb
+ 333 0017 0B       		.uleb128 0xb
+ 334 0018 3E       		.uleb128 0x3e
+ 335 0019 0B       		.uleb128 0xb
+ 336 001a 03       		.uleb128 0x3
+ 337 001b 0E       		.uleb128 0xe
+ 338 001c 00       		.byte	0
+ 339 001d 00       		.byte	0
+ 340 001e 03       		.uleb128 0x3
+ 341 001f 16       		.uleb128 0x16
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccihMUub.s 			page 8
+
+
+ 342 0020 00       		.byte	0
+ 343 0021 03       		.uleb128 0x3
+ 344 0022 0E       		.uleb128 0xe
+ 345 0023 3A       		.uleb128 0x3a
+ 346 0024 0B       		.uleb128 0xb
+ 347 0025 3B       		.uleb128 0x3b
+ 348 0026 0B       		.uleb128 0xb
+ 349 0027 49       		.uleb128 0x49
+ 350 0028 13       		.uleb128 0x13
+ 351 0029 00       		.byte	0
+ 352 002a 00       		.byte	0
+ 353 002b 04       		.uleb128 0x4
+ 354 002c 24       		.uleb128 0x24
+ 355 002d 00       		.byte	0
+ 356 002e 0B       		.uleb128 0xb
+ 357 002f 0B       		.uleb128 0xb
+ 358 0030 3E       		.uleb128 0x3e
+ 359 0031 0B       		.uleb128 0xb
+ 360 0032 03       		.uleb128 0x3
+ 361 0033 08       		.uleb128 0x8
+ 362 0034 00       		.byte	0
+ 363 0035 00       		.byte	0
+ 364 0036 05       		.uleb128 0x5
+ 365 0037 2E       		.uleb128 0x2e
+ 366 0038 00       		.byte	0
+ 367 0039 3F       		.uleb128 0x3f
+ 368 003a 19       		.uleb128 0x19
+ 369 003b 03       		.uleb128 0x3
+ 370 003c 0E       		.uleb128 0xe
+ 371 003d 3A       		.uleb128 0x3a
+ 372 003e 0B       		.uleb128 0xb
+ 373 003f 3B       		.uleb128 0x3b
+ 374 0040 0B       		.uleb128 0xb
+ 375 0041 27       		.uleb128 0x27
+ 376 0042 19       		.uleb128 0x19
+ 377 0043 11       		.uleb128 0x11
+ 378 0044 01       		.uleb128 0x1
+ 379 0045 12       		.uleb128 0x12
+ 380 0046 06       		.uleb128 0x6
+ 381 0047 40       		.uleb128 0x40
+ 382 0048 18       		.uleb128 0x18
+ 383 0049 9742     		.uleb128 0x2117
+ 384 004b 19       		.uleb128 0x19
+ 385 004c 00       		.byte	0
+ 386 004d 00       		.byte	0
+ 387 004e 06       		.uleb128 0x6
+ 388 004f 2E       		.uleb128 0x2e
+ 389 0050 01       		.byte	0x1
+ 390 0051 3F       		.uleb128 0x3f
+ 391 0052 19       		.uleb128 0x19
+ 392 0053 03       		.uleb128 0x3
+ 393 0054 0E       		.uleb128 0xe
+ 394 0055 3A       		.uleb128 0x3a
+ 395 0056 0B       		.uleb128 0xb
+ 396 0057 3B       		.uleb128 0x3b
+ 397 0058 0B       		.uleb128 0xb
+ 398 0059 27       		.uleb128 0x27
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccihMUub.s 			page 9
+
+
+ 399 005a 19       		.uleb128 0x19
+ 400 005b 11       		.uleb128 0x11
+ 401 005c 01       		.uleb128 0x1
+ 402 005d 12       		.uleb128 0x12
+ 403 005e 06       		.uleb128 0x6
+ 404 005f 40       		.uleb128 0x40
+ 405 0060 18       		.uleb128 0x18
+ 406 0061 9742     		.uleb128 0x2117
+ 407 0063 19       		.uleb128 0x19
+ 408 0064 01       		.uleb128 0x1
+ 409 0065 13       		.uleb128 0x13
+ 410 0066 00       		.byte	0
+ 411 0067 00       		.byte	0
+ 412 0068 07       		.uleb128 0x7
+ 413 0069 05       		.uleb128 0x5
+ 414 006a 00       		.byte	0
+ 415 006b 03       		.uleb128 0x3
+ 416 006c 0E       		.uleb128 0xe
+ 417 006d 3A       		.uleb128 0x3a
+ 418 006e 0B       		.uleb128 0xb
+ 419 006f 3B       		.uleb128 0x3b
+ 420 0070 0B       		.uleb128 0xb
+ 421 0071 49       		.uleb128 0x49
+ 422 0072 13       		.uleb128 0x13
+ 423 0073 02       		.uleb128 0x2
+ 424 0074 18       		.uleb128 0x18
+ 425 0075 00       		.byte	0
+ 426 0076 00       		.byte	0
+ 427 0077 08       		.uleb128 0x8
+ 428 0078 05       		.uleb128 0x5
+ 429 0079 00       		.byte	0
+ 430 007a 03       		.uleb128 0x3
+ 431 007b 0E       		.uleb128 0xe
+ 432 007c 3A       		.uleb128 0x3a
+ 433 007d 0B       		.uleb128 0xb
+ 434 007e 3B       		.uleb128 0x3b
+ 435 007f 0B       		.uleb128 0xb
+ 436 0080 49       		.uleb128 0x49
+ 437 0081 13       		.uleb128 0x13
+ 438 0082 02       		.uleb128 0x2
+ 439 0083 17       		.uleb128 0x17
+ 440 0084 00       		.byte	0
+ 441 0085 00       		.byte	0
+ 442 0086 09       		.uleb128 0x9
+ 443 0087 898201   		.uleb128 0x4109
+ 444 008a 00       		.byte	0
+ 445 008b 11       		.uleb128 0x11
+ 446 008c 01       		.uleb128 0x1
+ 447 008d 31       		.uleb128 0x31
+ 448 008e 13       		.uleb128 0x13
+ 449 008f 00       		.byte	0
+ 450 0090 00       		.byte	0
+ 451 0091 0A       		.uleb128 0xa
+ 452 0092 2E       		.uleb128 0x2e
+ 453 0093 01       		.byte	0x1
+ 454 0094 3F       		.uleb128 0x3f
+ 455 0095 19       		.uleb128 0x19
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccihMUub.s 			page 10
+
+
+ 456 0096 03       		.uleb128 0x3
+ 457 0097 0E       		.uleb128 0xe
+ 458 0098 3A       		.uleb128 0x3a
+ 459 0099 0B       		.uleb128 0xb
+ 460 009a 3B       		.uleb128 0x3b
+ 461 009b 0B       		.uleb128 0xb
+ 462 009c 49       		.uleb128 0x49
+ 463 009d 13       		.uleb128 0x13
+ 464 009e 11       		.uleb128 0x11
+ 465 009f 01       		.uleb128 0x1
+ 466 00a0 12       		.uleb128 0x12
+ 467 00a1 06       		.uleb128 0x6
+ 468 00a2 40       		.uleb128 0x40
+ 469 00a3 18       		.uleb128 0x18
+ 470 00a4 9742     		.uleb128 0x2117
+ 471 00a6 19       		.uleb128 0x19
+ 472 00a7 01       		.uleb128 0x1
+ 473 00a8 13       		.uleb128 0x13
+ 474 00a9 00       		.byte	0
+ 475 00aa 00       		.byte	0
+ 476 00ab 0B       		.uleb128 0xb
+ 477 00ac 34       		.uleb128 0x34
+ 478 00ad 00       		.byte	0
+ 479 00ae 03       		.uleb128 0x3
+ 480 00af 0E       		.uleb128 0xe
+ 481 00b0 3A       		.uleb128 0x3a
+ 482 00b1 0B       		.uleb128 0xb
+ 483 00b2 3B       		.uleb128 0x3b
+ 484 00b3 05       		.uleb128 0x5
+ 485 00b4 49       		.uleb128 0x49
+ 486 00b5 13       		.uleb128 0x13
+ 487 00b6 3F       		.uleb128 0x3f
+ 488 00b7 19       		.uleb128 0x19
+ 489 00b8 3C       		.uleb128 0x3c
+ 490 00b9 19       		.uleb128 0x19
+ 491 00ba 00       		.byte	0
+ 492 00bb 00       		.byte	0
+ 493 00bc 0C       		.uleb128 0xc
+ 494 00bd 35       		.uleb128 0x35
+ 495 00be 00       		.byte	0
+ 496 00bf 49       		.uleb128 0x49
+ 497 00c0 13       		.uleb128 0x13
+ 498 00c1 00       		.byte	0
+ 499 00c2 00       		.byte	0
+ 500 00c3 0D       		.uleb128 0xd
+ 501 00c4 34       		.uleb128 0x34
+ 502 00c5 00       		.byte	0
+ 503 00c6 03       		.uleb128 0x3
+ 504 00c7 0E       		.uleb128 0xe
+ 505 00c8 3A       		.uleb128 0x3a
+ 506 00c9 0B       		.uleb128 0xb
+ 507 00ca 3B       		.uleb128 0x3b
+ 508 00cb 0B       		.uleb128 0xb
+ 509 00cc 49       		.uleb128 0x49
+ 510 00cd 13       		.uleb128 0x13
+ 511 00ce 3F       		.uleb128 0x3f
+ 512 00cf 19       		.uleb128 0x19
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccihMUub.s 			page 11
+
+
+ 513 00d0 02       		.uleb128 0x2
+ 514 00d1 18       		.uleb128 0x18
+ 515 00d2 00       		.byte	0
+ 516 00d3 00       		.byte	0
+ 517 00d4 0E       		.uleb128 0xe
+ 518 00d5 2E       		.uleb128 0x2e
+ 519 00d6 00       		.byte	0
+ 520 00d7 3F       		.uleb128 0x3f
+ 521 00d8 19       		.uleb128 0x19
+ 522 00d9 3C       		.uleb128 0x3c
+ 523 00da 19       		.uleb128 0x19
+ 524 00db 6E       		.uleb128 0x6e
+ 525 00dc 0E       		.uleb128 0xe
+ 526 00dd 03       		.uleb128 0x3
+ 527 00de 0E       		.uleb128 0xe
+ 528 00df 3A       		.uleb128 0x3a
+ 529 00e0 0B       		.uleb128 0xb
+ 530 00e1 3B       		.uleb128 0x3b
+ 531 00e2 0B       		.uleb128 0xb
+ 532 00e3 00       		.byte	0
+ 533 00e4 00       		.byte	0
+ 534 00e5 00       		.byte	0
+ 535              		.section	.debug_loc,"",%progbits
+ 536              	.Ldebug_loc0:
+ 537              	.LLST0:
+ 538 0000 00000000 		.4byte	.LVL1
+ 539 0004 0B000000 		.4byte	.LVL2-1
+ 540 0008 0100     		.2byte	0x1
+ 541 000a 50       		.byte	0x50
+ 542 000b 0B000000 		.4byte	.LVL2-1
+ 543 000f 18000000 		.4byte	.LFE65
+ 544 0013 0400     		.2byte	0x4
+ 545 0015 F3       		.byte	0xf3
+ 546 0016 01       		.uleb128 0x1
+ 547 0017 50       		.byte	0x50
+ 548 0018 9F       		.byte	0x9f
+ 549 0019 00000000 		.4byte	0
+ 550 001d 00000000 		.4byte	0
+ 551              		.section	.debug_aranges,"",%progbits
+ 552 0000 34000000 		.4byte	0x34
+ 553 0004 0200     		.2byte	0x2
+ 554 0006 00000000 		.4byte	.Ldebug_info0
+ 555 000a 04       		.byte	0x4
+ 556 000b 00       		.byte	0
+ 557 000c 0000     		.2byte	0
+ 558 000e 0000     		.2byte	0
+ 559 0010 00000000 		.4byte	.LFB63
+ 560 0014 02000000 		.4byte	.LFE63-.LFB63
+ 561 0018 00000000 		.4byte	.LFB64
+ 562 001c 02000000 		.4byte	.LFE64-.LFB64
+ 563 0020 00000000 		.4byte	.LFB65
+ 564 0024 18000000 		.4byte	.LFE65-.LFB65
+ 565 0028 00000000 		.4byte	.LFB66
+ 566 002c 14000000 		.4byte	.LFE66-.LFB66
+ 567 0030 00000000 		.4byte	0
+ 568 0034 00000000 		.4byte	0
+ 569              		.section	.debug_ranges,"",%progbits
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccihMUub.s 			page 12
+
+
+ 570              	.Ldebug_ranges0:
+ 571 0000 00000000 		.4byte	.LFB63
+ 572 0004 02000000 		.4byte	.LFE63
+ 573 0008 00000000 		.4byte	.LFB64
+ 574 000c 02000000 		.4byte	.LFE64
+ 575 0010 00000000 		.4byte	.LFB65
+ 576 0014 18000000 		.4byte	.LFE65
+ 577 0018 00000000 		.4byte	.LFB66
+ 578 001c 14000000 		.4byte	.LFE66
+ 579 0020 00000000 		.4byte	0
+ 580 0024 00000000 		.4byte	0
+ 581              		.section	.debug_line,"",%progbits
+ 582              	.Ldebug_line0:
+ 583 0000 9A010000 		.section	.debug_str,"MS",%progbits,1
+ 583      02005101 
+ 583      00000201 
+ 583      FB0E0D00 
+ 583      01010101 
+ 584              	.LASF6:
+ 585 0000 6C6F6E67 		.ascii	"long long int\000"
+ 585      206C6F6E 
+ 585      6720696E 
+ 585      7400
+ 586              	.LASF18:
+ 587 000e 76616C75 		.ascii	"value\000"
+ 587      6500
+ 588              	.LASF8:
+ 589 0014 756E7369 		.ascii	"unsigned int\000"
+ 589      676E6564 
+ 589      20696E74 
+ 589      00
+ 590              	.LASF16:
+ 591 0021 7365745F 		.ascii	"set_pin\000"
+ 591      70696E00 
+ 592              	.LASF1:
+ 593 0029 756E7369 		.ascii	"unsigned char\000"
+ 593      676E6564 
+ 593      20636861 
+ 593      7200
+ 594              	.LASF25:
+ 595 0037 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 595      43313120 
+ 595      352E342E 
+ 595      31203230 
+ 595      31363036 
+ 596 006a 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 596      20726576 
+ 596      6973696F 
+ 596      6E203233 
+ 596      37373135 
+ 597 009d 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 597      66756E63 
+ 597      74696F6E 
+ 597      2D736563 
+ 597      74696F6E 
+ 598              	.LASF19:
+ 599 00c5 6761696E 		.ascii	"gain\000"
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccihMUub.s 			page 13
+
+
+ 599      00
+ 600              	.LASF5:
+ 601 00ca 6C6F6E67 		.ascii	"long unsigned int\000"
+ 601      20756E73 
+ 601      69676E65 
+ 601      6420696E 
+ 601      7400
+ 602              	.LASF17:
+ 603 00dc 4144435F 		.ascii	"ADC_init\000"
+ 603      696E6974 
+ 603      00
+ 604              	.LASF7:
+ 605 00e5 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 605      206C6F6E 
+ 605      6720756E 
+ 605      7369676E 
+ 605      65642069 
+ 606              	.LASF3:
+ 607 00fc 73686F72 		.ascii	"short unsigned int\000"
+ 607      7420756E 
+ 607      7369676E 
+ 607      65642069 
+ 607      6E7400
+ 608              	.LASF24:
+ 609 010f 54696D65 		.ascii	"Timer_1_Start\000"
+ 609      725F315F 
+ 609      53746172 
+ 609      7400
+ 610              	.LASF27:
+ 611 011d 433A5C55 		.ascii	"C:\\Users\\cring\\Documents\\GitHub\\PRJ4\\Tryksens"
+ 611      73657273 
+ 611      5C637269 
+ 611      6E675C44 
+ 611      6F63756D 
+ 612 014a 6F725C54 		.ascii	"or\\Tryksensor.cydsn\000"
+ 612      72796B73 
+ 612      656E736F 
+ 612      722E6379 
+ 612      64736E00 
+ 613              	.LASF13:
+ 614 015e 63686172 		.ascii	"char\000"
+ 614      00
+ 615              	.LASF26:
+ 616 0163 41444373 		.ascii	"ADCserial.c\000"
+ 616      65726961 
+ 616      6C2E6300 
+ 617              	.LASF4:
+ 618 016f 6C6F6E67 		.ascii	"long int\000"
+ 618      20696E74 
+ 618      00
+ 619              	.LASF28:
+ 620 0178 6973725F 		.ascii	"isr_timer\000"
+ 620      74696D65 
+ 620      7200
+ 621              	.LASF12:
+ 622 0182 646F7562 		.ascii	"double\000"
+ 622      6C6500
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccihMUub.s 			page 14
+
+
+ 623              	.LASF20:
+ 624 0189 4144435F 		.ascii	"ADC_read\000"
+ 624      72656164 
+ 624      00
+ 625              	.LASF21:
+ 626 0192 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 626      52784275 
+ 626      66666572 
+ 626      00
+ 627              	.LASF0:
+ 628 019f 7369676E 		.ascii	"signed char\000"
+ 628      65642063 
+ 628      68617200 
+ 629              	.LASF14:
+ 630 01ab 6C6F6E67 		.ascii	"long double\000"
+ 630      20646F75 
+ 630      626C6500 
+ 631              	.LASF9:
+ 632 01b7 5F5F696E 		.ascii	"__int32_t\000"
+ 632      7433325F 
+ 632      7400
+ 633              	.LASF22:
+ 634 01c1 74657374 		.ascii	"test\000"
+ 634      00
+ 635              	.LASF11:
+ 636 01c6 666C6F61 		.ascii	"float\000"
+ 636      7400
+ 637              	.LASF2:
+ 638 01cc 73686F72 		.ascii	"short int\000"
+ 638      7420696E 
+ 638      7400
+ 639              	.LASF10:
+ 640 01d6 696E7433 		.ascii	"int32_t\000"
+ 640      325F7400 
+ 641              	.LASF23:
+ 642 01de 54696D65 		.ascii	"Timer_1_ClearFIFO\000"
+ 642      725F315F 
+ 642      436C6561 
+ 642      72464946 
+ 642      4F00
+ 643              	.LASF15:
+ 644 01f0 73697A65 		.ascii	"sizetype\000"
+ 644      74797065 
+ 644      00
+ 645              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

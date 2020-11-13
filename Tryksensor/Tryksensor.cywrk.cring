@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CyXmlSerializer>
+<!--This file is machine generated and read. It is not intended to be edited by hand.-->
+<!--Due to this, there is no schema for this file.-->
+<CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21 type_name="CyDesigner.Common.ProjMgmt.Model.CyPrjMgmtWrkspcCustomData" version="4">
+<CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997 type_name="CyDesigner.Common.Base.CyCustomData" version="2">
+<userData>
+<dataGuid v="1b906a0f-a7b6-4e4d-a428-82f98b53cb35">
+<CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35 type_name="CyDesigner.Common.ProjMgmt.GUI.CyExplorerWindow+CyExplorerWindowState" version="3" SelectedTab="Source">
+<TreeKeys>
+<v>Source</v>
+<v>Components</v>
+<v>Output</v>
+</TreeKeys>
+<TreeStates>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Tryksensor\Tryksensor\Source Files\ADCserial.c">
+<ExpandedNodeIds>
+<v>Tryksensor</v>
+<v>Tryksensor\Tryksensor</v>
+<v>Tryksensor\Tryksensor\TopDesign</v>
+<v>Tryksensor\Tryksensor\Tryksensor.cydwr</v>
+<v>Tryksensor\Tryksensor\Tryksensor.cydwr\Pins</v>
+<v>Tryksensor\Tryksensor\Tryksensor.cydwr\Analog</v>
+<v>Tryksensor\Tryksensor\Tryksensor.cydwr\Clocks</v>
+<v>Tryksensor\Tryksensor\Tryksensor.cydwr\Interrupts</v>
+<v>Tryksensor\Tryksensor\Tryksensor.cydwr\DMA</v>
+<v>Tryksensor\Tryksensor\Tryksensor.cydwr\System</v>
+<v>Tryksensor\Tryksensor\Tryksensor.cydwr\Directives</v>
+<v>Tryksensor\Tryksensor\Tryksensor.cydwr\Flash Security</v>
+<v>Tryksensor\Tryksensor\Tryksensor.cydwr\EEPROM</v>
+<v>Tryksensor\Tryksensor\Header Files</v>
+<v>Tryksensor\Tryksensor\Header Files\ADCserial.h</v>
+<v>Tryksensor\Tryksensor\Header Files\cyapicallbacks.h</v>
+<v>Tryksensor\Tryksensor\Header Files\VT100Terminal.h</v>
+<v>Tryksensor\Tryksensor\Source Files</v>
+<v>Tryksensor\Tryksensor\Source Files\ADCserial.c</v>
+<v>Tryksensor\Tryksensor\Source Files\main.c</v>
+<v>Tryksensor\Tryksensor\Source Files\VT100Terminal.c</v>
+<v>Tryksensor\Tryksensor\Generated_Source</v>
+<v>Tryksensor\Tryksensor\Generated_Source\PSoC5</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>Tryksensor</v>
+<v>Tryksensor\Tryksensor</v>
+<v>Tryksensor\Tryksensor\TopDesign</v>
+<v>Tryksensor\Tryksensor\Tryksensor.cydwr</v>
+<v>Tryksensor\Tryksensor\Tryksensor.cydwr\Pins</v>
+<v>Tryksensor\Tryksensor\Tryksensor.cydwr\Analog</v>
+<v>Tryksensor\Tryksensor\Tryksensor.cydwr\Clocks</v>
+<v>Tryksensor\Tryksensor\Tryksensor.cydwr\Interrupts</v>
+<v>Tryksensor\Tryksensor\Tryksensor.cydwr\DMA</v>
+<v>Tryksensor\Tryksensor\Tryksensor.cydwr\System</v>
+<v>Tryksensor\Tryksensor\Tryksensor.cydwr\Directives</v>
+<v>Tryksensor\Tryksensor\Tryksensor.cydwr\Flash Security</v>
+<v>Tryksensor\Tryksensor\Tryksensor.cydwr\EEPROM</v>
+<v>Tryksensor\Tryksensor\Header Files</v>
+<v>Tryksensor\Tryksensor\Header Files\ADCserial.h</v>
+<v>Tryksensor\Tryksensor\Header Files\cyapicallbacks.h</v>
+<v>Tryksensor\Tryksensor\Header Files\VT100Terminal.h</v>
+<v>Tryksensor\Tryksensor\Source Files</v>
+<v>Tryksensor\Tryksensor\Source Files\ADCserial.c</v>
+<v>Tryksensor\Tryksensor\Source Files\main.c</v>
+<v>Tryksensor\Tryksensor\Source Files\VT100Terminal.c</v>
+<v>Tryksensor\Tryksensor\Generated_Source</v>
+<v>Tryksensor\Tryksensor\Generated_Source\PSoC5</v>
+<v>Tryksensor\Tryksensor\Generated_Source\PSoC5\cy_boot</v>
+<v>Tryksensor\Tryksensor\Generated_Source\PSoC5\Em_EEPROM_Dynamic</v>
+<v>Tryksensor\Tryksensor\Generated_Source\PSoC5\isr_timer</v>
+<v>Tryksensor\Tryksensor\Generated_Source\PSoC5\isr_uart_rx</v>
+<v>Tryksensor\Tryksensor\Generated_Source\PSoC5\Pin_DIN</v>
+<v>Tryksensor\Tryksensor\Generated_Source\PSoC5\Pin_SCK</v>
+<v>Tryksensor\Tryksensor\Generated_Source\PSoC5\Timer_1</v>
+<v>Tryksensor\Tryksensor\Generated_Source\PSoC5\UART_1</v>
+<v>Tryksensor\Tryksensor\Generated_Source\PSoC5\UART_1_IntClock</v>
+<v>Tryksensor\Tryksensor\Generated_Source\PSoC5\cycodeshareexport.ld</v>
+<v>Tryksensor\Tryksensor\Generated_Source\PSoC5\cycodeshareimport.ld</v>
+<v>Tryksensor\Tryksensor\Generated_Source\PSoC5\cycodeshareimport.scat</v>
+<v>Tryksensor\Tryksensor\Generated_Source\PSoC5\cydevice.h</v>
+<v>Tryksensor\Tryksensor\Generated_Source\PSoC5\cydevice_trm.h</v>
+<v>Tryksensor\Tryksensor\Generated_Source\PSoC5\cydevicegnu.inc</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>Tryksensor</v>
+<v>Tryksensor\Tryksensor</v>
+<v>Tryksensor\Tryksensor\TopDesign</v>
+<v>Tryksensor\Tryksensor\TopDesign\TopDesign.cysch</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>Tryksensor</v>
+<v>Tryksensor\Tryksensor</v>
+<v>Tryksensor\Tryksensor\TopDesign</v>
+<v>Tryksensor\Tryksensor\TopDesign\TopDesign.cysch</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>Tryksensor</v>
+<v>Tryksensor\Tryksensor</v>
+<v>Tryksensor\Tryksensor\CortexM3</v>
+<v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541</v>
+<v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug</v>
+<v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
+<v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files\ADCserial.lst</v>
+<v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
+<v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
+<v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files\CyDmac.lst</v>
+<v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files\CySpc.lst</v>
+<v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_timer.lst</v>
+<v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_uart_rx.lst</v>
+<v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
+<v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files\Pin_DIN.lst</v>
+<v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files\Pin_SCK.lst</v>
+<v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files\Timer_1.lst</v>
+<v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files\Timer_1_PM.lst</v>
+<v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_1.lst</v>
+<v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_1_BOOT.lst</v>
+<v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_1_INT.lst</v>
+<v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_1_IntClock.lst</v>
+<v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_1_PM.lst</v>
+<v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files\VT100Terminal.lst</v>
+<v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Tryksensor.elf</v>
+<v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Tryksensor.hex</v>
+<v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Tryksensor.map</v>
+<v>Tryksensor\Tryksensor\Tryksensor.gpdsc</v>
+<v>Tryksensor\Tryksensor\Tryksensor.rpt</v>
+<v>Tryksensor\Tryksensor\Tryksensor_timing.html</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>Tryksensor</v>
+<v>Tryksensor\Tryksensor</v>
+<v>Tryksensor\Tryksensor\CortexM3</v>
+<v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541</v>
+<v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug</v>
+<v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
+<v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files\ADCserial.lst</v>
+<v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
+<v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
+<v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files\CyDmac.lst</v>
+<v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files\CySpc.lst</v>
+<v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_timer.lst</v>
+<v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_uart_rx.lst</v>
+<v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
+<v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files\Pin_DIN.lst</v>
+<v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files\Pin_SCK.lst</v>
+<v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files\Timer_1.lst</v>
+<v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files\Timer_1_PM.lst</v>
+<v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_1.lst</v>
+<v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_1_BOOT.lst</v>
+<v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_1_INT.lst</v>
+<v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_1_IntClock.lst</v>
+<v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_1_PM.lst</v>
+<v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files\VT100Terminal.lst</v>
+<v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Tryksensor.elf</v>
+<v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Tryksensor.hex</v>
+<v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Tryksensor.map</v>
+<v>Tryksensor\Tryksensor\Tryksensor.gpdsc</v>
+<v>Tryksensor\Tryksensor\Tryksensor.rpt</v>
+<v>Tryksensor\Tryksensor\Tryksensor_timing.html</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStates>
+<TreeKeysV2>
+<v>Datasheet</v>
+</TreeKeysV2>
+<TreeStatesV2>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>Tryksensor</v>
+<v>Tryksensor\Tryksensor</v>
+<v>Tryksensor\Tryksensor\PSoC 5LP Architecture TRM</v>
+<v>Tryksensor\Tryksensor\CY8C58LP Family Datasheet</v>
+<v>Tryksensor\Tryksensor\System Reference Guides</v>
+<v>Tryksensor\Tryksensor\System Reference Guides\cy_boot_v6_0</v>
+<v>Tryksensor\Tryksensor\cy_clock_v2_20.pdf</v>
+<v>Tryksensor\Tryksensor\cy_isr_v1_70</v>
+<v>Tryksensor\Tryksensor\cy_isr_v1_70\cy_isr_v1_70.pdf</v>
+<v>Tryksensor\Tryksensor\cy_pins_v2_20</v>
+<v>Tryksensor\Tryksensor\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>Tryksensor\Tryksensor\Timer_v2_80.pdf</v>
+<v>Tryksensor\Tryksensor\UART_v2_50.pdf</v>
+<v>Tryksensor\Tryksensor\ZeroTerminal.pdf</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>Tryksensor</v>
+<v>Tryksensor\Tryksensor</v>
+<v>Tryksensor\Tryksensor\PSoC 5LP Architecture TRM</v>
+<v>Tryksensor\Tryksensor\CY8C58LP Family Datasheet</v>
+<v>Tryksensor\Tryksensor\System Reference Guides</v>
+<v>Tryksensor\Tryksensor\System Reference Guides\cy_boot_v6_0</v>
+<v>Tryksensor\Tryksensor\cy_clock_v2_20.pdf</v>
+<v>Tryksensor\Tryksensor\cy_isr_v1_70</v>
+<v>Tryksensor\Tryksensor\cy_isr_v1_70\cy_isr_v1_70.pdf</v>
+<v>Tryksensor\Tryksensor\cy_pins_v2_20</v>
+<v>Tryksensor\Tryksensor\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>Tryksensor\Tryksensor\Timer_v2_80.pdf</v>
+<v>Tryksensor\Tryksensor\UART_v2_50.pdf</v>
+<v>Tryksensor\Tryksensor\ZeroTerminal.pdf</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStatesV2>
+</CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35>
+</dataGuid>
+</userData>
+</CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
+<Unloaded />
+<OpenDocs>
+<name v=".\Tryksensor.cydsn\TopDesign\TopDesign.cysch" />
+<name v=".\Tryksensor.cydsn\main.c" />
+<name v="..\..\..\..\OneDrive - Aarhus Universitet\Uni\3. Semester\GFV\Gruppe arb\Includefiles\VT100Terminal.h" />
+<name v=".\Tryksensor.cydsn\Tryksensor.cydwr" />
+<name v="..\..\..\..\OneDrive - Aarhus Universitet\Uni\3. Semester\GFV\Gruppe arb\Includefiles\VT100Terminal.c" />
+<name v=".\Tryksensor.cydsn\cyapicallbacks.h" />
+<name v=".\Tryksensor.cydsn\ADCserial.h" />
+<name v=".\Tryksensor.cydsn\ADCserial.c" />
+</OpenDocs>
+<OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
+
+  Actipro Docking/MDI for WinForms
+  Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
+  http://www.actiprosoftware.com
+
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Vertical"><TabbedMdiContainer Size="1219, 552" SelectedTabbedMdiWindow="3bf50b5f-072a-4fb5-8ea2-ef6e63681de7"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="a81e21bb-5e2e-400c-9cbf-968a63daa365" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\PRJ4\Tryksensor\Tryksensor.cydsn\TopDesign\TopDesign.cysch" Guid="a0d1eede-d473-4e01-9455-1d5de78c49a7" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\PRJ4\Tryksensor\Tryksensor.cydsn\main.c" Guid="d026d3f5-122d-4930-9229-5197bc561598" /><DocumentWindow Key="C:\Users\cring\OneDrive - Aarhus Universitet\Uni\3. Semester\GFV\Gruppe arb\Includefiles\VT100Terminal.h" Guid="d9aebca9-603b-43a1-af9f-faa76e6fb7db" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\PRJ4\Tryksensor\Tryksensor.cydsn\Tryksensor.cydwr" Guid="fa200aec-de21-43cf-85f6-b6b7fc6385bc" /><DocumentWindow Key="C:\Users\cring\OneDrive - Aarhus Universitet\Uni\3. Semester\GFV\Gruppe arb\Includefiles\VT100Terminal.c" Guid="0b02f1c7-b7b1-4732-a5c6-43357c0b52f8" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\PRJ4\Tryksensor\Tryksensor.cydsn\cyapicallbacks.h" Guid="46752309-2bd0-4453-b84a-ead3f05a1ccf" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\PRJ4\Tryksensor\Tryksensor.cydsn\ADCserial.h" Guid="39811539-65da-4ae0-a60b-f396d4275b59" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\PRJ4\Tryksensor\Tryksensor.cydsn\ADCserial.c" Guid="3bf50b5f-072a-4fb5-8ea2-ef6e63681de7" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+<config v="" />
+<AutoUpdate v="true" />
+</CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
+</CyXmlSerializer>
