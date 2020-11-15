@@ -1,0 +1,7 @@
+C:\Users\cring\Documents\GitHub\PRJ4\Tryksensor\Tryksensor.cydsn\Tryksensor.cyprj|659a5b07-4e0c-4221-a260-9da3c838cb95
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|242ae79f-a53b-499e-bb3e-775ae4cf0f28
+C:\Users\cring\Documents\PSoC Creator\4.4\Downloads ( 4.4).cylib\Downloads ( 4.4).cyprj|bdadb484-81d5-4d7e-bbab-aae1346f3e52
+C:\Users\cring\Documents\PSoC Creator\4.3\Downloads ( 4.3).cylib\Downloads ( 4.3).cyprj|61999f1e-fe8f-485c-b3d2-4124170ff237
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|ed1fa3ad-6992-4fdd-a33a-c957c37ac5eb
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|593ccd85-de5f-4253-941f-fee67eae4154
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|477ad27a-5b07-4f13-bb78-ce450f00464f
