@@ -1,5 +1,5 @@
 -- Project:   Tryksensor
--- Generated: 11/11/2020 14:28:54
+-- Generated: 11/13/2020 11:35:02
 -- PSoC Creator  4.4
 
 ENTITY Tryksensor IS
@@ -106,6 +106,10 @@ ARCHITECTURE __DEFAULT__ OF Tryksensor IS
     ATTRIBUTE Location OF Rx_1(0) : LABEL IS "P12[6]";
     ATTRIBUTE lib_model OF Tx_1(0) : LABEL IS "iocell2";
     ATTRIBUTE Location OF Tx_1(0) : LABEL IS "P12[7]";
+    ATTRIBUTE lib_model OF Pin_DIN(0) : LABEL IS "iocell3";
+    ATTRIBUTE Location OF Pin_DIN(0) : LABEL IS "P0[6]";
+    ATTRIBUTE lib_model OF Pin_SCK(0) : LABEL IS "iocell4";
+    ATTRIBUTE Location OF Pin_SCK(0) : LABEL IS "P0[7]";
     ATTRIBUTE lib_model OF Net_8 : LABEL IS "macrocell1";
     ATTRIBUTE lib_model OF \UART_1:BUART:counter_load_not\ : LABEL IS "macrocell2";
     ATTRIBUTE lib_model OF \UART_1:BUART:tx_status_0\ : LABEL IS "macrocell3";

@@ -2,7 +2,7 @@
 --	Conversion of Tryksensor.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Wed Nov 11 14:28:53 2020
+--	Fri Nov 13 11:35:01 2020
 --
 
 USE cypress.cypress.all;

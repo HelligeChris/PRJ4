@@ -14,4 +14,4 @@
 #include "project.h"
 
 void ADC_init();
-int ADC_read();
+signed int ADC_read();
