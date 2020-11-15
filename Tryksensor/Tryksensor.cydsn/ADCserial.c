@@ -44,7 +44,7 @@ CY_ISR(isr_timer_handler)
 {
     Timer_1_Stop();
     
-    if (counter == (gain_*2))
+    if (counter == (gain_))
     {
         Timer_1_Stop();
         Pin_DIN_Write(1);
@@ -55,7 +55,7 @@ CY_ISR(isr_timer_handler)
 
     
     inv_pin();
-    if ((!Pin_SCK_Read()) && (counter < (SIZE*2)))
+    if ((!Pin_SCK_Read()) && (counter < (SIZE)))
     {
         Datain[Dataindex] = Pin_DIN_Read();
         Dataindex++;
