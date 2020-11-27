@@ -250,7 +250,12 @@
   </Group>
   <Data key="DataVersionKey" value="2" />
   <Group key="DWRInstGuidMapping">
+    <Group key="Interrupt">
+      <Data key="85ecc733-73f2-45ca-87af-396904ff0034" value="isr_uart_rx" />
+      <Data key="e7849935-08e5-4e8e-9a76-4ea6d57b61a1" value="isr_timer" />
+    </Group>
     <Group key="Pin">
+      <Data key="0decd6bf-0fe2-4d5c-afd4-0c7673ef2aa4" value="Pin_test" />
       <Data key="8d318d8b-cf7b-4b6b-b02c-ab1c5c49d0ba" value="Pin_DIN" />
       <Data key="1425177d-0d0e-4468-8bcc-e638e5509a9b" value="Rx_1" />
       <Data key="e851a3b9-efb8-48be-bbb8-b303b216c393" value="Pin_SCK" />
@@ -3340,7 +3345,28 @@
       </Group>
     </Group>
   </Group>
+  <Group key="Interrupt">
+    <Group key="85ecc733-73f2-45ca-87af-396904ff0034">
+      <Group key="CortexM3">
+        <Data key="Assigned" value="True" />
+        <Data key="Priority" value="7" />
+        <Data key="Vector" value="-1" />
+      </Group>
+    </Group>
+    <Group key="e7849935-08e5-4e8e-9a76-4ea6d57b61a1">
+      <Group key="CortexM3">
+        <Data key="Assigned" value="True" />
+        <Data key="Priority" value="0" />
+        <Data key="Vector" value="-1" />
+      </Group>
+    </Group>
+  </Group>
   <Group key="Pin2">
+    <Group key="0decd6bf-0fe2-4d5c-afd4-0c7673ef2aa4">
+      <Group key="0">
+        <Data key="Port Format" value="0,5" />
+      </Group>
+    </Group>
     <Group key="8d318d8b-cf7b-4b6b-b02c-ab1c5c49d0ba">
       <Group key="0">
         <Data key="Port Format" value="0,6" />

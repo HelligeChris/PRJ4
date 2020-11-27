@@ -50,7 +50,7 @@ int main(void)
     for(;;)
     {   
         CyDelay(100);
-        sprintf(buf, "%d\r\n", ADC_read()-zero);
+        sprintf(buf, "%d\r\n", ADC_read());
         UART_1_PutString(buf);
         /* Place your application code here. */
     }

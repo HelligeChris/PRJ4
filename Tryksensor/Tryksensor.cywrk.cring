@@ -208,6 +208,8 @@
 <name v=".\Tryksensor.cydsn\ADCserial.h" />
 <name v=".\Tryksensor.cydsn\ADCserial.c" />
 <name v=".\Tryksensor.cydsn\main.c" />
+<name v=".\Tryksensor.cydsn\Tryksensor.cydwr" />
+<name v=".\Tryksensor.cydsn\Generated_Source\PSoC5\Pin_DIN.c" />
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -215,7 +217,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Vertical"><TabbedMdiContainer Size="1219, 594" SelectedTabbedMdiWindow="3bf50b5f-072a-4fb5-8ea2-ef6e63681de7"><DocumentWindow Key="C:\Users\cring\Documents\GitHub\PRJ4\Tryksensor\Tryksensor.cydsn\TopDesign\TopDesign.cysch" Guid="a0d1eede-d473-4e01-9455-1d5de78c49a7" /><DocumentWindow Key="C:\Users\cring\OneDrive - Aarhus Universitet\Uni\3. Semester\GFV\Gruppe arb\Includefiles\VT100Terminal.c" Guid="0b02f1c7-b7b1-4732-a5c6-43357c0b52f8" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\PRJ4\Tryksensor\Tryksensor.cydsn\ADCserial.h" Guid="39811539-65da-4ae0-a60b-f396d4275b59" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\PRJ4\Tryksensor\Tryksensor.cydsn\ADCserial.c" Guid="3bf50b5f-072a-4fb5-8ea2-ef6e63681de7" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\PRJ4\Tryksensor\Tryksensor.cydsn\main.c" Guid="ddf1028c-e2a7-471e-a39a-2b814df8a986" /><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="a81e21bb-5e2e-400c-9cbf-968a63daa365" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Vertical"><TabbedMdiContainer Size="1219, 529" SelectedTabbedMdiWindow="3bf50b5f-072a-4fb5-8ea2-ef6e63681de7"><DocumentWindow Key="C:\Users\cring\Documents\GitHub\PRJ4\Tryksensor\Tryksensor.cydsn\TopDesign\TopDesign.cysch" Guid="a0d1eede-d473-4e01-9455-1d5de78c49a7" /><DocumentWindow Key="C:\Users\cring\OneDrive - Aarhus Universitet\Uni\3. Semester\GFV\Gruppe arb\Includefiles\VT100Terminal.c" Guid="0b02f1c7-b7b1-4732-a5c6-43357c0b52f8" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\PRJ4\Tryksensor\Tryksensor.cydsn\ADCserial.h" Guid="39811539-65da-4ae0-a60b-f396d4275b59" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\PRJ4\Tryksensor\Tryksensor.cydsn\ADCserial.c" Guid="3bf50b5f-072a-4fb5-8ea2-ef6e63681de7" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\PRJ4\Tryksensor\Tryksensor.cydsn\main.c" Guid="ddf1028c-e2a7-471e-a39a-2b814df8a986" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\PRJ4\Tryksensor\Tryksensor.cydsn\Tryksensor.cydwr" Guid="8c0b4430-cff6-413e-b860-afa3e15ba264" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\PRJ4\Tryksensor\Tryksensor.cydsn\Generated_Source\PSoC5\Pin_DIN.c" Guid="e2070b93-dee6-4338-bdf7-c6601217f6bc" /><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="a81e21bb-5e2e-400c-9cbf-968a63daa365" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

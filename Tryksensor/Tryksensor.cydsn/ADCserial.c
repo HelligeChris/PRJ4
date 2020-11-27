@@ -44,7 +44,7 @@ CY_ISR(isr_timer_handler)
 {
     Timer_1_Stop();
     
-    if (counter == (gain_*2))
+    if (counter == (gain_))
     {
         Timer_1_Stop();
         Pin_DIN_Write(1);
@@ -52,15 +52,15 @@ CY_ISR(isr_timer_handler)
         Pin_SCK_Write(0);
         return;
     }
-
+    
     
     inv_pin();
+    
     if ((!Pin_SCK_Read()) && (counter < (SIZE*2)))
     {
         Datain[Dataindex] = Pin_DIN_Read();
         Dataindex++;
     }
-    
     
     counter++;
     Timer_1_Start();
@@ -68,7 +68,7 @@ CY_ISR(isr_timer_handler)
 
 int* send(int gain, uint period_ns)
 {
-    Timer_1_WritePeriod((int)(period_ns/1000)*12);
+    Timer_1_WritePeriod((int)(period_ns/2/1000)*12);
     if (gain == 128)
     {
         gain_ = 25*2;
@@ -87,7 +87,7 @@ int* send(int gain, uint period_ns)
     Dataindex = 0;
     counter = 0;
     Pin_SCK_Write(0);
-    Timer_1_ClearFIFO();
+    Timer_1_WriteCounter(0);
     Timer_1_Start();
     while(DataRX == Sending_DATA);
     Pin_SCK_Write(0);
@@ -101,13 +101,14 @@ void ADC_init()
     Timer_1_Init();
     isr_timer_StartEx(isr_timer_handler);
     Pin_SCK_Write(0);
+    Pin_DIN_Write(0);
     
-    send(128, 1000);
+    send(128, 15000);
 }
 
 signed int ADC_read()
 {
-    int* Data = send(128, 1000);
+    int* Data = send(128, 15000);
     int x = 0;
     for(unsigned int i = 1; i <= SIZE; i++)
     {
