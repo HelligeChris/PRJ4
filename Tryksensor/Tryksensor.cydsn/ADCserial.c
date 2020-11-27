@@ -68,7 +68,7 @@ CY_ISR(isr_timer_handler)
 
 int* send(int gain, uint period_ns)
 {
-    Timer_1_WritePeriod((int)(period_ns/2/1000)*12);
+    Timer_1_WritePeriod((int)(period_ns/1000)*12);
     if (gain == 128)
     {
         gain_ = 25*2;
