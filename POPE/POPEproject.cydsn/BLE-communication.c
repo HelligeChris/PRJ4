@@ -11,12 +11,17 @@
 //Includes
 #include "BLE-communication.h"
 
+/* BLE Private Functions */
+cy_en_ble_api_result_t BLE_SetCharacteristicValue(POPE_char_index_t charIndex, uint16_t attrSize, uint8_t *attrValue);
+
+
 /* Timer variables */
 static cy_stc_ble_timer_info_t BLEtimerParam = { .timeout = 1u};
 static volatile uint8_t BLEmainTimer = 1u;
 
 /* Power Array */
 uint8_t powerArray[2] = {0};
+
 
 /* Callback function */
 void BLE_EventHandler(uint32_t event, void *eventParam)
@@ -80,7 +85,7 @@ void BLE_EventHandler(uint32_t event, void *eventParam)
     }
 }
 
-/* Timer function */
+
 int BLE_checkTimer(){
     if (BLEmainTimer != 0){
         BLEmainTimer = 0;
@@ -90,33 +95,6 @@ int BLE_checkTimer(){
     return 0;
 }
 
-//power measure Eventhandler
-//void BLE_handlePowerMeasure(uint32_t event, void *eventParam){
-//    cy_en_ble_api_result_t apiResult = CY_BLE_SUCCESS;
-//    uint8_t i;
-//    uint8_t locCharIndex;
-//    locCharIndex = ((cy_stc_ble_cps_char_value_t *)eventParam)->charIndex;
-//
-//    switch(event)
-//    {
-//        /* CPS Server - Notifications for Cycling Power Service Characteristic
-//        was enabled. The parameter of this event is a structure of
-//        cy_stc_ble_cps_char_value_t type.
-//        */
-//        
-//        case CY_BLE_EVT_CPSS_BROADCAST_DISABLED:
-//            Cy_BLE_CPSS_StopBroadcast();
-//            break;
-//        
-//        /* CPS Server - Write Request for Cycling Power Service Characteristic 
-//            was received. The parameter of this event is a structure
-//            of cy_stc_ble_cps_char_value_t type.
-//        */          
-//            
-//        default:
-//            break;
-//    }
-//}
 
 cy_en_ble_api_result_t BLE_sendPower(uint16_t Power)
 {
@@ -126,8 +104,13 @@ cy_en_ble_api_result_t BLE_sendPower(uint16_t Power)
     powerArray[0] = (Power >> 8);
     
     apiResult = BLE_SetCharacteristicValue(POPE_POWER_MEASURE, sizeof(uint8)*2, (uint8_t*)&powerArray);
+    
+    powerArray[1] = 0;
+    powerArray[0] = 0;
+    
     return apiResult;
 }
+
 
 cy_en_ble_api_result_t BLE_sendBattery(uint8_t Battery)
 {
@@ -136,6 +119,7 @@ cy_en_ble_api_result_t BLE_sendBattery(uint8_t Battery)
                                                                         sizeof(uint8_t), &Battery);
     return apiResult;
 }
+
 
 /************************************************************************************************
     Hjælpe funktion til at sende POWER

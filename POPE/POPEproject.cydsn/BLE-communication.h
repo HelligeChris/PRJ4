@@ -25,11 +25,7 @@ typedef enum
 //BLE Public Functions
 void BLE_EventHandler(uint32_t event, void* eventParam);
 int BLE_checkTimer();
-//void BLE_handlePowerMeasure();
 cy_en_ble_api_result_t BLE_sendPower(uint16_t Power);
 cy_en_ble_api_result_t BLE_sendBattery(uint8_t Battery);  //BatteryPercentage
-
-//BLE Private Functions
-cy_en_ble_api_result_t BLE_SetCharacteristicValue(POPE_char_index_t charIndex, uint16_t attrSize, uint8_t *attrValue);
     
 /* [] END OF FILE */
