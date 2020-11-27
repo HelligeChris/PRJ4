@@ -12,8 +12,8 @@
 #include "BLE-communication.h"
 
 /* Timer variables */
-static cy_stc_ble_timer_info_t timerParam = { .timeout = 1u};
-static volatile uint8_t mainTimer = 1u;
+static cy_stc_ble_timer_info_t BLEtimerParam = { .timeout = 1u};
+static volatile uint8_t BLEmainTimer = 1u;
 
 /* Power Array */
 uint8_t powerArray[2] = {0};
@@ -43,9 +43,9 @@ void BLE_EventHandler(uint32_t event, void *eventParam)
             UART_DEB_PutString("Timeout \r \n ");
             #endif
             if((((cy_stc_ble_timeout_param_t *)eventParam)->reasonCode == CY_BLE_GENERIC_APP_TO) && 
-               (((cy_stc_ble_timeout_param_t *)eventParam)->timerHandle == timerParam.timerHandle)) //timeoutval == current timer val
+               (((cy_stc_ble_timeout_param_t *)eventParam)->timerHandle == BLEtimerParam.timerHandle)) //timeoutval == current timer val
             {
-                mainTimer++;
+                BLEmainTimer++;
             }
             break;
             
@@ -82,9 +82,9 @@ void BLE_EventHandler(uint32_t event, void *eventParam)
 
 /* Timer function */
 int BLE_checkTimer(){
-    if (mainTimer != 0){
-        mainTimer = 0;
-        Cy_BLE_StartTimer(&timerParam);
+    if (BLEmainTimer != 0){
+        BLEmainTimer = 0;
+        Cy_BLE_StartTimer(&BLEtimerParam);
         return 1;
     }
     return 0;
