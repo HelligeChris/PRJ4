@@ -13,12 +13,12 @@
 #include "trykControl.h"
 #include "kadenceControl.h"
 
-void lowPowerImplementation();
+void lowPowerMode();
 uint16_t getPower();
 bool testKadence();
 void startIdleCountdown();
 void resetIdleCountdown();
-bool calibratePOPE();
+//bool calibratePOPE();
 
 
 /* [] END OF FILE */

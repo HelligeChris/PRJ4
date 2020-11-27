@@ -2,7 +2,7 @@
 --	Conversion of POPEproject.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Fri Nov 27 13:15:49 2020
+--	Fri Nov 27 15:37:20 2020
 --
 
 USE cypress.cypress.all;
@@ -55,6 +55,18 @@ SIGNAL Net_8 : bit;
 SIGNAL Net_11 : bit;
 SIGNAL Net_13 : bit;
 SIGNAL Net_14 : bit;
+SIGNAL Net_32 : bit;
+SIGNAL Net_25 : bit;
+SIGNAL \idleTimer:capture\ : bit;
+SIGNAL \idleTimer:count\ : bit;
+SIGNAL \idleTimer:reload\ : bit;
+SIGNAL \idleTimer:stop\ : bit;
+SIGNAL \idleTimer:start\ : bit;
+SIGNAL Net_24 : bit;
+SIGNAL Net_22 : bit;
+SIGNAL \idleTimer:Net_1\ : bit;
+SIGNAL \idleTimer:Net_2\ : bit;
+SIGNAL Net_21 : bit;
 BEGIN
 
 one <=  ('1') ;
@@ -204,5 +216,36 @@ LEDgreen:cy_mxs40_gpio_v1_0
 		tr_tx_req=>Net_12,
 		tr_rx_req=>Net_9,
 		tr_i2c_scl_filtered=>\UART_DEB:Net_161\);
+idleInt:cy_mxs40_isr_v1_0
+	GENERIC MAP(cy_registers=>"",
+		deepsleep_required=>'0',
+		int_type=>"00")
+	PORT MAP(int_signal=>Net_32);
+\idleTimer:TCPWM\:cy_mxs40_tcpwm_v1_0
+	GENERIC MAP(cy_registers=>"",
+		width=>32,
+		exact_width=>'0')
+	PORT MAP(clock=>Net_25,
+		capture=>zero,
+		count=>one,
+		reload=>zero,
+		stop=>zero,
+		start=>zero,
+		tr_underflow=>Net_32,
+		tr_compare_match=>Net_24,
+		tr_overflow=>Net_22,
+		line_compl=>\idleTimer:Net_1\,
+		line=>\idleTimer:Net_2\,
+		interrupt=>Net_21);
+Clock_1:cy_clock_v1_0
+	GENERIC MAP(cy_registers=>"",
+		id=>"b4da76bc-7fe0-4ac5-85f7-34a7e54aa2db",
+		source_clock_id=>"2FB4EC85-8328-4C5A-9ED9-8B63060178EB",
+		divisor=>0,
+		period=>"200000000",
+		is_direct=>'0',
+		is_digital=>'0')
+	PORT MAP(clock_out=>Net_25,
+		dig_domain_out=>open);
 
 END R_T_L;

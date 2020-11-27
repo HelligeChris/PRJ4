@@ -29,3 +29,14 @@
 
 #endif /* ((__CORTEX_M == 0) && (CY_CORE_ID == 0)) */
 
+/* ARM CM4 */
+#if (((__CORTEX_M == 4) && (CY_CORE_ID == 0)))
+
+    /* idleInt */
+    const cy_stc_sysint_t idleInt_cfg = {
+        .intrSrc = (IRQn_Type)idleInt__INTC_NUMBER,
+        .intrPriority = idleInt__INTC_CORTEXM4_PRIORITY
+    };
+
+#endif /* ((__CORTEX_M == 4) && (CY_CORE_ID == 0)) */
+

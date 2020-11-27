@@ -24,18 +24,27 @@
 #define BLE_PM_cy_mxs40_ble__HW BLE
 #define BLE_PM_cy_mxs40_ble__IDX 0
 
-/* UART_DEB_SCB */
+/* Clock_1 */
+#define Clock_1__DIV_IDX 0
+#define Clock_1__DIV_NUM 0
+#define Clock_1__DIV_TYPE CY_SYSCLK_DIV_8_BIT
+
+/* UART_DEB */
 #define UART_DEB_SCB__HW SCB5
 #define UART_DEB_SCB__IDX 5
 #define UART_DEB_SCB__SS0_POSITION 0u
 #define UART_DEB_SCB__SS1_POSITION 1u
 #define UART_DEB_SCB__SS2_POSITION 2u
 #define UART_DEB_SCB__SS3_POSITION 3u
-
-/* UART_DEB_SCBCLK */
-#define UART_DEB_SCBCLK__DIV_IDX 0
-#define UART_DEB_SCBCLK__DIV_NUM 0
+#define UART_DEB_SCBCLK__DIV_IDX 1
+#define UART_DEB_SCBCLK__DIV_NUM 1
 #define UART_DEB_SCBCLK__DIV_TYPE CY_SYSCLK_DIV_8_BIT
+
+/* idleTimer */
+#define idleTimer_TCPWM__CNT_HW TCPWM0_CNT0
+#define idleTimer_TCPWM__CNT_IDX 0u
+#define idleTimer_TCPWM__HW TCPWM0
+#define idleTimer_TCPWM__IDX 0u
 
 /* Miscellaneous */
 #define CPUSS__CTI_TR_IN_0 TRIG5_OUT_CPUSS_CTI_TR_IN0

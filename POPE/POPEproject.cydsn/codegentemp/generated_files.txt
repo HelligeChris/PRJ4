@@ -22,6 +22,9 @@
   <file name="C:\Users\dryos\Documents\GitHub\PRJ4\POPE\POPEproject.cydsn\codegentemp\BLE_custom_config.c" value="SOURCE_C;CortexM0p,CortexM4;;;;BLE_PM" />
   <file name="C:\Users\dryos\Documents\GitHub\PRJ4\POPE\POPEproject.cydsn\codegentemp\UART_DEB.c" value="SOURCE_C;CortexM0p,CortexM4;;;;UART_DEB" />
   <file name="C:\Users\dryos\Documents\GitHub\PRJ4\POPE\POPEproject.cydsn\codegentemp\UART_DEB.h" value="HEADER;;;;;UART_DEB" />
+  <file name="C:\Users\dryos\Documents\GitHub\PRJ4\POPE\POPEproject.cydsn\codegentemp\idleTimer.c" value="SOURCE_C;CortexM0p,CortexM4;;;;idleTimer" />
+  <file name="C:\Users\dryos\Documents\GitHub\PRJ4\POPE\POPEproject.cydsn\codegentemp\idleTimer.h" value="HEADER;;;;;idleTimer" />
+  <file name="C:\Users\dryos\Documents\GitHub\PRJ4\POPE\POPEproject.cydsn\codegentemp\Clock_1.h" value="HEADER;;;;;Clock_1" />
   <file name="C:\Users\dryos\Documents\GitHub\PRJ4\POPE\POPEproject.cydsn\codegentemp\UART_DEB_SCBCLK.h" value="HEADER;;;;;UART_DEB_SCBCLK" />
   <file name="C:\Users\dryos\Documents\GitHub\PRJ4\POPE\POPEproject.cydsn\codegentemp\project.h" value="OTHER;;;;;" />
   <file name="C:\Users\dryos\Documents\GitHub\PRJ4\POPE\POPEproject.cydsn\codegentemp\cycodeshareimport.ld" value="OTHER;;;;;" />

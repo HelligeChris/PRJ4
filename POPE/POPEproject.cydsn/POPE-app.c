@@ -11,10 +11,15 @@
 */
 #include "POPE-app.h"
 
-void lowPowerImplementation()
+
+uint16_t idleTimer = 0;
+
+
+void lowPowerMode()
 {
     
 }
+
 
 uint16_t getPower()
 {
@@ -29,6 +34,7 @@ uint16_t getPower()
     return power;
 }
 
+
 bool testKadence()
 {
     bool highCadence = true;
@@ -42,10 +48,12 @@ void startIdleCountdown()
     
 }
 
+
 void resetIdleCountdown()
 {
     
 }
+
 
 bool calibratePOPE()
 {

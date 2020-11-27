@@ -18,6 +18,14 @@
 #define INCLUDED_CYFITTER_SYSINT_H
 #include "cy_device_headers.h"
 
+/* idleInt */
+#define idleInt__INTC_CORTEXM4_ASSIGNED 1
+#define idleInt__INTC_CORTEXM4_PRIORITY 7u
+#define idleInt__INTC_NUMBER 122u
+#define idleInt_INTC_CORTEXM4_ASSIGNED 1
+#define idleInt_INTC_CORTEXM4_PRIORITY 7u
+#define idleInt_INTC_NUMBER 122u
+
 /* BLE_PM_bless_isr */
 #define BLE_PM_bless_isr__INTC_CORTEXM0P_ASSIGNED 1
 #define BLE_PM_bless_isr__INTC_CORTEXM0P_MUX 3u

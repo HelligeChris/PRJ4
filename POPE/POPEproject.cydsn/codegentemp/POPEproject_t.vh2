@@ -1,5 +1,5 @@
 -- Project:   C:\Users\dryos\Documents\GitHub\PRJ4\POPE\POPEproject.cydsn\POPEproject.cyprj
--- Generated: 11/27/2020 13:16:05
+-- Generated: 11/27/2020 15:37:38
 -- PSoC Creator  4.4
 
 ENTITY POPEproject IS
@@ -48,7 +48,13 @@ ARCHITECTURE __DEFAULT__ OF POPEproject IS
     SIGNAL Net_1 : bit;
     SIGNAL Net_12 : bit;
     SIGNAL Net_2 : bit;
+    SIGNAL Net_21 : bit;
+    SIGNAL Net_22 : bit;
+    SIGNAL Net_24 : bit;
+    SIGNAL Net_25_ff11 : bit;
+    ATTRIBUTE global_signal OF Net_25_ff11 : SIGNAL IS true;
     SIGNAL Net_3 : bit;
+    SIGNAL Net_32 : bit;
     SIGNAL Net_9 : bit;
     SIGNAL \BLE_PM:Net_1\ : bit;
     SIGNAL \UART_DEB:Net_1172\ : bit;
@@ -60,6 +66,8 @@ ARCHITECTURE __DEFAULT__ OF POPEproject IS
     SIGNAL \\\UART_DEB:rx(0)\\__PA\ : bit;
     SIGNAL \\\UART_DEB:tx(0)\\__PA\ : bit;
     SIGNAL \UART_DEB:tx_wire\ : bit;
+    SIGNAL \idleTimer:Net_1\ : bit;
+    SIGNAL \idleTimer:Net_2\ : bit;
     SIGNAL __ONE__ : bit;
     ATTRIBUTE POWER OF __ONE__ : SIGNAL IS true;
     SIGNAL __ZERO__ : bit;
@@ -90,6 +98,8 @@ ARCHITECTURE __DEFAULT__ OF POPEproject IS
     ATTRIBUTE Location OF \BLE_PM:cy_mxs40_ble\ : LABEL IS "F(BLE,0)";
     ATTRIBUTE Location OF \BLE_PM:bless_isr\ : LABEL IS "[IntrContainer=(0)][IntrId=(24)]";
     ATTRIBUTE Location OF \UART_DEB:SCB\ : LABEL IS "F(SCB,5)";
+    ATTRIBUTE Location OF idleInt : LABEL IS "[IntrContainer=(0)][IntrId=(122)]";
+    ATTRIBUTE Location OF \idleTimer:TCPWM\ : LABEL IS "F(TCPWM,0)";
     COMPONENT BLE
         PORT (
             ext_pa_lna_chip_en_out : OUT std_ulogic;
@@ -463,6 +473,21 @@ ARCHITECTURE __DEFAULT__ OF POPEproject IS
             pmic_wakeup_out : OUT std_ulogic;
             hibernate_wakeup : IN std_ulogic);
     END COMPONENT;
+    COMPONENT TCPWM
+        PORT (
+            clock : IN std_ulogic;
+            capture : IN std_ulogic;
+            count : IN std_ulogic;
+            reload : IN std_ulogic;
+            stop : IN std_ulogic;
+            start : IN std_ulogic;
+            tr_underflow : OUT std_ulogic;
+            tr_compare_match : OUT std_ulogic;
+            tr_overflow : OUT std_ulogic;
+            line_compl : OUT std_ulogic;
+            line : OUT std_ulogic;
+            interrupt : OUT std_ulogic);
+    END COMPONENT;
 BEGIN
 
     ClockGenBlock:CLK_GEN;
@@ -486,6 +511,7 @@ BEGIN
             ilo => ClockBlock_ILO,
             wco => ClockBlock_WCO,
             lfclk => ClockBlock_LFClk,
+            ff_div_11 => Net_25_ff11,
             ff_div_0 => open,
             ff_div_5 => \UART_DEB:Net_847_ff0\,
             periclk_App => periclk_App);
@@ -914,5 +940,33 @@ BEGIN
             tr_tx_req => Net_12,
             tr_rx_req => Net_9,
             tr_i2c_scl_filtered => \UART_DEB:Net_161\);
+
+    idleInt:interrupt
+        GENERIC MAP(
+            cy_registers => "",
+            deepsleep_required => 0,
+            int_type => "00")
+        PORT MAP(
+            interrupt => Net_32,
+            clock => ClockBlock_PeriClk);
+
+    \idleTimer:TCPWM\:TCPWM
+        GENERIC MAP(
+            cy_registers => "",
+            exact_width => 0,
+            width => 32)
+        PORT MAP(
+            clock => Net_25_ff11,
+            capture => '0',
+            count => '1',
+            reload => '0',
+            stop => '0',
+            start => '0',
+            tr_underflow => Net_32,
+            tr_compare_match => Net_24,
+            tr_overflow => Net_22,
+            line_compl => \idleTimer:Net_1\,
+            line => \idleTimer:Net_2\,
+            interrupt => Net_21);
 
 END __DEFAULT__;

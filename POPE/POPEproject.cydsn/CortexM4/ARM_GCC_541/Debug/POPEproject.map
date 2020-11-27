@@ -246,8 +246,8 @@ Discarded input sections
  .text          0x00000000        0x0 .\CortexM4\ARM_GCC_541\Debug\BLE-communication.o
  .text          0x00000000        0x0 .\CortexM4\ARM_GCC_541\Debug\POPE-app.o
  .data          0x00000000        0x0 .\CortexM4\ARM_GCC_541\Debug\POPE-app.o
- .bss           0x00000000        0x0 .\CortexM4\ARM_GCC_541\Debug\POPE-app.o
- .text.lowPowerImplementation
+ .bss           0x00000000        0x2 .\CortexM4\ARM_GCC_541\Debug\POPE-app.o
+ .text.lowPowerMode
                 0x00000000        0x4 .\CortexM4\ARM_GCC_541\Debug\POPE-app.o
  .text.getPower
                 0x00000000        0x4 .\CortexM4\ARM_GCC_541\Debug\POPE-app.o
@@ -259,13 +259,13 @@ Discarded input sections
                 0x00000000        0x4 .\CortexM4\ARM_GCC_541\Debug\POPE-app.o
  .text.calibratePOPE
                 0x00000000        0x4 .\CortexM4\ARM_GCC_541\Debug\POPE-app.o
- .debug_info    0x00000000      0x7f0 .\CortexM4\ARM_GCC_541\Debug\POPE-app.o
- .debug_abbrev  0x00000000      0x153 .\CortexM4\ARM_GCC_541\Debug\POPE-app.o
+ .debug_info    0x00000000      0xc4d .\CortexM4\ARM_GCC_541\Debug\POPE-app.o
+ .debug_abbrev  0x00000000      0x18b .\CortexM4\ARM_GCC_541\Debug\POPE-app.o
  .debug_aranges
                 0x00000000       0x48 .\CortexM4\ARM_GCC_541\Debug\POPE-app.o
  .debug_ranges  0x00000000       0x38 .\CortexM4\ARM_GCC_541\Debug\POPE-app.o
- .debug_line    0x00000000      0x2c0 .\CortexM4\ARM_GCC_541\Debug\POPE-app.o
- .debug_str     0x00000000      0xb52 .\CortexM4\ARM_GCC_541\Debug\POPE-app.o
+ .debug_line    0x00000000      0x32b .\CortexM4\ARM_GCC_541\Debug\POPE-app.o
+ .debug_str     0x00000000     0x1c1b .\CortexM4\ARM_GCC_541\Debug\POPE-app.o
  .comment       0x00000000       0x6f .\CortexM4\ARM_GCC_541\Debug\POPE-app.o
  .debug_frame   0x00000000       0x70 .\CortexM4\ARM_GCC_541\Debug\POPE-app.o
  .ARM.attributes
@@ -273,48 +273,49 @@ Discarded input sections
  .text          0x00000000        0x0 .\CortexM4\ARM_GCC_541\Debug\batteriControl.o
  .data          0x00000000        0x0 .\CortexM4\ARM_GCC_541\Debug\batteriControl.o
  .bss           0x00000000        0x0 .\CortexM4\ARM_GCC_541\Debug\batteriControl.o
- .debug_info    0x00000000      0x736 .\CortexM4\ARM_GCC_541\Debug\batteriControl.o
- .debug_abbrev  0x00000000      0x101 .\CortexM4\ARM_GCC_541\Debug\batteriControl.o
+ .debug_info    0x00000000      0x842 .\CortexM4\ARM_GCC_541\Debug\batteriControl.o
+ .debug_abbrev  0x00000000      0x110 .\CortexM4\ARM_GCC_541\Debug\batteriControl.o
  .debug_aranges
                 0x00000000       0x18 .\CortexM4\ARM_GCC_541\Debug\batteriControl.o
- .debug_line    0x00000000      0x253 .\CortexM4\ARM_GCC_541\Debug\batteriControl.o
- .debug_str     0x00000000      0xaca .\CortexM4\ARM_GCC_541\Debug\batteriControl.o
+ .debug_line    0x00000000      0x2ac .\CortexM4\ARM_GCC_541\Debug\batteriControl.o
+ .debug_str     0x00000000      0xc0e .\CortexM4\ARM_GCC_541\Debug\batteriControl.o
  .comment       0x00000000       0x6f .\CortexM4\ARM_GCC_541\Debug\batteriControl.o
  .ARM.attributes
                 0x00000000       0x37 .\CortexM4\ARM_GCC_541\Debug\batteriControl.o
  .text          0x00000000        0x0 .\CortexM4\ARM_GCC_541\Debug\kadenceControl.o
  .data          0x00000000        0x0 .\CortexM4\ARM_GCC_541\Debug\kadenceControl.o
  .bss           0x00000000        0x0 .\CortexM4\ARM_GCC_541\Debug\kadenceControl.o
- .debug_info    0x00000000      0x736 .\CortexM4\ARM_GCC_541\Debug\kadenceControl.o
- .debug_abbrev  0x00000000      0x101 .\CortexM4\ARM_GCC_541\Debug\kadenceControl.o
+ .debug_info    0x00000000      0x842 .\CortexM4\ARM_GCC_541\Debug\kadenceControl.o
+ .debug_abbrev  0x00000000      0x110 .\CortexM4\ARM_GCC_541\Debug\kadenceControl.o
  .debug_aranges
                 0x00000000       0x18 .\CortexM4\ARM_GCC_541\Debug\kadenceControl.o
- .debug_line    0x00000000      0x253 .\CortexM4\ARM_GCC_541\Debug\kadenceControl.o
- .debug_str     0x00000000      0xaca .\CortexM4\ARM_GCC_541\Debug\kadenceControl.o
+ .debug_line    0x00000000      0x2ac .\CortexM4\ARM_GCC_541\Debug\kadenceControl.o
+ .debug_str     0x00000000      0xc0e .\CortexM4\ARM_GCC_541\Debug\kadenceControl.o
  .comment       0x00000000       0x6f .\CortexM4\ARM_GCC_541\Debug\kadenceControl.o
  .ARM.attributes
                 0x00000000       0x37 .\CortexM4\ARM_GCC_541\Debug\kadenceControl.o
  .text          0x00000000        0x0 .\CortexM4\ARM_GCC_541\Debug\trykControl.o
  .data          0x00000000        0x0 .\CortexM4\ARM_GCC_541\Debug\trykControl.o
  .bss           0x00000000        0x0 .\CortexM4\ARM_GCC_541\Debug\trykControl.o
- .debug_info    0x00000000      0x736 .\CortexM4\ARM_GCC_541\Debug\trykControl.o
- .debug_abbrev  0x00000000      0x101 .\CortexM4\ARM_GCC_541\Debug\trykControl.o
+ .debug_info    0x00000000      0x842 .\CortexM4\ARM_GCC_541\Debug\trykControl.o
+ .debug_abbrev  0x00000000      0x110 .\CortexM4\ARM_GCC_541\Debug\trykControl.o
  .debug_aranges
                 0x00000000       0x18 .\CortexM4\ARM_GCC_541\Debug\trykControl.o
- .debug_line    0x00000000      0x253 .\CortexM4\ARM_GCC_541\Debug\trykControl.o
- .debug_str     0x00000000      0xac7 .\CortexM4\ARM_GCC_541\Debug\trykControl.o
+ .debug_line    0x00000000      0x2ac .\CortexM4\ARM_GCC_541\Debug\trykControl.o
+ .debug_str     0x00000000      0xc0b .\CortexM4\ARM_GCC_541\Debug\trykControl.o
  .comment       0x00000000       0x6f .\CortexM4\ARM_GCC_541\Debug\trykControl.o
  .ARM.attributes
                 0x00000000       0x37 .\CortexM4\ARM_GCC_541\Debug\trykControl.o
  .text          0x00000000        0x0 .\CortexM4\ARM_GCC_541\Debug\cyfitter_sysint_cfg.o
  .data          0x00000000        0x0 .\CortexM4\ARM_GCC_541\Debug\cyfitter_sysint_cfg.o
  .bss           0x00000000        0x0 .\CortexM4\ARM_GCC_541\Debug\cyfitter_sysint_cfg.o
- .debug_info    0x00000000      0x538 .\CortexM4\ARM_GCC_541\Debug\cyfitter_sysint_cfg.o
- .debug_abbrev  0x00000000       0x88 .\CortexM4\ARM_GCC_541\Debug\cyfitter_sysint_cfg.o
+ .rodata        0x00000000        0x8 .\CortexM4\ARM_GCC_541\Debug\cyfitter_sysint_cfg.o
+ .debug_info    0x00000000      0x94a .\CortexM4\ARM_GCC_541\Debug\cyfitter_sysint_cfg.o
+ .debug_abbrev  0x00000000       0xe3 .\CortexM4\ARM_GCC_541\Debug\cyfitter_sysint_cfg.o
  .debug_aranges
                 0x00000000       0x18 .\CortexM4\ARM_GCC_541\Debug\cyfitter_sysint_cfg.o
- .debug_line    0x00000000      0x195 .\CortexM4\ARM_GCC_541\Debug\cyfitter_sysint_cfg.o
- .debug_str     0x00000000      0x79e .\CortexM4\ARM_GCC_541\Debug\cyfitter_sysint_cfg.o
+ .debug_line    0x00000000      0x24f .\CortexM4\ARM_GCC_541\Debug\cyfitter_sysint_cfg.o
+ .debug_str     0x00000000     0x17a3 .\CortexM4\ARM_GCC_541\Debug\cyfitter_sysint_cfg.o
  .comment       0x00000000       0x6f .\CortexM4\ARM_GCC_541\Debug\cyfitter_sysint_cfg.o
  .ARM.attributes
                 0x00000000       0x37 .\CortexM4\ARM_GCC_541\Debug\cyfitter_sysint_cfg.o
@@ -1102,6 +1103,63 @@ Discarded input sections
  .text          0x00000000        0x0 .\CortexM4\ARM_GCC_541\Debug\cy_device.o
  .data          0x00000000        0x0 .\CortexM4\ARM_GCC_541\Debug\cy_device.o
  .bss           0x00000000        0x0 .\CortexM4\ARM_GCC_541\Debug\cy_device.o
+ .text          0x00000000        0x0 .\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_counter.o
+ .data          0x00000000        0x0 .\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_counter.o
+ .bss           0x00000000        0x0 .\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_counter.o
+ .text.Cy_TCPWM_Counter_Init
+                0x00000000      0x110 .\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_counter.o
+ .text.Cy_TCPWM_Counter_DeInit
+                0x00000000       0x58 .\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_counter.o
+ .debug_info    0x00000000      0x43d .\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_counter.o
+ .debug_abbrev  0x00000000      0x158 .\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_counter.o
+ .debug_loc     0x00000000      0x103 .\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_counter.o
+ .debug_aranges
+                0x00000000       0x28 .\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_counter.o
+ .debug_ranges  0x00000000       0x18 .\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_counter.o
+ .debug_line    0x00000000      0x2af .\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_counter.o
+ .debug_str     0x00000000      0x4c1 .\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_counter.o
+ .comment       0x00000000       0x6f .\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_counter.o
+ .debug_frame   0x00000000       0x6c .\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_counter.o
+ .ARM.attributes
+                0x00000000       0x37 .\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_counter.o
+ .text          0x00000000        0x0 .\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_pwm.o
+ .data          0x00000000        0x0 .\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_pwm.o
+ .bss           0x00000000        0x0 .\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_pwm.o
+ .text.Cy_TCPWM_PWM_Init
+                0x00000000      0x16c .\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_pwm.o
+ .text.Cy_TCPWM_PWM_DeInit
+                0x00000000       0x58 .\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_pwm.o
+ .debug_info    0x00000000      0x483 .\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_pwm.o
+ .debug_abbrev  0x00000000      0x158 .\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_pwm.o
+ .debug_loc     0x00000000       0xd9 .\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_pwm.o
+ .debug_aranges
+                0x00000000       0x28 .\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_pwm.o
+ .debug_ranges  0x00000000       0x18 .\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_pwm.o
+ .debug_line    0x00000000      0x2ce .\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_pwm.o
+ .debug_str     0x00000000      0x4e9 .\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_pwm.o
+ .comment       0x00000000       0x6f .\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_pwm.o
+ .debug_frame   0x00000000       0x6c .\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_pwm.o
+ .ARM.attributes
+                0x00000000       0x37 .\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_pwm.o
+ .text          0x00000000        0x0 .\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_quaddec.o
+ .data          0x00000000        0x0 .\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_quaddec.o
+ .bss           0x00000000        0x0 .\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_quaddec.o
+ .text.Cy_TCPWM_QuadDec_Init
+                0x00000000       0x88 .\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_quaddec.o
+ .text.Cy_TCPWM_QuadDec_DeInit
+                0x00000000       0x58 .\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_quaddec.o
+ .debug_info    0x00000000      0x3b0 .\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_quaddec.o
+ .debug_abbrev  0x00000000      0x158 .\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_quaddec.o
+ .debug_loc     0x00000000       0xd9 .\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_quaddec.o
+ .debug_aranges
+                0x00000000       0x28 .\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_quaddec.o
+ .debug_ranges  0x00000000       0x18 .\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_quaddec.o
+ .debug_line    0x00000000      0x29f .\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_quaddec.o
+ .debug_str     0x00000000      0x424 .\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_quaddec.o
+ .comment       0x00000000       0x6f .\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_quaddec.o
+ .debug_frame   0x00000000       0x60 .\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_quaddec.o
+ .ARM.attributes
+                0x00000000       0x37 .\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_quaddec.o
  .text          0x00000000        0x0 .\CortexM4\ARM_GCC_541\Debug\cy_ble.o
  .text.Cy_BLE_ConfigureExtPA
                 0x00000000        0xc .\CortexM4\ARM_GCC_541\Debug\cy_ble.o
@@ -1671,6 +1729,24 @@ Discarded input sections
  .debug_frame   0x00000000      0x130 .\CortexM4\ARM_GCC_541\Debug\cy_ble_clk.o
  .ARM.attributes
                 0x00000000       0x37 .\CortexM4\ARM_GCC_541\Debug\cy_ble_clk.o
+ .text          0x00000000        0x0 .\CortexM4\ARM_GCC_541\Debug\idleTimer.o
+ .data          0x00000000        0x0 .\CortexM4\ARM_GCC_541\Debug\idleTimer.o
+ .bss           0x00000000        0x1 .\CortexM4\ARM_GCC_541\Debug\idleTimer.o
+ .text.idleTimer_Start
+                0x00000000       0x30 .\CortexM4\ARM_GCC_541\Debug\idleTimer.o
+ .rodata        0x00000000       0x4c .\CortexM4\ARM_GCC_541\Debug\idleTimer.o
+ .debug_info    0x00000000      0x48d .\CortexM4\ARM_GCC_541\Debug\idleTimer.o
+ .debug_abbrev  0x00000000      0x15f .\CortexM4\ARM_GCC_541\Debug\idleTimer.o
+ .debug_loc     0x00000000       0x58 .\CortexM4\ARM_GCC_541\Debug\idleTimer.o
+ .debug_aranges
+                0x00000000       0x20 .\CortexM4\ARM_GCC_541\Debug\idleTimer.o
+ .debug_ranges  0x00000000       0x10 .\CortexM4\ARM_GCC_541\Debug\idleTimer.o
+ .debug_line    0x00000000      0x275 .\CortexM4\ARM_GCC_541\Debug\idleTimer.o
+ .debug_str     0x00000000      0x4b4 .\CortexM4\ARM_GCC_541\Debug\idleTimer.o
+ .comment       0x00000000       0x6f .\CortexM4\ARM_GCC_541\Debug\idleTimer.o
+ .debug_frame   0x00000000       0x2c .\CortexM4\ARM_GCC_541\Debug\idleTimer.o
+ .ARM.attributes
+                0x00000000       0x37 .\CortexM4\ARM_GCC_541\Debug\idleTimer.o
  i.Cy_BLE_EnableDleFeature
                 0x00000000        0x4 Generated_Source\PSoC6\pdl\middleware\ble\lib\cy_ble_stack_gcc_host_ipc_cm4.a(CyBleStackMgrIP_Interface.o)
  i.Cy_BLE_EnablePhyUpdateFeature
@@ -2591,6 +2667,9 @@ LOAD .\CortexM4\ARM_GCC_541\Debug\cy_profile.o
 LOAD .\CortexM4\ARM_GCC_541\Debug\cy_prot.o
 LOAD .\CortexM4\ARM_GCC_541\Debug\cy_lvd.o
 LOAD .\CortexM4\ARM_GCC_541\Debug\cy_device.o
+LOAD .\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_counter.o
+LOAD .\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_pwm.o
+LOAD .\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_quaddec.o
 LOAD .\CortexM4\ARM_GCC_541\Debug\cy_ble.o
 LOAD .\CortexM4\ARM_GCC_541\Debug\cy_ble_hal_int.o
 LOAD .\CortexM4\ARM_GCC_541\Debug\cy_ble_hal_pvt.o
@@ -2632,6 +2711,7 @@ LOAD .\CortexM4\ARM_GCC_541\Debug\cy_ble_uds.o
 LOAD .\CortexM4\ARM_GCC_541\Debug\cy_ble_wpts.o
 LOAD .\CortexM4\ARM_GCC_541\Debug\cy_ble_wss.o
 LOAD .\CortexM4\ARM_GCC_541\Debug\cy_ble_clk.o
+LOAD .\CortexM4\ARM_GCC_541\Debug\idleTimer.o
 END GROUP
 START GROUP
 LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/softfp\libgcc.a
@@ -7387,98 +7467,98 @@ OUTPUT(C:\Users\dryos\Documents\GitHub\PRJ4\POPE\POPEproject.cydsn\CortexM4\ARM_
  .arm_vfe_header
                 0x0000011c        0x4 Generated_Source\PSoC6\pdl\middleware\ble\lib\cy_ble_stack_gcc_host_ipc_cm4.a(l2cap_connect.o)
 
-.debug_line     0x00000000     0x827c
+.debug_line     0x00000000     0x8387
  .debug_line    0x00000000       0x8e .\CortexM4\ARM_GCC_541\Debug\startup_psoc6_01_cm4.o
- .debug_line    0x0000008e      0x372 .\CortexM4\ARM_GCC_541\Debug\main_cm4.o
- .debug_line    0x00000400      0x435 .\CortexM4\ARM_GCC_541\Debug\system_psoc6_cm4.o
- .debug_line    0x00000835      0x399 .\CortexM4\ARM_GCC_541\Debug\HostMain.o
- .debug_line    0x00000bce      0x4ed .\CortexM4\ARM_GCC_541\Debug\BLE-communication.o
- .debug_line    0x000010bb      0x141 .\CortexM4\ARM_GCC_541\Debug\cymetadata.o
- .debug_line    0x000011fc      0x37d .\CortexM4\ARM_GCC_541\Debug\BLE.o
- .debug_line    0x00001579      0x351 .\CortexM4\ARM_GCC_541\Debug\BLE_config.o
- .debug_line    0x000018ca      0x249 .\CortexM4\ARM_GCC_541\Debug\BLE_bas_config.o
- .debug_line    0x00001b13      0x243 .\CortexM4\ARM_GCC_541\Debug\BLE_custom_config.o
- .debug_line    0x00001d56      0x29e .\CortexM4\ARM_GCC_541\Debug\UART_DEB.o
- .debug_line    0x00001ff4      0x2db .\CortexM4\ARM_GCC_541\Debug\cy_sysint.o
- .debug_line    0x000022cf      0x33e .\CortexM4\ARM_GCC_541\Debug\cy_ipc_drv.o
- .debug_line    0x0000260d      0x407 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_sema.o
- .debug_line    0x00002a14      0x57c .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
- .debug_line    0x00002f90      0x4d9 .\CortexM4\ARM_GCC_541\Debug\cy_scb_common.o
- .debug_line    0x00003469      0xa5f .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
- .debug_line    0x00003ec8      0x7d2 .\CortexM4\ARM_GCC_541\Debug\cy_flash.o
- .debug_line    0x0000469a      0xa5a .\CortexM4\ARM_GCC_541\Debug\cy_syspm.o
- .debug_line    0x000050f4      0x482 .\CortexM4\ARM_GCC_541\Debug\cy_syslib.o
- .debug_line    0x00005576       0x89 .\CortexM4\ARM_GCC_541\Debug\cy_syslib_gcc.o
- .debug_line    0x000055ff      0x17e .\CortexM4\ARM_GCC_541\Debug\cy_device.o
- .debug_line    0x0000577d      0x597 .\CortexM4\ARM_GCC_541\Debug\cy_ble.o
- .debug_line    0x00005d14      0xa01 .\CortexM4\ARM_GCC_541\Debug\cy_ble_hal_pvt.o
- .debug_line    0x00006715      0x7b7 .\CortexM4\ARM_GCC_541\Debug\cy_ble_gap.o
- .debug_line    0x00006ecc      0x5cb .\CortexM4\ARM_GCC_541\Debug\cy_ble_gatt.o
- .debug_line    0x00007497      0x67c .\CortexM4\ARM_GCC_541\Debug\cy_ble_event_handler.o
- .debug_line    0x00007b13      0x4e9 .\CortexM4\ARM_GCC_541\Debug\cy_ble_bas.o
- .debug_line    0x00007ffc      0x280 .\CortexM4\ARM_GCC_541\Debug\cy_ble_custom.o
+ .debug_line    0x0000008e      0x3cb .\CortexM4\ARM_GCC_541\Debug\main_cm4.o
+ .debug_line    0x00000459      0x435 .\CortexM4\ARM_GCC_541\Debug\system_psoc6_cm4.o
+ .debug_line    0x0000088e      0x3f2 .\CortexM4\ARM_GCC_541\Debug\HostMain.o
+ .debug_line    0x00000c80      0x546 .\CortexM4\ARM_GCC_541\Debug\BLE-communication.o
+ .debug_line    0x000011c6      0x141 .\CortexM4\ARM_GCC_541\Debug\cymetadata.o
+ .debug_line    0x00001307      0x37d .\CortexM4\ARM_GCC_541\Debug\BLE.o
+ .debug_line    0x00001684      0x351 .\CortexM4\ARM_GCC_541\Debug\BLE_config.o
+ .debug_line    0x000019d5      0x249 .\CortexM4\ARM_GCC_541\Debug\BLE_bas_config.o
+ .debug_line    0x00001c1e      0x243 .\CortexM4\ARM_GCC_541\Debug\BLE_custom_config.o
+ .debug_line    0x00001e61      0x29e .\CortexM4\ARM_GCC_541\Debug\UART_DEB.o
+ .debug_line    0x000020ff      0x2db .\CortexM4\ARM_GCC_541\Debug\cy_sysint.o
+ .debug_line    0x000023da      0x33e .\CortexM4\ARM_GCC_541\Debug\cy_ipc_drv.o
+ .debug_line    0x00002718      0x407 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_sema.o
+ .debug_line    0x00002b1f      0x57c .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
+ .debug_line    0x0000309b      0x4d9 .\CortexM4\ARM_GCC_541\Debug\cy_scb_common.o
+ .debug_line    0x00003574      0xa5f .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
+ .debug_line    0x00003fd3      0x7d2 .\CortexM4\ARM_GCC_541\Debug\cy_flash.o
+ .debug_line    0x000047a5      0xa5a .\CortexM4\ARM_GCC_541\Debug\cy_syspm.o
+ .debug_line    0x000051ff      0x482 .\CortexM4\ARM_GCC_541\Debug\cy_syslib.o
+ .debug_line    0x00005681       0x89 .\CortexM4\ARM_GCC_541\Debug\cy_syslib_gcc.o
+ .debug_line    0x0000570a      0x17e .\CortexM4\ARM_GCC_541\Debug\cy_device.o
+ .debug_line    0x00005888      0x597 .\CortexM4\ARM_GCC_541\Debug\cy_ble.o
+ .debug_line    0x00005e1f      0xa01 .\CortexM4\ARM_GCC_541\Debug\cy_ble_hal_pvt.o
+ .debug_line    0x00006820      0x7b7 .\CortexM4\ARM_GCC_541\Debug\cy_ble_gap.o
+ .debug_line    0x00006fd7      0x5cb .\CortexM4\ARM_GCC_541\Debug\cy_ble_gatt.o
+ .debug_line    0x000075a2      0x67c .\CortexM4\ARM_GCC_541\Debug\cy_ble_event_handler.o
+ .debug_line    0x00007c1e      0x4e9 .\CortexM4\ARM_GCC_541\Debug\cy_ble_bas.o
+ .debug_line    0x00008107      0x280 .\CortexM4\ARM_GCC_541\Debug\cy_ble_custom.o
 
-.debug_info     0x00000000    0x2f4a4
+.debug_info     0x00000000    0x2f7c8
  .debug_info    0x00000000       0x7f .\CortexM4\ARM_GCC_541\Debug\startup_psoc6_01_cm4.o
- .debug_info    0x0000007f      0xd9e .\CortexM4\ARM_GCC_541\Debug\main_cm4.o
- .debug_info    0x00000e1d     0x1bb3 .\CortexM4\ARM_GCC_541\Debug\system_psoc6_cm4.o
- .debug_info    0x000029d0     0x111e .\CortexM4\ARM_GCC_541\Debug\HostMain.o
- .debug_info    0x00003aee     0x1964 .\CortexM4\ARM_GCC_541\Debug\BLE-communication.o
- .debug_info    0x00005452       0xac .\CortexM4\ARM_GCC_541\Debug\cymetadata.o
- .debug_info    0x000054fe     0x182b .\CortexM4\ARM_GCC_541\Debug\BLE.o
- .debug_info    0x00006d29     0x1869 .\CortexM4\ARM_GCC_541\Debug\BLE_config.o
- .debug_info    0x00008592      0x718 .\CortexM4\ARM_GCC_541\Debug\BLE_bas_config.o
- .debug_info    0x00008caa      0x71d .\CortexM4\ARM_GCC_541\Debug\BLE_custom_config.o
- .debug_info    0x000093c7      0xdfa .\CortexM4\ARM_GCC_541\Debug\UART_DEB.o
- .debug_info    0x0000a1c1      0xe11 .\CortexM4\ARM_GCC_541\Debug\cy_sysint.o
- .debug_info    0x0000afd2      0x906 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_drv.o
- .debug_info    0x0000b8d8      0xc1e .\CortexM4\ARM_GCC_541\Debug\cy_ipc_sema.o
- .debug_info    0x0000c4f6     0x1952 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
- .debug_info    0x0000de48     0x11b0 .\CortexM4\ARM_GCC_541\Debug\cy_scb_common.o
- .debug_info    0x0000eff8     0x29bc .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
- .debug_info    0x000119b4     0x2a10 .\CortexM4\ARM_GCC_541\Debug\cy_flash.o
- .debug_info    0x000143c4     0x4014 .\CortexM4\ARM_GCC_541\Debug\cy_syspm.o
- .debug_info    0x000183d8     0x24fa .\CortexM4\ARM_GCC_541\Debug\cy_syslib.o
- .debug_info    0x0001a8d2       0xad .\CortexM4\ARM_GCC_541\Debug\cy_syslib_gcc.o
- .debug_info    0x0001a97f      0x551 .\CortexM4\ARM_GCC_541\Debug\cy_device.o
- .debug_info    0x0001aed0     0x3954 .\CortexM4\ARM_GCC_541\Debug\cy_ble.o
- .debug_info    0x0001e824     0x3225 .\CortexM4\ARM_GCC_541\Debug\cy_ble_hal_pvt.o
- .debug_info    0x00021a49     0x2c9e .\CortexM4\ARM_GCC_541\Debug\cy_ble_gap.o
- .debug_info    0x000246e7     0x2e6f .\CortexM4\ARM_GCC_541\Debug\cy_ble_gatt.o
- .debug_info    0x00027556     0x3c6f .\CortexM4\ARM_GCC_541\Debug\cy_ble_event_handler.o
- .debug_info    0x0002b1c5     0x2aed .\CortexM4\ARM_GCC_541\Debug\cy_ble_bas.o
- .debug_info    0x0002dcb2     0x17f2 .\CortexM4\ARM_GCC_541\Debug\cy_ble_custom.o
+ .debug_info    0x0000007f      0xeaa .\CortexM4\ARM_GCC_541\Debug\main_cm4.o
+ .debug_info    0x00000f29     0x1bb3 .\CortexM4\ARM_GCC_541\Debug\system_psoc6_cm4.o
+ .debug_info    0x00002adc     0x122a .\CortexM4\ARM_GCC_541\Debug\HostMain.o
+ .debug_info    0x00003d06     0x1a70 .\CortexM4\ARM_GCC_541\Debug\BLE-communication.o
+ .debug_info    0x00005776       0xac .\CortexM4\ARM_GCC_541\Debug\cymetadata.o
+ .debug_info    0x00005822     0x182b .\CortexM4\ARM_GCC_541\Debug\BLE.o
+ .debug_info    0x0000704d     0x1869 .\CortexM4\ARM_GCC_541\Debug\BLE_config.o
+ .debug_info    0x000088b6      0x718 .\CortexM4\ARM_GCC_541\Debug\BLE_bas_config.o
+ .debug_info    0x00008fce      0x71d .\CortexM4\ARM_GCC_541\Debug\BLE_custom_config.o
+ .debug_info    0x000096eb      0xdfa .\CortexM4\ARM_GCC_541\Debug\UART_DEB.o
+ .debug_info    0x0000a4e5      0xe11 .\CortexM4\ARM_GCC_541\Debug\cy_sysint.o
+ .debug_info    0x0000b2f6      0x906 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_drv.o
+ .debug_info    0x0000bbfc      0xc1e .\CortexM4\ARM_GCC_541\Debug\cy_ipc_sema.o
+ .debug_info    0x0000c81a     0x1952 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
+ .debug_info    0x0000e16c     0x11b0 .\CortexM4\ARM_GCC_541\Debug\cy_scb_common.o
+ .debug_info    0x0000f31c     0x29bc .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
+ .debug_info    0x00011cd8     0x2a10 .\CortexM4\ARM_GCC_541\Debug\cy_flash.o
+ .debug_info    0x000146e8     0x4014 .\CortexM4\ARM_GCC_541\Debug\cy_syspm.o
+ .debug_info    0x000186fc     0x24fa .\CortexM4\ARM_GCC_541\Debug\cy_syslib.o
+ .debug_info    0x0001abf6       0xad .\CortexM4\ARM_GCC_541\Debug\cy_syslib_gcc.o
+ .debug_info    0x0001aca3      0x551 .\CortexM4\ARM_GCC_541\Debug\cy_device.o
+ .debug_info    0x0001b1f4     0x3954 .\CortexM4\ARM_GCC_541\Debug\cy_ble.o
+ .debug_info    0x0001eb48     0x3225 .\CortexM4\ARM_GCC_541\Debug\cy_ble_hal_pvt.o
+ .debug_info    0x00021d6d     0x2c9e .\CortexM4\ARM_GCC_541\Debug\cy_ble_gap.o
+ .debug_info    0x00024a0b     0x2e6f .\CortexM4\ARM_GCC_541\Debug\cy_ble_gatt.o
+ .debug_info    0x0002787a     0x3c6f .\CortexM4\ARM_GCC_541\Debug\cy_ble_event_handler.o
+ .debug_info    0x0002b4e9     0x2aed .\CortexM4\ARM_GCC_541\Debug\cy_ble_bas.o
+ .debug_info    0x0002dfd6     0x17f2 .\CortexM4\ARM_GCC_541\Debug\cy_ble_custom.o
 
-.debug_abbrev   0x00000000     0x3f6c
+.debug_abbrev   0x00000000     0x3f99
  .debug_abbrev  0x00000000       0x14 .\CortexM4\ARM_GCC_541\Debug\startup_psoc6_01_cm4.o
- .debug_abbrev  0x00000014      0x1a2 .\CortexM4\ARM_GCC_541\Debug\main_cm4.o
- .debug_abbrev  0x000001b6      0x23a .\CortexM4\ARM_GCC_541\Debug\system_psoc6_cm4.o
- .debug_abbrev  0x000003f0      0x21f .\CortexM4\ARM_GCC_541\Debug\HostMain.o
- .debug_abbrev  0x0000060f      0x2c3 .\CortexM4\ARM_GCC_541\Debug\BLE-communication.o
- .debug_abbrev  0x000008d2       0x5d .\CortexM4\ARM_GCC_541\Debug\cymetadata.o
- .debug_abbrev  0x0000092f      0x1c6 .\CortexM4\ARM_GCC_541\Debug\BLE.o
- .debug_abbrev  0x00000af5      0x192 .\CortexM4\ARM_GCC_541\Debug\BLE_config.o
- .debug_abbrev  0x00000c87      0x112 .\CortexM4\ARM_GCC_541\Debug\BLE_bas_config.o
- .debug_abbrev  0x00000d99       0xfb .\CortexM4\ARM_GCC_541\Debug\BLE_custom_config.o
- .debug_abbrev  0x00000e94      0x1a8 .\CortexM4\ARM_GCC_541\Debug\UART_DEB.o
- .debug_abbrev  0x0000103c      0x230 .\CortexM4\ARM_GCC_541\Debug\cy_sysint.o
- .debug_abbrev  0x0000126c      0x188 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_drv.o
- .debug_abbrev  0x000013f4      0x219 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_sema.o
- .debug_abbrev  0x0000160d      0x32b .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
- .debug_abbrev  0x00001938      0x294 .\CortexM4\ARM_GCC_541\Debug\cy_scb_common.o
- .debug_abbrev  0x00001bcc      0x332 .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
- .debug_abbrev  0x00001efe      0x356 .\CortexM4\ARM_GCC_541\Debug\cy_flash.o
- .debug_abbrev  0x00002254      0x320 .\CortexM4\ARM_GCC_541\Debug\cy_syspm.o
- .debug_abbrev  0x00002574      0x337 .\CortexM4\ARM_GCC_541\Debug\cy_syslib.o
- .debug_abbrev  0x000028ab       0x14 .\CortexM4\ARM_GCC_541\Debug\cy_syslib_gcc.o
- .debug_abbrev  0x000028bf       0x9d .\CortexM4\ARM_GCC_541\Debug\cy_device.o
- .debug_abbrev  0x0000295c      0x373 .\CortexM4\ARM_GCC_541\Debug\cy_ble.o
- .debug_abbrev  0x00002ccf      0x38d .\CortexM4\ARM_GCC_541\Debug\cy_ble_hal_pvt.o
- .debug_abbrev  0x0000305c      0x36d .\CortexM4\ARM_GCC_541\Debug\cy_ble_gap.o
- .debug_abbrev  0x000033c9      0x31d .\CortexM4\ARM_GCC_541\Debug\cy_ble_gatt.o
- .debug_abbrev  0x000036e6      0x3c6 .\CortexM4\ARM_GCC_541\Debug\cy_ble_event_handler.o
- .debug_abbrev  0x00003aac      0x30e .\CortexM4\ARM_GCC_541\Debug\cy_ble_bas.o
- .debug_abbrev  0x00003dba      0x1b2 .\CortexM4\ARM_GCC_541\Debug\cy_ble_custom.o
+ .debug_abbrev  0x00000014      0x1b1 .\CortexM4\ARM_GCC_541\Debug\main_cm4.o
+ .debug_abbrev  0x000001c5      0x23a .\CortexM4\ARM_GCC_541\Debug\system_psoc6_cm4.o
+ .debug_abbrev  0x000003ff      0x22e .\CortexM4\ARM_GCC_541\Debug\HostMain.o
+ .debug_abbrev  0x0000062d      0x2d2 .\CortexM4\ARM_GCC_541\Debug\BLE-communication.o
+ .debug_abbrev  0x000008ff       0x5d .\CortexM4\ARM_GCC_541\Debug\cymetadata.o
+ .debug_abbrev  0x0000095c      0x1c6 .\CortexM4\ARM_GCC_541\Debug\BLE.o
+ .debug_abbrev  0x00000b22      0x192 .\CortexM4\ARM_GCC_541\Debug\BLE_config.o
+ .debug_abbrev  0x00000cb4      0x112 .\CortexM4\ARM_GCC_541\Debug\BLE_bas_config.o
+ .debug_abbrev  0x00000dc6       0xfb .\CortexM4\ARM_GCC_541\Debug\BLE_custom_config.o
+ .debug_abbrev  0x00000ec1      0x1a8 .\CortexM4\ARM_GCC_541\Debug\UART_DEB.o
+ .debug_abbrev  0x00001069      0x230 .\CortexM4\ARM_GCC_541\Debug\cy_sysint.o
+ .debug_abbrev  0x00001299      0x188 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_drv.o
+ .debug_abbrev  0x00001421      0x219 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_sema.o
+ .debug_abbrev  0x0000163a      0x32b .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
+ .debug_abbrev  0x00001965      0x294 .\CortexM4\ARM_GCC_541\Debug\cy_scb_common.o
+ .debug_abbrev  0x00001bf9      0x332 .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
+ .debug_abbrev  0x00001f2b      0x356 .\CortexM4\ARM_GCC_541\Debug\cy_flash.o
+ .debug_abbrev  0x00002281      0x320 .\CortexM4\ARM_GCC_541\Debug\cy_syspm.o
+ .debug_abbrev  0x000025a1      0x337 .\CortexM4\ARM_GCC_541\Debug\cy_syslib.o
+ .debug_abbrev  0x000028d8       0x14 .\CortexM4\ARM_GCC_541\Debug\cy_syslib_gcc.o
+ .debug_abbrev  0x000028ec       0x9d .\CortexM4\ARM_GCC_541\Debug\cy_device.o
+ .debug_abbrev  0x00002989      0x373 .\CortexM4\ARM_GCC_541\Debug\cy_ble.o
+ .debug_abbrev  0x00002cfc      0x38d .\CortexM4\ARM_GCC_541\Debug\cy_ble_hal_pvt.o
+ .debug_abbrev  0x00003089      0x36d .\CortexM4\ARM_GCC_541\Debug\cy_ble_gap.o
+ .debug_abbrev  0x000033f6      0x31d .\CortexM4\ARM_GCC_541\Debug\cy_ble_gatt.o
+ .debug_abbrev  0x00003713      0x3c6 .\CortexM4\ARM_GCC_541\Debug\cy_ble_event_handler.o
+ .debug_abbrev  0x00003ad9      0x30e .\CortexM4\ARM_GCC_541\Debug\cy_ble_bas.o
+ .debug_abbrev  0x00003de7      0x1b2 .\CortexM4\ARM_GCC_541\Debug\cy_ble_custom.o
 
 .debug_aranges  0x00000000      0xa60
  .debug_aranges
@@ -7565,60 +7645,60 @@ OUTPUT(C:\Users\dryos\Documents\GitHub\PRJ4\POPE\POPEproject.cydsn\CortexM4\ARM_
  .debug_ranges  0x00000918       0x48 .\CortexM4\ARM_GCC_541\Debug\cy_ble_bas.o
  .debug_ranges  0x00000960       0x18 .\CortexM4\ARM_GCC_541\Debug\cy_ble_custom.o
 
-.debug_str      0x00000000     0xf9d6
- .debug_str     0x00000000      0xecd .\CortexM4\ARM_GCC_541\Debug\main_cm4.o
-                                0xf56 (size before relaxing)
- .debug_str     0x00000ecd     0x17bb .\CortexM4\ARM_GCC_541\Debug\system_psoc6_cm4.o
+.debug_str      0x00000000     0xfb1a
+ .debug_str     0x00000000     0x1011 .\CortexM4\ARM_GCC_541\Debug\main_cm4.o
+                               0x109a (size before relaxing)
+ .debug_str     0x00001011     0x17bb .\CortexM4\ARM_GCC_541\Debug\system_psoc6_cm4.o
                                0x23d5 (size before relaxing)
- .debug_str     0x00002688     0x12cc .\CortexM4\ARM_GCC_541\Debug\HostMain.o
-                               0x1e70 (size before relaxing)
- .debug_str     0x00003954      0xd7f .\CortexM4\ARM_GCC_541\Debug\BLE-communication.o
-                               0x2b93 (size before relaxing)
- .debug_str     0x000046d3       0x30 .\CortexM4\ARM_GCC_541\Debug\cymetadata.o
+ .debug_str     0x000027cc     0x12cc .\CortexM4\ARM_GCC_541\Debug\HostMain.o
+                               0x1fb4 (size before relaxing)
+ .debug_str     0x00003a98      0xd7f .\CortexM4\ARM_GCC_541\Debug\BLE-communication.o
+                               0x2cd7 (size before relaxing)
+ .debug_str     0x00004817       0x30 .\CortexM4\ARM_GCC_541\Debug\cymetadata.o
                                 0x1be (size before relaxing)
- .debug_str     0x00004703      0xd20 .\CortexM4\ARM_GCC_541\Debug\BLE.o
+ .debug_str     0x00004847      0xd20 .\CortexM4\ARM_GCC_541\Debug\BLE.o
                                0x3ac8 (size before relaxing)
- .debug_str     0x00005423      0x1c0 .\CortexM4\ARM_GCC_541\Debug\BLE_config.o
+ .debug_str     0x00005567      0x1c0 .\CortexM4\ARM_GCC_541\Debug\BLE_config.o
                                0x3835 (size before relaxing)
- .debug_str     0x000055e3       0x8d .\CortexM4\ARM_GCC_541\Debug\BLE_bas_config.o
+ .debug_str     0x00005727       0x8d .\CortexM4\ARM_GCC_541\Debug\BLE_bas_config.o
                                 0xaad (size before relaxing)
- .debug_str     0x00005670       0x4e .\CortexM4\ARM_GCC_541\Debug\BLE_custom_config.o
+ .debug_str     0x000057b4       0x4e .\CortexM4\ARM_GCC_541\Debug\BLE_custom_config.o
                                 0xacb (size before relaxing)
- .debug_str     0x000056be      0x3de .\CortexM4\ARM_GCC_541\Debug\UART_DEB.o
+ .debug_str     0x00005802      0x3de .\CortexM4\ARM_GCC_541\Debug\UART_DEB.o
                                 0xf84 (size before relaxing)
- .debug_str     0x00005a9c      0x147 .\CortexM4\ARM_GCC_541\Debug\cy_sysint.o
+ .debug_str     0x00005be0      0x147 .\CortexM4\ARM_GCC_541\Debug\cy_sysint.o
                                0x195f (size before relaxing)
- .debug_str     0x00005be3      0x191 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_drv.o
+ .debug_str     0x00005d27      0x191 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_drv.o
                                 0x97f (size before relaxing)
- .debug_str     0x00005d74      0x26f .\CortexM4\ARM_GCC_541\Debug\cy_ipc_sema.o
+ .debug_str     0x00005eb8      0x26f .\CortexM4\ARM_GCC_541\Debug\cy_ipc_sema.o
                                 0xb6c (size before relaxing)
- .debug_str     0x00005fe3      0x48f .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
+ .debug_str     0x00006127      0x48f .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
                                0x208e (size before relaxing)
- .debug_str     0x00006472      0x1de .\CortexM4\ARM_GCC_541\Debug\cy_scb_common.o
+ .debug_str     0x000065b6      0x1de .\CortexM4\ARM_GCC_541\Debug\cy_scb_common.o
                                 0xca8 (size before relaxing)
- .debug_str     0x00006650      0x64c .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
+ .debug_str     0x00006794      0x64c .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
                                0x16d8 (size before relaxing)
- .debug_str     0x00006c9c      0xcf9 .\CortexM4\ARM_GCC_541\Debug\cy_flash.o
+ .debug_str     0x00006de0      0xcf9 .\CortexM4\ARM_GCC_541\Debug\cy_flash.o
                                0x2dbd (size before relaxing)
- .debug_str     0x00007995     0x16e7 .\CortexM4\ARM_GCC_541\Debug\cy_syspm.o
+ .debug_str     0x00007ad9     0x16e7 .\CortexM4\ARM_GCC_541\Debug\cy_syspm.o
                                0x2b79 (size before relaxing)
- .debug_str     0x0000907c      0x521 .\CortexM4\ARM_GCC_541\Debug\cy_syslib.o
+ .debug_str     0x000091c0      0x521 .\CortexM4\ARM_GCC_541\Debug\cy_syslib.o
                                0x1cb2 (size before relaxing)
- .debug_str     0x0000959d       0x5d .\CortexM4\ARM_GCC_541\Debug\cy_device.o
+ .debug_str     0x000096e1       0x5d .\CortexM4\ARM_GCC_541\Debug\cy_device.o
                                 0x7cc (size before relaxing)
- .debug_str     0x000095fa     0x19a0 .\CortexM4\ARM_GCC_541\Debug\cy_ble.o
+ .debug_str     0x0000973e     0x19a0 .\CortexM4\ARM_GCC_541\Debug\cy_ble.o
                                0x59bf (size before relaxing)
- .debug_str     0x0000af9a      0xd6b .\CortexM4\ARM_GCC_541\Debug\cy_ble_hal_pvt.o
+ .debug_str     0x0000b0de      0xd6b .\CortexM4\ARM_GCC_541\Debug\cy_ble_hal_pvt.o
                                0x45f7 (size before relaxing)
- .debug_str     0x0000bd05      0x48a .\CortexM4\ARM_GCC_541\Debug\cy_ble_gap.o
+ .debug_str     0x0000be49      0x48a .\CortexM4\ARM_GCC_541\Debug\cy_ble_gap.o
                                0x49d3 (size before relaxing)
- .debug_str     0x0000c18f     0x30d2 .\CortexM4\ARM_GCC_541\Debug\cy_ble_gatt.o
+ .debug_str     0x0000c2d3     0x30d2 .\CortexM4\ARM_GCC_541\Debug\cy_ble_gatt.o
                                0x72fd (size before relaxing)
- .debug_str     0x0000f261      0x50b .\CortexM4\ARM_GCC_541\Debug\cy_ble_event_handler.o
+ .debug_str     0x0000f3a5      0x50b .\CortexM4\ARM_GCC_541\Debug\cy_ble_event_handler.o
                                0x7efb (size before relaxing)
- .debug_str     0x0000f76c      0x215 .\CortexM4\ARM_GCC_541\Debug\cy_ble_bas.o
+ .debug_str     0x0000f8b0      0x215 .\CortexM4\ARM_GCC_541\Debug\cy_ble_bas.o
                                0x6ed8 (size before relaxing)
- .debug_str     0x0000f981       0x55 .\CortexM4\ARM_GCC_541\Debug\cy_ble_custom.o
+ .debug_str     0x0000fac5       0x55 .\CortexM4\ARM_GCC_541\Debug\cy_ble_custom.o
                                0x4e1c (size before relaxing)
 
 .debug_frame    0x00000000    0x121a0

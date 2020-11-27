@@ -26,5 +26,12 @@
 
 #endif /* ((__CORTEX_M == 0) && (CY_CORE_ID == 0)) */
 
+/* ARM CM4 */
+#if (((__CORTEX_M == 4) && (CY_CORE_ID == 0)))
+    #define idleInt__INTC_ASSIGNED 1u
+    extern const cy_stc_sysint_t idleInt_cfg;
+
+#endif /* ((__CORTEX_M == 4) && (CY_CORE_ID == 0)) */
+
 
 #endif /* INCLUDED_CYFITTER_SYSINT_CFG_H */

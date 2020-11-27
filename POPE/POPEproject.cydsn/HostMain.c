@@ -31,6 +31,7 @@ int HostMain(void)
     //INIT UI -> lav function? LED'er (debugging)
     #endif
     
+    
     Cy_BLE_Start(BLE_EventHandler);
     
     #if (SIMULATE != 1)

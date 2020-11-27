@@ -1,6 +1,6 @@
 // ======================================================================
 // POPEproject.v generated from TopDesign.cysch
-// 11/27/2020 at 13:15
+// 11/27/2020 at 15:37
 // This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 // ======================================================================
 
@@ -393,9 +393,66 @@ module SCB_UART_PDL_v2_0_2 (
 
 endmodule
 
+// TCPWM_Counter_PDL_v1_0(CaptureInput=7, CaptureInputMasked=3, ClockPrescaler=7, Compare0=16384, Compare1=16384, CompareOrCapture=2, CountDirection=1, CountInput=7, CountInputMasked=3, EnableCompareSwap=false, InterruptSource=1, Period=390625, ReloadInput=7, ReloadInputMasked=3, Resolution=32, RunMode=0, StartInput=7, StartInputMasked=3, StopInput=7, StopInputMasked=3, CY_API_CALLBACK_HEADER_INCLUDE=#include "cyapicallbacks.h", CY_COMMENT=, CY_COMPONENT_NAME=TCPWM_Counter_PDL_v1_0, CY_CONFIG_TITLE=idleTimer, CY_CONST_CONFIG=true, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=idleTimer, CY_INSTANCE_SHORT_NAME=idleTimer, CY_MAJOR_VERSION=1, CY_MINOR_VERSION=0, CY_PDL_DRIVER_NAME=tcpwm, CY_PDL_DRIVER_REQ_VERSION=1.0.0, CY_PDL_DRIVER_SUBGROUP=, CY_PDL_DRIVER_VARIANT=, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  4.4, INSTANCE_NAME=idleTimer, )
+module TCPWM_Counter_PDL_v1_0_3 (
+    capture,
+    clock,
+    compare,
+    count,
+    interrupt,
+    ovrflw,
+    reload,
+    start,
+    stop,
+    undrflw);
+    input       capture;
+    input       clock;
+    output      compare;
+    input       count;
+    output      interrupt;
+    output      ovrflw;
+    input       reload;
+    input       start;
+    input       stop;
+    output      undrflw;
+
+
+          wire  Net_1;
+          wire  Net_2;
+
+    cy_mxs40_tcpwm_v1_0 TCPWM (
+        .capture(capture),
+        .clock(clock),
+        .count(count),
+        .interrupt(interrupt),
+        .line(Net_2),
+        .line_compl(Net_1),
+        .reload(reload),
+        .start(start),
+        .stop(stop),
+        .tr_compare_match(compare),
+        .tr_overflow(ovrflw),
+        .tr_underflow(undrflw));
+    defparam TCPWM.exact_width = 0;
+    defparam TCPWM.width = 32;
+
+
+
+endmodule
+
 // top
 module top ;
 
+          wire  Net_39;
+          wire  Net_16;
+          wire  Net_18;
+          wire  Net_17;
+          wire  Net_22;
+          wire  Net_21;
+          wire  Net_19;
+          wire  Net_24;
+          wire  Net_25;
+          wire  Net_20;
           wire  Net_14;
           wire  Net_13;
           wire  Net_12;
@@ -410,6 +467,7 @@ module top ;
           wire  Net_3;
           wire  Net_2;
           wire  Net_1;
+          wire  Net_32;
 
     BLE_PDL_v2_20_1 BLE_PM (
         .lna_rx_en(Net_1),
@@ -464,6 +522,38 @@ module top ;
         .tx_dma(Net_12),
         .tx_en_out(Net_13),
         .tx_out(Net_14));
+
+
+	cy_mxs40_isr_v1_0
+		#(.deepsleep_required(0),
+		  .int_type(2'b00))
+		idleInt
+		 (.int_signal(Net_32));
+
+
+    TCPWM_Counter_PDL_v1_0_3 idleTimer (
+        .capture(1'b0),
+        .clock(Net_25),
+        .compare(Net_24),
+        .count(1'b1),
+        .interrupt(Net_21),
+        .ovrflw(Net_22),
+        .reload(1'b0),
+        .start(1'b0),
+        .stop(1'b0),
+        .undrflw(Net_32));
+
+
+	cy_clock_v1_0
+		#(.id("b4da76bc-7fe0-4ac5-85f7-34a7e54aa2db"),
+		  .source_clock_id("2FB4EC85-8328-4C5A-9ED9-8B63060178EB"),
+		  .divisor(0),
+		  .period("200000000"),
+		  .is_direct(0),
+		  .is_digital(0))
+		Clock_1
+		 (.clock_out(Net_25));
+
 
 
 
