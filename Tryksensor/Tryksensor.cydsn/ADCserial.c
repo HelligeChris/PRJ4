@@ -89,9 +89,8 @@ int* send(int gain, uint period_ns)
     Pin_SCK_Write(0);
     Timer_1_WriteCounter(0);
     Timer_1_Start();
-    while(DataRX == Sending_DATA);
+    while(DataRX != Done);
     Pin_SCK_Write(0);
-    
     
     return Datain;
 }

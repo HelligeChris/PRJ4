@@ -169,15 +169,6 @@
 <v>Tryksensor\Tryksensor\PSoC 5LP Architecture TRM</v>
 <v>Tryksensor\Tryksensor\CY8C58LP Family Datasheet</v>
 <v>Tryksensor\Tryksensor\System Reference Guides</v>
-<v>Tryksensor\Tryksensor\System Reference Guides\cy_boot_v6_0</v>
-<v>Tryksensor\Tryksensor\cy_clock_v2_20.pdf</v>
-<v>Tryksensor\Tryksensor\cy_isr_v1_70</v>
-<v>Tryksensor\Tryksensor\cy_isr_v1_70\cy_isr_v1_70.pdf</v>
-<v>Tryksensor\Tryksensor\cy_pins_v2_20</v>
-<v>Tryksensor\Tryksensor\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
-<v>Tryksensor\Tryksensor\Timer_v2_80.pdf</v>
-<v>Tryksensor\Tryksensor\UART_v2_50.pdf</v>
-<v>Tryksensor\Tryksensor\ZeroTerminal.pdf</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
 <v>Tryksensor</v>
@@ -185,15 +176,6 @@
 <v>Tryksensor\Tryksensor\PSoC 5LP Architecture TRM</v>
 <v>Tryksensor\Tryksensor\CY8C58LP Family Datasheet</v>
 <v>Tryksensor\Tryksensor\System Reference Guides</v>
-<v>Tryksensor\Tryksensor\System Reference Guides\cy_boot_v6_0</v>
-<v>Tryksensor\Tryksensor\cy_clock_v2_20.pdf</v>
-<v>Tryksensor\Tryksensor\cy_isr_v1_70</v>
-<v>Tryksensor\Tryksensor\cy_isr_v1_70\cy_isr_v1_70.pdf</v>
-<v>Tryksensor\Tryksensor\cy_pins_v2_20</v>
-<v>Tryksensor\Tryksensor\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
-<v>Tryksensor\Tryksensor\Timer_v2_80.pdf</v>
-<v>Tryksensor\Tryksensor\UART_v2_50.pdf</v>
-<v>Tryksensor\Tryksensor\ZeroTerminal.pdf</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStatesV2>
