@@ -368,6 +368,9 @@
 <v>POPE\POPEproject\PSoC 63 Family Datasheet</v>
 <v>POPE\POPEproject\Peripheral Driver Library</v>
 <v>POPE\POPEproject\System Reference Guides</v>
+<v>POPE\POPEproject\BLE_PDL_v2_20.pdf</v>
+<v>POPE\POPEproject\GPIO_PDL_v1_0.pdf</v>
+<v>POPE\POPEproject\SCB_UART_PDL_v2_0.pdf</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
 <v>POPE</v>
@@ -376,6 +379,9 @@
 <v>POPE\POPEproject\PSoC 63 Family Datasheet</v>
 <v>POPE\POPEproject\Peripheral Driver Library</v>
 <v>POPE\POPEproject\System Reference Guides</v>
+<v>POPE\POPEproject\BLE_PDL_v2_20.pdf</v>
+<v>POPE\POPEproject\GPIO_PDL_v1_0.pdf</v>
+<v>POPE\POPEproject\SCB_UART_PDL_v2_0.pdf</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStatesV2>
