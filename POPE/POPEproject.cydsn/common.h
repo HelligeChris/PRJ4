@@ -28,7 +28,7 @@
 //Conditional Compilation Parameters
 #define ENABLED 1u
 #define DISABLED 0u
-#define DEBUG_UART_ENABLED 0
+#define DEBUG_UART_ENABLED 1
 
 //Functions
 int HostMain(void);

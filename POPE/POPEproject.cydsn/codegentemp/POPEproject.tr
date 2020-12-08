@@ -28,7 +28,7 @@ Clock: CyIMO               | N/A  | Target: 8.00 MHz    |
 Clock: CyPeriClk_App       | N/A  | Target: 50.00 MHz   | 
 Clock: CyWCO               | N/A  | Target: 0.03 MHz    | 
 Clock: I2C_MPU6050_SCBCLK  | N/A  | Target: 1.56 MHz    | 
-Clock: UART_DEB_SCBCLK     | N/A  | Target: 1.52 MHz    | 
+Clock: UART_DEB_SCBCLK     | N/A  | Target: 0.12 MHz    | 
 
  =====================================================================
                     End of Clock Frequency Summary

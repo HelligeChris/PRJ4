@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="POPE\POPEproject\TopDesign">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="POPE\POPEproject\Host Files\Source Files\HostMain.c">
 <ExpandedNodeIds>
 <v>POPE</v>
 <v>POPE\POPEproject</v>
@@ -77,7 +77,6 @@
 <v>POPE\POPEproject\Host Files\Source Files\kadenceControl.c</v>
 <v>POPE\POPEproject\Host Files\Source Files\POPE-app.c</v>
 <v>POPE\POPEproject\Host Files\Source Files\trykControl.c</v>
-<v>POPE\POPEproject\Shared Files</v>
 <v>POPE\POPEproject\Shared Files\cy_ble_config.h</v>
 <v>POPE\POPEproject\Shared Files\cyapicallbacks.h</v>
 <v>POPE\POPEproject\Shared Files\system_psoc6.h</v>
@@ -90,47 +89,6 @@
 <v>POPE\POPEproject\Generated_Source\PSoC6\pdl\drivers\peripheral\scb</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
-<v>POPE</v>
-<v>POPE\POPEproject</v>
-<v>POPE\POPEproject\TopDesign</v>
-<v>POPE\POPEproject\POPEproject.cydwr</v>
-<v>POPE\POPEproject\POPEproject.cydwr\Pins</v>
-<v>POPE\POPEproject\POPEproject.cydwr\Analog</v>
-<v>POPE\POPEproject\POPEproject.cydwr\DMA</v>
-<v>POPE\POPEproject\POPEproject.cydwr\Clocks</v>
-<v>POPE\POPEproject\POPEproject.cydwr\Interrupts</v>
-<v>POPE\POPEproject\POPEproject.cydwr\System</v>
-<v>POPE\POPEproject\POPEproject.cydwr\Directives</v>
-<v>POPE\POPEproject\CM0p (Core 0)</v>
-<v>POPE\POPEproject\CM0p (Core 0)\ARM GCC Generic</v>
-<v>POPE\POPEproject\CM0p (Core 0)\ARM GCC Generic\cy8c6xx7_cm0plus.ld</v>
-<v>POPE\POPEproject\CM0p (Core 0)\ARM IAR Generic</v>
-<v>POPE\POPEproject\CM0p (Core 0)\ARM IAR Generic\cy8c6xx7_cm0plus.icf</v>
-<v>POPE\POPEproject\CM0p (Core 0)\ARM MDK Generic</v>
-<v>POPE\POPEproject\CM0p (Core 0)\ARM MDK Generic\cy8c6xx7_cm0plus.scat</v>
-<v>POPE\POPEproject\CM0p (Core 0)\Header Files</v>
-<v>POPE\POPEproject\CM0p (Core 0)\Source Files</v>
-<v>POPE\POPEproject\CM0p (Core 0)\Source Files\ARM GCC Generic</v>
-<v>POPE\POPEproject\CM0p (Core 0)\Source Files\ARM GCC Generic\startup_psoc6_01_cm0plus.S</v>
-<v>POPE\POPEproject\CM0p (Core 0)\Source Files\ARM IAR Generic</v>
-<v>POPE\POPEproject\CM0p (Core 0)\Source Files\ARM IAR Generic\startup_psoc6_01_cm0plus.s</v>
-<v>POPE\POPEproject\CM0p (Core 0)\Source Files\ARM MDK Generic</v>
-<v>POPE\POPEproject\CM0p (Core 0)\Source Files\ARM MDK Generic\startup_psoc6_01_cm0plus.s</v>
-<v>POPE\POPEproject\CM0p (Core 0)\Source Files\main_cm0p.c</v>
-<v>POPE\POPEproject\CM0p (Core 0)\Source Files\system_psoc6_cm0plus.c</v>
-<v>POPE\POPEproject\CM4 (Core 1)</v>
-<v>POPE\POPEproject\CM4 (Core 1)\ARM GCC Generic</v>
-<v>POPE\POPEproject\CM4 (Core 1)\ARM GCC Generic\cy8c6xx7_cm4_dual.ld</v>
-<v>POPE\POPEproject\CM4 (Core 1)\ARM IAR Generic</v>
-<v>POPE\POPEproject\CM4 (Core 1)\ARM IAR Generic\cy8c6xx7_cm4_dual.icf</v>
-<v>POPE\POPEproject\CM4 (Core 1)\ARM MDK Generic</v>
-<v>POPE\POPEproject\CM4 (Core 1)\ARM MDK Generic\cy8c6xx7_cm4_dual.scat</v>
-<v>POPE\POPEproject\CM4 (Core 1)\Header Files</v>
-<v>POPE\POPEproject\CM4 (Core 1)\Source Files</v>
-<v>POPE\POPEproject\CM4 (Core 1)\Source Files\ARM GCC Generic</v>
-<v>POPE\POPEproject\CM4 (Core 1)\Source Files\ARM GCC Generic\startup_psoc6_01_cm4.S</v>
-<v>POPE\POPEproject\CM4 (Core 1)\Source Files\ARM IAR Generic</v>
-<v>POPE\POPEproject\CM4 (Core 1)\Source Files\ARM IAR Generic\startup_psoc6_01_cm4.s</v>
 <v>POPE\POPEproject\CM4 (Core 1)\Source Files\ARM MDK Generic</v>
 <v>POPE\POPEproject\CM4 (Core 1)\Source Files\ARM MDK Generic\startup_psoc6_01_cm4.s</v>
 <v>POPE\POPEproject\CM4 (Core 1)\Source Files\main_cm4.c</v>
@@ -142,6 +100,32 @@
 <v>POPE\POPEproject\Host Files\Header Files\common.h</v>
 <v>POPE\POPEproject\Host Files\Header Files\i2cFunctions.h</v>
 <v>POPE\POPEproject\Host Files\Header Files\kadenceControl.h</v>
+<v>POPE\POPEproject\Host Files\Header Files\POPE-app.h</v>
+<v>POPE\POPEproject\Host Files\Header Files\trykControl.h</v>
+<v>POPE\POPEproject\Host Files\Header Files\VT100Terminal.h</v>
+<v>POPE\POPEproject\Host Files\Source Files</v>
+<v>POPE\POPEproject\Host Files\Source Files\batteriControl.c</v>
+<v>POPE\POPEproject\Host Files\Source Files\BLE-communication.c</v>
+<v>POPE\POPEproject\Host Files\Source Files\HostMain.c</v>
+<v>POPE\POPEproject\Host Files\Source Files\i2cFunctions.c</v>
+<v>POPE\POPEproject\Host Files\Source Files\kadenceControl.c</v>
+<v>POPE\POPEproject\Host Files\Source Files\POPE-app.c</v>
+<v>POPE\POPEproject\Host Files\Source Files\trykControl.c</v>
+<v>POPE\POPEproject\Host Files\Source Files\VT100Terminal.c</v>
+<v>POPE\POPEproject\Shared Files</v>
+<v>POPE\POPEproject\Generated_Source</v>
+<v>POPE\POPEproject\Generated_Source\PSoC6</v>
+<v>POPE\POPEproject\Generated_Source\PSoC6\pdl</v>
+<v>POPE\POPEproject\Generated_Source\PSoC6\pdl\cmsis</v>
+<v>POPE\POPEproject\Generated_Source\PSoC6\pdl\devices</v>
+<v>POPE\POPEproject\Generated_Source\PSoC6\pdl\drivers</v>
+<v>POPE\POPEproject\Generated_Source\PSoC6\pdl\drivers\peripheral</v>
+<v>POPE\POPEproject\Generated_Source\PSoC6\pdl\drivers\peripheral\device</v>
+<v>POPE\POPEproject\Generated_Source\PSoC6\pdl\drivers\peripheral\efuse</v>
+<v>POPE\POPEproject\Generated_Source\PSoC6\pdl\drivers\peripheral\flash</v>
+<v>POPE\POPEproject\Generated_Source\PSoC6\pdl\drivers\peripheral\gpio</v>
+<v>POPE\POPEproject\Generated_Source\PSoC6\pdl\drivers\peripheral\ipc</v>
+<v>POPE\POPEproject\Generated_Source\PSoC6\pdl\drivers\peripheral\lvd</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
@@ -379,22 +363,6 @@
 <v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_hps.lst</v>
 <v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_hrs.lst</v>
 <v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_hts.lst</v>
-<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_ias.lst</v>
-<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_ips.lst</v>
-<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_lls.lst</v>
-<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_lns.lst</v>
-<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_ndcs.lst</v>
-<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_pass.lst</v>
-<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_plxs.lst</v>
-<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_rscs.lst</v>
-<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_rtus.lst</v>
-<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_scps.lst</v>
-<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_tps.lst</v>
-<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_uds.lst</v>
-<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_wpts.lst</v>
-<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_wss.lst</v>
-<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_device.lst</v>
-<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_efuse.lst</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
@@ -435,25 +403,20 @@
 </CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
 <Unloaded />
 <OpenDocs>
-<name v=".\POPEproject.cydsn\TopDesign\TopDesign.cysch" />
-<name v=".\POPEproject.cydsn\VT100Terminal.h" />
-<name v=".\POPEproject.cydsn\VT100Terminal.c" />
-<name v=".\POPEproject.cydsn\BLE-communication.c" />
-<name v=".\POPEproject.cydsn\trykControl.c" />
-<name v=".\POPEproject.cydsn\POPE-app.c" />
-<name v=".\POPEproject.cydsn\kadenceControl.c" />
-<name v=".\POPEproject.cydsn\kadenceControl.h" />
 <name v=".\POPEproject.cydsn\HostMain.c" />
-<name v=".\POPEproject.cydsn\main_cm4.c" />
+<name v=".\POPEproject.cydsn\TopDesign\TopDesign.cysch" />
 <name v=".\POPEproject.cydsn\common.h" />
-<name v=".\POPEproject.cydsn\POPE-app.h" />
-<name v=".\POPEproject.cydsn\Generated_Source\PSoC6\I2C_MPU6050.c" />
-<name v=".\POPEproject.cydsn\Generated_Source\PSoC6\I2C_MPU6050.h" />
-<name v=".\POPEproject.cydsn\Generated_Source\PSoC6\I2C_MPU6050_SCBCLK.h" />
-<name v=".\POPEproject.cydsn\Generated_Source\PSoC6\pdl\drivers\peripheral\scb\cy_scb_i2c.c" />
-<name v=".\POPEproject.cydsn\Generated_Source\PSoC6\pdl\drivers\peripheral\scb\cy_scb_i2c.h" />
+<name v=".\POPEproject.cydsn\main_cm0p.c" />
+<name v=".\POPEproject.cydsn\main_cm4.c" />
+<name v=".\POPEproject.cydsn\POPE-app.c" />
+<name v=".\POPEproject.cydsn\VT100Terminal.c" />
+<name v=".\POPEproject.cydsn\trykControl.c" />
+<name v=".\POPEproject.cydsn\kadenceControl.c" />
 <name v=".\POPEproject.cydsn\i2cFunctions.c" />
-<name v=".\POPEproject.cydsn\i2cFunctions.h" />
+<name v=".\POPEproject.cydsn\VT100Terminal.h" />
+<name v=".\POPEproject.cydsn\trykControl.h" />
+<name v=".\POPEproject.cydsn\POPE-app.h" />
+<name v=".\POPEproject.cydsn\kadenceControl.h" />
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -461,7 +424,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1428, 786" SelectedTabbedMdiWindow="ead6c76f-9a7e-4712-b6f0-d08b7644d4f3"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="121ce316-47dd-446f-a5ed-45703a573bb8" /><DocumentWindow Key="F:\Git downloads\PRJ4\POPE\POPEproject.cydsn\TopDesign\TopDesign.cysch" Guid="ead6c76f-9a7e-4712-b6f0-d08b7644d4f3" /><DocumentWindow Key="F:\Git downloads\PRJ4\POPE\POPEproject.cydsn\VT100Terminal.h" Guid="8d12f8e2-0536-4f30-81d9-17d86e7f4eef" /><DocumentWindow Key="F:\Git downloads\PRJ4\POPE\POPEproject.cydsn\VT100Terminal.c" Guid="bc5dac31-0ec5-4bbf-888f-d3a4eae0384e" /><DocumentWindow Key="F:\Git downloads\PRJ4\POPE\POPEproject.cydsn\BLE-communication.c" Guid="13e1bc4a-ff80-4395-a228-ca36190af1af" /><DocumentWindow Key="F:\Git downloads\PRJ4\POPE\POPEproject.cydsn\trykControl.c" Guid="b56fb36d-2f8b-4098-95bf-eca3de51a5b3" /><DocumentWindow Key="F:\Git downloads\PRJ4\POPE\POPEproject.cydsn\POPE-app.c" Guid="64c7333a-444d-4869-9c18-9f7a32be66cd" /><DocumentWindow Key="F:\Git downloads\PRJ4\POPE\POPEproject.cydsn\kadenceControl.c" Guid="e5149fa7-a849-4bf2-914b-0eb26bb780a1" /><DocumentWindow Key="F:\Git downloads\PRJ4\POPE\POPEproject.cydsn\kadenceControl.h" Guid="311f28ac-27af-4be0-8821-29e968fa65eb" /><DocumentWindow Key="F:\Git downloads\PRJ4\POPE\POPEproject.cydsn\HostMain.c" Guid="8bd7f11c-3ea5-48e5-83fb-6693908b3be2" /><DocumentWindow Key="F:\Git downloads\PRJ4\POPE\POPEproject.cydsn\main_cm4.c" Guid="cb1d5e9a-954f-4b32-87b5-107bd114c177" /><DocumentWindow Key="F:\Git downloads\PRJ4\POPE\POPEproject.cydsn\common.h" Guid="9f3172fb-5eb6-4436-bae9-4b89ef878f90" /><DocumentWindow Key="F:\Git downloads\PRJ4\POPE\POPEproject.cydsn\POPE-app.h" Guid="02d92eae-0ec2-4f9d-b57d-e112c50c6f00" /><DocumentWindow Key="F:\Git downloads\PRJ4\POPE\POPEproject.cydsn\Generated_Source\PSoC6\I2C_MPU6050.c" Guid="9c729e17-beb1-42d3-9d8d-01183b0636a7" /><DocumentWindow Key="F:\Git downloads\PRJ4\POPE\POPEproject.cydsn\Generated_Source\PSoC6\I2C_MPU6050.h" Guid="2e8924fd-0770-42d8-b863-5d98734b7fe8" /><DocumentWindow Key="F:\Git downloads\PRJ4\POPE\POPEproject.cydsn\Generated_Source\PSoC6\I2C_MPU6050_SCBCLK.h" Guid="ede42787-14da-482f-90c7-8e0d864272fd" /><DocumentWindow Key="F:\Git downloads\PRJ4\POPE\POPEproject.cydsn\Generated_Source\PSoC6\pdl\drivers\peripheral\scb\cy_scb_i2c.c" Guid="c414dbf0-0c49-432e-b527-8fea841018b9" /><DocumentWindow Key="F:\Git downloads\PRJ4\POPE\POPEproject.cydsn\Generated_Source\PSoC6\pdl\drivers\peripheral\scb\cy_scb_i2c.h" Guid="17585cec-b07a-4be5-b9ba-69bd4a9857cb" /><DocumentWindow Key="F:\Git downloads\PRJ4\POPE\POPEproject.cydsn\i2cFunctions.c" Guid="22238615-31ce-4b2f-a0d0-1bd0a6acab5f" /><DocumentWindow Key="F:\Git downloads\PRJ4\POPE\POPEproject.cydsn\i2cFunctions.h" Guid="e9c61936-ff75-45e8-bc07-f63d90534d57" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1243, 523" SelectedTabbedMdiWindow="fe75f9c0-1421-418a-bfe2-017816e96e6d"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="121ce316-47dd-446f-a5ed-45703a573bb8" /><DocumentWindow Key="C:\Users\dryos\Documents\GitHub\PRJ4\POPE\POPEproject.cydsn\HostMain.c" Guid="fe75f9c0-1421-418a-bfe2-017816e96e6d" /><DocumentWindow Key="C:\Users\dryos\Documents\GitHub\PRJ4\POPE\POPEproject.cydsn\TopDesign\TopDesign.cysch" Guid="d976d84a-3ef9-4774-8798-5f490d18367d" /><DocumentWindow Key="C:\Users\dryos\Documents\GitHub\PRJ4\POPE\POPEproject.cydsn\common.h" Guid="25b56f51-1b65-4640-bdd6-eaf3a7830f19" /><DocumentWindow Key="C:\Users\dryos\Documents\GitHub\PRJ4\POPE\POPEproject.cydsn\main_cm0p.c" Guid="c9a73490-effd-42dd-ac8b-db067650c3aa" /><DocumentWindow Key="C:\Users\dryos\Documents\GitHub\PRJ4\POPE\POPEproject.cydsn\main_cm4.c" Guid="0dce934d-1f51-44a8-8503-6ad07aa1a7bc" /><DocumentWindow Key="C:\Users\dryos\Documents\GitHub\PRJ4\POPE\POPEproject.cydsn\POPE-app.c" Guid="50c19f88-ea57-4c89-a37a-c1768a547b1f" /><DocumentWindow Key="C:\Users\dryos\Documents\GitHub\PRJ4\POPE\POPEproject.cydsn\VT100Terminal.c" Guid="bca2a6d8-779f-46bf-bdac-4685a76d472c" /><DocumentWindow Key="C:\Users\dryos\Documents\GitHub\PRJ4\POPE\POPEproject.cydsn\trykControl.c" Guid="f5fdcd36-06e2-482e-88f1-4b92e38099f9" /><DocumentWindow Key="C:\Users\dryos\Documents\GitHub\PRJ4\POPE\POPEproject.cydsn\kadenceControl.c" Guid="e0dca788-1a4e-4b98-88e3-382c0a21cc75" /><DocumentWindow Key="C:\Users\dryos\Documents\GitHub\PRJ4\POPE\POPEproject.cydsn\i2cFunctions.c" Guid="77382aed-c08e-47dd-b3f9-ecab94372bd9" /><DocumentWindow Key="C:\Users\dryos\Documents\GitHub\PRJ4\POPE\POPEproject.cydsn\VT100Terminal.h" Guid="87757943-f1c4-4cea-9c66-af7cc0daa5a4" /><DocumentWindow Key="C:\Users\dryos\Documents\GitHub\PRJ4\POPE\POPEproject.cydsn\trykControl.h" Guid="c97e93e8-95b0-4f12-9912-2515fe66496a" /><DocumentWindow Key="C:\Users\dryos\Documents\GitHub\PRJ4\POPE\POPEproject.cydsn\POPE-app.h" Guid="d4e04670-ffc3-4f83-9e80-96615b4b4089" /><DocumentWindow Key="C:\Users\dryos\Documents\GitHub\PRJ4\POPE\POPEproject.cydsn\kadenceControl.h" Guid="2a31d8e3-df1d-42ff-91e1-210994a2375f" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
