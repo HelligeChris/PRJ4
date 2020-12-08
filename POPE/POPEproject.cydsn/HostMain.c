@@ -28,9 +28,7 @@ static cy_stc_ble_conn_handle_t appConnHandle;
 int HostMain(void)
 {
     UART_DEB_Start();
-    #if (DEBUG_UART_ENABLED)
     UART_DEB_PutString("Main \r \n ");
-    #endif
     //INIT UI -> lav function? LED'er (debugging)
     
     Cy_BLE_Start(BLE_EventHandler);
@@ -43,7 +41,7 @@ int HostMain(void)
         
         float* RPM = CS_getKadence();
         sprintf(uart_string, "RPM value: %i",(int)RPM);
-        UARTprint("1", uart_string);
+        UART_DEB_PutString(uart_string);
         
         Cy_BLE_ProcessEvents();
         //errcheck?
