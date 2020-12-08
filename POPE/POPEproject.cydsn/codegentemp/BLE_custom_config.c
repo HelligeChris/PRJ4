@@ -27,16 +27,17 @@ static const cy_stc_ble_customs_t cy_ble_customs[0x01u] = {
 
     /* Power service */
     {
-        0x0015u, /* Handle of the Power service */ 
+        0x0014u, /* Handle of the Power service */ 
         {
 
             /* Power Descriptor characteristic */
             {
-                0x0017u, /* Handle of the Power Descriptor characteristic */ 
+                0x0016u, /* Handle of the Power Descriptor characteristic */ 
                 
                 /* Array of Descriptors handles */
                 {
-                    0x0018u, /* Handle of the Characteristic User Description descriptor */ 
+                    0x0017u, /* Handle of the Characteristic User Description descriptor */ 
+                    0x0018u, /* Handle of the Server Characteristic Configuration descriptor */ 
                 }, 
             },
         }, 

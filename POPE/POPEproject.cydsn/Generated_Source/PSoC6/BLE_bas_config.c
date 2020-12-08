@@ -23,7 +23,7 @@ static const cy_stc_ble_bass_t cy_ble_bass[0x01u] = {
         0x0010u, /* Handle of the BAS service */ 
         0x0012u, /* Handle of the Battery Level characteristic */ 
         0x0013u, /* Handle of the Characteristic Presentation Format descriptor */ 
-        0x0014u, /* Handle of the Client Characteristic Configuration descriptor */ 
+        CY_BLE_GATT_INVALID_ATTR_HANDLE_VALUE, /* Handle of the Client Characteristic Configuration descriptor */ 
     },
 };
 

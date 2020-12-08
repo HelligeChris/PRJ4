@@ -42,6 +42,12 @@ void BLE_EventHandler(uint32_t event, void *eventParam)
             UART_DEB_PutString("Device link connected \r \n ");
             #endif
             break;
+            
+        case CY_BLE_EVT_GAP_DEVICE_CONNECTED:
+            #if DEBUG_UART_ENABLED
+            UART_DEB_PutString("Device connected \r \n ");
+            #endif
+            break;
            
         case CY_BLE_EVT_TIMEOUT: 
             #if DEBUG_UART_ENABLED

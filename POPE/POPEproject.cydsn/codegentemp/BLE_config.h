@@ -196,7 +196,7 @@ extern "C" {
 #define CY_BLE_CONFIG_GAP_PERIPHERAL_COUNT          (0x01u)
 
 /** The number of GAP Broadcaster configurations structures. */
-#define CY_BLE_CONFIG_GAP_BROADCASTER_COUNT         (0x00u)
+#define CY_BLE_CONFIG_GAP_BROADCASTER_COUNT         (0x01u)
 
 /** The number of GAP Central configurations structures. */
 #define CY_BLE_CONFIG_GAP_CENTRAL_COUNT             (0x00u)
@@ -240,7 +240,7 @@ extern "C" {
  * CY_BLE_GAP_OBSERVER    (0x08u) - The device operates as an observer.
  * CY_BLE_GAP_HCI         (0x00u) - Used when the BLE operates in HCI mode.
  */ 
-#define CY_BLE_CONFIG_GAP_ROLE                      (0x01u)
+#define CY_BLE_CONFIG_GAP_ROLE                      (0x05u)
 
 /** The Bonding Requirement. */
 #define CY_BLE_CONFIG_BONDING_REQUIREMENT           (0x00u)
@@ -260,7 +260,9 @@ extern "C" {
 #define CY_BLE_SECURITY_CONFIGURATION_0_INDEX   (0x00u)
 
 #define CY_BLE_ADV_PKT_0_INDEX_FLAGS   (0x00u)
+#define CY_BLE_ADV_PKT_1_INDEX_FLAGS   (0x00u)
 #define CY_BLE_PERIPHERAL_CONFIGURATION_0_INDEX   (0x00u)
+#define CY_BLE_BROADCASTER_CONFIGURATION_0_INDEX   (0x01u)
 
 
 /* The additional queue depth provided by the customizer.  */
@@ -317,7 +319,7 @@ extern "C" {
 
 /** GATT Role. */
 #define CY_BLE_CONFIG_GATT_ROLE                     (0x01u)
-#define CY_BLE_CONFIG_GATT_DB_CCCD_COUNT            (0x04u)
+#define CY_BLE_CONFIG_GATT_DB_CCCD_COUNT            (0x02u)
 
 /** Max unique services in the project. */
 #define CY_BLE_MAX_SRVI                             (0x02u)
@@ -375,7 +377,7 @@ typedef enum
 #define CY_BLE_CONFIG_CUSTOM_SERVICE_CHAR_COUNT     (0x01u)
 
 /** The maximum supported count of the Custom Service descriptors in one characteristic. */
-#define CY_BLE_CONFIG_CUSTOM_SERVICE_CHAR_DESCRIPTORS_COUNT  (0x01u)
+#define CY_BLE_CONFIG_CUSTOM_SERVICE_CHAR_DESCRIPTORS_COUNT  (0x02u)
 
 /**
  * Below are the indexes and handles of the defined Custom Services and 
@@ -384,12 +386,14 @@ typedef enum
 #define CY_BLE_POWER_SERVICE_INDEX   (0x00u) /* Index of Power service in the cy_ble_customs array */
 #define CY_BLE_POWER_POWER_DESCRIPTOR_CHAR_INDEX   (0x00u) /* Index of Power Descriptor characteristic */
 #define CY_BLE_POWER_POWER_DESCRIPTOR_CHARACTERISTIC_USER_DESCRIPTION_DESC_INDEX   (0x00u) /* Index of Characteristic User Description descriptor */
+#define CY_BLE_POWER_POWER_DESCRIPTOR_SERVER_CHARACTERISTIC_CONFIGURATION_DESC_INDEX   (0x01u) /* Index of Server Characteristic Configuration descriptor */
 
 
-#define CY_BLE_POWER_SERVICE_HANDLE   (0x0015u) /* Handle of Power service */
-#define CY_BLE_POWER_POWER_DESCRIPTOR_DECL_HANDLE   (0x0016u) /* Handle of Power Descriptor characteristic declaration */
-#define CY_BLE_POWER_POWER_DESCRIPTOR_CHAR_HANDLE   (0x0017u) /* Handle of Power Descriptor characteristic */
-#define CY_BLE_POWER_POWER_DESCRIPTOR_CHARACTERISTIC_USER_DESCRIPTION_DESC_HANDLE   (0x0018u) /* Handle of Characteristic User Description descriptor */
+#define CY_BLE_POWER_SERVICE_HANDLE   (0x0014u) /* Handle of Power service */
+#define CY_BLE_POWER_POWER_DESCRIPTOR_DECL_HANDLE   (0x0015u) /* Handle of Power Descriptor characteristic declaration */
+#define CY_BLE_POWER_POWER_DESCRIPTOR_CHAR_HANDLE   (0x0016u) /* Handle of Power Descriptor characteristic */
+#define CY_BLE_POWER_POWER_DESCRIPTOR_CHARACTERISTIC_USER_DESCRIPTION_DESC_HANDLE   (0x0017u) /* Handle of Characteristic User Description descriptor */
+#define CY_BLE_POWER_POWER_DESCRIPTOR_SERVER_CHARACTERISTIC_CONFIGURATION_DESC_HANDLE   (0x0018u) /* Handle of Server Characteristic Configuration descriptor */
 
 
 
