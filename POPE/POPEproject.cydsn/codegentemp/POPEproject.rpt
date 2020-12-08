@@ -1,16 +1,16 @@
-Loading plugins phase: Elapsed time ==> 0s.139ms
+Loading plugins phase: Elapsed time ==> 0s.183ms
 <CYPRESSTAG name="CyDsfit arguments...">
-cydsfit arguments: -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p C:\Users\User\Documents\GitHub\PRJ4\POPE\POPEproject.cydsn\POPEproject.cyprj -d CYBLE-416045-02 -s C:\Users\User\Documents\GitHub\PRJ4\POPE\POPEproject.cydsn\Generated_Source\PSoC6 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE
+cydsfit arguments: -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p F:\Git downloads\PRJ4\POPE\POPEproject.cydsn\POPEproject.cyprj -d CYBLE-416045-02 -s F:\Git downloads\PRJ4\POPE\POPEproject.cydsn\Generated_Source\PSoC6 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE
 </CYPRESSTAG>
 ADD: fit.M0067: information: Clock Information: (The WCO is enabled. Chip startup will be slower because clock configuration cannot continue until the WCO is ready. See the device datasheet for WCO startup timing. If WCO is not required during startup, consider starting it in main() for faster chip startup.).
- * C:\Users\User\Documents\GitHub\PRJ4\POPE\POPEproject.cydsn\POPEproject.cydwr (WCO)
+ * F:\Git downloads\PRJ4\POPE\POPEproject.cydsn\POPEproject.cydwr (WCO)
 
 <CYPRESSTAG name="Design elaboration results...">
 </CYPRESSTAG>
-Elaboration phase: Elapsed time ==> 1s.689ms
+Elaboration phase: Elapsed time ==> 1s.719ms
 <CYPRESSTAG name="HDL generation results...">
 </CYPRESSTAG>
-HDL generation phase: Elapsed time ==> 0s.024ms
+HDL generation phase: Elapsed time ==> 0s.049ms
 <CYPRESSTAG name="Synthesis results...">
 
      | | | | | | |
@@ -28,23 +28,23 @@ HDL generation phase: Elapsed time ==> 0s.024ms
 ======================================================================
 Compiling:  POPEproject.v
 Program  :   C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\bin\warp.exe
-Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\User\Documents\GitHub\PRJ4\POPE\POPEproject.cydsn\POPEproject.cyprj -dcpsoc3 POPEproject.v -verilog
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=F:\Git downloads\PRJ4\POPE\POPEproject.cydsn\POPEproject.cyprj -dcpsoc3 POPEproject.v -verilog
 ======================================================================
 
 ======================================================================
 Compiling:  POPEproject.v
 Program  :   C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\bin\warp.exe
-Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\User\Documents\GitHub\PRJ4\POPE\POPEproject.cydsn\POPEproject.cyprj -dcpsoc3 POPEproject.v -verilog
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=F:\Git downloads\PRJ4\POPE\POPEproject.cydsn\POPEproject.cyprj -dcpsoc3 POPEproject.v -verilog
 ======================================================================
 
 ======================================================================
 Compiling:  POPEproject.v
 Program  :   vlogfe
-Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\User\Documents\GitHub\PRJ4\POPE\POPEproject.cydsn\POPEproject.cyprj -dcpsoc3 -verilog POPEproject.v
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=F:\Git downloads\PRJ4\POPE\POPEproject.cydsn\POPEproject.cyprj -dcpsoc3 -verilog POPEproject.v
 ======================================================================
 
 vlogfe V6.3 IR 41:  Verilog parser
-Fri Dec 04 13:42:05 2020
+Tue Dec 08 10:51:47 2020
 
 
 ======================================================================
@@ -54,7 +54,7 @@ Options  :    -yv2 -q10 POPEproject.v
 ======================================================================
 
 vpp V6.3 IR 41:  Verilog Pre-Processor
-Fri Dec 04 13:42:05 2020
+Tue Dec 08 10:51:47 2020
 
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v'
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\ZeroTerminal\ZeroTerminal.v'
@@ -82,11 +82,11 @@ vlogfe:  No errors.
 ======================================================================
 Compiling:  POPEproject.v
 Program  :   tovif
-Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\User\Documents\GitHub\PRJ4\POPE\POPEproject.cydsn\POPEproject.cyprj -dcpsoc3 -verilog POPEproject.v
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=F:\Git downloads\PRJ4\POPE\POPEproject.cydsn\POPEproject.cyprj -dcpsoc3 -verilog POPEproject.v
 ======================================================================
 
 tovif V6.3 IR 41:  High-level synthesis
-Fri Dec 04 13:42:05 2020
+Tue Dec 08 10:51:47 2020
 
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\std.vhd'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\cypress.vhd'.
@@ -97,9 +97,9 @@ Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\c
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\stdlogic\mod_cnst.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\stdlogic\mod_mthv.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\stdlogic\mod_genv.vif'.
-Linking 'C:\Users\User\Documents\GitHub\PRJ4\POPE\POPEproject.cydsn\codegentemp\POPEproject.ctl'.
+Linking 'F:\Git downloads\PRJ4\POPE\POPEproject.cydsn\codegentemp\POPEproject.ctl'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v'.
-Linking 'C:\Users\User\Documents\GitHub\PRJ4\POPE\POPEproject.cydsn\codegentemp\POPEproject.v'.
+Linking 'F:\Git downloads\PRJ4\POPE\POPEproject.cydsn\codegentemp\POPEproject.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\ZeroTerminal\ZeroTerminal.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\or_v1_0\or_v1_0.v'.
 
@@ -109,11 +109,11 @@ tovif:  No errors.
 ======================================================================
 Compiling:  POPEproject.v
 Program  :   topld
-Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\User\Documents\GitHub\PRJ4\POPE\POPEproject.cydsn\POPEproject.cyprj -dcpsoc3 -verilog POPEproject.v
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=F:\Git downloads\PRJ4\POPE\POPEproject.cydsn\POPEproject.cyprj -dcpsoc3 -verilog POPEproject.v
 ======================================================================
 
 topld V6.3 IR 41:  Synthesis and optimization
-Fri Dec 04 13:42:05 2020
+Tue Dec 08 10:51:47 2020
 
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\std.vhd'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\cypress.vhd'.
@@ -124,9 +124,9 @@ Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\c
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\stdlogic\mod_cnst.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\stdlogic\mod_mthv.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\stdlogic\mod_genv.vif'.
-Linking 'C:\Users\User\Documents\GitHub\PRJ4\POPE\POPEproject.cydsn\codegentemp\POPEproject.ctl'.
+Linking 'F:\Git downloads\PRJ4\POPE\POPEproject.cydsn\codegentemp\POPEproject.ctl'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v'.
-Linking 'C:\Users\User\Documents\GitHub\PRJ4\POPE\POPEproject.cydsn\codegentemp\POPEproject.v'.
+Linking 'F:\Git downloads\PRJ4\POPE\POPEproject.cydsn\codegentemp\POPEproject.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\ZeroTerminal\ZeroTerminal.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\or_v1_0\or_v1_0.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\lcpsoc3\stdlogic\cpsoc3.vif'.
@@ -142,21 +142,36 @@ Detecting unused logic.
 	Net_11
 	Net_13
 	Net_14
+	\I2C_MPU6050:Net_224\
+	\I2C_MPU6050:Net_223\
 
 
-Deleted 7 User equations/components.
+Deleted 9 User equations/components.
 Deleted 0 Synthesized equations/components.
 
 ------------------------------------------------------
 Alias Detection
 ------------------------------------------------------
 Aliasing \UART_DEB:cts_wire\ to zero
+Aliasing \I2C_MPU6050:Net_283\ to zero
+Aliasing \I2C_MPU6050:Net_282\ to zero
+Aliasing \I2C_MPU6050:Net_281\ to zero
+Aliasing \I2C_MPU6050:Net_280\ to zero
+Aliasing \I2C_MPU6050:Net_279\ to zero
+Aliasing \I2C_MPU6050:Net_278\ to zero
 Removing Lhs of wire \UART_DEB:clock_wire\[15] = \UART_DEB:Net_847\[14]
 Removing Lhs of wire \UART_DEB:rx_wire\[27] = \UART_DEB:Net_1172\[24]
 Removing Lhs of wire \UART_DEB:cts_wire\[28] = zero[8]
+Removing Rhs of wire \I2C_MPU6050:clock_wire\[51] = \I2C_MPU6050:Net_847\[76]
+Removing Lhs of wire \I2C_MPU6050:Net_283\[52] = zero[8]
+Removing Lhs of wire \I2C_MPU6050:Net_282\[55] = zero[8]
+Removing Lhs of wire \I2C_MPU6050:Net_281\[60] = zero[8]
+Removing Lhs of wire \I2C_MPU6050:Net_280\[65] = zero[8]
+Removing Lhs of wire \I2C_MPU6050:Net_279\[67] = zero[8]
+Removing Lhs of wire \I2C_MPU6050:Net_278\[68] = zero[8]
 
 ------------------------------------------------------
-Aliased 0 equations, 3 wires.
+Aliased 0 equations, 10 wires.
 ------------------------------------------------------
 
 ----------------------------------------------------------
@@ -178,28 +193,26 @@ topld:  No errors.
 
 CYPRESS_DIR    : C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp
 Warp Program   : C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\bin\warp.exe
-Warp Arguments : -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\User\Documents\GitHub\PRJ4\POPE\POPEproject.cydsn\POPEproject.cyprj -dcpsoc3 POPEproject.v -verilog
+Warp Arguments : -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya "-.fftprj=F:\Git downloads\PRJ4\POPE\POPEproject.cydsn\POPEproject.cyprj" -dcpsoc3 POPEproject.v -verilog
 </CYPRESSTAG>
-Warp synthesis phase: Elapsed time ==> 0s.415ms
+Warp synthesis phase: Elapsed time ==> 0s.631ms
 <CYPRESSTAG name="Fitter results...">
 <CYPRESSTAG name="Fitter startup details...">
-cyp3fit: V4.4.0.80, Family: PSoC3, Started at: Friday, 04 December 2020 13:42:05
-Options: -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\User\Documents\GitHub\PRJ4\POPE\POPEproject.cydsn\POPEproject.cyprj -d CYBLE-416045-02 POPEproject.v -verilog
+cyp3fit: V4.4.0.80, Family: PSoC3, Started at: Tuesday, 08 December 2020 10:51:48
+Options: -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=F:\Git downloads\PRJ4\POPE\POPEproject.cydsn\POPEproject.cyprj -d CYBLE-416045-02 POPEproject.v -verilog
 </CYPRESSTAG>
 <CYPRESSTAG name="Design parsing">
-Design parsing phase: Elapsed time ==> 0s.146ms
+Design parsing phase: Elapsed time ==> 0s.231ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Tech Mapping">
 <CYPRESSTAG name="Initial Mapping" icon="FILE_RPT_TECHM">
-
-Removing unused cells resulting from optimization
-Done removing unused cells.
 <CYPRESSTAG name="Global Clock Selection" icon="FILE_RPT_TECHM">
-    Fixed Function Clock 0: Automatic-assigning  clock 'UART_DEB_SCBCLK'. Signal=\UART_DEB:Net_847_ff0\
+    Fixed Function Clock 0: Automatic-assigning  clock 'I2C_MPU6050_SCBCLK'. Signal=\I2C_MPU6050:clock_wire_ff0\
+    Fixed Function Clock 1: Automatic-assigning  clock 'UART_DEB_SCBCLK'. Signal=\UART_DEB:Net_847_ff1\
 <CYPRESSTAG name="UDB Clock/Enable Remapping Results">
 </CYPRESSTAG>
 </CYPRESSTAG>
-ADD: pft.M0040: information: The following 3 pin(s) will be assigned a location by the fitter: \UART_DEB:rx(0)\, \UART_DEB:tx(0)\, LEDgreen(0)
+ADD: pft.M0040: information: The following 5 pin(s) will be assigned a location by the fitter: \I2C_MPU6050:scl(0)\, \I2C_MPU6050:sda(0)\, \UART_DEB:rx(0)\, \UART_DEB:tx(0)\, LEDgreen(0)
 
 Info: plm.M0038: The pin named CY_CPUSS_SWJ_SWCLK_TCLK(0) at location P6[7] prevents usage of special purposes: SCB[6].uart_cts. (App=cydsfit)
 Info: plm.M0038: The pin named CY_CPUSS_SWJ_SWCLK_TCLK(0) at location P6[7] prevents usage of special purposes: SCB[6].spi_select[0]. (App=cydsfit)
@@ -212,6 +225,9 @@ Info: plm.M0038: The pin named CY_CPUSS_SWJ_SWDIO_TMS(0) at location P6[6] preve
 Info: plm.M0038: The pin named CY_SRSS_WCO_IN(0) at location P0[0] prevents usage of special purposes: SCB[0].spi_select[1]. (App=cydsfit)
 Info: plm.M0038: The pin named CY_SRSS_WCO_OUT(0) at location P0[1] prevents usage of special purposes: SCB[0].spi_select[2]. (App=cydsfit)
 Info: plm.M0038: The pin named CY_SRSS_WCO_OUT(0) at location P0[1] prevents usage of special purposes: CPUSS[0].swj_trstn. (App=cydsfit)
+
+Removing unused cells resulting from optimization
+Done removing unused cells.
 <CYPRESSTAG name="Duplicate Macrocell detection">
 </CYPRESSTAG>
 </CYPRESSTAG>
@@ -481,6 +497,80 @@ Design Equations
             pa_out => \UART_DEB:rx(0)\__PA ,
             fb => \UART_DEB:Net_1172\ ,
             pad => \UART_DEB:rx(0)_PAD\ );
+
+    Pin : Name = \I2C_MPU6050:scl(0)\
+        Attributes:
+            In Group/Port: True
+            In Sync Option: NOSYNC
+            Out Sync Option: NOSYNC
+            Interrupt generated: False
+            Interrupt mode: NONE
+            Drive mode: OPEN_DRAIN_LO
+            VTrip: CMOS
+            Slew: FAST
+            Input Sync needed: False
+            Output Sync needed: False
+            SC shield enabled: False
+            POR State: INP_DIS_HI_Z
+            LCD Mode: COMMON
+            Register Mode: RegComb
+            CaSense Mode: NEITHER
+            Treat as pin: True
+            Is OE Registered: False
+            Uses Analog: False
+            Can contain Digital: True
+            Is SIO: False
+            SIO Output Buf: NONREGULATED
+            SIO Input Buf: SINGLE_ENDED
+            SIO HiFreq: LOW
+            SIO Hyst: DISABLED
+            SIO Vtrip: MULTIPLIER_0_5
+            SIO Multiplier Index: 0
+            SIO RefSel: VCC_IO
+            Required Capabilities: DIGITAL
+            Initial Value: 1
+            IO Voltage: 0
+        PORT MAP (
+            pa_out => \I2C_MPU6050:scl(0)\__PA ,
+            fb => Net_20 ,
+            pad => \I2C_MPU6050:scl(0)_PAD\ );
+
+    Pin : Name = \I2C_MPU6050:sda(0)\
+        Attributes:
+            In Group/Port: True
+            In Sync Option: NOSYNC
+            Out Sync Option: NOSYNC
+            Interrupt generated: False
+            Interrupt mode: NONE
+            Drive mode: OPEN_DRAIN_LO
+            VTrip: CMOS
+            Slew: FAST
+            Input Sync needed: False
+            Output Sync needed: False
+            SC shield enabled: False
+            POR State: INP_DIS_HI_Z
+            LCD Mode: COMMON
+            Register Mode: RegComb
+            CaSense Mode: NEITHER
+            Treat as pin: True
+            Is OE Registered: False
+            Uses Analog: False
+            Can contain Digital: True
+            Is SIO: False
+            SIO Output Buf: NONREGULATED
+            SIO Input Buf: SINGLE_ENDED
+            SIO HiFreq: LOW
+            SIO Hyst: DISABLED
+            SIO Vtrip: MULTIPLIER_0_5
+            SIO Multiplier Index: 0
+            SIO RefSel: VCC_IO
+            Required Capabilities: DIGITAL
+            Initial Value: 1
+            IO Voltage: 0
+        PORT MAP (
+            pa_out => \I2C_MPU6050:sda(0)\__PA ,
+            fb => Net_22 ,
+            pad => \I2C_MPU6050:sda(0)_PAD\ );
     </CYPRESSTAG>
     <CYPRESSTAG name="Macrocell listing" icon="FILE_RPT_EQUATION">
     </CYPRESSTAG>
@@ -513,6 +603,16 @@ Design Equations
             deepsleep_required = 1
             int_type = "10"
         }
+
+    interrupt: Name =\I2C_MPU6050:SCB_IRQ\
+        PORT MAP (
+            interrupt => \I2C_MPU6050:intr_wire\ );
+        Properties:
+        {
+            cy_registers = ""
+            deepsleep_required = 0
+            int_type = "10"
+        }
     </CYPRESSTAG>
 </CYPRESSTAG>
 <CYPRESSTAG name="Technology mapping summary" expanded>
@@ -526,8 +626,8 @@ Resource Type                 : Used : Free :  Max :  % Used
 Digital Clocks                :    0 :    8 :    8 :  0.00 %
 Crypto Accelerator            :    0 :    1 :    1 :  0.00 %
 Interrupts [CM0+]             :    6 :   26 :   32 : 18.75 %
-Interrupts [CM4]              :    0 :  147 :  147 :  0.00 %
-IO                            :    7 :   29 :   36 : 19.44 %
+Interrupts [CM4]              :    1 :  146 :  147 :  0.68 %
+IO                            :    9 :   27 :   36 : 25.00 %
 Interprocessor Communication  :    0 :   16 :   16 :  0.00 %
 MCWDT                         :    0 :    2 :    2 :  0.00 %
 CapSense                      :    0 :    1 :    1 :  0.00 %
@@ -536,7 +636,7 @@ Real Time Clock               :    0 :    1 :    1 :  0.00 %
 Bluetooth Low Energy          :    1 :    0 :    1 : 100.00 %
 I2S                           :    0 :    1 :    1 :  0.00 %
 PDM/PCM                       :    0 :    1 :    1 :  0.00 %
-SCB                           :    1 :    8 :    9 : 11.11 %
+SCB                           :    2 :    7 :    9 : 22.22 %
 DMA Channels                  :    0 :   32 :   32 :  0.00 %
 LCD                           :    0 :    1 :    1 :  0.00 %
 SmartIO                       :    0 :    2 :    2 :  0.00 %
@@ -556,8 +656,8 @@ Sample and Hold               :    0 :    1 :    1 :  0.00 %
 SAR ADC                       :    0 :    1 :    1 :  0.00 %
 DieTemp Sensor                :    0 :    1 :    1 :  0.00 %
 </CYPRESSTAG>
-Technology Mapping: Elapsed time ==> 0s.026ms
-Tech Mapping phase: Elapsed time ==> 0s.092ms
+Technology Mapping: Elapsed time ==> 0s.039ms
+Tech Mapping phase: Elapsed time ==> 0s.106ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Placement">
 <CYPRESSTAG name="FFB & IO Pre Placement">
@@ -576,20 +676,23 @@ SRSS                                : SRSS_[FFB(SRSS,0)]
 \UART_DEB:rx(0)\                    : [IOP=(5)][IoId=(0)]                
 \UART_DEB:tx(0)\                    : [IOP=(5)][IoId=(1)]                
 \UART_DEB:SCB\                      : SCB_[FFB(SCB,5)]                   
+\I2C_MPU6050:scl(0)\                : [IOP=(6)][IoId=(4)]                
+\I2C_MPU6050:sda(0)\                : [IOP=(6)][IoId=(5)]                
+\I2C_MPU6050:SCB\                   : SCB_[FFB(SCB,6)]                   
 LEDgreen(0)                         : [IOP=(0)][IoId=(4)]                
 
 </CYPRESSTAG>
 </CYPRESSTAG>
 <CYPRESSTAG name="Real Analog Placement">
-Elapsed time ==> 0.1111288s
+Elapsed time ==> 0.1060966s
 </CYPRESSTAG>
-Analog Placement phase: Elapsed time ==> 0s.586ms
+Analog Placement phase: Elapsed time ==> 0s.669ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Routing">
 <CYPRESSTAG name="Analog Routing">
-Route success=True, Iterations=1 Elapsed=0.0021212 secs
+Route success=True, Iterations=1 Elapsed=0.0028675 secs
 </CYPRESSTAG>
-Analog Routing phase: Elapsed time ==> 0s.002ms
+Analog Routing phase: Elapsed time ==> 0s.003ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Code Generation">
 ============ Analog Final Answer Routes ============
@@ -616,12 +719,12 @@ Map of item to net {
 }
 Mux Info {
 }
-Analog Code Generation phase: Elapsed time ==> 0s.014ms
+Analog Code Generation phase: Elapsed time ==> 0s.020ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Digital Placement">
 <CYPRESSTAG name="Detailed placement messages">
 I2659: No Constrained paths were found. The placer will run in non-timing driven mode.
-I2076: Total run-time: 0.3 sec.
+I2076: Total run-time: 0.6 sec.
 
 </CYPRESSTAG>
 <CYPRESSTAG name="PLD Packing">
@@ -673,6 +776,16 @@ Intr container @ [IntrContainer=(0)]:
         {
             cy_registers = ""
             deepsleep_required = 1
+            int_type = "10"
+        }
+  Intr@ [IntrContainer=(0)][IntrId=(46)] 
+    interrupt: Name =\I2C_MPU6050:SCB_IRQ\
+        PORT MAP (
+            interrupt => \I2C_MPU6050:intr_wire\ );
+        Properties:
+        {
+            cy_registers = ""
+            deepsleep_required = 0
             int_type = "10"
         }
 Drq container @ [DrqContainer=(0)]: empty
@@ -799,6 +912,89 @@ Pin : Name = LEDgreen(0)
 
 Port 5 contains the following IO cells:
 [IoId=0]: 
+Pin : Name = \I2C_MPU6050:scl(0)\
+    Attributes:
+        In Group/Port: True
+        In Sync Option: NOSYNC
+        Out Sync Option: NOSYNC
+        Interrupt generated: False
+        Interrupt mode: NONE
+        Drive mode: OPEN_DRAIN_LO
+        VTrip: CMOS
+        Slew: FAST
+        Input Sync needed: False
+        Output Sync needed: False
+        SC shield enabled: False
+        POR State: INP_DIS_HI_Z
+        LCD Mode: COMMON
+        Register Mode: RegComb
+        CaSense Mode: NEITHER
+        Treat as pin: True
+        Is OE Registered: False
+        Uses Analog: False
+        Can contain Digital: True
+        Is SIO: False
+        SIO Output Buf: NONREGULATED
+        SIO Input Buf: SINGLE_ENDED
+        SIO HiFreq: LOW
+        SIO Hyst: DISABLED
+        SIO Vtrip: MULTIPLIER_0_5
+        SIO Multiplier Index: 0
+        SIO RefSel: VCC_IO
+        Required Capabilities: DIGITAL
+        Initial Value: 1
+        IO Voltage: 0
+    PORT MAP (
+        pa_out => \I2C_MPU6050:scl(0)\__PA ,
+        fb => Net_20 ,
+        pad => \I2C_MPU6050:scl(0)_PAD\ );
+    Properties:
+    {
+    }
+
+[IoId=1]: 
+Pin : Name = \I2C_MPU6050:sda(0)\
+    Attributes:
+        In Group/Port: True
+        In Sync Option: NOSYNC
+        Out Sync Option: NOSYNC
+        Interrupt generated: False
+        Interrupt mode: NONE
+        Drive mode: OPEN_DRAIN_LO
+        VTrip: CMOS
+        Slew: FAST
+        Input Sync needed: False
+        Output Sync needed: False
+        SC shield enabled: False
+        POR State: INP_DIS_HI_Z
+        LCD Mode: COMMON
+        Register Mode: RegComb
+        CaSense Mode: NEITHER
+        Treat as pin: True
+        Is OE Registered: False
+        Uses Analog: False
+        Can contain Digital: True
+        Is SIO: False
+        SIO Output Buf: NONREGULATED
+        SIO Input Buf: SINGLE_ENDED
+        SIO HiFreq: LOW
+        SIO Hyst: DISABLED
+        SIO Vtrip: MULTIPLIER_0_5
+        SIO Multiplier Index: 0
+        SIO RefSel: VCC_IO
+        Required Capabilities: DIGITAL
+        Initial Value: 1
+        IO Voltage: 0
+    PORT MAP (
+        pa_out => \I2C_MPU6050:sda(0)\__PA ,
+        fb => Net_22 ,
+        pad => \I2C_MPU6050:sda(0)_PAD\ );
+    Properties:
+    {
+    }
+
+Port 6 contains the following IO cells:
+[IoId=4]: 
 Pin : Name = \UART_DEB:rx(0)\
     Attributes:
         In Group/Port: True
@@ -839,7 +1035,7 @@ Pin : Name = \UART_DEB:rx(0)\
     {
     }
 
-[IoId=1]: 
+[IoId=5]: 
 Pin : Name = \UART_DEB:tx(0)\
     Attributes:
         In Group/Port: True
@@ -880,7 +1076,6 @@ Pin : Name = \UART_DEB:tx(0)\
     {
     }
 
-Port 6 contains the following IO cells:
 [IoId=6]: 
 Pin : Name = CY_CPUSS_SWJ_SWDIO_TMS(0)
     Attributes:
@@ -986,7 +1181,8 @@ Clock group 0:
             ilo => ClockBlock_ILO ,
             wco => ClockBlock_WCO ,
             lfclk => ClockBlock_LFClk ,
-            ff_div_0 => \UART_DEB:Net_847_ff0\ );
+            ff_div_0 => \I2C_MPU6050:clock_wire_ff0\ ,
+            ff_div_1 => \UART_DEB:Net_847_ff1\ );
         Properties:
         {
         }
@@ -995,9 +1191,28 @@ Vref group 0: empty
 LPCOMP group 0: empty
 SCB group 0: 
     SCB @ F(SCB,5): 
+    SCB: Name =\I2C_MPU6050:SCB\
+        PORT MAP (
+            clock => \I2C_MPU6050:clock_wire_ff0\ ,
+            uart_tx => \I2C_MPU6050:Net_1062\ ,
+            uart_rts => \I2C_MPU6050:Net_1053\ ,
+            i2c_scl => Net_20 ,
+            i2c_sda => Net_22 ,
+            interrupt => \I2C_MPU6050:intr_wire\ ,
+            tr_tx_req => \I2C_MPU6050:Net_162\ ,
+            tr_rx_req => \I2C_MPU6050:Net_163\ ,
+            tr_i2c_scl_filtered => Net_21 );
+        Properties:
+        {
+            cy_registers = ""
+            master = 1
+            mode = 0
+            requires_io_preconfigure = 1
+        }
+    SCB @ F(SCB,6): 
     SCB: Name =\UART_DEB:SCB\
         PORT MAP (
-            clock => \UART_DEB:Net_847_ff0\ ,
+            clock => \UART_DEB:Net_847_ff1\ ,
             uart_rx => \UART_DEB:Net_1172\ ,
             uart_tx => \UART_DEB:tx_wire\ ,
             uart_rts => \UART_DEB:rts_wire\ ,
@@ -1084,42 +1299,44 @@ Port | Pin | Fixed |      Type |       Drive Mode |                       Name |
      |   1 |     * |      NONE |      HI_Z_ANALOG |         CY_SRSS_WCO_OUT(0) | Analog(SRSS_wco_out)
      |   4 |       |      NONE |         CMOS_OUT |                LEDgreen(0) | 
 -----+-----+-------+-----------+------------------+----------------------------+-------------------------
-   5 |   0 |       |      NONE |      HI_Z_ANALOG |           \UART_DEB:rx(0)\ | FB(\UART_DEB:Net_1172\)
-     |   1 |       |      NONE |         CMOS_OUT |           \UART_DEB:tx(0)\ | In(\UART_DEB:tx_wire\)
+   5 |   0 |       |      NONE |    OPEN_DRAIN_LO |       \I2C_MPU6050:scl(0)\ | FB(Net_20)
+     |   1 |       |      NONE |    OPEN_DRAIN_LO |       \I2C_MPU6050:sda(0)\ | FB(Net_22)
 -----+-----+-------+-----------+------------------+----------------------------+-------------------------
-   6 |   6 |     * |      NONE |      RES_PULL_UP |  CY_CPUSS_SWJ_SWDIO_TMS(0) | FB(CPUSS_swj_swdio_tms)
+   6 |   4 |       |      NONE |      HI_Z_ANALOG |           \UART_DEB:rx(0)\ | FB(\UART_DEB:Net_1172\)
+     |   5 |       |      NONE |         CMOS_OUT |           \UART_DEB:tx(0)\ | In(\UART_DEB:tx_wire\)
+     |   6 |     * |      NONE |      RES_PULL_UP |  CY_CPUSS_SWJ_SWDIO_TMS(0) | FB(CPUSS_swj_swdio_tms)
      |   7 |     * |      NONE |    RES_PULL_DOWN | CY_CPUSS_SWJ_SWCLK_TCLK(0) | FB(CPUSS_swj_swclk_tclk)
 ---------------------------------------------------------------------------------------------------------
 </CYPRESSTAG>
 </CYPRESSTAG>
 </CYPRESSTAG>
-Digital component placer commit/Report: Elapsed time ==> 0s.011ms
-Digital Placement phase: Elapsed time ==> 4s.714ms
+Digital component placer commit/Report: Elapsed time ==> 0s.018ms
+Digital Placement phase: Elapsed time ==> 5s.010ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Digital Routing">
 "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\bin/sjrouter.exe" --xml-path "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\dev\psoc6/0/route_arch-rrg.cydata" --vh2-path "POPEproject_r.vh2" --pcf-path "POPEproject.pco" --des-name "POPEproject" --dsf-path "POPEproject.dsf" --sdc-path "POPEproject.sdc" --lib-path "POPEproject_r.lib"
 Routing successful.
-Digital Routing phase: Elapsed time ==> 0s.718ms
+Digital Routing phase: Elapsed time ==> 1s.104ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream Generation">
-Bitstream Generation phase: Elapsed time ==> 0s.410ms
+Bitstream Generation phase: Elapsed time ==> 0s.435ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream Verification">
-Bitstream Verification phase: Elapsed time ==> 0s.000ms
+Bitstream Verification phase: Elapsed time ==> 0s.001ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Static timing analysis">
 Timing report is in POPEproject_timing.html.
-Static timing analysis phase: Elapsed time ==> 6s.786ms
+Static timing analysis phase: Elapsed time ==> 6s.576ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Data reporting">
 Data reporting phase: Elapsed time ==> 0s.000ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Database update...">
-Design database save phase: Elapsed time ==> 0s.133ms
+Design database save phase: Elapsed time ==> 0s.139ms
 </CYPRESSTAG>
-cydsfit: Elapsed time ==> 13s.618ms
+cydsfit: Elapsed time ==> 14s.334ms
 </CYPRESSTAG>
-Fitter phase: Elapsed time ==> 13s.618ms
-API generation phase: Elapsed time ==> 0s.548ms
-Dependency generation phase: Elapsed time ==> 0s.005ms
+Fitter phase: Elapsed time ==> 14s.334ms
+API generation phase: Elapsed time ==> 0s.859ms
+Dependency generation phase: Elapsed time ==> 0s.028ms
 Cleanup phase: Elapsed time ==> 0s.000ms

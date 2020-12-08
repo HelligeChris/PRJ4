@@ -1,6 +1,70 @@
 #include "kadenceControl.h"
 #include <stdint.h>
 
+float scaleFactor = 0;  //Divider
+int16_t CGX;            //Gyroscope x-axis values
+char uart_string[50];   //UART debugging
+
+void CS_initKadenceSensor(uint8 FSR)
+{
+    I2C_MPU6050_Start();//Start the SC I2C
+    MPU6050_init();     //Initialize MPU6050
+	MPU6050_initialize();
+    MPU6050_setFullScaleGyroRange(FSR);
+    //MPU6050_setDLPFMode(4); // Setting the LPF at 5Hz both Gyro and temoperature for 9250
+}
+
+//Returnerer RPM[0], frekvens[1] og periode[2].
+float* CS_getKadence()
+{
+    static float kadenceArr[3];
+    
+    /* Get data from the MPU */
+    CGX = MPU6050_getRotationX();
+    
+    int G_Range = MPU6050_getFullScaleGyroRange();
+    
+    if      (G_Range == 0) {scaleFactor = 131;}
+    else if (G_Range == 1) {scaleFactor = 65.5;}
+    else if (G_Range == 2) {scaleFactor = 32.8;}
+    else if (G_Range == 3) {scaleFactor = 16.4;}
+    
+    float degS = CGX/scaleFactor;
+    
+    float RPM = degS/6;
+    float f = RPM/60;
+    float T = 1/f;
+    
+    kadenceArr[0] = RPM;
+    kadenceArr[1] = f;
+    kadenceArr[2] = T;
+    
+    #if DEBUG_UART_ENABLED
+    //Gyroscope values debug
+    sprintf(uart_string, "X value: %i",CGX);
+    UARTprint("1", uart_string);
+    //Debugging - Print Gyroscope range
+    sprintf(uart_string, "Gyroscope range: %i", G_Range);
+    UARTprint("3", uart_string);
+    //Debugging - Print Scale Factor
+    sprintf(uart_string, "Scale Factor:  X: %f", scaleFactor);
+    UARTprint("4", uart_string);
+    //Debugging - Print Degrees/sec
+    sprintf(uart_string, "Degrees/sec X: %f", degS);
+    UARTprint("6", uart_string);
+    //Debugging - Print RPM, frekvens og periode
+    sprintf(uart_string, "RPM: %f", RPM);
+    UARTprint("8", uart_string);
+    sprintf(uart_string, "Hz: %f", f);
+    UARTprint("10", uart_string);  
+    sprintf(uart_string, "T: %f", T);
+    UARTprint("12", uart_string);
+    #endif
+    
+    return kadenceArr;
+}
+
+
 /** Default constructor, uses default I2C address.
  * @see MPU6050_DEFAULT_ADDRESS
  */

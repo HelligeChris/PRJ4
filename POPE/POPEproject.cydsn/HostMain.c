@@ -11,6 +11,8 @@
 */
 #include "common.h"
 
+char uart_string[50];   //UART debugging
+
 //SIMULATE
 #if (SIMULATE)
     uint16_t power = 1;
@@ -25,21 +27,24 @@ static cy_stc_ble_conn_handle_t appConnHandle;
 /* MAIN */
 int HostMain(void)
 {
-    #if (DEBUG_UART_ENABLED)
     UART_DEB_Start();
+    #if (DEBUG_UART_ENABLED)
     UART_DEB_PutString("Main \r \n ");
-    //INIT UI -> lav function? LED'er (debugging)
     #endif
+    //INIT UI -> lav function? LED'er (debugging)
     
     Cy_BLE_Start(BLE_EventHandler);
-    
-    #if (SIMULATE != 1)
-    power = getPower();     //lav getPower() funktion
-    battery = getBattery(); //lav getBattery() funktion
-    #endif
+    CS_initKadenceSensor(3);
     
     while(1)
     {
+        //power = getPower();     //lav getPower() funktion
+        //battery = getVoltageLevel_mV(); //lav getVoltageLevel_mV() funktion
+        
+        float* RPM = CS_getKadence();
+        sprintf(uart_string, "RPM value: %i",(int)RPM);
+        UARTprint("1", uart_string);
+        
         Cy_BLE_ProcessEvents();
         //errcheck?
         BLE_sendBattery(battery);

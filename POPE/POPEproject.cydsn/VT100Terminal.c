@@ -17,17 +17,17 @@ void delline(int numberoflines)
 {
         for(int i = 0; i < numberoflines; i++) 
     {
-        UART_PutString("\x1b[2K");
+        UART_DEB_PutString("\x1b[2K");
     }
 }
 
 void movecursor(char* y, char* x)
 {
-    UART_PutString("\x1b[");
-    UART_PutString(y);
-    UART_PutString(";");
-    UART_PutString(x);
-    UART_PutString("f");
+    UART_DEB_PutString("\x1b[");
+    UART_DEB_PutString(y);
+    UART_DEB_PutString(";");
+    UART_DEB_PutString(x);
+    UART_DEB_PutString("f");
 }
 
 void UARTprint(char* line, char* string)
@@ -35,7 +35,7 @@ void UARTprint(char* line, char* string)
     movecursor(line, "0");
     delline(1);
     movecursor(line, "0");
-    UART_PutString(string);
+    UART_DEB_PutString(string);
 }
 
 void clearTerm(int lines)

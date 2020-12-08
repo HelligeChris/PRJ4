@@ -11,6 +11,8 @@
 */
 #include "POPE-app.h"
 
+char uart_string[50];   //UART debugging
+
 void lowPowerImplementation()
 {
     
@@ -23,7 +25,9 @@ uint16_t getPower()
     //evt. flere variabler...
     
     //getVaegt();
-    //getCadence;
+    float* RPM = CS_getKadence();
+    sprintf(uart_string, "RPM value: %i",(int)RPM);
+    UARTprint("1", uart_string);
     
     //udregn power
     return power;

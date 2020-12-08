@@ -13,24 +13,23 @@ typedef struct kadenceCtrl
 
 }kadenceCtrl;
 
-void initKadenceSensor();
-void calibrateKadenceSensor();
-uint16 getKadence();
+void CS_initKadenceSensor(uint8 FSR);
+float* CS_getKadence();
 
 uint8_t devAddr;
 uint8_t buffer[22];
 int16_t MPU6050_getRotationX();
 
 void MPU6050_init();
+void MPU6050_initialize();
 void MPU6050_setSleepEnabled(bool enabled);
 void MPU6050_getRotation(int16_t* x, int16_t* y, int16_t* z);
+uint8_t MPU6050_getFullScaleGyroRange();
 void MPU6050_setFullScaleGyroRange(uint8_t range);
 void MPU6050_setDLPFMode(uint8_t bandwidth);
 void MPU6050_setClockSource(uint8_t source);
 
-#define MPU6050_ADDRESS_AD0_LOW         0x68 // address pin low (GND), default for InvenSense evaluation board
-#define MPU6050_ADDRESS_AD0_HIGH        0x69 // address pin high (VCC)
-#define MPU6050_DEFAULT_ADDRESS         MPU6050_ADDRESS_AD0_LOW
+#define MPU6050_DEFAULT_ADDRESS         0x68
 #define MPU6050_RA_GYRO_CONFIG          0x1B
 #define MPU6050_RA_PWR_MGMT_1           0x6B
 #define MPU6050_RA_GYRO_XOUT_H          0x43
@@ -44,8 +43,3 @@ void MPU6050_setClockSource(uint8_t source);
 #define MPU6050_RA_CONFIG               0x1A
 #define MPU6050_CFG_DLPF_CFG_BIT        2
 #define MPU6050_CFG_DLPF_CFG_LENGTH     3
-
-extern void I2CReadBits(uint8_t devAddr, uint8_t regAddr, uint8_t bitStart, uint8_t length, uint8_t *value);
-extern void I2CReadBytes(uint8_t devAddr, uint8_t regAddr, uint8_t length, uint8_t *value);
-extern void I2CWriteBit(uint8_t devAddr, uint8_t regAddr, uint8_t bitNum, uint8_t value);
-extern void I2CWriteBits(uint8_t devAddr, uint8_t regAddr, uint8_t bitStart, uint8_t length, uint8_t value);

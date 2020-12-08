@@ -157,7 +157,9 @@
 #include "BLE.h"
 #include "BLE_config.h"
 #include "UART_DEB.h"
+#include "I2C_MPU6050.h"
 #include "UART_DEB_SCBCLK.h"
+#include "I2C_MPU6050_SCBCLK.h"
 
 /*[]*/
 
