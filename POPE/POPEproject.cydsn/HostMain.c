@@ -33,7 +33,7 @@ int HostMain(void)
     //INIT UI -> lav function? LED'er (debugging)
     
     Cy_BLE_Start(BLE_EventHandler);
-    CS_initKadenceSensor(3);
+    //CS_initKadenceSensor(3);
     
     //float* RPM;
     

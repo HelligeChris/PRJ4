@@ -39,7 +39,7 @@ float* CS_getKadence()
     kadenceArr[1] = f;
     kadenceArr[2] = T;
     
-    #if DEBUG_UART_ENABLED
+    #if !DEBUG_UART_ENABLED
     //Gyroscope values debug
     sprintf(uart_string, "X value: %i",CGX);
     UARTprint("1", uart_string);
