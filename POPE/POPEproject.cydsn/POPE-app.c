@@ -26,8 +26,8 @@ uint16_t getPower()
     
     //getVaegt();
     float* RPM = CS_getKadence();
-    sprintf(uart_string, "RPM value: %i",(int)RPM);
-    UARTprint("1", uart_string);
+    //sprintf(uart_string, "RPM value: %i",(int)RPM);
+    //UARTprint("1", uart_string);
     
     //udregn power
     return power;

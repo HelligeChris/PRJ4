@@ -61,7 +61,6 @@
           <File BuildType="BUILD" Toolchain="">batteriControl.h</File>
           <File BuildType="BUILD" Toolchain="">kadenceControl.h</File>
           <File BuildType="BUILD" Toolchain="">trykControl.h</File>
-          <File BuildType="BUILD" Toolchain="">VT100Terminal.h</File>
           <File BuildType="BUILD" Toolchain="">i2cFunctions.h</File>
         </Files>
       </Folder>

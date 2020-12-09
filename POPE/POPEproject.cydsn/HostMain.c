@@ -30,14 +30,12 @@ int HostMain(void)
     UART_DEB_Start();
     UART_DEB_PutString("Main \r \n ");
     
-    float* RPM = CS_getKadence();
-    sprintf(uart_string, "RPM value: %i \n\r",(int)RPM);
-    UART_DEB_PutString(uart_string);
-    
     //INIT UI -> lav function? LED'er (debugging)
     
     Cy_BLE_Start(BLE_EventHandler);
     CS_initKadenceSensor(3);
+    
+    //float* RPM;
     
     while(1)
     {

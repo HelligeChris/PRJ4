@@ -1,5 +1,5 @@
 -- Project:   POPEproject
--- Generated: 12/08/2020 20:37:58
+-- Generated: 12/09/2020 09:17:38
 -- PSoC Creator  4.4
 
 ENTITY POPEproject IS
@@ -60,15 +60,15 @@ ARCHITECTURE __DEFAULT__ OF POPEproject IS
     SIGNAL \I2C_MPU6050:Net_1062\ : bit;
     SIGNAL \I2C_MPU6050:Net_162\ : bit;
     SIGNAL \I2C_MPU6050:Net_163\ : bit;
-    SIGNAL \I2C_MPU6050:clock_wire_ff0\ : bit;
-    ATTRIBUTE global_signal OF \I2C_MPU6050:clock_wire_ff0\ : SIGNAL IS true;
+    SIGNAL \I2C_MPU6050:clock_wire_ff1\ : bit;
+    ATTRIBUTE global_signal OF \I2C_MPU6050:clock_wire_ff1\ : SIGNAL IS true;
     SIGNAL \I2C_MPU6050:intr_wire\ : bit;
     SIGNAL \\\I2C_MPU6050:scl(0)\\__PA\ : bit;
     SIGNAL \\\I2C_MPU6050:sda(0)\\__PA\ : bit;
     SIGNAL \UART_DEB:Net_1172\ : bit;
     SIGNAL \UART_DEB:Net_161\ : bit;
-    SIGNAL \UART_DEB:Net_847_ff1\ : bit;
-    ATTRIBUTE global_signal OF \UART_DEB:Net_847_ff1\ : SIGNAL IS true;
+    SIGNAL \UART_DEB:Net_847_ff0\ : bit;
+    ATTRIBUTE global_signal OF \UART_DEB:Net_847_ff0\ : SIGNAL IS true;
     SIGNAL \UART_DEB:intr_wire\ : bit;
     SIGNAL \UART_DEB:rts_wire\ : bit;
     SIGNAL \\\UART_DEB:rx(0)\\__PA\ : bit;
@@ -494,8 +494,8 @@ BEGIN
             ilo => ClockBlock_ILO,
             wco => ClockBlock_WCO,
             lfclk => ClockBlock_LFClk,
-            ff_div_0 => \I2C_MPU6050:clock_wire_ff0\,
-            ff_div_1 => \UART_DEB:Net_847_ff1\,
+            ff_div_0 => \UART_DEB:Net_847_ff0\,
+            ff_div_1 => \I2C_MPU6050:clock_wire_ff1\,
             periclk_App => periclk_App);
 
     CPUSS:CPUSS
@@ -1018,7 +1018,7 @@ BEGIN
             mode => 2,
             requires_io_preconfigure => 0)
         PORT MAP(
-            clock => \UART_DEB:Net_847_ff1\,
+            clock => \UART_DEB:Net_847_ff0\,
             uart_rx => \UART_DEB:Net_1172\,
             uart_tx => \UART_DEB:tx_wire\,
             uart_rts => \UART_DEB:rts_wire\,
@@ -1042,7 +1042,7 @@ BEGIN
             mode => 0,
             requires_io_preconfigure => 1)
         PORT MAP(
-            clock => \I2C_MPU6050:clock_wire_ff0\,
+            clock => \I2C_MPU6050:clock_wire_ff1\,
             uart_rx => open,
             uart_tx => \I2C_MPU6050:Net_1062\,
             uart_rts => \I2C_MPU6050:Net_1053\,
