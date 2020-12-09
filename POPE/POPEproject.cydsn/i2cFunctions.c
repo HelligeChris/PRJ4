@@ -100,13 +100,13 @@ void I2CWriteBytes(uint8_t devAddr, uint8_t regAddr, uint8_t length, uint8_t *va
 void I2CReadByte(uint8_t devAddr, uint8_t regAddr, uint8_t *value) {
 	I2CReadBytes(devAddr, regAddr, 1, value);
 }
-
+/*
 uint8_t I2CSplReadByte(uint8_t devAddr, uint8_t regAddr) {
 	
     I2CReadBytes(devAddr, regAddr, 1, &temp_value);
     return(temp_value);
 }
-
+*/
 void I2CReadBits(uint8_t devAddr, uint8_t regAddr, uint8_t bitStart, \
                                                 uint8_t length, uint8_t *value) 
 {

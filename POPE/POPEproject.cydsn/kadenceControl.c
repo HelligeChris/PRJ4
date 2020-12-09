@@ -5,15 +5,13 @@ float scaleFactor = 0;  //Divider
 int16_t CGX;            //Gyroscope x-axis values
 char uart_string[50];   //UART debugging
 
-void CS_initKadenceSensor(uint8 FSR)
+void CS_initKadenceSensor(uint8 FSR) //ÆNDR TIL UINT8_T
 {
-    I2C_MPU6050_Start();//Start the SC I2C
-    MPU6050_init();     //Initialize MPU6050
-	MPU6050_initialize();
+    I2C_MPU6050_Start();//Start the SC I2C 
+	MPU6050_initialize(); //Initialize MPU6050
     MPU6050_setFullScaleGyroRange(FSR);
     //MPU6050_setDLPFMode(4); // Setting the LPF at 5Hz both Gyro and temoperature for 9250
 }
-
 //Returnerer RPM[0], frekvens[1] og periode[2].
 float* CS_getKadence()
 {
@@ -63,14 +61,9 @@ float* CS_getKadence()
     
     return kadenceArr;
 }
-
-
 /** Default constructor, uses default I2C address.
  * @see MPU6050_DEFAULT_ADDRESS
  */
-void MPU6050_init() {
-    devAddr = MPU6050_DEFAULT_ADDRESS;
-}
 /** Specific address constructor.
  * @param address I2C address
  * @see MPU6050_DEFAULT_ADDRESS
@@ -85,9 +78,9 @@ void MPU6050_init() {
  * the default internal clock source.
  */
 void MPU6050_initialize() {
+    devAddr = MPU6050_DEFAULT_ADDRESS;
     MPU6050_setClockSource(MPU6050_CLOCK_PLL_XGYRO);
     MPU6050_setFullScaleGyroRange(MPU6050_GYRO_FS_250);
-//    MPU6050_setFullScaleAccelRange(MPU6050_ACCEL_FS_2);
     MPU6050_setSleepEnabled(false); // thanks to Jack Elston for pointing this one out!
 }
 /** Set digital low-pass filter configuration.

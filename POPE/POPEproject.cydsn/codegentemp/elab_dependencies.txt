@@ -1,4 +1,4 @@
-F:\Git downloads\PRJ4\POPE\POPEproject.cydsn\TopDesign\TopDesign.cysch
+C:\Users\jeppe\Documents\GitHub\PRJ4\POPE\POPEproject.cydsn\TopDesign\TopDesign.cysch
 C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\BLE_PDL_v2_20\BLE_PDL_v2_20.pdf
 C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\BLE_PDL_v2_20\BLE_PDL_v2_20.dll
 C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\BLE_PDL_v2_20\BLE_PDL_v2_20.cystate
@@ -141,4 +141,4 @@ C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyComp
 C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\SCB_I2C_PDL_v2_0\Custom\Controls\cydynamicdatacontrol.Designer.cs
 C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\SCB_I2C_PDL_v2_0\Custom\Resources.resx
 C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\SCB_I2C_PDL_v2_0\Custom\Controls\cydynamicdatacontrol.resx
-F:\Git downloads\PRJ4\POPE\POPEproject.cydsn\POPEproject.cydwr
+C:\Users\jeppe\Documents\GitHub\PRJ4\POPE\POPEproject.cydsn\POPEproject.cydwr

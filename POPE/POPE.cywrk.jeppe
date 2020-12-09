@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CyXmlSerializer>
+<!--This file is machine generated and read. It is not intended to be edited by hand.-->
+<!--Due to this, there is no schema for this file.-->
+<CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21 type_name="CyDesigner.Common.ProjMgmt.Model.CyPrjMgmtWrkspcCustomData" version="4">
+<CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997 type_name="CyDesigner.Common.Base.CyCustomData" version="2">
+<userData>
+<dataGuid v="1b906a0f-a7b6-4e4d-a428-82f98b53cb35">
+<CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35 type_name="CyDesigner.Common.ProjMgmt.GUI.CyExplorerWindow+CyExplorerWindowState" version="3" SelectedTab="Source">
+<TreeKeys>
+<v>Source</v>
+<v>Components</v>
+<v>Output</v>
+</TreeKeys>
+<TreeStates>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="POPE\POPEproject\Host Files\Header Files\kadenceControl.h">
+<ExpandedNodeIds>
+<v>POPE</v>
+<v>POPE\POPEproject</v>
+<v>POPE\POPEproject\TopDesign</v>
+<v>POPE\POPEproject\POPEproject.cydwr</v>
+<v>POPE\POPEproject\POPEproject.cydwr\Pins</v>
+<v>POPE\POPEproject\POPEproject.cydwr\Analog</v>
+<v>POPE\POPEproject\POPEproject.cydwr\DMA</v>
+<v>POPE\POPEproject\POPEproject.cydwr\Clocks</v>
+<v>POPE\POPEproject\POPEproject.cydwr\Interrupts</v>
+<v>POPE\POPEproject\POPEproject.cydwr\System</v>
+<v>POPE\POPEproject\POPEproject.cydwr\Directives</v>
+<v>POPE\POPEproject\CM0p (Core 0)</v>
+<v>POPE\POPEproject\CM0p (Core 0)\ARM GCC Generic</v>
+<v>POPE\POPEproject\CM0p (Core 0)\ARM GCC Generic\cy8c6xx7_cm0plus.ld</v>
+<v>POPE\POPEproject\CM0p (Core 0)\ARM IAR Generic</v>
+<v>POPE\POPEproject\CM0p (Core 0)\ARM IAR Generic\cy8c6xx7_cm0plus.icf</v>
+<v>POPE\POPEproject\CM0p (Core 0)\ARM MDK Generic</v>
+<v>POPE\POPEproject\CM0p (Core 0)\ARM MDK Generic\cy8c6xx7_cm0plus.scat</v>
+<v>POPE\POPEproject\CM0p (Core 0)\Header Files</v>
+<v>POPE\POPEproject\CM0p (Core 0)\Source Files</v>
+<v>POPE\POPEproject\CM0p (Core 0)\Source Files\ARM GCC Generic</v>
+<v>POPE\POPEproject\CM0p (Core 0)\Source Files\ARM GCC Generic\startup_psoc6_01_cm0plus.S</v>
+<v>POPE\POPEproject\CM0p (Core 0)\Source Files\ARM IAR Generic</v>
+<v>POPE\POPEproject\CM0p (Core 0)\Source Files\ARM IAR Generic\startup_psoc6_01_cm0plus.s</v>
+<v>POPE\POPEproject\CM0p (Core 0)\Source Files\ARM MDK Generic</v>
+<v>POPE\POPEproject\CM0p (Core 0)\Source Files\ARM MDK Generic\startup_psoc6_01_cm0plus.s</v>
+<v>POPE\POPEproject\CM0p (Core 0)\Source Files\main_cm0p.c</v>
+<v>POPE\POPEproject\CM0p (Core 0)\Source Files\system_psoc6_cm0plus.c</v>
+<v>POPE\POPEproject\CM4 (Core 1)</v>
+<v>POPE\POPEproject\CM4 (Core 1)\ARM GCC Generic</v>
+<v>POPE\POPEproject\CM4 (Core 1)\ARM GCC Generic\cy8c6xx7_cm4_dual.ld</v>
+<v>POPE\POPEproject\CM4 (Core 1)\ARM IAR Generic</v>
+<v>POPE\POPEproject\CM4 (Core 1)\ARM IAR Generic\cy8c6xx7_cm4_dual.icf</v>
+<v>POPE\POPEproject\CM4 (Core 1)\ARM MDK Generic</v>
+<v>POPE\POPEproject\CM4 (Core 1)\ARM MDK Generic\cy8c6xx7_cm4_dual.scat</v>
+<v>POPE\POPEproject\CM4 (Core 1)\Header Files</v>
+<v>POPE\POPEproject\CM4 (Core 1)\Source Files</v>
+<v>POPE\POPEproject\CM4 (Core 1)\Source Files\ARM GCC Generic</v>
+<v>POPE\POPEproject\CM4 (Core 1)\Source Files\ARM GCC Generic\startup_psoc6_01_cm4.S</v>
+<v>POPE\POPEproject\CM4 (Core 1)\Source Files\ARM IAR Generic</v>
+<v>POPE\POPEproject\CM4 (Core 1)\Source Files\ARM IAR Generic\startup_psoc6_01_cm4.s</v>
+<v>POPE\POPEproject\CM4 (Core 1)\Source Files\ARM MDK Generic</v>
+<v>POPE\POPEproject\CM4 (Core 1)\Source Files\ARM MDK Generic\startup_psoc6_01_cm4.s</v>
+<v>POPE\POPEproject\CM4 (Core 1)\Source Files\main_cm4.c</v>
+<v>POPE\POPEproject\CM4 (Core 1)\Source Files\system_psoc6_cm4.c</v>
+<v>POPE\POPEproject\Host Files</v>
+<v>POPE\POPEproject\Host Files\Header Files</v>
+<v>POPE\POPEproject\Host Files\Header Files\batteriControl.h</v>
+<v>POPE\POPEproject\Host Files\Header Files\BLE-communication.h</v>
+<v>POPE\POPEproject\Host Files\Header Files\common.h</v>
+<v>POPE\POPEproject\Host Files\Header Files\i2cFunctions.h</v>
+<v>POPE\POPEproject\Host Files\Header Files\kadenceControl.h</v>
+<v>POPE\POPEproject\Host Files\Header Files\POPE-app.h</v>
+<v>POPE\POPEproject\Host Files\Header Files\trykControl.h</v>
+<v>POPE\POPEproject\Host Files\Header Files\VT100Terminal.h</v>
+<v>POPE\POPEproject\Host Files\Source Files</v>
+<v>POPE\POPEproject\Host Files\Source Files\batteriControl.c</v>
+<v>POPE\POPEproject\Host Files\Source Files\BLE-communication.c</v>
+<v>POPE\POPEproject\Host Files\Source Files\HostMain.c</v>
+<v>POPE\POPEproject\Host Files\Source Files\i2cFunctions.c</v>
+<v>POPE\POPEproject\Host Files\Source Files\kadenceControl.c</v>
+<v>POPE\POPEproject\Host Files\Source Files\POPE-app.c</v>
+<v>POPE\POPEproject\Host Files\Source Files\trykControl.c</v>
+<v>POPE\POPEproject\Host Files\Source Files\VT100Terminal.c</v>
+<v>POPE\POPEproject\Shared Files</v>
+<v>POPE\POPEproject\Shared Files\cy_ble_config.h</v>
+<v>POPE\POPEproject\Shared Files\cyapicallbacks.h</v>
+<v>POPE\POPEproject\Shared Files\system_psoc6.h</v>
+<v>POPE\POPEproject\Generated_Source</v>
+<v>POPE\POPEproject\Generated_Source\PSoC6</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>POPE\POPEproject\Host Files</v>
+<v>POPE\POPEproject\Host Files\Header Files</v>
+<v>POPE\POPEproject\Host Files\Header Files\batteriControl.h</v>
+<v>POPE\POPEproject\Host Files\Header Files\BLE-communication.h</v>
+<v>POPE\POPEproject\Host Files\Header Files\common.h</v>
+<v>POPE\POPEproject\Host Files\Header Files\i2cFunctions.h</v>
+<v>POPE\POPEproject\Host Files\Header Files\kadenceControl.h</v>
+<v>POPE\POPEproject\Host Files\Header Files\POPE-app.h</v>
+<v>POPE\POPEproject\Host Files\Header Files\trykControl.h</v>
+<v>POPE\POPEproject\Host Files\Header Files\VT100Terminal.h</v>
+<v>POPE\POPEproject\Host Files\Source Files</v>
+<v>POPE\POPEproject\Host Files\Source Files\batteriControl.c</v>
+<v>POPE\POPEproject\Host Files\Source Files\BLE-communication.c</v>
+<v>POPE\POPEproject\Host Files\Source Files\HostMain.c</v>
+<v>POPE\POPEproject\Host Files\Source Files\i2cFunctions.c</v>
+<v>POPE\POPEproject\Host Files\Source Files\kadenceControl.c</v>
+<v>POPE\POPEproject\Host Files\Source Files\POPE-app.c</v>
+<v>POPE\POPEproject\Host Files\Source Files\trykControl.c</v>
+<v>POPE\POPEproject\Host Files\Source Files\VT100Terminal.c</v>
+<v>POPE\POPEproject\Shared Files</v>
+<v>POPE\POPEproject\Shared Files\cy_ble_config.h</v>
+<v>POPE\POPEproject\Shared Files\cyapicallbacks.h</v>
+<v>POPE\POPEproject\Shared Files\system_psoc6.h</v>
+<v>POPE\POPEproject\Generated_Source</v>
+<v>POPE\POPEproject\Generated_Source\PSoC6</v>
+<v>POPE\POPEproject\Generated_Source\PSoC6\pdl</v>
+<v>POPE\POPEproject\Generated_Source\PSoC6\BLE_PM</v>
+<v>POPE\POPEproject\Generated_Source\PSoC6\I2C_MPU6050</v>
+<v>POPE\POPEproject\Generated_Source\PSoC6\I2C_MPU6050_SCBCLK</v>
+<v>POPE\POPEproject\Generated_Source\PSoC6\Pins and Interrupts</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>POPE</v>
+<v>POPE\POPEproject</v>
+<v>POPE\POPEproject\TopDesign</v>
+<v>POPE\POPEproject\TopDesign\TopDesign.cysch</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>POPE</v>
+<v>POPE\POPEproject</v>
+<v>POPE\POPEproject\TopDesign</v>
+<v>POPE\POPEproject\TopDesign\TopDesign.cysch</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>POPE</v>
+<v>POPE\POPEproject</v>
+<v>POPE\POPEproject\CortexM0p</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\BLE.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\BLE_bas_config.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\BLE_config.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\BLE_custom_config.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_aios.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_ancs.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_ans.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_bas.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_bcs.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_bls.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_bms.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_bts.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_cgms.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_clk.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_cps.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_cscs.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_cts.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_custom.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_dis.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_ess.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_event_handler.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_gap.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_gatt.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_gls.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_hal_int.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_hal_pvt.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_hids.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_hps.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_hrs.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_hts.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_ias.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_ips.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_lls.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_lns.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_ndcs.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_pass.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_plxs.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_rscs.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_rtus.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_scps.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_tps.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_uds.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_wpts.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_wss.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_device.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_efuse.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_flash.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_gpio.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ipc_drv.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ipc_pipe.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ipc_sema.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_lvd.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_profile.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_prot.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_scb_common.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_scb_ezi2c.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_scb_i2c.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_scb_spi.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_scb_uart.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_sysanalog.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_sysclk.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_sysint.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_syslib.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_syslib_gcc.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_syspm.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_systick.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_trigmux.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_wdt.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cyfitter_sysint_cfg.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\I2C_MPU6050.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\main_cm0p.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\startup_psoc6_01_cm0plus.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\system_psoc6_cm0plus.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\UART_DEB.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\POPEproject.elf</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\POPEproject.hex</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\POPEproject.map</v>
+<v>POPE\POPEproject\CortexM4</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\batteriControl.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\BLE.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\BLE_bas_config.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\BLE_config.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\BLE_custom_config.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\BLE-communication.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_ble.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_ble_aios.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_ble_ancs.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_ble_ans.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_ble_bas.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_ble_bcs.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_ble_bls.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_ble_bms.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_ble_bts.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_ble_cgms.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_ble_clk.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_ble_cps.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_ble_cscs.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_ble_cts.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_ble_custom.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_ble_dis.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_ble_ess.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_ble_event_handler.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_ble_gap.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_ble_gatt.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_ble_gls.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_ble_hal_int.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_ble_hal_pvt.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_ble_hids.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_ble_hps.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_ble_hrs.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_ble_hts.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_ble_ias.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_ble_ips.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_ble_lls.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_ble_lns.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_ble_ndcs.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_ble_pass.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_ble_plxs.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_ble_rscs.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_ble_rtus.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_ble_scps.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_ble_tps.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_ble_uds.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_ble_wpts.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_ble_wss.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_device.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_efuse.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_flash.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_gpio.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_ipc_drv.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_ipc_pipe.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_ipc_sema.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_lvd.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_profile.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_prot.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_scb_common.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_scb_ezi2c.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_scb_i2c.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_scb_spi.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_scb_uart.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_sysanalog.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_sysclk.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_sysint.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_syslib.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_syslib_gcc.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_syspm.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_systick.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_trigmux.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_wdt.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\cyfitter_sysint_cfg.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\HostMain.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\I2C_MPU6050.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\i2cFunctions.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\kadenceControl.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\main_cm4.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\POPE-app.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\startup_psoc6_01_cm4.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\system_psoc6_cm4.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\trykControl.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\UART_DEB.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\Listing Files\VT100Terminal.lst</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\POPEproject.elf</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\POPEproject.hex</v>
+<v>POPE\POPEproject\CortexM4\ARM_GCC_541\Debug\POPEproject.map</v>
+<v>POPE\POPEproject\POPEproject.gpdsc</v>
+<v>POPE\POPEproject\POPEproject.rpt</v>
+<v>POPE\POPEproject\POPEproject_timing.html</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>POPE</v>
+<v>POPE\POPEproject</v>
+<v>POPE\POPEproject\CortexM0p</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\BLE.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\BLE_bas_config.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\BLE_config.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\BLE_custom_config.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_aios.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_ancs.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_ans.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_bas.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_bcs.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_bls.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_bms.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_bts.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_cgms.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_clk.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_cps.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_cscs.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_cts.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_custom.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_dis.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_ess.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_event_handler.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_gap.lst</v>
+<v>POPE\POPEproject\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_gatt.lst</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStates>
+<TreeKeysV2>
+<v>Datasheet</v>
+</TreeKeysV2>
+<TreeStatesV2>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>POPE</v>
+<v>POPE\POPEproject</v>
+<v>POPE\POPEproject\PSoC 6 Architecture TRM</v>
+<v>POPE\POPEproject\PSoC 63 Family Datasheet</v>
+<v>POPE\POPEproject\Peripheral Driver Library</v>
+<v>POPE\POPEproject\System Reference Guides</v>
+<v>POPE\POPEproject\BLE_PDL_v2_20.pdf</v>
+<v>POPE\POPEproject\GPIO_PDL_v1_0.pdf</v>
+<v>POPE\POPEproject\SCB_I2C_PDL_v2_0.pdf</v>
+<v>POPE\POPEproject\SCB_UART_PDL_v2_0.pdf</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>POPE</v>
+<v>POPE\POPEproject</v>
+<v>POPE\POPEproject\PSoC 6 Architecture TRM</v>
+<v>POPE\POPEproject\PSoC 63 Family Datasheet</v>
+<v>POPE\POPEproject\Peripheral Driver Library</v>
+<v>POPE\POPEproject\System Reference Guides</v>
+<v>POPE\POPEproject\BLE_PDL_v2_20.pdf</v>
+<v>POPE\POPEproject\GPIO_PDL_v1_0.pdf</v>
+<v>POPE\POPEproject\SCB_I2C_PDL_v2_0.pdf</v>
+<v>POPE\POPEproject\SCB_UART_PDL_v2_0.pdf</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStatesV2>
+</CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35>
+</dataGuid>
+</userData>
+</CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
+<Unloaded />
+<OpenDocs />
+<config v="" />
+<AutoUpdate v="true" />
+</CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
+</CyXmlSerializer>
