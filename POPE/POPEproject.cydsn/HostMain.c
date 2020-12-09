@@ -42,6 +42,8 @@ int HostMain(void)
         //power = getPower();     //lav getPower() funktion
         //battery = getVoltageLevel_mV(); //lav getVoltageLevel_mV() funktion
         
+        CS_getKadence();
+        
         Cy_BLE_ProcessEvents();
         //errcheck?
         BLE_sendBattery(battery);
