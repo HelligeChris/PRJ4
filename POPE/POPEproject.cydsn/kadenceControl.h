@@ -13,7 +13,7 @@ typedef struct kadenceCtrl
 
 }kadenceCtrl;
 
-void CS_initKadenceSensor(uint8 FSR);
+void CS_initKadenceSensor(uint8_t FSR);
 float* CS_getKadence();
 
 uint8_t devAddr;

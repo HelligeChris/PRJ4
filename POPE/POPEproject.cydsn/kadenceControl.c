@@ -5,7 +5,7 @@ float scaleFactor = 0;  //Divider
 int16_t CGX;            //Gyroscope x-axis values
 char uart_string[50];   //UART debugging
 
-void CS_initKadenceSensor(uint8 FSR) //ÆNDR TIL UINT8_T
+void CS_initKadenceSensor(uint8_t FSR) //ÆNDR TIL UINT8_T
 {
     I2C_MPU6050_Start();//Start the SC I2C 
 	MPU6050_initialize(); //Initialize MPU6050
