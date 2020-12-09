@@ -16,6 +16,10 @@
 #include <project.h>
 #include <stdio.h>
 #include "BLE-communication.h"
+#include "VT100Terminal.h"
+#include "i2cFunctions.h"
+#include "kadenceControl.h"
+#include "POPE-app.h"
 
 /********************************************************************************
     SIMULERING
@@ -29,6 +33,7 @@
 
 //Functions
 int HostMain(void);
+void getData(int timeOut);
 
 #endif
 /* [] END OF FILE */

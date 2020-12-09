@@ -11,6 +11,9 @@
 //Includes
 #include "BLE-communication.h"
 
+char uart_string[50];   //UART debugging
+int count = 0;
+
 /* BLE Private Functions */
 cy_en_ble_api_result_t BLE_SetCharacteristicValue(POPE_char_index_t charIndex, uint16_t attrSize, uint8_t *attrValue);
 
@@ -26,11 +29,13 @@ uint8_t powerArray[2] = {0};
 /* Callback function */
 void BLE_EventHandler(uint32_t event, void *eventParam)
 {
+    UARTprint("19", "BLE:");
     switch(event)
     {
         case CY_BLE_EVT_STACK_ON:
             #if DEBUG_UART_ENABLED
-            UART_DEB_PutString("Stack On \r \n ");
+            sprintf(uart_string, "Stack On \r \n ");
+            UARTprint("20", uart_string);
             #endif
             Cy_BLE_GAPP_StartAdvertisement(CY_BLE_ADVERTISING_FAST, CY_BLE_PERIPHERAL_CONFIGURATION_0_INDEX);
             //Cy_BLE_GAP_GetBdAddress();
@@ -39,19 +44,23 @@ void BLE_EventHandler(uint32_t event, void *eventParam)
         case CY_BLE_EVT_GAP_DEVICE_DISCONNECTED: //Til debugging. Går ind i denne case når link er etableret.
             Cy_BLE_GAPP_StartAdvertisement(CY_BLE_ADVERTISING_FAST, CY_BLE_PERIPHERAL_CONFIGURATION_0_INDEX);
             #if DEBUG_UART_ENABLED
-            UART_DEB_PutString("Device link connected \r \n ");
+            sprintf(uart_string, "Device link connected \r \n ");
+            UARTprint("20", uart_string);
             #endif
             break;
             
         case CY_BLE_EVT_GAP_DEVICE_CONNECTED:
             #if DEBUG_UART_ENABLED
-            UART_DEB_PutString("Device connected \r \n ");
+            sprintf(uart_string, "Device connected \r \n ");
+            UARTprint("20", uart_string);
             #endif
             break;
            
         case CY_BLE_EVT_TIMEOUT: 
             #if DEBUG_UART_ENABLED
-            UART_DEB_PutString("Timeout \r \n ");
+            count++;
+            sprintf(uart_string, "Timeout %i", count);
+            UARTprint("20", uart_string);
             #endif
             if((((cy_stc_ble_timeout_param_t *)eventParam)->reasonCode == CY_BLE_GENERIC_APP_TO) && 
                (((cy_stc_ble_timeout_param_t *)eventParam)->timerHandle == BLEtimerParam.timerHandle)) //timeoutval == current timer val
@@ -62,14 +71,16 @@ void BLE_EventHandler(uint32_t event, void *eventParam)
             
         case CY_BLE_EVT_STACK_SHUTDOWN_COMPLETE:
             #if DEBUG_UART_ENABLED
-            UART_DEB_PutString("Case 3 \r \n ");
+            sprintf(uart_string, "Stack shutdown");
+            UARTprint("20", uart_string);
             #endif
             Cy_SysPm_Hibernate();
             break;
             
         case CY_BLE_EVT_GAPP_ADVERTISEMENT_START_STOP:
             #if DEBUG_UART_ENABLED
-            UART_DEB_PutString("Case 7 \r \n ");
+            sprintf(uart_string, "Advertisement start/stop");
+            UARTprint("20", uart_string);
             #endif
             if(Cy_BLE_GetAdvertisementState() == CY_BLE_ADV_STATE_STOPPED)
             {
@@ -79,13 +90,14 @@ void BLE_EventHandler(uint32_t event, void *eventParam)
             
         case CY_BLE_EVT_GATTS_READ_CHAR_VAL_ACCESS_REQ:
             #if DEBUG_UART_ENABLED
-            UART_DEB_PutString("Read-req");
+            sprintf(uart_string, "Read-req");
+            UARTprint("20", uart_string);
             #endif
             break;
         
         default:
             #if DEBUG_UART_ENABLED
-            UART_DEB_PutString("Default \r \n ");
+            UARTprint("20", "Default");
             #endif
             break;
     }

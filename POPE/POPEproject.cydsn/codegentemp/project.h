@@ -163,7 +163,9 @@
 #include "UART_DEB.h"
 #include "idleTimer.h"
 #include "Clock_1.h"
+#include "I2C_MPU6050.h"
 #include "UART_DEB_SCBCLK.h"
+#include "I2C_MPU6050_SCBCLK.h"
 
 /*[]*/
 

@@ -25,50 +25,51 @@ static cy_stc_ble_conn_handle_t appConnHandle;
 /* MAIN */
 int HostMain(void)
 {
-    #if (DEBUG_UART_ENABLED)
+    //init
     UART_DEB_Start();
-    UART_DEB_PutString("Main \r \n ");
-    //INIT UI -> lav function? LED'er (debugging)
-    #endif
-    
-    
     Cy_BLE_Start(BLE_EventHandler);
+    CS_initKadenceSensor(3);
+    startIdleCountdown();
+    Cy_SysInt_Init(&WakeUp_cfg, wakeUpHandler);
     
-    #if (SIMULATE != 1)
-    power = getPower();     //lav getPower() funktion
-    battery = getBattery(); //lav getBattery() funktion
-    #endif
+    //set int til 0-40
     
     while(1)
     {
         Cy_BLE_ProcessEvents();
-        //errcheck?
         BLE_sendBattery(battery);
-        //errcheck?
         BLE_sendPower(power);
-        //errcheck?
         
         //LowPowerImplementation(); LAV FUNKTION
         
-        if(Cy_BLE_GetConnectionState(appConnHandle) == CY_BLE_CONN_STATE_CONNECTED)
+        if(testKadence() == true)
         {
-            //Opsaml data
-            //Cy_BLE_ProcessEvents(); /*maybe*/
+            resetIdleCountdown();
         }
-        
-        else if(Cy_BLE_GetConnectionState(appConnHandle) == CY_BLE_CONN_STATE_DISCONNECTED) /*check bond list flag)*/
+        if(Cy_BLE_GetAdvertisementState() == CY_BLE_ADV_STATE_STOPPED) // Hvis der ikke bliver bonded inden for 180sek
         {
-            //App_RemoveDevicesFromBondList(); //Lav function/kopier funktion
+            Cy_SysPm_DeepSleep(CY_SYSPM_WAIT_FOR_INTERRUPT);
         }
         
         timeOut = BLE_checkTimer();
-        #if (SIMULATE)
+        getData(timeOut);
+    }
+}
+
+
+void getData(int timeOut){
+    #if (SIMULATE)
         if(timeOut){
             power += 100;
             battery++;
         }
-        #endif
-    }
+    #endif
+    #if (SIMULATE != 1)
+        if(timeOut){
+            //getPower();
+            //getBattery();
+        }
+    #endif
 }
 
 /* [] END OF FILE */

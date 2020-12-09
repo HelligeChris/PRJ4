@@ -28,6 +28,12 @@
 
 /* ARM CM4 */
 #if (((__CORTEX_M == 4) && (CY_CORE_ID == 0)))
+    #define I2C_MPU6050_SCB_IRQ__INTC_ASSIGNED 1u
+    extern const cy_stc_sysint_t I2C_MPU6050_SCB_IRQ_cfg;
+
+    #define WakeUp__INTC_ASSIGNED 1u
+    extern const cy_stc_sysint_t WakeUp_cfg;
+
     #define idleInt__INTC_ASSIGNED 1u
     extern const cy_stc_sysint_t idleInt_cfg;
 

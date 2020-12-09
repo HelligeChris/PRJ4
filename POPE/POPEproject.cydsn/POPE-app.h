@@ -18,7 +18,9 @@ uint16_t getPower();
 bool testKadence();
 void startIdleCountdown();
 void resetIdleCountdown();
-//bool calibratePOPE();
 
+//interrupts
+void idleIntHandler();
+void wakeUpHandler();
 
 /* [] END OF FILE */

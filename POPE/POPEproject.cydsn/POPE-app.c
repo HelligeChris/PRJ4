@@ -11,8 +11,10 @@
 */
 #include "POPE-app.h"
 
-
 uint16_t idleTimer = 0;
+float* RPM;
+uint16_t idleCounter = 0;
+
 
 
 void lowPowerMode()
@@ -28,7 +30,7 @@ uint16_t getPower()
     //evt. flere variabler...
     
     //getVaegt();
-    //getCadence;
+    CS_getKadence();
     
     //udregn power
     return power;
@@ -37,30 +39,41 @@ uint16_t getPower()
 
 bool testKadence()
 {
-    bool highCadence = true;
-    //test kadencen
-        //return false hvis under 200mHz
+    bool highCadence = false;
+    RPM = CS_getKadence();
+    if(RPM[0] > 12)   //200mHz
+    {
+        highCadence = true;
+    }
     return highCadence;
 }
 
 void startIdleCountdown()
 {
-    
+    Cy_SysInt_Init(&idleInt_cfg, idleIntHandler);
+    idleTimer_Start();
 }
 
 
 void resetIdleCountdown()
 {
-    
+    idleCounter = 0;
+    idleTimer_SetCounter(0);
 }
 
-
-bool calibratePOPE()
+//interrupt
+void idleIntHandler()
 {
-    bool calibrationDone = false;
-    //udfør kalibrering
-        //return false hvis fejl?
-    return calibrationDone;
+    idleCounter++;
+    if(idleCounter == 300)
+    {
+        Cy_SysPm_DeepSleep(CY_SYSPM_WAIT_FOR_INTERRUPT);
+    }
+}
+
+void wakeUpHandler()
+{
+    
 }
 
 /* [] END OF FILE */

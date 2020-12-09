@@ -25,7 +25,10 @@
   <file name="F:\Git downloads\PRJ4\POPE\POPEproject.cydsn\codegentemp\idleTimer.c" value="SOURCE_C;CortexM0p,CortexM4;;;;idleTimer" />
   <file name="F:\Git downloads\PRJ4\POPE\POPEproject.cydsn\codegentemp\idleTimer.h" value="HEADER;;;;;idleTimer" />
   <file name="F:\Git downloads\PRJ4\POPE\POPEproject.cydsn\codegentemp\Clock_1.h" value="HEADER;;;;;Clock_1" />
+  <file name="F:\Git downloads\PRJ4\POPE\POPEproject.cydsn\codegentemp\I2C_MPU6050.c" value="SOURCE_C;CortexM0p,CortexM4;;;;I2C_MPU6050" />
+  <file name="F:\Git downloads\PRJ4\POPE\POPEproject.cydsn\codegentemp\I2C_MPU6050.h" value="HEADER;;;;;I2C_MPU6050" />
   <file name="F:\Git downloads\PRJ4\POPE\POPEproject.cydsn\codegentemp\UART_DEB_SCBCLK.h" value="HEADER;;;;;UART_DEB_SCBCLK" />
+  <file name="F:\Git downloads\PRJ4\POPE\POPEproject.cydsn\codegentemp\I2C_MPU6050_SCBCLK.h" value="HEADER;;;;;I2C_MPU6050_SCBCLK" />
   <file name="F:\Git downloads\PRJ4\POPE\POPEproject.cydsn\codegentemp\project.h" value="OTHER;;;;;" />
   <file name="F:\Git downloads\PRJ4\POPE\POPEproject.cydsn\codegentemp\cycodeshareimport.ld" value="OTHER;;;;;" />
   <file name="F:\Git downloads\PRJ4\POPE\POPEproject.cydsn\codegentemp\cycodeshareexport.ld" value="OTHER;;;;;" />
