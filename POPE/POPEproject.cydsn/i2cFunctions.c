@@ -107,8 +107,7 @@ uint8_t I2CSplReadByte(uint8_t devAddr, uint8_t regAddr) {
     return(temp_value);
 }
 */
-void I2CReadBits(uint8_t devAddr, uint8_t regAddr, uint8_t bitStart, \
-                                                uint8_t length, uint8_t *value) 
+void I2CReadBits(uint8_t devAddr, uint8_t regAddr, uint8_t bitStart, uint8_t length, uint8_t *value) 
 {
    	uint8_t mask = ((1 << length) - 1) << (bitStart - length + 1);
     I2CReadByte(devAddr, regAddr, value);
@@ -127,8 +126,7 @@ void I2CWriteByte(uint8_t devAddr, uint8_t regAddr, uint8_t value)
 	I2CWriteBytes(devAddr, regAddr, 1, &value);
 }
 
-void I2CWriteBits(uint8_t devAddr, uint8_t regAddr, uint8_t bitStart, \
-                                                  uint8_t length, uint8_t value) 
+void I2CWriteBits(uint8_t devAddr, uint8_t regAddr, uint8_t bitStart, uint8_t length, uint8_t value) 
 {
 	uint8_t b;
 	uint8_t mask = ((1 << length) - 1) << (bitStart - length + 1);
