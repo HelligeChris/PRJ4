@@ -31,15 +31,15 @@ float* CS_getKadence()
     
     float degS = CGX/scaleFactor;
     
-    float RPM = degS/6;
-    float f = RPM/60;
-    float T = 1/f;
+    float RPM = fabs(degS/6);
+    float f = fabs(RPM/60);
+    float T = fabs(1/f);
     
     kadenceArr[0] = RPM;
     kadenceArr[1] = f;
     kadenceArr[2] = T;
     
-    #if !DEBUG_UART_ENABLED
+    #if DEBUG_UART_ENABLED
     //Gyroscope values debug
     sprintf(uart_string, "X value: %i",CGX);
     UARTprint("1", uart_string);

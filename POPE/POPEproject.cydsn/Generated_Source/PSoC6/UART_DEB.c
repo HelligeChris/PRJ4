@@ -50,7 +50,7 @@ cy_stc_scb_uart_config_t const UART_DEB_config =
     .irdaInvertRx               = false,
     .irdaEnableLowPowerReceiver = false,
 
-    .oversample                 = 16UL,
+    .oversample                 = 13UL,
     
     .enableMsbFirst             = false,
     .dataWidth                  = 8UL,

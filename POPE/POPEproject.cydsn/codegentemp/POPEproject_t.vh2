@@ -1,5 +1,5 @@
 -- Project:   F:\Git downloads\PRJ4\POPE\POPEproject.cydsn\POPEproject.cyprj
--- Generated: 12/09/2020 09:28:22
+-- Generated: 12/09/2020 10:03:07
 -- PSoC Creator  4.4
 
 ENTITY POPEproject IS
@@ -60,15 +60,15 @@ ARCHITECTURE __DEFAULT__ OF POPEproject IS
     SIGNAL \I2C_MPU6050:Net_1062\ : bit;
     SIGNAL \I2C_MPU6050:Net_162\ : bit;
     SIGNAL \I2C_MPU6050:Net_163\ : bit;
-    SIGNAL \I2C_MPU6050:clock_wire_ff1\ : bit;
-    ATTRIBUTE global_signal OF \I2C_MPU6050:clock_wire_ff1\ : SIGNAL IS true;
+    SIGNAL \I2C_MPU6050:clock_wire_ff0\ : bit;
+    ATTRIBUTE global_signal OF \I2C_MPU6050:clock_wire_ff0\ : SIGNAL IS true;
     SIGNAL \I2C_MPU6050:intr_wire\ : bit;
     SIGNAL \\\I2C_MPU6050:scl(0)\\__PA\ : bit;
     SIGNAL \\\I2C_MPU6050:sda(0)\\__PA\ : bit;
     SIGNAL \UART_DEB:Net_1172\ : bit;
     SIGNAL \UART_DEB:Net_161\ : bit;
-    SIGNAL \UART_DEB:Net_847_ff0\ : bit;
-    ATTRIBUTE global_signal OF \UART_DEB:Net_847_ff0\ : SIGNAL IS true;
+    SIGNAL \UART_DEB:Net_847_ff1\ : bit;
+    ATTRIBUTE global_signal OF \UART_DEB:Net_847_ff1\ : SIGNAL IS true;
     SIGNAL \UART_DEB:intr_wire\ : bit;
     SIGNAL \UART_DEB:rts_wire\ : bit;
     SIGNAL \\\UART_DEB:rx(0)\\__PA\ : bit;
@@ -98,18 +98,18 @@ ARCHITECTURE __DEFAULT__ OF POPEproject IS
     ATTRIBUTE lib_model OF LEDgreen(0) : LABEL IS "iocell5";
     ATTRIBUTE Location OF LEDgreen(0) : LABEL IS "P0[4]";
     ATTRIBUTE lib_model OF \UART_DEB:tx(0)\ : LABEL IS "iocell6";
-    ATTRIBUTE Location OF \UART_DEB:tx(0)\ : LABEL IS "P6[5]";
+    ATTRIBUTE Location OF \UART_DEB:tx(0)\ : LABEL IS "P5[1]";
     ATTRIBUTE lib_model OF \UART_DEB:rx(0)\ : LABEL IS "iocell7";
-    ATTRIBUTE Location OF \UART_DEB:rx(0)\ : LABEL IS "P6[4]";
+    ATTRIBUTE Location OF \UART_DEB:rx(0)\ : LABEL IS "P5[0]";
     ATTRIBUTE lib_model OF \I2C_MPU6050:scl(0)\ : LABEL IS "iocell8";
-    ATTRIBUTE Location OF \I2C_MPU6050:scl(0)\ : LABEL IS "P5[0]";
+    ATTRIBUTE Location OF \I2C_MPU6050:scl(0)\ : LABEL IS "P6[4]";
     ATTRIBUTE lib_model OF \I2C_MPU6050:sda(0)\ : LABEL IS "iocell9";
-    ATTRIBUTE Location OF \I2C_MPU6050:sda(0)\ : LABEL IS "P5[1]";
+    ATTRIBUTE Location OF \I2C_MPU6050:sda(0)\ : LABEL IS "P6[5]";
     ATTRIBUTE Location OF \BLE_PM:cy_mxs40_ble\ : LABEL IS "F(BLE,0)";
     ATTRIBUTE Location OF \BLE_PM:bless_isr\ : LABEL IS "[IntrContainer=(0)][IntrId=(24)]";
-    ATTRIBUTE Location OF \UART_DEB:SCB\ : LABEL IS "F(SCB,6)";
-    ATTRIBUTE Location OF \I2C_MPU6050:SCB\ : LABEL IS "F(SCB,5)";
-    ATTRIBUTE Location OF \I2C_MPU6050:SCB_IRQ\ : LABEL IS "[IntrContainer=(0)][IntrId=(46)]";
+    ATTRIBUTE Location OF \UART_DEB:SCB\ : LABEL IS "F(SCB,5)";
+    ATTRIBUTE Location OF \I2C_MPU6050:SCB\ : LABEL IS "F(SCB,6)";
+    ATTRIBUTE Location OF \I2C_MPU6050:SCB_IRQ\ : LABEL IS "[IntrContainer=(0)][IntrId=(47)]";
     COMPONENT BLE
         PORT (
             ext_pa_lna_chip_en_out : OUT std_ulogic;
@@ -508,8 +508,8 @@ BEGIN
             lfclk => ClockBlock_LFClk,
             ff_div_0 => open,
             ff_div_1 => open,
-            ff_div_5 => \I2C_MPU6050:clock_wire_ff1\,
-            ff_div_6 => \UART_DEB:Net_847_ff0\,
+            ff_div_5 => \UART_DEB:Net_847_ff1\,
+            ff_div_6 => \I2C_MPU6050:clock_wire_ff0\,
             periclk_App => periclk_App);
 
     CPUSS:CPUSS
@@ -1032,7 +1032,7 @@ BEGIN
             mode => 2,
             requires_io_preconfigure => 0)
         PORT MAP(
-            clock => \UART_DEB:Net_847_ff0\,
+            clock => \UART_DEB:Net_847_ff1\,
             uart_rx => \UART_DEB:Net_1172\,
             uart_tx => \UART_DEB:tx_wire\,
             uart_rts => \UART_DEB:rts_wire\,
@@ -1056,7 +1056,7 @@ BEGIN
             mode => 0,
             requires_io_preconfigure => 1)
         PORT MAP(
-            clock => \I2C_MPU6050:clock_wire_ff1\,
+            clock => \I2C_MPU6050:clock_wire_ff0\,
             uart_rx => open,
             uart_tx => \I2C_MPU6050:Net_1062\,
             uart_rts => \I2C_MPU6050:Net_1053\,

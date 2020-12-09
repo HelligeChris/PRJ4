@@ -62,6 +62,7 @@
           <File BuildType="BUILD" Toolchain="">kadenceControl.h</File>
           <File BuildType="BUILD" Toolchain="">trykControl.h</File>
           <File BuildType="BUILD" Toolchain="">i2cFunctions.h</File>
+          <File BuildType="BUILD" Toolchain="">VT100Terminal.h</File>
         </Files>
       </Folder>
       <Folder BuildType="STRICT" Path="F:\Git downloads\PRJ4\POPE\POPEproject.cydsn\Generated_Source\PSoC6">

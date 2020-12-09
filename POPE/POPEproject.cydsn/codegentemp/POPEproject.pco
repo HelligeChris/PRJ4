@@ -1,5 +1,5 @@
 # POPEproject
-# 2020-12-09 08:28:14Z
+# 2020-12-09 09:02:59Z
 
 dont_use_location SMIF -1 -1 0
 dont_use_location p4usbcell -1 -1 0
@@ -14,12 +14,12 @@ set_location "SRSS" SRSS -1 -1 0
 set_io "CY_SRSS_WCO_IN(0)" iocell 0 0
 set_io "CY_SRSS_WCO_OUT(0)" iocell 0 1
 set_io "LEDgreen(0)" iocell 0 4
-set_io "\UART_DEB:tx(0)\" iocell 6 5
-set_io "\UART_DEB:rx(0)\" iocell 6 4
-set_io "\I2C_MPU6050:scl(0)\" iocell 5 0
-set_io "\I2C_MPU6050:sda(0)\" iocell 5 1
+set_io "\UART_DEB:tx(0)\" iocell 5 1
+set_io "\UART_DEB:rx(0)\" iocell 5 0
+set_io "\I2C_MPU6050:scl(0)\" iocell 6 4
+set_io "\I2C_MPU6050:sda(0)\" iocell 6 5
 set_location "\BLE_PM:cy_mxs40_ble\" BLE -1 -1 0
 set_location "\BLE_PM:bless_isr\" interrupt -1 -1 24
-set_location "\UART_DEB:SCB\" SCB -1 -1 6
-set_location "\I2C_MPU6050:SCB\" SCB -1 -1 5
-set_location "\I2C_MPU6050:SCB_IRQ\" interrupt -1 -1 46
+set_location "\UART_DEB:SCB\" SCB -1 -1 5
+set_location "\I2C_MPU6050:SCB\" SCB -1 -1 6
+set_location "\I2C_MPU6050:SCB_IRQ\" interrupt -1 -1 47

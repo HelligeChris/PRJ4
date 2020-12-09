@@ -15,55 +15,55 @@ net CPUSS_swj_swdio_tms
 	term   ":CPUSScontainer:CPUSS[0].swj_swdio_tms"
 end CPUSS_swj_swdio_tms
 net Net_20
-	term   ":ioport5:pin0.fb"
-	switch ":ioport5:pin0.fb==>:ioport5:smartio_mux_out0.direct_in"
-	switch ":ioport5:smartio_mux_out0.smartio_mux_out==>:ioport5:hsiomIn0.hsiomIn0"
-	switch ":ioport5:hsiomIn0.fixedOut0_ACT_7==>:SCB[5]i2c_scl_input_permute.ioport5_fixedOut0_ACT_7"
-	switch ":SCB[5]i2c_scl_input_permute.SCB[5]i2c_scl==>:SCBcontainer:SCB[5].i2c_scl"
-	term   ":SCBcontainer:SCB[5].i2c_scl"
+	term   ":ioport6:pin4.fb"
+	switch ":ioport6:pin4.fb==>:ioport6:smartio_mux_out4.direct_in"
+	switch ":ioport6:smartio_mux_out4.smartio_mux_out==>:ioport6:hsiomIn4.hsiomIn4"
+	switch ":ioport6:hsiomIn4.fixedOut4_ACT_7==>:SCB[6]i2c_scl_input_permute.ioport6_fixedOut4_ACT_7"
+	switch ":SCB[6]i2c_scl_input_permute.SCB[6]i2c_scl==>:SCBcontainer:SCB[6].i2c_scl"
+	term   ":SCBcontainer:SCB[6].i2c_scl"
 end Net_20
 net Net_22
-	term   ":ioport5:pin1.fb"
-	switch ":ioport5:pin1.fb==>:ioport5:smartio_mux_out1.direct_in"
-	switch ":ioport5:smartio_mux_out1.smartio_mux_out==>:ioport5:hsiomIn1.hsiomIn1"
-	switch ":ioport5:hsiomIn1.fixedOut1_ACT_7==>:SCB[5]i2c_sda_input_permute.ioport5_fixedOut1_ACT_7"
-	switch ":SCB[5]i2c_sda_input_permute.SCB[5]i2c_sda==>:SCBcontainer:SCB[5].i2c_sda"
-	term   ":SCBcontainer:SCB[5].i2c_sda"
+	term   ":ioport6:pin5.fb"
+	switch ":ioport6:pin5.fb==>:ioport6:smartio_mux_out5.direct_in"
+	switch ":ioport6:smartio_mux_out5.smartio_mux_out==>:ioport6:hsiomIn5.hsiomIn5"
+	switch ":ioport6:hsiomIn5.fixedOut5_ACT_7==>:SCB[6]i2c_sda_input_permute.ioport6_fixedOut5_ACT_7"
+	switch ":SCB[6]i2c_sda_input_permute.SCB[6]i2c_sda==>:SCBcontainer:SCB[6].i2c_sda"
+	term   ":SCBcontainer:SCB[6].i2c_sda"
 end Net_22
 net \BLE_PM:Net_1\
 	term   ":BLEcontainer:BLE[0].interrupt"
 	switch ":BLEcontainer:BLE[0].interrupt==>:intc_0:interrupt24.interrupt"
 	term   ":intc_0:interrupt24.interrupt"
 end \BLE_PM:Net_1\
-net \I2C_MPU6050:clock_wire_ff1\
-	term   ":Clockcontainer:Clock[0].ff_div_5"
-	switch ":Clockcontainer:Clock[0].ff_div_5==>:Clockcontainer:ff_permute.ff_div_5"
-	switch ":Clockcontainer:ff_permute.Clock[0]ff_div_5==>:SCBcontainer:SCB[5].clock"
-	term   ":SCBcontainer:SCB[5].clock"
-end \I2C_MPU6050:clock_wire_ff1\
-net \I2C_MPU6050:intr_wire\
-	term   ":SCBcontainer:SCB[5].interrupt"
-	switch ":SCBcontainer:SCB[5].interrupt==>:intc_0:interrupt46.interrupt"
-	term   ":intc_0:interrupt46.interrupt"
-end \I2C_MPU6050:intr_wire\
-net \UART_DEB:Net_1172\
-	term   ":ioport6:pin4.fb"
-	switch ":ioport6:pin4.fb==>:ioport6:smartio_mux_out4.direct_in"
-	switch ":ioport6:smartio_mux_out4.smartio_mux_out==>:ioport6:hsiomIn4.hsiomIn4"
-	switch ":ioport6:hsiomIn4.fixedOut4_ACT_6==>:SCB[6]uart_rx_input_permute.ioport6_fixedOut4_ACT_6"
-	switch ":SCB[6]uart_rx_input_permute.SCB[6]uart_rx==>:SCBcontainer:SCB[6].uart_rx"
-	term   ":SCBcontainer:SCB[6].uart_rx"
-end \UART_DEB:Net_1172\
-net \UART_DEB:Net_847_ff0\
+net \I2C_MPU6050:clock_wire_ff0\
 	term   ":Clockcontainer:Clock[0].ff_div_6"
 	switch ":Clockcontainer:Clock[0].ff_div_6==>:Clockcontainer:ff_permute.ff_div_6"
 	switch ":Clockcontainer:ff_permute.Clock[0]ff_div_6==>:SCBcontainer:SCB[6].clock"
 	term   ":SCBcontainer:SCB[6].clock"
-end \UART_DEB:Net_847_ff0\
+end \I2C_MPU6050:clock_wire_ff0\
+net \I2C_MPU6050:intr_wire\
+	term   ":SCBcontainer:SCB[6].interrupt"
+	switch ":SCBcontainer:SCB[6].interrupt==>:intc_0:interrupt47.interrupt"
+	term   ":intc_0:interrupt47.interrupt"
+end \I2C_MPU6050:intr_wire\
+net \UART_DEB:Net_1172\
+	term   ":ioport5:pin0.fb"
+	switch ":ioport5:pin0.fb==>:ioport5:smartio_mux_out0.direct_in"
+	switch ":ioport5:smartio_mux_out0.smartio_mux_out==>:ioport5:hsiomIn0.hsiomIn0"
+	switch ":ioport5:hsiomIn0.fixedOut0_ACT_6==>:SCB[5]uart_rx_input_permute.ioport5_fixedOut0_ACT_6"
+	switch ":SCB[5]uart_rx_input_permute.SCB[5]uart_rx==>:SCBcontainer:SCB[5].uart_rx"
+	term   ":SCBcontainer:SCB[5].uart_rx"
+end \UART_DEB:Net_1172\
+net \UART_DEB:Net_847_ff1\
+	term   ":Clockcontainer:Clock[0].ff_div_5"
+	switch ":Clockcontainer:Clock[0].ff_div_5==>:Clockcontainer:ff_permute.ff_div_5"
+	switch ":Clockcontainer:ff_permute.Clock[0]ff_div_5==>:SCBcontainer:SCB[5].clock"
+	term   ":SCBcontainer:SCB[5].clock"
+end \UART_DEB:Net_847_ff1\
 net \UART_DEB:tx_wire\
-	term   ":SCBcontainer:SCB[6].uart_tx"
-	switch ":SCBcontainer:SCB[6].uart_tx==>:ioport6:hsiomOut5.fixedIn5_ACT_6"
-	switch ":ioport6:hsiomOut5.hsiomOut5==>:ioport6:smartio_mux_in5.direct_out"
-	switch ":ioport6:smartio_mux_in5.smartio_mux_in==>:ioport6:pin5.pin_input"
-	term   ":ioport6:pin5.pin_input"
+	term   ":SCBcontainer:SCB[5].uart_tx"
+	switch ":SCBcontainer:SCB[5].uart_tx==>:ioport5:hsiomOut1.fixedIn1_ACT_6"
+	switch ":ioport5:hsiomOut1.hsiomOut1==>:ioport5:smartio_mux_in1.direct_out"
+	switch ":ioport5:smartio_mux_in1.smartio_mux_in==>:ioport5:pin1.pin_input"
+	term   ":ioport5:pin1.pin_input"
 end \UART_DEB:tx_wire\

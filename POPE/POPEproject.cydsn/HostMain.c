@@ -28,21 +28,18 @@ static cy_stc_ble_conn_handle_t appConnHandle;
 int HostMain(void)
 {
     UART_DEB_Start();
-    UART_DEB_PutString("Main \r \n ");
     
     //INIT UI -> lav function? LED'er (debugging)
     
     Cy_BLE_Start(BLE_EventHandler);
-    //CS_initKadenceSensor(3);
+    CS_initKadenceSensor(3);
     
-    //float* RPM;
+    float* CS;
     
     while(1)
     {
         //power = getPower();     //lav getPower() funktion
         //battery = getVoltageLevel_mV(); //lav getVoltageLevel_mV() funktion
-        
-        CS_getKadence();
         
         Cy_BLE_ProcessEvents();
         //errcheck?
@@ -69,6 +66,13 @@ int HostMain(void)
         if(timeOut){
             power += 100;
             battery++;
+            CS = CS_getKadence();
+            sprintf(uart_string, "RPM: %i", (uint16)(*(CS)));
+            UARTprint("1", uart_string);
+            sprintf(uart_string, "Hz: %i", (uint16)(*(CS+1)));
+            UARTprint("2", uart_string);
+            sprintf(uart_string, "T: %i", (uint16)(*(CS+2)));
+            UARTprint("3", uart_string);
         }
         #endif
     }

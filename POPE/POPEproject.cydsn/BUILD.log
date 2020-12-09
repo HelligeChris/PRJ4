@@ -1,4 +1,4 @@
---------------- Build Started: 12/09/2020 09:31:48 Project: POPEproject, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
+--------------- Build Started: 12/09/2020 10:25:54 Project: POPEproject, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
 The code generation step is up to date.
 The compile step is up to date, no work needs to be done.
 The link step is up to date, no work needs to be done.
@@ -12,5 +12,5 @@ Checksum calculated and stored in ELF section .cymeta
 Application checksum calculated and stored in ELF section .cychecksum
 Checksum calculated and stored in ELF section .cymeta
 "C:\Program Files (x86)\Cypress\PDL\3.1.3\tools\win\elf\cymcuelftool.exe" -A "F:\Git downloads\PRJ4\POPE\POPEproject.cydsn\CortexM4\ARM_GCC_541\Debug\POPEproject.elf"
-code:197075	sram:14824
---------------- Build Succeeded: 12/09/2020 09:31:50 ---------------
+code:204871	sram:15000
+--------------- Build Succeeded: 12/09/2020 10:25:57 ---------------

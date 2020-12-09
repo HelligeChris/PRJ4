@@ -17,7 +17,7 @@
 #include <stdio.h>
 #include "BLE-communication.h"
 #include "kadenceControl.h"
-//#include "VT100Terminal.h"
+#include "VT100Terminal.h"
 #include "i2cFunctions.h"
 
 /********************************************************************************
@@ -28,7 +28,7 @@
 //Conditional Compilation Parameters
 #define ENABLED 1u
 #define DISABLED 0u
-#define DEBUG_UART_ENABLED 1
+#define DEBUG_UART_ENABLED 0
 
 //Functions
 int HostMain(void);

@@ -1,4 +1,4 @@
-Loading plugins phase: Elapsed time ==> 0s.161ms
+Loading plugins phase: Elapsed time ==> 0s.177ms
 <CYPRESSTAG name="CyDsfit arguments...">
 cydsfit arguments: -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p F:\Git downloads\PRJ4\POPE\POPEproject.cydsn\POPEproject.cyprj -d CYBLE-416045-02 -s F:\Git downloads\PRJ4\POPE\POPEproject.cydsn\Generated_Source\PSoC6 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE
 </CYPRESSTAG>
@@ -7,7 +7,7 @@ ADD: fit.M0067: information: Clock Information: (The WCO is enabled. Chip startu
 
 <CYPRESSTAG name="Design elaboration results...">
 </CYPRESSTAG>
-Elaboration phase: Elapsed time ==> 1s.741ms
+Elaboration phase: Elapsed time ==> 1s.835ms
 <CYPRESSTAG name="HDL generation results...">
 </CYPRESSTAG>
 HDL generation phase: Elapsed time ==> 0s.036ms
@@ -44,7 +44,7 @@ Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=F:\Git downloa
 ======================================================================
 
 vlogfe V6.3 IR 41:  Verilog parser
-Wed Dec 09 09:28:08 2020
+Wed Dec 09 10:02:52 2020
 
 
 ======================================================================
@@ -54,7 +54,7 @@ Options  :    -yv2 -q10 POPEproject.v
 ======================================================================
 
 vpp V6.3 IR 41:  Verilog Pre-Processor
-Wed Dec 09 09:28:08 2020
+Wed Dec 09 10:02:52 2020
 
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v'
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\ZeroTerminal\ZeroTerminal.v'
@@ -86,7 +86,7 @@ Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=F:\Git downloa
 ======================================================================
 
 tovif V6.3 IR 41:  High-level synthesis
-Wed Dec 09 09:28:08 2020
+Wed Dec 09 10:02:52 2020
 
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\std.vhd'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\cypress.vhd'.
@@ -113,7 +113,7 @@ Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=F:\Git downloa
 ======================================================================
 
 topld V6.3 IR 41:  Synthesis and optimization
-Wed Dec 09 09:28:08 2020
+Wed Dec 09 10:02:52 2020
 
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\std.vhd'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\cypress.vhd'.
@@ -195,24 +195,24 @@ CYPRESS_DIR    : C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\wa
 Warp Program   : C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\bin\warp.exe
 Warp Arguments : -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya "-.fftprj=F:\Git downloads\PRJ4\POPE\POPEproject.cydsn\POPEproject.cyprj" -dcpsoc3 POPEproject.v -verilog
 </CYPRESSTAG>
-Warp synthesis phase: Elapsed time ==> 0s.555ms
+Warp synthesis phase: Elapsed time ==> 0s.642ms
 <CYPRESSTAG name="Fitter results...">
 <CYPRESSTAG name="Fitter startup details...">
-cyp3fit: V4.4.0.80, Family: PSoC3, Started at: Wednesday, 09 December 2020 09:28:08
+cyp3fit: V4.4.0.80, Family: PSoC3, Started at: Wednesday, 09 December 2020 10:02:52
 Options: -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=F:\Git downloads\PRJ4\POPE\POPEproject.cydsn\POPEproject.cyprj -d CYBLE-416045-02 POPEproject.v -verilog
 </CYPRESSTAG>
 <CYPRESSTAG name="Design parsing">
-Design parsing phase: Elapsed time ==> 0s.237ms
+Design parsing phase: Elapsed time ==> 0s.239ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Tech Mapping">
 <CYPRESSTAG name="Initial Mapping" icon="FILE_RPT_TECHM">
 <CYPRESSTAG name="Global Clock Selection" icon="FILE_RPT_TECHM">
-    Fixed Function Clock 0: Automatic-assigning  clock 'UART_DEB_SCBCLK'. Signal=\UART_DEB:Net_847_ff0\
-    Fixed Function Clock 1: Automatic-assigning  clock 'I2C_MPU6050_SCBCLK'. Signal=\I2C_MPU6050:clock_wire_ff1\
+    Fixed Function Clock 0: Automatic-assigning  clock 'I2C_MPU6050_SCBCLK'. Signal=\I2C_MPU6050:clock_wire_ff0\
+    Fixed Function Clock 1: Automatic-assigning  clock 'UART_DEB_SCBCLK'. Signal=\UART_DEB:Net_847_ff1\
 <CYPRESSTAG name="UDB Clock/Enable Remapping Results">
 </CYPRESSTAG>
 </CYPRESSTAG>
-ADD: pft.M0040: information: The following 5 pin(s) will be assigned a location by the fitter: \I2C_MPU6050:scl(0)\, \I2C_MPU6050:sda(0)\, \UART_DEB:rx(0)\, \UART_DEB:tx(0)\, LEDgreen(0)
+ADD: pft.M0040: information: The following 1 pin(s) will be assigned a location by the fitter: LEDgreen(0)
 
 Info: plm.M0038: The pin named CY_CPUSS_SWJ_SWCLK_TCLK(0) at location P6[7] prevents usage of special purposes: SCB[6].uart_cts. (App=cydsfit)
 Info: plm.M0038: The pin named CY_CPUSS_SWJ_SWCLK_TCLK(0) at location P6[7] prevents usage of special purposes: SCB[6].spi_select[0]. (App=cydsfit)
@@ -460,6 +460,9 @@ Design Equations
             pa_out => \UART_DEB:tx(0)\__PA ,
             pin_input => \UART_DEB:tx_wire\ ,
             pad => \UART_DEB:tx(0)_PAD\ );
+        Properties:
+        {
+        }
 
     Pin : Name = \UART_DEB:rx(0)\
         Attributes:
@@ -497,6 +500,9 @@ Design Equations
             pa_out => \UART_DEB:rx(0)\__PA ,
             fb => \UART_DEB:Net_1172\ ,
             pad => \UART_DEB:rx(0)_PAD\ );
+        Properties:
+        {
+        }
 
     Pin : Name = \I2C_MPU6050:scl(0)\
         Attributes:
@@ -534,6 +540,9 @@ Design Equations
             pa_out => \I2C_MPU6050:scl(0)\__PA ,
             fb => Net_20 ,
             pad => \I2C_MPU6050:scl(0)_PAD\ );
+        Properties:
+        {
+        }
 
     Pin : Name = \I2C_MPU6050:sda(0)\
         Attributes:
@@ -571,6 +580,9 @@ Design Equations
             pa_out => \I2C_MPU6050:sda(0)\__PA ,
             fb => Net_22 ,
             pad => \I2C_MPU6050:sda(0)_PAD\ );
+        Properties:
+        {
+        }
     </CYPRESSTAG>
     <CYPRESSTAG name="Macrocell listing" icon="FILE_RPT_EQUATION">
     </CYPRESSTAG>
@@ -656,8 +668,8 @@ Sample and Hold               :    0 :    1 :    1 :  0.00 %
 SAR ADC                       :    0 :    1 :    1 :  0.00 %
 DieTemp Sensor                :    0 :    1 :    1 :  0.00 %
 </CYPRESSTAG>
-Technology Mapping: Elapsed time ==> 0s.034ms
-Tech Mapping phase: Elapsed time ==> 0s.104ms
+Technology Mapping: Elapsed time ==> 0s.037ms
+Tech Mapping phase: Elapsed time ==> 0s.098ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Placement">
 <CYPRESSTAG name="FFB & IO Pre Placement">
@@ -669,30 +681,30 @@ CY_CPUSS_SWJ_SWCLK_TCLK(0)          : [IOP=(6)][IoId=(7)]
 CY_CPUSS_SWJ_SWDIO_TMS(0)           : [IOP=(6)][IoId=(6)]                
 CY_SRSS_WCO_IN(0)                   : [IOP=(0)][IoId=(0)]                
 CY_SRSS_WCO_OUT(0)                  : [IOP=(0)][IoId=(1)]                
+\UART_DEB:tx(0)\                    : [IOP=(5)][IoId=(1)]                
+\UART_DEB:rx(0)\                    : [IOP=(5)][IoId=(0)]                
+\I2C_MPU6050:scl(0)\                : [IOP=(6)][IoId=(4)]                
+\I2C_MPU6050:sda(0)\                : [IOP=(6)][IoId=(5)]                
 ClockGenBlock                       : CLK_GEN_[FFB(CLK_GEN,0)]           
 CPUSS                               : CPUSS_[FFB(CPUSS,0)]               
 SRSS                                : SRSS_[FFB(SRSS,0)]                 
 \BLE_PM:cy_mxs40_ble\               : BLE_[FFB(BLE,0)]                   
-\UART_DEB:rx(0)\                    : [IOP=(5)][IoId=(0)]                
-\UART_DEB:tx(0)\                    : [IOP=(5)][IoId=(1)]                
 \UART_DEB:SCB\                      : SCB_[FFB(SCB,5)]                   
-\I2C_MPU6050:scl(0)\                : [IOP=(6)][IoId=(4)]                
-\I2C_MPU6050:sda(0)\                : [IOP=(6)][IoId=(5)]                
 \I2C_MPU6050:SCB\                   : SCB_[FFB(SCB,6)]                   
 LEDgreen(0)                         : [IOP=(0)][IoId=(4)]                
 
 </CYPRESSTAG>
 </CYPRESSTAG>
 <CYPRESSTAG name="Real Analog Placement">
-Elapsed time ==> 0.1048564s
+Elapsed time ==> 0.1056598s
 </CYPRESSTAG>
-Analog Placement phase: Elapsed time ==> 0s.661ms
+Analog Placement phase: Elapsed time ==> 0s.751ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Routing">
 <CYPRESSTAG name="Analog Routing">
-Route success=True, Iterations=1 Elapsed=0.0060414 secs
+Route success=True, Iterations=1 Elapsed=0.0019129 secs
 </CYPRESSTAG>
-Analog Routing phase: Elapsed time ==> 0s.006ms
+Analog Routing phase: Elapsed time ==> 0s.002ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Code Generation">
 ============ Analog Final Answer Routes ============
@@ -719,12 +731,12 @@ Map of item to net {
 }
 Mux Info {
 }
-Analog Code Generation phase: Elapsed time ==> 0s.013ms
+Analog Code Generation phase: Elapsed time ==> 0s.014ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Digital Placement">
 <CYPRESSTAG name="Detailed placement messages">
 I2659: No Constrained paths were found. The placer will run in non-timing driven mode.
-I2076: Total run-time: 0.6 sec.
+I2076: Total run-time: 0.5 sec.
 
 </CYPRESSTAG>
 <CYPRESSTAG name="PLD Packing">
@@ -738,7 +750,7 @@ PLD Packing: Elapsed time ==> 0s.000ms
 Initial Partitioning Summary not displayed at this verbose level.</CYPRESSTAG>
 <CYPRESSTAG name="Final Partitioning Summary">
 Final Partitioning Summary not displayed at this verbose level.</CYPRESSTAG>
-Partitioning: Elapsed time ==> 0s.009ms
+Partitioning: Elapsed time ==> 0s.008ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Final Placement Summary">
 
@@ -778,7 +790,7 @@ Intr container @ [IntrContainer=(0)]:
             deepsleep_required = 1
             int_type = "10"
         }
-  Intr@ [IntrContainer=(0)][IntrId=(46)] 
+  Intr@ [IntrContainer=(0)][IntrId=(47)] 
     interrupt: Name =\I2C_MPU6050:SCB_IRQ\
         PORT MAP (
             interrupt => \I2C_MPU6050:intr_wire\ );
@@ -912,89 +924,6 @@ Pin : Name = LEDgreen(0)
 
 Port 5 contains the following IO cells:
 [IoId=0]: 
-Pin : Name = \I2C_MPU6050:scl(0)\
-    Attributes:
-        In Group/Port: True
-        In Sync Option: NOSYNC
-        Out Sync Option: NOSYNC
-        Interrupt generated: False
-        Interrupt mode: NONE
-        Drive mode: OPEN_DRAIN_LO
-        VTrip: CMOS
-        Slew: FAST
-        Input Sync needed: False
-        Output Sync needed: False
-        SC shield enabled: False
-        POR State: INP_DIS_HI_Z
-        LCD Mode: COMMON
-        Register Mode: RegComb
-        CaSense Mode: NEITHER
-        Treat as pin: True
-        Is OE Registered: False
-        Uses Analog: False
-        Can contain Digital: True
-        Is SIO: False
-        SIO Output Buf: NONREGULATED
-        SIO Input Buf: SINGLE_ENDED
-        SIO HiFreq: LOW
-        SIO Hyst: DISABLED
-        SIO Vtrip: MULTIPLIER_0_5
-        SIO Multiplier Index: 0
-        SIO RefSel: VCC_IO
-        Required Capabilities: DIGITAL
-        Initial Value: 1
-        IO Voltage: 0
-    PORT MAP (
-        pa_out => \I2C_MPU6050:scl(0)\__PA ,
-        fb => Net_20 ,
-        pad => \I2C_MPU6050:scl(0)_PAD\ );
-    Properties:
-    {
-    }
-
-[IoId=1]: 
-Pin : Name = \I2C_MPU6050:sda(0)\
-    Attributes:
-        In Group/Port: True
-        In Sync Option: NOSYNC
-        Out Sync Option: NOSYNC
-        Interrupt generated: False
-        Interrupt mode: NONE
-        Drive mode: OPEN_DRAIN_LO
-        VTrip: CMOS
-        Slew: FAST
-        Input Sync needed: False
-        Output Sync needed: False
-        SC shield enabled: False
-        POR State: INP_DIS_HI_Z
-        LCD Mode: COMMON
-        Register Mode: RegComb
-        CaSense Mode: NEITHER
-        Treat as pin: True
-        Is OE Registered: False
-        Uses Analog: False
-        Can contain Digital: True
-        Is SIO: False
-        SIO Output Buf: NONREGULATED
-        SIO Input Buf: SINGLE_ENDED
-        SIO HiFreq: LOW
-        SIO Hyst: DISABLED
-        SIO Vtrip: MULTIPLIER_0_5
-        SIO Multiplier Index: 0
-        SIO RefSel: VCC_IO
-        Required Capabilities: DIGITAL
-        Initial Value: 1
-        IO Voltage: 0
-    PORT MAP (
-        pa_out => \I2C_MPU6050:sda(0)\__PA ,
-        fb => Net_22 ,
-        pad => \I2C_MPU6050:sda(0)_PAD\ );
-    Properties:
-    {
-    }
-
-Port 6 contains the following IO cells:
-[IoId=4]: 
 Pin : Name = \UART_DEB:rx(0)\
     Attributes:
         In Group/Port: True
@@ -1035,7 +964,7 @@ Pin : Name = \UART_DEB:rx(0)\
     {
     }
 
-[IoId=5]: 
+[IoId=1]: 
 Pin : Name = \UART_DEB:tx(0)\
     Attributes:
         In Group/Port: True
@@ -1072,6 +1001,89 @@ Pin : Name = \UART_DEB:tx(0)\
         pa_out => \UART_DEB:tx(0)\__PA ,
         pin_input => \UART_DEB:tx_wire\ ,
         pad => \UART_DEB:tx(0)_PAD\ );
+    Properties:
+    {
+    }
+
+Port 6 contains the following IO cells:
+[IoId=4]: 
+Pin : Name = \I2C_MPU6050:scl(0)\
+    Attributes:
+        In Group/Port: True
+        In Sync Option: NOSYNC
+        Out Sync Option: NOSYNC
+        Interrupt generated: False
+        Interrupt mode: NONE
+        Drive mode: OPEN_DRAIN_LO
+        VTrip: CMOS
+        Slew: FAST
+        Input Sync needed: False
+        Output Sync needed: False
+        SC shield enabled: False
+        POR State: INP_DIS_HI_Z
+        LCD Mode: COMMON
+        Register Mode: RegComb
+        CaSense Mode: NEITHER
+        Treat as pin: True
+        Is OE Registered: False
+        Uses Analog: False
+        Can contain Digital: True
+        Is SIO: False
+        SIO Output Buf: NONREGULATED
+        SIO Input Buf: SINGLE_ENDED
+        SIO HiFreq: LOW
+        SIO Hyst: DISABLED
+        SIO Vtrip: MULTIPLIER_0_5
+        SIO Multiplier Index: 0
+        SIO RefSel: VCC_IO
+        Required Capabilities: DIGITAL
+        Initial Value: 1
+        IO Voltage: 0
+    PORT MAP (
+        pa_out => \I2C_MPU6050:scl(0)\__PA ,
+        fb => Net_20 ,
+        pad => \I2C_MPU6050:scl(0)_PAD\ );
+    Properties:
+    {
+    }
+
+[IoId=5]: 
+Pin : Name = \I2C_MPU6050:sda(0)\
+    Attributes:
+        In Group/Port: True
+        In Sync Option: NOSYNC
+        Out Sync Option: NOSYNC
+        Interrupt generated: False
+        Interrupt mode: NONE
+        Drive mode: OPEN_DRAIN_LO
+        VTrip: CMOS
+        Slew: FAST
+        Input Sync needed: False
+        Output Sync needed: False
+        SC shield enabled: False
+        POR State: INP_DIS_HI_Z
+        LCD Mode: COMMON
+        Register Mode: RegComb
+        CaSense Mode: NEITHER
+        Treat as pin: True
+        Is OE Registered: False
+        Uses Analog: False
+        Can contain Digital: True
+        Is SIO: False
+        SIO Output Buf: NONREGULATED
+        SIO Input Buf: SINGLE_ENDED
+        SIO HiFreq: LOW
+        SIO Hyst: DISABLED
+        SIO Vtrip: MULTIPLIER_0_5
+        SIO Multiplier Index: 0
+        SIO RefSel: VCC_IO
+        Required Capabilities: DIGITAL
+        Initial Value: 1
+        IO Voltage: 0
+    PORT MAP (
+        pa_out => \I2C_MPU6050:sda(0)\__PA ,
+        fb => Net_22 ,
+        pad => \I2C_MPU6050:sda(0)_PAD\ );
     Properties:
     {
     }
@@ -1181,8 +1193,8 @@ Clock group 0:
             ilo => ClockBlock_ILO ,
             wco => ClockBlock_WCO ,
             lfclk => ClockBlock_LFClk ,
-            ff_div_0 => \UART_DEB:Net_847_ff0\ ,
-            ff_div_1 => \I2C_MPU6050:clock_wire_ff1\ );
+            ff_div_0 => \I2C_MPU6050:clock_wire_ff0\ ,
+            ff_div_1 => \UART_DEB:Net_847_ff1\ );
         Properties:
         {
         }
@@ -1191,9 +1203,27 @@ Vref group 0: empty
 LPCOMP group 0: empty
 SCB group 0: 
     SCB @ F(SCB,5): 
+    SCB: Name =\UART_DEB:SCB\
+        PORT MAP (
+            clock => \UART_DEB:Net_847_ff1\ ,
+            uart_rx => \UART_DEB:Net_1172\ ,
+            uart_tx => \UART_DEB:tx_wire\ ,
+            uart_rts => \UART_DEB:rts_wire\ ,
+            interrupt => \UART_DEB:intr_wire\ ,
+            tr_tx_req => Net_12 ,
+            tr_rx_req => Net_9 ,
+            tr_i2c_scl_filtered => \UART_DEB:Net_161\ );
+        Properties:
+        {
+            cy_registers = ""
+            master = 0
+            mode = 2
+            requires_io_preconfigure = 0
+        }
+    SCB @ F(SCB,6): 
     SCB: Name =\I2C_MPU6050:SCB\
         PORT MAP (
-            clock => \I2C_MPU6050:clock_wire_ff1\ ,
+            clock => \I2C_MPU6050:clock_wire_ff0\ ,
             uart_tx => \I2C_MPU6050:Net_1062\ ,
             uart_rts => \I2C_MPU6050:Net_1053\ ,
             i2c_scl => Net_20 ,
@@ -1208,24 +1238,6 @@ SCB group 0:
             master = 1
             mode = 0
             requires_io_preconfigure = 1
-        }
-    SCB @ F(SCB,6): 
-    SCB: Name =\UART_DEB:SCB\
-        PORT MAP (
-            clock => \UART_DEB:Net_847_ff0\ ,
-            uart_rx => \UART_DEB:Net_1172\ ,
-            uart_tx => \UART_DEB:tx_wire\ ,
-            uart_rts => \UART_DEB:rts_wire\ ,
-            interrupt => \UART_DEB:intr_wire\ ,
-            tr_tx_req => Net_12 ,
-            tr_rx_req => Net_9 ,
-            tr_i2c_scl_filtered => \UART_DEB:Net_161\ );
-        Properties:
-        {
-            cy_registers = ""
-            master = 0
-            mode = 2
-            requires_io_preconfigure = 0
         }
 CSD group 0: empty
 CSIDAC7 group 0: empty
@@ -1299,11 +1311,11 @@ Port | Pin | Fixed |      Type |       Drive Mode |                       Name |
      |   1 |     * |      NONE |      HI_Z_ANALOG |         CY_SRSS_WCO_OUT(0) | Analog(SRSS_wco_out)
      |   4 |       |      NONE |         CMOS_OUT |                LEDgreen(0) | 
 -----+-----+-------+-----------+------------------+----------------------------+-------------------------
-   5 |   0 |       |      NONE |    OPEN_DRAIN_LO |       \I2C_MPU6050:scl(0)\ | FB(Net_20)
-     |   1 |       |      NONE |    OPEN_DRAIN_LO |       \I2C_MPU6050:sda(0)\ | FB(Net_22)
+   5 |   0 |     * |      NONE |      HI_Z_ANALOG |           \UART_DEB:rx(0)\ | FB(\UART_DEB:Net_1172\)
+     |   1 |     * |      NONE |         CMOS_OUT |           \UART_DEB:tx(0)\ | In(\UART_DEB:tx_wire\)
 -----+-----+-------+-----------+------------------+----------------------------+-------------------------
-   6 |   4 |       |      NONE |      HI_Z_ANALOG |           \UART_DEB:rx(0)\ | FB(\UART_DEB:Net_1172\)
-     |   5 |       |      NONE |         CMOS_OUT |           \UART_DEB:tx(0)\ | In(\UART_DEB:tx_wire\)
+   6 |   4 |     * |      NONE |    OPEN_DRAIN_LO |       \I2C_MPU6050:scl(0)\ | FB(Net_20)
+     |   5 |     * |      NONE |    OPEN_DRAIN_LO |       \I2C_MPU6050:sda(0)\ | FB(Net_22)
      |   6 |     * |      NONE |      RES_PULL_UP |  CY_CPUSS_SWJ_SWDIO_TMS(0) | FB(CPUSS_swj_swdio_tms)
      |   7 |     * |      NONE |    RES_PULL_DOWN | CY_CPUSS_SWJ_SWCLK_TCLK(0) | FB(CPUSS_swj_swclk_tclk)
 ---------------------------------------------------------------------------------------------------------
@@ -1311,32 +1323,32 @@ Port | Pin | Fixed |      Type |       Drive Mode |                       Name |
 </CYPRESSTAG>
 </CYPRESSTAG>
 Digital component placer commit/Report: Elapsed time ==> 0s.018ms
-Digital Placement phase: Elapsed time ==> 5s.019ms
+Digital Placement phase: Elapsed time ==> 4s.882ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Digital Routing">
 "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\bin/sjrouter.exe" --xml-path "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\dev\psoc6/0/route_arch-rrg.cydata" --vh2-path "POPEproject_r.vh2" --pcf-path "POPEproject.pco" --des-name "POPEproject" --dsf-path "POPEproject.dsf" --sdc-path "POPEproject.sdc" --lib-path "POPEproject_r.lib"
 Routing successful.
-Digital Routing phase: Elapsed time ==> 0s.847ms
+Digital Routing phase: Elapsed time ==> 0s.808ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream Generation">
-Bitstream Generation phase: Elapsed time ==> 0s.517ms
+Bitstream Generation phase: Elapsed time ==> 0s.436ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream Verification">
 Bitstream Verification phase: Elapsed time ==> 0s.001ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Static timing analysis">
 Timing report is in POPEproject_timing.html.
-Static timing analysis phase: Elapsed time ==> 6s.681ms
+Static timing analysis phase: Elapsed time ==> 7s.147ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Data reporting">
 Data reporting phase: Elapsed time ==> 0s.000ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Database update...">
-Design database save phase: Elapsed time ==> 0s.136ms
+Design database save phase: Elapsed time ==> 0s.140ms
 </CYPRESSTAG>
-cydsfit: Elapsed time ==> 14s.258ms
+cydsfit: Elapsed time ==> 14s.555ms
 </CYPRESSTAG>
-Fitter phase: Elapsed time ==> 14s.258ms
-API generation phase: Elapsed time ==> 0s.882ms
-Dependency generation phase: Elapsed time ==> 0s.008ms
-Cleanup phase: Elapsed time ==> 0s.001ms
+Fitter phase: Elapsed time ==> 14s.556ms
+API generation phase: Elapsed time ==> 0s.585ms
+Dependency generation phase: Elapsed time ==> 0s.006ms
+Cleanup phase: Elapsed time ==> 0s.000ms
