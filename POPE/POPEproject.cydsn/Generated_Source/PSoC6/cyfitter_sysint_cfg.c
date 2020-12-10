@@ -38,12 +38,6 @@
         .intrPriority = I2C_MPU6050_SCB_IRQ__INTC_CORTEXM4_PRIORITY
     };
 
-    /* WakeUp */
-    const cy_stc_sysint_t WakeUp_cfg = {
-        .intrSrc = (IRQn_Type)WakeUp__INTC_NUMBER,
-        .intrPriority = WakeUp__INTC_CORTEXM4_PRIORITY
-    };
-
     /* idleInt */
     const cy_stc_sysint_t idleInt_cfg = {
         .intrSrc = (IRQn_Type)idleInt__INTC_NUMBER,

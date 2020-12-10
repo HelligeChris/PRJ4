@@ -26,18 +26,24 @@ static cy_stc_ble_conn_handle_t appConnHandle;
 /* MAIN */
 int HostMain(void)
 {
-    //init
     Cy_SysPm_SystemEnterLp();   //Low Power, alt virker stadig
     
+    //init
     UART_DEB_Start();
     Cy_BLE_Start(BLE_EventHandler);
     CS_initKadenceSensor(3);
     startIdleCountdown();
-    Cy_SysInt_Init(&WakeUp_cfg, wakeUpHandler);
-    NVIC_EnableIRQ(idleInt_cfg.intrSrc);
-    NVIC_EnableIRQ(WakeUp_cfg.intrSrc);
     
-    //set int til 0-40
+    //Wake up interrupt (scb_8_interrupt_IRQn = serial com intterupt)
+    cy_stc_sysint_t wakeUpIsr = {
+        .intrSrc = scb_8_interrupt_IRQn,    //skal være mellem 0-40 for deepsleep capable (vi skal lige kigge på hvad der giver mest mening)
+        .intrPriority = 0,
+    };
+    
+    //init interrupts
+    Cy_SysInt_Init(&wakeUpIsr, wakeUpHandler);
+    NVIC_EnableIRQ(idleInt_cfg.intrSrc);
+    NVIC_EnableIRQ(wakeUpIsr.intrSrc);
     
     while(1)
     {

@@ -18,21 +18,13 @@
 #define INCLUDED_CYFITTER_SYSINT_H
 #include "cy_device_headers.h"
 
-/* WakeUp */
-#define WakeUp__INTC_CORTEXM4_ASSIGNED 1
-#define WakeUp__INTC_CORTEXM4_PRIORITY 7u
-#define WakeUp__INTC_NUMBER 122u
-#define WakeUp_INTC_CORTEXM4_ASSIGNED 1
-#define WakeUp_INTC_CORTEXM4_PRIORITY 7u
-#define WakeUp_INTC_NUMBER 122u
-
 /* idleInt */
 #define idleInt__INTC_CORTEXM4_ASSIGNED 1
 #define idleInt__INTC_CORTEXM4_PRIORITY 7u
-#define idleInt__INTC_NUMBER 123u
+#define idleInt__INTC_NUMBER 122u
 #define idleInt_INTC_CORTEXM4_ASSIGNED 1
 #define idleInt_INTC_CORTEXM4_PRIORITY 7u
-#define idleInt_INTC_NUMBER 123u
+#define idleInt_INTC_NUMBER 122u
 
 /* BLE_PM_bless_isr */
 #define BLE_PM_bless_isr__INTC_CORTEXM0P_ASSIGNED 1

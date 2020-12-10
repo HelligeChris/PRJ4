@@ -1,6 +1,6 @@
 // ======================================================================
 // POPEproject.v generated from TopDesign.cysch
-// 12/10/2020 at 09:40
+// 12/10/2020 at 16:04
 // This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 // ======================================================================
 
@@ -623,7 +623,6 @@ endmodule
 // top
 module top ;
 
-          wire  Net_54;
           wire  Net_53;
           wire  Net_52;
           wire  Net_51;
@@ -745,14 +744,6 @@ module top ;
         .scl_b(Net_51),
         .scl_trig(Net_52),
         .sda_b(Net_53));
-
-
-	cy_mxs40_isr_v1_0
-		#(.deepsleep_required(1),
-		  .int_type(2'b10))
-		WakeUp
-		 (.int_signal(1'b1));
-
 
 
 

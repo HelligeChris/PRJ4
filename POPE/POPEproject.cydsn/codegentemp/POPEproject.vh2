@@ -2,7 +2,7 @@
 --	Conversion of POPEproject.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Thu Dec 10 09:40:49 2020
+--	Thu Dec 10 16:04:39 2020
 --
 
 USE cypress.cypress.all;
@@ -381,10 +381,5 @@ Clock_1:cy_clock_v1_0
 		io=>Net_53,
 		annotation=>(open),
 		siovref=>(\I2C_MPU6050:tmpSIOVREF__sda_net_0\));
-WakeUp:cy_mxs40_isr_v1_0
-	GENERIC MAP(cy_registers=>"",
-		deepsleep_required=>'1',
-		int_type=>"10")
-	PORT MAP(int_signal=>one);
 
 END R_T_L;
