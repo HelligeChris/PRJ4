@@ -2,7 +2,7 @@
 --	Conversion of POPEproject.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Wed Dec 09 14:30:01 2020
+--	Thu Dec 10 09:40:49 2020
 --
 
 USE cypress.cypress.all;
@@ -253,7 +253,7 @@ idleInt:cy_mxs40_isr_v1_0
 	PORT MAP(int_signal=>Net_22);
 \idleTimer:TCPWM\:cy_mxs40_tcpwm_v1_0
 	GENERIC MAP(cy_registers=>"",
-		width=>32,
+		width=>16,
 		exact_width=>'0')
 	PORT MAP(clock=>Net_25,
 		capture=>zero,

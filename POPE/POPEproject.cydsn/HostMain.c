@@ -15,6 +15,7 @@
 #if (SIMULATE)
     uint16_t power = 1;
     uint8_t battery = 50;
+    char uart_string[50];   //UART debugging
 #endif
     int timeOut = 0;
 
@@ -26,11 +27,15 @@ static cy_stc_ble_conn_handle_t appConnHandle;
 int HostMain(void)
 {
     //init
+    Cy_SysPm_SystemEnterLp();   //Low Power, alt virker stadig
+    
     UART_DEB_Start();
     Cy_BLE_Start(BLE_EventHandler);
     CS_initKadenceSensor(3);
     startIdleCountdown();
     Cy_SysInt_Init(&WakeUp_cfg, wakeUpHandler);
+    NVIC_EnableIRQ(idleInt_cfg.intrSrc);
+    NVIC_EnableIRQ(WakeUp_cfg.intrSrc);
     
     //set int til 0-40
     
@@ -39,8 +44,6 @@ int HostMain(void)
         Cy_BLE_ProcessEvents();
         BLE_sendBattery(battery);
         BLE_sendPower(power);
-        
-        //LowPowerImplementation(); LAV FUNKTION
         
         if(testKadence() == true)
         {
@@ -62,6 +65,14 @@ void getData(int timeOut){
         if(timeOut){
             power += 100;
             battery++;
+            float* CS = CS_getKadence();
+            UARTprint("1", "Kadence-control:");
+            sprintf(uart_string, "RPM: %f", CS[0]);
+            UARTprint("2", uart_string);
+            sprintf(uart_string, "Frq: %f", CS[1]);
+            UARTprint("3", uart_string);  
+            sprintf(uart_string, "Prd: %f", CS[2]);
+            UARTprint("4", uart_string);
         }
     #endif
     #if (SIMULATE != 1)

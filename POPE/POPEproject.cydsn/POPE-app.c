@@ -11,10 +11,12 @@
 */
 #include "POPE-app.h"
 
-uint16_t idleTimer = 0;
 float* RPM;
-uint16_t idleCounter = 0;
+uint16 idleCounter = 0;
 
+#if DEBUG_UART_ENABLED
+    char uart_string[50];   //UART debugging
+#endif
 
 
 void lowPowerMode()
@@ -67,8 +69,16 @@ void idleIntHandler()
     idleCounter++;
     if(idleCounter == 300)
     {
-        Cy_SysPm_DeepSleep(CY_SYSPM_WAIT_FOR_INTERRUPT);
+        #if DEBUG_UART_ENABLED
+            sprintf(uart_string, "CPU Deep Sleep: %i", idleCounter);
+            UARTprint("9", uart_string);
+        #endif
+        //Cy_SysPm_DeepSleep(CY_SYSPM_WAIT_FOR_INTERRUPT);
     }
+    #if DEBUG_UART_ENABLED
+        sprintf(uart_string, "idleCounter overflow: %i", idleCounter);
+        UARTprint("10", uart_string);
+    #endif
 }
 
 void wakeUpHandler()

@@ -1,5 +1,5 @@
 -- Project:   POPEproject
--- Generated: 12/09/2020 14:30:08
+-- Generated: 12/10/2020 09:40:55
 -- PSoC Creator  4.4
 
 ENTITY POPEproject IS
@@ -1139,7 +1139,7 @@ BEGIN
         GENERIC MAP(
             cy_registers => "",
             exact_width => 0,
-            width => 32)
+            width => 16)
         PORT MAP(
             clock => Net_25_ff11,
             capture => '0',

@@ -28,7 +28,7 @@ uint8_t idleTimer_initVar = 0U;
 */ 
 cy_stc_tcpwm_counter_config_t const idleTimer_config =
 {
-        .period = 390625UL,
+        .period = 39062UL,
         .clockPrescaler = 7UL,
         .runMode = 0UL,
         .countDirection = 0UL,

@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 1
 
 
    1              		.syntax unified
@@ -42,28 +42,30 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
   11:BLE-communication.c **** //Includes
   12:BLE-communication.c **** #include "BLE-communication.h"
   13:BLE-communication.c **** 
-  14:BLE-communication.c **** char uart_string[50];   //UART debugging
-  15:BLE-communication.c **** int count = 0;
-  16:BLE-communication.c **** 
-  17:BLE-communication.c **** /* BLE Private Functions */
-  18:BLE-communication.c **** cy_en_ble_api_result_t BLE_SetCharacteristicValue(POPE_char_index_t charIndex, uint16_t attrSize, u
-  19:BLE-communication.c **** 
-  20:BLE-communication.c **** 
-  21:BLE-communication.c **** /* Timer variables */
-  22:BLE-communication.c **** static cy_stc_ble_timer_info_t BLEtimerParam = { .timeout = 1u};
-  23:BLE-communication.c **** static volatile uint8_t BLEmainTimer = 1u;
-  24:BLE-communication.c **** 
-  25:BLE-communication.c **** /* Power Array */
-  26:BLE-communication.c **** uint8_t powerArray[2] = {0};
-  27:BLE-communication.c **** 
-  28:BLE-communication.c **** 
-  29:BLE-communication.c **** /* Callback function */
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 2
+  14:BLE-communication.c **** #if  DEBUG_UART_ENABLED
+  15:BLE-communication.c **** char uart_string[50];   //UART debugging
+  16:BLE-communication.c **** int count = 0;
+  17:BLE-communication.c **** #endif
+  18:BLE-communication.c **** 
+  19:BLE-communication.c **** /* BLE Private Functions */
+  20:BLE-communication.c **** cy_en_ble_api_result_t BLE_SetCharacteristicValue(POPE_char_index_t charIndex, uint16_t attrSize, u
+  21:BLE-communication.c **** 
+  22:BLE-communication.c **** 
+  23:BLE-communication.c **** /* Timer variables */
+  24:BLE-communication.c **** static cy_stc_ble_timer_info_t BLEtimerParam = { .timeout = 1u};
+  25:BLE-communication.c **** static volatile uint8_t BLEmainTimer = 1u;
+  26:BLE-communication.c **** 
+  27:BLE-communication.c **** /* Power Array */
+  28:BLE-communication.c **** uint8_t powerArray[2] = {0};
+  29:BLE-communication.c **** 
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 2
 
 
-  30:BLE-communication.c **** void BLE_EventHandler(uint32_t event, void *eventParam)
-  31:BLE-communication.c **** {
-  29              		.loc 1 31 0
+  30:BLE-communication.c **** 
+  31:BLE-communication.c **** /* Callback function */
+  32:BLE-communication.c **** void BLE_EventHandler(uint32_t event, void *eventParam)
+  33:BLE-communication.c **** {
+  29              		.loc 1 33 0
   30              		.cfi_startproc
   31              		@ args = 0, pretend = 0, frame = 0
   32              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -76,16 +78,16 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
   39              		.cfi_offset 14, -4
   40 0002 0446     		mov	r4, r0
   41 0004 0D46     		mov	r5, r1
-  32:BLE-communication.c ****     UARTprint("19", "BLE:");
-  42              		.loc 1 32 0
+  34:BLE-communication.c ****     UARTprint("6", "BLE:");
+  42              		.loc 1 34 0
   43 0006 5549     		ldr	r1, .L13
   44              	.LVL1:
   45 0008 5548     		ldr	r0, .L13+4
   46              	.LVL2:
   47 000a FFF7FEFF 		bl	UARTprint
   48              	.LVL3:
-  33:BLE-communication.c ****     switch(event)
-  49              		.loc 1 33 0
+  35:BLE-communication.c ****     switch(event)
+  49              		.loc 1 35 0
   50 000e 44F20603 		movw	r3, #16390
   51 0012 9C42     		cmp	r4, r3
   52 0014 7BD0     		beq	.L3
@@ -109,53 +111,53 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
   70 0042 7AD0     		beq	.L10
   71 0044 85E0     		b	.L2
   72              	.L7:
-  34:BLE-communication.c ****     {
-  35:BLE-communication.c ****         case CY_BLE_EVT_STACK_ON:
-  36:BLE-communication.c ****             #if DEBUG_UART_ENABLED
-  37:BLE-communication.c ****             sprintf(uart_string, "Stack On \r \n ");
-  73              		.loc 1 37 0
+  36:BLE-communication.c ****     {
+  37:BLE-communication.c ****         case CY_BLE_EVT_STACK_ON:
+  38:BLE-communication.c ****             #if DEBUG_UART_ENABLED
+  39:BLE-communication.c ****             sprintf(uart_string, "Stack On \r \n ");
+  73              		.loc 1 39 0
   74 0046 474C     		ldr	r4, .L13+8
   75              	.LVL4:
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 3
+
+
   76 0048 474B     		ldr	r3, .L13+12
   77 004a 07CB     		ldmia	r3!, {r0, r1, r2}
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 3
-
-
   78 004c 2060     		str	r0, [r4]	@ unaligned
   79 004e 6160     		str	r1, [r4, #4]	@ unaligned
   80 0050 A260     		str	r2, [r4, #8]	@ unaligned
   81 0052 1B88     		ldrh	r3, [r3]	@ unaligned
   82 0054 A381     		strh	r3, [r4, #12]	@ unaligned
-  38:BLE-communication.c ****             UARTprint("20", uart_string);
-  83              		.loc 1 38 0
+  40:BLE-communication.c ****             UARTprint("7", uart_string);
+  83              		.loc 1 40 0
   84 0056 2146     		mov	r1, r4
   85 0058 4448     		ldr	r0, .L13+16
   86 005a FFF7FEFF 		bl	UARTprint
   87              	.LVL5:
-  39:BLE-communication.c ****             #endif
-  40:BLE-communication.c ****             Cy_BLE_GAPP_StartAdvertisement(CY_BLE_ADVERTISING_FAST, CY_BLE_PERIPHERAL_CONFIGURATION
-  88              		.loc 1 40 0
+  41:BLE-communication.c ****             #endif
+  42:BLE-communication.c ****             Cy_BLE_GAPP_StartAdvertisement(CY_BLE_ADVERTISING_FAST, CY_BLE_PERIPHERAL_CONFIGURATION
+  88              		.loc 1 42 0
   89 005e 0021     		movs	r1, #0
   90 0060 0846     		mov	r0, r1
   91 0062 FFF7FEFF 		bl	Cy_BLE_GAPP_StartAdvertisement
   92              	.LVL6:
-  41:BLE-communication.c ****             //Cy_BLE_GAP_GetBdAddress();
-  42:BLE-communication.c ****             break;
-  93              		.loc 1 42 0
+  43:BLE-communication.c ****             //Cy_BLE_GAP_GetBdAddress();
+  44:BLE-communication.c ****             break;
+  93              		.loc 1 44 0
   94 0066 38BD     		pop	{r3, r4, r5, pc}
   95              	.LVL7:
   96              	.L8:
-  43:BLE-communication.c ****             
-  44:BLE-communication.c ****         case CY_BLE_EVT_GAP_DEVICE_DISCONNECTED: //Til debugging. Går ind i denne case når link e
-  45:BLE-communication.c ****             Cy_BLE_GAPP_StartAdvertisement(CY_BLE_ADVERTISING_FAST, CY_BLE_PERIPHERAL_CONFIGURATION
-  97              		.loc 1 45 0
+  45:BLE-communication.c ****             
+  46:BLE-communication.c ****         case CY_BLE_EVT_GAP_DEVICE_DISCONNECTED: //Til debugging. Går ind i denne case når link e
+  47:BLE-communication.c ****             Cy_BLE_GAPP_StartAdvertisement(CY_BLE_ADVERTISING_FAST, CY_BLE_PERIPHERAL_CONFIGURATION
+  97              		.loc 1 47 0
   98 0068 0021     		movs	r1, #0
   99 006a 0846     		mov	r0, r1
  100 006c FFF7FEFF 		bl	Cy_BLE_GAPP_StartAdvertisement
  101              	.LVL8:
-  46:BLE-communication.c ****             #if DEBUG_UART_ENABLED
-  47:BLE-communication.c ****             sprintf(uart_string, "Device link connected \r \n ");
- 102              		.loc 1 47 0
+  48:BLE-communication.c ****             #if DEBUG_UART_ENABLED
+  49:BLE-communication.c ****             sprintf(uart_string, "Device link connected \r \n ");
+ 102              		.loc 1 49 0
  103 0070 3C4D     		ldr	r5, .L13+8
  104              	.LVL9:
  105 0072 3F4C     		ldr	r4, .L13+20
@@ -172,26 +174,26 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  116 0086 A378     		ldrb	r3, [r4, #2]	@ zero_extendqisi2
  117 0088 2A83     		strh	r2, [r5, #24]	@ unaligned
  118 008a AB76     		strb	r3, [r5, #26]
-  48:BLE-communication.c ****             UARTprint("20", uart_string);
- 119              		.loc 1 48 0
+  50:BLE-communication.c ****             UARTprint("7", uart_string);
+ 119              		.loc 1 50 0
  120 008c 2946     		mov	r1, r5
  121 008e 3748     		ldr	r0, .L13+16
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 4
+
+
  122 0090 FFF7FEFF 		bl	UARTprint
  123              	.LVL11:
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 4
-
-
-  49:BLE-communication.c ****             #endif
-  50:BLE-communication.c ****             break;
- 124              		.loc 1 50 0
+  51:BLE-communication.c ****             #endif
+  52:BLE-communication.c ****             break;
+ 124              		.loc 1 52 0
  125 0094 38BD     		pop	{r3, r4, r5, pc}
  126              	.LVL12:
  127              	.L9:
-  51:BLE-communication.c ****             
-  52:BLE-communication.c ****         case CY_BLE_EVT_GAP_DEVICE_CONNECTED:
-  53:BLE-communication.c ****             #if DEBUG_UART_ENABLED
-  54:BLE-communication.c ****             sprintf(uart_string, "Device connected \r \n ");
- 128              		.loc 1 54 0
+  53:BLE-communication.c ****             
+  54:BLE-communication.c ****         case CY_BLE_EVT_GAP_DEVICE_CONNECTED:
+  55:BLE-communication.c ****             #if DEBUG_UART_ENABLED
+  56:BLE-communication.c ****             sprintf(uart_string, "Device connected \r \n ");
+ 128              		.loc 1 56 0
  129 0096 334D     		ldr	r5, .L13+8
  130              	.LVL13:
  131 0098 364C     		ldr	r4, .L13+24
@@ -205,62 +207,62 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  139 00a6 2861     		str	r0, [r5, #16]	@ unaligned
  140 00a8 A388     		ldrh	r3, [r4, #4]	@ unaligned
  141 00aa AB82     		strh	r3, [r5, #20]	@ unaligned
-  55:BLE-communication.c ****             UARTprint("20", uart_string);
- 142              		.loc 1 55 0
+  57:BLE-communication.c ****             UARTprint("7", uart_string);
+ 142              		.loc 1 57 0
  143 00ac 2946     		mov	r1, r5
  144 00ae 2F48     		ldr	r0, .L13+16
  145 00b0 FFF7FEFF 		bl	UARTprint
  146              	.LVL15:
-  56:BLE-communication.c ****             #endif
-  57:BLE-communication.c ****             break;
- 147              		.loc 1 57 0
+  58:BLE-communication.c ****             #endif
+  59:BLE-communication.c ****             break;
+ 147              		.loc 1 59 0
  148 00b4 38BD     		pop	{r3, r4, r5, pc}
  149              	.LVL16:
  150              	.L5:
-  58:BLE-communication.c ****            
-  59:BLE-communication.c ****         case CY_BLE_EVT_TIMEOUT: 
-  60:BLE-communication.c ****             #if DEBUG_UART_ENABLED
-  61:BLE-communication.c ****             count++;
- 151              		.loc 1 61 0
+  60:BLE-communication.c ****            
+  61:BLE-communication.c ****         case CY_BLE_EVT_TIMEOUT: 
+  62:BLE-communication.c ****             #if DEBUG_UART_ENABLED
+  63:BLE-communication.c ****             count++;
+ 151              		.loc 1 63 0
  152 00b6 304B     		ldr	r3, .L13+28
  153 00b8 1A68     		ldr	r2, [r3]
  154 00ba 0132     		adds	r2, r2, #1
  155 00bc 1A60     		str	r2, [r3]
-  62:BLE-communication.c ****             sprintf(uart_string, "Timeout %i", count);
- 156              		.loc 1 62 0
+  64:BLE-communication.c ****             sprintf(uart_string, "Timeout %i", count);
+ 156              		.loc 1 64 0
  157 00be 294C     		ldr	r4, .L13+8
  158              	.LVL17:
  159 00c0 2E49     		ldr	r1, .L13+32
  160 00c2 2046     		mov	r0, r4
  161 00c4 FFF7FEFF 		bl	sprintf
  162              	.LVL18:
-  63:BLE-communication.c ****             UARTprint("20", uart_string);
- 163              		.loc 1 63 0
+  65:BLE-communication.c ****             UARTprint("7", uart_string);
+ 163              		.loc 1 65 0
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 5
+
+
  164 00c8 2146     		mov	r1, r4
  165 00ca 2848     		ldr	r0, .L13+16
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 5
-
-
  166 00cc FFF7FEFF 		bl	UARTprint
  167              	.LVL19:
-  64:BLE-communication.c ****             #endif
-  65:BLE-communication.c ****             if((((cy_stc_ble_timeout_param_t *)eventParam)->reasonCode == CY_BLE_GENERIC_APP_TO) &&
- 168              		.loc 1 65 0
+  66:BLE-communication.c ****             #endif
+  67:BLE-communication.c ****             if((((cy_stc_ble_timeout_param_t *)eventParam)->reasonCode == CY_BLE_GENERIC_APP_TO) &&
+ 168              		.loc 1 67 0
  169 00d0 2B78     		ldrb	r3, [r5]	@ zero_extendqisi2
  170 00d2 042B     		cmp	r3, #4
  171 00d4 41D1     		bne	.L1
-  66:BLE-communication.c ****                (((cy_stc_ble_timeout_param_t *)eventParam)->timerHandle == BLEtimerParam.timerHandl
- 172              		.loc 1 66 0 discriminator 1
+  68:BLE-communication.c ****                (((cy_stc_ble_timeout_param_t *)eventParam)->timerHandle == BLEtimerParam.timerHandl
+ 172              		.loc 1 68 0 discriminator 1
  173 00d6 EA78     		ldrb	r2, [r5, #3]	@ zero_extendqisi2
  174 00d8 294B     		ldr	r3, .L13+36
  175 00da 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
-  65:BLE-communication.c ****                (((cy_stc_ble_timeout_param_t *)eventParam)->timerHandle == BLEtimerParam.timerHandl
- 176              		.loc 1 65 0 discriminator 1
+  67:BLE-communication.c ****                (((cy_stc_ble_timeout_param_t *)eventParam)->timerHandle == BLEtimerParam.timerHandl
+ 176              		.loc 1 67 0 discriminator 1
  177 00dc 9A42     		cmp	r2, r3
  178 00de 3CD1     		bne	.L1
-  67:BLE-communication.c ****             {
-  68:BLE-communication.c ****                 BLEmainTimer++;
- 179              		.loc 1 68 0
+  69:BLE-communication.c ****             {
+  70:BLE-communication.c ****                 BLEmainTimer++;
+ 179              		.loc 1 70 0
  180 00e0 274A     		ldr	r2, .L13+36
  181 00e2 9378     		ldrb	r3, [r2, #2]	@ zero_extendqisi2
  182 00e4 0133     		adds	r3, r3, #1
@@ -269,13 +271,13 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  185 00ea 38BD     		pop	{r3, r4, r5, pc}
  186              	.LVL20:
  187              	.L6:
-  69:BLE-communication.c ****             }
-  70:BLE-communication.c ****             break;
-  71:BLE-communication.c ****             
-  72:BLE-communication.c ****         case CY_BLE_EVT_STACK_SHUTDOWN_COMPLETE:
-  73:BLE-communication.c ****             #if DEBUG_UART_ENABLED
-  74:BLE-communication.c ****             sprintf(uart_string, "Stack shutdown");
- 188              		.loc 1 74 0
+  71:BLE-communication.c ****             }
+  72:BLE-communication.c ****             break;
+  73:BLE-communication.c ****             
+  74:BLE-communication.c ****         case CY_BLE_EVT_STACK_SHUTDOWN_COMPLETE:
+  75:BLE-communication.c ****             #if DEBUG_UART_ENABLED
+  76:BLE-communication.c ****             sprintf(uart_string, "Stack shutdown");
+ 188              		.loc 1 76 0
  189 00ec 1D4C     		ldr	r4, .L13+8
  190              	.LVL21:
  191 00ee 254B     		ldr	r3, .L13+40
@@ -287,30 +289,30 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  197 00fa 9B78     		ldrb	r3, [r3, #2]	@ zero_extendqisi2
  198 00fc A281     		strh	r2, [r4, #12]	@ unaligned
  199 00fe A373     		strb	r3, [r4, #14]
-  75:BLE-communication.c ****             UARTprint("20", uart_string);
- 200              		.loc 1 75 0
+  77:BLE-communication.c ****             UARTprint("7", uart_string);
+ 200              		.loc 1 77 0
  201 0100 2146     		mov	r1, r4
  202 0102 1A48     		ldr	r0, .L13+16
  203 0104 FFF7FEFF 		bl	UARTprint
  204              	.LVL22:
-  76:BLE-communication.c ****             #endif
-  77:BLE-communication.c ****             Cy_SysPm_Hibernate();
- 205              		.loc 1 77 0
+  78:BLE-communication.c ****             #endif
+  79:BLE-communication.c ****             Cy_SysPm_Hibernate();
+ 205              		.loc 1 79 0
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 6
+
+
  206 0108 FFF7FEFF 		bl	Cy_SysPm_SystemEnterHibernate
  207              	.LVL23:
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 6
-
-
-  78:BLE-communication.c ****             break;
- 208              		.loc 1 78 0
+  80:BLE-communication.c ****             break;
+ 208              		.loc 1 80 0
  209 010c 38BD     		pop	{r3, r4, r5, pc}
  210              	.LVL24:
  211              	.L3:
-  79:BLE-communication.c ****             
-  80:BLE-communication.c ****         case CY_BLE_EVT_GAPP_ADVERTISEMENT_START_STOP:
-  81:BLE-communication.c ****             #if DEBUG_UART_ENABLED
-  82:BLE-communication.c ****             sprintf(uart_string, "Advertisement start/stop");
- 212              		.loc 1 82 0
+  81:BLE-communication.c ****             
+  82:BLE-communication.c ****         case CY_BLE_EVT_GAPP_ADVERTISEMENT_START_STOP:
+  83:BLE-communication.c ****             #if DEBUG_UART_ENABLED
+  84:BLE-communication.c ****             sprintf(uart_string, "Advertisement start/stop");
+ 212              		.loc 1 84 0
  213 010e 154D     		ldr	r5, .L13+8
  214              	.LVL25:
  215 0110 1D4C     		ldr	r4, .L13+44
@@ -325,8 +327,8 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  224 0120 6961     		str	r1, [r5, #20]	@ unaligned
  225 0122 2378     		ldrb	r3, [r4]	@ zero_extendqisi2
  226 0124 2B76     		strb	r3, [r5, #24]
-  83:BLE-communication.c ****             UARTprint("20", uart_string);
- 227              		.loc 1 83 0
+  85:BLE-communication.c ****             UARTprint("7", uart_string);
+ 227              		.loc 1 85 0
  228 0126 2946     		mov	r1, r5
  229 0128 1048     		ldr	r0, .L13+16
  230 012a FFF7FEFF 		bl	UARTprint
@@ -356,11 +358,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
   20:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** #include "cy_ble_config.h"
   21:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** 
   22:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** /***************************************
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 7
+
+
   23:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** * BLE Stack includes
   24:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** ***************************************/
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 7
-
-
   25:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** #include "cy_ble_stack_gatt.h"    
   26:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** #include "cy_ble_stack_gap.h"
   27:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** #include "cy_ble_stack_gap_central.h"
@@ -416,11 +418,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
   77:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** #define CY_BLE_BONDING_REQUIREMENT            (CY_BLE_CONFIG_BONDING_REQUIREMENT)
   78:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** 
   79:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** /** The GAP Role defines */
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 8
+
+
   80:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** #define CY_BLE_GAP_ROLE_PERIPHERAL            (0u != (CY_BLE_GAP_ROLE & CY_BLE_GAP_PERIPHERAL))
   81:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** #define CY_BLE_GAP_ROLE_CENTRAL               (0u != (CY_BLE_GAP_ROLE & CY_BLE_GAP_CENTRAL))
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 8
-
-
   82:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** #define CY_BLE_GAP_ROLE_OBSERVER              (0u != (CY_BLE_GAP_ROLE & CY_BLE_GAP_OBSERVER))
   83:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** #define CY_BLE_GAP_ROLE_BROADCASTER           (0u != (CY_BLE_GAP_ROLE & CY_BLE_GAP_BROADCASTER))
   84:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** 
@@ -476,11 +478,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  134:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** typedef enum
  135:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** {
  136:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h ****     CY_BLE_CONN_STATE_DISCONNECTED,                   /**< Essentially idle state */
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 9
+
+
  137:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h ****     CY_BLE_CONN_STATE_CLIENT_DISCONNECTED_DISCOVERED, /**< Server is disconnected but discovered */
  138:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h ****     CY_BLE_CONN_STATE_CONNECTED,                      /**< Peer device is connected for this and fo
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 9
-
-
  139:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h ****     CY_BLE_CONN_STATE_CLIENT_SRVC_DISCOVERING,        /**< Server services are being discovered */
  140:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h ****     CY_BLE_CONN_STATE_CLIENT_INCL_DISCOVERING,        /**< Server included services are being disco
  141:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h ****     CY_BLE_CONN_STATE_CLIENT_CHAR_DISCOVERING,        /**< Server characteristics are being discove
@@ -536,11 +538,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  191:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** }cy_stc_ble_gapc_t;
  192:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** 
  193:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** /* Stack mode defines */
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 10
+
+
  194:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** 
  195:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** /** Advertisement SIG assigned numbers */
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 10
-
-
  196:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** typedef enum
  197:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** {
  198:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h ****     /** Flags */
@@ -596,11 +598,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  248:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** 
  249:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h ****     /** List of 16-bit Service Solicitation UUIDs */
  250:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h ****     CY_BLE_GAP_ADV_SOLICIT_16UUID = 0x14u,
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 11
+
+
  251:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** 
  252:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h ****     /** List of 128-bit Service Solicitation UUIDs */
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 11
-
-
  253:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h ****     CY_BLE_GAP_ADV_SOLICIT_128UUID,
  254:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** 
  255:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h ****     /** Service Data - 16-bit UUID */
@@ -656,11 +658,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  305:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h ****     uint16_t fastAdvIntervalMax;
  306:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** 
  307:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h ****     /** The timeout value of  fast advertising with fast advertising interval parameters */
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 12
+
+
  308:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h ****     uint16_t fastAdvTimeOut;
  309:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** 
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 12
-
-
  310:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h ****     /** Slow advertising enable */
  311:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h ****     uint8_t  slowAdvEnable;
  312:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** 
@@ -716,11 +718,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  362:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** typedef struct
  363:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** {
  364:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h ****     /** Source buffer */
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 13
+
+
  365:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h ****     const uint8_t *srcBuff;
  366:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** 
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 13
-
-
  367:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h ****     /** Destination buffer */
  368:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h ****     const uint8_t *destAddr;
  369:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** 
@@ -776,11 +778,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  419:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** #define CY_BLE_SHORT_LOCAL_NAME                    (0x08u)  /**< Shortened Local Name */
  420:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** #define CY_BLE_COMPLETE_LOCAL_NAME                 (0x09u)  /**< Complete Local Name */
  421:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** #define CY_BLE_ADV_DEVICE_ADDR                     (0x1Bu)  /**< LE Bluetooth Device Address */
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 14
+
+
  422:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** 
  423:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** #define CY_BLE_ADVERTISING_FAST                    (0x00u)
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 14
-
-
  424:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** #define CY_BLE_ADVERTISING_SLOW                    (0x01u)
  425:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** #define CY_BLE_ADVERTISING_CUSTOM                  (0x02u)
  426:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** 
@@ -836,11 +838,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  476:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** * Function Prototypes
  477:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** ***************************************/
  478:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** /**
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 15
+
+
  479:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h ****  * \addtogroup group_ble_common_api_functions
  480:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h ****  * @{
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 15
-
-
  481:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h ****  */
  482:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** 
  483:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** cy_en_ble_api_result_t Cy_BLE_StoreAppData(const cy_stc_ble_app_flash_param_t *param);
@@ -896,11 +898,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  533:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** /***************************************
  534:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** * External data references
  535:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** ***************************************/
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 16
+
+
  536:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** extern volatile uint8_t cy_ble_eventHandlerFlag;
  537:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** extern cy_stc_ble_gap_bd_addr_t *cy_ble_sflashDeviceAddress;
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 16
-
-
  538:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** extern cy_stc_ble_gap_bd_addr_t cy_ble_deviceAddress;
  539:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** extern cy_en_ble_state_t cy_ble_state;
  540:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** 
@@ -956,11 +958,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  590:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h ****  * CY_BLE_PENDING_STACK_FLASH_WRITE_BIT flag is set after CY_BLE_EVT_PENDING_FLASH_WRITE event.
  591:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h ****  * Cy_BLE_StoreBondingData() should be called to store pending bonding data.
  592:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h ****  * This function automatically clears pending bits after write operation is complete.
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 17
+
+
  593:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h ****  */
  594:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** extern uint8_t cy_ble_pendingFlashWrite;
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 17
-
-
  595:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** /** @} group_ble_common_api_global_variables */
  596:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h ****     
  597:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** /** Bonding type setting of peer device, CY_BLE_GAP_BONDING_NONE or CY_BLE_GAP_BONDING.
@@ -1016,11 +1018,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  647:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h ****     return(retValue);
  648:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** }
  649:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** #endif  /* ((CY_BLE_GAP_ROLE_PERIPHERAL || CY_BLE_GAP_ROLE_CENTRAL)) */
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 18
+
+
  650:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** 
  651:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** /**
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 18
-
-
  652:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h ****  * \addtogroup group_ble_common_api_functions
  653:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h ****  * @{
  654:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** */
@@ -1076,11 +1078,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  704:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** * \return
  705:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** *  None
  706:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** *
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 19
+
+
  707:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** ******************************************************************************/
  708:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** #define Cy_BLE_SetState(state)    (cy_ble_state = (state))
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 19
-
-
  709:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** /** \endcond */
  710:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** 
  711:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** #if (CY_BLE_GAP_ROLE_PERIPHERAL || CY_BLE_GAP_ROLE_BROADCASTER)
@@ -1123,28 +1125,28 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  237 0130 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
  238              	.LBE5:
  239              	.LBE4:
-  84:BLE-communication.c ****             #endif
-  85:BLE-communication.c ****             if(Cy_BLE_GetAdvertisementState() == CY_BLE_ADV_STATE_STOPPED)
- 240              		.loc 1 85 0
+  86:BLE-communication.c ****             #endif
+  87:BLE-communication.c ****             if(Cy_BLE_GetAdvertisementState() == CY_BLE_ADV_STATE_STOPPED)
+ 240              		.loc 1 87 0
  241 0132 93B9     		cbnz	r3, .L1
-  86:BLE-communication.c ****             {
-  87:BLE-communication.c ****                 Cy_BLE_Stop();
- 242              		.loc 1 87 0
+  88:BLE-communication.c ****             {
+  89:BLE-communication.c ****                 Cy_BLE_Stop();
+ 242              		.loc 1 89 0
  243 0134 FFF7FEFF 		bl	Cy_BLE_Stop
  244              	.LVL28:
  245 0138 38BD     		pop	{r3, r4, r5, pc}
  246              	.LVL29:
  247              	.L10:
-  88:BLE-communication.c ****             }
-  89:BLE-communication.c ****             break;
-  90:BLE-communication.c ****             
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 20
+  90:BLE-communication.c ****             }
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 20
 
 
-  91:BLE-communication.c ****         case CY_BLE_EVT_GATTS_READ_CHAR_VAL_ACCESS_REQ:
-  92:BLE-communication.c ****             #if DEBUG_UART_ENABLED
-  93:BLE-communication.c ****             sprintf(uart_string, "Read-req");
- 248              		.loc 1 93 0
+  91:BLE-communication.c ****             break;
+  92:BLE-communication.c ****             
+  93:BLE-communication.c ****         case CY_BLE_EVT_GATTS_READ_CHAR_VAL_ACCESS_REQ:
+  94:BLE-communication.c ****             #if DEBUG_UART_ENABLED
+  95:BLE-communication.c ****             sprintf(uart_string, "Read-req");
+ 248              		.loc 1 95 0
  249 013a 0A4A     		ldr	r2, .L13+8
  250 013c 144B     		ldr	r3, .L13+52
  251 013e 03CB     		ldmia	r3!, {r0, r1}
@@ -1152,23 +1154,23 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  253 0142 5160     		str	r1, [r2, #4]	@ unaligned
  254 0144 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
  255 0146 1372     		strb	r3, [r2, #8]
-  94:BLE-communication.c ****             UARTprint("20", uart_string);
- 256              		.loc 1 94 0
+  96:BLE-communication.c ****             UARTprint("7", uart_string);
+ 256              		.loc 1 96 0
  257 0148 1146     		mov	r1, r2
  258 014a 0848     		ldr	r0, .L13+16
  259 014c FFF7FEFF 		bl	UARTprint
  260              	.LVL30:
-  95:BLE-communication.c ****             #endif
-  96:BLE-communication.c ****             break;
- 261              		.loc 1 96 0
+  97:BLE-communication.c ****             #endif
+  98:BLE-communication.c ****             break;
+ 261              		.loc 1 98 0
  262 0150 38BD     		pop	{r3, r4, r5, pc}
  263              	.LVL31:
  264              	.L2:
-  97:BLE-communication.c ****         
-  98:BLE-communication.c ****         default:
-  99:BLE-communication.c ****             #if DEBUG_UART_ENABLED
- 100:BLE-communication.c ****             UARTprint("20", "Default");
- 265              		.loc 1 100 0
+  99:BLE-communication.c ****         
+ 100:BLE-communication.c ****         default:
+ 101:BLE-communication.c ****             #if DEBUG_UART_ENABLED
+ 102:BLE-communication.c ****             UARTprint("7", "Default");
+ 265              		.loc 1 102 0
  266 0152 1049     		ldr	r1, .L13+56
  267 0154 0548     		ldr	r0, .L13+16
  268 0156 FFF7FEFF 		bl	UARTprint
@@ -1196,25 +1198,25 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  290              		.cfi_endproc
  291              	.LFE595:
  292              		.size	BLE_EventHandler, .-BLE_EventHandler
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 21
+
+
  293              		.section	.text.BLE_checkTimer,"ax",%progbits
  294              		.align	2
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 21
-
-
  295              		.global	BLE_checkTimer
  296              		.thumb
  297              		.thumb_func
  298              		.type	BLE_checkTimer, %function
  299              	BLE_checkTimer:
  300              	.LFB596:
- 101:BLE-communication.c ****             #endif
- 102:BLE-communication.c ****             break;
- 103:BLE-communication.c ****     }
- 104:BLE-communication.c **** }
- 105:BLE-communication.c **** 
- 106:BLE-communication.c **** 
- 107:BLE-communication.c **** int BLE_checkTimer(){
- 301              		.loc 1 107 0
+ 103:BLE-communication.c ****             #endif
+ 104:BLE-communication.c ****             break;
+ 105:BLE-communication.c ****     }
+ 106:BLE-communication.c **** }
+ 107:BLE-communication.c **** 
+ 108:BLE-communication.c **** 
+ 109:BLE-communication.c **** int BLE_checkTimer(){
+ 301              		.loc 1 109 0
  302              		.cfi_startproc
  303              		@ args = 0, pretend = 0, frame = 0
  304              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -1222,32 +1224,32 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  306              		.cfi_def_cfa_offset 8
  307              		.cfi_offset 3, -8
  308              		.cfi_offset 14, -4
- 108:BLE-communication.c ****     if (BLEmainTimer != 0){
- 309              		.loc 1 108 0
+ 110:BLE-communication.c ****     if (BLEmainTimer != 0){
+ 309              		.loc 1 110 0
  310 0002 074B     		ldr	r3, .L19
  311 0004 9B78     		ldrb	r3, [r3, #2]	@ zero_extendqisi2
  312 0006 13F0FF0F 		tst	r3, #255
  313 000a 06D0     		beq	.L17
- 109:BLE-communication.c ****         BLEmainTimer = 0;
- 314              		.loc 1 109 0
+ 111:BLE-communication.c ****         BLEmainTimer = 0;
+ 314              		.loc 1 111 0
  315 000c 0448     		ldr	r0, .L19
  316 000e 0023     		movs	r3, #0
  317 0010 8370     		strb	r3, [r0, #2]
- 110:BLE-communication.c ****         Cy_BLE_StartTimer(&BLEtimerParam);
- 318              		.loc 1 110 0
+ 112:BLE-communication.c ****         Cy_BLE_StartTimer(&BLEtimerParam);
+ 318              		.loc 1 112 0
  319 0012 FFF7FEFF 		bl	Cy_BLE_StartTimer
  320              	.LVL33:
- 111:BLE-communication.c ****         return 1;
- 321              		.loc 1 111 0
+ 113:BLE-communication.c ****         return 1;
+ 321              		.loc 1 113 0
  322 0016 0120     		movs	r0, #1
  323 0018 08BD     		pop	{r3, pc}
  324              	.L17:
- 112:BLE-communication.c ****     }
- 113:BLE-communication.c ****     return 0;
- 325              		.loc 1 113 0
+ 114:BLE-communication.c ****     }
+ 115:BLE-communication.c ****     return 0;
+ 325              		.loc 1 115 0
  326 001a 0020     		movs	r0, #0
- 114:BLE-communication.c **** }
- 327              		.loc 1 114 0
+ 116:BLE-communication.c **** }
+ 327              		.loc 1 116 0
  328 001c 08BD     		pop	{r3, pc}
  329              	.L20:
  330 001e 00BF     		.align	2
@@ -1256,38 +1258,38 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  333              		.cfi_endproc
  334              	.LFE596:
  335              		.size	BLE_checkTimer, .-BLE_checkTimer
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 22
+
+
  336              		.section	.text.BLE_sendBattery,"ax",%progbits
  337              		.align	2
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 22
-
-
  338              		.global	BLE_sendBattery
  339              		.thumb
  340              		.thumb_func
  341              		.type	BLE_sendBattery, %function
  342              	BLE_sendBattery:
  343              	.LFB598:
- 115:BLE-communication.c **** 
- 116:BLE-communication.c **** 
- 117:BLE-communication.c **** cy_en_ble_api_result_t BLE_sendPower(uint16_t Power)
- 118:BLE-communication.c **** {
- 119:BLE-communication.c ****     cy_en_ble_api_result_t apiResult = CY_BLE_SUCCESS;
- 120:BLE-communication.c ****     
- 121:BLE-communication.c ****     powerArray[1] = (uint8_t)Power;
- 122:BLE-communication.c ****     powerArray[0] = (Power >> 8);
- 123:BLE-communication.c ****     
- 124:BLE-communication.c ****     apiResult = BLE_SetCharacteristicValue(POPE_POWER_MEASURE, sizeof(uint8)*2, (uint8_t*)&powerArr
+ 117:BLE-communication.c **** 
+ 118:BLE-communication.c **** 
+ 119:BLE-communication.c **** cy_en_ble_api_result_t BLE_sendPower(uint16_t Power)
+ 120:BLE-communication.c **** {
+ 121:BLE-communication.c ****     cy_en_ble_api_result_t apiResult = CY_BLE_SUCCESS;
+ 122:BLE-communication.c ****     
+ 123:BLE-communication.c ****     powerArray[1] = (uint8_t)Power;
+ 124:BLE-communication.c ****     powerArray[0] = (Power >> 8);
  125:BLE-communication.c ****     
- 126:BLE-communication.c ****     powerArray[1] = 0;
- 127:BLE-communication.c ****     powerArray[0] = 0;
- 128:BLE-communication.c ****     
- 129:BLE-communication.c ****     return apiResult;
- 130:BLE-communication.c **** }
- 131:BLE-communication.c **** 
- 132:BLE-communication.c **** 
- 133:BLE-communication.c **** cy_en_ble_api_result_t BLE_sendBattery(uint8_t Battery)
- 134:BLE-communication.c **** {
- 344              		.loc 1 134 0
+ 126:BLE-communication.c ****     apiResult = BLE_SetCharacteristicValue(POPE_POWER_MEASURE, sizeof(uint8)*2, (uint8_t*)&powerArr
+ 127:BLE-communication.c ****     
+ 128:BLE-communication.c ****     powerArray[1] = 0;
+ 129:BLE-communication.c ****     powerArray[0] = 0;
+ 130:BLE-communication.c ****     
+ 131:BLE-communication.c ****     return apiResult;
+ 132:BLE-communication.c **** }
+ 133:BLE-communication.c **** 
+ 134:BLE-communication.c **** 
+ 135:BLE-communication.c **** cy_en_ble_api_result_t BLE_sendBattery(uint8_t Battery)
+ 136:BLE-communication.c **** {
+ 344              		.loc 1 136 0
  345              		.cfi_startproc
  346              		@ args = 0, pretend = 0, frame = 8
  347              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -1300,27 +1302,27 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  354 0004 02AB     		add	r3, sp, #8
  355 0006 03F8010D 		strb	r0, [r3, #-1]!
  356              	.LVL35:
- 135:BLE-communication.c ****     cy_en_ble_api_result_t apiResult = CY_BLE_SUCCESS;
- 136:BLE-communication.c ****     apiResult =  Cy_BLE_BASS_SetCharacteristicValue(CY_BLE_BATTERY_SERVICE_INDEX, CY_BLE_BAS_BATTER
- 357              		.loc 1 136 0
+ 137:BLE-communication.c ****     cy_en_ble_api_result_t apiResult = CY_BLE_SUCCESS;
+ 138:BLE-communication.c ****     apiResult =  Cy_BLE_BASS_SetCharacteristicValue(CY_BLE_BATTERY_SERVICE_INDEX, CY_BLE_BAS_BATTER
+ 357              		.loc 1 138 0
  358 000a 0122     		movs	r2, #1
  359 000c 0021     		movs	r1, #0
  360 000e 0846     		mov	r0, r1
  361              	.LVL36:
  362 0010 FFF7FEFF 		bl	Cy_BLE_BASS_SetCharacteristicValue
  363              	.LVL37:
- 137:BLE-communication.c ****                                                                         sizeof(uint8_t), &Battery);
- 138:BLE-communication.c ****     return apiResult;
- 139:BLE-communication.c **** }
- 364              		.loc 1 139 0
+ 139:BLE-communication.c ****                                                                         sizeof(uint8_t), &Battery);
+ 140:BLE-communication.c ****     return apiResult;
+ 141:BLE-communication.c **** }
+ 364              		.loc 1 141 0
  365 0014 03B0     		add	sp, sp, #12
  366              		.cfi_def_cfa_offset 4
  367              		@ sp needed
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 23
+
+
  368 0016 5DF804FB 		ldr	pc, [sp], #4
  369              		.cfi_endproc
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 23
-
-
  370              	.LFE598:
  371              		.size	BLE_sendBattery, .-BLE_sendBattery
  372 001a 00BF     		.section	.text.BLE_SetCharacteristicValue,"ax",%progbits
@@ -1331,77 +1333,77 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  377              		.type	BLE_SetCharacteristicValue, %function
  378              	BLE_SetCharacteristicValue:
  379              	.LFB599:
- 140:BLE-communication.c **** 
- 141:BLE-communication.c **** 
- 142:BLE-communication.c **** /************************************************************************************************
- 143:BLE-communication.c ****     Hjælpe funktion til at sende POWER
- 144:BLE-communication.c **** *************************************************************************************************/
- 145:BLE-communication.c **** cy_en_ble_api_result_t BLE_SetCharacteristicValue(POPE_char_index_t charIndex, uint16_t attrSize, u
- 146:BLE-communication.c **** {
- 380              		.loc 1 146 0
+ 142:BLE-communication.c **** 
+ 143:BLE-communication.c **** 
+ 144:BLE-communication.c **** /************************************************************************************************
+ 145:BLE-communication.c ****     Hjælpe funktion til at sende POWER
+ 146:BLE-communication.c **** *************************************************************************************************/
+ 147:BLE-communication.c **** cy_en_ble_api_result_t BLE_SetCharacteristicValue(POPE_char_index_t charIndex, uint16_t attrSize, u
+ 148:BLE-communication.c **** {
+ 380              		.loc 1 148 0
  381              		.cfi_startproc
  382              		@ args = 0, pretend = 0, frame = 24
  383              		@ frame_needed = 0, uses_anonymous_args = 0
  384              	.LVL38:
- 147:BLE-communication.c ****     cy_en_ble_api_result_t apiResult = CY_BLE_SUCCESS;
- 148:BLE-communication.c **** 
- 149:BLE-communication.c ****     if(charIndex >= POPE_CHAR_COUNT)
- 385              		.loc 1 149 0
+ 149:BLE-communication.c ****     cy_en_ble_api_result_t apiResult = CY_BLE_SUCCESS;
+ 150:BLE-communication.c **** 
+ 151:BLE-communication.c ****     if(charIndex >= POPE_CHAR_COUNT)
+ 385              		.loc 1 151 0
  386 0000 C0B9     		cbnz	r0, .L26
- 146:BLE-communication.c ****     cy_en_ble_api_result_t apiResult = CY_BLE_SUCCESS;
- 387              		.loc 1 146 0
+ 148:BLE-communication.c ****     cy_en_ble_api_result_t apiResult = CY_BLE_SUCCESS;
+ 387              		.loc 1 148 0
  388 0002 00B5     		push	{lr}
  389              		.cfi_def_cfa_offset 4
  390              		.cfi_offset 14, -4
  391 0004 87B0     		sub	sp, sp, #28
  392              		.cfi_def_cfa_offset 32
  393              	.LBB6:
- 150:BLE-communication.c ****     {
- 151:BLE-communication.c ****         apiResult = CY_BLE_ERROR_INVALID_PARAMETER;
- 152:BLE-communication.c ****     }
- 153:BLE-communication.c ****     else
- 154:BLE-communication.c ****     {
- 155:BLE-communication.c ****         /* Store data in database */
- 156:BLE-communication.c ****         cy_stc_ble_gatts_db_attr_val_info_t dbAttrValInfo =
- 394              		.loc 1 156 0
+ 152:BLE-communication.c ****     {
+ 153:BLE-communication.c ****         apiResult = CY_BLE_ERROR_INVALID_PARAMETER;
+ 154:BLE-communication.c ****     }
+ 155:BLE-communication.c ****     else
+ 156:BLE-communication.c ****     {
+ 157:BLE-communication.c ****         /* Store data in database */
+ 158:BLE-communication.c ****         cy_stc_ble_gatts_db_attr_val_info_t dbAttrValInfo =
+ 394              		.loc 1 158 0
  395 0006 0290     		str	r0, [sp, #8]
  396 0008 0390     		str	r0, [sp, #12]
  397 000a 0490     		str	r0, [sp, #16]
  398 000c 0590     		str	r0, [sp, #20]
  399 000e 0192     		str	r2, [sp, #4]
  400 0010 ADF80810 		strh	r1, [sp, #8]	@ movhi
- 157:BLE-communication.c ****         {
- 158:BLE-communication.c ****             .handleValuePair.attrHandle = cy_ble_customConfigPtr->customs->customServInfo[charIndex
- 401              		.loc 1 158 0
+ 159:BLE-communication.c ****         {
+ 160:BLE-communication.c ****             .handleValuePair.attrHandle = cy_ble_customConfigPtr->customs->customServInfo[charIndex
+ 401              		.loc 1 160 0
  402 0014 0A4A     		ldr	r2, .L30
  403              	.LVL39:
  404 0016 1268     		ldr	r2, [r2]
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 24
+
+
  405 0018 1268     		ldr	r2, [r2]
  406 001a 00EB4003 		add	r3, r0, r0, lsl #1
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 24
-
-
  407 001e 02EB4303 		add	r3, r2, r3, lsl #1
  408 0022 5B88     		ldrh	r3, [r3, #2]
- 156:BLE-communication.c ****         {
- 409              		.loc 1 156 0
+ 158:BLE-communication.c ****         {
+ 409              		.loc 1 158 0
  410 0024 ADF80C30 		strh	r3, [sp, #12]	@ movhi
- 159:BLE-communication.c ****             .handleValuePair.value.len  = attrSize,
- 160:BLE-communication.c ****             .handleValuePair.value.val  = attrValue,
- 161:BLE-communication.c ****             .offset                     = 0u,
- 162:BLE-communication.c ****             .flags                      = CY_BLE_GATT_DB_LOCALLY_INITIATED
- 163:BLE-communication.c ****         };
- 164:BLE-communication.c **** 
- 165:BLE-communication.c ****         if(Cy_BLE_GATTS_WriteAttributeValueCCCD(&dbAttrValInfo) != CY_BLE_GATT_ERR_NONE)
- 411              		.loc 1 165 0
+ 161:BLE-communication.c ****             .handleValuePair.value.len  = attrSize,
+ 162:BLE-communication.c ****             .handleValuePair.value.val  = attrValue,
+ 163:BLE-communication.c ****             .offset                     = 0u,
+ 164:BLE-communication.c ****             .flags                      = CY_BLE_GATT_DB_LOCALLY_INITIATED
+ 165:BLE-communication.c ****         };
+ 166:BLE-communication.c **** 
+ 167:BLE-communication.c ****         if(Cy_BLE_GATTS_WriteAttributeValueCCCD(&dbAttrValInfo) != CY_BLE_GATT_ERR_NONE)
+ 411              		.loc 1 167 0
  412 0028 01A8     		add	r0, sp, #4
  413              	.LVL40:
  414 002a FFF7FEFF 		bl	Cy_BLE_GATTS_WriteAttributeValueCCCD
  415              	.LVL41:
  416 002e 18B1     		cbz	r0, .L24
- 166:BLE-communication.c ****         {
- 167:BLE-communication.c ****             apiResult = CY_BLE_ERROR_INVALID_PARAMETER;
- 417              		.loc 1 167 0
+ 168:BLE-communication.c ****         {
+ 169:BLE-communication.c ****             apiResult = CY_BLE_ERROR_INVALID_PARAMETER;
+ 417              		.loc 1 169 0
  418 0030 0448     		ldr	r0, .L30+4
  419              	.LVL42:
  420 0032 01E0     		b	.L24
@@ -1410,8 +1412,8 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  423              		.cfi_def_cfa_offset 0
  424              		.cfi_restore 14
  425              	.LBE6:
- 151:BLE-communication.c ****     }
- 426              		.loc 1 151 0
+ 153:BLE-communication.c ****     }
+ 426              		.loc 1 153 0
  427 0034 0348     		ldr	r0, .L30+4
  428              	.LVL44:
  429 0036 7047     		bx	lr
@@ -1419,11 +1421,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  431              	.L24:
  432              		.cfi_def_cfa_offset 32
  433              		.cfi_offset 14, -4
- 168:BLE-communication.c ****         }
- 169:BLE-communication.c ****     }
- 170:BLE-communication.c ****     return(apiResult);
- 171:BLE-communication.c **** }
- 434              		.loc 1 171 0
+ 170:BLE-communication.c ****         }
+ 171:BLE-communication.c ****     }
+ 172:BLE-communication.c ****     return(apiResult);
+ 173:BLE-communication.c **** }
+ 434              		.loc 1 173 0
  435 0038 07B0     		add	sp, sp, #28
  436              		.cfi_def_cfa_offset 4
  437              		@ sp needed
@@ -1436,19 +1438,19 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  444              		.cfi_endproc
  445              	.LFE599:
  446              		.size	BLE_SetCharacteristicValue, .-BLE_SetCharacteristicValue
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 25
+
+
  447              		.section	.text.BLE_sendPower,"ax",%progbits
  448              		.align	2
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 25
-
-
  449              		.global	BLE_sendPower
  450              		.thumb
  451              		.thumb_func
  452              		.type	BLE_sendPower, %function
  453              	BLE_sendPower:
  454              	.LFB597:
- 118:BLE-communication.c ****     cy_en_ble_api_result_t apiResult = CY_BLE_SUCCESS;
- 455              		.loc 1 118 0
+ 120:BLE-communication.c ****     cy_en_ble_api_result_t apiResult = CY_BLE_SUCCESS;
+ 455              		.loc 1 120 0
  456              		.cfi_startproc
  457              		@ args = 0, pretend = 0, frame = 0
  458              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -1458,31 +1460,31 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  462              		.cfi_offset 4, -8
  463              		.cfi_offset 14, -4
  464              	.LVL47:
- 121:BLE-communication.c ****     powerArray[0] = (Power >> 8);
- 465              		.loc 1 121 0
+ 123:BLE-communication.c ****     powerArray[0] = (Power >> 8);
+ 465              		.loc 1 123 0
  466 0002 074C     		ldr	r4, .L34
  467 0004 6071     		strb	r0, [r4, #5]
- 122:BLE-communication.c ****     
- 468              		.loc 1 122 0
+ 124:BLE-communication.c ****     
+ 468              		.loc 1 124 0
  469 0006 000A     		lsrs	r0, r0, #8
  470              	.LVL48:
  471 0008 2246     		mov	r2, r4
  472 000a 02F8040F 		strb	r0, [r2, #4]!
- 124:BLE-communication.c ****     
- 473              		.loc 1 124 0
+ 126:BLE-communication.c ****     
+ 473              		.loc 1 126 0
  474 000e 0221     		movs	r1, #2
  475 0010 0020     		movs	r0, #0
  476 0012 FFF7FEFF 		bl	BLE_SetCharacteristicValue
  477              	.LVL49:
- 126:BLE-communication.c ****     powerArray[0] = 0;
- 478              		.loc 1 126 0
+ 128:BLE-communication.c ****     powerArray[0] = 0;
+ 478              		.loc 1 128 0
  479 0016 0023     		movs	r3, #0
  480 0018 6371     		strb	r3, [r4, #5]
- 127:BLE-communication.c ****     
- 481              		.loc 1 127 0
+ 129:BLE-communication.c ****     
+ 481              		.loc 1 129 0
  482 001a 2371     		strb	r3, [r4, #4]
- 130:BLE-communication.c **** 
- 483              		.loc 1 130 0
+ 132:BLE-communication.c **** 
+ 483              		.loc 1 132 0
  484 001c 10BD     		pop	{r4, pc}
  485              	.L35:
  486 001e 00BF     		.align	2
@@ -1496,11 +1498,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  494              		.comm	uart_string,50,4
  495              		.comm	buffer,22,4
  496              		.comm	devAddr,1,1
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 26
+
+
  497              		.data
  498              		.align	2
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 26
-
-
  499              		.set	.LANCHOR1,. + 0
  500              		.type	BLEtimerParam, %object
  501              		.size	BLEtimerParam, 2
@@ -1518,8 +1520,8 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  512      00
  513 0005 000000   		.space	3
  514              	.LC1:
- 515 0008 313900   		.ascii	"19\000"
- 516 000b 00       		.space	1
+ 515 0008 3600     		.ascii	"6\000"
+ 516 000a 0000     		.space	2
  517              	.LC2:
  518 000c 53746163 		.ascii	"Stack On \015 \012 \000"
  518      6B204F6E 
@@ -1527,8 +1529,8 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  518      2000
  519 001a 0000     		.space	2
  520              	.LC3:
- 521 001c 323000   		.ascii	"20\000"
- 522 001f 00       		.space	1
+ 521 001c 3700     		.ascii	"7\000"
+ 522 001e 0000     		.space	2
  523              	.LC4:
  524 0020 44657669 		.ascii	"Device link connected \015 \012 \000"
  524      6365206C 
@@ -1556,11 +1558,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  534 006f 00       		.space	1
  535              	.LC8:
  536 0070 41647665 		.ascii	"Advertisement start/stop\000"
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 27
+
+
  536      72746973 
  536      656D656E 
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 27
-
-
  536      74207374 
  536      6172742F 
  537 0089 000000   		.space	3
@@ -1616,11 +1618,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  584 0006 00000000 		.4byte	.Ldebug_abbrev0
  585 000a 04       		.byte	0x4
  586 000b 01       		.uleb128 0x1
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 28
+
+
  587 000c 15040000 		.4byte	.LASF455
  588 0010 0C       		.byte	0xc
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 28
-
-
  589 0011 CA080000 		.4byte	.LASF456
  590 0015 04070000 		.4byte	.LASF457
  591 0019 00000000 		.4byte	.Ldebug_ranges0+0
@@ -1676,11 +1678,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  641 0081 07       		.byte	0x7
  642 0082 95230000 		.4byte	.LASF10
  643 0086 02       		.uleb128 0x2
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 29
+
+
  644 0087 08       		.byte	0x8
  645 0088 05       		.byte	0x5
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 29
-
-
  646 0089 3C170000 		.4byte	.LASF11
  647 008d 02       		.uleb128 0x2
  648 008e 08       		.byte	0x8
@@ -1736,11 +1738,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  698 00f9 00       		.byte	0
  699 00fa 02       		.uleb128 0x2
  700 00fb 08       		.byte	0x8
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 30
+
+
  701 00fc 04       		.byte	0x4
  702 00fd 591C0000 		.4byte	.LASF20
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 30
-
-
  703 0101 08       		.uleb128 0x8
  704 0102 B8       		.byte	0xb8
  705 0103 05       		.byte	0x5
@@ -1796,11 +1798,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  755 0168 1C       		.byte	0x1c
  756 0169 09       		.uleb128 0x9
  757 016a 4A170000 		.4byte	.LASF29
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 31
+
+
  758 016e 05       		.byte	0x5
  759 016f 3F       		.byte	0x3f
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 31
-
-
  760 0170 CE000000 		.4byte	0xce
  761 0174 20       		.byte	0x20
  762 0175 09       		.uleb128 0x9
@@ -1856,11 +1858,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  812 01da 05       		.byte	0x5
  813 01db 4A       		.byte	0x4a
  814 01dc A2000000 		.4byte	0xa2
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 32
+
+
  815 01e0 2F       		.byte	0x2f
  816 01e1 09       		.uleb128 0x9
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 32
-
-
  817 01e2 70110000 		.4byte	.LASF39
  818 01e6 05       		.byte	0x5
  819 01e7 4B       		.byte	0x4b
@@ -1916,11 +1918,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  869 024c 3C       		.byte	0x3c
  870 024d 09       		.uleb128 0x9
  871 024e C62A0000 		.4byte	.LASF48
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 33
+
+
  872 0252 05       		.byte	0x5
  873 0253 56       		.byte	0x56
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 33
-
-
  874 0254 A2000000 		.4byte	0xa2
  875 0258 3D       		.byte	0x3d
  876 0259 09       		.uleb128 0x9
@@ -1976,11 +1978,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  926 02be 05       		.byte	0x5
  927 02bf 5F       		.byte	0x5f
  928 02c0 CE000000 		.4byte	0xce
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 34
+
+
  929 02c4 4C       		.byte	0x4c
  930 02c5 09       		.uleb128 0x9
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 34
-
-
  931 02c6 DE270000 		.4byte	.LASF58
  932 02ca 05       		.byte	0x5
  933 02cb 60       		.byte	0x60
@@ -2036,11 +2038,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  983 0330 58       		.byte	0x58
  984 0331 09       		.uleb128 0x9
  985 0332 022A0000 		.4byte	.LASF67
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 35
+
+
  986 0336 05       		.byte	0x5
  987 0337 69       		.byte	0x69
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 35
-
-
  988 0338 A2000000 		.4byte	0xa2
  989 033c 59       		.byte	0x59
  990 033d 09       		.uleb128 0x9
@@ -2096,11 +2098,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  1040 03a2 05       		.byte	0x5
  1041 03a3 78       		.byte	0x78
  1042 03a4 B8000000 		.4byte	0xb8
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 36
+
+
  1043 03a8 6C       		.byte	0x6c
  1044 03a9 09       		.uleb128 0x9
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 36
-
-
  1045 03aa 81060000 		.4byte	.LASF77
  1046 03ae 05       		.byte	0x5
  1047 03af 79       		.byte	0x79
@@ -2156,11 +2158,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  1097 0414 7A       		.byte	0x7a
  1098 0415 09       		.uleb128 0x9
  1099 0416 75220000 		.4byte	.LASF86
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 37
+
+
  1100 041a 05       		.byte	0x5
  1101 041b 86       		.byte	0x86
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 37
-
-
  1102 041c A2000000 		.4byte	0xa2
  1103 0420 7C       		.byte	0x7c
  1104 0421 09       		.uleb128 0x9
@@ -2216,11 +2218,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  1154 0486 05       		.byte	0x5
  1155 0487 91       		.byte	0x91
  1156 0488 CE000000 		.4byte	0xce
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 38
+
+
  1157 048c 94       		.byte	0x94
  1158 048d 09       		.uleb128 0x9
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 38
-
-
  1159 048e DE080000 		.4byte	.LASF96
  1160 0492 05       		.byte	0x5
  1161 0493 92       		.byte	0x92
@@ -2276,11 +2278,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  1211 04f8 AE       		.byte	0xae
  1212 04f9 09       		.uleb128 0x9
  1213 04fa A6070000 		.4byte	.LASF105
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 39
+
+
  1214 04fe 05       		.byte	0x5
  1215 04ff 9D       		.byte	0x9d
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 39
-
-
  1216 0500 B8000000 		.4byte	0xb8
  1217 0504 B0       		.byte	0xb0
  1218 0505 09       		.uleb128 0x9
@@ -2336,11 +2338,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  1268 0566 06       		.byte	0x6
  1269 0567 3902     		.2byte	0x239
  1270 0569 6D050000 		.4byte	0x56d
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 40
+
+
  1271 056d 0E       		.uleb128 0xe
  1272 056e 04       		.byte	0x4
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 40
-
-
  1273 056f 73050000 		.4byte	0x573
  1274 0573 0F       		.uleb128 0xf
  1275 0574 7E050000 		.4byte	0x57e
@@ -2396,11 +2398,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  1325 05e5 06       		.byte	0x6
  1326 05e6 CC02     		.2byte	0x2cc
  1327 05e8 34050000 		.4byte	0x534
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 41
+
+
  1328 05ec 0C       		.byte	0xc
  1329 05ed 13       		.uleb128 0x13
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 41
-
-
  1330 05ee 21240000 		.4byte	.LASF122
  1331 05f2 06       		.byte	0x6
  1332 05f3 CD02     		.2byte	0x2cd
@@ -2456,11 +2458,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  1382 0661 2C       		.byte	0x2c
  1383 0662 13       		.uleb128 0x13
  1384 0663 B4090000 		.4byte	.LASF131
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 42
+
+
  1385 0667 06       		.byte	0x6
  1386 0668 D902     		.2byte	0x2d9
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 42
-
-
  1387 066a E0000000 		.4byte	0xe0
  1388 066e 30       		.byte	0x30
  1389 066f 13       		.uleb128 0x13
@@ -2516,11 +2518,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  1439 06db D901     		.2byte	0x1d9
  1440 06dd 6D050000 		.4byte	0x56d
  1441 06e1 12       		.uleb128 0x12
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 43
+
+
  1442 06e2 8D0B0000 		.4byte	.LASF141
  1443 06e6 38       		.byte	0x38
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 43
-
-
  1444 06e7 07       		.byte	0x7
  1445 06e8 7502     		.2byte	0x275
  1446 06ea A5070000 		.4byte	0x7a5
@@ -2576,11 +2578,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  1496 0757 E7140000 		.4byte	.LASF150
  1497 075b 07       		.byte	0x7
  1498 075c 8202     		.2byte	0x282
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 44
+
+
  1499 075e E0000000 		.4byte	0xe0
  1500 0762 20       		.byte	0x20
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 44
-
-
  1501 0763 13       		.uleb128 0x13
  1502 0764 B11B0000 		.4byte	.LASF151
  1503 0768 07       		.byte	0x7
@@ -2636,11 +2638,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  1553 07d0 CE000000 		.4byte	0xce
  1554 07d4 04       		.byte	0x4
  1555 07d5 09       		.uleb128 0x9
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 45
+
+
  1556 07d6 CA1C0000 		.4byte	.LASF159
  1557 07da 08       		.byte	0x8
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 45
-
-
  1558 07db 34       		.byte	0x34
  1559 07dc CE000000 		.4byte	0xce
  1560 07e0 08       		.byte	0x8
@@ -2696,11 +2698,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  1610 0842 84190000 		.4byte	.LASF168
  1611 0846 08       		.byte	0x8
  1612 0847 40       		.byte	0x40
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 46
+
+
  1613 0848 CE000000 		.4byte	0xce
  1614 084c 2C       		.byte	0x2c
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 46
-
-
  1615 084d 09       		.uleb128 0x9
  1616 084e C70B0000 		.4byte	.LASF169
  1617 0852 08       		.byte	0x8
@@ -2756,11 +2758,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  1667 08b4 6501     		.2byte	0x165
  1668 08b6 C1080000 		.4byte	0x8c1
  1669 08ba 0C       		.uleb128 0xc
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 47
+
+
  1670 08bb 10180000 		.4byte	.LASF177
  1671 08bf 00       		.byte	0
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 47
-
-
  1672 08c0 00       		.byte	0
  1673 08c1 0B       		.uleb128 0xb
  1674 08c2 02       		.byte	0x2
@@ -2816,11 +2818,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  1724 0936 15       		.uleb128 0x15
  1725 0937 5C260000 		.4byte	.LASF193
  1726 093b 0820     		.2byte	0x2008
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 48
+
+
  1727 093d 15       		.uleb128 0x15
  1728 093e 87050000 		.4byte	.LASF194
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 48
-
-
  1729 0942 0920     		.2byte	0x2009
  1730 0944 15       		.uleb128 0x15
  1731 0945 040B0000 		.4byte	.LASF195
@@ -2876,11 +2878,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  1781 09bb 15       		.uleb128 0x15
  1782 09bc CD220000 		.4byte	.LASF212
  1783 09c0 0330     		.2byte	0x3003
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 49
+
+
  1784 09c2 15       		.uleb128 0x15
  1785 09c3 910C0000 		.4byte	.LASF213
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 49
-
-
  1786 09c7 0430     		.2byte	0x3004
  1787 09c9 15       		.uleb128 0x15
  1788 09ca 2A230000 		.4byte	.LASF214
@@ -2936,11 +2938,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  1838 0a40 15       		.uleb128 0x15
  1839 0a41 E71A0000 		.4byte	.LASF231
  1840 0a45 0040     		.2byte	0x4000
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 50
+
+
  1841 0a47 15       		.uleb128 0x15
  1842 0a48 1B0E0000 		.4byte	.LASF232
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 50
-
-
  1843 0a4c 0140     		.2byte	0x4001
  1844 0a4e 15       		.uleb128 0x15
  1845 0a4f EF270000 		.4byte	.LASF233
@@ -2996,11 +2998,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  1895 0ac5 15       		.uleb128 0x15
  1896 0ac6 BD200000 		.4byte	.LASF250
  1897 0aca 1340     		.2byte	0x4013
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 51
+
+
  1898 0acc 15       		.uleb128 0x15
  1899 0acd 4E030000 		.4byte	.LASF251
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 51
-
-
  1900 0ad1 1440     		.2byte	0x4014
  1901 0ad3 15       		.uleb128 0x15
  1902 0ad4 46080000 		.4byte	.LASF252
@@ -3056,11 +3058,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  1952 0b4a 15       		.uleb128 0x15
  1953 0b4b 47200000 		.4byte	.LASF269
  1954 0b4f 0B50     		.2byte	0x500b
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 52
+
+
  1955 0b51 15       		.uleb128 0x15
  1956 0b52 2D1E0000 		.4byte	.LASF270
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 52
-
-
  1957 0b56 0C50     		.2byte	0x500c
  1958 0b58 15       		.uleb128 0x15
  1959 0b59 E8100000 		.4byte	.LASF271
@@ -3116,11 +3118,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  2009 0bcf 15       		.uleb128 0x15
  2010 0bd0 04210000 		.4byte	.LASF288
  2011 0bd4 0560     		.2byte	0x6005
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 53
+
+
  2012 0bd6 15       		.uleb128 0x15
  2013 0bd7 F70F0000 		.4byte	.LASF289
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 53
-
-
  2014 0bdb 0660     		.2byte	0x6006
  2015 0bdd 15       		.uleb128 0x15
  2016 0bde 50000000 		.4byte	.LASF290
@@ -3176,11 +3178,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  2066 0c61 08001600 		.4byte	0x160008
  2067 0c65 16       		.uleb128 0x16
  2068 0c66 A21F0000 		.4byte	.LASF305
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 54
+
+
  2069 0c6a 09001600 		.4byte	0x160009
  2070 0c6e 16       		.uleb128 0x16
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 54
-
-
  2071 0c6f 720F0000 		.4byte	.LASF306
  2072 0c73 0A001600 		.4byte	0x16000a
  2073 0c77 16       		.uleb128 0x16
@@ -3236,11 +3238,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  2123 0d0c FF001600 		.4byte	0x1600ff
  2124 0d10 16       		.uleb128 0x16
  2125 0d11 A7000000 		.4byte	.LASF324
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 55
+
+
  2126 0d15 FFFF1600 		.4byte	0x16ffff
  2127 0d19 00       		.byte	0
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 55
-
-
  2128 0d1a 0D       		.uleb128 0xd
  2129 0d1b 3C270000 		.4byte	.LASF325
  2130 0d1f 0A       		.byte	0xa
@@ -3296,11 +3298,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  2180 0d88 17       		.uleb128 0x17
  2181 0d89 02       		.byte	0x2
  2182 0d8a 0B       		.byte	0xb
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 56
+
+
  2183 0d8b 8401     		.2byte	0x184
  2184 0d8d AC0D0000 		.4byte	0xdac
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 56
-
-
  2185 0d91 13       		.uleb128 0x13
  2186 0d92 430B0000 		.4byte	.LASF334
  2187 0d96 0B       		.byte	0xb
@@ -3356,11 +3358,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  2237 0dfe 430B0000 		.4byte	.LASF334
  2238 0e02 0B       		.byte	0xb
  2239 0e03 2603     		.2byte	0x326
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 57
+
+
  2240 0e05 A2000000 		.4byte	0xa2
  2241 0e09 03       		.byte	0x3
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 57
-
-
  2242 0e0a 00       		.byte	0
  2243 0e0b 0D       		.uleb128 0xd
  2244 0e0c 61180000 		.4byte	.LASF340
@@ -3416,11 +3418,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  2294 0e72 9F030000 		.4byte	.LASF354
  2295 0e76 0D       		.byte	0xd
  2296 0e77 0C       		.uleb128 0xc
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 58
+
+
  2297 0e78 36050000 		.4byte	.LASF355
  2298 0e7c 0E       		.byte	0xe
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 58
-
-
  2299 0e7d 0C       		.uleb128 0xc
  2300 0e7e 550E0000 		.4byte	.LASF356
  2301 0e82 0F       		.byte	0xf
@@ -3476,11 +3478,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  2351 0ee4 5A210000 		.4byte	.LASF373
  2352 0ee8 A1       		.byte	0xa1
  2353 0ee9 0C       		.uleb128 0xc
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 59
+
+
  2354 0eea 13090000 		.4byte	.LASF374
  2355 0eee A2       		.byte	0xa2
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 59
-
-
  2356 0eef 0C       		.uleb128 0xc
  2357 0ef0 3A1D0000 		.4byte	.LASF375
  2358 0ef4 A3       		.byte	0xa3
@@ -3536,11 +3538,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  2408 0f5a 13       		.uleb128 0x13
  2409 0f5b 4F0E0000 		.4byte	.LASF382
  2410 0f5f 0C       		.byte	0xc
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 60
+
+
  2411 0f60 A901     		.2byte	0x1a9
  2412 0f62 450F0000 		.4byte	0xf45
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 60
-
-
  2413 0f66 00       		.byte	0
  2414 0f67 13       		.uleb128 0x13
  2415 0f68 23100000 		.4byte	.LASF383
@@ -3596,11 +3598,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  2465 0fcf 0C       		.uleb128 0xc
  2466 0fd0 BA150000 		.4byte	.LASF393
  2467 0fd4 03       		.byte	0x3
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 61
+
+
  2468 0fd5 0C       		.uleb128 0xc
  2469 0fd6 C40D0000 		.4byte	.LASF394
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 61
-
-
  2470 0fda 04       		.byte	0x4
  2471 0fdb 0C       		.uleb128 0xc
  2472 0fdc D6120000 		.4byte	.LASF395
@@ -3656,11 +3658,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  2522 1044 01       		.byte	0x1
  2523 1045 3E000000 		.4byte	0x3e
  2524 1049 0E       		.byte	0xe
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 62
+
+
  2525 104a 3A       		.byte	0x3a
  2526 104b 5C100000 		.4byte	0x105c
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 62
-
-
  2527 104f 0C       		.uleb128 0xc
  2528 1050 23270000 		.4byte	.LASF403
  2529 1054 00       		.byte	0
@@ -3716,11 +3718,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  2579 10b3 B9100000 		.4byte	0x10b9
  2580 10b7 02       		.byte	0x2
  2581 10b8 00       		.byte	0
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 63
+
+
  2582 10b9 06       		.uleb128 0x6
  2583 10ba 8D100000 		.4byte	0x108d
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 63
-
-
  2584 10be C9100000 		.4byte	0x10c9
  2585 10c2 07       		.uleb128 0x7
  2586 10c3 D9000000 		.4byte	0xd9
@@ -3776,11 +3778,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  2636 1128 03       		.uleb128 0x3
  2637 1129 D8240000 		.4byte	.LASF415
  2638 112d 10       		.byte	0x10
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 64
+
+
  2639 112e 17       		.byte	0x17
  2640 112f 0F110000 		.4byte	0x110f
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 64
-
-
  2641 1133 1D       		.uleb128 0x1d
  2642 1134 0C010000 		.4byte	.LASF458
  2643 1138 02       		.byte	0x2
@@ -3790,7 +3792,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  2647 1140 1E       		.uleb128 0x1e
  2648 1141 A2260000 		.4byte	.LASF418
  2649 1145 01       		.byte	0x1
- 2650 1146 1E       		.byte	0x1e
+ 2650 1146 20       		.byte	0x20
  2651 1147 00000000 		.4byte	.LFB595
  2652 114b 98010000 		.4byte	.LFE595-.LFB595
  2653 114f 01       		.uleb128 0x1
@@ -3799,13 +3801,13 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  2656 1155 1F       		.uleb128 0x1f
  2657 1156 4F0B0000 		.4byte	.LASF416
  2658 115a 01       		.byte	0x1
- 2659 115b 1E       		.byte	0x1e
+ 2659 115b 20       		.byte	0x20
  2660 115c CE000000 		.4byte	0xce
  2661 1160 00000000 		.4byte	.LLST0
  2662 1164 1F       		.uleb128 0x1f
  2663 1165 EA010000 		.4byte	.LASF417
  2664 1169 01       		.byte	0x1
- 2665 116a 1E       		.byte	0x1e
+ 2665 116a 20       		.byte	0x20
  2666 116b 32050000 		.4byte	0x532
  2667 116f C2000000 		.4byte	.LLST1
  2668 1173 20       		.uleb128 0x20
@@ -3813,7 +3815,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  2670 1178 2E010000 		.4byte	.LBB4
  2671 117c 04000000 		.4byte	.LBE4-.LBB4
  2672 1180 01       		.byte	0x1
- 2673 1181 55       		.byte	0x55
+ 2673 1181 57       		.byte	0x57
  2674 1182 21       		.uleb128 0x21
  2675 1183 0E000000 		.4byte	.LVL3
  2676 1187 75150000 		.4byte	0x1575
@@ -3836,11 +3838,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  2693 11a7 75150000 		.4byte	0x1575
  2694 11ab BF110000 		.4byte	0x11bf
  2695 11af 22       		.uleb128 0x22
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 65
+
+
  2696 11b0 01       		.uleb128 0x1
  2697 11b1 50       		.byte	0x50
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 65
-
-
  2698 11b2 05       		.uleb128 0x5
  2699 11b3 03       		.byte	0x3
  2700 11b4 1C000000 		.4byte	.LC3
@@ -3896,11 +3898,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  2750 1207 51       		.byte	0x51
  2751 1208 02       		.uleb128 0x2
  2752 1209 75       		.byte	0x75
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 66
+
+
  2753 120a 00       		.sleb128 0
  2754 120b 00       		.byte	0
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 66
-
-
  2755 120c 21       		.uleb128 0x21
  2756 120d B4000000 		.4byte	.LVL15
  2757 1211 75150000 		.4byte	0x1575
@@ -3956,11 +3958,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  2807 1264 08010000 		.4byte	.LVL22
  2808 1268 75150000 		.4byte	0x1575
  2809 126c 80120000 		.4byte	0x1280
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 67
+
+
  2810 1270 22       		.uleb128 0x22
  2811 1271 01       		.uleb128 0x1
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 67
-
-
  2812 1272 50       		.byte	0x50
  2813 1273 05       		.uleb128 0x5
  2814 1274 03       		.byte	0x3
@@ -4016,11 +4018,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  2864 12d0 5A010000 		.4byte	.LVL32
  2865 12d4 75150000 		.4byte	0x1575
  2866 12d8 22       		.uleb128 0x22
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 68
+
+
  2867 12d9 01       		.uleb128 0x1
  2868 12da 50       		.byte	0x50
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 68
-
-
  2869 12db 05       		.uleb128 0x5
  2870 12dc 03       		.byte	0x3
  2871 12dd 1C000000 		.4byte	.LC3
@@ -4035,7 +4037,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  2880 12ec 25       		.uleb128 0x25
  2881 12ed 4B220000 		.4byte	.LASF419
  2882 12f1 01       		.byte	0x1
- 2883 12f2 6B       		.byte	0x6b
+ 2883 12f2 6D       		.byte	0x6d
  2884 12f3 94000000 		.4byte	0x94
  2885 12f7 00000000 		.4byte	.LFB596
  2886 12fb 24000000 		.4byte	.LFE596-.LFB596
@@ -4056,7 +4058,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  2901 1319 26       		.uleb128 0x26
  2902 131a 101D0000 		.4byte	.LASF421
  2903 131e 01       		.byte	0x1
- 2904 131f 85       		.byte	0x85
+ 2904 131f 87       		.byte	0x87
  2905 1320 1A0D0000 		.4byte	0xd1a
  2906 1324 00000000 		.4byte	.LFB598
  2907 1328 1A000000 		.4byte	.LFE598-.LFB598
@@ -4066,21 +4068,21 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  2911 1332 1F       		.uleb128 0x1f
  2912 1333 7F050000 		.4byte	.LASF420
  2913 1337 01       		.byte	0x1
- 2914 1338 85       		.byte	0x85
+ 2914 1338 87       		.byte	0x87
  2915 1339 A2000000 		.4byte	0xa2
  2916 133d 39010000 		.4byte	.LLST2
  2917 1341 27       		.uleb128 0x27
  2918 1342 DF160000 		.4byte	.LASF426
  2919 1346 01       		.byte	0x1
- 2920 1347 87       		.byte	0x87
+ 2920 1347 89       		.byte	0x89
  2921 1348 1A0D0000 		.4byte	0xd1a
  2922 134c 64010000 		.4byte	.LLST3
  2923 1350 24       		.uleb128 0x24
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 69
+
+
  2924 1351 14000000 		.4byte	.LVL37
  2925 1355 BA150000 		.4byte	0x15ba
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 69
-
-
  2926 1359 22       		.uleb128 0x22
  2927 135a 01       		.uleb128 0x1
  2928 135b 50       		.byte	0x50
@@ -4107,7 +4109,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  2949 1370 26       		.uleb128 0x26
  2950 1371 89090000 		.4byte	.LASF422
  2951 1375 01       		.byte	0x1
- 2952 1376 91       		.byte	0x91
+ 2952 1376 93       		.byte	0x93
  2953 1377 1A0D0000 		.4byte	0xd1a
  2954 137b 00000000 		.4byte	.LFB599
  2955 137f 48000000 		.4byte	.LFE599-.LFB599
@@ -4117,37 +4119,37 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  2959 1389 1F       		.uleb128 0x1f
  2960 138a 84200000 		.4byte	.LASF423
  2961 138e 01       		.byte	0x1
- 2962 138f 91       		.byte	0x91
+ 2962 138f 93       		.byte	0x93
  2963 1390 28110000 		.4byte	0x1128
  2964 1394 83010000 		.4byte	.LLST4
  2965 1398 1F       		.uleb128 0x1f
  2966 1399 8C150000 		.4byte	.LASF424
  2967 139d 01       		.byte	0x1
- 2968 139e 91       		.byte	0x91
+ 2968 139e 93       		.byte	0x93
  2969 139f B8000000 		.4byte	0xb8
  2970 13a3 BD010000 		.4byte	.LLST5
  2971 13a7 1F       		.uleb128 0x1f
  2972 13a8 580F0000 		.4byte	.LASF425
  2973 13ac 01       		.byte	0x1
- 2974 13ad 91       		.byte	0x91
+ 2974 13ad 93       		.byte	0x93
  2975 13ae BE060000 		.4byte	0x6be
  2976 13b2 F7010000 		.4byte	.LLST6
  2977 13b6 27       		.uleb128 0x27
  2978 13b7 DF160000 		.4byte	.LASF426
  2979 13bb 01       		.byte	0x1
- 2980 13bc 93       		.byte	0x93
+ 2980 13bc 95       		.byte	0x95
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 70
+
+
  2981 13bd 1A0D0000 		.4byte	0xd1a
  2982 13c1 49020000 		.4byte	.LLST7
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 70
-
-
  2983 13c5 28       		.uleb128 0x28
  2984 13c6 06000000 		.4byte	.LBB6
  2985 13ca 2E000000 		.4byte	.LBE6-.LBB6
  2986 13ce 29       		.uleb128 0x29
  2987 13cf 76200000 		.4byte	.LASF427
  2988 13d3 01       		.byte	0x1
- 2989 13d4 9C       		.byte	0x9c
+ 2989 13d4 9E       		.byte	0x9e
  2990 13d5 37100000 		.4byte	0x1037
  2991 13d9 02       		.uleb128 0x2
  2992 13da 91       		.byte	0x91
@@ -4167,7 +4169,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  3006 13ee 26       		.uleb128 0x26
  3007 13ef B3260000 		.4byte	.LASF428
  3008 13f3 01       		.byte	0x1
- 3009 13f4 75       		.byte	0x75
+ 3009 13f4 77       		.byte	0x77
  3010 13f5 1A0D0000 		.4byte	0xd1a
  3011 13f9 00000000 		.4byte	.LFB597
  3012 13fd 24000000 		.4byte	.LFE597-.LFB597
@@ -4177,13 +4179,13 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  3016 1407 1F       		.uleb128 0x1f
  3017 1408 14020000 		.4byte	.LASF429
  3018 140c 01       		.byte	0x1
- 3019 140d 75       		.byte	0x75
+ 3019 140d 77       		.byte	0x77
  3020 140e B8000000 		.4byte	0xb8
  3021 1412 84020000 		.4byte	.LLST8
  3022 1416 27       		.uleb128 0x27
  3023 1417 DF160000 		.4byte	.LASF426
  3024 141b 01       		.byte	0x1
- 3025 141c 77       		.byte	0x77
+ 3025 141c 79       		.byte	0x79
  3026 141d 1A0D0000 		.4byte	0xd1a
  3027 1421 A5020000 		.4byte	.LLST9
  3028 1425 24       		.uleb128 0x24
@@ -4196,11 +4198,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  3035 1432 30       		.byte	0x30
  3036 1433 22       		.uleb128 0x22
  3037 1434 01       		.uleb128 0x1
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 71
+
+
  3038 1435 51       		.byte	0x51
  3039 1436 01       		.uleb128 0x1
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 71
-
-
  3040 1437 32       		.byte	0x32
  3041 1438 22       		.uleb128 0x22
  3042 1439 01       		.uleb128 0x1
@@ -4213,7 +4215,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  3049 1440 29       		.uleb128 0x29
  3050 1441 58070000 		.4byte	.LASF430
  3051 1445 01       		.byte	0x1
- 3052 1446 16       		.byte	0x16
+ 3052 1446 18       		.byte	0x18
  3053 1447 AC0D0000 		.4byte	0xdac
  3054 144b 05       		.uleb128 0x5
  3055 144c 03       		.byte	0x3
@@ -4221,7 +4223,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  3057 1451 29       		.uleb128 0x29
  3058 1452 A9170000 		.4byte	.LASF431
  3059 1456 01       		.byte	0x1
- 3060 1457 17       		.byte	0x17
+ 3060 1457 19       		.byte	0x19
  3061 1458 E5000000 		.4byte	0xe5
  3062 145c 05       		.uleb128 0x5
  3063 145d 03       		.byte	0x3
@@ -4256,11 +4258,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  3092 14a3 00       		.byte	0
  3093 14a4 00       		.byte	0
  3094 14a5 2A       		.uleb128 0x2a
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 72
+
+
  3095 14a6 CA020000 		.4byte	.LASF435
  3096 14aa 02       		.byte	0x2
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 72
-
-
  3097 14ab 2C02     		.2byte	0x22c
  3098 14ad 95140000 		.4byte	0x1495
  3099 14b1 06       		.uleb128 0x6
@@ -4316,11 +4318,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  3149 1521 06       		.uleb128 0x6
  3150 1522 A2000000 		.4byte	0xa2
  3151 1526 31150000 		.4byte	0x1531
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 73
+
+
  3152 152a 07       		.uleb128 0x7
  3153 152b D9000000 		.4byte	0xd9
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 73
-
-
  3154 152f 15       		.byte	0x15
  3155 1530 00       		.byte	0
  3156 1531 2C       		.uleb128 0x2c
@@ -4334,7 +4336,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  3164 1542 2C       		.uleb128 0x2c
  3165 1543 4D0D0000 		.4byte	.LASF444
  3166 1547 01       		.byte	0x1
- 3167 1548 0E       		.byte	0xe
+ 3167 1548 0F       		.byte	0xf
  3168 1549 FF100000 		.4byte	0x10ff
  3169 154d 05       		.uleb128 0x5
  3170 154e 03       		.byte	0x3
@@ -4342,7 +4344,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  3172 1553 2C       		.uleb128 0x2c
  3173 1554 870B0000 		.4byte	.LASF445
  3174 1558 01       		.byte	0x1
- 3175 1559 0F       		.byte	0xf
+ 3175 1559 10       		.byte	0x10
  3176 155a 94000000 		.4byte	0x94
  3177 155e 05       		.uleb128 0x5
  3178 155f 03       		.byte	0x3
@@ -4350,7 +4352,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  3180 1564 2C       		.uleb128 0x2c
  3181 1565 D12A0000 		.4byte	.LASF446
  3182 1569 01       		.byte	0x1
- 3183 156a 1A       		.byte	0x1a
+ 3183 156a 1C       		.byte	0x1c
  3184 156b EA000000 		.4byte	0xea
  3185 156f 05       		.uleb128 0x5
  3186 1570 03       		.byte	0x3
@@ -4376,11 +4378,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  3206 15a0 18       		.byte	0x18
  3207 15a1 4B06     		.2byte	0x64b
  3208 15a3 2D       		.uleb128 0x2d
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 74
+
+
  3209 15a4 30160000 		.4byte	.LASF451
  3210 15a8 30160000 		.4byte	.LASF451
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 74
-
-
  3211 15ac 19       		.byte	0x19
  3212 15ad 25       		.byte	0x25
  3213 15ae 2E       		.uleb128 0x2e
@@ -4436,11 +4438,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  3263 0020 00       		.byte	0
  3264 0021 03       		.uleb128 0x3
  3265 0022 0E       		.uleb128 0xe
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 75
+
+
  3266 0023 3A       		.uleb128 0x3a
  3267 0024 0B       		.uleb128 0xb
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 75
-
-
  3268 0025 3B       		.uleb128 0x3b
  3269 0026 0B       		.uleb128 0xb
  3270 0027 49       		.uleb128 0x49
@@ -4496,11 +4498,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  3320 0059 13       		.uleb128 0x13
  3321 005a 00       		.byte	0
  3322 005b 00       		.byte	0
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 76
+
+
  3323 005c 09       		.uleb128 0x9
  3324 005d 0D       		.uleb128 0xd
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 76
-
-
  3325 005e 00       		.byte	0
  3326 005f 03       		.uleb128 0x3
  3327 0060 0E       		.uleb128 0xe
@@ -4556,11 +4558,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  3377 0092 05       		.uleb128 0x5
  3378 0093 49       		.uleb128 0x49
  3379 0094 13       		.uleb128 0x13
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 77
+
+
  3380 0095 00       		.byte	0
  3381 0096 00       		.byte	0
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 77
-
-
  3382 0097 0E       		.uleb128 0xe
  3383 0098 0F       		.uleb128 0xf
  3384 0099 00       		.byte	0
@@ -4616,11 +4618,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  3434 00cb 0D       		.uleb128 0xd
  3435 00cc 00       		.byte	0
  3436 00cd 03       		.uleb128 0x3
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 78
+
+
  3437 00ce 0E       		.uleb128 0xe
  3438 00cf 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 78
-
-
  3439 00d0 0B       		.uleb128 0xb
  3440 00d1 3B       		.uleb128 0x3b
  3441 00d2 05       		.uleb128 0x5
@@ -4676,11 +4678,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  3491 0104 13       		.uleb128 0x13
  3492 0105 00       		.byte	0
  3493 0106 00       		.byte	0
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 79
+
+
  3494 0107 18       		.uleb128 0x18
  3495 0108 17       		.uleb128 0x17
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 79
-
-
  3496 0109 01       		.byte	0x1
  3497 010a 0B       		.uleb128 0xb
  3498 010b 0B       		.uleb128 0xb
@@ -4736,11 +4738,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  3548 013d 00       		.byte	0
  3549 013e 00       		.byte	0
  3550 013f 1C       		.uleb128 0x1c
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 80
+
+
  3551 0140 26       		.uleb128 0x26
  3552 0141 00       		.byte	0
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 80
-
-
  3553 0142 49       		.uleb128 0x49
  3554 0143 13       		.uleb128 0x13
  3555 0144 00       		.byte	0
@@ -4796,11 +4798,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  3605 0177 0B       		.uleb128 0xb
  3606 0178 3B       		.uleb128 0x3b
  3607 0179 0B       		.uleb128 0xb
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 81
+
+
  3608 017a 49       		.uleb128 0x49
  3609 017b 13       		.uleb128 0x13
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 81
-
-
  3610 017c 02       		.uleb128 0x2
  3611 017d 17       		.uleb128 0x17
  3612 017e 00       		.byte	0
@@ -4856,11 +4858,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  3662 01b9 01       		.uleb128 0x1
  3663 01ba 31       		.uleb128 0x31
  3664 01bb 13       		.uleb128 0x13
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 82
+
+
  3665 01bc 00       		.byte	0
  3666 01bd 00       		.byte	0
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 82
-
-
  3667 01be 25       		.uleb128 0x25
  3668 01bf 2E       		.uleb128 0x2e
  3669 01c0 01       		.byte	0x1
@@ -4916,11 +4918,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  3719 01f4 27       		.uleb128 0x27
  3720 01f5 34       		.uleb128 0x34
  3721 01f6 00       		.byte	0
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 83
+
+
  3722 01f7 03       		.uleb128 0x3
  3723 01f8 0E       		.uleb128 0xe
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 83
-
-
  3724 01f9 3A       		.uleb128 0x3a
  3725 01fa 0B       		.uleb128 0xb
  3726 01fb 3B       		.uleb128 0x3b
@@ -4976,11 +4978,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  3776 022d 34       		.uleb128 0x34
  3777 022e 00       		.byte	0
  3778 022f 03       		.uleb128 0x3
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 84
+
+
  3779 0230 0E       		.uleb128 0xe
  3780 0231 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 84
-
-
  3781 0232 0B       		.uleb128 0xb
  3782 0233 3B       		.uleb128 0x3b
  3783 0234 0B       		.uleb128 0xb
@@ -5036,11 +5038,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  3833 0266 6E       		.uleb128 0x6e
  3834 0267 0E       		.uleb128 0xe
  3835 0268 03       		.uleb128 0x3
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 85
+
+
  3836 0269 0E       		.uleb128 0xe
  3837 026a 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 85
-
-
  3838 026b 0B       		.uleb128 0xb
  3839 026c 3B       		.uleb128 0x3b
  3840 026d 05       		.uleb128 0x5
@@ -5096,11 +5098,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  3890 0069 0400     		.2byte	0x4
  3891 006b F3       		.byte	0xf3
  3892 006c 01       		.uleb128 0x1
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 86
+
+
  3893 006d 50       		.byte	0x50
  3894 006e 9F       		.byte	0x9f
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 86
-
-
  3895 006f EC000000 		.4byte	.LVL20
  3896 0073 EE000000 		.4byte	.LVL21
  3897 0077 0100     		.2byte	0x1
@@ -5156,11 +5158,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  3947 00ea 98000000 		.4byte	.LVL13
  3948 00ee 0100     		.2byte	0x1
  3949 00f0 55       		.byte	0x55
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 87
+
+
  3950 00f1 98000000 		.4byte	.LVL13
  3951 00f5 B6000000 		.4byte	.LVL16
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 87
-
-
  3952 00f9 0400     		.2byte	0x4
  3953 00fb F3       		.byte	0xf3
  3954 00fc 01       		.uleb128 0x1
@@ -5216,11 +5218,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  4004 0170 14000000 		.4byte	.LVL37
  4005 0174 1A000000 		.4byte	.LFE598
  4006 0178 0100     		.2byte	0x1
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 88
+
+
  4007 017a 50       		.byte	0x50
  4008 017b 00000000 		.4byte	0
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 88
-
-
  4009 017f 00000000 		.4byte	0
  4010              	.LLST4:
  4011 0183 00000000 		.4byte	.LVL38
@@ -5276,11 +5278,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  4061 01f7 00000000 		.4byte	.LVL38
  4062 01fb 16000000 		.4byte	.LVL39
  4063 01ff 0100     		.2byte	0x1
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 89
+
+
  4064 0201 52       		.byte	0x52
  4065 0202 16000000 		.4byte	.LVL39
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 89
-
-
  4066 0206 2A000000 		.4byte	.LVL40
  4067 020a 0200     		.2byte	0x2
  4068 020c 91       		.byte	0x91
@@ -5336,11 +5338,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  4118              	.LLST8:
  4119 0284 00000000 		.4byte	.LVL46
  4120 0288 08000000 		.4byte	.LVL48
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 90
+
+
  4121 028c 0100     		.2byte	0x1
  4122 028e 50       		.byte	0x50
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 90
-
-
  4123 028f 08000000 		.4byte	.LVL48
  4124 0293 24000000 		.4byte	.LFE597
  4125 0297 0400     		.2byte	0x4
@@ -5396,11 +5398,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  4175 0024 24000000 		.4byte	.LFE597
  4176 0028 00000000 		.4byte	0
  4177 002c 00000000 		.4byte	0
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 91
+
+
  4178              		.section	.debug_line,"",%progbits
  4179              	.Ldebug_line0:
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 91
-
-
  4180 0000 05050000 		.section	.debug_str,"MS",%progbits,1
  4180      02005D04 
  4180      00000201 
@@ -5456,11 +5458,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  4198      4C455F47 
  4198      4154545F 
  4198      4552525F 
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 92
+
+
  4198      4F505F43 
  4199              	.LASF292:
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 92
-
-
  4200 00e8 43595F42 		.ascii	"CY_BLE_EVT_L2CAP_CBFC_TX_CREDIT_IND\000"
  4200      4C455F45 
  4200      56545F4C 
@@ -5516,11 +5518,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  4218      5F4E5446 
  4218      5F444953 
  4219              	.LASF23:
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 93
+
+
  4220 01e1 70657269 		.ascii	"periBase\000"
  4220      42617365 
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 93
-
-
  4220      00
  4221              	.LASF417:
  4222 01ea 6576656E 		.ascii	"eventParam\000"
@@ -5576,11 +5578,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  4244 02ac 63795F63 		.ascii	"cy_cb_scb_i2c_handle_events_t\000"
  4244      625F7363 
  4244      625F6932 
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 94
+
+
  4244      635F6861 
  4244      6E646C65 
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 94
-
-
  4245              	.LASF435:
  4246 02ca 63795F62 		.ascii	"cy_ble_connHandle\000"
  4246      6C655F63 
@@ -5636,11 +5638,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  4264      4552525F 
  4264      494E5641 
  4265              	.LASF184:
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 95
+
+
  4266 03c5 43595F42 		.ascii	"CY_BLE_EVT_FLASH_CORRUPT\000"
  4266      4C455F45 
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 95
-
-
  4266      56545F46 
  4266      4C415348 
  4266      5F434F52 
@@ -5696,11 +5698,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  4283      65527842 
  4283      75666665 
  4283      7200
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 96
+
+
  4284              	.LASF370:
  4285 050f 43595F42 		.ascii	"CY_BLE_GATTS_ERR_NETWORK_NOT_AVAILABLE\000"
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 96
-
-
  4285      4C455F47 
  4285      41545453 
  4285      5F455252 
@@ -5756,11 +5758,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  4305      4C455F45 
  4305      56545F53 
  4305      45545F44 
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 97
+
+
  4305      45464155 
  4306              	.LASF112:
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 97
-
-
  4307 062d 43595F53 		.ascii	"CY_SCB_I2C_ACK\000"
  4307      43425F49 
  4307      32435F41 
@@ -5816,11 +5818,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  4325      48454152 
  4326 0700 54454400 		.ascii	"TED\000"
  4327              	.LASF457:
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 98
+
+
  4328 0704 463A5C47 		.ascii	"F:\\Git downloads\\PRJ4\\POPE\\POPEproject.cydsn\000"
  4328      69742064 
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 98
-
-
  4328      6F776E6C 
  4328      6F616473 
  4328      5C50524A 
@@ -5876,11 +5878,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  4346      5F524541 
  4347              	.LASF116:
  4348 0809 63795F63 		.ascii	"cy_cb_scb_i2c_handle_addr_t\000"
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 99
+
+
  4348      625F7363 
  4348      625F6932 
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 99
-
-
  4348      635F6861 
  4348      6E646C65 
  4349              	.LASF162:
@@ -5936,11 +5938,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  4368 08f4 43595F42 		.ascii	"CY_BLE_EVT_GATTC_XCHNG_MTU_RSP\000"
  4368      4C455F45 
  4368      56545F47 
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 100
+
+
  4368      41545443 
  4368      5F584348 
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 100
-
-
  4369              	.LASF374:
  4370 0913 43595F42 		.ascii	"CY_BLE_GATT_ERR_ANCS_INVALID_PARAMETER\000"
  4370      4C455F47 
@@ -5996,11 +5998,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  4387              	.LASF18:
  4388 0a03 75696E74 		.ascii	"uint32_t\000"
  4388      33325F74 
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 101
+
+
  4388      00
  4389              	.LASF309:
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 101
-
-
  4390 0a0c 43595F42 		.ascii	"CY_BLE_ERROR_L2CAP_PSM_ALREADY_REGISTERED\000"
  4390      4C455F45 
  4390      52524F52 
@@ -6056,11 +6058,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  4406      4545525F 
  4407              	.LASF450:
  4408 0b25 43795F53 		.ascii	"Cy_SysPm_SystemEnterHibernate\000"
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 102
+
+
  4408      7973506D 
  4408      5F537973 
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 102
-
-
  4408      74656D45 
  4408      6E746572 
  4409              	.LASF334:
@@ -6116,11 +6118,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  4432      4C455F45 
  4432      56545F47 
  4432      41505F45 
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 103
+
+
  4432      4E48414E 
  4433              	.LASF279:
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 103
-
-
  4434 0c1b 43595F42 		.ascii	"CY_BLE_EVT_GATTS_DATA_SIGNED_CMD_REQ\000"
  4434      4C455F45 
  4434      56545F47 
@@ -6176,11 +6178,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  4451              	.LASF24:
  4452 0cf5 75646242 		.ascii	"udbBase\000"
  4452      61736500 
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 104
+
+
  4453              	.LASF315:
  4454 0cfd 43595F42 		.ascii	"CY_BLE_ERROR_FLASH_WRITE\000"
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 104
-
-
  4454      4C455F45 
  4454      52524F52 
  4454      5F464C41 
@@ -6236,11 +6238,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  4474 0dee 63617074 		.ascii	"captureInputMode\000"
  4474      75726549 
  4474      6E707574 
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 105
+
+
  4474      4D6F6465 
  4474      00
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 105
-
-
  4475              	.LASF345:
  4476 0dff 43595F42 		.ascii	"CY_BLE_GATT_ERR_INVALID_PDU\000"
  4476      4C455F47 
@@ -6296,11 +6298,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  4495              	.LASF447:
  4496 0ed8 55415254 		.ascii	"UARTprint\000"
  4496      7072696E 
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 106
+
+
  4496      7400
  4497              	.LASF379:
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 106
-
-
  4498 0ee2 63795F62 		.ascii	"cy_ble_gatt_db_attr_handle_t\000"
  4498      6C655F67 
  4498      6174745F 
@@ -6356,11 +6358,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  4518      7200
  4519              	.LASF313:
  4520 0faf 43595F42 		.ascii	"CY_BLE_ERROR_UNSUPPORTED_FEATURE_OR_PARAMETER_VALUE"
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 107
+
+
  4520      4C455F45 
  4520      52524F52 
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 107
-
-
  4520      5F554E53 
  4520      5550504F 
  4521 0fe2 00       		.ascii	"\000"
@@ -6416,11 +6418,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  4541 10c4 43595F42 		.ascii	"CY_BLE_EVT_SET_DATA_LENGTH_COMPLETE\000"
  4541      4C455F45 
  4541      56545F53 
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 108
+
+
  4541      45545F44 
  4541      4154415F 
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 108
-
-
  4542              	.LASF271:
  4543 10e8 43595F42 		.ascii	"CY_BLE_EVT_GATTC_WRITE_RSP\000"
  4543      4C455F45 
@@ -6476,11 +6478,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  4561      56545F4C 
  4561      32434150 
  4561      5F434F4D 
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 109
+
+
  4562              	.LASF188:
  4563 11f7 43595F42 		.ascii	"CY_BLE_EVT_GET_CHANNEL_MAP_COMPLETE\000"
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 109
-
-
  4563      4C455F45 
  4563      56545F47 
  4563      45545F43 
@@ -6536,11 +6538,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  4581      4F4E4E5F 
  4581      53544154 
  4581      455F434C 
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 110
+
+
  4582              	.LASF167:
  4583 1300 63617074 		.ascii	"captureInput\000"
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 110
-
-
  4583      75726549 
  4583      6E707574 
  4583      00
@@ -6596,11 +6598,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  4602      00
  4603              	.LASF124:
  4604 1408 6D617374 		.ascii	"masterBufferSize\000"
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 111
+
+
  4604      65724275 
  4604      66666572 
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 111
-
-
  4604      53697A65 
  4604      00
  4605              	.LASF57:
@@ -6656,11 +6658,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  4623              	.LASF244:
  4624 1516 43595F42 		.ascii	"CY_BLE_EVT_GAP_NUMERIC_COMPARISON_REQUEST\000"
  4624      4C455F45 
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 112
+
+
  4624      56545F47 
  4624      41505F4E 
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 112
-
-
  4624      554D4552 
  4625              	.LASF154:
  4626 1540 696E6974 		.ascii	"initKey\000"
@@ -6716,11 +6718,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  4644      5554485F 
  4645              	.LASF451:
  4646 1630 43795F42 		.ascii	"Cy_BLE_Stop\000"
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 113
+
+
  4646      4C455F53 
  4646      746F7000 
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 113
-
-
  4647              	.LASF84:
  4648 163c 70657269 		.ascii	"periDiv16_5CtlOffset\000"
  4648      44697631 
@@ -6776,11 +6778,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  4666 172e 63707573 		.ascii	"cpussRam0Ctl0\000"
  4666      7352616D 
  4666      3043746C 
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 114
+
+
  4666      3000
  4667              	.LASF11:
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 114
-
-
  4668 173c 6C6F6E67 		.ascii	"long long int\000"
  4668      206C6F6E 
  4668      6720696E 
@@ -6836,11 +6838,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  4688      41545445 
  4688      52595F53 
  4688      45525649 
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 115
+
+
  4689              	.LASF353:
  4690 182d 43595F42 		.ascii	"CY_BLE_GATT_ERR_INSUFFICIENT_ENC_KEY_SIZE\000"
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 115
-
-
  4690      4C455F47 
  4690      4154545F 
  4690      4552525F 
@@ -6896,11 +6898,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  4708      64497271 
  4709              	.LASF344:
  4710 1927 43595F42 		.ascii	"CY_BLE_GATT_ERR_WRITE_NOT_PERMITTED\000"
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 116
+
+
  4710      4C455F47 
  4710      4154545F 
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 116
-
-
  4710      4552525F 
  4710      57524954 
  4711              	.LASF210:
@@ -6956,11 +6958,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  4730      73497063 
  4730      4E7200
  4731              	.LASF257:
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 117
+
+
  4732 1a26 43595F42 		.ascii	"CY_BLE_EVT_GAP_ADV_TX\000"
  4732      4C455F45 
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 117
-
-
  4732      56545F47 
  4732      41505F41 
  4732      44565F54 
@@ -7016,11 +7018,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  4750      5F434246 
  4751              	.LASF267:
  4752 1b2b 43595F42 		.ascii	"CY_BLE_EVT_GATTC_READ_RSP\000"
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 118
+
+
  4752      4C455F45 
  4752      56545F47 
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 118
-
-
  4752      41545443 
  4752      5F524541 
  4753              	.LASF245:
@@ -7076,11 +7078,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  4770      414E535F 
  4771              	.LASF6:
  4772 1c3c 73686F72 		.ascii	"short unsigned int\000"
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 119
+
+
  4772      7420756E 
  4772      7369676E 
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 119
-
-
  4772      65642069 
  4772      6E7400
  4773              	.LASF144:
@@ -7136,11 +7138,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  4794      50415F54 
  4795              	.LASF421:
  4796 1d10 424C455F 		.ascii	"BLE_sendBattery\000"
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 120
+
+
  4796      73656E64 
  4796      42617474 
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 120
-
-
  4796      65727900 
  4797              	.LASF185:
  4798 1d20 43595F42 		.ascii	"CY_BLE_EVT_HARDWARE_ERROR\000"
@@ -7196,11 +7198,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  4816      4C455F47 
  4816      4154545F 
  4816      5253505F 
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 121
+
+
  4816      544F00
  4817              	.LASF200:
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 121
-
-
  4818 1e02 43595F42 		.ascii	"CY_BLE_EVT_ADD_DEVICE_TO_RPA_LIST_COMPLETE\000"
  4818      4C455F45 
  4818      56545F41 
@@ -7256,11 +7258,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  4836 1ee3 43595F42 		.ascii	"CY_BLE_ERROR_MIC_AUTH_FAILED\000"
  4836      4C455F45 
  4836      52524F52 
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 122
+
+
  4836      5F4D4943 
  4836      5F415554 
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 122
-
-
  4837              	.LASF256:
  4838 1f00 43595F42 		.ascii	"CY_BLE_EVT_GAPP_UPDATE_ADV_SCAN_DATA_COMPLETE\000"
  4838      4C455F45 
@@ -7316,11 +7318,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  4856      73696F6E 
  4856      00
  4857              	.LASF414:
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 123
+
+
  4858 1fce 504F5045 		.ascii	"POPE_CHAR_COUNT\000"
  4858      5F434841 
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 123
-
-
  4858      525F434F 
  4858      554E5400 
  4859              	.LASF432:
@@ -7376,11 +7378,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  4878      7800
  4879              	.LASF439:
  4880 208e 55415254 		.ascii	"UART_DEB_context\000"
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 124
+
+
  4880      5F444542 
  4880      5F636F6E 
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 124
-
-
  4880      74657874 
  4880      00
  4881              	.LASF303:
@@ -7436,11 +7438,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  4898      616C4C65 
  4898      6E00
  4899              	.LASF186:
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 125
+
+
  4900 21b5 43595F42 		.ascii	"CY_BLE_EVT_WRITE_AUTH_PAYLOAD_TO_COMPLETE\000"
  4900      4C455F45 
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 125
-
-
  4900      56545F57 
  4900      52495445 
  4900      5F415554 
@@ -7496,11 +7498,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  4919              	.LASF99:
  4920 22b8 63707573 		.ascii	"cpussCm0NmiCtlOffset\000"
  4920      73436D30 
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 126
+
+
  4920      4E6D6943 
  4920      746C4F66 
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 126
-
-
  4920      66736574 
  4921              	.LASF212:
  4922 22cd 43595F42 		.ascii	"CY_BLE_EVT_GET_DEVICE_ADDR_COMPLETE\000"
@@ -7556,11 +7558,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  4938      6420696E 
  4938      7400
  4939              	.LASF296:
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 127
+
+
  4940 23a7 43595F42 		.ascii	"CY_BLE_INFO_FLASH_WRITE_IN_PROGRESS\000"
  4940      4C455F49 
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 127
-
-
  4940      4E464F5F 
  4940      464C4153 
  4940      485F5752 
@@ -7616,11 +7618,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  4960      5F53544F 
  4961              	.LASF298:
  4962 24b9 43595F42 		.ascii	"CY_BLE_ERROR_INVALID_OPERATION\000"
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 128
+
+
  4962      4C455F45 
  4962      52524F52 
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 128
-
-
  4962      5F494E56 
  4962      414C4944 
  4963              	.LASF415:
@@ -7676,11 +7678,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  4980      41545452 
  4981              	.LASF106:
  4982 25a8 6970634C 		.ascii	"ipcLockStatusOffset\000"
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 129
+
+
  4982      6F636B53 
  4982      74617475 
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 129
-
-
  4982      734F6666 
  4982      73657400 
  4983              	.LASF448:
@@ -7736,11 +7738,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  5002      4576656E 
  5002      7448616E 
  5002      646C6572 
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 130
+
+
  5002      00
  5003              	.LASF428:
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 130
-
-
  5004 26b3 424C455F 		.ascii	"BLE_sendPower\000"
  5004      73656E64 
  5004      506F7765 
@@ -7796,11 +7798,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  5022      41545453 
  5022      5F58434E 
  5023              	.LASF211:
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 131
+
+
  5024 2792 43595F42 		.ascii	"CY_BLE_EVT_SET_DEVICE_ADDR_COMPLETE\000"
  5024      4C455F45 
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 131
-
-
  5024      56545F53 
  5024      45545F44 
  5024      45564943 
@@ -7856,11 +7858,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  5042      68617200 
  5043              	.LASF157:
  5044 2895 70657269 		.ascii	"period\000"
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 132
+
+
  5044      6F6400
  5045              	.LASF68:
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 132
-
-
  5046 289c 64774368 		.ascii	"dwChOffset\000"
  5046      4F666673 
  5046      657400
@@ -7916,11 +7918,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  5064      52454144 
  5065              	.LASF283:
  5066 297d 43595F42 		.ascii	"CY_BLE_EVT_L2CAP_CONN_PARAM_UPDATE_REQ\000"
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 133
+
+
  5066      4C455F45 
  5066      56545F4C 
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 133
-
-
  5066      32434150 
  5066      5F434F4E 
  5067              	.LASF110:
@@ -7976,11 +7978,11 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 1
  5086      41505F41 
  5086      5554485F 
  5087              	.LASF398:
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccjSOsYv.s 			page 134
+
+
  5088 2a90 63795F65 		.ascii	"cy_en_ble_conn_state_t\000"
  5088      6E5F626C 
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccrgiDbg.s 			page 134
-
-
  5088      655F636F 
  5088      6E6E5F73 
  5088      74617465 

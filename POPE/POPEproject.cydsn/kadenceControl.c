@@ -41,26 +41,26 @@ float* CS_getKadence()
     kadenceArr[2] = T;
     
     #if DEBUG_UART_ENABLED
-    UARTprint("1", "Kadence-control:");
+    //UARTprint("1", "Kadence-control:");
     //Gyroscope values debug
-    sprintf(uart_string, "X value: %i",CGX);
-    UARTprint("2", uart_string);
+    //sprintf(uart_string, "X value: %i",CGX);
+    //UARTprint("2", uart_string);
     //Debugging - Print Gyroscope range
-    sprintf(uart_string, "Gyroscope range: %i", G_Range);
-    UARTprint("4", uart_string);
+    //sprintf(uart_string, "Gyroscope range: %i", G_Range);
+    //UARTprint("4", uart_string);
     //Debugging - Print Scale Factor
-    sprintf(uart_string, "Scale Factor:  X: %f", scaleFactor);
-    UARTprint("5", uart_string);
+    //sprintf(uart_string, "Scale Factor:  X: %f", scaleFactor);
+    //UARTprint("5", uart_string);
     //Debugging - Print Degrees/sec
-    sprintf(uart_string, "Degrees/sec X: %f", degS);
-    UARTprint("7", uart_string);
+    //sprintf(uart_string, "Degrees/sec X: %f", degS);
+    //UARTprint("7", uart_string);
     //Debugging - Print RPM, frekvens og periode
-    sprintf(uart_string, "RPM: %f", RPM);
-    UARTprint("9", uart_string);
-    sprintf(uart_string, "Hz: %f", f);
-    UARTprint("11", uart_string);  
-    sprintf(uart_string, "T: %f", T);
-    UARTprint("13", uart_string);
+//    sprintf(uart_string, "RPM: %f", RPM);
+//    UARTprint("2", uart_string);
+//    sprintf(uart_string, "Hz: %f", f);
+//    UARTprint("3", uart_string);  
+//    sprintf(uart_string, "T: %f", T);
+//    UARTprint("4", uart_string);
     #endif
     
     return kadenceArr;
