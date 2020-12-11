@@ -8,8 +8,7 @@ char uart_string[50];   //UART debugging
 void CS_initKadenceSensor(uint8_t FSR) //ÆNDR TIL UINT8_T
 {
     I2C_MPU6050_Start();//Start the SC I2C 
-	MPU6050_initialize(); //Initialize MPU6050
-    MPU6050_setFullScaleGyroRange(FSR);
+	MPU6050_initialize(FSR); //Initialize MPU6050
     //MPU6050_setDLPFMode(4); // Setting the LPF at 5Hz both Gyro and temoperature for 9250
 }
 //Returnerer RPM[0], frekvens[1] og periode[2].
@@ -77,10 +76,10 @@ float* CS_getKadence()
  * the clock source to use the X Gyro for reference, which is slightly better than
  * the default internal clock source.
  */
-void MPU6050_initialize() {
+void MPU6050_initialize(uint8_t FSR) {
     devAddr = MPU6050_DEFAULT_ADDRESS;
     MPU6050_setClockSource(MPU6050_CLOCK_PLL_XGYRO);
-    MPU6050_setFullScaleGyroRange(MPU6050_GYRO_FS_250);
+    MPU6050_setFullScaleGyroRange(FSR);
     MPU6050_setSleepEnabled(false); // thanks to Jack Elston for pointing this one out!
 }
 /** Set digital low-pass filter configuration.
