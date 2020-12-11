@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 1
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccOqmene.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 1
   27:HostMain.c    **** /* MAIN */
   28:HostMain.c    **** int HostMain(void)
   29:HostMain.c    **** {
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 2
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccOqmene.s 			page 2
 
 
   29              		.loc 1 29 0
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 1
   64 0026 244B     		ldr	r3, .L6+8
   65 0028 1B88     		ldrh	r3, [r3]
   66 002a ADF80C30 		strh	r3, [sp, #12]	@ movhi
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 3
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccOqmene.s 			page 3
 
 
   49:HostMain.c    ****         //errcheck?
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 1
   71:HostMain.c    ****             UARTprint("1", uart_string);
   99              		.loc 1 71 0
  100 0066 2146     		mov	r1, r4
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 4
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccOqmene.s 			page 4
 
 
  101 0068 1648     		ldr	r0, .L6+20
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 1
  151              		.global	power
  152              		.comm	uart_string,50,4
  153              		.comm	buffer,22,4
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 5
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccOqmene.s 			page 5
 
 
  154              		.comm	devAddr,1,1
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 1
  205              		.file 8 "Generated_Source\\PSoC6\\pdl\\middleware/ble/cy_ble_stack.h"
  206              		.file 9 "Generated_Source\\PSoC6\\pdl\\middleware/ble/cy_ble_stack_host_main.h"
  207              		.file 10 "Generated_Source\\PSoC6\\pdl\\middleware/ble/cy_ble_gap.h"
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 6
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccOqmene.s 			page 6
 
 
  208              		.file 11 "Generated_Source\\PSoC6\\pdl\\cmsis/include/core_cm4.h"
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 1
  262 0063 A4020000 		.4byte	.LASF7
  263 0067 02       		.byte	0x2
  264 0068 3F       		.byte	0x3f
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 7
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccOqmene.s 			page 7
 
 
  265 0069 6D000000 		.4byte	0x6d
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 1
  319 00d5 74000000 		.4byte	0x74
  320 00d9 02       		.uleb128 0x2
  321 00da 04       		.byte	0x4
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 8
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccOqmene.s 			page 8
 
 
  322 00db 07       		.byte	0x7
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 1
  376 0147 18       		.byte	0x18
  377 0148 07       		.uleb128 0x7
  378 0149 931B0000 		.4byte	.LASF28
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 9
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccOqmene.s 			page 9
 
 
  379 014d 04       		.byte	0x4
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 1
  433 01b9 04       		.byte	0x4
  434 01ba 49       		.byte	0x49
  435 01bb A2000000 		.4byte	0xa2
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 10
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccOqmene.s 			page 10
 
 
  436 01bf 2E       		.byte	0x2e
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 1
  490 022b 3A       		.byte	0x3a
  491 022c 07       		.uleb128 0x7
  492 022d 9C1B0000 		.4byte	.LASF47
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 11
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccOqmene.s 			page 11
 
 
  493 0231 04       		.byte	0x4
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 1
  547 029d 04       		.byte	0x4
  548 029e 5E       		.byte	0x5e
  549 029f CE000000 		.4byte	0xce
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 12
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccOqmene.s 			page 12
 
 
  550 02a3 48       		.byte	0x48
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 1
  604 030f 57       		.byte	0x57
  605 0310 07       		.uleb128 0x7
  606 0311 55090000 		.4byte	.LASF66
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 13
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccOqmene.s 			page 13
 
 
  607 0315 04       		.byte	0x4
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 1
  661 0381 04       		.byte	0x4
  662 0382 77       		.byte	0x77
  663 0383 B8000000 		.4byte	0xb8
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 14
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccOqmene.s 			page 14
 
 
  664 0387 6A       		.byte	0x6a
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 1
  718 03f3 78       		.byte	0x78
  719 03f4 07       		.uleb128 0x7
  720 03f5 E7070000 		.4byte	.LASF85
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 15
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccOqmene.s 			page 15
 
 
  721 03f9 04       		.byte	0x4
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 1
  775 0465 04       		.byte	0x4
  776 0466 90       		.byte	0x90
  777 0467 CE000000 		.4byte	0xce
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 16
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccOqmene.s 			page 16
 
 
  778 046b 90       		.byte	0x90
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 1
  832 04d7 AC       		.byte	0xac
  833 04d8 07       		.uleb128 0x7
  834 04d9 72110000 		.4byte	.LASF104
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 17
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccOqmene.s 			page 17
 
 
  835 04dd 04       		.byte	0x4
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 1
  889 0545 0B       		.uleb128 0xb
  890 0546 FA030000 		.4byte	.LASF114
  891 054a 01       		.byte	0x1
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 18
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccOqmene.s 			page 18
 
 
  892 054b 00       		.byte	0
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 1
  946 05c3 C902     		.2byte	0x2c9
  947 05c5 E0000000 		.4byte	0xe0
  948 05c9 04       		.byte	0x4
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 19
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccOqmene.s 			page 19
 
 
  949 05ca 11       		.uleb128 0x11
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 1
  1003 063f 11       		.uleb128 0x11
  1004 0640 18060000 		.4byte	.LASF130
  1005 0644 06       		.byte	0x6
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 20
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccOqmene.s 			page 20
 
 
  1006 0645 D702     		.2byte	0x2d7
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 1
  1060 06b7 A2000000 		.4byte	0xa2
  1061 06bb 05       		.uleb128 0x5
  1062 06bc 2B050000 		.4byte	0x52b
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 21
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccOqmene.s 			page 21
 
 
  1063 06c0 08       		.uleb128 0x8
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 1
  1117 0738 07       		.byte	0x7
  1118 0739 8002     		.2byte	0x280
  1119 073b 29050000 		.4byte	0x529
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 22
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccOqmene.s 			page 22
 
 
  1120 073f 18       		.byte	0x18
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 1
  1174 07b1 E80A0000 		.4byte	0xae8
  1175 07b5 0B       		.uleb128 0xb
  1176 07b6 8A030000 		.4byte	.LASF157
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 23
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccOqmene.s 			page 23
 
 
  1177 07ba 00       		.byte	0
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 1
  1231 0837 0B20     		.2byte	0x200b
  1232 0839 12       		.uleb128 0x12
  1233 083a 0B130000 		.4byte	.LASF176
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 24
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccOqmene.s 			page 24
 
 
  1234 083e 0C20     		.2byte	0x200c
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 1
  1288 08bc 0630     		.2byte	0x3006
  1289 08be 12       		.uleb128 0x12
  1290 08bf 261B0000 		.4byte	.LASF195
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 25
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccOqmene.s 			page 25
 
 
  1291 08c3 0730     		.2byte	0x3007
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 1
  1345 0941 0340     		.2byte	0x4003
  1346 0943 12       		.uleb128 0x12
  1347 0944 440E0000 		.4byte	.LASF214
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 26
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccOqmene.s 			page 26
 
 
  1348 0948 0440     		.2byte	0x4004
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 1
  1402 09c6 1640     		.2byte	0x4016
  1403 09c8 12       		.uleb128 0x12
  1404 09c9 2C020000 		.4byte	.LASF233
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 27
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccOqmene.s 			page 27
 
 
  1405 09cd 1740     		.2byte	0x4017
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 1
  1459 0a4b 0E50     		.2byte	0x500e
  1460 0a4d 12       		.uleb128 0x12
  1461 0a4e A3090000 		.4byte	.LASF252
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 28
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccOqmene.s 			page 28
 
 
  1462 0a52 0F50     		.2byte	0x500f
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 1
  1516 0ad0 0860     		.2byte	0x6008
  1517 0ad2 12       		.uleb128 0x12
  1518 0ad3 AF000000 		.4byte	.LASF271
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 29
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccOqmene.s 			page 29
 
 
  1519 0ad7 0960     		.2byte	0x6009
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 1
  1573 0b44 180B0000 		.4byte	0xb18
  1574 0b48 14       		.uleb128 0x14
  1575 0b49 01       		.byte	0x1
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 30
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccOqmene.s 			page 30
 
 
  1576 0b4a 3E000000 		.4byte	0x3e
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 1
  1630 0bbe 19       		.uleb128 0x19
  1631 0bbf 8E120000 		.4byte	.LASF321
  1632 0bc3 01       		.byte	0x1
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 31
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccOqmene.s 			page 31
 
 
  1633 0bc4 1C       		.byte	0x1c
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 1
  1687 0c4a 1D       		.uleb128 0x1d
  1688 0c4b 01       		.uleb128 0x1
  1689 0c4c 51       		.byte	0x51
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 32
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccOqmene.s 			page 32
 
 
  1690 0c4d 05       		.uleb128 0x5
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 1
  1744 0c9f 94       		.byte	0x94
  1745 0ca0 02       		.byte	0x2
  1746 0ca1 0A       		.byte	0xa
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 33
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccOqmene.s 			page 33
 
 
  1747 0ca2 FFFF     		.2byte	0xffff
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 1
  1801 0cf8 05       		.uleb128 0x5
  1802 0cf9 03       		.byte	0x3
  1803 0cfa 20000000 		.4byte	.LC5
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 34
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccOqmene.s 			page 34
 
 
  1804 0cfe 1D       		.uleb128 0x1d
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 1
  1858 0d6d 550D0000 		.4byte	0xd55
  1859 0d71 15       		.uleb128 0x15
  1860 0d72 850B0000 		.4byte	0xb85
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 35
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccOqmene.s 			page 35
 
 
  1861 0d76 810D0000 		.4byte	0xd81
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 1
  1915 0ded 03       		.byte	0x3
  1916 0dee 00000000 		.4byte	uart_string
  1917 0df2 23       		.uleb128 0x23
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 36
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccOqmene.s 			page 36
 
 
  1918 0df3 761A0000 		.4byte	.LASF303
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 1
  1972 0e69 FF160000 		.4byte	.LASF312
  1973 0e6d FF160000 		.4byte	.LASF312
  1974 0e71 10       		.byte	0x10
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 37
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccOqmene.s 			page 37
 
 
  1975 0e72 1B       		.byte	0x1b
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 1
  2029 0023 3A       		.uleb128 0x3a
  2030 0024 0B       		.uleb128 0xb
  2031 0025 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 38
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccOqmene.s 			page 38
 
 
  2032 0026 0B       		.uleb128 0xb
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 1
  2086 005c 03       		.uleb128 0x3
  2087 005d 0E       		.uleb128 0xe
  2088 005e 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 39
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccOqmene.s 			page 39
 
 
  2089 005f 0B       		.uleb128 0xb
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 1
  2143 0095 00       		.byte	0
  2144 0096 00       		.byte	0
  2145 0097 0E       		.uleb128 0xe
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 40
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccOqmene.s 			page 40
 
 
  2146 0098 05       		.uleb128 0x5
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 1
  2200 00ce 00       		.byte	0
  2201 00cf 00       		.byte	0
  2202 00d0 13       		.uleb128 0x13
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 41
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccOqmene.s 			page 41
 
 
  2203 00d1 13       		.uleb128 0x13
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 1
  2257 0107 27       		.uleb128 0x27
  2258 0108 19       		.uleb128 0x19
  2259 0109 49       		.uleb128 0x49
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 42
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccOqmene.s 			page 42
 
 
  2260 010a 13       		.uleb128 0x13
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 1
  2314 0142 3A       		.uleb128 0x3a
  2315 0143 0B       		.uleb128 0xb
  2316 0144 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 43
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccOqmene.s 			page 43
 
 
  2317 0145 0B       		.uleb128 0xb
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 1
  2371 0184 49       		.uleb128 0x49
  2372 0185 13       		.uleb128 0x13
  2373 0186 02       		.uleb128 0x2
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 44
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccOqmene.s 			page 44
 
 
  2374 0187 18       		.uleb128 0x18
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 1
  2428 01bd 13       		.uleb128 0x13
  2429 01be 3F       		.uleb128 0x3f
  2430 01bf 19       		.uleb128 0x19
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 45
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccOqmene.s 			page 45
 
 
  2431 01c0 02       		.uleb128 0x2
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 1
  2485 0004 0200     		.2byte	0x2
  2486 0006 00000000 		.4byte	.Ldebug_info0
  2487 000a 04       		.byte	0x4
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 46
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccOqmene.s 			page 46
 
 
  2488 000b 00       		.byte	0
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 1
  2516              	.LASF311:
  2517 00a1 424C455F 		.ascii	"BLE_sendPower\000"
  2517      73656E64 
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 47
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccOqmene.s 			page 47
 
 
  2517      506F7765 
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 1
  2537      585F5057 
  2538              	.LASF301:
  2539 0199 62756666 		.ascii	"buffer\000"
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 48
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccOqmene.s 			page 48
 
 
  2539      657200
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 1
  2559      53656C50 
  2560              	.LASF230:
  2561 027b 43595F42 		.ascii	"CY_BLE_EVT_GAP_KEYS_GEN_COMPLETE\000"
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 49
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccOqmene.s 			page 49
 
 
  2561      4C455F45 
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 1
  2583      6D6D616E 
  2584              	.LASF77:
  2585 0351 70657269 		.ascii	"periTrGrSize\000"
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 50
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccOqmene.s 			page 50
 
 
  2585      54724772 
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 1
  2605 0425 43595F42 		.ascii	"CY_BLE_EVT_GATTS_READ_CHAR_VAL_ACCESS_REQ\000"
  2605      4C455F45 
  2605      56545F47 
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 51
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccOqmene.s 			page 51
 
 
  2605      41545453 
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 1
  2622 05a2 63707573 		.ascii	"cpussTrimRamCtlOffset\000"
  2622      73547269 
  2622      6D52616D 
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 52
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccOqmene.s 			page 52
 
 
  2622      43746C4F 
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 1
  2642 0696 43595F42 		.ascii	"CY_BLE_EVT_LL_CNTRL_PROC_PENDING_COMPLETE\000"
  2642      4C455F45 
  2642      56545F4C 
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 53
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccOqmene.s 			page 53
 
 
  2642      4C5F434E 
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 1
  2662      6500
  2663              	.LASF88:
  2664 0798 6770696F 		.ascii	"gpioPrtCfgInOffset\000"
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 54
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccOqmene.s 			page 54
 
 
  2664      50727443 
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 1
  2684      65547842 
  2684      75666665 
  2684      7253697A 
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 55
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccOqmene.s 			page 55
 
 
  2684      6500
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 1
  2706      4D61696E 
  2706      57733346 
  2706      72657100 
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 56
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccOqmene.s 			page 56
 
 
  2707              	.LASF217:
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 1
  2728      6F00
  2729              	.LASF197:
  2730 0a33 43595F42 		.ascii	"CY_BLE_EVT_RANDOM_NUM_GEN_COMPLETE\000"
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 57
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccOqmene.s 			page 57
 
 
  2730      4C455F45 
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 1
  2750      56545F4C 
  2750      32434150 
  2750      5F434F4D 
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 58
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccOqmene.s 			page 58
 
 
  2751              	.LASF167:
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 1
  2770      736500
  2771              	.LASF108:
  2772 0c39 63686172 		.ascii	"char\000"
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 59
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccOqmene.s 			page 59
 
 
  2772      00
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 1
  2792 0d22 75696E74 		.ascii	"uint16\000"
  2792      313600
  2793              	.LASF168:
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 60
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccOqmene.s 			page 60
 
 
  2794 0d29 43595F42 		.ascii	"CY_BLE_EVT_LE_SET_EVENT_MASK_COMPLETE\000"
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 1
  2814      5C6A6570 
  2814      70655C44 
  2814      6F63756D 
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 61
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccOqmene.s 			page 61
 
 
  2815 0e34 50457072 		.ascii	"PEproject.cydsn\000"
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 1
  2833      3043746C 
  2833      3000
  2834              	.LASF11:
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 62
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccOqmene.s 			page 62
 
 
  2835 0f33 6C6F6E67 		.ascii	"long long int\000"
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 1
  2857      4C455F45 
  2857      56545F47 
  2857      41545443 
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 63
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccOqmene.s 			page 63
 
 
  2857      5F4C4F4E 
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 1
  2879 1101 43595F42 		.ascii	"CY_BLE_EVT_GAP_ADV_TX\000"
  2879      4C455F45 
  2879      56545F47 
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 64
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccOqmene.s 			page 64
 
 
  2879      41505F41 
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 1
  2899      56545F47 
  2899      41545443 
  2899      5F524541 
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 65
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccOqmene.s 			page 65
 
 
  2900              	.LASF224:
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 1
  2921 12c6 6C6F6E67 		.ascii	"long double\000"
  2921      20646F75 
  2921      626C6500 
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 66
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccOqmene.s 			page 66
 
 
  2922              	.LASF314:
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 1
  2944              	.LASF256:
  2945 1380 43595F42 		.ascii	"CY_BLE_EVT_GATTC_HANDLE_VALUE_IND\000"
  2945      4C455F45 
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 67
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccOqmene.s 			page 67
 
 
  2945      56545F47 
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 1
  2963      66736574 
  2964              	.LASF82:
  2965 149a 70657269 		.ascii	"periDiv8CtlOffset\000"
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 68
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccOqmene.s 			page 68
 
 
  2965      44697638 
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 1
  2985      45535F43 
  2985      4D41435F 
  2986              	.LASF34:
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 69
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccOqmene.s 			page 69
 
 
  2987 1596 666C6173 		.ascii	"flashcVersion\000"
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 1
  3005      4C455F45 
  3005      56545F57 
  3005      52495445 
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 70
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccOqmene.s 			page 70
 
 
  3005      5F415554 
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 1
  3025      4E435259 
  3026              	.LASF299:
  3027 17aa 4932435F 		.ascii	"I2C_MPU6050_context\000"
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 71
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccOqmene.s 			page 71
 
 
  3027      4D505536 
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 1
  3049 1871 43595F42 		.ascii	"CY_BLE_EVT_RADIO_TEMPERATURE\000"
  3049      4C455F45 
  3049      56545F52 
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 72
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccOqmene.s 			page 72
 
 
  3049      4144494F 
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 1
  3069 1985 43595F42 		.ascii	"CY_BLE_EVT_GAPC_DIRECT_ADV_REPORT\000"
  3069      4C455F45 
  3069      56545F47 
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 73
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccOqmene.s 			page 73
 
 
  3069      4150435F 
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 1
  3089      00
  3090              	.LASF212:
  3091 1a8d 43595F42 		.ascii	"CY_BLE_EVT_GAP_PASSKEY_ENTRY_REQUEST\000"
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 74
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccOqmene.s 			page 74
 
 
  3091      4C455F45 
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 1
  3112              	.LASF262:
  3113 1b65 43595F42 		.ascii	"CY_BLE_EVT_L2CAP_CONN_PARAM_UPDATE_REQ\000"
  3113      4C455F45 
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 75
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccOqmene.s 			page 75
 
 
  3113      56545F4C 
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 1
  3135 1c52 43595F42 		.ascii	"CY_BLE_CONN_STATE_DISCONNECTED\000"
  3135      4C455F43 
  3135      4F4E4E5F 
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc5ylMrV.s 			page 76
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccOqmene.s 			page 76
 
 
  3135      53544154 

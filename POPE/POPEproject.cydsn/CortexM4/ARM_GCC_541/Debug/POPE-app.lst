@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 1
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc9wMTUm.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 1
   38 0002 00BF     		.section	.text.getPower,"ax",%progbits
   39              		.align	2
   40              		.global	getPower
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 2
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc9wMTUm.s 			page 2
 
 
   41              		.thumb
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 1
   75              		@ args = 0, pretend = 0, frame = 0
   76              		@ frame_needed = 0, uses_anonymous_args = 0
   77              		@ link register save eliminated.
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 3
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc9wMTUm.s 			page 3
 
 
   78              	.LVL2:
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 1
  119 0002 00BF     		.section	.text.calibratePOPE,"ax",%progbits
  120              		.align	2
  121              		.global	calibratePOPE
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 4
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc9wMTUm.s 			page 4
 
 
  122              		.thumb
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 1
  166 0015 030E0000 		.4byte	.LASF313
  167 0019 00000000 		.4byte	.Ldebug_ranges0+0
  168 001d 00000000 		.4byte	0
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 5
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc9wMTUm.s 			page 5
 
 
  169 0021 00000000 		.4byte	.Ldebug_line0
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 1
  223 008d 02       		.uleb128 0x2
  224 008e 08       		.byte	0x8
  225 008f 07       		.byte	0x7
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 6
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc9wMTUm.s 			page 6
 
 
  226 0090 D4070000 		.4byte	.LASF12
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 1
  280 00ff 00       		.byte	0
  281 0100 07       		.uleb128 0x7
  282 0101 360C0000 		.4byte	.LASF22
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 7
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc9wMTUm.s 			page 7
 
 
  283 0105 04       		.byte	0x4
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 1
  337 0171 04       		.byte	0x4
  338 0172 43       		.byte	0x43
  339 0173 A2000000 		.4byte	0xa2
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 8
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc9wMTUm.s 			page 8
 
 
  340 0177 28       		.byte	0x28
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 1
  394 01e3 31       		.byte	0x31
  395 01e4 07       		.uleb128 0x7
  396 01e5 941A0000 		.4byte	.LASF41
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 9
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc9wMTUm.s 			page 9
 
 
  397 01e9 04       		.byte	0x4
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 1
  451 0255 04       		.byte	0x4
  452 0256 58       		.byte	0x58
  453 0257 A2000000 		.4byte	0xa2
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 10
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc9wMTUm.s 			page 10
 
 
  454 025b 3F       		.byte	0x3f
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 1
  508 02c7 51       		.byte	0x51
  509 02c8 07       		.uleb128 0x7
  510 02c9 F70A0000 		.4byte	.LASF60
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 11
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc9wMTUm.s 			page 11
 
 
  511 02cd 04       		.byte	0x4
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 1
  565 0339 04       		.byte	0x4
  566 033a 6F       		.byte	0x6f
  567 033b B8000000 		.4byte	0xb8
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 12
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc9wMTUm.s 			page 12
 
 
  568 033f 5C       		.byte	0x5c
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 1
  622 03ab 70       		.byte	0x70
  623 03ac 07       		.uleb128 0x7
  624 03ad 9F050000 		.4byte	.LASF79
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 13
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc9wMTUm.s 			page 13
 
 
  625 03b1 04       		.byte	0x4
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 1
  679 041d 04       		.byte	0x4
  680 041e 88       		.byte	0x88
  681 041f A2000000 		.4byte	0xa2
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 14
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc9wMTUm.s 			page 14
 
 
  682 0423 7E       		.byte	0x7e
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 1
  736 048f 9C       		.byte	0x9c
  737 0490 07       		.uleb128 0x7
  738 0491 EF010000 		.4byte	.LASF98
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 15
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc9wMTUm.s 			page 15
 
 
  739 0495 04       		.byte	0x4
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 1
  793 04fe FA1A0000 		.4byte	.LASF107
  794 0502 04       		.byte	0x4
  795 0503 9F       		.byte	0x9f
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 16
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc9wMTUm.s 			page 16
 
 
  796 0504 EC000000 		.4byte	0xec
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 1
  850 0571 75050000 		.4byte	0x575
  851 0575 0C       		.uleb128 0xc
  852 0576 04       		.byte	0x4
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 17
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc9wMTUm.s 			page 17
 
 
  853 0577 7B050000 		.4byte	0x57b
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 1
  907 05f1 10       		.byte	0x10
  908 05f2 11       		.uleb128 0x11
  909 05f3 D30C0000 		.4byte	.LASF124
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 18
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc9wMTUm.s 			page 18
 
 
  910 05f7 05       		.byte	0x5
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 1
  964 066c 05       		.byte	0x5
  965 066d DC02     		.2byte	0x2dc
  966 066f A9060000 		.4byte	0x6a9
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 19
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc9wMTUm.s 			page 19
 
 
  967 0673 38       		.byte	0x38
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 1
  1021 06e7 4D090000 		.4byte	.LASF143
  1022 06eb 06       		.byte	0x6
  1023 06ec 7902     		.2byte	0x279
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 20
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc9wMTUm.s 			page 20
 
 
  1024 06ee E0000000 		.4byte	0xe0
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 1
  1078 0763 CE000000 		.4byte	0xce
  1079 0767 28       		.byte	0x28
  1080 0768 11       		.uleb128 0x11
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 21
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc9wMTUm.s 			page 21
 
 
  1081 0769 19160000 		.4byte	.LASF153
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 1
  1135 07e1 4A160000 		.4byte	.LASF164
  1136 07e5 0120     		.2byte	0x2001
  1137 07e7 12       		.uleb128 0x12
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 22
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc9wMTUm.s 			page 22
 
 
  1138 07e8 25000000 		.4byte	.LASF165
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 1
  1192 0866 5C0E0000 		.4byte	.LASF183
  1193 086a 1420     		.2byte	0x2014
  1194 086c 12       		.uleb128 0x12
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 23
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc9wMTUm.s 			page 23
 
 
  1195 086d 1B040000 		.4byte	.LASF184
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 1
  1249 08eb 40180000 		.4byte	.LASF202
  1250 08ef 1330     		.2byte	0x3013
  1251 08f1 12       		.uleb128 0x12
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 24
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc9wMTUm.s 			page 24
 
 
  1252 08f2 87160000 		.4byte	.LASF203
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 1
  1306 0970 A0100000 		.4byte	.LASF221
  1307 0974 0C40     		.2byte	0x400c
  1308 0976 12       		.uleb128 0x12
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 25
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc9wMTUm.s 			page 25
 
 
  1309 0977 680D0000 		.4byte	.LASF222
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 1
  1363 09f5 CA050000 		.4byte	.LASF240
  1364 09f9 0450     		.2byte	0x5004
  1365 09fb 12       		.uleb128 0x12
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 26
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc9wMTUm.s 			page 26
 
 
  1366 09fc 92130000 		.4byte	.LASF241
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 1
  1420 0a7a 37040000 		.4byte	.LASF259
  1421 0a7e 1750     		.2byte	0x5017
  1422 0a80 12       		.uleb128 0x12
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 27
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc9wMTUm.s 			page 27
 
 
  1423 0a81 08100000 		.4byte	.LASF260
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 1
  1477 0afa A2000000 		.4byte	0xa2
  1478 0afe 01       		.byte	0x1
  1479 0aff 00       		.byte	0
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 28
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc9wMTUm.s 			page 28
 
 
  1480 0b00 0B       		.uleb128 0xb
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 1
  1534 0b6d 15120000 		.4byte	.LASF287
  1535 0b71 06       		.byte	0x6
  1536 0b72 0A       		.uleb128 0xa
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 29
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc9wMTUm.s 			page 29
 
 
  1537 0b73 42010000 		.4byte	.LASF288
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 1
  1591 0bec 0C       		.uleb128 0xc
  1592 0bed 04       		.byte	0x4
  1593 0bee 0F050000 		.4byte	0x50f
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 30
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc9wMTUm.s 			page 30
 
 
  1594 0bf2 18       		.uleb128 0x18
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 1
  1648 0c68 6C0C0000 		.4byte	0xc6c
  1649 0c6c 05       		.uleb128 0x5
  1650 0c6d C3000000 		.4byte	0xc3
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 31
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc9wMTUm.s 			page 31
 
 
  1651 0c71 1E       		.uleb128 0x1e
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 1
  1705 0ced 20       		.uleb128 0x20
  1706 0cee A5020000 		.4byte	.LASF308
  1707 0cf2 0D       		.byte	0xd
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 32
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc9wMTUm.s 			page 32
 
 
  1708 0cf3 13       		.byte	0x13
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 1
  1762 0012 00       		.byte	0
  1763 0013 02       		.uleb128 0x2
  1764 0014 24       		.uleb128 0x24
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 33
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc9wMTUm.s 			page 33
 
 
  1765 0015 00       		.byte	0
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 1
  1819 004b 0D       		.uleb128 0xd
  1820 004c 00       		.byte	0
  1821 004d 03       		.uleb128 0x3
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 34
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc9wMTUm.s 			page 34
 
 
  1822 004e 0E       		.uleb128 0xe
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 1
  1876 0084 00       		.byte	0
  1877 0085 0C       		.uleb128 0xc
  1878 0086 0F       		.uleb128 0xf
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 35
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc9wMTUm.s 			page 35
 
 
  1879 0087 00       		.byte	0
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 1
  1933 00bd 3A       		.uleb128 0x3a
  1934 00be 0B       		.uleb128 0xb
  1935 00bf 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 36
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc9wMTUm.s 			page 36
 
 
  1936 00c0 05       		.uleb128 0x5
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 1
  1990 00f6 21       		.uleb128 0x21
  1991 00f7 00       		.byte	0
  1992 00f8 49       		.uleb128 0x49
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 37
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc9wMTUm.s 			page 37
 
 
  1993 00f9 13       		.uleb128 0x13
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 1
  2047 0131 03       		.uleb128 0x3
  2048 0132 0E       		.uleb128 0xe
  2049 0133 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 38
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc9wMTUm.s 			page 38
 
 
  2050 0134 0B       		.uleb128 0xb
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 1
  2104 016c 05       		.uleb128 0x5
  2105 016d 49       		.uleb128 0x49
  2106 016e 13       		.uleb128 0x13
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 39
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc9wMTUm.s 			page 39
 
 
  2107 016f 3F       		.uleb128 0x3f
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 1
  2161 01a5 6E       		.uleb128 0x6e
  2162 01a6 0E       		.uleb128 0xe
  2163 01a7 03       		.uleb128 0x3
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 40
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc9wMTUm.s 			page 40
 
 
  2164 01a8 0E       		.uleb128 0xe
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 1
  2214 0000 666C6173 		.ascii	"flashCtlMainWs1Freq\000"
  2214      6843746C 
  2214      4D61696E 
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 41
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc9wMTUm.s 			page 41
 
 
  2214      57733146 
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 1
  2234      436C6F63 
  2234      6B4E7200 
  2235              	.LASF120:
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 42
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc9wMTUm.s 			page 42
 
 
  2236 0113 6D617374 		.ascii	"masterStatus\000"
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 1
  2258      20696E74 
  2258      00
  2259              	.LASF98:
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 43
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc9wMTUm.s 			page 43
 
 
  2260 01ef 63707573 		.ascii	"cpussSysTickCtlOffset\000"
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 1
  2280      75666665 
  2280      7200
  2281              	.LASF243:
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 44
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc9wMTUm.s 			page 44
 
 
  2282 02cf 43595F42 		.ascii	"CY_BLE_EVT_GATTC_FIND_INFO_RSP\000"
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 1
  2302      4E56414C 
  2302      494400
  2303              	.LASF276:
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 45
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc9wMTUm.s 			page 45
 
 
  2304 03a6 43595F42 		.ascii	"CY_BLE_ADV_STATE_STOPPED\000"
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 1
  2321      6E203233 
  2321      37373135 
  2322 04e3 6F667466 		.ascii	"oftfp -mfpu=fpv4-sp-d16 -mthumb -g -Og -ffunction-s"
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 46
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc9wMTUm.s 			page 46
 
 
  2322      70202D6D 
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 1
  2339      56545F50 
  2339      48595F55 
  2339      50444154 
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 47
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc9wMTUm.s 			page 47
 
 
  2340              	.LASF129:
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 1
  2359      56545F47 
  2359      45545F50 
  2359      4545525F 
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 48
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc9wMTUm.s 			page 48
 
 
  2360              	.LASF32:
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 1
  2380              	.LASF90:
  2381 0800 6770696F 		.ascii	"gpioPrtCfgSioOffset\000"
  2381      50727443 
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 49
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc9wMTUm.s 			page 49
 
 
  2381      66675369 
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 1
  2401      776E00
  2402              	.LASF274:
  2403 08cb 61747449 		.ascii	"attId\000"
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 50
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc9wMTUm.s 			page 50
 
 
  2403      6400
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 1
  2425 09ab 43595F42 		.ascii	"CY_BLE_EVT_GATTS_PREP_WRITE_REQ\000"
  2425      4C455F45 
  2425      56545F47 
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 51
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc9wMTUm.s 			page 51
 
 
  2425      41545453 
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 1
  2447      4C455F45 
  2447      56545F47 
  2447      41505F53 
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 52
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc9wMTUm.s 			page 52
 
 
  2447      4D505F4E 
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 1
  2468              	.LASF160:
  2469 0b8c 43595F42 		.ascii	"CY_BLE_EVT_MEMORY_REQUEST\000"
  2469      4C455F45 
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 53
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc9wMTUm.s 			page 53
 
 
  2469      56545F4D 
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 1
  2489      56545F47 
  2489      41505F4F 
  2489      4F425F47 
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 54
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc9wMTUm.s 			page 54
 
 
  2490              	.LASF147:
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 1
  2511 0d9a 64775374 		.ascii	"dwStatusChIdxMsk\000"
  2511      61747573 
  2511      43684964 
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 55
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc9wMTUm.s 			page 55
 
 
  2511      784D736B 
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 1
  2530      64765374 
  2530      61746500 
  2531              	.LASF139:
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 56
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc9wMTUm.s 			page 56
 
 
  2532 0ea5 63795F63 		.ascii	"cy_cb_scb_uart_handle_events_t\000"
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 1
  2552      56545F52 
  2552      454D4F56 
  2552      455F4445 
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 57
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc9wMTUm.s 			page 57
 
 
  2553              	.LASF168:
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 1
  2574 1086 72785269 		.ascii	"rxRingBufHead\000"
  2574      6E674275 
  2574      66486561 
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 58
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc9wMTUm.s 			page 58
 
 
  2574      6400
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 1
  2595              	.LASF104:
  2596 1178 63707573 		.ascii	"cpussRam2Ctl0\000"
  2596      7352616D 
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 59
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc9wMTUm.s 			page 59
 
 
  2596      3243746C 
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 1
  2616      75666665 
  2616      7253697A 
  2616      6500
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 60
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc9wMTUm.s 			page 60
 
 
  2617              	.LASF299:
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 1
  2638      7400
  2639              	.LASF33:
  2640 1337 64775665 		.ascii	"dwVersion\000"
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 61
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc9wMTUm.s 			page 61
 
 
  2640      7273696F 
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 1
  2659              	.LASF100:
  2660 1445 63707573 		.ascii	"cpussCm4NmiCtlOffset\000"
  2660      73436D34 
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 62
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc9wMTUm.s 			page 62
 
 
  2660      4E6D6943 
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 1
  2680 1537 63707573 		.ascii	"cpussVersion\000"
  2680      73566572 
  2680      73696F6E 
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 63
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc9wMTUm.s 			page 63
 
 
  2680      00
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 1
  2700      5472616E 
  2700      736D6974 
  2700      00
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 64
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc9wMTUm.s 			page 64
 
 
  2701              	.LASF252:
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 1
  2720      4C455F45 
  2720      56545F47 
  2720      45545F44 
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 65
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc9wMTUm.s 			page 65
 
 
  2720      45564943 
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 1
  2740 180e 63707573 		.ascii	"cpussRomCtl\000"
  2740      73526F6D 
  2740      43746C00 
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 66
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc9wMTUm.s 			page 66
 
 
  2741              	.LASF122:
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 1
  2764 18f9 43595F42 		.ascii	"CY_BLE_EVT_REMOVE_DEVICE_FROM_WHITE_LIST_COMPLETE\000"
  2764      4C455F45 
  2764      56545F52 
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 67
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc9wMTUm.s 			page 67
 
 
  2764      454D4F56 
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 1
  2784      7200
  2785              	.LASF58:
  2786 1a2d 666C6173 		.ascii	"flashRwwRequired\000"
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 68
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc9wMTUm.s 			page 68
 
 
  2786      68527777 
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 1
  2806      65766963 
  2806      655F7400 
  2807              	.LASF298:
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 69
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc9wMTUm.s 			page 69
 
 
  2808 1b0a 63616C69 		.ascii	"calibratePOPE\000"
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 1
  2829              	.LASF314:
  2830 1bec 43535F67 		.ascii	"CS_getKadence\000"
  2830      65744B61 
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccoUoShE.s 			page 70
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc9wMTUm.s 			page 70
 
 
  2830      64656E63 

@@ -97,9 +97,11 @@ void I2CWriteBytes(uint8_t devAddr, uint8_t regAddr, uint8_t length, uint8_t *va
 }
 
 /* Following functions are build on top of the functions defined above. */
+/*
 void I2CReadByte(uint8_t devAddr, uint8_t regAddr, uint8_t *value) {
 	I2CReadBytes(devAddr, regAddr, 1, value);
 }
+*/
 /*
 uint8_t I2CSplReadByte(uint8_t devAddr, uint8_t regAddr) {
 	
@@ -110,39 +112,45 @@ uint8_t I2CSplReadByte(uint8_t devAddr, uint8_t regAddr) {
 void I2CReadBits(uint8_t devAddr, uint8_t regAddr, uint8_t bitStart, uint8_t length, uint8_t *value) 
 {
    	uint8_t mask = ((1 << length) - 1) << (bitStart - length + 1);
-    I2CReadByte(devAddr, regAddr, value);
+    //I2CReadByte(devAddr, regAddr, value);
+    I2CReadBytes(devAddr, regAddr, 1, value);
     *value &= mask;
     *value >>= (bitStart - length + 1);
 }
 
 void I2CReadBit(uint8_t devAddr, uint8_t regAddr, uint8_t bitNum, uint8_t *value)
 {
-	I2CReadByte(devAddr, regAddr, value);
+    //I2CWriteByte(devAddr, regAddr, b);
+	I2CReadBytes(devAddr, regAddr, 1, value);
 	*value = *value & (1 << bitNum);
 }
-
+/*
 void I2CWriteByte(uint8_t devAddr, uint8_t regAddr, uint8_t value) 
 {
 	I2CWriteBytes(devAddr, regAddr, 1, &value);
 }
-
+*/
 void I2CWriteBits(uint8_t devAddr, uint8_t regAddr, uint8_t bitStart, uint8_t length, uint8_t value) 
 {
 	uint8_t b;
 	uint8_t mask = ((1 << length) - 1) << (bitStart - length + 1);
-	I2CReadByte(devAddr, regAddr, &b);
+    //I2CReadByte(devAddr, regAddr, b);
+	I2CReadBytes(devAddr, regAddr, 1, &b);
 	value <<= (bitStart - length + 1);
 	value &= mask;
 	b &= ~(mask);
 	b |= value;
-	I2CWriteByte(devAddr, regAddr, b);	
+	//I2CWriteByte(devAddr, regAddr, b);
+	I2CWriteBytes(devAddr, regAddr,1, &b);	
 }
 
 void I2CWriteBit(uint8_t devAddr, uint8_t regAddr, uint8_t bitNum, uint8_t value)
 {
 	uint8_t b;
-	I2CReadByte(devAddr, regAddr, &b);
+    //I2CReadByte(devAddr, regAddr, b);
+	I2CReadBytes(devAddr, regAddr, 1, &b);
 	b = (value != 0) ? (b | (1 << bitNum)) : (b & ~(1 << bitNum));
-	I2CWriteByte(devAddr, regAddr, b);
+	//I2CWriteByte(devAddr, regAddr, b);
+    I2CWriteBytes(devAddr, regAddr, 1, &b);
 }
 

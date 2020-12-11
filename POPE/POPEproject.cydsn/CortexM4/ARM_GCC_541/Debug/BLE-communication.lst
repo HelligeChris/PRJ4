@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
   32              		@ frame_needed = 0, uses_anonymous_args = 0
   33              	.LVL0:
   34 0000 08B5     		push	{r3, lr}
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 2
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 2
 
 
   35              		.cfi_def_cfa_offset 8
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
   37:BLE-communication.c ****             UART_DEB_PutString("Device link connected \r \n ");
   38:BLE-communication.c ****             #endif
   39:BLE-communication.c ****             break;
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 3
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 3
 
 
   76              		.loc 1 39 0
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
    3:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** * \version 2.60
    4:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** *
    5:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** * \brief
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 4
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 4
 
 
    6:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** *  Contains the prototypes and constants used in the BLE GAP profile.
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
   60:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** 
   61:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** /** The number of GAP Peripheral configurations structures */
   62:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** #define CY_BLE_GAP_PERIPHERAL_COUNT           (CY_BLE_CONFIG_GAP_PERIPHERAL_COUNT)
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 5
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 5
 
 
   63:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** 
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  117:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** {
  118:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h ****     CY_BLE_SCAN_STATE_STOPPED,                        /**< Scanning is stopped */
  119:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h ****     CY_BLE_SCAN_STATE_SCAN_INITIATED,                 /**< Scanning is initiated */
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 6
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 6
 
 
  120:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h ****     CY_BLE_SCAN_STATE_SCANNING,                       /**< Scanning process */
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  174:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h ****     /** Handle of the GAPS Appearance Characteristic */
  175:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h ****     cy_ble_gatt_db_attr_handle_t appearanceCharHandle;
  176:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** 
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 7
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 7
 
 
  177:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h ****     /** Handle of the GAPS Peripheral Privacy Flag Parameters Characteristic */
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  231:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h ****     /** Simple Pairing Hash C */
  232:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h ****     CY_BLE_GAP_ADV_SMPL_PAIR_HASH_C,
  233:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** 
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 8
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 8
 
 
  234:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h ****     /** Simple Pairing Randomizer R */
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  288:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h ****     /** Service Data - 128-bit UUID */
  289:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h ****     CY_BLE_GAP_ADV_SRVC_DATA_128UUID,
  290:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** 
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 9
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 9
 
 
  291:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h ****     /** 3D Information Data */
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  345:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h ****     uint16_t slowScanTimeOut;
  346:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** 
  347:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h ****     /** The minimum permissible connection time value to be used during a connection event */
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 10
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 10
 
 
  348:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h ****     uint16_t gapcConnectionIntervalMin;
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  402:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** 
  403:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** #define CY_BLE_SFLASH_DIE_X_MASK                   (0x3Fu)
  404:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** #define CY_BLE_SFLASH_DIE_X_BITS                   (6u)
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 11
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 11
 
 
  405:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** #define CY_BLE_SFLASH_DIE_Y_MASK                   (0x3Fu)
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  459:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h ****                                                                      *   an advertisement packet */
  460:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** #define CY_BLE_GAPC_CONNECTING_TIMEOUT                  (30u)       /**< Seconds */
  461:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** #define CY_BLE_INVALID_CONN_HANDLE_VALUE                (0xFFu)     /**< Invalid Connection Handle 
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 12
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 12
 
 
  462:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** 
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  516:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** /**
  517:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h ****  * \addtogroup group_ble_common_api_gap_central_functions
  518:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h ****  * @{
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 13
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 13
 
 
  519:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h ****  */
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  573:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** #if (CY_BLE_GAP_ROLE_PERIPHERAL || CY_BLE_GAP_ROLE_BROADCASTER)
  574:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** extern cy_stc_ble_gapp_disc_mode_info_t cy_ble_discoveryModeInfo[CY_BLE_GAPP_CONF_COUNT];
  575:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** extern cy_stc_ble_gapp_disc_param_t cy_ble_discoveryParam[CY_BLE_GAPP_CONF_COUNT];
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 14
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 14
 
 
  576:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** extern cy_stc_ble_gapp_disc_data_t cy_ble_discoveryData[CY_BLE_GAPP_CONF_COUNT];
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  630:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h ****     uint8_t retValue = CY_BLE_CONN_COUNT;
  631:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** 
  632:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h ****     for(idx = 0u; idx < CY_BLE_CONN_COUNT; idx++)
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 15
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 15
 
 
  633:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h ****     {
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  687:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** *   CY_BLE_STATE_ON            | BLE is turned on.
  688:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** *   CY_BLE_STATE_CONNECTING    | BLE is connecting.
  689:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** 
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 16
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 16
 
 
  690:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** ******************************************************************************/
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  744:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h **** {
  745:Generated_Source\PSoC6\pdl\middleware/ble/cy_ble_gap.h ****     return(cy_ble_advState);
  109              		.loc 2 745 0
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 17
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 17
 
 
  110 0064 034B     		ldr	r3, .L10+4
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  137              		.loc 1 84 0
  138              		.cfi_startproc
  139              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 18
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 18
 
 
  140              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
   99:BLE-communication.c **** //
  100:BLE-communication.c **** //    switch(event)
  101:BLE-communication.c **** //    {
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 19
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 19
 
 
  102:BLE-communication.c **** //        /* CPS Server - Notifications for Cycling Power Service Characteristic
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  136:BLE-communication.c ****                                                                         sizeof(uint8_t), &Battery);
  137:BLE-communication.c ****     return apiResult;
  138:BLE-communication.c **** }
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 20
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 20
 
 
  200              		.loc 1 138 0
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  155:BLE-communication.c ****         {
  156:BLE-communication.c ****             .handleValuePair.attrHandle = cy_ble_customConfigPtr->customs->customServInfo[charIndex
  237              		.loc 1 156 0
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 21
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 21
 
 
  238 0014 094A     		ldr	r2, .L27
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  277 003c 00000000 		.word	cy_ble_customConfigPtr
  278 0040 01001600 		.word	1441793
  279              		.cfi_endproc
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 22
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 22
 
 
  280              	.LFE524:
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  329              	timerParam:
  330 0000 00       		.space	1
  331 0001 01       		.byte	1
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 23
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 23
 
 
  332              		.type	mainTimer, %object
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  386 002f 58270000 		.4byte	.LASF1
  387 0033 03       		.uleb128 0x3
  388 0034 18210000 		.4byte	.LASF3
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 24
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 24
 
 
  389 0038 03       		.byte	0x3
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  443 009e 68020000 		.4byte	.LASF13
  444 00a2 03       		.uleb128 0x3
  445 00a3 9C140000 		.4byte	.LASF14
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 25
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 25
 
 
  446 00a7 04       		.byte	0x4
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  500 0116 5F120000 		.4byte	.LASF22
  501 011a 05       		.byte	0x5
  502 011b 38       		.byte	0x38
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 26
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 26
 
 
  503 011c CE000000 		.4byte	0xce
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  557 0188 A2000000 		.4byte	0xa2
  558 018c 28       		.byte	0x28
  559 018d 09       		.uleb128 0x9
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 27
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 27
 
 
  560 018e A31E0000 		.4byte	.LASF32
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  614 01fa 6F270000 		.4byte	.LASF41
  615 01fe 05       		.byte	0x5
  616 01ff 4F       		.byte	0x4f
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 28
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 28
 
 
  617 0200 A2000000 		.4byte	0xa2
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  671 026c A2000000 		.4byte	0xa2
  672 0270 3F       		.byte	0x3f
  673 0271 09       		.uleb128 0x9
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 29
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 29
 
 
  674 0272 F9020000 		.4byte	.LASF51
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  728 02de F0100000 		.4byte	.LASF60
  729 02e2 05       		.byte	0x5
  730 02e3 62       		.byte	0x62
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 30
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 30
 
 
  731 02e4 A2000000 		.4byte	0xa2
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  785 0350 B8000000 		.4byte	0xb8
  786 0354 5C       		.byte	0x5c
  787 0355 09       		.uleb128 0x9
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 31
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 31
 
 
  788 0356 B3160000 		.4byte	.LASF70
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  842 03c2 10080000 		.4byte	.LASF79
  843 03c6 05       		.byte	0x5
  844 03c7 7C       		.byte	0x7c
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 32
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 32
 
 
  845 03c8 A2000000 		.4byte	0xa2
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  899 0434 A2000000 		.4byte	0xa2
  900 0438 7E       		.byte	0x7e
  901 0439 09       		.uleb128 0x9
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 33
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 33
 
 
  902 043a 040A0000 		.4byte	.LASF89
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  956 04a6 59220000 		.4byte	.LASF98
  957 04aa 05       		.byte	0x5
  958 04ab 94       		.byte	0x94
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 34
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 34
 
 
  959 04ac CE000000 		.4byte	0xce
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  1013 0518 9F       		.byte	0x9f
  1014 0519 01010000 		.4byte	0x101
  1015 051d 02       		.uleb128 0x2
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 35
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 35
 
 
  1016 051e 01       		.byte	0x1
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  1070 058b 04       		.byte	0x4
  1071 058c 90050000 		.4byte	0x590
  1072 0590 11       		.uleb128 0x11
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 36
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 36
 
 
  1073 0591 55050000 		.4byte	0x555
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  1127 0608 5A130000 		.4byte	.LASF124
  1128 060c 06       		.byte	0x6
  1129 060d D002     		.2byte	0x2d0
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 37
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 37
 
 
  1130 060f CE000000 		.4byte	0xce
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  1184 0684 BE060000 		.4byte	0x6be
  1185 0688 38       		.byte	0x38
  1186 0689 13       		.uleb128 0x13
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 38
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 38
 
 
  1187 068a 421B0000 		.4byte	.LASF134
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  1241 0701 7902     		.2byte	0x279
  1242 0703 E0000000 		.4byte	0xe0
  1243 0707 04       		.byte	0x4
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 39
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 39
 
 
  1244 0708 13       		.uleb128 0x13
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  1298 077d 13       		.uleb128 0x13
  1299 077e 43200000 		.4byte	.LASF153
  1300 0782 07       		.byte	0x7
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 40
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 40
 
 
  1301 0783 8602     		.2byte	0x286
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  1355 07f9 0410     		.2byte	0x1004
  1356 07fb 14       		.uleb128 0x14
  1357 07fc 89030000 		.4byte	.LASF163
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 41
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 41
 
 
  1358 0800 0510     		.2byte	0x1005
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  1412 087e 1120     		.2byte	0x2011
  1413 0880 14       		.uleb128 0x14
  1414 0881 F9240000 		.4byte	.LASF182
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 42
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 42
 
 
  1415 0885 1220     		.2byte	0x2012
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  1469 0903 0C30     		.2byte	0x300c
  1470 0905 14       		.uleb128 0x14
  1471 0906 A4140000 		.4byte	.LASF201
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 43
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 43
 
 
  1472 090a 1130     		.2byte	0x3011
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  1526 0988 0940     		.2byte	0x4009
  1527 098a 14       		.uleb128 0x14
  1528 098b C1290000 		.4byte	.LASF220
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 44
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 44
 
 
  1529 098f 0A40     		.2byte	0x400a
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  1583 0a0d 0150     		.2byte	0x5001
  1584 0a0f 14       		.uleb128 0x14
  1585 0a10 D3250000 		.4byte	.LASF239
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 45
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 45
 
 
  1586 0a14 0250     		.2byte	0x5002
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  1640 0a92 1450     		.2byte	0x5014
  1641 0a94 14       		.uleb128 0x14
  1642 0a95 640B0000 		.4byte	.LASF258
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 46
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 46
 
 
  1643 0a99 1550     		.2byte	0x5015
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  1697 0b13 B40C0000 		.4byte	.LASF274
  1698 0b17 00       		.byte	0
  1699 0b18 15       		.uleb128 0x15
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 47
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 47
 
 
  1700 0b19 A1220000 		.4byte	.LASF275
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  1754 0bbb 33140000 		.4byte	.LASF293
  1755 0bbf 12001600 		.4byte	0x160012
  1756 0bc3 15       		.uleb128 0x15
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 48
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 48
 
 
  1757 0bc4 460C0000 		.4byte	.LASF294
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  1811 0c50 0D       		.uleb128 0xd
  1812 0c51 8F110000 		.4byte	.LASF309
  1813 0c55 0A       		.byte	0xa
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 49
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 49
 
 
  1814 0c56 1901     		.2byte	0x119
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  1868 0cc6 F8200000 		.4byte	.LASF316
  1869 0cca 0A       		.byte	0xa
  1870 0ccb 1E03     		.2byte	0x31e
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 50
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 50
 
 
  1871 0ccd 800C0000 		.4byte	0xc80
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  1925 0d3f 0C       		.uleb128 0xc
  1926 0d40 720D0000 		.4byte	.LASF324
  1927 0d44 04       		.byte	0x4
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 51
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 51
 
 
  1928 0d45 0C       		.uleb128 0xc
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  1982 0db1 0C       		.uleb128 0xc
  1983 0db2 B4000000 		.4byte	.LASF343
  1984 0db6 80       		.byte	0x80
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 52
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 52
 
 
  1985 0db7 0C       		.uleb128 0xc
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  2039 0e22 76616C00 		.ascii	"val\000"
  2040 0e26 0B       		.byte	0xb
  2041 0e27 9701     		.2byte	0x197
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 53
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 53
 
 
  2042 0e29 BE060000 		.4byte	0x6be
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  2096 0e9c 01       		.byte	0x1
  2097 0e9d 0C       		.uleb128 0xc
  2098 0e9e CE0F0000 		.4byte	.LASF366
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 54
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 54
 
 
  2099 0ea2 02       		.byte	0x2
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  2153 0f0c 3C01     		.2byte	0x13c
  2154 0f0e 790E0000 		.4byte	0xe79
  2155 0f12 00       		.byte	0
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 55
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 55
 
 
  2156 0f13 13       		.uleb128 0x13
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  2210 0f80 00       		.byte	0
  2211 0f81 06       		.uleb128 0x6
  2212 0f82 0C0E0000 		.4byte	0xe0c
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 56
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 56
 
 
  2213 0f86 910F0000 		.4byte	0xf91
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  2267 0fef F30F0000 		.4byte	0xff3
  2268 0ff3 1B       		.uleb128 0x1b
  2269 0ff4 CD0F0000 		.4byte	0xfcd
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 57
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 57
 
 
  2270 0ff8 03       		.uleb128 0x3
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  2324 1074 01       		.byte	0x1
  2325 1075 3F       		.byte	0x3f
  2326 1076 20       		.uleb128 0x20
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 58
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 58
 
 
  2327 1077 36000000 		.4byte	.LVL3
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  2381 10e0 00000000 		.4byte	.LANCHOR0
  2382 10e4 00       		.byte	0
  2383 10e5 00       		.byte	0
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 59
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 59
 
 
  2384 10e6 25       		.uleb128 0x25
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  2438 114c 44000000 		.4byte	.LFE524-.LFB524
  2439 1150 01       		.uleb128 0x1
  2440 1151 9C       		.byte	0x9c
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 60
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 60
 
 
  2441 1152 BB110000 		.4byte	0x11bb
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  2495 11ca 18000000 		.4byte	.LFE522-.LFB522
  2496 11ce 01       		.uleb128 0x1
  2497 11cf 9C       		.byte	0x9c
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 61
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 61
 
 
  2498 11d0 10120000 		.4byte	0x1210
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  2552 123a 3E120000 		.4byte	0x123e
  2553 123e 05       		.uleb128 0x5
  2554 123f C3000000 		.4byte	0xc3
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 62
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 62
 
 
  2555 1243 2A       		.uleb128 0x2a
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  2609 12bf 11       		.byte	0x11
  2610 12c0 87       		.byte	0x87
  2611 12c1 A5070000 		.4byte	0x7a5
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 63
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 63
 
 
  2612 12c5 2A       		.uleb128 0x2a
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  2666 133f 0A       		.byte	0xa
  2667 1340 C903     		.2byte	0x3c9
  2668 1342 2D       		.uleb128 0x2d
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 64
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 64
 
 
  2669 1343 22210000 		.4byte	.LASF427
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  2723 002a 00       		.byte	0
  2724 002b 04       		.uleb128 0x4
  2725 002c 24       		.uleb128 0x24
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 65
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 65
 
 
  2726 002d 00       		.byte	0
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  2780 0063 3B       		.uleb128 0x3b
  2781 0064 0B       		.uleb128 0xb
  2782 0065 49       		.uleb128 0x49
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 66
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 66
 
 
  2783 0066 13       		.uleb128 0x13
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  2837 009c 49       		.uleb128 0x49
  2838 009d 13       		.uleb128 0x13
  2839 009e 00       		.byte	0
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 67
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 67
 
 
  2840 009f 00       		.byte	0
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  2894 00d5 38       		.uleb128 0x38
  2895 00d6 0B       		.uleb128 0xb
  2896 00d7 00       		.byte	0
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 68
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 68
 
 
  2897 00d8 00       		.byte	0
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  2951 010e 49       		.uleb128 0x49
  2952 010f 13       		.uleb128 0x13
  2953 0110 00       		.byte	0
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 69
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 69
 
 
  2954 0111 00       		.byte	0
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  3008 0147 00       		.byte	0
  3009 0148 1D       		.uleb128 0x1d
  3010 0149 2E       		.uleb128 0x2e
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 70
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 70
 
 
  3011 014a 01       		.byte	0x1
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  3065 0181 898201   		.uleb128 0x4109
  3066 0184 01       		.byte	0x1
  3067 0185 11       		.uleb128 0x11
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 71
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 71
 
 
  3068 0186 01       		.uleb128 0x1
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  3122 01c4 01       		.uleb128 0x1
  3123 01c5 31       		.uleb128 0x31
  3124 01c6 13       		.uleb128 0x13
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 72
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 72
 
 
  3125 01c7 00       		.byte	0
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  3179 01fe 34       		.uleb128 0x34
  3180 01ff 00       		.byte	0
  3181 0200 03       		.uleb128 0x3
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 73
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 73
 
 
  3182 0201 0E       		.uleb128 0xe
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  3236 0237 49       		.uleb128 0x49
  3237 0238 13       		.uleb128 0x13
  3238 0239 3F       		.uleb128 0x3f
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 74
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 74
 
 
  3239 023a 19       		.uleb128 0x19
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  3293 0019 38000000 		.4byte	.LVL4
  3294 001d 3C000000 		.4byte	.LVL6
  3295 0021 0100     		.2byte	0x1
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 75
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 75
 
 
  3296 0023 50       		.byte	0x50
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  3350 009d 9F       		.byte	0x9f
  3351 009e 42000000 		.4byte	.LVL8
  3352 00a2 61000000 		.4byte	.LVL9-1
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 76
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 76
 
 
  3353 00a6 0100     		.2byte	0x1
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  3407 012a 0100     		.2byte	0x1
  3408 012c 50       		.byte	0x50
  3409 012d 26000000 		.4byte	.LVL19
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 77
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 77
 
 
  3410 0131 30000000 		.4byte	.LVL22
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  3464 01ad 26000000 		.4byte	.LVL19
  3465 01b1 29000000 		.4byte	.LVL20-1
  3466 01b5 0200     		.2byte	0x2
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 78
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 78
 
 
  3467 01b7 70       		.byte	0x70
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  3521 0239 01       		.uleb128 0x1
  3522 023a 50       		.byte	0x50
  3523 023b 9F       		.byte	0x9f
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 79
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 79
 
 
  3524 023c 00000000 		.4byte	0
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  3574      01010101 
  3575              	.LASF64:
  3576 0000 666C6173 		.ascii	"flashCtlMainWs1Freq\000"
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 80
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 80
 
 
  3576      6843746C 
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  3594      76657274 
  3594      6973656D 
  3595              	.LASF162:
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 81
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 81
 
 
  3596 011b 43595F42 		.ascii	"CY_BLE_EVT_PENDING_FLASH_WRITE\000"
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  3616      45545F54 
  3616      585F5057 
  3617              	.LASF408:
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 82
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 82
 
 
  3618 0206 506F7765 		.ascii	"Power\000"
@@ -4918,7 +4918,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  3640      56545F47 
  3640      41505F43 
  3640      52454154 
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 83
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 83
 
 
  3641              	.LASF51:
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  3661              	.LASF429:
  3662 03d9 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
  3662      43313120 
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 84
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 84
 
 
  3662      352E342E 
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  3679      5F46494E 
  3680              	.LASF45:
  3681 0544 63707573 		.ascii	"cpussFmIrq\000"
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 85
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 85
 
 
  3681      73466D49 
@@ -5098,7 +5098,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  3703 062c 736C6176 		.ascii	"slaveRdBufEmpty\000"
  3703      65526442 
  3703      7566456D 
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 86
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 86
 
 
  3703      70747900 
@@ -5158,7 +5158,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  3724 0726 43595F42 		.ascii	"CY_BLE_EVT_GATTS_READ_CHAR_VAL_ACCESS_REQ\000"
  3724      4C455F45 
  3724      56545F47 
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 87
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 87
 
 
  3724      41545453 
@@ -5218,7 +5218,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  3744 0839 63707573 		.ascii	"cpussTrimRamCtlOffset\000"
  3744      73547269 
  3744      6D52616D 
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 88
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 88
 
 
  3744      43746C4F 
@@ -5278,7 +5278,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  3763              	.LASF280:
  3764 093f 43595F42 		.ascii	"CY_BLE_ERROR_OOB_NOT_AVAILABLE\000"
  3764      4C455F45 
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 89
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 89
 
 
  3764      52524F52 
@@ -5338,7 +5338,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  3782      5F434246 
  3783              	.LASF174:
  3784 0a5f 43595F42 		.ascii	"CY_BLE_EVT_GET_PEER_RPA_COMPLETE\000"
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 90
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 90
 
 
  3784      4C455F45 
@@ -5398,7 +5398,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  3806      56545F47 
  3806      41505F45 
  3806      4E48414E 
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 91
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 91
 
 
  3807              	.LASF258:
@@ -5458,7 +5458,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  3826 0c3e 75646242 		.ascii	"udbBase\000"
  3826      61736500 
  3827              	.LASF294:
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 92
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 92
 
 
  3828 0c46 43595F42 		.ascii	"CY_BLE_ERROR_FLASH_WRITE\000"
@@ -5518,7 +5518,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  3846      455F434C 
  3847              	.LASF253:
  3848 0d52 43595F42 		.ascii	"CY_BLE_EVT_GATTS_EXEC_WRITE_REQ\000"
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 93
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 93
 
 
  3848      4C455F45 
@@ -5578,7 +5578,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  3868      41505F44 
  3868      45564943 
  3869              	.LASF48:
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 94
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 94
 
 
  3870 0e4b 73727373 		.ascii	"srssNumPll\000"
@@ -5638,7 +5638,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  3892      74617274 
  3892      54696D65 
  3892      7200
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 95
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 95
 
 
  3893              	.LASF292:
@@ -5698,7 +5698,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  3913      414E4353 
  3914              	.LASF170:
  3915 1038 43595F42 		.ascii	"CY_BLE_EVT_SET_DATA_LENGTH_COMPLETE\000"
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 96
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 96
 
 
  3915      4C455F45 
@@ -5758,7 +5758,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  3935 114e 43595F42 		.ascii	"CY_BLE_EVT_L2CAP_COMMAND_REJ\000"
  3935      4C455F45 
  3935      56545F4C 
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 97
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 97
 
 
  3935      32434150 
@@ -5818,7 +5818,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  3955 125f 666C6173 		.ascii	"flashcBase\000"
  3955      68634261 
  3955      736500
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 98
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 98
 
 
  3956              	.LASF340:
@@ -5878,7 +5878,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  3976      746F4D65 
  3976      6D53697A 
  3976      6500
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 99
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 99
 
 
  3977              	.LASF356:
@@ -5938,7 +5938,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  3996      00
  3997              	.LASF14:
  3998 149c 75696E74 		.ascii	"uint8_t\000"
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 100
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 100
 
 
  3998      385F7400 
@@ -5998,7 +5998,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  4017      746F7000 
  4018              	.LASF84:
  4019 15bb 70657269 		.ascii	"periDiv16_5CtlOffset\000"
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 101
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 101
 
 
  4019      44697631 
@@ -6058,7 +6058,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  4039 16ab 69706342 		.ascii	"ipcBase\000"
  4039      61736500 
  4040              	.LASF70:
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 102
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 102
 
 
  4041 16b3 64774368 		.ascii	"dwChCtlPrioPos\000"
@@ -6118,7 +6118,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  4061      74635F62 
  4061      6C655F74 
  4061      696D656F 
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 103
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 103
 
 
  4061      75745F70 
@@ -6178,7 +6178,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  4081      6E674275 
  4081      66486561 
  4081      6400
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 104
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 104
 
 
  4082              	.LASF42:
@@ -6238,7 +6238,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  4102              	.LASF336:
  4103 19c8 43595F42 		.ascii	"CY_BLE_GATT_ERR_UNSUPPORTED_GROUP_TYPE\000"
  4103      4C455F47 
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 105
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 105
 
 
  4103      4154545F 
@@ -6298,7 +6298,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  4123 1ad7 43595F42 		.ascii	"CY_BLE_CONN_STATE_CONNECTED\000"
  4123      4C455F43 
  4123      4F4E4E5F 
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 106
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 106
 
 
  4123      53544154 
@@ -6358,7 +6358,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  4143      5F4F5045 
  4144              	.LASF166:
  4145 1bc9 43595F42 		.ascii	"CY_BLE_EVT_READ_AUTH_PAYLOAD_TO_COMPLETE\000"
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 107
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 107
 
 
  4145      4C455F45 
@@ -6418,7 +6418,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  4165      6F6E00
  4166              	.LASF33:
  4167 1ca8 64775665 		.ascii	"dwVersion\000"
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 108
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 108
 
 
  4167      7273696F 
@@ -6478,7 +6478,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  4186              	.LASF312:
  4187 1da6 63795F73 		.ascii	"cy_stc_ble_conn_handle_t\000"
  4187      74635F62 
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 109
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 109
 
 
  4187      6C655F63 
@@ -6538,7 +6538,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  4205      45564943 
  4206              	.LASF32:
  4207 1ea3 63727970 		.ascii	"cryptoVersion\000"
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 110
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 110
 
 
  4207      746F5665 
@@ -6598,7 +6598,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  4227      5F524541 
  4228              	.LASF406:
  4229 1f70 64624174 		.ascii	"dbAttrValInfo\000"
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 111
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 111
 
 
  4229      74725661 
@@ -6658,7 +6658,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  4247      414E4353 
  4248              	.LASF325:
  4249 2079 43595F42 		.ascii	"CY_BLE_GATT_ERR_INSUFFICIENT_AUTHENTICATION\000"
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 112
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 112
 
 
  4249      4C455F47 
@@ -6718,7 +6718,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  4269      6E747243 
  4269      66674F66 
  4269      66736574 
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 113
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 113
 
 
  4270              	.LASF171:
@@ -6778,7 +6778,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  4288              	.LASF36:
  4289 2282 6873696F 		.ascii	"hsiomVersion\000"
  4289      6D566572 
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 114
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 114
 
 
  4289      73696F6E 
@@ -6838,7 +6838,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  4311      6C655F63 
  4311      7573746F 
  4311      6D436F6E 
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 115
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 115
 
 
  4311      66696750 
@@ -6898,7 +6898,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  4331      4C455F47 
  4331      4154545F 
  4331      4552525F 
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 116
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 116
 
 
  4331      41545452 
@@ -6958,7 +6958,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  4351      7448616E 
  4351      646C6572 
  4351      00
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 117
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 117
 
 
  4352              	.LASF407:
@@ -7018,7 +7018,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  4371      5F58434E 
  4372              	.LASF190:
  4373 2661 43595F42 		.ascii	"CY_BLE_EVT_SET_DEVICE_ADDR_COMPLETE\000"
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 118
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 118
 
 
  4373      4C455F45 
@@ -7078,7 +7078,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  4392              	.LASF68:
  4393 2764 64774368 		.ascii	"dwChOffset\000"
  4393      4F666673 
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 119
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 119
 
 
  4393      657400
@@ -7138,7 +7138,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  4414              	.LASF28:
  4415 2857 70617373 		.ascii	"passBase\000"
  4415      42617365 
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 120
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 120
 
 
  4415      00
@@ -7198,7 +7198,7 @@ ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 1
  4435      4C455F43 
  4435      4F4E4E5F 
  4435      53544154 
-ARM GAS  C:\Users\jeppe\AppData\Local\Temp\ccuv1P8a.s 			page 121
+ARM GAS  C:\Users\jeppe\AppData\Local\Temp\cc0e6IVZ.s 			page 121
 
 
  4435      455F4449 
