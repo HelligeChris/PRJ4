@@ -404,8 +404,9 @@
 <name v=".\POPEproject.cydsn\TopDesign\TopDesign.cysch" />
 <name v=".\POPEproject.cydsn\i2cFunctions.c" />
 <name v=".\POPEproject.cydsn\i2cFunctions.h" />
-<name v=".\POPEproject.cydsn\POPEproject.rpt" />
 <name v=".\POPEproject.cydsn\kadenceControl.h" />
+<name v=".\POPEproject.cydsn\POPEproject.rpt" />
+<name v=".\POPEproject.cydsn\HostMain.c" />
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -413,7 +414,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="850, 428" SelectedTabbedMdiWindow="ffe70f3e-a168-4b66-abf8-566c27e9dfd8"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="79310d70-eb37-42dc-9b3e-d7588df07f93" /><DocumentWindow Key="C:\Users\jeppe\Documents\GitHub\PRJ4\POPE\POPEproject.cydsn\main_cm4.c" Guid="991808fc-2ab8-4d1b-be13-86d7ddf9069f" /><DocumentWindow Key="C:\Users\jeppe\Documents\GitHub\PRJ4\POPE\POPEproject.cydsn\kadenceControl.c" Guid="e7377dab-0774-4a33-99fd-0acf0e79fda9" /><DocumentWindow Key="C:\Users\jeppe\Documents\GitHub\PRJ4\POPE\POPEproject.cydsn\TopDesign\TopDesign.cysch" Guid="c746afea-511f-4965-b203-34d2d705a001" /><DocumentWindow Key="C:\Users\jeppe\Documents\GitHub\PRJ4\POPE\POPEproject.cydsn\i2cFunctions.c" Guid="ffe70f3e-a168-4b66-abf8-566c27e9dfd8" /><DocumentWindow Key="C:\Users\jeppe\Documents\GitHub\PRJ4\POPE\POPEproject.cydsn\i2cFunctions.h" Guid="1ae3c8c3-63cc-4961-8184-30de903fce04" /><DocumentWindow Key="C:\Users\jeppe\Documents\GitHub\PRJ4\POPE\POPEproject.cydsn\POPEproject.rpt" Guid="39a01141-035b-4e7b-820b-2100f7b9ba82" /><DocumentWindow Key="C:\Users\jeppe\Documents\GitHub\PRJ4\POPE\POPEproject.cydsn\kadenceControl.h" Guid="ff3a6148-8fae-4124-ab96-665312e1461f" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1058, 511" SelectedTabbedMdiWindow="d7f41ef0-611d-42c2-9ad7-789614f467ba"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="79310d70-eb37-42dc-9b3e-d7588df07f93" /><DocumentWindow Key="C:\Users\jeppe\Documents\GitHub\PRJ4\POPE\POPEproject.cydsn\main_cm4.c" Guid="991808fc-2ab8-4d1b-be13-86d7ddf9069f" /><DocumentWindow Key="C:\Users\jeppe\Documents\GitHub\PRJ4\POPE\POPEproject.cydsn\kadenceControl.c" Guid="e7377dab-0774-4a33-99fd-0acf0e79fda9" /><DocumentWindow Key="C:\Users\jeppe\Documents\GitHub\PRJ4\POPE\POPEproject.cydsn\TopDesign\TopDesign.cysch" Guid="c746afea-511f-4965-b203-34d2d705a001" /><DocumentWindow Key="C:\Users\jeppe\Documents\GitHub\PRJ4\POPE\POPEproject.cydsn\i2cFunctions.c" Guid="ffe70f3e-a168-4b66-abf8-566c27e9dfd8" /><DocumentWindow Key="C:\Users\jeppe\Documents\GitHub\PRJ4\POPE\POPEproject.cydsn\i2cFunctions.h" Guid="1ae3c8c3-63cc-4961-8184-30de903fce04" /><DocumentWindow Key="C:\Users\jeppe\Documents\GitHub\PRJ4\POPE\POPEproject.cydsn\kadenceControl.h" Guid="ff3a6148-8fae-4124-ab96-665312e1461f" /><DocumentWindow Key="C:\Users\jeppe\Documents\GitHub\PRJ4\POPE\POPEproject.cydsn\POPEproject.rpt" Guid="270aa6f2-906b-4469-a41b-de5ab106f518" /><DocumentWindow Key="C:\Users\jeppe\Documents\GitHub\PRJ4\POPE\POPEproject.cydsn\HostMain.c" Guid="d7f41ef0-611d-42c2-9ad7-789614f467ba" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
