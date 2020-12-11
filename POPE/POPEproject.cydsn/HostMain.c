@@ -72,10 +72,6 @@ int HostMain(void)
         {
             resetIdleCountdown();
         }
-        if(Cy_BLE_GetAdvertisementState() == CY_BLE_ADV_STATE_STOPPED) // Hvis der ikke bliver bonded inden for 180sek
-        {
-            Cy_SysPm_DeepSleep(CY_SYSPM_WAIT_FOR_INTERRUPT);
-        }
         
         timeOut = BLE_checkTimer();
         getData(timeOut);

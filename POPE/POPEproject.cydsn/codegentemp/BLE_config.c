@@ -210,7 +210,7 @@ static const cy_stc_ble_gaps_t cy_ble_gaps =
     0x0007u,    /* Handle of the Central Address Resolution characteristic */
     0x000Bu,    /* Handle of the Resolvable Private Address Only characteristic */
 };
-static uint8_t cy_ble_attValues[0x32u] = {
+static uint8_t cy_ble_attValues[0x30u] = {
     /* Device Name */
     (uint8_t)'P', (uint8_t)'O', (uint8_t)'P', (uint8_t)'E', 
 
@@ -235,16 +235,13 @@ static uint8_t cy_ble_attValues[0x32u] = {
     /* Characteristic Presentation Format */
     0x00u, 0x00u, 0x33u, 0x27u, 0x01u, 0x00u, 0x00u, 
 
-    /* Power Descriptor */
+    /* Power Characteristic */
     0x00u, 0x00u, 
 
     /* Characteristic User Description */
     (uint8_t)'P', (uint8_t)'O', (uint8_t)'P', (uint8_t)'E', (uint8_t)' ', (uint8_t)'P', (uint8_t)'o', (uint8_t)'w',
 (uint8_t)'e', (uint8_t)'r', (uint8_t)' ', (uint8_t)'M', (uint8_t)'e', (uint8_t)'a', (uint8_t)'s', (uint8_t)'u',
 (uint8_t)'r', (uint8_t)'e', 
-
-    /* Server Characteristic Configuration */
-    0x00u, 0x00u, 
 
 };
 #if(CY_BLE_GATT_DB_CCCD_COUNT != 0u)
@@ -254,11 +251,11 @@ static uint8_t cy_ble_attValuesCCCD[CY_BLE_GATT_DB_CCCD_COUNT];
 static const uint8_t cy_ble_attUuid128[][16u] = {
     /* Power */
     { 0xDEu, 0xA0u, 0xA7u, 0x0Eu, 0x9Bu, 0x1Bu, 0x25u, 0xABu, 0x66u, 0x43u, 0x1Fu, 0xBEu, 0x85u, 0xDDu, 0x0Fu, 0x7Fu },
-    /* Power Descriptor */
+    /* Power Characteristic */
     { 0x08u, 0x8Bu, 0x74u, 0x03u, 0x73u, 0x10u, 0x0Au, 0x92u, 0x19u, 0x42u, 0x38u, 0x9Fu, 0xF5u, 0x07u, 0x3Du, 0xCAu },
 };
 
-static cy_stc_ble_gatts_att_gen_val_len_t cy_ble_attValuesLen[0x0Eu] = {
+static cy_stc_ble_gatts_att_gen_val_len_t cy_ble_attValuesLen[0x0Du] = {
     { 0x0004u, (void *)&cy_ble_attValues[0] }, /* Device Name */
     { 0x0002u, (void *)&cy_ble_attValues[4] }, /* Appearance */
     { 0x0001u, (void *)&cy_ble_attValues[6] }, /* Central Address Resolution */
@@ -269,13 +266,12 @@ static cy_stc_ble_gatts_att_gen_val_len_t cy_ble_attValuesLen[0x0Eu] = {
     { 0x0001u, (void *)&cy_ble_attValues[20] }, /* Battery Level */
     { 0x0007u, (void *)&cy_ble_attValues[21] }, /* Characteristic Presentation Format */
     { 0x0010u, (void *)&cy_ble_attUuid128[0] }, /* Power UUID */
-    { 0x0010u, (void *)&cy_ble_attUuid128[1] }, /* Power Descriptor UUID */
-    { 0x0002u, (void *)&cy_ble_attValues[28] }, /* Power Descriptor */
+    { 0x0010u, (void *)&cy_ble_attUuid128[1] }, /* Power Characteristic UUID */
+    { 0x0002u, (void *)&cy_ble_attValues[28] }, /* Power Characteristic */
     { 0x0012u, (void *)&cy_ble_attValues[30] }, /* Characteristic User Description */
-    { 0x0002u, (void *)&cy_ble_attValues[48] }, /* Server Characteristic Configuration */
 };
 
-static const cy_stc_ble_gatts_db_t cy_ble_gattDB[0x18u] = {
+static const cy_stc_ble_gatts_db_t cy_ble_gattDB[0x17u] = {
     { 0x0001u, 0x2800u /* Primary service                     */, 0x00000001u /*       */, 0x000Bu, {{0x1800u, NULL}}                           },
     { 0x0002u, 0x2803u /* Characteristic                      */, 0x00020001u /* rd    */, 0x0003u, {{0x2A00u, NULL}}                           },
     { 0x0003u, 0x2A00u /* Device Name                         */, 0x01020001u /* rd    */, 0x0003u, {{0x0004u, (void *)&cy_ble_attValuesLen[0]}} },
@@ -295,11 +291,10 @@ static const cy_stc_ble_gatts_db_t cy_ble_gattDB[0x18u] = {
     { 0x0011u, 0x2803u /* Characteristic                      */, 0x00020001u /* rd    */, 0x0013u, {{0x2A19u, NULL}}                           },
     { 0x0012u, 0x2A19u /* Battery Level                       */, 0x01020001u /* rd    */, 0x0013u, {{0x0001u, (void *)&cy_ble_attValuesLen[7]}} },
     { 0x0013u, 0x2904u /* Characteristic Presentation Format  */, 0x01020001u /* rd    */, 0x0013u, {{0x0007u, (void *)&cy_ble_attValuesLen[8]}} },
-    { 0x0014u, 0x2800u /* Primary service                     */, 0x08000001u /*       */, 0x0018u, {{0x0010u, (void *)&cy_ble_attValuesLen[9]}} },
-    { 0x0015u, 0x2803u /* Characteristic                      */, 0x00030001u /* br,rd */, 0x0018u, {{0x0010u, (void *)&cy_ble_attValuesLen[10]}} },
-    { 0x0016u, 0x07F5u /* Power Descriptor                    */, 0x09030001u /* br,rd */, 0x0018u, {{0x0002u, (void *)&cy_ble_attValuesLen[11]}} },
+    { 0x0014u, 0x2800u /* Primary service                     */, 0x08000001u /*       */, 0x0017u, {{0x0010u, (void *)&cy_ble_attValuesLen[9]}} },
+    { 0x0015u, 0x2803u /* Characteristic                      */, 0x00020001u /* rd    */, 0x0017u, {{0x0010u, (void *)&cy_ble_attValuesLen[10]}} },
+    { 0x0016u, 0x07F5u /* Power Characteristic                */, 0x09020001u /* rd    */, 0x0017u, {{0x0002u, (void *)&cy_ble_attValuesLen[11]}} },
     { 0x0017u, 0x2901u /* Characteristic User Description     */, 0x01020001u /* rd    */, 0x0017u, {{0x0012u, (void *)&cy_ble_attValuesLen[12]}} },
-    { 0x0018u, 0x2903u /* Server Characteristic Configuration */, 0x010A0101u /* rd,wr */, 0x0018u, {{0x0002u, (void *)&cy_ble_attValuesLen[13]}} },
 };
 
 #endif /* (CY_BLE_GATT_ROLE_SERVER) */
@@ -311,7 +306,7 @@ static const cy_stc_ble_gatts_db_t cy_ble_gattDB[0x18u] = {
     /* Security configuration 0 */
     {
         .security = (CY_BLE_GAP_SEC_MODE_1 | CY_BLE_GAP_SEC_LEVEL_1 ), 
-        .bonding = CY_BLE_GAP_BONDING_NONE, 
+        .bonding = CY_BLE_GAP_BONDING, 
         .ekeySize = 0x10u, 
         .authErr = CY_BLE_GAP_AUTH_ERROR_NONE, 
         .pairingProperties = 0x01u, 
@@ -331,7 +326,7 @@ static const cy_stc_ble_params_t cy_ble_params =
     
         .siliconDeviceAddressEnabled        = 0x01u,
     
-        .gattDbIndexCount                   = 0x0018u,
+        .gattDbIndexCount                   = 0x0017u,
 };
 
 cy_stc_ble_gap_bd_addr_t cy_ble_deviceAddress = {{0x00u, 0x00u, 0x00u, 0x50u, 0xA0u, 0x00u}, 0x00u };

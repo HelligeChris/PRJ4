@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccH0tQDx.s 			page 1
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccNjeSDj.s 			page 1
 
 
    1              		.syntax unified
@@ -29,15 +29,15 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccH0tQDx.s 			page 1
   26              		.file 6 "Generated_Source\\PSoC6\\pdl\\cmsis/include/core_cm4.h"
   27              		.section	.debug_info,"",%progbits
   28              	.Ldebug_info0:
-  29 0000 27060000 		.4byte	0x627
+  29 0000 33060000 		.4byte	0x633
   30 0004 0400     		.2byte	0x4
   31 0006 00000000 		.4byte	.Ldebug_abbrev0
   32 000a 04       		.byte	0x4
   33 000b 01       		.uleb128 0x1
-  34 000c D7050000 		.4byte	.LASF134
+  34 000c D7050000 		.4byte	.LASF135
   35 0010 0C       		.byte	0xc
-  36 0011 F6010000 		.4byte	.LASF135
-  37 0015 61010000 		.4byte	.LASF136
+  36 0011 F6010000 		.4byte	.LASF136
+  37 0015 61010000 		.4byte	.LASF137
   38 0019 00000000 		.4byte	.Ldebug_line0
   39 001d 02       		.uleb128 0x2
   40 001e 04       		.byte	0x4
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccH0tQDx.s 			page 1
   55 0039 03       		.uleb128 0x3
   56 003a 01       		.byte	0x1
   57 003b 06       		.byte	0x6
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccH0tQDx.s 			page 2
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccNjeSDj.s 			page 2
 
 
   58 003c 55010000 		.4byte	.LASF3
@@ -88,16 +88,16 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccH0tQDx.s 			page 1
   82 006f 03       		.uleb128 0x3
   83 0070 02       		.byte	0x2
   84 0071 07       		.byte	0x7
-  85 0072 2C080000 		.4byte	.LASF9
+  85 0072 45080000 		.4byte	.LASF9
   86 0076 04       		.uleb128 0x4
-  87 0077 F1070000 		.4byte	.LASF10
+  87 0077 0A080000 		.4byte	.LASF10
   88 007b 01       		.byte	0x1
   89 007c 3F       		.byte	0x3f
   90 007d 81000000 		.4byte	0x81
   91 0081 03       		.uleb128 0x3
   92 0082 04       		.byte	0x4
   93 0083 05       		.byte	0x5
-  94 0084 50090000 		.4byte	.LASF11
+  94 0084 69090000 		.4byte	.LASF11
   95 0088 04       		.uleb128 0x4
   96 0089 0F030000 		.4byte	.LASF12
   97 008d 01       		.byte	0x1
@@ -118,12 +118,12 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccH0tQDx.s 			page 1
  112 00a8 03       		.uleb128 0x3
  113 00a9 01       		.byte	0x1
  114 00aa 08       		.byte	0x8
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccH0tQDx.s 			page 3
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccNjeSDj.s 			page 3
 
 
  115 00ab B4070000 		.4byte	.LASF16
  116 00af 04       		.uleb128 0x4
- 117 00b0 F0080000 		.4byte	.LASF17
+ 117 00b0 09090000 		.4byte	.LASF17
  118 00b4 02       		.byte	0x2
  119 00b5 18       		.byte	0x18
  120 00b6 40000000 		.4byte	0x40
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccH0tQDx.s 			page 1
  169 011d 0C       		.byte	0xc
  170 011e 06       		.uleb128 0x6
  171 011f A3010000 		.4byte	.LASF26
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccH0tQDx.s 			page 4
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccNjeSDj.s 			page 4
 
 
  172 0123 03       		.byte	0x3
@@ -204,7 +204,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccH0tQDx.s 			page 1
  192 0149 DB000000 		.4byte	0xdb
  193 014d 1C       		.byte	0x1c
  194 014e 06       		.uleb128 0x6
- 195 014f 63090000 		.4byte	.LASF30
+ 195 014f 7C090000 		.4byte	.LASF30
  196 0153 03       		.byte	0x3
  197 0154 3F       		.byte	0x3f
  198 0155 DB000000 		.4byte	0xdb
@@ -228,7 +228,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccH0tQDx.s 			page 1
  216 0179 AF000000 		.4byte	0xaf
  217 017d 29       		.byte	0x29
  218 017e 06       		.uleb128 0x6
- 219 017f 59090000 		.4byte	.LASF34
+ 219 017f 72090000 		.4byte	.LASF34
  220 0183 03       		.byte	0x3
  221 0184 45       		.byte	0x45
  222 0185 AF000000 		.4byte	0xaf
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccH0tQDx.s 			page 1
  226 018f 03       		.byte	0x3
  227 0190 46       		.byte	0x46
  228 0191 AF000000 		.4byte	0xaf
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccH0tQDx.s 			page 5
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccNjeSDj.s 			page 5
 
 
  229 0195 2B       		.byte	0x2b
@@ -249,7 +249,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccH0tQDx.s 			page 1
  234 019d AF000000 		.4byte	0xaf
  235 01a1 2C       		.byte	0x2c
  236 01a2 06       		.uleb128 0x6
- 237 01a3 0B080000 		.4byte	.LASF37
+ 237 01a3 24080000 		.4byte	.LASF37
  238 01a7 03       		.byte	0x3
  239 01a8 48       		.byte	0x48
  240 01a9 AF000000 		.4byte	0xaf
@@ -297,8 +297,8 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccH0tQDx.s 			page 1
  282 01fd AF000000 		.4byte	0xaf
  283 0201 34       		.byte	0x34
  284 0202 06       		.uleb128 0x6
- 285 0203 56080000 		.4byte	.LASF45
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccH0tQDx.s 			page 6
+ 285 0203 6F080000 		.4byte	.LASF45
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccNjeSDj.s 			page 6
 
 
  286 0207 03       		.byte	0x3
@@ -312,13 +312,13 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccH0tQDx.s 			page 1
  294 0215 BA000000 		.4byte	0xba
  295 0219 38       		.byte	0x38
  296 021a 06       		.uleb128 0x6
- 297 021b A5080000 		.4byte	.LASF47
+ 297 021b BE080000 		.4byte	.LASF47
  298 021f 03       		.byte	0x3
  299 0220 54       		.byte	0x54
  300 0221 BA000000 		.4byte	0xba
  301 0225 3A       		.byte	0x3a
  302 0226 06       		.uleb128 0x6
- 303 0227 41090000 		.4byte	.LASF48
+ 303 0227 5A090000 		.4byte	.LASF48
  304 022b 03       		.byte	0x3
  305 022c 55       		.byte	0x55
  306 022d AF000000 		.4byte	0xaf
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccH0tQDx.s 			page 1
  340 0273 03       		.byte	0x3
  341 0274 5B       		.byte	0x5b
  342 0275 AF000000 		.4byte	0xaf
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccH0tQDx.s 			page 7
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccNjeSDj.s 			page 7
 
 
  343 0279 42       		.byte	0x42
@@ -387,7 +387,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccH0tQDx.s 			page 1
  366 02a5 DB000000 		.4byte	0xdb
  367 02a9 4C       		.byte	0x4c
  368 02aa 06       		.uleb128 0x6
- 369 02ab C4090000 		.4byte	.LASF59
+ 369 02ab DD090000 		.4byte	.LASF59
  370 02af 03       		.byte	0x3
  371 02b0 60       		.byte	0x60
  372 02b1 AF000000 		.4byte	0xaf
@@ -405,7 +405,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccH0tQDx.s 			page 1
  384 02c9 AF000000 		.4byte	0xaf
  385 02cd 52       		.byte	0x52
  386 02ce 06       		.uleb128 0x6
- 387 02cf 81090000 		.4byte	.LASF62
+ 387 02cf 9A090000 		.4byte	.LASF62
  388 02d3 03       		.byte	0x3
  389 02d4 63       		.byte	0x63
  390 02d5 AF000000 		.4byte	0xaf
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccH0tQDx.s 			page 1
  397 02e5 54       		.byte	0x54
  398 02e6 06       		.uleb128 0x6
  399 02e7 2B010000 		.4byte	.LASF64
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccH0tQDx.s 			page 8
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccNjeSDj.s 			page 8
 
 
  400 02eb 03       		.byte	0x3
@@ -426,7 +426,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccH0tQDx.s 			page 1
  402 02ed AF000000 		.4byte	0xaf
  403 02f1 55       		.byte	0x55
  404 02f2 06       		.uleb128 0x6
- 405 02f3 18080000 		.4byte	.LASF65
+ 405 02f3 31080000 		.4byte	.LASF65
  406 02f7 03       		.byte	0x3
  407 02f8 66       		.byte	0x66
  408 02f9 AF000000 		.4byte	0xaf
@@ -456,7 +456,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccH0tQDx.s 			page 1
  432 0329 C5000000 		.4byte	0xc5
  433 032d 5A       		.byte	0x5a
  434 032e 06       		.uleb128 0x6
- 435 032f 3F080000 		.4byte	.LASF70
+ 435 032f 58080000 		.4byte	.LASF70
  436 0333 03       		.byte	0x3
  437 0334 6F       		.byte	0x6f
  438 0335 C5000000 		.4byte	0xc5
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccH0tQDx.s 			page 1
  454 0357 03       		.byte	0x3
  455 0358 72       		.byte	0x72
  456 0359 AF000000 		.4byte	0xaf
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccH0tQDx.s 			page 9
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccNjeSDj.s 			page 9
 
 
  457 035d 60       		.byte	0x60
@@ -525,7 +525,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccH0tQDx.s 			page 1
  498 03ad AF000000 		.4byte	0xaf
  499 03b1 71       		.byte	0x71
  500 03b2 06       		.uleb128 0x6
- 501 03b3 6B090000 		.4byte	.LASF81
+ 501 03b3 84090000 		.4byte	.LASF81
  502 03b7 03       		.byte	0x3
  503 03b8 7D       		.byte	0x7d
  504 03b9 AF000000 		.4byte	0xaf
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccH0tQDx.s 			page 1
  511 03c9 73       		.byte	0x73
  512 03ca 06       		.uleb128 0x6
  513 03cb B4020000 		.4byte	.LASF83
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccH0tQDx.s 			page 10
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccNjeSDj.s 			page 10
 
 
  514 03cf 03       		.byte	0x3
@@ -546,7 +546,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccH0tQDx.s 			page 1
  516 03d1 C5000000 		.4byte	0xc5
  517 03d5 74       		.byte	0x74
  518 03d6 06       		.uleb128 0x6
- 519 03d7 DE070000 		.4byte	.LASF84
+ 519 03d7 F7070000 		.4byte	.LASF84
  520 03db 03       		.byte	0x3
  521 03dc 81       		.byte	0x81
  522 03dd C5000000 		.4byte	0xc5
@@ -564,13 +564,13 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccH0tQDx.s 			page 1
  534 03f5 C5000000 		.4byte	0xc5
  535 03f9 7A       		.byte	0x7a
  536 03fa 06       		.uleb128 0x6
- 537 03fb 0D090000 		.4byte	.LASF87
+ 537 03fb 26090000 		.4byte	.LASF87
  538 03ff 03       		.byte	0x3
  539 0400 86       		.byte	0x86
  540 0401 AF000000 		.4byte	0xaf
  541 0405 7C       		.byte	0x7c
  542 0406 06       		.uleb128 0x6
- 543 0407 63080000 		.4byte	.LASF88
+ 543 0407 7C080000 		.4byte	.LASF88
  544 040b 03       		.byte	0x3
  545 040c 87       		.byte	0x87
  546 040d AF000000 		.4byte	0xaf
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccH0tQDx.s 			page 1
  568 043b 03       		.byte	0x3
  569 043c 8D       		.byte	0x8d
  570 043d DB000000 		.4byte	0xdb
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccH0tQDx.s 			page 11
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccNjeSDj.s 			page 11
 
 
  571 0441 84       		.byte	0x84
@@ -609,7 +609,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccH0tQDx.s 			page 1
  576 0449 DB000000 		.4byte	0xdb
  577 044d 88       		.byte	0x88
  578 044e 06       		.uleb128 0x6
- 579 044f F8080000 		.4byte	.LASF94
+ 579 044f 11090000 		.4byte	.LASF94
  580 0453 03       		.byte	0x3
  581 0454 8F       		.byte	0x8f
  582 0455 DB000000 		.4byte	0xdb
@@ -633,7 +633,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccH0tQDx.s 			page 1
  600 0479 DB000000 		.4byte	0xdb
  601 047d 98       		.byte	0x98
  602 047e 06       		.uleb128 0x6
- 603 047f 22090000 		.4byte	.LASF98
+ 603 047f 3B090000 		.4byte	.LASF98
  604 0483 03       		.byte	0x3
  605 0484 93       		.byte	0x93
  606 0485 DB000000 		.4byte	0xdb
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccH0tQDx.s 			page 1
  625 04ad A6       		.byte	0xa6
  626 04ae 06       		.uleb128 0x6
  627 04af DF060000 		.4byte	.LASF102
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccH0tQDx.s 			page 12
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccNjeSDj.s 			page 12
 
 
  628 04b3 03       		.byte	0x3
@@ -684,7 +684,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccH0tQDx.s 			page 1
  648 04d9 C5000000 		.4byte	0xc5
  649 04dd AE       		.byte	0xae
  650 04de 06       		.uleb128 0x6
- 651 04df 48080000 		.4byte	.LASF106
+ 651 04df 61080000 		.4byte	.LASF106
  652 04e3 03       		.byte	0x3
  653 04e4 9D       		.byte	0x9d
  654 04e5 C5000000 		.4byte	0xc5
@@ -715,10 +715,10 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccH0tQDx.s 			page 1
  679 0513 6401     		.2byte	0x164
  680 0515 34050000 		.4byte	0x534
  681 0519 08       		.uleb128 0x8
- 682 051a 38090000 		.4byte	.LASF111
+ 682 051a 51090000 		.4byte	.LASF111
  683 051e 04       		.byte	0x4
  684 051f 6E01     		.2byte	0x16e
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccH0tQDx.s 			page 13
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccNjeSDj.s 			page 13
 
 
  685 0521 AF000000 		.4byte	0xaf
@@ -742,13 +742,13 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccH0tQDx.s 			page 1
  703 0547 7E       		.byte	0x7e
  704 0548 65050000 		.4byte	0x565
  705 054c 0B       		.uleb128 0xb
- 706 054d D7080000 		.4byte	.LASF114
+ 706 054d F0080000 		.4byte	.LASF114
  707 0551 00       		.byte	0
  708 0552 0B       		.uleb128 0xb
  709 0553 3A050000 		.4byte	.LASF115
  710 0557 01       		.byte	0x1
  711 0558 0B       		.uleb128 0xb
- 712 0559 BA080000 		.4byte	.LASF116
+ 712 0559 D3080000 		.4byte	.LASF116
  713 055d 02       		.byte	0x2
  714 055e 0B       		.uleb128 0xb
  715 055f CC010000 		.4byte	.LASF117
@@ -766,10 +766,10 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccH0tQDx.s 			page 1
  727 0577 87       		.byte	0x87
  728 0578 AD050000 		.4byte	0x5ad
  729 057c 0B       		.uleb128 0xb
- 730 057d 74080000 		.4byte	.LASF119
+ 730 057d 8D080000 		.4byte	.LASF119
  731 0581 00       		.byte	0
  732 0582 0B       		.uleb128 0xb
- 733 0583 93090000 		.4byte	.LASF120
+ 733 0583 AC090000 		.4byte	.LASF120
  734 0587 01       		.byte	0x1
  735 0588 0B       		.uleb128 0xb
  736 0589 A0030000 		.4byte	.LASF121
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccH0tQDx.s 			page 1
  739 058f 49030000 		.4byte	.LASF122
  740 0593 03       		.byte	0x3
  741 0594 0B       		.uleb128 0xb
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccH0tQDx.s 			page 14
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccNjeSDj.s 			page 14
 
 
  742 0595 C6020000 		.4byte	.LASF123
@@ -820,7 +820,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccH0tQDx.s 			page 1
  778 05e1 10       		.uleb128 0x10
  779 05e2 D0000000 		.4byte	0xd0
  780 05e6 0F       		.uleb128 0xf
- 781 05e7 FB070000 		.4byte	.LASF131
+ 781 05e7 14080000 		.4byte	.LASF131
  782 05eb 05       		.byte	0x5
  783 05ec 2202     		.2byte	0x222
  784 05ee 65050000 		.4byte	0x565
@@ -832,13 +832,13 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccH0tQDx.s 			page 1
  790 0600 00       		.byte	0
  791 0601 00       		.byte	0
  792 0602 0F       		.uleb128 0xf
- 793 0603 93080000 		.4byte	.LASF132
+ 793 0603 AC080000 		.4byte	.LASF132
  794 0607 05       		.byte	0x5
  795 0608 2C02     		.2byte	0x22c
  796 060a F2050000 		.4byte	0x5f2
  797 060e 11       		.uleb128 0x11
  798 060f AD050000 		.4byte	0x5ad
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccH0tQDx.s 			page 15
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccNjeSDj.s 			page 15
 
 
  799 0613 1E060000 		.4byte	0x61e
@@ -851,1000 +851,1014 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccH0tQDx.s 			page 1
  806 0623 05       		.byte	0x5
  807 0624 2D02     		.2byte	0x22d
  808 0626 0E060000 		.4byte	0x60e
- 809 062a 00       		.byte	0
- 810              		.section	.debug_abbrev,"",%progbits
- 811              	.Ldebug_abbrev0:
- 812 0000 01       		.uleb128 0x1
- 813 0001 11       		.uleb128 0x11
- 814 0002 01       		.byte	0x1
- 815 0003 25       		.uleb128 0x25
- 816 0004 0E       		.uleb128 0xe
- 817 0005 13       		.uleb128 0x13
- 818 0006 0B       		.uleb128 0xb
- 819 0007 03       		.uleb128 0x3
- 820 0008 0E       		.uleb128 0xe
- 821 0009 1B       		.uleb128 0x1b
- 822 000a 0E       		.uleb128 0xe
- 823 000b 10       		.uleb128 0x10
- 824 000c 17       		.uleb128 0x17
- 825 000d 00       		.byte	0
- 826 000e 00       		.byte	0
- 827 000f 02       		.uleb128 0x2
- 828 0010 24       		.uleb128 0x24
- 829 0011 00       		.byte	0
- 830 0012 0B       		.uleb128 0xb
- 831 0013 0B       		.uleb128 0xb
- 832 0014 3E       		.uleb128 0x3e
- 833 0015 0B       		.uleb128 0xb
- 834 0016 03       		.uleb128 0x3
- 835 0017 08       		.uleb128 0x8
- 836 0018 00       		.byte	0
- 837 0019 00       		.byte	0
- 838 001a 03       		.uleb128 0x3
- 839 001b 24       		.uleb128 0x24
- 840 001c 00       		.byte	0
- 841 001d 0B       		.uleb128 0xb
- 842 001e 0B       		.uleb128 0xb
- 843 001f 3E       		.uleb128 0x3e
- 844 0020 0B       		.uleb128 0xb
- 845 0021 03       		.uleb128 0x3
- 846 0022 0E       		.uleb128 0xe
- 847 0023 00       		.byte	0
- 848 0024 00       		.byte	0
- 849 0025 04       		.uleb128 0x4
- 850 0026 16       		.uleb128 0x16
- 851 0027 00       		.byte	0
- 852 0028 03       		.uleb128 0x3
- 853 0029 0E       		.uleb128 0xe
- 854 002a 3A       		.uleb128 0x3a
- 855 002b 0B       		.uleb128 0xb
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccH0tQDx.s 			page 16
+ 809 062a 0F       		.uleb128 0xf
+ 810 062b DE070000 		.4byte	.LASF134
+ 811 062f 05       		.byte	0x5
+ 812 0630 5202     		.2byte	0x252
+ 813 0632 AF000000 		.4byte	0xaf
+ 814 0636 00       		.byte	0
+ 815              		.section	.debug_abbrev,"",%progbits
+ 816              	.Ldebug_abbrev0:
+ 817 0000 01       		.uleb128 0x1
+ 818 0001 11       		.uleb128 0x11
+ 819 0002 01       		.byte	0x1
+ 820 0003 25       		.uleb128 0x25
+ 821 0004 0E       		.uleb128 0xe
+ 822 0005 13       		.uleb128 0x13
+ 823 0006 0B       		.uleb128 0xb
+ 824 0007 03       		.uleb128 0x3
+ 825 0008 0E       		.uleb128 0xe
+ 826 0009 1B       		.uleb128 0x1b
+ 827 000a 0E       		.uleb128 0xe
+ 828 000b 10       		.uleb128 0x10
+ 829 000c 17       		.uleb128 0x17
+ 830 000d 00       		.byte	0
+ 831 000e 00       		.byte	0
+ 832 000f 02       		.uleb128 0x2
+ 833 0010 24       		.uleb128 0x24
+ 834 0011 00       		.byte	0
+ 835 0012 0B       		.uleb128 0xb
+ 836 0013 0B       		.uleb128 0xb
+ 837 0014 3E       		.uleb128 0x3e
+ 838 0015 0B       		.uleb128 0xb
+ 839 0016 03       		.uleb128 0x3
+ 840 0017 08       		.uleb128 0x8
+ 841 0018 00       		.byte	0
+ 842 0019 00       		.byte	0
+ 843 001a 03       		.uleb128 0x3
+ 844 001b 24       		.uleb128 0x24
+ 845 001c 00       		.byte	0
+ 846 001d 0B       		.uleb128 0xb
+ 847 001e 0B       		.uleb128 0xb
+ 848 001f 3E       		.uleb128 0x3e
+ 849 0020 0B       		.uleb128 0xb
+ 850 0021 03       		.uleb128 0x3
+ 851 0022 0E       		.uleb128 0xe
+ 852 0023 00       		.byte	0
+ 853 0024 00       		.byte	0
+ 854 0025 04       		.uleb128 0x4
+ 855 0026 16       		.uleb128 0x16
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccNjeSDj.s 			page 16
 
 
- 856 002c 3B       		.uleb128 0x3b
- 857 002d 0B       		.uleb128 0xb
- 858 002e 49       		.uleb128 0x49
- 859 002f 13       		.uleb128 0x13
- 860 0030 00       		.byte	0
- 861 0031 00       		.byte	0
- 862 0032 05       		.uleb128 0x5
- 863 0033 13       		.uleb128 0x13
- 864 0034 01       		.byte	0x1
- 865 0035 0B       		.uleb128 0xb
- 866 0036 0B       		.uleb128 0xb
- 867 0037 3A       		.uleb128 0x3a
- 868 0038 0B       		.uleb128 0xb
- 869 0039 3B       		.uleb128 0x3b
- 870 003a 0B       		.uleb128 0xb
- 871 003b 01       		.uleb128 0x1
- 872 003c 13       		.uleb128 0x13
- 873 003d 00       		.byte	0
- 874 003e 00       		.byte	0
- 875 003f 06       		.uleb128 0x6
- 876 0040 0D       		.uleb128 0xd
- 877 0041 00       		.byte	0
- 878 0042 03       		.uleb128 0x3
- 879 0043 0E       		.uleb128 0xe
- 880 0044 3A       		.uleb128 0x3a
- 881 0045 0B       		.uleb128 0xb
- 882 0046 3B       		.uleb128 0x3b
- 883 0047 0B       		.uleb128 0xb
- 884 0048 49       		.uleb128 0x49
- 885 0049 13       		.uleb128 0x13
- 886 004a 38       		.uleb128 0x38
- 887 004b 0B       		.uleb128 0xb
- 888 004c 00       		.byte	0
- 889 004d 00       		.byte	0
- 890 004e 07       		.uleb128 0x7
- 891 004f 13       		.uleb128 0x13
- 892 0050 01       		.byte	0x1
- 893 0051 0B       		.uleb128 0xb
- 894 0052 0B       		.uleb128 0xb
- 895 0053 3A       		.uleb128 0x3a
- 896 0054 0B       		.uleb128 0xb
- 897 0055 3B       		.uleb128 0x3b
- 898 0056 05       		.uleb128 0x5
- 899 0057 01       		.uleb128 0x1
- 900 0058 13       		.uleb128 0x13
- 901 0059 00       		.byte	0
- 902 005a 00       		.byte	0
- 903 005b 08       		.uleb128 0x8
- 904 005c 0D       		.uleb128 0xd
- 905 005d 00       		.byte	0
- 906 005e 03       		.uleb128 0x3
- 907 005f 0E       		.uleb128 0xe
- 908 0060 3A       		.uleb128 0x3a
- 909 0061 0B       		.uleb128 0xb
- 910 0062 3B       		.uleb128 0x3b
- 911 0063 05       		.uleb128 0x5
- 912 0064 49       		.uleb128 0x49
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccH0tQDx.s 			page 17
+ 856 0027 00       		.byte	0
+ 857 0028 03       		.uleb128 0x3
+ 858 0029 0E       		.uleb128 0xe
+ 859 002a 3A       		.uleb128 0x3a
+ 860 002b 0B       		.uleb128 0xb
+ 861 002c 3B       		.uleb128 0x3b
+ 862 002d 0B       		.uleb128 0xb
+ 863 002e 49       		.uleb128 0x49
+ 864 002f 13       		.uleb128 0x13
+ 865 0030 00       		.byte	0
+ 866 0031 00       		.byte	0
+ 867 0032 05       		.uleb128 0x5
+ 868 0033 13       		.uleb128 0x13
+ 869 0034 01       		.byte	0x1
+ 870 0035 0B       		.uleb128 0xb
+ 871 0036 0B       		.uleb128 0xb
+ 872 0037 3A       		.uleb128 0x3a
+ 873 0038 0B       		.uleb128 0xb
+ 874 0039 3B       		.uleb128 0x3b
+ 875 003a 0B       		.uleb128 0xb
+ 876 003b 01       		.uleb128 0x1
+ 877 003c 13       		.uleb128 0x13
+ 878 003d 00       		.byte	0
+ 879 003e 00       		.byte	0
+ 880 003f 06       		.uleb128 0x6
+ 881 0040 0D       		.uleb128 0xd
+ 882 0041 00       		.byte	0
+ 883 0042 03       		.uleb128 0x3
+ 884 0043 0E       		.uleb128 0xe
+ 885 0044 3A       		.uleb128 0x3a
+ 886 0045 0B       		.uleb128 0xb
+ 887 0046 3B       		.uleb128 0x3b
+ 888 0047 0B       		.uleb128 0xb
+ 889 0048 49       		.uleb128 0x49
+ 890 0049 13       		.uleb128 0x13
+ 891 004a 38       		.uleb128 0x38
+ 892 004b 0B       		.uleb128 0xb
+ 893 004c 00       		.byte	0
+ 894 004d 00       		.byte	0
+ 895 004e 07       		.uleb128 0x7
+ 896 004f 13       		.uleb128 0x13
+ 897 0050 01       		.byte	0x1
+ 898 0051 0B       		.uleb128 0xb
+ 899 0052 0B       		.uleb128 0xb
+ 900 0053 3A       		.uleb128 0x3a
+ 901 0054 0B       		.uleb128 0xb
+ 902 0055 3B       		.uleb128 0x3b
+ 903 0056 05       		.uleb128 0x5
+ 904 0057 01       		.uleb128 0x1
+ 905 0058 13       		.uleb128 0x13
+ 906 0059 00       		.byte	0
+ 907 005a 00       		.byte	0
+ 908 005b 08       		.uleb128 0x8
+ 909 005c 0D       		.uleb128 0xd
+ 910 005d 00       		.byte	0
+ 911 005e 03       		.uleb128 0x3
+ 912 005f 0E       		.uleb128 0xe
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccNjeSDj.s 			page 17
 
 
- 913 0065 13       		.uleb128 0x13
- 914 0066 38       		.uleb128 0x38
- 915 0067 0B       		.uleb128 0xb
- 916 0068 00       		.byte	0
- 917 0069 00       		.byte	0
- 918 006a 09       		.uleb128 0x9
- 919 006b 16       		.uleb128 0x16
- 920 006c 00       		.byte	0
- 921 006d 03       		.uleb128 0x3
- 922 006e 0E       		.uleb128 0xe
- 923 006f 3A       		.uleb128 0x3a
- 924 0070 0B       		.uleb128 0xb
- 925 0071 3B       		.uleb128 0x3b
- 926 0072 05       		.uleb128 0x5
- 927 0073 49       		.uleb128 0x49
- 928 0074 13       		.uleb128 0x13
- 929 0075 00       		.byte	0
- 930 0076 00       		.byte	0
- 931 0077 0A       		.uleb128 0xa
- 932 0078 04       		.uleb128 0x4
- 933 0079 01       		.byte	0x1
- 934 007a 0B       		.uleb128 0xb
- 935 007b 0B       		.uleb128 0xb
- 936 007c 49       		.uleb128 0x49
- 937 007d 13       		.uleb128 0x13
- 938 007e 3A       		.uleb128 0x3a
- 939 007f 0B       		.uleb128 0xb
- 940 0080 3B       		.uleb128 0x3b
- 941 0081 0B       		.uleb128 0xb
- 942 0082 01       		.uleb128 0x1
- 943 0083 13       		.uleb128 0x13
- 944 0084 00       		.byte	0
- 945 0085 00       		.byte	0
- 946 0086 0B       		.uleb128 0xb
- 947 0087 28       		.uleb128 0x28
- 948 0088 00       		.byte	0
- 949 0089 03       		.uleb128 0x3
- 950 008a 0E       		.uleb128 0xe
- 951 008b 1C       		.uleb128 0x1c
- 952 008c 0B       		.uleb128 0xb
- 953 008d 00       		.byte	0
- 954 008e 00       		.byte	0
- 955 008f 0C       		.uleb128 0xc
- 956 0090 34       		.uleb128 0x34
- 957 0091 00       		.byte	0
- 958 0092 03       		.uleb128 0x3
- 959 0093 0E       		.uleb128 0xe
- 960 0094 3A       		.uleb128 0x3a
- 961 0095 0B       		.uleb128 0xb
- 962 0096 3B       		.uleb128 0x3b
- 963 0097 0B       		.uleb128 0xb
- 964 0098 49       		.uleb128 0x49
- 965 0099 13       		.uleb128 0x13
- 966 009a 3F       		.uleb128 0x3f
- 967 009b 19       		.uleb128 0x19
- 968 009c 3C       		.uleb128 0x3c
- 969 009d 19       		.uleb128 0x19
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccH0tQDx.s 			page 18
+ 913 0060 3A       		.uleb128 0x3a
+ 914 0061 0B       		.uleb128 0xb
+ 915 0062 3B       		.uleb128 0x3b
+ 916 0063 05       		.uleb128 0x5
+ 917 0064 49       		.uleb128 0x49
+ 918 0065 13       		.uleb128 0x13
+ 919 0066 38       		.uleb128 0x38
+ 920 0067 0B       		.uleb128 0xb
+ 921 0068 00       		.byte	0
+ 922 0069 00       		.byte	0
+ 923 006a 09       		.uleb128 0x9
+ 924 006b 16       		.uleb128 0x16
+ 925 006c 00       		.byte	0
+ 926 006d 03       		.uleb128 0x3
+ 927 006e 0E       		.uleb128 0xe
+ 928 006f 3A       		.uleb128 0x3a
+ 929 0070 0B       		.uleb128 0xb
+ 930 0071 3B       		.uleb128 0x3b
+ 931 0072 05       		.uleb128 0x5
+ 932 0073 49       		.uleb128 0x49
+ 933 0074 13       		.uleb128 0x13
+ 934 0075 00       		.byte	0
+ 935 0076 00       		.byte	0
+ 936 0077 0A       		.uleb128 0xa
+ 937 0078 04       		.uleb128 0x4
+ 938 0079 01       		.byte	0x1
+ 939 007a 0B       		.uleb128 0xb
+ 940 007b 0B       		.uleb128 0xb
+ 941 007c 49       		.uleb128 0x49
+ 942 007d 13       		.uleb128 0x13
+ 943 007e 3A       		.uleb128 0x3a
+ 944 007f 0B       		.uleb128 0xb
+ 945 0080 3B       		.uleb128 0x3b
+ 946 0081 0B       		.uleb128 0xb
+ 947 0082 01       		.uleb128 0x1
+ 948 0083 13       		.uleb128 0x13
+ 949 0084 00       		.byte	0
+ 950 0085 00       		.byte	0
+ 951 0086 0B       		.uleb128 0xb
+ 952 0087 28       		.uleb128 0x28
+ 953 0088 00       		.byte	0
+ 954 0089 03       		.uleb128 0x3
+ 955 008a 0E       		.uleb128 0xe
+ 956 008b 1C       		.uleb128 0x1c
+ 957 008c 0B       		.uleb128 0xb
+ 958 008d 00       		.byte	0
+ 959 008e 00       		.byte	0
+ 960 008f 0C       		.uleb128 0xc
+ 961 0090 34       		.uleb128 0x34
+ 962 0091 00       		.byte	0
+ 963 0092 03       		.uleb128 0x3
+ 964 0093 0E       		.uleb128 0xe
+ 965 0094 3A       		.uleb128 0x3a
+ 966 0095 0B       		.uleb128 0xb
+ 967 0096 3B       		.uleb128 0x3b
+ 968 0097 0B       		.uleb128 0xb
+ 969 0098 49       		.uleb128 0x49
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccNjeSDj.s 			page 18
 
 
- 970 009e 00       		.byte	0
- 971 009f 00       		.byte	0
- 972 00a0 0D       		.uleb128 0xd
- 973 00a1 0F       		.uleb128 0xf
- 974 00a2 00       		.byte	0
- 975 00a3 0B       		.uleb128 0xb
- 976 00a4 0B       		.uleb128 0xb
- 977 00a5 49       		.uleb128 0x49
- 978 00a6 13       		.uleb128 0x13
- 979 00a7 00       		.byte	0
- 980 00a8 00       		.byte	0
- 981 00a9 0E       		.uleb128 0xe
- 982 00aa 26       		.uleb128 0x26
- 983 00ab 00       		.byte	0
- 984 00ac 49       		.uleb128 0x49
- 985 00ad 13       		.uleb128 0x13
- 986 00ae 00       		.byte	0
- 987 00af 00       		.byte	0
- 988 00b0 0F       		.uleb128 0xf
- 989 00b1 34       		.uleb128 0x34
- 990 00b2 00       		.byte	0
- 991 00b3 03       		.uleb128 0x3
- 992 00b4 0E       		.uleb128 0xe
- 993 00b5 3A       		.uleb128 0x3a
- 994 00b6 0B       		.uleb128 0xb
- 995 00b7 3B       		.uleb128 0x3b
- 996 00b8 05       		.uleb128 0x5
- 997 00b9 49       		.uleb128 0x49
- 998 00ba 13       		.uleb128 0x13
- 999 00bb 3F       		.uleb128 0x3f
- 1000 00bc 19       		.uleb128 0x19
- 1001 00bd 3C       		.uleb128 0x3c
- 1002 00be 19       		.uleb128 0x19
- 1003 00bf 00       		.byte	0
- 1004 00c0 00       		.byte	0
- 1005 00c1 10       		.uleb128 0x10
- 1006 00c2 35       		.uleb128 0x35
- 1007 00c3 00       		.byte	0
- 1008 00c4 49       		.uleb128 0x49
- 1009 00c5 13       		.uleb128 0x13
- 1010 00c6 00       		.byte	0
- 1011 00c7 00       		.byte	0
- 1012 00c8 11       		.uleb128 0x11
- 1013 00c9 01       		.uleb128 0x1
- 1014 00ca 01       		.byte	0x1
- 1015 00cb 49       		.uleb128 0x49
- 1016 00cc 13       		.uleb128 0x13
- 1017 00cd 01       		.uleb128 0x1
- 1018 00ce 13       		.uleb128 0x13
- 1019 00cf 00       		.byte	0
- 1020 00d0 00       		.byte	0
- 1021 00d1 12       		.uleb128 0x12
- 1022 00d2 21       		.uleb128 0x21
- 1023 00d3 00       		.byte	0
- 1024 00d4 49       		.uleb128 0x49
- 1025 00d5 13       		.uleb128 0x13
- 1026 00d6 2F       		.uleb128 0x2f
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccH0tQDx.s 			page 19
+ 970 0099 13       		.uleb128 0x13
+ 971 009a 3F       		.uleb128 0x3f
+ 972 009b 19       		.uleb128 0x19
+ 973 009c 3C       		.uleb128 0x3c
+ 974 009d 19       		.uleb128 0x19
+ 975 009e 00       		.byte	0
+ 976 009f 00       		.byte	0
+ 977 00a0 0D       		.uleb128 0xd
+ 978 00a1 0F       		.uleb128 0xf
+ 979 00a2 00       		.byte	0
+ 980 00a3 0B       		.uleb128 0xb
+ 981 00a4 0B       		.uleb128 0xb
+ 982 00a5 49       		.uleb128 0x49
+ 983 00a6 13       		.uleb128 0x13
+ 984 00a7 00       		.byte	0
+ 985 00a8 00       		.byte	0
+ 986 00a9 0E       		.uleb128 0xe
+ 987 00aa 26       		.uleb128 0x26
+ 988 00ab 00       		.byte	0
+ 989 00ac 49       		.uleb128 0x49
+ 990 00ad 13       		.uleb128 0x13
+ 991 00ae 00       		.byte	0
+ 992 00af 00       		.byte	0
+ 993 00b0 0F       		.uleb128 0xf
+ 994 00b1 34       		.uleb128 0x34
+ 995 00b2 00       		.byte	0
+ 996 00b3 03       		.uleb128 0x3
+ 997 00b4 0E       		.uleb128 0xe
+ 998 00b5 3A       		.uleb128 0x3a
+ 999 00b6 0B       		.uleb128 0xb
+ 1000 00b7 3B       		.uleb128 0x3b
+ 1001 00b8 05       		.uleb128 0x5
+ 1002 00b9 49       		.uleb128 0x49
+ 1003 00ba 13       		.uleb128 0x13
+ 1004 00bb 3F       		.uleb128 0x3f
+ 1005 00bc 19       		.uleb128 0x19
+ 1006 00bd 3C       		.uleb128 0x3c
+ 1007 00be 19       		.uleb128 0x19
+ 1008 00bf 00       		.byte	0
+ 1009 00c0 00       		.byte	0
+ 1010 00c1 10       		.uleb128 0x10
+ 1011 00c2 35       		.uleb128 0x35
+ 1012 00c3 00       		.byte	0
+ 1013 00c4 49       		.uleb128 0x49
+ 1014 00c5 13       		.uleb128 0x13
+ 1015 00c6 00       		.byte	0
+ 1016 00c7 00       		.byte	0
+ 1017 00c8 11       		.uleb128 0x11
+ 1018 00c9 01       		.uleb128 0x1
+ 1019 00ca 01       		.byte	0x1
+ 1020 00cb 49       		.uleb128 0x49
+ 1021 00cc 13       		.uleb128 0x13
+ 1022 00cd 01       		.uleb128 0x1
+ 1023 00ce 13       		.uleb128 0x13
+ 1024 00cf 00       		.byte	0
+ 1025 00d0 00       		.byte	0
+ 1026 00d1 12       		.uleb128 0x12
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccNjeSDj.s 			page 19
 
 
- 1027 00d7 0B       		.uleb128 0xb
- 1028 00d8 00       		.byte	0
- 1029 00d9 00       		.byte	0
- 1030 00da 00       		.byte	0
- 1031              		.section	.debug_aranges,"",%progbits
- 1032 0000 14000000 		.4byte	0x14
- 1033 0004 0200     		.2byte	0x2
- 1034 0006 00000000 		.4byte	.Ldebug_info0
- 1035 000a 04       		.byte	0x4
- 1036 000b 00       		.byte	0
- 1037 000c 0000     		.2byte	0
- 1038 000e 0000     		.2byte	0
- 1039 0010 00000000 		.4byte	0
- 1040 0014 00000000 		.4byte	0
- 1041              		.section	.debug_line,"",%progbits
- 1042              	.Ldebug_line0:
- 1043 0000 E7010000 		.section	.debug_str,"MS",%progbits,1
- 1043      0200E101 
- 1043      00000201 
- 1043      FB0E0D00 
- 1043      01010101 
- 1044              	.LASF57:
- 1045 0000 70726F74 		.ascii	"protBusMasterMask\000"
- 1045      4275734D 
- 1045      61737465 
- 1045      724D6173 
- 1045      6B00
- 1046              	.LASF67:
- 1047 0012 666C6173 		.ascii	"flashCtlMainWs3Freq\000"
- 1047      6843746C 
- 1047      4D61696E 
- 1047      57733346 
- 1047      72657100 
- 1048              	.LASF89:
- 1049 0026 6770696F 		.ascii	"gpioPrtCfgInOffset\000"
- 1049      50727443 
- 1049      6667496E 
- 1049      4F666673 
- 1049      657400
- 1050              	.LASF107:
- 1051 0039 6970634C 		.ascii	"ipcLockStatusOffset\000"
- 1051      6F636B53 
- 1051      74617475 
- 1051      734F6666 
- 1051      73657400 
- 1052              	.LASF33:
- 1053 004d 63727970 		.ascii	"cryptoVersion\000"
- 1053      746F5665 
- 1053      7273696F 
- 1053      6E00
- 1054              	.LASF51:
- 1055 005b 70657269 		.ascii	"periClockNr\000"
- 1055      436C6F63 
- 1055      6B4E7200 
- 1056              	.LASF29:
- 1057 0067 70617373 		.ascii	"passBase\000"
- 1057      42617365 
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccH0tQDx.s 			page 20
+ 1027 00d2 21       		.uleb128 0x21
+ 1028 00d3 00       		.byte	0
+ 1029 00d4 49       		.uleb128 0x49
+ 1030 00d5 13       		.uleb128 0x13
+ 1031 00d6 2F       		.uleb128 0x2f
+ 1032 00d7 0B       		.uleb128 0xb
+ 1033 00d8 00       		.byte	0
+ 1034 00d9 00       		.byte	0
+ 1035 00da 00       		.byte	0
+ 1036              		.section	.debug_aranges,"",%progbits
+ 1037 0000 14000000 		.4byte	0x14
+ 1038 0004 0200     		.2byte	0x2
+ 1039 0006 00000000 		.4byte	.Ldebug_info0
+ 1040 000a 04       		.byte	0x4
+ 1041 000b 00       		.byte	0
+ 1042 000c 0000     		.2byte	0
+ 1043 000e 0000     		.2byte	0
+ 1044 0010 00000000 		.4byte	0
+ 1045 0014 00000000 		.4byte	0
+ 1046              		.section	.debug_line,"",%progbits
+ 1047              	.Ldebug_line0:
+ 1048 0000 E7010000 		.section	.debug_str,"MS",%progbits,1
+ 1048      0200E101 
+ 1048      00000201 
+ 1048      FB0E0D00 
+ 1048      01010101 
+ 1049              	.LASF57:
+ 1050 0000 70726F74 		.ascii	"protBusMasterMask\000"
+ 1050      4275734D 
+ 1050      61737465 
+ 1050      724D6173 
+ 1050      6B00
+ 1051              	.LASF67:
+ 1052 0012 666C6173 		.ascii	"flashCtlMainWs3Freq\000"
+ 1052      6843746C 
+ 1052      4D61696E 
+ 1052      57733346 
+ 1052      72657100 
+ 1053              	.LASF89:
+ 1054 0026 6770696F 		.ascii	"gpioPrtCfgInOffset\000"
+ 1054      50727443 
+ 1054      6667496E 
+ 1054      4F666673 
+ 1054      657400
+ 1055              	.LASF107:
+ 1056 0039 6970634C 		.ascii	"ipcLockStatusOffset\000"
+ 1056      6F636B53 
+ 1056      74617475 
+ 1056      734F6666 
+ 1056      73657400 
+ 1057              	.LASF33:
+ 1058 004d 63727970 		.ascii	"cryptoVersion\000"
+ 1058      746F5665 
+ 1058      7273696F 
+ 1058      6E00
+ 1059              	.LASF51:
+ 1060 005b 70657269 		.ascii	"periClockNr\000"
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccNjeSDj.s 			page 20
 
 
- 1057      00
- 1058              	.LASF42:
- 1059 0070 63707573 		.ascii	"cpussIpcIrqNr\000"
- 1059      73497063 
- 1059      4972714E 
- 1059      7200
- 1060              	.LASF5:
- 1061 007e 5F5F7569 		.ascii	"__uint8_t\000"
- 1061      6E74385F 
- 1061      7400
- 1062              	.LASF86:
- 1063 0088 70657269 		.ascii	"periDiv24_5CtlOffset\000"
- 1063      44697632 
- 1063      345F3543 
- 1063      746C4F66 
- 1063      66736574 
- 1064              	.LASF113:
- 1065 009d 63795F73 		.ascii	"cy_stc_ble_conn_handle_t\000"
- 1065      74635F62 
- 1065      6C655F63 
- 1065      6F6E6E5F 
- 1065      68616E64 
- 1066              	.LASF22:
- 1067 00b6 63707573 		.ascii	"cpussBase\000"
- 1067      73426173 
- 1067      6500
- 1068              	.LASF71:
- 1069 00c0 64774368 		.ascii	"dwChCtlPrioPos\000"
- 1069      43746C50 
- 1069      72696F50 
- 1069      6F7300
- 1070              	.LASF14:
- 1071 00cf 6C6F6E67 		.ascii	"long long unsigned int\000"
- 1071      206C6F6E 
- 1071      6720756E 
- 1071      7369676E 
- 1071      65642069 
- 1072              	.LASF75:
- 1073 00e6 70657269 		.ascii	"periTrCmdOffset\000"
- 1073      5472436D 
- 1073      644F6666 
- 1073      73657400 
- 1074              	.LASF99:
- 1075 00f6 63707573 		.ascii	"cpussSysTickCtlOffset\000"
- 1075      73537973 
- 1075      5469636B 
- 1075      43746C4F 
- 1075      66667365 
- 1076              	.LASF130:
- 1077 010c 49544D5F 		.ascii	"ITM_RxBuffer\000"
- 1077      52784275 
- 1077      66666572 
- 1077      00
- 1078              	.LASF60:
- 1079 0119 666C6173 		.ascii	"flashPipeRequired\000"
- 1079      68506970 
- 1079      65526571 
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccH0tQDx.s 			page 21
+ 1060      436C6F63 
+ 1060      6B4E7200 
+ 1061              	.LASF29:
+ 1062 0067 70617373 		.ascii	"passBase\000"
+ 1062      42617365 
+ 1062      00
+ 1063              	.LASF42:
+ 1064 0070 63707573 		.ascii	"cpussIpcIrqNr\000"
+ 1064      73497063 
+ 1064      4972714E 
+ 1064      7200
+ 1065              	.LASF5:
+ 1066 007e 5F5F7569 		.ascii	"__uint8_t\000"
+ 1066      6E74385F 
+ 1066      7400
+ 1067              	.LASF86:
+ 1068 0088 70657269 		.ascii	"periDiv24_5CtlOffset\000"
+ 1068      44697632 
+ 1068      345F3543 
+ 1068      746C4F66 
+ 1068      66736574 
+ 1069              	.LASF113:
+ 1070 009d 63795F73 		.ascii	"cy_stc_ble_conn_handle_t\000"
+ 1070      74635F62 
+ 1070      6C655F63 
+ 1070      6F6E6E5F 
+ 1070      68616E64 
+ 1071              	.LASF22:
+ 1072 00b6 63707573 		.ascii	"cpussBase\000"
+ 1072      73426173 
+ 1072      6500
+ 1073              	.LASF71:
+ 1074 00c0 64774368 		.ascii	"dwChCtlPrioPos\000"
+ 1074      43746C50 
+ 1074      72696F50 
+ 1074      6F7300
+ 1075              	.LASF14:
+ 1076 00cf 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1076      206C6F6E 
+ 1076      6720756E 
+ 1076      7369676E 
+ 1076      65642069 
+ 1077              	.LASF75:
+ 1078 00e6 70657269 		.ascii	"periTrCmdOffset\000"
+ 1078      5472436D 
+ 1078      644F6666 
+ 1078      73657400 
+ 1079              	.LASF99:
+ 1080 00f6 63707573 		.ascii	"cpussSysTickCtlOffset\000"
+ 1080      73537973 
+ 1080      5469636B 
+ 1080      43746C4F 
+ 1080      66667365 
+ 1081              	.LASF130:
+ 1082 010c 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 1082      52784275 
+ 1082      66666572 
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccNjeSDj.s 			page 21
 
 
- 1079      75697265 
- 1079      6400
- 1080              	.LASF64:
- 1081 012b 666C6173 		.ascii	"flashCtlMainWs0Freq\000"
- 1081      6843746C 
- 1081      4D61696E 
- 1081      57733046 
- 1081      72657100 
- 1082              	.LASF18:
- 1083 013f 696E7431 		.ascii	"int16_t\000"
- 1083      365F7400 
- 1084              	.LASF1:
- 1085 0147 6C6F6E67 		.ascii	"long long int\000"
- 1085      206C6F6E 
- 1085      6720696E 
- 1085      7400
- 1086              	.LASF3:
- 1087 0155 7369676E 		.ascii	"signed char\000"
- 1087      65642063 
- 1087      68617200 
- 1088              	.LASF136:
- 1089 0161 463A5C47 		.ascii	"F:\\Git downloads\\PRJ4\\POPE\\POPEproject.cydsn\000"
- 1089      69742064 
- 1089      6F776E6C 
- 1089      6F616473 
- 1089      5C50524A 
- 1090              	.LASF80:
- 1091 018e 70657269 		.ascii	"periDivCmdTypeSelPos\000"
- 1091      44697643 
- 1091      6D645479 
- 1091      70655365 
- 1091      6C506F73 
- 1092              	.LASF26:
- 1093 01a3 70726F74 		.ascii	"protBase\000"
- 1093      42617365 
- 1093      00
- 1094              	.LASF38:
- 1095 01ac 69706356 		.ascii	"ipcVersion\000"
- 1095      65727369 
- 1095      6F6E00
- 1096              	.LASF100:
- 1097 01b7 63707573 		.ascii	"cpussCm0NmiCtlOffset\000"
- 1097      73436D30 
- 1097      4E6D6943 
- 1097      746C4F66 
- 1097      66736574 
- 1098              	.LASF117:
- 1099 01cc 43595F42 		.ascii	"CY_BLE_ADV_STATE_STOP_INITIATED\000"
- 1099      4C455F41 
- 1099      44565F53 
- 1099      54415445 
- 1099      5F53544F 
- 1100              	.LASF27:
- 1101 01ec 6873696F 		.ascii	"hsiomBase\000"
- 1101      6D426173 
- 1101      6500
- 1102              	.LASF135:
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccH0tQDx.s 			page 22
+ 1082      00
+ 1083              	.LASF60:
+ 1084 0119 666C6173 		.ascii	"flashPipeRequired\000"
+ 1084      68506970 
+ 1084      65526571 
+ 1084      75697265 
+ 1084      6400
+ 1085              	.LASF64:
+ 1086 012b 666C6173 		.ascii	"flashCtlMainWs0Freq\000"
+ 1086      6843746C 
+ 1086      4D61696E 
+ 1086      57733046 
+ 1086      72657100 
+ 1087              	.LASF18:
+ 1088 013f 696E7431 		.ascii	"int16_t\000"
+ 1088      365F7400 
+ 1089              	.LASF1:
+ 1090 0147 6C6F6E67 		.ascii	"long long int\000"
+ 1090      206C6F6E 
+ 1090      6720696E 
+ 1090      7400
+ 1091              	.LASF3:
+ 1092 0155 7369676E 		.ascii	"signed char\000"
+ 1092      65642063 
+ 1092      68617200 
+ 1093              	.LASF137:
+ 1094 0161 463A5C47 		.ascii	"F:\\Git downloads\\PRJ4\\POPE\\POPEproject.cydsn\000"
+ 1094      69742064 
+ 1094      6F776E6C 
+ 1094      6F616473 
+ 1094      5C50524A 
+ 1095              	.LASF80:
+ 1096 018e 70657269 		.ascii	"periDivCmdTypeSelPos\000"
+ 1096      44697643 
+ 1096      6D645479 
+ 1096      70655365 
+ 1096      6C506F73 
+ 1097              	.LASF26:
+ 1098 01a3 70726F74 		.ascii	"protBase\000"
+ 1098      42617365 
+ 1098      00
+ 1099              	.LASF38:
+ 1100 01ac 69706356 		.ascii	"ipcVersion\000"
+ 1100      65727369 
+ 1100      6F6E00
+ 1101              	.LASF100:
+ 1102 01b7 63707573 		.ascii	"cpussCm0NmiCtlOffset\000"
+ 1102      73436D30 
+ 1102      4E6D6943 
+ 1102      746C4F66 
+ 1102      66736574 
+ 1103              	.LASF117:
+ 1104 01cc 43595F42 		.ascii	"CY_BLE_ADV_STATE_STOP_INITIATED\000"
+ 1104      4C455F41 
+ 1104      44565F53 
+ 1104      54415445 
+ 1104      5F53544F 
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccNjeSDj.s 			page 22
 
 
- 1103 01f6 47656E65 		.ascii	"Generated_Source\\PSoC6\\pdl\\middleware\\ble\\cy_b"
- 1103      72617465 
- 1103      645F536F 
- 1103      75726365 
- 1103      5C50536F 
- 1104 0224 6C655F6C 		.ascii	"le_lls.c\000"
- 1104      6C732E63 
- 1104      00
- 1105              	.LASF93:
- 1106 022d 63707573 		.ascii	"cpussCm4ClockCtlOffset\000"
- 1106      73436D34 
- 1106      436C6F63 
- 1106      6B43746C 
- 1106      4F666673 
- 1107              	.LASF58:
- 1108 0244 63727970 		.ascii	"cryptoMemSize\000"
- 1108      746F4D65 
- 1108      6D53697A 
- 1108      6500
- 1109              	.LASF118:
- 1110 0252 63795F65 		.ascii	"cy_en_ble_adv_state_t\000"
- 1110      6E5F626C 
- 1110      655F6164 
- 1110      765F7374 
- 1110      6174655F 
- 1111              	.LASF24:
- 1112 0268 70657269 		.ascii	"periBase\000"
- 1112      42617365 
- 1112      00
- 1113              	.LASF56:
- 1114 0271 73797350 		.ascii	"sysPmSimoPresent\000"
- 1114      6D53696D 
- 1114      6F507265 
- 1114      73656E74 
- 1114      00
- 1115              	.LASF46:
- 1116 0282 63707573 		.ascii	"cpussFmIrq\000"
- 1116      73466D49 
- 1116      727100
- 1117              	.LASF110:
- 1118 028d 646F7562 		.ascii	"double\000"
- 1118      6C6500
- 1119              	.LASF85:
- 1120 0294 70657269 		.ascii	"periDiv16_5CtlOffset\000"
- 1120      44697631 
- 1120      365F3543 
- 1120      746C4F66 
- 1120      66736574 
- 1121              	.LASF49:
- 1122 02a9 73727373 		.ascii	"srssNumPll\000"
- 1122      4E756D50 
- 1122      6C6C00
- 1123              	.LASF83:
- 1124 02b4 70657269 		.ascii	"periDiv8CtlOffset\000"
- 1124      44697638 
- 1124      43746C4F 
- 1124      66667365 
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccH0tQDx.s 			page 23
+ 1105              	.LASF27:
+ 1106 01ec 6873696F 		.ascii	"hsiomBase\000"
+ 1106      6D426173 
+ 1106      6500
+ 1107              	.LASF136:
+ 1108 01f6 47656E65 		.ascii	"Generated_Source\\PSoC6\\pdl\\middleware\\ble\\cy_b"
+ 1108      72617465 
+ 1108      645F536F 
+ 1108      75726365 
+ 1108      5C50536F 
+ 1109 0224 6C655F6C 		.ascii	"le_lls.c\000"
+ 1109      6C732E63 
+ 1109      00
+ 1110              	.LASF93:
+ 1111 022d 63707573 		.ascii	"cpussCm4ClockCtlOffset\000"
+ 1111      73436D34 
+ 1111      436C6F63 
+ 1111      6B43746C 
+ 1111      4F666673 
+ 1112              	.LASF58:
+ 1113 0244 63727970 		.ascii	"cryptoMemSize\000"
+ 1113      746F4D65 
+ 1113      6D53697A 
+ 1113      6500
+ 1114              	.LASF118:
+ 1115 0252 63795F65 		.ascii	"cy_en_ble_adv_state_t\000"
+ 1115      6E5F626C 
+ 1115      655F6164 
+ 1115      765F7374 
+ 1115      6174655F 
+ 1116              	.LASF24:
+ 1117 0268 70657269 		.ascii	"periBase\000"
+ 1117      42617365 
+ 1117      00
+ 1118              	.LASF56:
+ 1119 0271 73797350 		.ascii	"sysPmSimoPresent\000"
+ 1119      6D53696D 
+ 1119      6F507265 
+ 1119      73656E74 
+ 1119      00
+ 1120              	.LASF46:
+ 1121 0282 63707573 		.ascii	"cpussFmIrq\000"
+ 1121      73466D49 
+ 1121      727100
+ 1122              	.LASF110:
+ 1123 028d 646F7562 		.ascii	"double\000"
+ 1123      6C6500
+ 1124              	.LASF85:
+ 1125 0294 70657269 		.ascii	"periDiv16_5CtlOffset\000"
+ 1125      44697631 
+ 1125      365F3543 
+ 1125      746C4F66 
+ 1125      66736574 
+ 1126              	.LASF49:
+ 1127 02a9 73727373 		.ascii	"srssNumPll\000"
+ 1127      4E756D50 
+ 1127      6C6C00
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccNjeSDj.s 			page 23
 
 
- 1124      7400
- 1125              	.LASF123:
- 1126 02c6 43595F42 		.ascii	"CY_BLE_CONN_STATE_CLIENT_INCL_DISCOVERING\000"
- 1126      4C455F43 
- 1126      4F4E4E5F 
- 1126      53544154 
- 1126      455F434C 
- 1127              	.LASF90:
- 1128 02f0 6770696F 		.ascii	"gpioPrtCfgOutOffset\000"
- 1128      50727443 
- 1128      66674F75 
- 1128      744F6666 
- 1128      73657400 
- 1129              	.LASF23:
- 1130 0304 666C6173 		.ascii	"flashcBase\000"
- 1130      68634261 
- 1130      736500
- 1131              	.LASF12:
- 1132 030f 5F5F7569 		.ascii	"__uint32_t\000"
- 1132      6E743332 
- 1132      5F7400
- 1133              	.LASF53:
- 1134 031a 70617373 		.ascii	"passSarChannels\000"
- 1134      53617243 
- 1134      68616E6E 
- 1134      656C7300 
- 1135              	.LASF6:
- 1136 032a 5F5F696E 		.ascii	"__int16_t\000"
- 1136      7431365F 
- 1136      7400
- 1137              	.LASF96:
- 1138 0334 63707573 		.ascii	"cpussCm4PwrCtlOffset\000"
- 1138      73436D34 
- 1138      50777243 
- 1138      746C4F66 
- 1138      66736574 
- 1139              	.LASF122:
- 1140 0349 43595F42 		.ascii	"CY_BLE_CONN_STATE_CLIENT_SRVC_DISCOVERING\000"
- 1140      4C455F43 
- 1140      4F4E4E5F 
- 1140      53544154 
- 1140      455F434C 
- 1141              	.LASF91:
- 1142 0373 6770696F 		.ascii	"gpioPrtCfgSioOffset\000"
- 1142      50727443 
- 1142      66675369 
- 1142      6F4F6666 
- 1142      73657400 
- 1143              	.LASF43:
- 1144 0387 63707573 		.ascii	"cpussDwChNr\000"
- 1144      73447743 
- 1144      684E7200 
- 1145              	.LASF0:
- 1146 0393 756E7369 		.ascii	"unsigned int\000"
- 1146      676E6564 
- 1146      20696E74 
- 1146      00
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccH0tQDx.s 			page 24
+ 1128              	.LASF83:
+ 1129 02b4 70657269 		.ascii	"periDiv8CtlOffset\000"
+ 1129      44697638 
+ 1129      43746C4F 
+ 1129      66667365 
+ 1129      7400
+ 1130              	.LASF123:
+ 1131 02c6 43595F42 		.ascii	"CY_BLE_CONN_STATE_CLIENT_INCL_DISCOVERING\000"
+ 1131      4C455F43 
+ 1131      4F4E4E5F 
+ 1131      53544154 
+ 1131      455F434C 
+ 1132              	.LASF90:
+ 1133 02f0 6770696F 		.ascii	"gpioPrtCfgOutOffset\000"
+ 1133      50727443 
+ 1133      66674F75 
+ 1133      744F6666 
+ 1133      73657400 
+ 1134              	.LASF23:
+ 1135 0304 666C6173 		.ascii	"flashcBase\000"
+ 1135      68634261 
+ 1135      736500
+ 1136              	.LASF12:
+ 1137 030f 5F5F7569 		.ascii	"__uint32_t\000"
+ 1137      6E743332 
+ 1137      5F7400
+ 1138              	.LASF53:
+ 1139 031a 70617373 		.ascii	"passSarChannels\000"
+ 1139      53617243 
+ 1139      68616E6E 
+ 1139      656C7300 
+ 1140              	.LASF6:
+ 1141 032a 5F5F696E 		.ascii	"__int16_t\000"
+ 1141      7431365F 
+ 1141      7400
+ 1142              	.LASF96:
+ 1143 0334 63707573 		.ascii	"cpussCm4PwrCtlOffset\000"
+ 1143      73436D34 
+ 1143      50777243 
+ 1143      746C4F66 
+ 1143      66736574 
+ 1144              	.LASF122:
+ 1145 0349 43595F42 		.ascii	"CY_BLE_CONN_STATE_CLIENT_SRVC_DISCOVERING\000"
+ 1145      4C455F43 
+ 1145      4F4E4E5F 
+ 1145      53544154 
+ 1145      455F434C 
+ 1146              	.LASF91:
+ 1147 0373 6770696F 		.ascii	"gpioPrtCfgSioOffset\000"
+ 1147      50727443 
+ 1147      66675369 
+ 1147      6F4F6666 
+ 1147      73657400 
+ 1148              	.LASF43:
+ 1149 0387 63707573 		.ascii	"cpussDwChNr\000"
+ 1149      73447743 
+ 1149      684E7200 
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccNjeSDj.s 			page 24
 
 
- 1147              	.LASF121:
- 1148 03a0 43595F42 		.ascii	"CY_BLE_CONN_STATE_CONNECTED\000"
- 1148      4C455F43 
- 1148      4F4E4E5F 
- 1148      53544154 
- 1148      455F434F 
- 1149              	.LASF125:
- 1150 03bc 43595F42 		.ascii	"CY_BLE_CONN_STATE_CLIENT_DESCR_DISCOVERING\000"
- 1150      4C455F43 
- 1150      4F4E4E5F 
- 1150      53544154 
- 1150      455F434C 
- 1151              	.LASF19:
- 1152 03e7 75696E74 		.ascii	"uint16_t\000"
- 1152      31365F74 
- 1152      00
- 1153              	.LASF76:
- 1154 03f0 70657269 		.ascii	"periTrCmdGrSelMsk\000"
- 1154      5472436D 
- 1154      64477253 
- 1154      656C4D73 
- 1154      6B00
- 1155              	.LASF13:
- 1156 0402 6C6F6E67 		.ascii	"long unsigned int\000"
- 1156      20756E73 
- 1156      69676E65 
- 1156      6420696E 
- 1156      7400
- 1157              	.LASF41:
- 1158 0414 63707573 		.ascii	"cpussIpcNr\000"
- 1158      73497063 
- 1158      4E7200
- 1159              	.LASF28:
- 1160 041f 6770696F 		.ascii	"gpioBase\000"
- 1160      42617365 
- 1160      00
- 1161              	.LASF66:
- 1162 0428 666C6173 		.ascii	"flashCtlMainWs2Freq\000"
- 1162      6843746C 
- 1162      4D61696E 
- 1162      57733246 
- 1162      72657100 
- 1163              	.LASF77:
- 1164 043c 70657269 		.ascii	"periTrGrOffset\000"
- 1164      54724772 
- 1164      4F666673 
- 1164      657400
- 1165              	.LASF104:
- 1166 044b 63707573 		.ascii	"cpussRam1Ctl0\000"
- 1166      7352616D 
- 1166      3143746C 
- 1166      3000
- 1167              	.LASF133:
- 1168 0459 63795F62 		.ascii	"cy_ble_connState\000"
- 1168      6C655F63 
- 1168      6F6E6E53 
- 1168      74617465 
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccH0tQDx.s 			page 25
+ 1150              	.LASF0:
+ 1151 0393 756E7369 		.ascii	"unsigned int\000"
+ 1151      676E6564 
+ 1151      20696E74 
+ 1151      00
+ 1152              	.LASF121:
+ 1153 03a0 43595F42 		.ascii	"CY_BLE_CONN_STATE_CONNECTED\000"
+ 1153      4C455F43 
+ 1153      4F4E4E5F 
+ 1153      53544154 
+ 1153      455F434F 
+ 1154              	.LASF125:
+ 1155 03bc 43595F42 		.ascii	"CY_BLE_CONN_STATE_CLIENT_DESCR_DISCOVERING\000"
+ 1155      4C455F43 
+ 1155      4F4E4E5F 
+ 1155      53544154 
+ 1155      455F434C 
+ 1156              	.LASF19:
+ 1157 03e7 75696E74 		.ascii	"uint16_t\000"
+ 1157      31365F74 
+ 1157      00
+ 1158              	.LASF76:
+ 1159 03f0 70657269 		.ascii	"periTrCmdGrSelMsk\000"
+ 1159      5472436D 
+ 1159      64477253 
+ 1159      656C4D73 
+ 1159      6B00
+ 1160              	.LASF13:
+ 1161 0402 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1161      20756E73 
+ 1161      69676E65 
+ 1161      6420696E 
+ 1161      7400
+ 1162              	.LASF41:
+ 1163 0414 63707573 		.ascii	"cpussIpcNr\000"
+ 1163      73497063 
+ 1163      4E7200
+ 1164              	.LASF28:
+ 1165 041f 6770696F 		.ascii	"gpioBase\000"
+ 1165      42617365 
+ 1165      00
+ 1166              	.LASF66:
+ 1167 0428 666C6173 		.ascii	"flashCtlMainWs2Freq\000"
+ 1167      6843746C 
+ 1167      4D61696E 
+ 1167      57733246 
+ 1167      72657100 
+ 1168              	.LASF77:
+ 1169 043c 70657269 		.ascii	"periTrGrOffset\000"
+ 1169      54724772 
+ 1169      4F666673 
+ 1169      657400
+ 1170              	.LASF104:
+ 1171 044b 63707573 		.ascii	"cpussRam1Ctl0\000"
+ 1171      7352616D 
+ 1171      3143746C 
+ 1171      3000
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccNjeSDj.s 			page 25
 
 
- 1168      00
- 1169              	.LASF78:
- 1170 046a 70657269 		.ascii	"periTrGrSize\000"
- 1170      54724772 
- 1170      53697A65 
- 1170      00
- 1171              	.LASF36:
- 1172 0477 6770696F 		.ascii	"gpioVersion\000"
- 1172      56657273 
- 1172      696F6E00 
- 1173              	.LASF108:
- 1174 0483 63795F73 		.ascii	"cy_stc_device_t\000"
- 1174      74635F64 
- 1174      65766963 
- 1174      655F7400 
- 1175              	.LASF54:
- 1176 0493 65704D6F 		.ascii	"epMonitorNr\000"
- 1176      6E69746F 
- 1176      724E7200 
- 1177              	.LASF101:
- 1178 049f 63707573 		.ascii	"cpussCm4NmiCtlOffset\000"
- 1178      73436D34 
- 1178      4E6D6943 
- 1178      746C4F66 
- 1178      66736574 
- 1179              	.LASF97:
- 1180 04b4 63707573 		.ascii	"cpussTrimRamCtlOffset\000"
- 1180      73547269 
- 1180      6D52616D 
- 1180      43746C4F 
- 1180      66667365 
- 1181              	.LASF92:
- 1182 04ca 63707573 		.ascii	"cpussCm0ClockCtlOffset\000"
- 1182      73436D30 
- 1182      436C6F63 
- 1182      6B43746C 
- 1182      4F666673 
- 1183              	.LASF112:
- 1184 04e1 61747449 		.ascii	"attId\000"
- 1184      6400
- 1185              	.LASF32:
- 1186 04e7 63707573 		.ascii	"cpussVersion\000"
- 1186      73566572 
- 1186      73696F6E 
- 1186      00
- 1187              	.LASF39:
- 1188 04f4 70657269 		.ascii	"periVersion\000"
- 1188      56657273 
- 1188      696F6E00 
- 1189              	.LASF95:
- 1190 0500 63707573 		.ascii	"cpussCm0StatusOffset\000"
- 1190      73436D30 
- 1190      53746174 
- 1190      75734F66 
- 1190      66736574 
- 1191              	.LASF15:
- 1192 0515 73697A65 		.ascii	"sizetype\000"
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccH0tQDx.s 			page 26
+ 1172              	.LASF133:
+ 1173 0459 63795F62 		.ascii	"cy_ble_connState\000"
+ 1173      6C655F63 
+ 1173      6F6E6E53 
+ 1173      74617465 
+ 1173      00
+ 1174              	.LASF78:
+ 1175 046a 70657269 		.ascii	"periTrGrSize\000"
+ 1175      54724772 
+ 1175      53697A65 
+ 1175      00
+ 1176              	.LASF36:
+ 1177 0477 6770696F 		.ascii	"gpioVersion\000"
+ 1177      56657273 
+ 1177      696F6E00 
+ 1178              	.LASF108:
+ 1179 0483 63795F73 		.ascii	"cy_stc_device_t\000"
+ 1179      74635F64 
+ 1179      65766963 
+ 1179      655F7400 
+ 1180              	.LASF54:
+ 1181 0493 65704D6F 		.ascii	"epMonitorNr\000"
+ 1181      6E69746F 
+ 1181      724E7200 
+ 1182              	.LASF101:
+ 1183 049f 63707573 		.ascii	"cpussCm4NmiCtlOffset\000"
+ 1183      73436D34 
+ 1183      4E6D6943 
+ 1183      746C4F66 
+ 1183      66736574 
+ 1184              	.LASF97:
+ 1185 04b4 63707573 		.ascii	"cpussTrimRamCtlOffset\000"
+ 1185      73547269 
+ 1185      6D52616D 
+ 1185      43746C4F 
+ 1185      66667365 
+ 1186              	.LASF92:
+ 1187 04ca 63707573 		.ascii	"cpussCm0ClockCtlOffset\000"
+ 1187      73436D30 
+ 1187      436C6F63 
+ 1187      6B43746C 
+ 1187      4F666673 
+ 1188              	.LASF112:
+ 1189 04e1 61747449 		.ascii	"attId\000"
+ 1189      6400
+ 1190              	.LASF32:
+ 1191 04e7 63707573 		.ascii	"cpussVersion\000"
+ 1191      73566572 
+ 1191      73696F6E 
+ 1191      00
+ 1192              	.LASF39:
+ 1193 04f4 70657269 		.ascii	"periVersion\000"
+ 1193      56657273 
+ 1193      696F6E00 
+ 1194              	.LASF95:
+ 1195 0500 63707573 		.ascii	"cpussCm0StatusOffset\000"
+ 1195      73436D30 
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccNjeSDj.s 			page 26
 
 
- 1192      74797065 
- 1192      00
- 1193              	.LASF69:
- 1194 051e 64774368 		.ascii	"dwChOffset\000"
- 1194      4F666673 
- 1194      657400
- 1195              	.LASF44:
- 1196 0529 63707573 		.ascii	"cpussFlashPaSize\000"
- 1196      73466C61 
- 1196      73685061 
- 1196      53697A65 
- 1196      00
- 1197              	.LASF115:
- 1198 053a 43595F42 		.ascii	"CY_BLE_ADV_STATE_ADV_INITIATED\000"
- 1198      4C455F41 
- 1198      44565F53 
- 1198      54415445 
- 1198      5F414456 
- 1199              	.LASF82:
- 1200 0559 70657269 		.ascii	"periDivCmdPaTypeSelPos\000"
- 1200      44697643 
- 1200      6D645061 
- 1200      54797065 
- 1200      53656C50 
- 1201              	.LASF105:
- 1202 0570 63707573 		.ascii	"cpussRam2Ctl0\000"
- 1202      7352616D 
- 1202      3243746C 
- 1202      3000
- 1203              	.LASF73:
- 1204 057e 64775374 		.ascii	"dwStatusChIdxPos\000"
- 1204      61747573 
- 1204      43684964 
- 1204      78506F73 
- 1204      00
- 1205              	.LASF55:
- 1206 058f 75646250 		.ascii	"udbPresent\000"
- 1206      72657365 
- 1206      6E7400
- 1207              	.LASF127:
- 1208 059a 63795F65 		.ascii	"cy_en_ble_conn_state_t\000"
- 1208      6E5F626C 
- 1208      655F636F 
- 1208      6E6E5F73 
- 1208      74617465 
- 1209              	.LASF35:
- 1210 05b1 666C6173 		.ascii	"flashcVersion\000"
- 1210      68635665 
- 1210      7273696F 
- 1210      6E00
- 1211              	.LASF31:
- 1212 05bf 63727970 		.ascii	"cryptoBase\000"
- 1212      746F4261 
- 1212      736500
- 1213              	.LASF52:
- 1214 05ca 736D6966 		.ascii	"smifDeviceNr\000"
- 1214      44657669 
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccH0tQDx.s 			page 27
+ 1195      53746174 
+ 1195      75734F66 
+ 1195      66736574 
+ 1196              	.LASF15:
+ 1197 0515 73697A65 		.ascii	"sizetype\000"
+ 1197      74797065 
+ 1197      00
+ 1198              	.LASF69:
+ 1199 051e 64774368 		.ascii	"dwChOffset\000"
+ 1199      4F666673 
+ 1199      657400
+ 1200              	.LASF44:
+ 1201 0529 63707573 		.ascii	"cpussFlashPaSize\000"
+ 1201      73466C61 
+ 1201      73685061 
+ 1201      53697A65 
+ 1201      00
+ 1202              	.LASF115:
+ 1203 053a 43595F42 		.ascii	"CY_BLE_ADV_STATE_ADV_INITIATED\000"
+ 1203      4C455F41 
+ 1203      44565F53 
+ 1203      54415445 
+ 1203      5F414456 
+ 1204              	.LASF82:
+ 1205 0559 70657269 		.ascii	"periDivCmdPaTypeSelPos\000"
+ 1205      44697643 
+ 1205      6D645061 
+ 1205      54797065 
+ 1205      53656C50 
+ 1206              	.LASF105:
+ 1207 0570 63707573 		.ascii	"cpussRam2Ctl0\000"
+ 1207      7352616D 
+ 1207      3243746C 
+ 1207      3000
+ 1208              	.LASF73:
+ 1209 057e 64775374 		.ascii	"dwStatusChIdxPos\000"
+ 1209      61747573 
+ 1209      43684964 
+ 1209      78506F73 
+ 1209      00
+ 1210              	.LASF55:
+ 1211 058f 75646250 		.ascii	"udbPresent\000"
+ 1211      72657365 
+ 1211      6E7400
+ 1212              	.LASF127:
+ 1213 059a 63795F65 		.ascii	"cy_en_ble_conn_state_t\000"
+ 1213      6E5F626C 
+ 1213      655F636F 
+ 1213      6E6E5F73 
+ 1213      74617465 
+ 1214              	.LASF35:
+ 1215 05b1 666C6173 		.ascii	"flashcVersion\000"
+ 1215      68635665 
+ 1215      7273696F 
+ 1215      6E00
+ 1216              	.LASF31:
+ 1217 05bf 63727970 		.ascii	"cryptoBase\000"
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccNjeSDj.s 			page 27
 
 
- 1214      63654E72 
- 1214      00
- 1215              	.LASF134:
- 1216 05d7 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 1216      43313120 
- 1216      352E342E 
- 1216      31203230 
- 1216      31363036 
- 1217 060a 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m4 -mfloat-abi=s"
- 1217      20726576 
- 1217      6973696F 
- 1217      6E203233 
- 1217      37373135 
- 1218 063d 6F667466 		.ascii	"oftfp -mfpu=fpv4-sp-d16 -mthumb -g -Og -ffunction-s"
- 1218      70202D6D 
- 1218      6670753D 
- 1218      66707634 
- 1218      2D73702D 
- 1219 0670 65637469 		.ascii	"ections -ffat-lto-objects\000"
- 1219      6F6E7320 
- 1219      2D666661 
- 1219      742D6C74 
- 1219      6F2D6F62 
- 1220              	.LASF61:
- 1221 068a 666C6173 		.ascii	"flashWriteDelay\000"
- 1221      68577269 
- 1221      74654465 
- 1221      6C617900 
- 1222              	.LASF126:
- 1223 069a 43595F42 		.ascii	"CY_BLE_CONN_STATE_CLIENT_DISCOVERED\000"
- 1223      4C455F43 
- 1223      4F4E4E5F 
- 1223      53544154 
- 1223      455F434C 
- 1224              	.LASF109:
- 1225 06be 666C6F61 		.ascii	"float\000"
- 1225      7400
- 1226              	.LASF74:
- 1227 06c4 64775374 		.ascii	"dwStatusChIdxMsk\000"
- 1227      61747573 
- 1227      43684964 
- 1227      784D736B 
- 1227      00
- 1228              	.LASF129:
- 1229 06d5 63795F64 		.ascii	"cy_device\000"
- 1229      65766963 
- 1229      6500
- 1230              	.LASF102:
- 1231 06df 63707573 		.ascii	"cpussRomCtl\000"
- 1231      73526F6D 
- 1231      43746C00 
- 1232              	.LASF72:
- 1233 06eb 64774368 		.ascii	"dwChCtlPreemptablePos\000"
- 1233      43746C50 
- 1233      7265656D 
- 1233      70746162 
- 1233      6C65506F 
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccH0tQDx.s 			page 28
+ 1217      746F4261 
+ 1217      736500
+ 1218              	.LASF52:
+ 1219 05ca 736D6966 		.ascii	"smifDeviceNr\000"
+ 1219      44657669 
+ 1219      63654E72 
+ 1219      00
+ 1220              	.LASF135:
+ 1221 05d7 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 1221      43313120 
+ 1221      352E342E 
+ 1221      31203230 
+ 1221      31363036 
+ 1222 060a 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m4 -mfloat-abi=s"
+ 1222      20726576 
+ 1222      6973696F 
+ 1222      6E203233 
+ 1222      37373135 
+ 1223 063d 6F667466 		.ascii	"oftfp -mfpu=fpv4-sp-d16 -mthumb -g -Og -ffunction-s"
+ 1223      70202D6D 
+ 1223      6670753D 
+ 1223      66707634 
+ 1223      2D73702D 
+ 1224 0670 65637469 		.ascii	"ections -ffat-lto-objects\000"
+ 1224      6F6E7320 
+ 1224      2D666661 
+ 1224      742D6C74 
+ 1224      6F2D6F62 
+ 1225              	.LASF61:
+ 1226 068a 666C6173 		.ascii	"flashWriteDelay\000"
+ 1226      68577269 
+ 1226      74654465 
+ 1226      6C617900 
+ 1227              	.LASF126:
+ 1228 069a 43595F42 		.ascii	"CY_BLE_CONN_STATE_CLIENT_DISCOVERED\000"
+ 1228      4C455F43 
+ 1228      4F4E4E5F 
+ 1228      53544154 
+ 1228      455F434C 
+ 1229              	.LASF109:
+ 1230 06be 666C6F61 		.ascii	"float\000"
+ 1230      7400
+ 1231              	.LASF74:
+ 1232 06c4 64775374 		.ascii	"dwStatusChIdxMsk\000"
+ 1232      61747573 
+ 1232      43684964 
+ 1232      784D736B 
+ 1232      00
+ 1233              	.LASF129:
+ 1234 06d5 63795F64 		.ascii	"cy_device\000"
+ 1234      65766963 
+ 1234      6500
+ 1235              	.LASF102:
+ 1236 06df 63707573 		.ascii	"cpussRomCtl\000"
+ 1236      73526F6D 
+ 1236      43746C00 
+ 1237              	.LASF72:
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccNjeSDj.s 			page 28
 
 
- 1234              	.LASF25:
- 1235 0701 75646242 		.ascii	"udbBase\000"
- 1235      61736500 
- 1236              	.LASF124:
- 1237 0709 43595F42 		.ascii	"CY_BLE_CONN_STATE_CLIENT_CHAR_DISCOVERING\000"
- 1237      4C455F43 
- 1237      4F4E4E5F 
- 1237      53544154 
- 1237      455F434C 
- 1238              	.LASF128:
- 1239 0733 5F426F6F 		.ascii	"_Bool\000"
- 1239      6C00
- 1240              	.LASF20:
- 1241 0739 696E7433 		.ascii	"int32_t\000"
- 1241      325F7400 
- 1242              	.LASF4:
- 1243 0741 756E7369 		.ascii	"unsigned char\000"
- 1243      676E6564 
- 1243      20636861 
- 1243      7200
- 1244              	.LASF68:
- 1245 074f 666C6173 		.ascii	"flashCtlMainWs4Freq\000"
- 1245      6843746C 
- 1245      4D61696E 
- 1245      57733446 
- 1245      72657100 
- 1246              	.LASF7:
- 1247 0763 73686F72 		.ascii	"short int\000"
- 1247      7420696E 
- 1247      7400
- 1248              	.LASF79:
- 1249 076d 70657269 		.ascii	"periDivCmdDivSelMsk\000"
- 1249      44697643 
- 1249      6D644469 
- 1249      7653656C 
- 1249      4D736B00 
- 1250              	.LASF50:
- 1251 0781 73727373 		.ascii	"srssNumHfroot\000"
- 1251      4E756D48 
- 1251      66726F6F 
- 1251      7400
- 1252              	.LASF63:
- 1253 078f 666C6173 		.ascii	"flashEraseDelay\000"
- 1253      68457261 
- 1253      73654465 
- 1253      6C617900 
- 1254              	.LASF21:
- 1255 079f 75696E74 		.ascii	"uint32_t\000"
- 1255      33325F74 
- 1255      00
- 1256              	.LASF2:
- 1257 07a8 6C6F6E67 		.ascii	"long double\000"
- 1257      20646F75 
- 1257      626C6500 
- 1258              	.LASF16:
- 1259 07b4 63686172 		.ascii	"char\000"
- 1259      00
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccH0tQDx.s 			page 29
+ 1238 06eb 64774368 		.ascii	"dwChCtlPreemptablePos\000"
+ 1238      43746C50 
+ 1238      7265656D 
+ 1238      70746162 
+ 1238      6C65506F 
+ 1239              	.LASF25:
+ 1240 0701 75646242 		.ascii	"udbBase\000"
+ 1240      61736500 
+ 1241              	.LASF124:
+ 1242 0709 43595F42 		.ascii	"CY_BLE_CONN_STATE_CLIENT_CHAR_DISCOVERING\000"
+ 1242      4C455F43 
+ 1242      4F4E4E5F 
+ 1242      53544154 
+ 1242      455F434C 
+ 1243              	.LASF128:
+ 1244 0733 5F426F6F 		.ascii	"_Bool\000"
+ 1244      6C00
+ 1245              	.LASF20:
+ 1246 0739 696E7433 		.ascii	"int32_t\000"
+ 1246      325F7400 
+ 1247              	.LASF4:
+ 1248 0741 756E7369 		.ascii	"unsigned char\000"
+ 1248      676E6564 
+ 1248      20636861 
+ 1248      7200
+ 1249              	.LASF68:
+ 1250 074f 666C6173 		.ascii	"flashCtlMainWs4Freq\000"
+ 1250      6843746C 
+ 1250      4D61696E 
+ 1250      57733446 
+ 1250      72657100 
+ 1251              	.LASF7:
+ 1252 0763 73686F72 		.ascii	"short int\000"
+ 1252      7420696E 
+ 1252      7400
+ 1253              	.LASF79:
+ 1254 076d 70657269 		.ascii	"periDivCmdDivSelMsk\000"
+ 1254      44697643 
+ 1254      6D644469 
+ 1254      7653656C 
+ 1254      4D736B00 
+ 1255              	.LASF50:
+ 1256 0781 73727373 		.ascii	"srssNumHfroot\000"
+ 1256      4E756D48 
+ 1256      66726F6F 
+ 1256      7400
+ 1257              	.LASF63:
+ 1258 078f 666C6173 		.ascii	"flashEraseDelay\000"
+ 1258      68457261 
+ 1258      73654465 
+ 1258      6C617900 
+ 1259              	.LASF21:
+ 1260 079f 75696E74 		.ascii	"uint32_t\000"
+ 1260      33325F74 
+ 1260      00
+ 1261              	.LASF2:
+ 1262 07a8 6C6F6E67 		.ascii	"long double\000"
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccNjeSDj.s 			page 29
 
 
- 1260              	.LASF40:
- 1261 07b9 70726F74 		.ascii	"protVersion\000"
- 1261      56657273 
- 1261      696F6E00 
- 1262              	.LASF103:
- 1263 07c5 63707573 		.ascii	"cpussRam0Ctl0\000"
- 1263      7352616D 
- 1263      3043746C 
- 1263      3000
- 1264              	.LASF8:
- 1265 07d3 5F5F7569 		.ascii	"__uint16_t\000"
- 1265      6E743136 
- 1265      5F7400
- 1266              	.LASF84:
- 1267 07de 70657269 		.ascii	"periDiv16CtlOffset\000"
- 1267      44697631 
- 1267      3643746C 
- 1267      4F666673 
- 1267      657400
- 1268              	.LASF10:
- 1269 07f1 5F5F696E 		.ascii	"__int32_t\000"
- 1269      7433325F 
- 1269      7400
- 1270              	.LASF131:
- 1271 07fb 63795F62 		.ascii	"cy_ble_advState\000"
- 1271      6C655F61 
- 1271      64765374 
- 1271      61746500 
- 1272              	.LASF37:
- 1273 080b 6873696F 		.ascii	"hsiomVersion\000"
- 1273      6D566572 
- 1273      73696F6E 
- 1273      00
- 1274              	.LASF65:
- 1275 0818 666C6173 		.ascii	"flashCtlMainWs1Freq\000"
- 1275      6843746C 
- 1275      4D61696E 
- 1275      57733146 
- 1275      72657100 
- 1276              	.LASF9:
- 1277 082c 73686F72 		.ascii	"short unsigned int\000"
- 1277      7420756E 
- 1277      7369676E 
- 1277      65642069 
- 1277      6E7400
- 1278              	.LASF70:
- 1279 083f 64774368 		.ascii	"dwChSize\000"
- 1279      53697A65 
- 1279      00
- 1280              	.LASF106:
- 1281 0848 69706353 		.ascii	"ipcStructSize\000"
- 1281      74727563 
- 1281      7453697A 
- 1281      6500
- 1282              	.LASF45:
- 1283 0856 63707573 		.ascii	"cpussIpc0Irq\000"
- 1283      73497063 
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccH0tQDx.s 			page 30
+ 1262      20646F75 
+ 1262      626C6500 
+ 1263              	.LASF16:
+ 1264 07b4 63686172 		.ascii	"char\000"
+ 1264      00
+ 1265              	.LASF40:
+ 1266 07b9 70726F74 		.ascii	"protVersion\000"
+ 1266      56657273 
+ 1266      696F6E00 
+ 1267              	.LASF103:
+ 1268 07c5 63707573 		.ascii	"cpussRam0Ctl0\000"
+ 1268      7352616D 
+ 1268      3043746C 
+ 1268      3000
+ 1269              	.LASF8:
+ 1270 07d3 5F5F7569 		.ascii	"__uint16_t\000"
+ 1270      6E743136 
+ 1270      5F7400
+ 1271              	.LASF134:
+ 1272 07de 63795F62 		.ascii	"cy_ble_pendingFlashWrite\000"
+ 1272      6C655F70 
+ 1272      656E6469 
+ 1272      6E67466C 
+ 1272      61736857 
+ 1273              	.LASF84:
+ 1274 07f7 70657269 		.ascii	"periDiv16CtlOffset\000"
+ 1274      44697631 
+ 1274      3643746C 
+ 1274      4F666673 
+ 1274      657400
+ 1275              	.LASF10:
+ 1276 080a 5F5F696E 		.ascii	"__int32_t\000"
+ 1276      7433325F 
+ 1276      7400
+ 1277              	.LASF131:
+ 1278 0814 63795F62 		.ascii	"cy_ble_advState\000"
+ 1278      6C655F61 
+ 1278      64765374 
+ 1278      61746500 
+ 1279              	.LASF37:
+ 1280 0824 6873696F 		.ascii	"hsiomVersion\000"
+ 1280      6D566572 
+ 1280      73696F6E 
+ 1280      00
+ 1281              	.LASF65:
+ 1282 0831 666C6173 		.ascii	"flashCtlMainWs1Freq\000"
+ 1282      6843746C 
+ 1282      4D61696E 
+ 1282      57733146 
+ 1282      72657100 
+ 1283              	.LASF9:
+ 1284 0845 73686F72 		.ascii	"short unsigned int\000"
+ 1284      7420756E 
+ 1284      7369676E 
+ 1284      65642069 
+ 1284      6E7400
+ 1285              	.LASF70:
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccNjeSDj.s 			page 30
 
 
- 1283      30497271 
- 1283      00
- 1284              	.LASF88:
- 1285 0863 6770696F 		.ascii	"gpioPrtCfgOffset\000"
- 1285      50727443 
- 1285      66674F66 
- 1285      66736574 
- 1285      00
- 1286              	.LASF119:
- 1287 0874 43595F42 		.ascii	"CY_BLE_CONN_STATE_DISCONNECTED\000"
- 1287      4C455F43 
- 1287      4F4E4E5F 
- 1287      53544154 
- 1287      455F4449 
- 1288              	.LASF132:
- 1289 0893 63795F62 		.ascii	"cy_ble_connHandle\000"
- 1289      6C655F63 
- 1289      6F6E6E48 
- 1289      616E646C 
- 1289      6500
- 1290              	.LASF47:
- 1291 08a5 63707573 		.ascii	"cpussNotConnectedIrq\000"
- 1291      734E6F74 
- 1291      436F6E6E 
- 1291      65637465 
- 1291      64497271 
- 1292              	.LASF116:
- 1293 08ba 43595F42 		.ascii	"CY_BLE_ADV_STATE_ADVERTISING\000"
- 1293      4C455F41 
- 1293      44565F53 
- 1293      54415445 
- 1293      5F414456 
- 1294              	.LASF114:
- 1295 08d7 43595F42 		.ascii	"CY_BLE_ADV_STATE_STOPPED\000"
- 1295      4C455F41 
- 1295      44565F53 
- 1295      54415445 
- 1295      5F53544F 
- 1296              	.LASF17:
- 1297 08f0 75696E74 		.ascii	"uint8_t\000"
- 1297      385F7400 
- 1298              	.LASF94:
- 1299 08f8 63707573 		.ascii	"cpussCm4StatusOffset\000"
- 1299      73436D34 
- 1299      53746174 
- 1299      75734F66 
- 1299      66736574 
- 1300              	.LASF87:
- 1301 090d 6770696F 		.ascii	"gpioPrtIntrCfgOffset\000"
- 1301      50727449 
- 1301      6E747243 
- 1301      66674F66 
- 1301      66736574 
- 1302              	.LASF98:
- 1303 0922 63707573 		.ascii	"cpussTrimRomCtlOffset\000"
- 1303      73547269 
- 1303      6D526F6D 
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccH0tQDx.s 			page 31
+ 1286 0858 64774368 		.ascii	"dwChSize\000"
+ 1286      53697A65 
+ 1286      00
+ 1287              	.LASF106:
+ 1288 0861 69706353 		.ascii	"ipcStructSize\000"
+ 1288      74727563 
+ 1288      7453697A 
+ 1288      6500
+ 1289              	.LASF45:
+ 1290 086f 63707573 		.ascii	"cpussIpc0Irq\000"
+ 1290      73497063 
+ 1290      30497271 
+ 1290      00
+ 1291              	.LASF88:
+ 1292 087c 6770696F 		.ascii	"gpioPrtCfgOffset\000"
+ 1292      50727443 
+ 1292      66674F66 
+ 1292      66736574 
+ 1292      00
+ 1293              	.LASF119:
+ 1294 088d 43595F42 		.ascii	"CY_BLE_CONN_STATE_DISCONNECTED\000"
+ 1294      4C455F43 
+ 1294      4F4E4E5F 
+ 1294      53544154 
+ 1294      455F4449 
+ 1295              	.LASF132:
+ 1296 08ac 63795F62 		.ascii	"cy_ble_connHandle\000"
+ 1296      6C655F63 
+ 1296      6F6E6E48 
+ 1296      616E646C 
+ 1296      6500
+ 1297              	.LASF47:
+ 1298 08be 63707573 		.ascii	"cpussNotConnectedIrq\000"
+ 1298      734E6F74 
+ 1298      436F6E6E 
+ 1298      65637465 
+ 1298      64497271 
+ 1299              	.LASF116:
+ 1300 08d3 43595F42 		.ascii	"CY_BLE_ADV_STATE_ADVERTISING\000"
+ 1300      4C455F41 
+ 1300      44565F53 
+ 1300      54415445 
+ 1300      5F414456 
+ 1301              	.LASF114:
+ 1302 08f0 43595F42 		.ascii	"CY_BLE_ADV_STATE_STOPPED\000"
+ 1302      4C455F41 
+ 1302      44565F53 
+ 1302      54415445 
+ 1302      5F53544F 
+ 1303              	.LASF17:
+ 1304 0909 75696E74 		.ascii	"uint8_t\000"
+ 1304      385F7400 
+ 1305              	.LASF94:
+ 1306 0911 63707573 		.ascii	"cpussCm4StatusOffset\000"
+ 1306      73436D34 
+ 1306      53746174 
+ 1306      75734F66 
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccNjeSDj.s 			page 31
 
 
- 1303      43746C4F 
- 1303      66667365 
- 1304              	.LASF111:
- 1305 0938 62644861 		.ascii	"bdHandle\000"
- 1305      6E646C65 
- 1305      00
- 1306              	.LASF48:
- 1307 0941 73727373 		.ascii	"srssNumClkpath\000"
- 1307      4E756D43 
- 1307      6C6B7061 
- 1307      746800
- 1308              	.LASF11:
- 1309 0950 6C6F6E67 		.ascii	"long int\000"
- 1309      20696E74 
- 1309      00
- 1310              	.LASF34:
- 1311 0959 64775665 		.ascii	"dwVersion\000"
- 1311      7273696F 
- 1311      6E00
- 1312              	.LASF30:
- 1313 0963 69706342 		.ascii	"ipcBase\000"
- 1313      61736500 
- 1314              	.LASF81:
- 1315 096b 70657269 		.ascii	"periDivCmdPaDivSelPos\000"
- 1315      44697643 
- 1315      6D645061 
- 1315      44697653 
- 1315      656C506F 
- 1316              	.LASF62:
- 1317 0981 666C6173 		.ascii	"flashProgramDelay\000"
- 1317      6850726F 
- 1317      6772616D 
- 1317      44656C61 
- 1317      7900
- 1318              	.LASF120:
- 1319 0993 43595F42 		.ascii	"CY_BLE_CONN_STATE_CLIENT_DISCONNECTED_DISCOVERED\000"
- 1319      4C455F43 
- 1319      4F4E4E5F 
- 1319      53544154 
- 1319      455F434C 
- 1320              	.LASF59:
- 1321 09c4 666C6173 		.ascii	"flashRwwRequired\000"
- 1321      68527777 
- 1321      52657175 
- 1321      69726564 
- 1321      00
- 1322              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
+ 1306      66736574 
+ 1307              	.LASF87:
+ 1308 0926 6770696F 		.ascii	"gpioPrtIntrCfgOffset\000"
+ 1308      50727449 
+ 1308      6E747243 
+ 1308      66674F66 
+ 1308      66736574 
+ 1309              	.LASF98:
+ 1310 093b 63707573 		.ascii	"cpussTrimRomCtlOffset\000"
+ 1310      73547269 
+ 1310      6D526F6D 
+ 1310      43746C4F 
+ 1310      66667365 
+ 1311              	.LASF111:
+ 1312 0951 62644861 		.ascii	"bdHandle\000"
+ 1312      6E646C65 
+ 1312      00
+ 1313              	.LASF48:
+ 1314 095a 73727373 		.ascii	"srssNumClkpath\000"
+ 1314      4E756D43 
+ 1314      6C6B7061 
+ 1314      746800
+ 1315              	.LASF11:
+ 1316 0969 6C6F6E67 		.ascii	"long int\000"
+ 1316      20696E74 
+ 1316      00
+ 1317              	.LASF34:
+ 1318 0972 64775665 		.ascii	"dwVersion\000"
+ 1318      7273696F 
+ 1318      6E00
+ 1319              	.LASF30:
+ 1320 097c 69706342 		.ascii	"ipcBase\000"
+ 1320      61736500 
+ 1321              	.LASF81:
+ 1322 0984 70657269 		.ascii	"periDivCmdPaDivSelPos\000"
+ 1322      44697643 
+ 1322      6D645061 
+ 1322      44697653 
+ 1322      656C506F 
+ 1323              	.LASF62:
+ 1324 099a 666C6173 		.ascii	"flashProgramDelay\000"
+ 1324      6850726F 
+ 1324      6772616D 
+ 1324      44656C61 
+ 1324      7900
+ 1325              	.LASF120:
+ 1326 09ac 43595F42 		.ascii	"CY_BLE_CONN_STATE_CLIENT_DISCONNECTED_DISCOVERED\000"
+ 1326      4C455F43 
+ 1326      4F4E4E5F 
+ 1326      53544154 
+ 1326      455F434C 
+ 1327              	.LASF59:
+ 1328 09dd 666C6173 		.ascii	"flashRwwRequired\000"
+ 1328      68527777 
+ 1328      52657175 
+ 1328      69726564 
+ 1328      00
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccNjeSDj.s 			page 32
+
+
+ 1329              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
