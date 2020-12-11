@@ -196,7 +196,7 @@ extern "C" {
 #define CY_BLE_CONFIG_GAP_PERIPHERAL_COUNT          (0x01u)
 
 /** The number of GAP Broadcaster configurations structures. */
-#define CY_BLE_CONFIG_GAP_BROADCASTER_COUNT         (0x01u)
+#define CY_BLE_CONFIG_GAP_BROADCASTER_COUNT         (0x00u)
 
 /** The number of GAP Central configurations structures. */
 #define CY_BLE_CONFIG_GAP_CENTRAL_COUNT             (0x00u)
@@ -240,10 +240,10 @@ extern "C" {
  * CY_BLE_GAP_OBSERVER    (0x08u) - The device operates as an observer.
  * CY_BLE_GAP_HCI         (0x00u) - Used when the BLE operates in HCI mode.
  */ 
-#define CY_BLE_CONFIG_GAP_ROLE                      (0x05u)
+#define CY_BLE_CONFIG_GAP_ROLE                      (0x01u)
 
 /** The Bonding Requirement. */
-#define CY_BLE_CONFIG_BONDING_REQUIREMENT           (0x00u)
+#define CY_BLE_CONFIG_BONDING_REQUIREMENT           (0x01u)
 
 /** The maximum number of bonded devices to be supported by this device.  */
 #define CY_BLE_CONFIG_MAX_BONDED_DEVICES            (16u)
@@ -260,9 +260,8 @@ extern "C" {
 #define CY_BLE_SECURITY_CONFIGURATION_0_INDEX   (0x00u)
 
 #define CY_BLE_ADV_PKT_0_INDEX_FLAGS   (0x00u)
-#define CY_BLE_ADV_PKT_1_INDEX_FLAGS   (0x00u)
+#define CY_BLE_ADV_PKT_0_INDEX_LOCAL_NAME   (0x03u)
 #define CY_BLE_PERIPHERAL_CONFIGURATION_0_INDEX   (0x00u)
-#define CY_BLE_BROADCASTER_CONFIGURATION_0_INDEX   (0x01u)
 
 
 /* The additional queue depth provided by the customizer.  */
