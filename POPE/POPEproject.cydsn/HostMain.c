@@ -22,11 +22,26 @@
 /* Connection handler */
 static cy_stc_ble_conn_handle_t appConnHandle;
 
+/* Deep Sleep Params */
+cy_stc_syspm_callback_params_t callBackParams = {
+    /*.base = &*/ NULL,
+    /*.context = &*/ NULL
+};
+
+/* Deep Sleep Handlers */
+cy_stc_syspm_callback_t DeepSleepHandler = {
+    .callback = DeepSleepCallback,
+    .type = CY_SYSPM_DEEPSLEEP,
+    .skipMode = CY_SYSPM_SKIP_CHECK_READY | CY_SYSPM_SKIP_CHECK_FAIL,
+    .callbackParams = &callBackParams,
+    .prevItm = NULL,
+    .nextItm = NULL
+};
 
 /* MAIN */
 int HostMain(void)
 {
-    Cy_SysPm_SystemEnterLp();   //Low Power, alt virker stadig
+    Cy_SysPm_SystemEnterLp();   //Low Power mode
     
     //init
     UART_DEB_Start();
@@ -34,9 +49,11 @@ int HostMain(void)
     CS_initKadenceSensor(3);
     startIdleCountdown();
     
+    Cy_SysPm_RegisterCallback(&DeepSleepHandler);
+    
     //Wake up interrupt (scb_8_interrupt_IRQn = serial com intterupt)
     cy_stc_sysint_t wakeUpIsr = {
-        .intrSrc = scb_8_interrupt_IRQn,    //skal være mellem 0-40 for deepsleep capable (vi skal lige kigge på hvad der giver mest mening)
+        .intrSrc = scb_8_interrupt_IRQn,
         .intrPriority = 0,
     };
     
@@ -63,6 +80,35 @@ int HostMain(void)
         timeOut = BLE_checkTimer();
         getData(timeOut);
     }
+}
+
+/* Deep Sleep Callback */
+cy_en_syspm_status_t DeepSleepCallback(cy_stc_syspm_callback_params_t *callbackParams, cy_en_syspm_callback_mode_t mode)
+{
+    cy_en_syspm_status_t retVal = CY_SYSPM_FAIL;
+    
+    switch(mode)
+    {
+        case CY_SYSPM_BEFORE_TRANSITION:    //Ting der skal gøres inden Deep Sleep
+            idleTimer_Disable();
+            UART_DEB_Disable();
+            Cy_BLE_Disable();
+            
+            retVal = CY_SYSPM_SUCCESS;
+            break;
+            
+        case CY_SYSPM_AFTER_TRANSITION:     //Ting der skal gøres efter Deep Sleep
+            idleTimer_Enable();
+            resetIdleCountdown();
+            Cy_BLE_Enable();
+            
+            retVal = CY_SYSPM_SUCCESS;
+            break;
+            
+        default:
+            break;
+    }
+    return retVal;
 }
 
 

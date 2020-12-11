@@ -34,6 +34,7 @@
 //Functions
 int HostMain(void);
 void getData(int timeOut);
+cy_en_syspm_status_t DeepSleepCallback(cy_stc_syspm_callback_params_t *callbackParams, cy_en_syspm_callback_mode_t mode);
 
 #endif
 /* [] END OF FILE */

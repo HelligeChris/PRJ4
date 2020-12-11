@@ -21,7 +21,7 @@ uint16 idleCounter = 0;
 
 void lowPowerMode()
 {
-    
+    //
 }
 
 

@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
    1:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** /***************************************************************************//**
    2:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** * \file cy_syspm.h
    3:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** * \version 4.0
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 2
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 2
 
 
    4:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** *
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
   58:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** *
   59:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** * \section group_syspm_section_configuration Configuration Considerations
   60:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** * \subsection group_syspm_power_modes Power Modes
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 3
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 3
 
 
   61:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** * PSoC 6 MCUs support four system and three CPU power modes. These power modes
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  115:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** *   \endcode
  116:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** * * If active core regulator is the Buck, call:
  117:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** *   \code{.c}
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 4
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 4
 
 
  118:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** *   Cy_SysPm_BuckSetVoltage1(CY_SYSPM_BUCK_OUT1_VOLTAGE_LP)
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  172:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** * \warning * - Numbers shown are approximate and real limit values may be
  173:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** * different because they are device specific. You should refer to the device 
  174:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** * datasheet for exact values of maximum frequency and current in system
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 5
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 5
 
 
  175:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** * ULP mode.
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  229:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** * sources:
  230:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** * - Wakeup pin
  231:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** * - LP Comparator
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 6
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 6
 
 
  232:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** * - RTC alarm
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  286:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** *
  287:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** * The SysPm driver also provides an API to configure the internal power 
  288:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** * management integrated circuit (PMIC) controller for an external PMIC that 
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 7
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 7
 
 
  289:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** * supplies Vddd. Use the API to enable the internal PMIC controller output that
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  343:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** * Refer to the \ref group_syspm_functions_backup functions for more detail.
  344:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** *
  345:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** * \subsection group_syspm_cb SysPm Callbacks
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 8
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 8
 
 
  346:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** * The SysPm driver handles low power callbacks declared in the application. 
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  400:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** * CY_SYSPM_CHECK_FAIL mode parameter. This allows each callback to know that 
  401:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** * entering the low power mode has failed. The callback can then undo whatever it
  402:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** * did to prepare for low power mode, if required. For example, if the driver X 
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 9
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 9
 
 
  403:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** * callback shut down the analog part, it can re-enable the analog part.
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  457:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** * \snippet syspm/4.0/snippet/main.c snippet_Cy_SysPm_Callback_Structure_Declaration
  458:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** *
  459:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** * Note that in each case the last two fields are NULL. These are fields used by 
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 10
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 10
 
 
  460:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** * the SysPm driver to set up the linked list of callback functions.
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  514:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** * The <b>base</b> and <b>context</b> fields are optional and can be NULL. 
  515:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** * Some drivers require a base hardware address and context to store information 
  516:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** * about the mode transition. If your callback routine requires access to the 
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 11
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 11
 
 
  517:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** * driver registers or context, provide those values 
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  571:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** * The intent of CY_SYSPM_CHECK_READY is to only signal if the resources is ready
  572:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** * to transition. Ideally, no transition changes should be made at this time. 
  573:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** * In some cases a small change may be required. For example a communication 
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 12
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 12
 
 
  574:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** * resource callback may set a flag telling firmware not to start any new 
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  628:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** *   <tr>
  629:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** *     <td>LDO</td>
  630:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** *     <td>Low dropout linear regulator. The functions that manage this 
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 13
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 13
 
 
  631:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** *         block are grouped as \ref group_syspm_functions_ldo under 
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  685:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** *     <td>Driver library directory-structure simplification.</td>
  686:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** *   </tr>
  687:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** *   <tr>
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 14
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 14
 
 
  688:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** *     <td>
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  742:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** *     <td>Makes register access device-independent, so that the PDL does 
  743:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** *         not need to be recompiled for each supported part number.</td>
  744:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** *   </tr>
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 15
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 15
 
 
  745:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** *   <tr>
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  799:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** *            is prohibited when the protection context is other than zero.
  800:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** *
  801:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** *          * Updated the following functions. They now have a 
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 16
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 16
 
 
  802:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** *            \ref cy_en_syspm_status_t return value and use a syscall:
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  856:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** *         * Added functions to control:
  857:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** *           * Power supply for the Vddbackup
  858:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** *           * Supercapacitor charge
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 17
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 17
 
 
  859:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** *           * Vddbackup measurement by ADC
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  913:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** *   </tr>
  914:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** *   <tr>
  915:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** *     <td>Cy_SysPm_IsLowPower</td>
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 18
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 18
 
 
  916:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** *     <td>\ref Cy_SysPm_IsSystemUlp</td>
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  970:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** *         and abbreviations</td>
  971:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** *   </tr>
  972:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** * </table>
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 19
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 19
 
 
  973:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** *
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
 1027:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** *    cy_en_syspm_status_t Func1(cy_stc_syspm_callback_params_t *callbackParams, cy_en_syspm_callbac
 1028:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** *    {
 1029:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** *        cy_en_syspm_status_t retVal = CY_SYSPM_FAIL;
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 20
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 20
 
 
 1030:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** *
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
 1084:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** * \addtogroup group_syspm_macros
 1085:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** * \{
 1086:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** */
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 21
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 21
 
 
 1087:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** 
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
 1141:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** /* Macro to validate parameters in Cy_SysPm_ExecuteCallback() function */
 1142:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** #define CY_SYSPM_IS_CALLBACK_MODE_VALID(mode)           (((mode) == CY_SYSPM_CHECK_READY) || \
 1143:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h ****                                                          ((mode) == CY_SYSPM_CHECK_FAIL) || \
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 22
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 22
 
 
 1144:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h ****                                                          ((mode) == CY_SYSPM_BEFORE_TRANSITION) || 
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
 1198:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** 
 1199:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** /**
 1200:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** * The internal define of the second LPComparator value 
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 23
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 23
 
 
 1201:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** * used in the Cy_SysPm_SetHibernateWakeupSource() function
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
 1255:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** /**
 1256:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** * \defgroup group_syspm_return_status The Power Mode Status Defines
 1257:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** * \{
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 24
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 24
 
 
 1258:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** * Defines for the CPU and system power modes status.
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
 1312:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** * an interrupt or an event. Refer to the CMSIS for WFE and WFI instruction explanations.
 1313:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** */
 1314:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** typedef enum
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 25
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 25
 
 
 1315:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** {
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
 1369:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** {
 1370:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h ****     CY_SYSPM_LDO_MODE_DISABLED = 0U,    /**< Disables the LDO. */
 1371:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h ****     CY_SYSPM_LDO_MODE_NORMAL   = 1U,    /**< Sets normal current mode. See device datasheet for 
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 26
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 26
 
 
 1372:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h ****                                              specific maximum current limit. */
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
 1426:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h ****     CY_SYSPM_PMIC_POLARITY_HIGH  = 1U     /**< Set active high logic level for the PMIC input. */
 1427:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** } cy_en_syspm_pmic_wakeup_polarity_t;
 1428:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** 
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 27
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 27
 
 
 1429:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** /** This enumeration selects Vbackup or Vddd to supply Vddbackup. */
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
 1483:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** } cy_en_syspm_callback_mode_t;
 1484:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** 
 1485:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** /** \} group_syspm_data_enumerates */
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 28
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 28
 
 
 1486:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** 
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
 1540:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h ****     struct cy_stc_syspm_callback *prevItm;             /**< The previous list item. This element sh
 1541:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h ****                                                             defined, or defined as NULL. It is for 
 1542:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h ****                                                             usage to link this structure to the nex
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 29
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 29
 
 
 1543:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h ****                                                             structure. It will be updated during ca
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
 1597:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** __STATIC_INLINE bool Cy_SysPm_IsSystemLp(void);
 1598:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** __STATIC_INLINE bool Cy_SysPm_IsSystemUlp(void);
 1599:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** 
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 30
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 30
 
 
 1600:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** uint32_t Cy_SysPm_ReadStatus(void);
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
 1654:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** __STATIC_INLINE void Cy_SysPm_PmicDisableOutput(void); 
 1655:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** __STATIC_INLINE bool Cy_SysPm_PmicIsOutputEnabled(void);
 1656:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** __STATIC_INLINE void Cy_SysPm_PmicLock(void);
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 31
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 31
 
 
 1657:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** __STATIC_INLINE void Cy_SysPm_PmicUnlock(void);
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
 1711:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** * - False if the CM4 is not in CPU Active mode.
 1712:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** *
 1713:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** * \funcusage
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 32
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 32
 
 
 1714:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** * \snippet syspm/4.0/snippet/main.c snippet_Cy_SysPm_Cm4IsActive
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
 1768:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** *
 1769:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** * \return
 1770:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** * - True if the CM0+ is in CPU Sleep mode.
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 33
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 33
 
 
 1771:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** * - False if the CM0+ is not in CPU Sleep mode.
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
 1825:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** ****************************************************************************//**
 1826:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** *
 1827:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** * Checks if the system is in LP mode.
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 34
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 34
 
 
 1828:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** *
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
 1882:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** 
 1883:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** 
 1884:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** /*******************************************************************************
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 35
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 35
 
 
 1885:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** * Function Name: Cy_SysPm_SystemIsMinRegulatorCurrentSet
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
 1939:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** * including load current.
 1940:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** *
 1941:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** * \return
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 36
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 36
 
 
 1942:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** * The nominal output voltage 1 (Vccbuck1) of the Buck regulator.
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
 1996:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** * Function Name: Cy_SysPm_BuckDisableVoltage2
 1997:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** ****************************************************************************//**
 1998:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** *
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 37
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 37
 
 
 1999:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** * Disables the output 2 voltage (Vbuckrf) of the SIMO Buck regulator. The 
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
 2053:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** {
 2054:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h ****     bool isBuckEnabled = Cy_SysPm_BuckIsEnabled();
 2055:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h ****     
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 38
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 38
 
 
 2056:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h ****     if ((0U != cy_device->sysPmSimoPresent) && isBuckEnabled)
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
 2110:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** */
 2111:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** /*******************************************************************************
 2112:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** * Function Name: Cy_SysPm_LdoGetVoltage
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 39
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 39
 
 
 2113:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** ****************************************************************************//**
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
 2167:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** * Checks whether IOs are frozen.
 2168:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** *
 2169:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** * \return 
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 40
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 40
 
 
 2170:Generated_Source\PSoC6\pdl\drivers/peripheral/syspm/cy_syspm.h **** * - True if IOs are frozen.
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
   26:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #define __CMSIS_GCC_H
   27:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** 
   28:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** /* ignore some GCC warnings */
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 41
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 41
 
 
   29:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #pragma GCC diagnostic push
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
   83:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****   #pragma GCC diagnostic pop
   84:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****   #define __UNALIGNED_UINT16_WRITE(addr, val)    (void)((((struct T_UINT16_WRITE *)(void *)(addr))-
   85:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #endif
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 42
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 42
 
 
   86:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #ifndef   __UNALIGNED_UINT16_READ
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
   63              	.LBE10:
   20:main_cm4.c    ****     }
   21:main_cm4.c    ****    
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 43
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 43
 
 
   22:main_cm4.c    ****      __enable_irq(); /* Enable global interrupts. */
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  103 000a 04       		.byte	0x4
  104 000b 01       		.uleb128 0x1
  105 000c B7050000 		.4byte	.LASF405
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 44
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 44
 
 
  106 0010 0C       		.byte	0xc
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  160 0082 FB1B0000 		.4byte	.LASF10
  161 0086 02       		.uleb128 0x2
  162 0087 08       		.byte	0x8
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 45
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 45
 
 
  163 0088 05       		.byte	0x5
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  217 00fa 07       		.uleb128 0x7
  218 00fb E5000000 		.4byte	0xe5
  219 00ff 0A010000 		.4byte	0x10a
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 46
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 46
 
 
  220 0103 08       		.uleb128 0x8
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  274 0178 23       		.byte	0x23
  275 0179 E5000000 		.4byte	0xe5
  276 017d 00       		.byte	0
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 47
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 47
 
 
  277 017e 0A       		.uleb128 0xa
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  331 01ea 0A       		.uleb128 0xa
  332 01eb E4150000 		.4byte	.LASF30
  333 01ef 06       		.byte	0x6
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 48
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 48
 
 
  334 01f0 2D       		.byte	0x2d
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  388 025d 0A       		.uleb128 0xa
  389 025e 740A0000 		.4byte	.LASF37
  390 0262 06       		.byte	0x6
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 49
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 49
 
 
  391 0263 3A       		.byte	0x3a
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  445 02d3 43       		.byte	0x43
  446 02d4 C9050000 		.4byte	0x5c9
  447 02d8 0002     		.2byte	0x200
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 50
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 50
 
 
  448 02da 0C       		.uleb128 0xc
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  502 034f 0C       		.uleb128 0xc
  503 0350 97120000 		.4byte	.LASF55
  504 0354 06       		.byte	0x6
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 51
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 51
 
 
  505 0355 4D       		.byte	0x4d
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  559 03ca 56       		.byte	0x56
  560 03cb 1B060000 		.4byte	0x61b
  561 03cf 4005     		.2byte	0x540
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 52
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 52
 
 
  562 03d1 0C       		.uleb128 0xc
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  616 0446 0C       		.uleb128 0xc
  617 0447 EF1D0000 		.4byte	.LASF74
  618 044b 06       		.byte	0x6
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 53
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 53
 
 
  619 044c 60       		.byte	0x60
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  673 04c1 69       		.byte	0x69
  674 04c2 8E060000 		.4byte	0x68e
  675 04c6 0808     		.2byte	0x808
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 54
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 54
 
 
  676 04c8 0C       		.uleb128 0xc
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  730 053d 0C       		.uleb128 0xc
  731 053e B0080000 		.4byte	.LASF93
  732 0542 06       		.byte	0x6
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 55
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 55
 
 
  733 0543 73       		.byte	0x73
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  787 05bb B5050000 		.4byte	0x5b5
  788 05bf 05       		.uleb128 0x5
  789 05c0 5A010000 		.4byte	0x15a
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 56
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 56
 
 
  790 05c4 06       		.uleb128 0x6
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  844 0645 E5000000 		.4byte	0xe5
  845 0649 54060000 		.4byte	0x654
  846 064d 08       		.uleb128 0x8
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 57
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 57
 
 
  847 064e D9000000 		.4byte	0xd9
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  901 06cf 02       		.uleb128 0x2
  902 06d0 08       		.byte	0x8
  903 06d1 04       		.byte	0x4
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 58
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 58
 
 
  904 06d2 0C160000 		.4byte	.LASF101
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  958 073e 0A       		.uleb128 0xa
  959 073f 1D120000 		.4byte	.LASF110
  960 0743 08       		.byte	0x8
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 59
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 59
 
 
  961 0744 3F       		.byte	0x3f
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  1015 07b0 4A       		.byte	0x4a
  1016 07b1 A2000000 		.4byte	0xa2
  1017 07b5 2F       		.byte	0x2f
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 60
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 60
 
 
  1018 07b6 0A       		.uleb128 0xa
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  1072 0822 0A       		.uleb128 0xa
  1073 0823 C50B0000 		.4byte	.LASF129
  1074 0827 08       		.byte	0x8
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 61
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 61
 
 
  1075 0828 56       		.byte	0x56
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  1129 0894 5F       		.byte	0x5f
  1130 0895 CE000000 		.4byte	0xce
  1131 0899 4C       		.byte	0x4c
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 62
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 62
 
 
  1132 089a 0A       		.uleb128 0xa
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  1186 0906 0A       		.uleb128 0xa
  1187 0907 AD200000 		.4byte	.LASF148
  1188 090b 08       		.byte	0x8
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 63
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 63
 
 
  1189 090c 69       		.byte	0x69
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  1243 0978 78       		.byte	0x78
  1244 0979 B8000000 		.4byte	0xb8
  1245 097d 6C       		.byte	0x6c
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 64
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 64
 
 
  1246 097e 0A       		.uleb128 0xa
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  1300 09ea 0A       		.uleb128 0xa
  1301 09eb C81A0000 		.4byte	.LASF167
  1302 09ef 08       		.byte	0x8
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 65
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 65
 
 
  1303 09f0 86       		.byte	0x86
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  1357 0a5c 91       		.byte	0x91
  1358 0a5d CE000000 		.4byte	0xce
  1359 0a61 94       		.byte	0x94
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 66
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 66
 
 
  1360 0a62 0A       		.uleb128 0xa
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  1414 0ace 0A       		.uleb128 0xa
  1415 0acf 21050000 		.4byte	.LASF186
  1416 0ad3 08       		.byte	0x8
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 67
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 67
 
 
  1417 0ad4 9D       		.byte	0x9d
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  1471 0b3c 3902     		.2byte	0x239
  1472 0b3e 420B0000 		.4byte	0xb42
  1473 0b42 12       		.uleb128 0x12
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 68
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 68
 
 
  1474 0b43 04       		.byte	0x4
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  1528 0bbb CC02     		.2byte	0x2cc
  1529 0bbd 090B0000 		.4byte	0xb09
  1530 0bc1 0C       		.byte	0xc
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 69
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 69
 
 
  1531 0bc2 17       		.uleb128 0x17
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  1585 0c37 17       		.uleb128 0x17
  1586 0c38 C0070000 		.4byte	.LASF212
  1587 0c3c 09       		.byte	0x9
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 70
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 70
 
 
  1588 0c3d D902     		.2byte	0x2d9
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  1642 0cb2 420B0000 		.4byte	0xb42
  1643 0cb6 16       		.uleb128 0x16
  1644 0cb7 28090000 		.4byte	.LASF222
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 71
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 71
 
 
  1645 0cbb 38       		.byte	0x38
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  1699 0d30 0A       		.byte	0xa
  1700 0d31 8202     		.2byte	0x282
  1701 0d33 E0000000 		.4byte	0xe0
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 72
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 72
 
 
  1702 0d37 20       		.byte	0x20
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  1756 0da9 04       		.byte	0x4
  1757 0daa 0A       		.uleb128 0xa
  1758 0dab 2A160000 		.4byte	.LASF240
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 73
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 73
 
 
  1759 0daf 0B       		.byte	0xb
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  1813 0e1b 0B       		.byte	0xb
  1814 0e1c 40       		.byte	0x40
  1815 0e1d CE000000 		.4byte	0xce
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 74
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 74
 
 
  1816 0e21 2C       		.byte	0x2c
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  1870 0e8b C2110000 		.4byte	0x11c2
  1871 0e8f 11       		.uleb128 0x11
  1872 0e90 90040000 		.4byte	.LASF258
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 75
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 75
 
 
  1873 0e94 00       		.byte	0
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  1927 0f11 0B20     		.2byte	0x200b
  1928 0f13 19       		.uleb128 0x19
  1929 0f14 51160000 		.4byte	.LASF277
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 76
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 76
 
 
  1930 0f18 0C20     		.2byte	0x200c
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  1984 0f96 0630     		.2byte	0x3006
  1985 0f98 19       		.uleb128 0x19
  1986 0f99 D41F0000 		.4byte	.LASF296
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 77
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 77
 
 
  1987 0f9d 0730     		.2byte	0x3007
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  2041 101b 0340     		.2byte	0x4003
  2042 101d 19       		.uleb128 0x19
  2043 101e 05110000 		.4byte	.LASF315
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 78
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 78
 
 
  2044 1022 0440     		.2byte	0x4004
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  2098 10a0 1640     		.2byte	0x4016
  2099 10a2 19       		.uleb128 0x19
  2100 10a3 84020000 		.4byte	.LASF334
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 79
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 79
 
 
  2101 10a7 1740     		.2byte	0x4017
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  2155 1125 0E50     		.2byte	0x500e
  2156 1127 19       		.uleb128 0x19
  2157 1128 E00B0000 		.4byte	.LASF353
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 80
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 80
 
 
  2158 112c 0F50     		.2byte	0x500f
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  2212 11aa 0860     		.2byte	0x6008
  2213 11ac 19       		.uleb128 0x19
  2214 11ad DF000000 		.4byte	.LASF372
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 81
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 81
 
 
  2215 11b1 0960     		.2byte	0x6009
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  2269 121e F2110000 		.4byte	0x11f2
  2270 1222 1B       		.uleb128 0x1b
  2271 1223 01       		.byte	0x1
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 82
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 82
 
 
  2272 1224 3E000000 		.4byte	0x3e
@@ -4918,7 +4918,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  2326 1294 C9120000 		.4byte	0x12c9
  2327 1298 1F       		.uleb128 0x1f
  2328 1299 72120000 		.4byte	0x1272
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 83
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 83
 
 
  2329 129d 02000000 		.4byte	.LBB8
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  2383 1321 08       		.uleb128 0x8
  2384 1322 D9000000 		.4byte	0xd9
  2385 1326 00       		.byte	0
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 84
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 84
 
 
  2386 1327 00       		.byte	0
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  2440 13a1 02       		.byte	0x2
  2441 13a2 5E06     		.2byte	0x65e
  2442 13a4 25       		.uleb128 0x25
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 85
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 85
 
 
  2443 13a5 BE150000 		.4byte	.LASF404
@@ -5098,7 +5098,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  2497 002f 0B       		.uleb128 0xb
  2498 0030 3E       		.uleb128 0x3e
  2499 0031 0B       		.uleb128 0xb
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 86
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 86
 
 
  2500 0032 03       		.uleb128 0x3
@@ -5158,7 +5158,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  2554 0068 3A       		.uleb128 0x3a
  2555 0069 0B       		.uleb128 0xb
  2556 006a 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 87
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 87
 
 
  2557 006b 0B       		.uleb128 0xb
@@ -5218,7 +5218,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  2611 00a1 13       		.uleb128 0x13
  2612 00a2 00       		.byte	0
  2613 00a3 00       		.byte	0
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 88
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 88
 
 
  2614 00a4 0F       		.uleb128 0xf
@@ -5278,7 +5278,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  2668 00da 00       		.byte	0
  2669 00db 00       		.byte	0
  2670 00dc 15       		.uleb128 0x15
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 89
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 89
 
 
  2671 00dd 15       		.uleb128 0x15
@@ -5338,7 +5338,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  2725 0113 00       		.byte	0
  2726 0114 19       		.uleb128 0x19
  2727 0115 28       		.uleb128 0x28
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 90
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 90
 
 
  2728 0116 00       		.byte	0
@@ -5398,7 +5398,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  2782 014c 0E       		.uleb128 0xe
  2783 014d 3A       		.uleb128 0x3a
  2784 014e 0B       		.uleb128 0xb
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 91
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 91
 
 
  2785 014f 3B       		.uleb128 0x3b
@@ -5458,7 +5458,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  2839 0188 00       		.byte	0
  2840 0189 11       		.uleb128 0x11
  2841 018a 01       		.uleb128 0x1
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 92
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 92
 
 
  2842 018b 31       		.uleb128 0x31
@@ -5518,7 +5518,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  2896 01c1 00       		.byte	0
  2897 01c2 24       		.uleb128 0x24
  2898 01c3 2E       		.uleb128 0x2e
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 93
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 93
 
 
  2899 01c4 00       		.byte	0
@@ -5578,7 +5578,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  2952      0200DD03 
  2952      00000201 
  2952      FB0E0D00 
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 94
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 94
 
 
  2952      01010101 
@@ -5638,7 +5638,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  2973              	.LASF393:
  2974 00d5 63795F64 		.ascii	"cy_device\000"
  2974      65766963 
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 95
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 95
 
 
  2974      6500
@@ -5698,7 +5698,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  2995              	.LASF32:
  2996 01c0 4D435744 		.ascii	"MCWDT_STRUCT_V1_Type\000"
  2996      545F5354 
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 96
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 96
 
 
  2996      52554354 
@@ -5758,7 +5758,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  3016      52454154 
  3017              	.LASF132:
  3018 02af 736D6966 		.ascii	"smifDeviceNr\000"
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 97
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 97
 
 
  3018      44657669 
@@ -5818,7 +5818,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  3040 0371 43595F42 		.ascii	"CY_BLE_EVT_GATTC_FIND_INFO_RSP\000"
  3040      4C455F45 
  3040      56545F47 
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 98
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 98
 
 
  3040      41545443 
@@ -5878,7 +5878,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  3062      635F636F 
  3062      6D6D616E 
  3063              	.LASF158:
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 99
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 99
 
 
  3064 0457 70657269 		.ascii	"periTrGrSize\000"
@@ -5938,7 +5938,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  3082      6500
  3083              	.LASF85:
  3084 052f 5057525F 		.ascii	"PWR_TRIM_BODOVP_CTL\000"
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 100
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 100
 
 
  3084      5452494D 
@@ -5998,7 +5998,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  3101      56545F47 
  3101      41505F52 
  3101      45534F4C 
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 101
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 101
 
 
  3102              	.LASF221:
@@ -6058,7 +6058,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  3122              	.LASF210:
  3123 0785 736C6176 		.ascii	"slaveTxBuffer\000"
  3123      65547842 
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 102
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 102
 
 
  3123      75666665 
@@ -6118,7 +6118,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  3143      50727443 
  3143      66674F75 
  3143      744F6666 
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 103
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 103
 
 
  3143      73657400 
@@ -6178,7 +6178,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  3163      4C455F45 
  3163      56545F47 
  3163      45545F4C 
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 104
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 104
 
 
  3163      4F43414C 
@@ -6238,7 +6238,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  3184              	.LASF293:
  3185 0a1a 43595F42 		.ascii	"CY_BLE_EVT_GET_RSSI_COMPLETE\000"
  3185      4C455F45 
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 105
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 105
 
 
  3185      56545F47 
@@ -6298,7 +6298,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  3207 0af2 73746172 		.ascii	"startInputMode\000"
  3207      74496E70 
  3207      75744D6F 
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 106
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 106
 
 
  3207      646500
@@ -6358,7 +6358,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  3229 0bc5 73727373 		.ascii	"srssNumPll\000"
  3229      4E756D50 
  3229      6C6C00
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 107
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 107
 
 
  3230              	.LASF206:
@@ -6418,7 +6418,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  3252              	.LASF28:
  3253 0c7a 4D435744 		.ascii	"MCWDT_INTR_MASK\000"
  3253      545F494E 
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 108
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 108
 
 
  3253      54525F4D 
@@ -6478,7 +6478,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  3273      696F6E00 
  3274              	.LASF141:
  3275 0d7a 666C6173 		.ascii	"flashWriteDelay\000"
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 109
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 109
 
 
  3275      68577269 
@@ -6538,7 +6538,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  3295      65724E75 
  3295      6D427974 
  3295      657300
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 110
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 110
 
 
  3296              	.LASF86:
@@ -6598,7 +6598,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  3317 0f40 43595F42 		.ascii	"CY_BLE_EVT_GAP_OOB_GENERATED_NOTIFICATION\000"
  3317      4C455F45 
  3317      56545F47 
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 111
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 111
 
 
  3317      41505F4F 
@@ -6658,7 +6658,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  3337      56545F4C 
  3337      455F5345 
  3337      545F4556 
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 112
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 112
 
 
  3338              	.LASF42:
@@ -6718,7 +6718,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  3359      5554485F 
  3360              	.LASF43:
  3361 1122 5744545F 		.ascii	"WDT_MATCH\000"
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 113
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 113
 
 
  3361      4D415443 
@@ -6778,7 +6778,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  3381 120f 6C6F6E67 		.ascii	"long long int\000"
  3381      206C6F6E 
  3381      6720696E 
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 114
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 114
 
 
  3381      7400
@@ -6838,7 +6838,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  3403      54797065 
  3403      00
  3404              	.LASF297:
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 115
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 115
 
 
  3405 12ef 43595F42 		.ascii	"CY_BLE_EVT_SET_CLK_CONFIG_COMPLETE\000"
@@ -6898,7 +6898,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  3425      4154415F 
  3425      4C454E47 
  3426              	.LASF323:
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 116
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 116
 
 
  3427 13ca 43595F42 		.ascii	"CY_BLE_EVT_GAP_KEYINFO_EXCHNGE_CMPLT\000"
@@ -6958,7 +6958,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  3447      3000
  3448              	.LASF202:
  3449 14ad 6D617374 		.ascii	"masterPause\000"
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 117
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 117
 
 
  3449      65725061 
@@ -7018,7 +7018,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  3469      44697631 
  3469      3643746C 
  3469      4F666673 
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 118
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 118
 
 
  3469      657400
@@ -7078,7 +7078,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  3493      00
  3494              	.LASF277:
  3495 1651 43595F42 		.ascii	"CY_BLE_EVT_SET_RPA_TO_COMPLETE\000"
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 119
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 119
 
 
  3495      4C455F45 
@@ -7138,7 +7138,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  3514              	.LASF280:
  3515 1749 43595F42 		.ascii	"CY_BLE_EVT_ADD_DEVICE_TO_RPA_LIST_COMPLETE\000"
  3515      4C455F45 
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 120
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 120
 
 
  3515      56545F41 
@@ -7198,7 +7198,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  3535      3400
  3536              	.LASF52:
  3537 182a 52455345 		.ascii	"RESERVED5\000"
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 121
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 121
 
 
  3537      52564544 
@@ -7258,7 +7258,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  3559      00
  3560              	.LASF255:
  3561 18ca 636F756E 		.ascii	"countInputMode\000"
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 122
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 122
 
 
  3561      74496E70 
@@ -7318,7 +7318,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  3581      5F636F6E 
  3581      74657874 
  3581      00
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 123
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 123
 
 
  3582              	.LASF330:
@@ -7378,7 +7378,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  3601 1ab4 5F5F7569 		.ascii	"__uint8_t\000"
  3601      6E74385F 
  3601      7400
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 124
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 124
 
 
  3602              	.LASF75:
@@ -7438,7 +7438,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  3621      4C455F45 
  3621      56545F41 
  3621      45535F43 
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 125
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 125
 
 
  3621      434D5F44 
@@ -7498,7 +7498,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  3644              	.LASF175:
  3645 1c92 63707573 		.ascii	"cpussCm0StatusOffset\000"
  3645      73436D30 
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 126
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 126
 
 
  3645      53746174 
@@ -7558,7 +7558,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  3666              	.LASF273:
  3667 1d9e 43595F42 		.ascii	"CY_BLE_EVT_GET_DATA_LENGTH_COMPLETE\000"
  3667      4C455F45 
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 127
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 127
 
 
  3667      56545F47 
@@ -7618,7 +7618,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  3691      4C455F45 
  3691      56545F47 
  3691      4154545F 
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 128
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 128
 
 
  3691      44495343 
@@ -7678,7 +7678,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  3711      6E646C65 
  3711      00
  3712              	.LASF1:
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 129
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 129
 
 
  3713 1f46 7369676E 		.ascii	"signed char\000"
@@ -7738,7 +7738,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  3734              	.LASF188:
  3735 2011 63795F73 		.ascii	"cy_stc_device_t\000"
  3735      74635F64 
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 130
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 130
 
 
  3735      65766963 
@@ -7798,7 +7798,7 @@ ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 1
  3758              	.LASF46:
  3759 20da 434C4B5F 		.ascii	"CLK_DSI_SELECT\000"
  3759      4453495F 
-ARM GAS  C:\Users\dryos\AppData\Local\Temp\ccfL5Xi9.s 			page 131
+ARM GAS  C:\Users\dryos\AppData\Local\Temp\cc6zWoG9.s 			page 131
 
 
  3759      53454C45 
