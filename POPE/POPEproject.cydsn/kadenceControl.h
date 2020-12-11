@@ -20,7 +20,7 @@ uint8_t devAddr;
 uint8_t buffer[22];
 int16_t MPU6050_getRotationX();
 
-void MPU6050_initialize();
+void MPU6050_initialize(uint8_t FSR);
 void MPU6050_setSleepEnabled(bool enabled);
 void MPU6050_getRotation(int16_t* x, int16_t* y, int16_t* z);
 uint8_t MPU6050_getFullScaleGyroRange();
