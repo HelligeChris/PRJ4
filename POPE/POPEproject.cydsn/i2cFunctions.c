@@ -42,7 +42,7 @@
 *****************************************************************************/
 #include <project.h>
 
-uint8_t temp_value = 0;
+//uint8_t temp_value = 0;
 
 void I2CReadBytes(uint8_t devAddr, uint8_t regAddr, uint8_t length, uint8_t *value)
 {
