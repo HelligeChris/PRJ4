@@ -17,7 +17,7 @@ int count = 0;
 #endif
 
 /* BLE Private Functions */
-cy_en_ble_api_result_t BLE_SetCharacteristicValue(POPE_char_index_t charIndex, uint16_t attrSize, uint8_t *attrValue);
+cy_en_ble_api_result_t BLE_SetPowerCharacteristicValue(POPE_char_index_t charIndex, uint16_t attrSize, uint8_t *attrValue);
 
 
 /* Timer variables */
@@ -47,13 +47,6 @@ void BLE_EventHandler(uint32_t event, void *eventParam)
             Cy_BLE_GAPP_StartAdvertisement(CY_BLE_ADVERTISING_FAST, CY_BLE_PERIPHERAL_CONFIGURATION_0_INDEX);
             #if DEBUG_UART_ENABLED
             sprintf(uart_string, "Device link connected \r \n ");
-            UARTprint("7", uart_string);
-            #endif
-            break;
-            
-        case CY_BLE_EVT_GAP_DEVICE_CONNECTED:
-            #if DEBUG_UART_ENABLED
-            sprintf(uart_string, "Device connected \r \n ");
             UARTprint("7", uart_string);
             #endif
             break;
@@ -87,14 +80,8 @@ void BLE_EventHandler(uint32_t event, void *eventParam)
             if(Cy_BLE_GetAdvertisementState() == CY_BLE_ADV_STATE_STOPPED)
             {
                 Cy_BLE_Stop();
+                //evt deep sleep?
             }
-            break;
-            
-        case CY_BLE_EVT_GATTS_READ_CHAR_VAL_ACCESS_REQ:
-            #if DEBUG_UART_ENABLED
-            sprintf(uart_string, "Read-req");
-            UARTprint("7", uart_string);
-            #endif
             break;
         
         default:
@@ -123,7 +110,7 @@ cy_en_ble_api_result_t BLE_sendPower(uint16_t Power)
     powerArray[1] = (uint8_t)Power;
     powerArray[0] = (Power >> 8);
     
-    apiResult = BLE_SetCharacteristicValue(POPE_POWER_MEASURE, sizeof(uint8)*2, (uint8_t*)&powerArray);
+    apiResult = BLE_SetPowerCharacteristicValue(POPE_POWER_MEASURE, sizeof(uint8)*2, (uint8_t*)&powerArray);
     
     powerArray[1] = 0;
     powerArray[0] = 0;
@@ -144,7 +131,7 @@ cy_en_ble_api_result_t BLE_sendBattery(uint8_t Battery)
 /************************************************************************************************
     Hjælpe funktion til at sende POWER
 *************************************************************************************************/
-cy_en_ble_api_result_t BLE_SetCharacteristicValue(POPE_char_index_t charIndex, uint16_t attrSize, uint8_t *attrValue)
+cy_en_ble_api_result_t BLE_SetPowerCharacteristicValue(POPE_char_index_t charIndex, uint16_t attrSize, uint8_t *attrValue)
 {
     cy_en_ble_api_result_t apiResult = CY_BLE_SUCCESS;
 
@@ -154,10 +141,10 @@ cy_en_ble_api_result_t BLE_SetCharacteristicValue(POPE_char_index_t charIndex, u
     }
     else
     {
-        /* Store data in database */
+        /* GATT service characteristic handler, size, value */
         cy_stc_ble_gatts_db_attr_val_info_t dbAttrValInfo =
         {
-            .handleValuePair.attrHandle = cy_ble_customConfigPtr->customs->customServInfo[charIndex].customServCharHandle, //cy_ble_cpsConfigPtr->cpss->charInfo[charIndex].charHandle,
+            .handleValuePair.attrHandle = cy_ble_customConfigPtr->customs->customServInfo[charIndex].customServCharHandle,
             .handleValuePair.value.len  = attrSize,
             .handleValuePair.value.val  = attrValue,
             .offset                     = 0u,
