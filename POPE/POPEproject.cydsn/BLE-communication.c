@@ -93,7 +93,7 @@ void BLE_EventHandler(uint32_t event, void *eventParam)
 }
 
 
-int BLE_checkTimer(){
+bool BLE_checkTimer(){
     if (BLEmainTimer != 0){
         BLEmainTimer = 0;
         Cy_BLE_StartTimer(&BLEtimerParam);
