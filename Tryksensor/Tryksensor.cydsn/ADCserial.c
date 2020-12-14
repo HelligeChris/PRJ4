@@ -1,16 +1,3 @@
-/* ========================================
- *
- * Copyright YOUR COMPANY, THE YEAR
- * All Rights Reserved
- * UNPUBLISHED, LICENSED SOFTWARE.
- *
- * CONFIDENTIAL AND PROPRIETARY INFORMATION
- * WHICH IS THE PROPERTY OF your company.
- *
- * ========================================
-*/
-
-/* [] END OF FILE */
 #include "ADCserial.h"
 #include "stdio.h"
 
@@ -119,7 +106,7 @@ void ADC_init()
     send(128, 15000);
 }
 
-signed int ADC_read()
+int32 ADC_read()
 {
     //Modtager data fra HX711
     int* Data = send(128, 15000);

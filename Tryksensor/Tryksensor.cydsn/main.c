@@ -11,7 +11,7 @@
 */
 #include "project.h"
 #include "VT100Terminal.h"
-#include "ADCserial.h"
+#include "trykControl.h"
 #include "stdio.h"
 
 CY_ISR_PROTO(ISR_UART_rx_handler);
@@ -36,21 +36,15 @@ int main(void)
     isr_uart_rx_StartEx(ISR_UART_rx_handler);
     UART_1_Start();
     UART_1_PutString("Startup\n\r");
-    ADC_init(128);
-    
-    int zero = 0;
-    for(int i = 0; i < 200; i++)
-    {
-        zero += ADC_read();
-    }
-    zero /= 200;
+    initTrykSensor();
     
     
     char buf[40] = {0};
     for(;;)
     {   
-        CyDelay(100);
-        sprintf(buf, "%d\r\n", ADC_read());
+        CyDelay(200);
+        //sprintf(buf, "%li\r\n", ADC_read());
+        sprintf(buf, "%lu\r\n", getVaegt(100));
         UART_1_PutString(buf);
         /* Place your application code here. */
     }

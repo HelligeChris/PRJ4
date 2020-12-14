@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Tryksensor\Tryksensor\TopDesign">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Tryksensor\Tryksensor\Source Files\main.c">
 <ExpandedNodeIds>
 <v>Tryksensor</v>
 <v>Tryksensor\Tryksensor</v>
@@ -31,10 +31,12 @@
 <v>Tryksensor\Tryksensor\Header Files</v>
 <v>Tryksensor\Tryksensor\Header Files\ADCserial.h</v>
 <v>Tryksensor\Tryksensor\Header Files\cyapicallbacks.h</v>
+<v>Tryksensor\Tryksensor\Header Files\trykControl.h</v>
 <v>Tryksensor\Tryksensor\Header Files\VT100Terminal.h</v>
 <v>Tryksensor\Tryksensor\Source Files</v>
 <v>Tryksensor\Tryksensor\Source Files\ADCserial.c</v>
 <v>Tryksensor\Tryksensor\Source Files\main.c</v>
+<v>Tryksensor\Tryksensor\Source Files\trykControl.c</v>
 <v>Tryksensor\Tryksensor\Source Files\VT100Terminal.c</v>
 <v>Tryksensor\Tryksensor\Generated_Source\PSoC5</v>
 </ExpandedNodeIds>
@@ -55,10 +57,12 @@
 <v>Tryksensor\Tryksensor\Header Files</v>
 <v>Tryksensor\Tryksensor\Header Files\ADCserial.h</v>
 <v>Tryksensor\Tryksensor\Header Files\cyapicallbacks.h</v>
+<v>Tryksensor\Tryksensor\Header Files\trykControl.h</v>
 <v>Tryksensor\Tryksensor\Header Files\VT100Terminal.h</v>
 <v>Tryksensor\Tryksensor\Source Files</v>
 <v>Tryksensor\Tryksensor\Source Files\ADCserial.c</v>
 <v>Tryksensor\Tryksensor\Source Files\main.c</v>
+<v>Tryksensor\Tryksensor\Source Files\trykControl.c</v>
 <v>Tryksensor\Tryksensor\Source Files\VT100Terminal.c</v>
 <v>Tryksensor\Tryksensor\Generated_Source</v>
 </VisibleNodeIds>
@@ -102,8 +106,13 @@
 <v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
 <v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files\Pin_DIN.lst</v>
 <v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files\Pin_SCK.lst</v>
+<v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files\sampleEvent.lst</v>
+<v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files\SampleTimer.lst</v>
+<v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files\SampleTimer_PM.lst</v>
 <v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files\Timer_1.lst</v>
 <v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files\Timer_1_PM.lst</v>
+<v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files\timer_clock_1.lst</v>
+<v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files\trykControl.lst</v>
 <v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_1.lst</v>
 <v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_1_BOOT.lst</v>
 <v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_1_INT.lst</v>
@@ -141,8 +150,13 @@
 <v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
 <v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files\Pin_DIN.lst</v>
 <v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files\Pin_SCK.lst</v>
+<v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files\sampleEvent.lst</v>
+<v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files\SampleTimer.lst</v>
+<v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files\SampleTimer_PM.lst</v>
 <v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files\Timer_1.lst</v>
 <v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files\Timer_1_PM.lst</v>
+<v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files\timer_clock_1.lst</v>
+<v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files\trykControl.lst</v>
 <v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_1.lst</v>
 <v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_1_BOOT.lst</v>
 <v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_1_INT.lst</v>
@@ -151,10 +165,6 @@
 <v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Listing Files\VT100Terminal.lst</v>
 <v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Tryksensor.elf</v>
 <v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Tryksensor.hex</v>
-<v>Tryksensor\Tryksensor\CortexM3\ARM_GCC_541\Debug\Tryksensor.map</v>
-<v>Tryksensor\Tryksensor\Tryksensor.gpdsc</v>
-<v>Tryksensor\Tryksensor\Tryksensor.rpt</v>
-<v>Tryksensor\Tryksensor\Tryksensor_timing.html</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
@@ -170,14 +180,19 @@
 <v>Tryksensor\Tryksensor\CY8C58LP Family Datasheet</v>
 <v>Tryksensor\Tryksensor\System Reference Guides</v>
 <v>Tryksensor\Tryksensor\System Reference Guides\cy_boot_v6_0</v>
-<v>Tryksensor\Tryksensor\cy_clock_v2_20.pdf</v>
+<v>Tryksensor\Tryksensor\ADC_DelSig_v3_30.pdf</v>
+<v>Tryksensor\Tryksensor\cy_clock_v2_20</v>
+<v>Tryksensor\Tryksensor\cy_clock_v2_20\cy_clock_v2_20.pdf</v>
 <v>Tryksensor\Tryksensor\cy_isr_v1_70</v>
 <v>Tryksensor\Tryksensor\cy_isr_v1_70\cy_isr_v1_70.pdf</v>
 <v>Tryksensor\Tryksensor\cy_pins_v2_20</v>
 <v>Tryksensor\Tryksensor\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
-<v>Tryksensor\Tryksensor\Timer_v2_80.pdf</v>
+<v>Tryksensor\Tryksensor\cy_vref_v1_70.pdf</v>
+<v>Tryksensor\Tryksensor\Timer_v2_80</v>
+<v>Tryksensor\Tryksensor\Timer_v2_80\Timer_v2_80.pdf</v>
 <v>Tryksensor\Tryksensor\UART_v2_50.pdf</v>
-<v>Tryksensor\Tryksensor\ZeroTerminal.pdf</v>
+<v>Tryksensor\Tryksensor\ZeroTerminal</v>
+<v>Tryksensor\Tryksensor\ZeroTerminal\ZeroTerminal.pdf</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
 <v>Tryksensor</v>
@@ -186,14 +201,19 @@
 <v>Tryksensor\Tryksensor\CY8C58LP Family Datasheet</v>
 <v>Tryksensor\Tryksensor\System Reference Guides</v>
 <v>Tryksensor\Tryksensor\System Reference Guides\cy_boot_v6_0</v>
-<v>Tryksensor\Tryksensor\cy_clock_v2_20.pdf</v>
+<v>Tryksensor\Tryksensor\ADC_DelSig_v3_30.pdf</v>
+<v>Tryksensor\Tryksensor\cy_clock_v2_20</v>
+<v>Tryksensor\Tryksensor\cy_clock_v2_20\cy_clock_v2_20.pdf</v>
 <v>Tryksensor\Tryksensor\cy_isr_v1_70</v>
 <v>Tryksensor\Tryksensor\cy_isr_v1_70\cy_isr_v1_70.pdf</v>
 <v>Tryksensor\Tryksensor\cy_pins_v2_20</v>
 <v>Tryksensor\Tryksensor\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
-<v>Tryksensor\Tryksensor\Timer_v2_80.pdf</v>
+<v>Tryksensor\Tryksensor\cy_vref_v1_70.pdf</v>
+<v>Tryksensor\Tryksensor\Timer_v2_80</v>
+<v>Tryksensor\Tryksensor\Timer_v2_80\Timer_v2_80.pdf</v>
 <v>Tryksensor\Tryksensor\UART_v2_50.pdf</v>
-<v>Tryksensor\Tryksensor\ZeroTerminal.pdf</v>
+<v>Tryksensor\Tryksensor\ZeroTerminal</v>
+<v>Tryksensor\Tryksensor\ZeroTerminal\ZeroTerminal.pdf</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStatesV2>
@@ -210,6 +230,10 @@
 <name v=".\Tryksensor.cydsn\main.c" />
 <name v=".\Tryksensor.cydsn\Tryksensor.cydwr" />
 <name v=".\Tryksensor.cydsn\Generated_Source\PSoC5\Pin_DIN.c" />
+<name v="..\..\..\..\OneDrive - Aarhus Universitet\Uni\3. Semester\GFV\Gruppe arb\Includefiles\VT100Terminal.h" />
+<name v=".\Tryksensor.cydsn\trykControl.c" />
+<name v=".\Tryksensor.cydsn\trykControl.h" />
+<name v=".\Tryksensor.cydsn\Generated_Source\PSoC5\Timer_1.c" />
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -217,7 +241,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Vertical"><TabbedMdiContainer Size="358, 489" SelectedTabbedMdiWindow="a0d1eede-d473-4e01-9455-1d5de78c49a7"><DocumentWindow Key="C:\Users\cring\Documents\GitHub\PRJ4\Tryksensor\Tryksensor.cydsn\TopDesign\TopDesign.cysch" Guid="a0d1eede-d473-4e01-9455-1d5de78c49a7" /><DocumentWindow Key="C:\Users\cring\OneDrive - Aarhus Universitet\Uni\3. Semester\GFV\Gruppe arb\Includefiles\VT100Terminal.c" Guid="0b02f1c7-b7b1-4732-a5c6-43357c0b52f8" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\PRJ4\Tryksensor\Tryksensor.cydsn\ADCserial.h" Guid="39811539-65da-4ae0-a60b-f396d4275b59" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\PRJ4\Tryksensor\Tryksensor.cydsn\ADCserial.c" Guid="3bf50b5f-072a-4fb5-8ea2-ef6e63681de7" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\PRJ4\Tryksensor\Tryksensor.cydsn\main.c" Guid="ddf1028c-e2a7-471e-a39a-2b814df8a986" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\PRJ4\Tryksensor\Tryksensor.cydsn\Tryksensor.cydwr" Guid="8c0b4430-cff6-413e-b860-afa3e15ba264" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\PRJ4\Tryksensor\Tryksensor.cydsn\Generated_Source\PSoC5\Pin_DIN.c" Guid="e2070b93-dee6-4338-bdf7-c6601217f6bc" /><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="a81e21bb-5e2e-400c-9cbf-968a63daa365" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1057, 447" SelectedTabbedMdiWindow="76f091e0-8dc3-4009-ad31-50fb4a4a4bc9"><DocumentWindow Key="C:\Users\cring\Documents\GitHub\PRJ4\Tryksensor\Tryksensor.cydsn\TopDesign\TopDesign.cysch" Guid="a0d1eede-d473-4e01-9455-1d5de78c49a7" /><DocumentWindow Key="C:\Users\cring\OneDrive - Aarhus Universitet\Uni\3. Semester\GFV\Gruppe arb\Includefiles\VT100Terminal.c" Guid="0b02f1c7-b7b1-4732-a5c6-43357c0b52f8" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\PRJ4\Tryksensor\Tryksensor.cydsn\ADCserial.h" Guid="39811539-65da-4ae0-a60b-f396d4275b59" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\PRJ4\Tryksensor\Tryksensor.cydsn\ADCserial.c" Guid="3bf50b5f-072a-4fb5-8ea2-ef6e63681de7" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\PRJ4\Tryksensor\Tryksensor.cydsn\main.c" Guid="ddf1028c-e2a7-471e-a39a-2b814df8a986" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\PRJ4\Tryksensor\Tryksensor.cydsn\Tryksensor.cydwr" Guid="8c0b4430-cff6-413e-b860-afa3e15ba264" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\PRJ4\Tryksensor\Tryksensor.cydsn\Generated_Source\PSoC5\Pin_DIN.c" Guid="e2070b93-dee6-4338-bdf7-c6601217f6bc" /><DocumentWindow Key="C:\Users\cring\OneDrive - Aarhus Universitet\Uni\3. Semester\GFV\Gruppe arb\Includefiles\VT100Terminal.h" Guid="b107ca84-1d46-4af9-9269-66bd731e5b8f" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\PRJ4\Tryksensor\Tryksensor.cydsn\trykControl.c" Guid="76f091e0-8dc3-4009-ad31-50fb4a4a4bc9" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\PRJ4\Tryksensor\Tryksensor.cydsn\trykControl.h" Guid="9badc54c-e3ed-45e5-8d89-e799c9a560bc" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\PRJ4\Tryksensor\Tryksensor.cydsn\Generated_Source\PSoC5\Timer_1.c" Guid="5dcf14e6-7d0e-41f7-b150-be990333c293" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

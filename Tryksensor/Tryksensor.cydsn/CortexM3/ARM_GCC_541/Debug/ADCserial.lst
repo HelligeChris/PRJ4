@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4rrURj.s 			page 1
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccfujcCc.s 			page 1
 
 
    1              		.syntax unified
@@ -26,7 +26,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4rrURj.s 			page 1
   23              		.type	gain_, %object
   24              		.size	gain_, 4
   25              	gain_:
-  26 0000 19000000 		.word	25
+  26 0000 32000000 		.word	50
   27              		.global	counter
   28              		.bss
   29              		.align	2
@@ -58,45 +58,34 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4rrURj.s 			page 1
   51              		.type	inv_pin, %function
   52              	inv_pin:
   53              	.LFB64:
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4rrURj.s 			page 2
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccfujcCc.s 			page 2
 
 
   54              		.file 1 "ADCserial.c"
-   1:ADCserial.c   **** /* ========================================
-   2:ADCserial.c   ****  *
-   3:ADCserial.c   ****  * Copyright YOUR COMPANY, THE YEAR
-   4:ADCserial.c   ****  * All Rights Reserved
-   5:ADCserial.c   ****  * UNPUBLISHED, LICENSED SOFTWARE.
-   6:ADCserial.c   ****  *
-   7:ADCserial.c   ****  * CONFIDENTIAL AND PROPRIETARY INFORMATION
-   8:ADCserial.c   ****  * WHICH IS THE PROPERTY OF your company.
-   9:ADCserial.c   ****  *
-  10:ADCserial.c   ****  * ========================================
-  11:ADCserial.c   **** */
-  12:ADCserial.c   **** 
-  13:ADCserial.c   **** /* [] END OF FILE */
-  14:ADCserial.c   **** #include "ADCserial.h"
-  15:ADCserial.c   **** #include "stdio.h"
-  16:ADCserial.c   **** 
-  17:ADCserial.c   **** #define SIZE 24
+   1:ADCserial.c   **** #include "ADCserial.h"
+   2:ADCserial.c   **** #include "stdio.h"
+   3:ADCserial.c   **** 
+   4:ADCserial.c   **** //Data længde fra HX711
+   5:ADCserial.c   **** #define SIZE 24
+   6:ADCserial.c   **** 
+   7:ADCserial.c   **** //Defination af states
+   8:ADCserial.c   **** typedef enum
+   9:ADCserial.c   **** {
+  10:ADCserial.c   ****     Sending_DATA,
+  11:ADCserial.c   ****     Done,
+  12:ADCserial.c   **** }state;
+  13:ADCserial.c   **** state DataRX;
+  14:ADCserial.c   **** 
+  15:ADCserial.c   **** //Default gain = 128
+  16:ADCserial.c   **** int gain_ = 50;
+  17:ADCserial.c   **** int counter = 0;
   18:ADCserial.c   **** 
-  19:ADCserial.c   **** typedef enum
-  20:ADCserial.c   **** {
-  21:ADCserial.c   ****     Sending_DATA,
-  22:ADCserial.c   ****     Done,
-  23:ADCserial.c   **** }state;
-  24:ADCserial.c   **** 
-  25:ADCserial.c   **** state DataRX;
-  26:ADCserial.c   **** 
-  27:ADCserial.c   **** int gain_ = 25;
-  28:ADCserial.c   **** int counter = 0;
-  29:ADCserial.c   **** 
-  30:ADCserial.c   **** signed int Datain[SIZE] = {0};
-  31:ADCserial.c   **** int Dataindex = 0;
-  32:ADCserial.c   **** 
-  33:ADCserial.c   **** void inv_pin()
-  34:ADCserial.c   **** {
-  55              		.loc 1 34 0
+  19:ADCserial.c   **** signed int Datain[SIZE] = {0};
+  20:ADCserial.c   **** int Dataindex = 0;
+  21:ADCserial.c   **** 
+  22:ADCserial.c   **** void inv_pin()
+  23:ADCserial.c   **** {
+  55              		.loc 1 23 0
   56              		.cfi_startproc
   57              		@ args = 0, pretend = 0, frame = 0
   58              		@ frame_needed = 1, uses_anonymous_args = 0
@@ -106,33 +95,34 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4rrURj.s 			page 1
   62              		.cfi_offset 14, -4
   63 0002 00AF     		add	r7, sp, #0
   64              		.cfi_def_cfa_register 7
-  35:ADCserial.c   ****     if (Pin_SCK_Read())
-  65              		.loc 1 35 0
+  24:ADCserial.c   ****     //Invertere Sck Pin
+  25:ADCserial.c   ****     if (Pin_SCK_Read())
+  65              		.loc 1 25 0
   66 0004 FFF7FEFF 		bl	Pin_SCK_Read
   67 0008 0346     		mov	r3, r0
   68 000a 002B     		cmp	r3, #0
   69 000c 03D0     		beq	.L2
-  36:ADCserial.c   ****     {
-  37:ADCserial.c   ****         Pin_SCK_Write(0);
-  70              		.loc 1 37 0
+  26:ADCserial.c   ****     {
+  27:ADCserial.c   ****         Pin_SCK_Write(0);
+  70              		.loc 1 27 0
   71 000e 0020     		movs	r0, #0
   72 0010 FFF7FEFF 		bl	Pin_SCK_Write
-  38:ADCserial.c   ****     }else{
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4rrURj.s 			page 3
-
-
-  39:ADCserial.c   ****         Pin_SCK_Write(1);
-  40:ADCserial.c   ****     }
-  41:ADCserial.c   **** }
-  73              		.loc 1 41 0
+  28:ADCserial.c   ****     }else{
+  29:ADCserial.c   ****         Pin_SCK_Write(1);
+  30:ADCserial.c   ****     }
+  31:ADCserial.c   **** }
+  73              		.loc 1 31 0
   74 0014 02E0     		b	.L4
   75              	.L2:
-  39:ADCserial.c   ****     }
-  76              		.loc 1 39 0
+  29:ADCserial.c   ****     }
+  76              		.loc 1 29 0
   77 0016 0120     		movs	r0, #1
   78 0018 FFF7FEFF 		bl	Pin_SCK_Write
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccfujcCc.s 			page 3
+
+
   79              	.L4:
-  80              		.loc 1 41 0
+  80              		.loc 1 31 0
   81 001c 00BF     		nop
   82 001e 80BD     		pop	{r7, pc}
   83              		.cfi_endproc
@@ -146,10 +136,10 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4rrURj.s 			page 1
   91              		.type	isr_timer_handler, %function
   92              	isr_timer_handler:
   93              	.LFB65:
-  42:ADCserial.c   **** 
-  43:ADCserial.c   **** CY_ISR(isr_timer_handler)
-  44:ADCserial.c   **** {
-  94              		.loc 1 44 0
+  32:ADCserial.c   **** 
+  33:ADCserial.c   **** CY_ISR(isr_timer_handler)
+  34:ADCserial.c   **** {
+  94              		.loc 1 34 0
   95              		.cfi_startproc
   96              		@ args = 0, pretend = 0, frame = 0
   97              		@ frame_needed = 1, uses_anonymous_args = 0
@@ -161,63 +151,65 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4rrURj.s 			page 1
  103              		.cfi_offset 14, -4
  104 0002 00AF     		add	r7, sp, #0
  105              		.cfi_def_cfa_register 7
-  45:ADCserial.c   ****     Timer_1_Stop();
- 106              		.loc 1 45 0
+  35:ADCserial.c   ****     Timer_1_Stop();
+ 106              		.loc 1 35 0
  107 0004 FFF7FEFF 		bl	Timer_1_Stop
-  46:ADCserial.c   ****     
-  47:ADCserial.c   ****     if (counter == (gain_))
- 108              		.loc 1 47 0
+  36:ADCserial.c   ****     
+  37:ADCserial.c   ****     //Stopper dataoverførelse og bestemmer hvilket gain næste dataoverførelse har
+  38:ADCserial.c   ****     if (counter == (gain_))
+ 108              		.loc 1 38 0
  109 0008 194B     		ldr	r3, .L9
  110 000a 1A68     		ldr	r2, [r3]
  111 000c 194B     		ldr	r3, .L9+4
  112 000e 1B68     		ldr	r3, [r3]
  113 0010 9A42     		cmp	r2, r3
  114 0012 0BD1     		bne	.L6
-  48:ADCserial.c   ****     {
-  49:ADCserial.c   ****         Timer_1_Stop();
- 115              		.loc 1 49 0
+  39:ADCserial.c   ****     {
+  40:ADCserial.c   ****         Timer_1_Stop();
+ 115              		.loc 1 40 0
  116 0014 FFF7FEFF 		bl	Timer_1_Stop
-  50:ADCserial.c   ****         Pin_DIN_Write(1);
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4rrURj.s 			page 4
-
-
- 117              		.loc 1 50 0
+  41:ADCserial.c   ****         Pin_DIN_Write(1);
+ 117              		.loc 1 41 0
  118 0018 0120     		movs	r0, #1
  119 001a FFF7FEFF 		bl	Pin_DIN_Write
-  51:ADCserial.c   ****         DataRX = Done;
- 120              		.loc 1 51 0
+  42:ADCserial.c   ****         DataRX = Done;
+ 120              		.loc 1 42 0
  121 001e 164B     		ldr	r3, .L9+8
  122 0020 0122     		movs	r2, #1
  123 0022 1A70     		strb	r2, [r3]
-  52:ADCserial.c   ****         Pin_SCK_Write(0);
- 124              		.loc 1 52 0
+  43:ADCserial.c   ****         Pin_SCK_Write(0);
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccfujcCc.s 			page 4
+
+
+ 124              		.loc 1 43 0
  125 0024 0020     		movs	r0, #0
  126 0026 FFF7FEFF 		bl	Pin_SCK_Write
-  53:ADCserial.c   ****         return;
- 127              		.loc 1 53 0
+  44:ADCserial.c   ****         return;
+ 127              		.loc 1 44 0
  128 002a 1FE0     		b	.L5
  129              	.L6:
-  54:ADCserial.c   ****     }
-  55:ADCserial.c   ****     
-  56:ADCserial.c   ****     
-  57:ADCserial.c   ****     inv_pin();
- 130              		.loc 1 57 0
+  45:ADCserial.c   ****     }
+  46:ADCserial.c   ****     
+  47:ADCserial.c   ****     
+  48:ADCserial.c   ****     inv_pin();
+ 130              		.loc 1 48 0
  131 002c FFF7FEFF 		bl	inv_pin
-  58:ADCserial.c   ****     
-  59:ADCserial.c   ****     if ((!Pin_SCK_Read()) && (counter < (SIZE*2)))
- 132              		.loc 1 59 0
+  49:ADCserial.c   ****     
+  50:ADCserial.c   ****     //Læser de første 24 databit
+  51:ADCserial.c   ****     if ((!Pin_SCK_Read()) && (counter < (SIZE*2)))
+ 132              		.loc 1 51 0
  133 0030 FFF7FEFF 		bl	Pin_SCK_Read
  134 0034 0346     		mov	r3, r0
  135 0036 002B     		cmp	r3, #0
  136 0038 11D1     		bne	.L8
- 137              		.loc 1 59 0 is_stmt 0 discriminator 1
+ 137              		.loc 1 51 0 is_stmt 0 discriminator 1
  138 003a 0D4B     		ldr	r3, .L9
  139 003c 1B68     		ldr	r3, [r3]
  140 003e 2F2B     		cmp	r3, #47
  141 0040 0DDC     		bgt	.L8
-  60:ADCserial.c   ****     {
-  61:ADCserial.c   ****         Datain[Dataindex] = Pin_DIN_Read();
- 142              		.loc 1 61 0 is_stmt 1
+  52:ADCserial.c   ****     {
+  53:ADCserial.c   ****         Datain[Dataindex] = Pin_DIN_Read();
+ 142              		.loc 1 53 0 is_stmt 1
  143 0042 0E4B     		ldr	r3, .L9+12
  144 0044 1C68     		ldr	r4, [r3]
  145 0046 FFF7FEFF 		bl	Pin_DIN_Read
@@ -225,32 +217,32 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4rrURj.s 			page 1
  147 004c 1A46     		mov	r2, r3
  148 004e 0C4B     		ldr	r3, .L9+16
  149 0050 43F82420 		str	r2, [r3, r4, lsl #2]
-  62:ADCserial.c   ****         Dataindex++;
- 150              		.loc 1 62 0
+  54:ADCserial.c   ****         Dataindex++;
+ 150              		.loc 1 54 0
  151 0054 094B     		ldr	r3, .L9+12
  152 0056 1B68     		ldr	r3, [r3]
  153 0058 0133     		adds	r3, r3, #1
  154 005a 084A     		ldr	r2, .L9+12
  155 005c 1360     		str	r3, [r2]
  156              	.L8:
-  63:ADCserial.c   ****     }
-  64:ADCserial.c   ****     
-  65:ADCserial.c   ****     counter++;
- 157              		.loc 1 65 0
+  55:ADCserial.c   ****     }
+  56:ADCserial.c   ****     
+  57:ADCserial.c   ****     counter++;
+ 157              		.loc 1 57 0
  158 005e 044B     		ldr	r3, .L9
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4rrURj.s 			page 5
-
-
  159 0060 1B68     		ldr	r3, [r3]
  160 0062 0133     		adds	r3, r3, #1
  161 0064 024A     		ldr	r2, .L9
  162 0066 1360     		str	r3, [r2]
-  66:ADCserial.c   ****     Timer_1_Start();
- 163              		.loc 1 66 0
+  58:ADCserial.c   ****     Timer_1_Start();
+ 163              		.loc 1 58 0
  164 0068 FFF7FEFF 		bl	Timer_1_Start
  165              	.L5:
-  67:ADCserial.c   **** }
- 166              		.loc 1 67 0
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccfujcCc.s 			page 5
+
+
+  59:ADCserial.c   **** }
+ 166              		.loc 1 59 0
  167 006c 98BD     		pop	{r3, r4, r7, pc}
  168              	.L10:
  169 006e 00BF     		.align	2
@@ -271,10 +263,10 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4rrURj.s 			page 1
  184              		.type	send, %function
  185              	send:
  186              	.LFB66:
-  68:ADCserial.c   **** 
-  69:ADCserial.c   **** int* send(int gain, uint period_ns)
-  70:ADCserial.c   **** {
- 187              		.loc 1 70 0
+  60:ADCserial.c   **** 
+  61:ADCserial.c   **** int* send(int gain, uint period_ns)
+  62:ADCserial.c   **** {
+ 187              		.loc 1 62 0
  188              		.cfi_startproc
  189              		@ args = 0, pretend = 0, frame = 8
  190              		@ frame_needed = 1, uses_anonymous_args = 0
@@ -288,123 +280,130 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4rrURj.s 			page 1
  198              		.cfi_def_cfa_register 7
  199 0006 7860     		str	r0, [r7, #4]
  200 0008 3960     		str	r1, [r7]
-  71:ADCserial.c   ****     Timer_1_WritePeriod((int)(period_ns/2/1000)*12);
- 201              		.loc 1 71 0
+  63:ADCserial.c   ****     //Sætter puls længde
+  64:ADCserial.c   ****     Timer_1_WritePeriod((int)(period_ns/1000)*12*2);
+ 201              		.loc 1 64 0
  202 000a 3B68     		ldr	r3, [r7]
  203 000c 224A     		ldr	r2, .L19
  204 000e A2FB0323 		umull	r2, r3, r2, r3
- 205 0012 DB09     		lsrs	r3, r3, #7
+ 205 0012 9B09     		lsrs	r3, r3, #6
  206 0014 9BB2     		uxth	r3, r3
  207 0016 1A46     		mov	r2, r3	@ movhi
  208 0018 5200     		lsls	r2, r2, #1
  209 001a 1344     		add	r3, r3, r2
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4rrURj.s 			page 6
-
-
- 210 001c 9B00     		lsls	r3, r3, #2
+ 210 001c DB00     		lsls	r3, r3, #3
  211 001e 9BB2     		uxth	r3, r3
  212 0020 1846     		mov	r0, r3
  213 0022 FFF7FEFF 		bl	Timer_1_WritePeriod
-  72:ADCserial.c   ****     if (gain == 128)
- 214              		.loc 1 72 0
+  65:ADCserial.c   ****     
+  66:ADCserial.c   ****     //Sikre gain ikke kan være en ugyldig værdig
+  67:ADCserial.c   ****     if (gain == 128)
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccfujcCc.s 			page 6
+
+
+ 214              		.loc 1 67 0
  215 0026 7B68     		ldr	r3, [r7, #4]
  216 0028 802B     		cmp	r3, #128
  217 002a 03D1     		bne	.L12
-  73:ADCserial.c   ****     {
-  74:ADCserial.c   ****         gain_ = 25*2;
- 218              		.loc 1 74 0
+  68:ADCserial.c   ****     {
+  69:ADCserial.c   ****         gain_ = 25*2;
+ 218              		.loc 1 69 0
  219 002c 1B4B     		ldr	r3, .L19+4
  220 002e 3222     		movs	r2, #50
  221 0030 1A60     		str	r2, [r3]
  222 0032 0CE0     		b	.L18
  223              	.L12:
-  75:ADCserial.c   ****         
-  76:ADCserial.c   ****     }else if( gain == 64)
- 224              		.loc 1 76 0
+  70:ADCserial.c   ****         
+  71:ADCserial.c   ****     }else if( gain == 64)
+ 224              		.loc 1 71 0
  225 0034 7B68     		ldr	r3, [r7, #4]
  226 0036 402B     		cmp	r3, #64
  227 0038 03D1     		bne	.L14
-  77:ADCserial.c   ****     {
-  78:ADCserial.c   ****         gain_ = 27*2;
- 228              		.loc 1 78 0
+  72:ADCserial.c   ****     {
+  73:ADCserial.c   ****         gain_ = 27*2;
+ 228              		.loc 1 73 0
  229 003a 184B     		ldr	r3, .L19+4
  230 003c 3622     		movs	r2, #54
  231 003e 1A60     		str	r2, [r3]
  232 0040 05E0     		b	.L18
  233              	.L14:
-  79:ADCserial.c   ****     }else if( gain == 32)
- 234              		.loc 1 79 0
+  74:ADCserial.c   ****     }else if( gain == 32)
+ 234              		.loc 1 74 0
  235 0042 7B68     		ldr	r3, [r7, #4]
  236 0044 202B     		cmp	r3, #32
  237 0046 02D1     		bne	.L18
-  80:ADCserial.c   ****     {
-  81:ADCserial.c   ****         gain_ = 26*2;
- 238              		.loc 1 81 0
+  75:ADCserial.c   ****     {
+  76:ADCserial.c   ****         gain_ = 26*2;
+ 238              		.loc 1 76 0
  239 0048 144B     		ldr	r3, .L19+4
  240 004a 3422     		movs	r2, #52
  241 004c 1A60     		str	r2, [r3]
  242              	.L18:
-  82:ADCserial.c   ****     }
-  83:ADCserial.c   ****     
-  84:ADCserial.c   ****     while(Pin_DIN_Read());
- 243              		.loc 1 84 0
+  77:ADCserial.c   ****     }
+  78:ADCserial.c   ****     
+  79:ADCserial.c   ****     //Venter på HX711 er klar til at sende/modtage data
+  80:ADCserial.c   ****     while(Pin_DIN_Read());
+ 243              		.loc 1 80 0
  244 004e 00BF     		nop
  245              	.L15:
- 246              		.loc 1 84 0 is_stmt 0 discriminator 1
+ 246              		.loc 1 80 0 is_stmt 0 discriminator 1
  247 0050 FFF7FEFF 		bl	Pin_DIN_Read
  248 0054 0346     		mov	r3, r0
  249 0056 002B     		cmp	r3, #0
  250 0058 FAD1     		bne	.L15
-  85:ADCserial.c   ****     DataRX = Sending_DATA;
- 251              		.loc 1 85 0 is_stmt 1
+  81:ADCserial.c   ****     DataRX = Sending_DATA;
+ 251              		.loc 1 81 0 is_stmt 1
  252 005a 114B     		ldr	r3, .L19+8
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4rrURj.s 			page 7
-
-
  253 005c 0022     		movs	r2, #0
  254 005e 1A70     		strb	r2, [r3]
-  86:ADCserial.c   ****     
-  87:ADCserial.c   ****     Dataindex = 0;
- 255              		.loc 1 87 0
+  82:ADCserial.c   **** 
+  83:ADCserial.c   ****     //Initialisere dataoverførelse
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccfujcCc.s 			page 7
+
+
+  84:ADCserial.c   ****     Dataindex = 0;
+ 255              		.loc 1 84 0
  256 0060 104B     		ldr	r3, .L19+12
  257 0062 0022     		movs	r2, #0
  258 0064 1A60     		str	r2, [r3]
-  88:ADCserial.c   ****     counter = 0;
- 259              		.loc 1 88 0
+  85:ADCserial.c   ****     counter = 0;
+ 259              		.loc 1 85 0
  260 0066 104B     		ldr	r3, .L19+16
  261 0068 0022     		movs	r2, #0
  262 006a 1A60     		str	r2, [r3]
-  89:ADCserial.c   ****     Pin_SCK_Write(0);
- 263              		.loc 1 89 0
+  86:ADCserial.c   ****     Pin_SCK_Write(0);
+ 263              		.loc 1 86 0
  264 006c 0020     		movs	r0, #0
  265 006e FFF7FEFF 		bl	Pin_SCK_Write
-  90:ADCserial.c   ****     Timer_1_WriteCounter(0);
- 266              		.loc 1 90 0
+  87:ADCserial.c   ****     Timer_1_WriteCounter(0);
+ 266              		.loc 1 87 0
  267 0072 0020     		movs	r0, #0
  268 0074 FFF7FEFF 		bl	Timer_1_WriteCounter
-  91:ADCserial.c   ****     Timer_1_Start();
- 269              		.loc 1 91 0
+  88:ADCserial.c   ****     //Starter dataoverførelse
+  89:ADCserial.c   ****     Timer_1_Start();
+ 269              		.loc 1 89 0
  270 0078 FFF7FEFF 		bl	Timer_1_Start
-  92:ADCserial.c   ****     while(DataRX == Sending_DATA);
- 271              		.loc 1 92 0
+  90:ADCserial.c   ****     //Venter på dataoverførelse er afsluttet
+  91:ADCserial.c   ****     while(DataRX == Sending_DATA);
+ 271              		.loc 1 91 0
  272 007c 00BF     		nop
  273              	.L16:
- 274              		.loc 1 92 0 is_stmt 0 discriminator 1
+ 274              		.loc 1 91 0 is_stmt 0 discriminator 1
  275 007e 084B     		ldr	r3, .L19+8
  276 0080 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
  277 0082 002B     		cmp	r3, #0
  278 0084 FBD0     		beq	.L16
+  92:ADCserial.c   ****     //Sikre Pin SCK er lav for at undgå at slukke HX711
   93:ADCserial.c   ****     Pin_SCK_Write(0);
  279              		.loc 1 93 0 is_stmt 1
  280 0086 0020     		movs	r0, #0
  281 0088 FFF7FEFF 		bl	Pin_SCK_Write
   94:ADCserial.c   ****     
-  95:ADCserial.c   ****     
-  96:ADCserial.c   ****     return Datain;
- 282              		.loc 1 96 0
+  95:ADCserial.c   ****     return Datain;
+ 282              		.loc 1 95 0
  283 008c 074B     		ldr	r3, .L19+20
-  97:ADCserial.c   **** }
- 284              		.loc 1 97 0
+  96:ADCserial.c   **** }
+ 284              		.loc 1 96 0
  285 008e 1846     		mov	r0, r3
  286 0090 0837     		adds	r7, r7, #8
  287              		.cfi_def_cfa_offset 8
@@ -418,10 +417,10 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4rrURj.s 			page 1
  295 0098 D34D6210 		.word	274877907
  296 009c 00000000 		.word	gain_
  297 00a0 00000000 		.word	DataRX
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4rrURj.s 			page 8
-
-
  298 00a4 00000000 		.word	Dataindex
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccfujcCc.s 			page 8
+
+
  299 00a8 00000000 		.word	counter
  300 00ac 00000000 		.word	Datain
  301              		.cfi_endproc
@@ -435,10 +434,10 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4rrURj.s 			page 1
  309              		.type	ADC_init, %function
  310              	ADC_init:
  311              	.LFB67:
-  98:ADCserial.c   **** 
-  99:ADCserial.c   **** void ADC_init()
- 100:ADCserial.c   **** {
- 312              		.loc 1 100 0
+  97:ADCserial.c   **** 
+  98:ADCserial.c   **** void ADC_init()
+  99:ADCserial.c   **** {
+ 312              		.loc 1 99 0
  313              		.cfi_startproc
  314              		@ args = 0, pretend = 0, frame = 0
  315              		@ frame_needed = 1, uses_anonymous_args = 0
@@ -448,22 +447,23 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4rrURj.s 			page 1
  319              		.cfi_offset 14, -4
  320 0002 00AF     		add	r7, sp, #0
  321              		.cfi_def_cfa_register 7
- 101:ADCserial.c   ****     Timer_1_Init();
- 322              		.loc 1 101 0
+ 100:ADCserial.c   ****     Timer_1_Init();
+ 322              		.loc 1 100 0
  323 0004 FFF7FEFF 		bl	Timer_1_Init
- 102:ADCserial.c   ****     isr_timer_StartEx(isr_timer_handler);
- 324              		.loc 1 102 0
+ 101:ADCserial.c   ****     isr_timer_StartEx(isr_timer_handler);
+ 324              		.loc 1 101 0
  325 0008 0748     		ldr	r0, .L22
  326 000a FFF7FEFF 		bl	isr_timer_StartEx
- 103:ADCserial.c   ****     Pin_SCK_Write(0);
- 327              		.loc 1 103 0
+ 102:ADCserial.c   ****     Pin_SCK_Write(0);
+ 327              		.loc 1 102 0
  328 000e 0020     		movs	r0, #0
  329 0010 FFF7FEFF 		bl	Pin_SCK_Write
- 104:ADCserial.c   ****     Pin_DIN_Write(0);
- 330              		.loc 1 104 0
+ 103:ADCserial.c   ****     Pin_DIN_Write(0);
+ 330              		.loc 1 103 0
  331 0014 0020     		movs	r0, #0
  332 0016 FFF7FEFF 		bl	Pin_DIN_Write
- 105:ADCserial.c   ****     
+ 104:ADCserial.c   ****     
+ 105:ADCserial.c   ****     //Sætter gain til 128
  106:ADCserial.c   ****     send(128, 15000);
  333              		.loc 1 106 0
  334 001a 43F69821 		movw	r1, #15000
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4rrURj.s 			page 1
  342              	.L22:
  343 0028 00000000 		.word	isr_timer_handler
  344              		.cfi_endproc
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4rrURj.s 			page 9
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccfujcCc.s 			page 9
 
 
  345              	.LFE67:
@@ -492,7 +492,7 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4rrURj.s 			page 1
  353              	ADC_read:
  354              	.LFB68:
  108:ADCserial.c   **** 
- 109:ADCserial.c   **** signed int ADC_read()
+ 109:ADCserial.c   **** int32 ADC_read()
  110:ADCserial.c   **** {
  355              		.loc 1 110 0
  356              		.cfi_startproc
@@ -506,26 +506,31 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4rrURj.s 			page 1
  364              		.cfi_def_cfa_offset 24
  365 0004 00AF     		add	r7, sp, #0
  366              		.cfi_def_cfa_register 7
- 111:ADCserial.c   ****     int* Data = send(128, 15000);
- 367              		.loc 1 111 0
+ 111:ADCserial.c   ****     //Modtager data fra HX711
+ 112:ADCserial.c   ****     int* Data = send(128, 15000);
+ 367              		.loc 1 112 0
  368 0006 43F69821 		movw	r1, #15000
  369 000a 8020     		movs	r0, #128
  370 000c FFF7FEFF 		bl	send
  371 0010 7860     		str	r0, [r7, #4]
- 112:ADCserial.c   ****     int x = 0;
- 372              		.loc 1 112 0
+ 113:ADCserial.c   ****     int x = 0;
+ 372              		.loc 1 113 0
  373 0012 0023     		movs	r3, #0
  374 0014 FB60     		str	r3, [r7, #12]
  375              	.LBB2:
- 113:ADCserial.c   ****     for(unsigned int i = 1; i <= SIZE; i++)
- 376              		.loc 1 113 0
+ 114:ADCserial.c   ****     
+ 115:ADCserial.c   ****     //Konvertere fra unsigned int 24bit til signed int 32bit
+ 116:ADCserial.c   ****     //Dette gøres da der ingen 24bit type er i c
+ 117:ADCserial.c   ****     for(unsigned int i = 1; i <= SIZE; i++)
+ 376              		.loc 1 117 0
  377 0016 0123     		movs	r3, #1
  378 0018 BB60     		str	r3, [r7, #8]
  379 001a 12E0     		b	.L25
  380              	.L26:
- 114:ADCserial.c   ****     {
- 115:ADCserial.c   ****         x += Data[SIZE - i]<< (i-1);
- 381              		.loc 1 115 0 discriminator 3
+ 118:ADCserial.c   ****     {
+ 119:ADCserial.c   ****         //Int array lægges over i enkelt variabel
+ 120:ADCserial.c   ****         x += Data[SIZE - i]<< (i-1);
+ 381              		.loc 1 120 0 discriminator 3
  382 001c BA68     		ldr	r2, [r7, #8]
  383 001e 1346     		mov	r3, r2
  384 0020 9B07     		lsls	r3, r3, #30
@@ -533,51 +538,53 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4rrURj.s 			page 1
  386 0024 9B00     		lsls	r3, r3, #2
  387 0026 6033     		adds	r3, r3, #96
  388 0028 7A68     		ldr	r2, [r7, #4]
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccfujcCc.s 			page 10
+
+
  389 002a 1344     		add	r3, r3, r2
  390 002c 1A68     		ldr	r2, [r3]
  391 002e BB68     		ldr	r3, [r7, #8]
  392 0030 013B     		subs	r3, r3, #1
  393 0032 02FA03F3 		lsl	r3, r2, r3
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4rrURj.s 			page 10
-
-
  394 0036 FA68     		ldr	r2, [r7, #12]
  395 0038 1344     		add	r3, r3, r2
  396 003a FB60     		str	r3, [r7, #12]
- 113:ADCserial.c   ****     for(unsigned int i = 1; i <= SIZE; i++)
- 397              		.loc 1 113 0 discriminator 3
+ 117:ADCserial.c   ****     {
+ 397              		.loc 1 117 0 discriminator 3
  398 003c BB68     		ldr	r3, [r7, #8]
  399 003e 0133     		adds	r3, r3, #1
  400 0040 BB60     		str	r3, [r7, #8]
  401              	.L25:
- 113:ADCserial.c   ****     for(unsigned int i = 1; i <= SIZE; i++)
- 402              		.loc 1 113 0 is_stmt 0 discriminator 1
+ 117:ADCserial.c   ****     {
+ 402              		.loc 1 117 0 is_stmt 0 discriminator 1
  403 0042 BB68     		ldr	r3, [r7, #8]
  404 0044 182B     		cmp	r3, #24
  405 0046 E9D9     		bls	.L26
  406              	.LBE2:
- 116:ADCserial.c   ****     }
- 117:ADCserial.c   ****     
- 118:ADCserial.c   ****     if (Datain[0])
- 407              		.loc 1 118 0 is_stmt 1
+ 121:ADCserial.c   ****     }
+ 122:ADCserial.c   ****     
+ 123:ADCserial.c   ****     //Tjekker om tallet er negativt(1) eller positivt(0)
+ 124:ADCserial.c   ****     if (Datain[0])
+ 407              		.loc 1 124 0 is_stmt 1
  408 0048 064B     		ldr	r3, .L29
  409 004a 1B68     		ldr	r3, [r3]
  410 004c 002B     		cmp	r3, #0
  411 004e 03D0     		beq	.L27
- 119:ADCserial.c   ****     {
- 120:ADCserial.c   ****         x |= 0xFF<<24;
- 412              		.loc 1 120 0
+ 125:ADCserial.c   ****     {
+ 126:ADCserial.c   ****         //Konvertere fra unsigned int 24bit til signed int 32bit
+ 127:ADCserial.c   ****         x |= 0xFF<<24;
+ 412              		.loc 1 127 0
  413 0050 FB68     		ldr	r3, [r7, #12]
  414 0052 43F07F43 		orr	r3, r3, #-16777216
  415 0056 FB60     		str	r3, [r7, #12]
  416              	.L27:
- 121:ADCserial.c   ****     }
- 122:ADCserial.c   ****     
- 123:ADCserial.c   ****     return x;
- 417              		.loc 1 123 0
+ 128:ADCserial.c   ****     }
+ 129:ADCserial.c   ****     
+ 130:ADCserial.c   ****     return x;
+ 417              		.loc 1 130 0
  418 0058 FB68     		ldr	r3, [r7, #12]
- 124:ADCserial.c   **** }
- 419              		.loc 1 124 0
+ 131:ADCserial.c   **** }...
+ 419              		.loc 1 131 0
  420 005a 1846     		mov	r0, r3
  421 005c 1037     		adds	r7, r7, #16
  422              		.cfi_def_cfa_offset 8
@@ -591,813 +598,835 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4rrURj.s 			page 1
  430 0064 00000000 		.word	Datain
  431              		.cfi_endproc
  432              	.LFE68:
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccfujcCc.s 			page 11
+
+
  433              		.size	ADC_read, .-ADC_read
  434              		.text
  435              	.Letext0:
  436              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
  437              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
- 438              		.file 4 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
- 439              		.file 5 "Generated_Source\\PSoC5/core_cm3.h"
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4rrURj.s 			page 11
+ 438              		.file 4 "Generated_Source\\PSoC5/cytypes.h"
+ 439              		.file 5 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
+ 440              		.file 6 "Generated_Source\\PSoC5/core_cm3.h"
+ 441              		.section	.debug_info,"",%progbits
+ 442              	.Ldebug_info0:
+ 443 0000 0B020000 		.4byte	0x20b
+ 444 0004 0400     		.2byte	0x4
+ 445 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 446 000a 04       		.byte	0x4
+ 447 000b 01       		.uleb128 0x1
+ 448 000c 48000000 		.4byte	.LASF32
+ 449 0010 0C       		.byte	0xc
+ 450 0011 BB010000 		.4byte	.LASF33
+ 451 0015 07000000 		.4byte	.LASF34
+ 452 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 453 001d 00000000 		.4byte	0
+ 454 0021 00000000 		.4byte	.Ldebug_line0
+ 455 0025 02       		.uleb128 0x2
+ 456 0026 01       		.byte	0x1
+ 457 0027 06       		.byte	0x6
+ 458 0028 20020000 		.4byte	.LASF0
+ 459 002c 02       		.uleb128 0x2
+ 460 002d 01       		.byte	0x1
+ 461 002e 08       		.byte	0x8
+ 462 002f 19010000 		.4byte	.LASF1
+ 463 0033 02       		.uleb128 0x2
+ 464 0034 02       		.byte	0x2
+ 465 0035 05       		.byte	0x5
+ 466 0036 F1010000 		.4byte	.LASF2
+ 467 003a 02       		.uleb128 0x2
+ 468 003b 02       		.byte	0x2
+ 469 003c 07       		.byte	0x7
+ 470 003d E6000000 		.4byte	.LASF3
+ 471 0041 03       		.uleb128 0x3
+ 472 0042 DC000000 		.4byte	.LASF9
+ 473 0046 02       		.byte	0x2
+ 474 0047 3F       		.byte	0x3f
+ 475 0048 4C000000 		.4byte	0x4c
+ 476 004c 02       		.uleb128 0x2
+ 477 004d 04       		.byte	0x4
+ 478 004e 05       		.byte	0x5
+ 479 004f FB010000 		.4byte	.LASF4
+ 480 0053 02       		.uleb128 0x2
+ 481 0054 04       		.byte	0x4
+ 482 0055 07       		.byte	0x7
+ 483 0056 27010000 		.4byte	.LASF5
+ 484 005a 02       		.uleb128 0x2
+ 485 005b 08       		.byte	0x8
+ 486 005c 05       		.byte	0x5
+ 487 005d D8010000 		.4byte	.LASF6
+ 488 0061 02       		.uleb128 0x2
+ 489 0062 08       		.byte	0x8
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccfujcCc.s 			page 12
 
 
- 440              		.section	.debug_info,"",%progbits
- 441              	.Ldebug_info0:
- 442 0000 FF010000 		.4byte	0x1ff
- 443 0004 0400     		.2byte	0x4
- 444 0006 00000000 		.4byte	.Ldebug_abbrev0
- 445 000a 04       		.byte	0x4
- 446 000b 01       		.uleb128 0x1
- 447 000c 48000000 		.4byte	.LASF31
- 448 0010 0C       		.byte	0xc
- 449 0011 B5010000 		.4byte	.LASF32
- 450 0015 07000000 		.4byte	.LASF33
- 451 0019 00000000 		.4byte	.Ldebug_ranges0+0
- 452 001d 00000000 		.4byte	0
- 453 0021 00000000 		.4byte	.Ldebug_line0
- 454 0025 02       		.uleb128 0x2
- 455 0026 01       		.byte	0x1
- 456 0027 06       		.byte	0x6
- 457 0028 1A020000 		.4byte	.LASF0
- 458 002c 02       		.uleb128 0x2
- 459 002d 01       		.byte	0x1
- 460 002e 08       		.byte	0x8
- 461 002f 06010000 		.4byte	.LASF1
- 462 0033 02       		.uleb128 0x2
- 463 0034 02       		.byte	0x2
- 464 0035 05       		.byte	0x5
- 465 0036 EB010000 		.4byte	.LASF2
- 466 003a 02       		.uleb128 0x2
- 467 003b 02       		.byte	0x2
- 468 003c 07       		.byte	0x7
- 469 003d 26010000 		.4byte	.LASF3
- 470 0041 03       		.uleb128 0x3
- 471 0042 DC000000 		.4byte	.LASF9
- 472 0046 02       		.byte	0x2
- 473 0047 3F       		.byte	0x3f
- 474 0048 4C000000 		.4byte	0x4c
- 475 004c 02       		.uleb128 0x2
- 476 004d 04       		.byte	0x4
- 477 004e 05       		.byte	0x5
- 478 004f F5010000 		.4byte	.LASF4
- 479 0053 02       		.uleb128 0x2
- 480 0054 04       		.byte	0x4
- 481 0055 07       		.byte	0x7
- 482 0056 14010000 		.4byte	.LASF5
- 483 005a 02       		.uleb128 0x2
- 484 005b 08       		.byte	0x8
- 485 005c 05       		.byte	0x5
- 486 005d D2010000 		.4byte	.LASF6
- 487 0061 02       		.uleb128 0x2
- 488 0062 08       		.byte	0x8
- 489 0063 07       		.byte	0x7
- 490 0064 91010000 		.4byte	.LASF7
- 491 0068 04       		.uleb128 0x4
- 492 0069 04       		.byte	0x4
- 493 006a 05       		.byte	0x5
- 494 006b 696E7400 		.ascii	"int\000"
- 495 006f 02       		.uleb128 0x2
- 496 0070 04       		.byte	0x4
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4rrURj.s 			page 12
-
-
- 497 0071 07       		.byte	0x7
- 498 0072 7F010000 		.4byte	.LASF8
- 499 0076 03       		.uleb128 0x3
- 500 0077 C1010000 		.4byte	.LASF10
- 501 007b 03       		.byte	0x3
- 502 007c 2C       		.byte	0x2c
- 503 007d 41000000 		.4byte	0x41
- 504 0081 02       		.uleb128 0x2
- 505 0082 04       		.byte	0x4
- 506 0083 04       		.byte	0x4
- 507 0084 F8000000 		.4byte	.LASF11
- 508 0088 02       		.uleb128 0x2
- 509 0089 08       		.byte	0x8
- 510 008a 04       		.byte	0x4
- 511 008b 26020000 		.4byte	.LASF12
- 512 008f 02       		.uleb128 0x2
- 513 0090 01       		.byte	0x1
- 514 0091 08       		.byte	0x8
- 515 0092 E0010000 		.4byte	.LASF13
- 516 0096 02       		.uleb128 0x2
- 517 0097 08       		.byte	0x8
- 518 0098 04       		.byte	0x4
- 519 0099 05020000 		.4byte	.LASF14
- 520 009d 02       		.uleb128 0x2
- 521 009e 04       		.byte	0x4
- 522 009f 07       		.byte	0x7
- 523 00a0 C9010000 		.4byte	.LASF15
- 524 00a4 03       		.uleb128 0x3
- 525 00a5 70010000 		.4byte	.LASF16
- 526 00a9 04       		.byte	0x4
- 527 00aa 6C       		.byte	0x6c
- 528 00ab 6F000000 		.4byte	0x6f
- 529 00af 05       		.uleb128 0x5
- 530 00b0 01       		.byte	0x1
- 531 00b1 2C000000 		.4byte	0x2c
- 532 00b5 01       		.byte	0x1
- 533 00b6 14       		.byte	0x14
- 534 00b7 C8000000 		.4byte	0xc8
+ 490 0063 07       		.byte	0x7
+ 491 0064 97010000 		.4byte	.LASF7
+ 492 0068 04       		.uleb128 0x4
+ 493 0069 04       		.byte	0x4
+ 494 006a 05       		.byte	0x5
+ 495 006b 696E7400 		.ascii	"int\000"
+ 496 006f 02       		.uleb128 0x2
+ 497 0070 04       		.byte	0x4
+ 498 0071 07       		.byte	0x7
+ 499 0072 85010000 		.4byte	.LASF8
+ 500 0076 03       		.uleb128 0x3
+ 501 0077 C7010000 		.4byte	.LASF10
+ 502 007b 03       		.byte	0x3
+ 503 007c 2C       		.byte	0x2c
+ 504 007d 41000000 		.4byte	0x41
+ 505 0081 05       		.uleb128 0x5
+ 506 0082 39010000 		.4byte	.LASF11
+ 507 0086 04       		.byte	0x4
+ 508 0087 ED01     		.2byte	0x1ed
+ 509 0089 4C000000 		.4byte	0x4c
+ 510 008d 02       		.uleb128 0x2
+ 511 008e 04       		.byte	0x4
+ 512 008f 04       		.byte	0x4
+ 513 0090 0B010000 		.4byte	.LASF12
+ 514 0094 02       		.uleb128 0x2
+ 515 0095 08       		.byte	0x8
+ 516 0096 04       		.byte	0x4
+ 517 0097 2C020000 		.4byte	.LASF13
+ 518 009b 02       		.uleb128 0x2
+ 519 009c 01       		.byte	0x1
+ 520 009d 08       		.byte	0x8
+ 521 009e E6010000 		.4byte	.LASF14
+ 522 00a2 02       		.uleb128 0x2
+ 523 00a3 08       		.byte	0x8
+ 524 00a4 04       		.byte	0x4
+ 525 00a5 0B020000 		.4byte	.LASF15
+ 526 00a9 02       		.uleb128 0x2
+ 527 00aa 04       		.byte	0x4
+ 528 00ab 07       		.byte	0x7
+ 529 00ac CF010000 		.4byte	.LASF16
+ 530 00b0 03       		.uleb128 0x3
+ 531 00b1 76010000 		.4byte	.LASF17
+ 532 00b5 05       		.byte	0x5
+ 533 00b6 6C       		.byte	0x6c
+ 534 00b7 6F000000 		.4byte	0x6f
  535 00bb 06       		.uleb128 0x6
- 536 00bc A8010000 		.4byte	.LASF17
- 537 00c0 00       		.byte	0
- 538 00c1 06       		.uleb128 0x6
- 539 00c2 E6000000 		.4byte	.LASF18
- 540 00c6 01       		.byte	0x1
- 541 00c7 00       		.byte	0
- 542 00c8 03       		.uleb128 0x3
- 543 00c9 D6000000 		.4byte	.LASF19
- 544 00cd 01       		.byte	0x1
- 545 00ce 17       		.byte	0x17
- 546 00cf AF000000 		.4byte	0xaf
- 547 00d3 07       		.uleb128 0x7
- 548 00d4 F0000000 		.4byte	.LASF22
- 549 00d8 01       		.byte	0x1
- 550 00d9 21       		.byte	0x21
- 551 00da 00000000 		.4byte	.LFB64
- 552 00de 20000000 		.4byte	.LFE64-.LFB64
- 553 00e2 01       		.uleb128 0x1
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4rrURj.s 			page 13
+ 536 00bc 01       		.byte	0x1
+ 537 00bd 2C000000 		.4byte	0x2c
+ 538 00c1 01       		.byte	0x1
+ 539 00c2 09       		.byte	0x9
+ 540 00c3 D4000000 		.4byte	0xd4
+ 541 00c7 07       		.uleb128 0x7
+ 542 00c8 AE010000 		.4byte	.LASF18
+ 543 00cc 00       		.byte	0
+ 544 00cd 07       		.uleb128 0x7
+ 545 00ce F9000000 		.4byte	.LASF19
+ 546 00d2 01       		.byte	0x1
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccfujcCc.s 			page 13
 
 
- 554 00e3 9C       		.byte	0x9c
- 555 00e4 08       		.uleb128 0x8
- 556 00e5 39010000 		.4byte	.LASF34
- 557 00e9 01       		.byte	0x1
- 558 00ea 2B       		.byte	0x2b
- 559 00eb 00000000 		.4byte	.LFB65
- 560 00ef 84000000 		.4byte	.LFE65-.LFB65
- 561 00f3 01       		.uleb128 0x1
- 562 00f4 9C       		.byte	0x9c
- 563 00f5 09       		.uleb128 0x9
- 564 00f6 8C010000 		.4byte	.LASF35
- 565 00fa 01       		.byte	0x1
- 566 00fb 45       		.byte	0x45
- 567 00fc 2B010000 		.4byte	0x12b
- 568 0100 00000000 		.4byte	.LFB66
- 569 0104 B0000000 		.4byte	.LFE66-.LFB66
- 570 0108 01       		.uleb128 0x1
- 571 0109 9C       		.byte	0x9c
- 572 010a 2B010000 		.4byte	0x12b
- 573 010e 0A       		.uleb128 0xa
- 574 010f EB000000 		.4byte	.LASF20
- 575 0113 01       		.byte	0x1
- 576 0114 45       		.byte	0x45
- 577 0115 68000000 		.4byte	0x68
- 578 0119 02       		.uleb128 0x2
- 579 011a 91       		.byte	0x91
- 580 011b 74       		.sleb128 -12
- 581 011c 0A       		.uleb128 0xa
- 582 011d 4B010000 		.4byte	.LASF21
- 583 0121 01       		.byte	0x1
- 584 0122 45       		.byte	0x45
- 585 0123 A4000000 		.4byte	0xa4
- 586 0127 02       		.uleb128 0x2
- 587 0128 91       		.byte	0x91
- 588 0129 70       		.sleb128 -16
- 589 012a 00       		.byte	0
- 590 012b 0B       		.uleb128 0xb
- 591 012c 04       		.byte	0x4
- 592 012d 68000000 		.4byte	0x68
- 593 0131 07       		.uleb128 0x7
- 594 0132 62010000 		.4byte	.LASF23
- 595 0136 01       		.byte	0x1
- 596 0137 63       		.byte	0x63
- 597 0138 00000000 		.4byte	.LFB67
- 598 013c 2C000000 		.4byte	.LFE67-.LFB67
- 599 0140 01       		.uleb128 0x1
- 600 0141 9C       		.byte	0x9c
- 601 0142 0C       		.uleb128 0xc
- 602 0143 11020000 		.4byte	.LASF36
- 603 0147 01       		.byte	0x1
- 604 0148 6D       		.byte	0x6d
- 605 0149 68000000 		.4byte	0x68
- 606 014d 00000000 		.4byte	.LFB68
- 607 0151 68000000 		.4byte	.LFE68-.LFB68
- 608 0155 01       		.uleb128 0x1
- 609 0156 9C       		.byte	0x9c
- 610 0157 8C010000 		.4byte	0x18c
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4rrURj.s 			page 14
+ 547 00d3 00       		.byte	0
+ 548 00d4 03       		.uleb128 0x3
+ 549 00d5 D6000000 		.4byte	.LASF20
+ 550 00d9 01       		.byte	0x1
+ 551 00da 0C       		.byte	0xc
+ 552 00db BB000000 		.4byte	0xbb
+ 553 00df 08       		.uleb128 0x8
+ 554 00e0 03010000 		.4byte	.LASF23
+ 555 00e4 01       		.byte	0x1
+ 556 00e5 16       		.byte	0x16
+ 557 00e6 00000000 		.4byte	.LFB64
+ 558 00ea 20000000 		.4byte	.LFE64-.LFB64
+ 559 00ee 01       		.uleb128 0x1
+ 560 00ef 9C       		.byte	0x9c
+ 561 00f0 09       		.uleb128 0x9
+ 562 00f1 3F010000 		.4byte	.LASF35
+ 563 00f5 01       		.byte	0x1
+ 564 00f6 21       		.byte	0x21
+ 565 00f7 00000000 		.4byte	.LFB65
+ 566 00fb 84000000 		.4byte	.LFE65-.LFB65
+ 567 00ff 01       		.uleb128 0x1
+ 568 0100 9C       		.byte	0x9c
+ 569 0101 0A       		.uleb128 0xa
+ 570 0102 92010000 		.4byte	.LASF36
+ 571 0106 01       		.byte	0x1
+ 572 0107 3D       		.byte	0x3d
+ 573 0108 37010000 		.4byte	0x137
+ 574 010c 00000000 		.4byte	.LFB66
+ 575 0110 B0000000 		.4byte	.LFE66-.LFB66
+ 576 0114 01       		.uleb128 0x1
+ 577 0115 9C       		.byte	0x9c
+ 578 0116 37010000 		.4byte	0x137
+ 579 011a 0B       		.uleb128 0xb
+ 580 011b FE000000 		.4byte	.LASF21
+ 581 011f 01       		.byte	0x1
+ 582 0120 3D       		.byte	0x3d
+ 583 0121 68000000 		.4byte	0x68
+ 584 0125 02       		.uleb128 0x2
+ 585 0126 91       		.byte	0x91
+ 586 0127 74       		.sleb128 -12
+ 587 0128 0B       		.uleb128 0xb
+ 588 0129 51010000 		.4byte	.LASF22
+ 589 012d 01       		.byte	0x1
+ 590 012e 3D       		.byte	0x3d
+ 591 012f B0000000 		.4byte	0xb0
+ 592 0133 02       		.uleb128 0x2
+ 593 0134 91       		.byte	0x91
+ 594 0135 70       		.sleb128 -16
+ 595 0136 00       		.byte	0
+ 596 0137 0C       		.uleb128 0xc
+ 597 0138 04       		.byte	0x4
+ 598 0139 68000000 		.4byte	0x68
+ 599 013d 08       		.uleb128 0x8
+ 600 013e 68010000 		.4byte	.LASF24
+ 601 0142 01       		.byte	0x1
+ 602 0143 62       		.byte	0x62
+ 603 0144 00000000 		.4byte	.LFB67
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccfujcCc.s 			page 14
 
 
- 611 015b 0D       		.uleb128 0xd
- 612 015c 6B010000 		.4byte	.LASF24
- 613 0160 01       		.byte	0x1
- 614 0161 6F       		.byte	0x6f
- 615 0162 2B010000 		.4byte	0x12b
- 616 0166 02       		.uleb128 0x2
- 617 0167 91       		.byte	0x91
- 618 0168 6C       		.sleb128 -20
- 619 0169 0E       		.uleb128 0xe
- 620 016a 7800     		.ascii	"x\000"
- 621 016c 01       		.byte	0x1
- 622 016d 70       		.byte	0x70
- 623 016e 68000000 		.4byte	0x68
- 624 0172 02       		.uleb128 0x2
- 625 0173 91       		.byte	0x91
- 626 0174 74       		.sleb128 -12
- 627 0175 0F       		.uleb128 0xf
- 628 0176 16000000 		.4byte	.LBB2
- 629 017a 32000000 		.4byte	.LBE2-.LBB2
- 630 017e 0E       		.uleb128 0xe
- 631 017f 6900     		.ascii	"i\000"
- 632 0181 01       		.byte	0x1
- 633 0182 71       		.byte	0x71
- 634 0183 6F000000 		.4byte	0x6f
- 635 0187 02       		.uleb128 0x2
- 636 0188 91       		.byte	0x91
- 637 0189 70       		.sleb128 -16
- 638 018a 00       		.byte	0
- 639 018b 00       		.byte	0
- 640 018c 10       		.uleb128 0x10
- 641 018d 55010000 		.4byte	.LASF25
- 642 0191 05       		.byte	0x5
- 643 0192 1207     		.2byte	0x712
- 644 0194 98010000 		.4byte	0x198
- 645 0198 11       		.uleb128 0x11
- 646 0199 76000000 		.4byte	0x76
- 647 019d 12       		.uleb128 0x12
- 648 019e 00000000 		.4byte	.LASF26
- 649 01a2 01       		.byte	0x1
- 650 01a3 19       		.byte	0x19
- 651 01a4 C8000000 		.4byte	0xc8
- 652 01a8 05       		.uleb128 0x5
- 653 01a9 03       		.byte	0x3
- 654 01aa 00000000 		.4byte	DataRX
- 655 01ae 12       		.uleb128 0x12
- 656 01af E5010000 		.4byte	.LASF27
- 657 01b3 01       		.byte	0x1
- 658 01b4 1B       		.byte	0x1b
- 659 01b5 68000000 		.4byte	0x68
- 660 01b9 05       		.uleb128 0x5
- 661 01ba 03       		.byte	0x3
- 662 01bb 00000000 		.4byte	gain_
- 663 01bf 12       		.uleb128 0x12
- 664 01c0 FE000000 		.4byte	.LASF28
- 665 01c4 01       		.byte	0x1
- 666 01c5 1C       		.byte	0x1c
- 667 01c6 68000000 		.4byte	0x68
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4rrURj.s 			page 15
+ 604 0148 2C000000 		.4byte	.LFE67-.LFB67
+ 605 014c 01       		.uleb128 0x1
+ 606 014d 9C       		.byte	0x9c
+ 607 014e 0D       		.uleb128 0xd
+ 608 014f 17020000 		.4byte	.LASF37
+ 609 0153 01       		.byte	0x1
+ 610 0154 6D       		.byte	0x6d
+ 611 0155 81000000 		.4byte	0x81
+ 612 0159 00000000 		.4byte	.LFB68
+ 613 015d 68000000 		.4byte	.LFE68-.LFB68
+ 614 0161 01       		.uleb128 0x1
+ 615 0162 9C       		.byte	0x9c
+ 616 0163 98010000 		.4byte	0x198
+ 617 0167 0E       		.uleb128 0xe
+ 618 0168 71010000 		.4byte	.LASF25
+ 619 016c 01       		.byte	0x1
+ 620 016d 70       		.byte	0x70
+ 621 016e 37010000 		.4byte	0x137
+ 622 0172 02       		.uleb128 0x2
+ 623 0173 91       		.byte	0x91
+ 624 0174 6C       		.sleb128 -20
+ 625 0175 0F       		.uleb128 0xf
+ 626 0176 7800     		.ascii	"x\000"
+ 627 0178 01       		.byte	0x1
+ 628 0179 71       		.byte	0x71
+ 629 017a 68000000 		.4byte	0x68
+ 630 017e 02       		.uleb128 0x2
+ 631 017f 91       		.byte	0x91
+ 632 0180 74       		.sleb128 -12
+ 633 0181 10       		.uleb128 0x10
+ 634 0182 16000000 		.4byte	.LBB2
+ 635 0186 32000000 		.4byte	.LBE2-.LBB2
+ 636 018a 0F       		.uleb128 0xf
+ 637 018b 6900     		.ascii	"i\000"
+ 638 018d 01       		.byte	0x1
+ 639 018e 75       		.byte	0x75
+ 640 018f 6F000000 		.4byte	0x6f
+ 641 0193 02       		.uleb128 0x2
+ 642 0194 91       		.byte	0x91
+ 643 0195 70       		.sleb128 -16
+ 644 0196 00       		.byte	0
+ 645 0197 00       		.byte	0
+ 646 0198 11       		.uleb128 0x11
+ 647 0199 5B010000 		.4byte	.LASF26
+ 648 019d 06       		.byte	0x6
+ 649 019e 1207     		.2byte	0x712
+ 650 01a0 A4010000 		.4byte	0x1a4
+ 651 01a4 12       		.uleb128 0x12
+ 652 01a5 76000000 		.4byte	0x76
+ 653 01a9 13       		.uleb128 0x13
+ 654 01aa 00000000 		.4byte	.LASF27
+ 655 01ae 01       		.byte	0x1
+ 656 01af 0D       		.byte	0xd
+ 657 01b0 D4000000 		.4byte	0xd4
+ 658 01b4 05       		.uleb128 0x5
+ 659 01b5 03       		.byte	0x3
+ 660 01b6 00000000 		.4byte	DataRX
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccfujcCc.s 			page 15
 
 
- 668 01ca 05       		.uleb128 0x5
- 669 01cb 03       		.byte	0x3
- 670 01cc 00000000 		.4byte	counter
- 671 01d0 13       		.uleb128 0x13
- 672 01d1 68000000 		.4byte	0x68
- 673 01d5 E0010000 		.4byte	0x1e0
- 674 01d9 14       		.uleb128 0x14
- 675 01da 9D000000 		.4byte	0x9d
- 676 01de 17       		.byte	0x17
- 677 01df 00       		.byte	0
- 678 01e0 12       		.uleb128 0x12
- 679 01e1 FE010000 		.4byte	.LASF29
- 680 01e5 01       		.byte	0x1
- 681 01e6 1E       		.byte	0x1e
- 682 01e7 D0010000 		.4byte	0x1d0
- 683 01eb 05       		.uleb128 0x5
- 684 01ec 03       		.byte	0x3
- 685 01ed 00000000 		.4byte	Datain
- 686 01f1 12       		.uleb128 0x12
- 687 01f2 75010000 		.4byte	.LASF30
- 688 01f6 01       		.byte	0x1
- 689 01f7 1F       		.byte	0x1f
- 690 01f8 68000000 		.4byte	0x68
- 691 01fc 05       		.uleb128 0x5
- 692 01fd 03       		.byte	0x3
- 693 01fe 00000000 		.4byte	Dataindex
- 694 0202 00       		.byte	0
- 695              		.section	.debug_abbrev,"",%progbits
- 696              	.Ldebug_abbrev0:
- 697 0000 01       		.uleb128 0x1
- 698 0001 11       		.uleb128 0x11
- 699 0002 01       		.byte	0x1
- 700 0003 25       		.uleb128 0x25
- 701 0004 0E       		.uleb128 0xe
- 702 0005 13       		.uleb128 0x13
- 703 0006 0B       		.uleb128 0xb
- 704 0007 03       		.uleb128 0x3
- 705 0008 0E       		.uleb128 0xe
- 706 0009 1B       		.uleb128 0x1b
- 707 000a 0E       		.uleb128 0xe
- 708 000b 55       		.uleb128 0x55
- 709 000c 17       		.uleb128 0x17
- 710 000d 11       		.uleb128 0x11
- 711 000e 01       		.uleb128 0x1
- 712 000f 10       		.uleb128 0x10
- 713 0010 17       		.uleb128 0x17
- 714 0011 00       		.byte	0
- 715 0012 00       		.byte	0
- 716 0013 02       		.uleb128 0x2
- 717 0014 24       		.uleb128 0x24
- 718 0015 00       		.byte	0
- 719 0016 0B       		.uleb128 0xb
- 720 0017 0B       		.uleb128 0xb
- 721 0018 3E       		.uleb128 0x3e
- 722 0019 0B       		.uleb128 0xb
- 723 001a 03       		.uleb128 0x3
- 724 001b 0E       		.uleb128 0xe
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4rrURj.s 			page 16
+ 661 01ba 13       		.uleb128 0x13
+ 662 01bb EB010000 		.4byte	.LASF28
+ 663 01bf 01       		.byte	0x1
+ 664 01c0 10       		.byte	0x10
+ 665 01c1 68000000 		.4byte	0x68
+ 666 01c5 05       		.uleb128 0x5
+ 667 01c6 03       		.byte	0x3
+ 668 01c7 00000000 		.4byte	gain_
+ 669 01cb 13       		.uleb128 0x13
+ 670 01cc 11010000 		.4byte	.LASF29
+ 671 01d0 01       		.byte	0x1
+ 672 01d1 11       		.byte	0x11
+ 673 01d2 68000000 		.4byte	0x68
+ 674 01d6 05       		.uleb128 0x5
+ 675 01d7 03       		.byte	0x3
+ 676 01d8 00000000 		.4byte	counter
+ 677 01dc 14       		.uleb128 0x14
+ 678 01dd 68000000 		.4byte	0x68
+ 679 01e1 EC010000 		.4byte	0x1ec
+ 680 01e5 15       		.uleb128 0x15
+ 681 01e6 A9000000 		.4byte	0xa9
+ 682 01ea 17       		.byte	0x17
+ 683 01eb 00       		.byte	0
+ 684 01ec 13       		.uleb128 0x13
+ 685 01ed 04020000 		.4byte	.LASF30
+ 686 01f1 01       		.byte	0x1
+ 687 01f2 13       		.byte	0x13
+ 688 01f3 DC010000 		.4byte	0x1dc
+ 689 01f7 05       		.uleb128 0x5
+ 690 01f8 03       		.byte	0x3
+ 691 01f9 00000000 		.4byte	Datain
+ 692 01fd 13       		.uleb128 0x13
+ 693 01fe 7B010000 		.4byte	.LASF31
+ 694 0202 01       		.byte	0x1
+ 695 0203 14       		.byte	0x14
+ 696 0204 68000000 		.4byte	0x68
+ 697 0208 05       		.uleb128 0x5
+ 698 0209 03       		.byte	0x3
+ 699 020a 00000000 		.4byte	Dataindex
+ 700 020e 00       		.byte	0
+ 701              		.section	.debug_abbrev,"",%progbits
+ 702              	.Ldebug_abbrev0:
+ 703 0000 01       		.uleb128 0x1
+ 704 0001 11       		.uleb128 0x11
+ 705 0002 01       		.byte	0x1
+ 706 0003 25       		.uleb128 0x25
+ 707 0004 0E       		.uleb128 0xe
+ 708 0005 13       		.uleb128 0x13
+ 709 0006 0B       		.uleb128 0xb
+ 710 0007 03       		.uleb128 0x3
+ 711 0008 0E       		.uleb128 0xe
+ 712 0009 1B       		.uleb128 0x1b
+ 713 000a 0E       		.uleb128 0xe
+ 714 000b 55       		.uleb128 0x55
+ 715 000c 17       		.uleb128 0x17
+ 716 000d 11       		.uleb128 0x11
+ 717 000e 01       		.uleb128 0x1
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccfujcCc.s 			page 16
 
 
- 725 001c 00       		.byte	0
- 726 001d 00       		.byte	0
- 727 001e 03       		.uleb128 0x3
- 728 001f 16       		.uleb128 0x16
- 729 0020 00       		.byte	0
- 730 0021 03       		.uleb128 0x3
- 731 0022 0E       		.uleb128 0xe
- 732 0023 3A       		.uleb128 0x3a
- 733 0024 0B       		.uleb128 0xb
- 734 0025 3B       		.uleb128 0x3b
- 735 0026 0B       		.uleb128 0xb
- 736 0027 49       		.uleb128 0x49
- 737 0028 13       		.uleb128 0x13
- 738 0029 00       		.byte	0
- 739 002a 00       		.byte	0
- 740 002b 04       		.uleb128 0x4
- 741 002c 24       		.uleb128 0x24
- 742 002d 00       		.byte	0
- 743 002e 0B       		.uleb128 0xb
- 744 002f 0B       		.uleb128 0xb
- 745 0030 3E       		.uleb128 0x3e
- 746 0031 0B       		.uleb128 0xb
- 747 0032 03       		.uleb128 0x3
- 748 0033 08       		.uleb128 0x8
- 749 0034 00       		.byte	0
- 750 0035 00       		.byte	0
- 751 0036 05       		.uleb128 0x5
- 752 0037 04       		.uleb128 0x4
- 753 0038 01       		.byte	0x1
- 754 0039 0B       		.uleb128 0xb
- 755 003a 0B       		.uleb128 0xb
- 756 003b 49       		.uleb128 0x49
- 757 003c 13       		.uleb128 0x13
- 758 003d 3A       		.uleb128 0x3a
- 759 003e 0B       		.uleb128 0xb
- 760 003f 3B       		.uleb128 0x3b
- 761 0040 0B       		.uleb128 0xb
- 762 0041 01       		.uleb128 0x1
- 763 0042 13       		.uleb128 0x13
- 764 0043 00       		.byte	0
- 765 0044 00       		.byte	0
- 766 0045 06       		.uleb128 0x6
- 767 0046 28       		.uleb128 0x28
- 768 0047 00       		.byte	0
- 769 0048 03       		.uleb128 0x3
- 770 0049 0E       		.uleb128 0xe
- 771 004a 1C       		.uleb128 0x1c
- 772 004b 0B       		.uleb128 0xb
- 773 004c 00       		.byte	0
- 774 004d 00       		.byte	0
- 775 004e 07       		.uleb128 0x7
- 776 004f 2E       		.uleb128 0x2e
- 777 0050 00       		.byte	0
- 778 0051 3F       		.uleb128 0x3f
- 779 0052 19       		.uleb128 0x19
- 780 0053 03       		.uleb128 0x3
- 781 0054 0E       		.uleb128 0xe
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4rrURj.s 			page 17
+ 718 000f 10       		.uleb128 0x10
+ 719 0010 17       		.uleb128 0x17
+ 720 0011 00       		.byte	0
+ 721 0012 00       		.byte	0
+ 722 0013 02       		.uleb128 0x2
+ 723 0014 24       		.uleb128 0x24
+ 724 0015 00       		.byte	0
+ 725 0016 0B       		.uleb128 0xb
+ 726 0017 0B       		.uleb128 0xb
+ 727 0018 3E       		.uleb128 0x3e
+ 728 0019 0B       		.uleb128 0xb
+ 729 001a 03       		.uleb128 0x3
+ 730 001b 0E       		.uleb128 0xe
+ 731 001c 00       		.byte	0
+ 732 001d 00       		.byte	0
+ 733 001e 03       		.uleb128 0x3
+ 734 001f 16       		.uleb128 0x16
+ 735 0020 00       		.byte	0
+ 736 0021 03       		.uleb128 0x3
+ 737 0022 0E       		.uleb128 0xe
+ 738 0023 3A       		.uleb128 0x3a
+ 739 0024 0B       		.uleb128 0xb
+ 740 0025 3B       		.uleb128 0x3b
+ 741 0026 0B       		.uleb128 0xb
+ 742 0027 49       		.uleb128 0x49
+ 743 0028 13       		.uleb128 0x13
+ 744 0029 00       		.byte	0
+ 745 002a 00       		.byte	0
+ 746 002b 04       		.uleb128 0x4
+ 747 002c 24       		.uleb128 0x24
+ 748 002d 00       		.byte	0
+ 749 002e 0B       		.uleb128 0xb
+ 750 002f 0B       		.uleb128 0xb
+ 751 0030 3E       		.uleb128 0x3e
+ 752 0031 0B       		.uleb128 0xb
+ 753 0032 03       		.uleb128 0x3
+ 754 0033 08       		.uleb128 0x8
+ 755 0034 00       		.byte	0
+ 756 0035 00       		.byte	0
+ 757 0036 05       		.uleb128 0x5
+ 758 0037 16       		.uleb128 0x16
+ 759 0038 00       		.byte	0
+ 760 0039 03       		.uleb128 0x3
+ 761 003a 0E       		.uleb128 0xe
+ 762 003b 3A       		.uleb128 0x3a
+ 763 003c 0B       		.uleb128 0xb
+ 764 003d 3B       		.uleb128 0x3b
+ 765 003e 05       		.uleb128 0x5
+ 766 003f 49       		.uleb128 0x49
+ 767 0040 13       		.uleb128 0x13
+ 768 0041 00       		.byte	0
+ 769 0042 00       		.byte	0
+ 770 0043 06       		.uleb128 0x6
+ 771 0044 04       		.uleb128 0x4
+ 772 0045 01       		.byte	0x1
+ 773 0046 0B       		.uleb128 0xb
+ 774 0047 0B       		.uleb128 0xb
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccfujcCc.s 			page 17
 
 
- 782 0055 3A       		.uleb128 0x3a
- 783 0056 0B       		.uleb128 0xb
- 784 0057 3B       		.uleb128 0x3b
- 785 0058 0B       		.uleb128 0xb
- 786 0059 11       		.uleb128 0x11
- 787 005a 01       		.uleb128 0x1
- 788 005b 12       		.uleb128 0x12
- 789 005c 06       		.uleb128 0x6
- 790 005d 40       		.uleb128 0x40
- 791 005e 18       		.uleb128 0x18
- 792 005f 9642     		.uleb128 0x2116
- 793 0061 19       		.uleb128 0x19
- 794 0062 00       		.byte	0
- 795 0063 00       		.byte	0
- 796 0064 08       		.uleb128 0x8
- 797 0065 2E       		.uleb128 0x2e
- 798 0066 00       		.byte	0
- 799 0067 3F       		.uleb128 0x3f
- 800 0068 19       		.uleb128 0x19
- 801 0069 03       		.uleb128 0x3
- 802 006a 0E       		.uleb128 0xe
- 803 006b 3A       		.uleb128 0x3a
- 804 006c 0B       		.uleb128 0xb
- 805 006d 3B       		.uleb128 0x3b
- 806 006e 0B       		.uleb128 0xb
- 807 006f 27       		.uleb128 0x27
- 808 0070 19       		.uleb128 0x19
- 809 0071 11       		.uleb128 0x11
- 810 0072 01       		.uleb128 0x1
- 811 0073 12       		.uleb128 0x12
- 812 0074 06       		.uleb128 0x6
- 813 0075 40       		.uleb128 0x40
- 814 0076 18       		.uleb128 0x18
- 815 0077 9642     		.uleb128 0x2116
- 816 0079 19       		.uleb128 0x19
- 817 007a 00       		.byte	0
- 818 007b 00       		.byte	0
- 819 007c 09       		.uleb128 0x9
- 820 007d 2E       		.uleb128 0x2e
- 821 007e 01       		.byte	0x1
- 822 007f 3F       		.uleb128 0x3f
- 823 0080 19       		.uleb128 0x19
- 824 0081 03       		.uleb128 0x3
- 825 0082 0E       		.uleb128 0xe
- 826 0083 3A       		.uleb128 0x3a
- 827 0084 0B       		.uleb128 0xb
- 828 0085 3B       		.uleb128 0x3b
- 829 0086 0B       		.uleb128 0xb
- 830 0087 27       		.uleb128 0x27
- 831 0088 19       		.uleb128 0x19
- 832 0089 49       		.uleb128 0x49
- 833 008a 13       		.uleb128 0x13
- 834 008b 11       		.uleb128 0x11
- 835 008c 01       		.uleb128 0x1
- 836 008d 12       		.uleb128 0x12
- 837 008e 06       		.uleb128 0x6
- 838 008f 40       		.uleb128 0x40
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4rrURj.s 			page 18
+ 775 0048 49       		.uleb128 0x49
+ 776 0049 13       		.uleb128 0x13
+ 777 004a 3A       		.uleb128 0x3a
+ 778 004b 0B       		.uleb128 0xb
+ 779 004c 3B       		.uleb128 0x3b
+ 780 004d 0B       		.uleb128 0xb
+ 781 004e 01       		.uleb128 0x1
+ 782 004f 13       		.uleb128 0x13
+ 783 0050 00       		.byte	0
+ 784 0051 00       		.byte	0
+ 785 0052 07       		.uleb128 0x7
+ 786 0053 28       		.uleb128 0x28
+ 787 0054 00       		.byte	0
+ 788 0055 03       		.uleb128 0x3
+ 789 0056 0E       		.uleb128 0xe
+ 790 0057 1C       		.uleb128 0x1c
+ 791 0058 0B       		.uleb128 0xb
+ 792 0059 00       		.byte	0
+ 793 005a 00       		.byte	0
+ 794 005b 08       		.uleb128 0x8
+ 795 005c 2E       		.uleb128 0x2e
+ 796 005d 00       		.byte	0
+ 797 005e 3F       		.uleb128 0x3f
+ 798 005f 19       		.uleb128 0x19
+ 799 0060 03       		.uleb128 0x3
+ 800 0061 0E       		.uleb128 0xe
+ 801 0062 3A       		.uleb128 0x3a
+ 802 0063 0B       		.uleb128 0xb
+ 803 0064 3B       		.uleb128 0x3b
+ 804 0065 0B       		.uleb128 0xb
+ 805 0066 11       		.uleb128 0x11
+ 806 0067 01       		.uleb128 0x1
+ 807 0068 12       		.uleb128 0x12
+ 808 0069 06       		.uleb128 0x6
+ 809 006a 40       		.uleb128 0x40
+ 810 006b 18       		.uleb128 0x18
+ 811 006c 9642     		.uleb128 0x2116
+ 812 006e 19       		.uleb128 0x19
+ 813 006f 00       		.byte	0
+ 814 0070 00       		.byte	0
+ 815 0071 09       		.uleb128 0x9
+ 816 0072 2E       		.uleb128 0x2e
+ 817 0073 00       		.byte	0
+ 818 0074 3F       		.uleb128 0x3f
+ 819 0075 19       		.uleb128 0x19
+ 820 0076 03       		.uleb128 0x3
+ 821 0077 0E       		.uleb128 0xe
+ 822 0078 3A       		.uleb128 0x3a
+ 823 0079 0B       		.uleb128 0xb
+ 824 007a 3B       		.uleb128 0x3b
+ 825 007b 0B       		.uleb128 0xb
+ 826 007c 27       		.uleb128 0x27
+ 827 007d 19       		.uleb128 0x19
+ 828 007e 11       		.uleb128 0x11
+ 829 007f 01       		.uleb128 0x1
+ 830 0080 12       		.uleb128 0x12
+ 831 0081 06       		.uleb128 0x6
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccfujcCc.s 			page 18
 
 
- 839 0090 18       		.uleb128 0x18
- 840 0091 9642     		.uleb128 0x2116
- 841 0093 19       		.uleb128 0x19
- 842 0094 01       		.uleb128 0x1
- 843 0095 13       		.uleb128 0x13
- 844 0096 00       		.byte	0
- 845 0097 00       		.byte	0
- 846 0098 0A       		.uleb128 0xa
- 847 0099 05       		.uleb128 0x5
- 848 009a 00       		.byte	0
- 849 009b 03       		.uleb128 0x3
- 850 009c 0E       		.uleb128 0xe
- 851 009d 3A       		.uleb128 0x3a
- 852 009e 0B       		.uleb128 0xb
- 853 009f 3B       		.uleb128 0x3b
- 854 00a0 0B       		.uleb128 0xb
- 855 00a1 49       		.uleb128 0x49
- 856 00a2 13       		.uleb128 0x13
- 857 00a3 02       		.uleb128 0x2
- 858 00a4 18       		.uleb128 0x18
- 859 00a5 00       		.byte	0
- 860 00a6 00       		.byte	0
- 861 00a7 0B       		.uleb128 0xb
- 862 00a8 0F       		.uleb128 0xf
- 863 00a9 00       		.byte	0
- 864 00aa 0B       		.uleb128 0xb
- 865 00ab 0B       		.uleb128 0xb
- 866 00ac 49       		.uleb128 0x49
- 867 00ad 13       		.uleb128 0x13
- 868 00ae 00       		.byte	0
- 869 00af 00       		.byte	0
- 870 00b0 0C       		.uleb128 0xc
- 871 00b1 2E       		.uleb128 0x2e
- 872 00b2 01       		.byte	0x1
- 873 00b3 3F       		.uleb128 0x3f
- 874 00b4 19       		.uleb128 0x19
- 875 00b5 03       		.uleb128 0x3
- 876 00b6 0E       		.uleb128 0xe
- 877 00b7 3A       		.uleb128 0x3a
- 878 00b8 0B       		.uleb128 0xb
- 879 00b9 3B       		.uleb128 0x3b
- 880 00ba 0B       		.uleb128 0xb
- 881 00bb 49       		.uleb128 0x49
- 882 00bc 13       		.uleb128 0x13
- 883 00bd 11       		.uleb128 0x11
- 884 00be 01       		.uleb128 0x1
- 885 00bf 12       		.uleb128 0x12
- 886 00c0 06       		.uleb128 0x6
- 887 00c1 40       		.uleb128 0x40
- 888 00c2 18       		.uleb128 0x18
- 889 00c3 9642     		.uleb128 0x2116
- 890 00c5 19       		.uleb128 0x19
- 891 00c6 01       		.uleb128 0x1
- 892 00c7 13       		.uleb128 0x13
- 893 00c8 00       		.byte	0
- 894 00c9 00       		.byte	0
- 895 00ca 0D       		.uleb128 0xd
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4rrURj.s 			page 19
+ 832 0082 40       		.uleb128 0x40
+ 833 0083 18       		.uleb128 0x18
+ 834 0084 9642     		.uleb128 0x2116
+ 835 0086 19       		.uleb128 0x19
+ 836 0087 00       		.byte	0
+ 837 0088 00       		.byte	0
+ 838 0089 0A       		.uleb128 0xa
+ 839 008a 2E       		.uleb128 0x2e
+ 840 008b 01       		.byte	0x1
+ 841 008c 3F       		.uleb128 0x3f
+ 842 008d 19       		.uleb128 0x19
+ 843 008e 03       		.uleb128 0x3
+ 844 008f 0E       		.uleb128 0xe
+ 845 0090 3A       		.uleb128 0x3a
+ 846 0091 0B       		.uleb128 0xb
+ 847 0092 3B       		.uleb128 0x3b
+ 848 0093 0B       		.uleb128 0xb
+ 849 0094 27       		.uleb128 0x27
+ 850 0095 19       		.uleb128 0x19
+ 851 0096 49       		.uleb128 0x49
+ 852 0097 13       		.uleb128 0x13
+ 853 0098 11       		.uleb128 0x11
+ 854 0099 01       		.uleb128 0x1
+ 855 009a 12       		.uleb128 0x12
+ 856 009b 06       		.uleb128 0x6
+ 857 009c 40       		.uleb128 0x40
+ 858 009d 18       		.uleb128 0x18
+ 859 009e 9642     		.uleb128 0x2116
+ 860 00a0 19       		.uleb128 0x19
+ 861 00a1 01       		.uleb128 0x1
+ 862 00a2 13       		.uleb128 0x13
+ 863 00a3 00       		.byte	0
+ 864 00a4 00       		.byte	0
+ 865 00a5 0B       		.uleb128 0xb
+ 866 00a6 05       		.uleb128 0x5
+ 867 00a7 00       		.byte	0
+ 868 00a8 03       		.uleb128 0x3
+ 869 00a9 0E       		.uleb128 0xe
+ 870 00aa 3A       		.uleb128 0x3a
+ 871 00ab 0B       		.uleb128 0xb
+ 872 00ac 3B       		.uleb128 0x3b
+ 873 00ad 0B       		.uleb128 0xb
+ 874 00ae 49       		.uleb128 0x49
+ 875 00af 13       		.uleb128 0x13
+ 876 00b0 02       		.uleb128 0x2
+ 877 00b1 18       		.uleb128 0x18
+ 878 00b2 00       		.byte	0
+ 879 00b3 00       		.byte	0
+ 880 00b4 0C       		.uleb128 0xc
+ 881 00b5 0F       		.uleb128 0xf
+ 882 00b6 00       		.byte	0
+ 883 00b7 0B       		.uleb128 0xb
+ 884 00b8 0B       		.uleb128 0xb
+ 885 00b9 49       		.uleb128 0x49
+ 886 00ba 13       		.uleb128 0x13
+ 887 00bb 00       		.byte	0
+ 888 00bc 00       		.byte	0
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccfujcCc.s 			page 19
 
 
- 896 00cb 34       		.uleb128 0x34
- 897 00cc 00       		.byte	0
- 898 00cd 03       		.uleb128 0x3
- 899 00ce 0E       		.uleb128 0xe
- 900 00cf 3A       		.uleb128 0x3a
- 901 00d0 0B       		.uleb128 0xb
- 902 00d1 3B       		.uleb128 0x3b
- 903 00d2 0B       		.uleb128 0xb
- 904 00d3 49       		.uleb128 0x49
- 905 00d4 13       		.uleb128 0x13
- 906 00d5 02       		.uleb128 0x2
- 907 00d6 18       		.uleb128 0x18
- 908 00d7 00       		.byte	0
- 909 00d8 00       		.byte	0
- 910 00d9 0E       		.uleb128 0xe
- 911 00da 34       		.uleb128 0x34
- 912 00db 00       		.byte	0
- 913 00dc 03       		.uleb128 0x3
- 914 00dd 08       		.uleb128 0x8
- 915 00de 3A       		.uleb128 0x3a
- 916 00df 0B       		.uleb128 0xb
- 917 00e0 3B       		.uleb128 0x3b
- 918 00e1 0B       		.uleb128 0xb
- 919 00e2 49       		.uleb128 0x49
- 920 00e3 13       		.uleb128 0x13
- 921 00e4 02       		.uleb128 0x2
- 922 00e5 18       		.uleb128 0x18
- 923 00e6 00       		.byte	0
- 924 00e7 00       		.byte	0
- 925 00e8 0F       		.uleb128 0xf
- 926 00e9 0B       		.uleb128 0xb
- 927 00ea 01       		.byte	0x1
- 928 00eb 11       		.uleb128 0x11
- 929 00ec 01       		.uleb128 0x1
- 930 00ed 12       		.uleb128 0x12
- 931 00ee 06       		.uleb128 0x6
- 932 00ef 00       		.byte	0
- 933 00f0 00       		.byte	0
- 934 00f1 10       		.uleb128 0x10
- 935 00f2 34       		.uleb128 0x34
- 936 00f3 00       		.byte	0
- 937 00f4 03       		.uleb128 0x3
- 938 00f5 0E       		.uleb128 0xe
- 939 00f6 3A       		.uleb128 0x3a
- 940 00f7 0B       		.uleb128 0xb
- 941 00f8 3B       		.uleb128 0x3b
- 942 00f9 05       		.uleb128 0x5
- 943 00fa 49       		.uleb128 0x49
- 944 00fb 13       		.uleb128 0x13
- 945 00fc 3F       		.uleb128 0x3f
- 946 00fd 19       		.uleb128 0x19
- 947 00fe 3C       		.uleb128 0x3c
- 948 00ff 19       		.uleb128 0x19
- 949 0100 00       		.byte	0
- 950 0101 00       		.byte	0
- 951 0102 11       		.uleb128 0x11
- 952 0103 35       		.uleb128 0x35
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4rrURj.s 			page 20
+ 889 00bd 0D       		.uleb128 0xd
+ 890 00be 2E       		.uleb128 0x2e
+ 891 00bf 01       		.byte	0x1
+ 892 00c0 3F       		.uleb128 0x3f
+ 893 00c1 19       		.uleb128 0x19
+ 894 00c2 03       		.uleb128 0x3
+ 895 00c3 0E       		.uleb128 0xe
+ 896 00c4 3A       		.uleb128 0x3a
+ 897 00c5 0B       		.uleb128 0xb
+ 898 00c6 3B       		.uleb128 0x3b
+ 899 00c7 0B       		.uleb128 0xb
+ 900 00c8 49       		.uleb128 0x49
+ 901 00c9 13       		.uleb128 0x13
+ 902 00ca 11       		.uleb128 0x11
+ 903 00cb 01       		.uleb128 0x1
+ 904 00cc 12       		.uleb128 0x12
+ 905 00cd 06       		.uleb128 0x6
+ 906 00ce 40       		.uleb128 0x40
+ 907 00cf 18       		.uleb128 0x18
+ 908 00d0 9642     		.uleb128 0x2116
+ 909 00d2 19       		.uleb128 0x19
+ 910 00d3 01       		.uleb128 0x1
+ 911 00d4 13       		.uleb128 0x13
+ 912 00d5 00       		.byte	0
+ 913 00d6 00       		.byte	0
+ 914 00d7 0E       		.uleb128 0xe
+ 915 00d8 34       		.uleb128 0x34
+ 916 00d9 00       		.byte	0
+ 917 00da 03       		.uleb128 0x3
+ 918 00db 0E       		.uleb128 0xe
+ 919 00dc 3A       		.uleb128 0x3a
+ 920 00dd 0B       		.uleb128 0xb
+ 921 00de 3B       		.uleb128 0x3b
+ 922 00df 0B       		.uleb128 0xb
+ 923 00e0 49       		.uleb128 0x49
+ 924 00e1 13       		.uleb128 0x13
+ 925 00e2 02       		.uleb128 0x2
+ 926 00e3 18       		.uleb128 0x18
+ 927 00e4 00       		.byte	0
+ 928 00e5 00       		.byte	0
+ 929 00e6 0F       		.uleb128 0xf
+ 930 00e7 34       		.uleb128 0x34
+ 931 00e8 00       		.byte	0
+ 932 00e9 03       		.uleb128 0x3
+ 933 00ea 08       		.uleb128 0x8
+ 934 00eb 3A       		.uleb128 0x3a
+ 935 00ec 0B       		.uleb128 0xb
+ 936 00ed 3B       		.uleb128 0x3b
+ 937 00ee 0B       		.uleb128 0xb
+ 938 00ef 49       		.uleb128 0x49
+ 939 00f0 13       		.uleb128 0x13
+ 940 00f1 02       		.uleb128 0x2
+ 941 00f2 18       		.uleb128 0x18
+ 942 00f3 00       		.byte	0
+ 943 00f4 00       		.byte	0
+ 944 00f5 10       		.uleb128 0x10
+ 945 00f6 0B       		.uleb128 0xb
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccfujcCc.s 			page 20
 
 
- 953 0104 00       		.byte	0
- 954 0105 49       		.uleb128 0x49
- 955 0106 13       		.uleb128 0x13
- 956 0107 00       		.byte	0
- 957 0108 00       		.byte	0
- 958 0109 12       		.uleb128 0x12
- 959 010a 34       		.uleb128 0x34
- 960 010b 00       		.byte	0
- 961 010c 03       		.uleb128 0x3
- 962 010d 0E       		.uleb128 0xe
- 963 010e 3A       		.uleb128 0x3a
- 964 010f 0B       		.uleb128 0xb
- 965 0110 3B       		.uleb128 0x3b
- 966 0111 0B       		.uleb128 0xb
- 967 0112 49       		.uleb128 0x49
- 968 0113 13       		.uleb128 0x13
- 969 0114 3F       		.uleb128 0x3f
- 970 0115 19       		.uleb128 0x19
- 971 0116 02       		.uleb128 0x2
- 972 0117 18       		.uleb128 0x18
- 973 0118 00       		.byte	0
- 974 0119 00       		.byte	0
- 975 011a 13       		.uleb128 0x13
- 976 011b 01       		.uleb128 0x1
- 977 011c 01       		.byte	0x1
- 978 011d 49       		.uleb128 0x49
- 979 011e 13       		.uleb128 0x13
- 980 011f 01       		.uleb128 0x1
- 981 0120 13       		.uleb128 0x13
- 982 0121 00       		.byte	0
- 983 0122 00       		.byte	0
- 984 0123 14       		.uleb128 0x14
- 985 0124 21       		.uleb128 0x21
- 986 0125 00       		.byte	0
- 987 0126 49       		.uleb128 0x49
- 988 0127 13       		.uleb128 0x13
- 989 0128 2F       		.uleb128 0x2f
- 990 0129 0B       		.uleb128 0xb
- 991 012a 00       		.byte	0
- 992 012b 00       		.byte	0
- 993 012c 00       		.byte	0
- 994              		.section	.debug_aranges,"",%progbits
- 995 0000 3C000000 		.4byte	0x3c
- 996 0004 0200     		.2byte	0x2
- 997 0006 00000000 		.4byte	.Ldebug_info0
- 998 000a 04       		.byte	0x4
- 999 000b 00       		.byte	0
- 1000 000c 0000     		.2byte	0
- 1001 000e 0000     		.2byte	0
- 1002 0010 00000000 		.4byte	.LFB64
- 1003 0014 20000000 		.4byte	.LFE64-.LFB64
- 1004 0018 00000000 		.4byte	.LFB65
- 1005 001c 84000000 		.4byte	.LFE65-.LFB65
- 1006 0020 00000000 		.4byte	.LFB66
- 1007 0024 B0000000 		.4byte	.LFE66-.LFB66
- 1008 0028 00000000 		.4byte	.LFB67
- 1009 002c 2C000000 		.4byte	.LFE67-.LFB67
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4rrURj.s 			page 21
+ 946 00f7 01       		.byte	0x1
+ 947 00f8 11       		.uleb128 0x11
+ 948 00f9 01       		.uleb128 0x1
+ 949 00fa 12       		.uleb128 0x12
+ 950 00fb 06       		.uleb128 0x6
+ 951 00fc 00       		.byte	0
+ 952 00fd 00       		.byte	0
+ 953 00fe 11       		.uleb128 0x11
+ 954 00ff 34       		.uleb128 0x34
+ 955 0100 00       		.byte	0
+ 956 0101 03       		.uleb128 0x3
+ 957 0102 0E       		.uleb128 0xe
+ 958 0103 3A       		.uleb128 0x3a
+ 959 0104 0B       		.uleb128 0xb
+ 960 0105 3B       		.uleb128 0x3b
+ 961 0106 05       		.uleb128 0x5
+ 962 0107 49       		.uleb128 0x49
+ 963 0108 13       		.uleb128 0x13
+ 964 0109 3F       		.uleb128 0x3f
+ 965 010a 19       		.uleb128 0x19
+ 966 010b 3C       		.uleb128 0x3c
+ 967 010c 19       		.uleb128 0x19
+ 968 010d 00       		.byte	0
+ 969 010e 00       		.byte	0
+ 970 010f 12       		.uleb128 0x12
+ 971 0110 35       		.uleb128 0x35
+ 972 0111 00       		.byte	0
+ 973 0112 49       		.uleb128 0x49
+ 974 0113 13       		.uleb128 0x13
+ 975 0114 00       		.byte	0
+ 976 0115 00       		.byte	0
+ 977 0116 13       		.uleb128 0x13
+ 978 0117 34       		.uleb128 0x34
+ 979 0118 00       		.byte	0
+ 980 0119 03       		.uleb128 0x3
+ 981 011a 0E       		.uleb128 0xe
+ 982 011b 3A       		.uleb128 0x3a
+ 983 011c 0B       		.uleb128 0xb
+ 984 011d 3B       		.uleb128 0x3b
+ 985 011e 0B       		.uleb128 0xb
+ 986 011f 49       		.uleb128 0x49
+ 987 0120 13       		.uleb128 0x13
+ 988 0121 3F       		.uleb128 0x3f
+ 989 0122 19       		.uleb128 0x19
+ 990 0123 02       		.uleb128 0x2
+ 991 0124 18       		.uleb128 0x18
+ 992 0125 00       		.byte	0
+ 993 0126 00       		.byte	0
+ 994 0127 14       		.uleb128 0x14
+ 995 0128 01       		.uleb128 0x1
+ 996 0129 01       		.byte	0x1
+ 997 012a 49       		.uleb128 0x49
+ 998 012b 13       		.uleb128 0x13
+ 999 012c 01       		.uleb128 0x1
+ 1000 012d 13       		.uleb128 0x13
+ 1001 012e 00       		.byte	0
+ 1002 012f 00       		.byte	0
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccfujcCc.s 			page 21
 
 
- 1010 0030 00000000 		.4byte	.LFB68
- 1011 0034 68000000 		.4byte	.LFE68-.LFB68
- 1012 0038 00000000 		.4byte	0
- 1013 003c 00000000 		.4byte	0
- 1014              		.section	.debug_ranges,"",%progbits
- 1015              	.Ldebug_ranges0:
- 1016 0000 00000000 		.4byte	.LFB64
- 1017 0004 20000000 		.4byte	.LFE64
- 1018 0008 00000000 		.4byte	.LFB65
- 1019 000c 84000000 		.4byte	.LFE65
- 1020 0010 00000000 		.4byte	.LFB66
- 1021 0014 B0000000 		.4byte	.LFE66
- 1022 0018 00000000 		.4byte	.LFB67
- 1023 001c 2C000000 		.4byte	.LFE67
- 1024 0020 00000000 		.4byte	.LFB68
- 1025 0024 68000000 		.4byte	.LFE68
- 1026 0028 00000000 		.4byte	0
- 1027 002c 00000000 		.4byte	0
- 1028              		.section	.debug_line,"",%progbits
- 1029              	.Ldebug_line0:
- 1030 0000 FA010000 		.section	.debug_str,"MS",%progbits,1
- 1030      02004F01 
- 1030      00000201 
- 1030      FB0E0D00 
- 1030      01010101 
- 1031              	.LASF26:
- 1032 0000 44617461 		.ascii	"DataRX\000"
- 1032      525800
- 1033              	.LASF33:
- 1034 0007 433A5C55 		.ascii	"C:\\Users\\cring\\Documents\\GitHub\\PRJ4\\Tryksens"
- 1034      73657273 
- 1034      5C637269 
- 1034      6E675C44 
- 1034      6F63756D 
- 1035 0034 6F725C54 		.ascii	"or\\Tryksensor.cydsn\000"
- 1035      72796B73 
- 1035      656E736F 
- 1035      722E6379 
- 1035      64736E00 
- 1036              	.LASF31:
- 1037 0048 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 1037      43313120 
- 1037      352E342E 
- 1037      31203230 
- 1037      31363036 
- 1038 007b 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
- 1038      20726576 
- 1038      6973696F 
- 1038      6E203233 
- 1038      37373135 
- 1039 00ae 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
- 1039      66756E63 
- 1039      74696F6E 
- 1039      2D736563 
- 1039      74696F6E 
- 1040              	.LASF19:
- 1041 00d6 73746174 		.ascii	"state\000"
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4rrURj.s 			page 22
+ 1003 0130 15       		.uleb128 0x15
+ 1004 0131 21       		.uleb128 0x21
+ 1005 0132 00       		.byte	0
+ 1006 0133 49       		.uleb128 0x49
+ 1007 0134 13       		.uleb128 0x13
+ 1008 0135 2F       		.uleb128 0x2f
+ 1009 0136 0B       		.uleb128 0xb
+ 1010 0137 00       		.byte	0
+ 1011 0138 00       		.byte	0
+ 1012 0139 00       		.byte	0
+ 1013              		.section	.debug_aranges,"",%progbits
+ 1014 0000 3C000000 		.4byte	0x3c
+ 1015 0004 0200     		.2byte	0x2
+ 1016 0006 00000000 		.4byte	.Ldebug_info0
+ 1017 000a 04       		.byte	0x4
+ 1018 000b 00       		.byte	0
+ 1019 000c 0000     		.2byte	0
+ 1020 000e 0000     		.2byte	0
+ 1021 0010 00000000 		.4byte	.LFB64
+ 1022 0014 20000000 		.4byte	.LFE64-.LFB64
+ 1023 0018 00000000 		.4byte	.LFB65
+ 1024 001c 84000000 		.4byte	.LFE65-.LFB65
+ 1025 0020 00000000 		.4byte	.LFB66
+ 1026 0024 B0000000 		.4byte	.LFE66-.LFB66
+ 1027 0028 00000000 		.4byte	.LFB67
+ 1028 002c 2C000000 		.4byte	.LFE67-.LFB67
+ 1029 0030 00000000 		.4byte	.LFB68
+ 1030 0034 68000000 		.4byte	.LFE68-.LFB68
+ 1031 0038 00000000 		.4byte	0
+ 1032 003c 00000000 		.4byte	0
+ 1033              		.section	.debug_ranges,"",%progbits
+ 1034              	.Ldebug_ranges0:
+ 1035 0000 00000000 		.4byte	.LFB64
+ 1036 0004 20000000 		.4byte	.LFE64
+ 1037 0008 00000000 		.4byte	.LFB65
+ 1038 000c 84000000 		.4byte	.LFE65
+ 1039 0010 00000000 		.4byte	.LFB66
+ 1040 0014 B0000000 		.4byte	.LFE66
+ 1041 0018 00000000 		.4byte	.LFB67
+ 1042 001c 2C000000 		.4byte	.LFE67
+ 1043 0020 00000000 		.4byte	.LFB68
+ 1044 0024 68000000 		.4byte	.LFE68
+ 1045 0028 00000000 		.4byte	0
+ 1046 002c 00000000 		.4byte	0
+ 1047              		.section	.debug_line,"",%progbits
+ 1048              	.Ldebug_line0:
+ 1049 0000 06020000 		.section	.debug_str,"MS",%progbits,1
+ 1049      02005C01 
+ 1049      00000201 
+ 1049      FB0E0D00 
+ 1049      01010101 
+ 1050              	.LASF27:
+ 1051 0000 44617461 		.ascii	"DataRX\000"
+ 1051      525800
+ 1052              	.LASF34:
+ 1053 0007 433A5C55 		.ascii	"C:\\Users\\cring\\Documents\\GitHub\\PRJ4\\Tryksens"
+ 1053      73657273 
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccfujcCc.s 			page 22
 
 
- 1041      6500
- 1042              	.LASF9:
- 1043 00dc 5F5F696E 		.ascii	"__int32_t\000"
- 1043      7433325F 
- 1043      7400
- 1044              	.LASF18:
- 1045 00e6 446F6E65 		.ascii	"Done\000"
- 1045      00
- 1046              	.LASF20:
- 1047 00eb 6761696E 		.ascii	"gain\000"
- 1047      00
- 1048              	.LASF22:
- 1049 00f0 696E765F 		.ascii	"inv_pin\000"
- 1049      70696E00 
- 1050              	.LASF11:
- 1051 00f8 666C6F61 		.ascii	"float\000"
- 1051      7400
- 1052              	.LASF28:
- 1053 00fe 636F756E 		.ascii	"counter\000"
- 1053      74657200 
- 1054              	.LASF1:
- 1055 0106 756E7369 		.ascii	"unsigned char\000"
- 1055      676E6564 
- 1055      20636861 
- 1055      7200
- 1056              	.LASF5:
- 1057 0114 6C6F6E67 		.ascii	"long unsigned int\000"
- 1057      20756E73 
- 1057      69676E65 
- 1057      6420696E 
- 1057      7400
- 1058              	.LASF3:
- 1059 0126 73686F72 		.ascii	"short unsigned int\000"
- 1059      7420756E 
- 1059      7369676E 
- 1059      65642069 
- 1059      6E7400
- 1060              	.LASF34:
- 1061 0139 6973725F 		.ascii	"isr_timer_handler\000"
- 1061      74696D65 
- 1061      725F6861 
- 1061      6E646C65 
- 1061      7200
- 1062              	.LASF21:
- 1063 014b 70657269 		.ascii	"period_ns\000"
- 1063      6F645F6E 
- 1063      7300
- 1064              	.LASF25:
- 1065 0155 49544D5F 		.ascii	"ITM_RxBuffer\000"
- 1065      52784275 
- 1065      66666572 
- 1065      00
- 1066              	.LASF23:
- 1067 0162 4144435F 		.ascii	"ADC_init\000"
- 1067      696E6974 
- 1067      00
- 1068              	.LASF24:
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4rrURj.s 			page 23
+ 1053      5C637269 
+ 1053      6E675C44 
+ 1053      6F63756D 
+ 1054 0034 6F725C54 		.ascii	"or\\Tryksensor.cydsn\000"
+ 1054      72796B73 
+ 1054      656E736F 
+ 1054      722E6379 
+ 1054      64736E00 
+ 1055              	.LASF32:
+ 1056 0048 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 1056      43313120 
+ 1056      352E342E 
+ 1056      31203230 
+ 1056      31363036 
+ 1057 007b 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 1057      20726576 
+ 1057      6973696F 
+ 1057      6E203233 
+ 1057      37373135 
+ 1058 00ae 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 1058      66756E63 
+ 1058      74696F6E 
+ 1058      2D736563 
+ 1058      74696F6E 
+ 1059              	.LASF20:
+ 1060 00d6 73746174 		.ascii	"state\000"
+ 1060      6500
+ 1061              	.LASF9:
+ 1062 00dc 5F5F696E 		.ascii	"__int32_t\000"
+ 1062      7433325F 
+ 1062      7400
+ 1063              	.LASF3:
+ 1064 00e6 73686F72 		.ascii	"short unsigned int\000"
+ 1064      7420756E 
+ 1064      7369676E 
+ 1064      65642069 
+ 1064      6E7400
+ 1065              	.LASF19:
+ 1066 00f9 446F6E65 		.ascii	"Done\000"
+ 1066      00
+ 1067              	.LASF21:
+ 1068 00fe 6761696E 		.ascii	"gain\000"
+ 1068      00
+ 1069              	.LASF23:
+ 1070 0103 696E765F 		.ascii	"inv_pin\000"
+ 1070      70696E00 
+ 1071              	.LASF12:
+ 1072 010b 666C6F61 		.ascii	"float\000"
+ 1072      7400
+ 1073              	.LASF29:
+ 1074 0111 636F756E 		.ascii	"counter\000"
+ 1074      74657200 
+ 1075              	.LASF1:
+ 1076 0119 756E7369 		.ascii	"unsigned char\000"
+ 1076      676E6564 
+ 1076      20636861 
+ 1076      7200
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccfujcCc.s 			page 23
 
 
- 1069 016b 44617461 		.ascii	"Data\000"
- 1069      00
- 1070              	.LASF16:
- 1071 0170 75696E74 		.ascii	"uint\000"
- 1071      00
- 1072              	.LASF30:
- 1073 0175 44617461 		.ascii	"Dataindex\000"
- 1073      696E6465 
- 1073      7800
- 1074              	.LASF8:
- 1075 017f 756E7369 		.ascii	"unsigned int\000"
- 1075      676E6564 
- 1075      20696E74 
- 1075      00
- 1076              	.LASF35:
- 1077 018c 73656E64 		.ascii	"send\000"
- 1077      00
- 1078              	.LASF7:
- 1079 0191 6C6F6E67 		.ascii	"long long unsigned int\000"
- 1079      206C6F6E 
- 1079      6720756E 
- 1079      7369676E 
- 1079      65642069 
- 1080              	.LASF17:
- 1081 01a8 53656E64 		.ascii	"Sending_DATA\000"
- 1081      696E675F 
- 1081      44415441 
- 1081      00
- 1082              	.LASF32:
- 1083 01b5 41444373 		.ascii	"ADCserial.c\000"
- 1083      65726961 
- 1083      6C2E6300 
- 1084              	.LASF10:
- 1085 01c1 696E7433 		.ascii	"int32_t\000"
- 1085      325F7400 
- 1086              	.LASF15:
- 1087 01c9 73697A65 		.ascii	"sizetype\000"
- 1087      74797065 
- 1087      00
- 1088              	.LASF6:
- 1089 01d2 6C6F6E67 		.ascii	"long long int\000"
- 1089      206C6F6E 
- 1089      6720696E 
- 1089      7400
- 1090              	.LASF13:
- 1091 01e0 63686172 		.ascii	"char\000"
- 1091      00
- 1092              	.LASF27:
- 1093 01e5 6761696E 		.ascii	"gain_\000"
- 1093      5F00
- 1094              	.LASF2:
- 1095 01eb 73686F72 		.ascii	"short int\000"
- 1095      7420696E 
- 1095      7400
- 1096              	.LASF4:
- 1097 01f5 6C6F6E67 		.ascii	"long int\000"
- 1097      20696E74 
-ARM GAS  C:\Users\cring\AppData\Local\Temp\cc4rrURj.s 			page 24
+ 1077              	.LASF5:
+ 1078 0127 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1078      20756E73 
+ 1078      69676E65 
+ 1078      6420696E 
+ 1078      7400
+ 1079              	.LASF11:
+ 1080 0139 696E7433 		.ascii	"int32\000"
+ 1080      3200
+ 1081              	.LASF35:
+ 1082 013f 6973725F 		.ascii	"isr_timer_handler\000"
+ 1082      74696D65 
+ 1082      725F6861 
+ 1082      6E646C65 
+ 1082      7200
+ 1083              	.LASF22:
+ 1084 0151 70657269 		.ascii	"period_ns\000"
+ 1084      6F645F6E 
+ 1084      7300
+ 1085              	.LASF26:
+ 1086 015b 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 1086      52784275 
+ 1086      66666572 
+ 1086      00
+ 1087              	.LASF24:
+ 1088 0168 4144435F 		.ascii	"ADC_init\000"
+ 1088      696E6974 
+ 1088      00
+ 1089              	.LASF25:
+ 1090 0171 44617461 		.ascii	"Data\000"
+ 1090      00
+ 1091              	.LASF17:
+ 1092 0176 75696E74 		.ascii	"uint\000"
+ 1092      00
+ 1093              	.LASF31:
+ 1094 017b 44617461 		.ascii	"Dataindex\000"
+ 1094      696E6465 
+ 1094      7800
+ 1095              	.LASF8:
+ 1096 0185 756E7369 		.ascii	"unsigned int\000"
+ 1096      676E6564 
+ 1096      20696E74 
+ 1096      00
+ 1097              	.LASF36:
+ 1098 0192 73656E64 		.ascii	"send\000"
+ 1098      00
+ 1099              	.LASF7:
+ 1100 0197 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1100      206C6F6E 
+ 1100      6720756E 
+ 1100      7369676E 
+ 1100      65642069 
+ 1101              	.LASF18:
+ 1102 01ae 53656E64 		.ascii	"Sending_DATA\000"
+ 1102      696E675F 
+ 1102      44415441 
+ 1102      00
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccfujcCc.s 			page 24
 
 
- 1097      00
- 1098              	.LASF29:
- 1099 01fe 44617461 		.ascii	"Datain\000"
- 1099      696E00
- 1100              	.LASF14:
- 1101 0205 6C6F6E67 		.ascii	"long double\000"
- 1101      20646F75 
- 1101      626C6500 
- 1102              	.LASF36:
- 1103 0211 4144435F 		.ascii	"ADC_read\000"
- 1103      72656164 
- 1103      00
- 1104              	.LASF0:
- 1105 021a 7369676E 		.ascii	"signed char\000"
- 1105      65642063 
- 1105      68617200 
- 1106              	.LASF12:
- 1107 0226 646F7562 		.ascii	"double\000"
- 1107      6C6500
- 1108              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
+ 1103              	.LASF33:
+ 1104 01bb 41444373 		.ascii	"ADCserial.c\000"
+ 1104      65726961 
+ 1104      6C2E6300 
+ 1105              	.LASF10:
+ 1106 01c7 696E7433 		.ascii	"int32_t\000"
+ 1106      325F7400 
+ 1107              	.LASF16:
+ 1108 01cf 73697A65 		.ascii	"sizetype\000"
+ 1108      74797065 
+ 1108      00
+ 1109              	.LASF6:
+ 1110 01d8 6C6F6E67 		.ascii	"long long int\000"
+ 1110      206C6F6E 
+ 1110      6720696E 
+ 1110      7400
+ 1111              	.LASF14:
+ 1112 01e6 63686172 		.ascii	"char\000"
+ 1112      00
+ 1113              	.LASF28:
+ 1114 01eb 6761696E 		.ascii	"gain_\000"
+ 1114      5F00
+ 1115              	.LASF2:
+ 1116 01f1 73686F72 		.ascii	"short int\000"
+ 1116      7420696E 
+ 1116      7400
+ 1117              	.LASF4:
+ 1118 01fb 6C6F6E67 		.ascii	"long int\000"
+ 1118      20696E74 
+ 1118      00
+ 1119              	.LASF30:
+ 1120 0204 44617461 		.ascii	"Datain\000"
+ 1120      696E00
+ 1121              	.LASF15:
+ 1122 020b 6C6F6E67 		.ascii	"long double\000"
+ 1122      20646F75 
+ 1122      626C6500 
+ 1123              	.LASF37:
+ 1124 0217 4144435F 		.ascii	"ADC_read\000"
+ 1124      72656164 
+ 1124      00
+ 1125              	.LASF0:
+ 1126 0220 7369676E 		.ascii	"signed char\000"
+ 1126      65642063 
+ 1126      68617200 
+ 1127              	.LASF13:
+ 1128 022c 646F7562 		.ascii	"double\000"
+ 1128      6C6500
+ 1129              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

@@ -1,0 +1,1752 @@
+--
+--	Conversion of TrykControl.v to vh2:
+--
+--	Cypress Semiconductor - WARP Version 6.3 IR 41
+--	Mon Dec 14 15:51:00 2020
+--
+
+USE cypress.cypress.all;
+USE cypress.rtlpkg.all;
+ENTITY top_RTL IS
+ATTRIBUTE part_name of top_RTL:TYPE IS "cpsoc3";
+END top_RTL;
+--------------------------------------------------------
+ARCHITECTURE R_T_L OF top_RTL IS
+SIGNAL Net_10 : bit;
+SIGNAL \ADC_Timer:capture\ : bit;
+SIGNAL \ADC_Timer:count\ : bit;
+SIGNAL \ADC_Timer:reload\ : bit;
+SIGNAL \ADC_Timer:stop\ : bit;
+SIGNAL \ADC_Timer:start\ : bit;
+SIGNAL Net_8 : bit;
+SIGNAL Net_9 : bit;
+SIGNAL Net_41 : bit;
+SIGNAL \ADC_Timer:Net_1\ : bit;
+SIGNAL \ADC_Timer:Net_2\ : bit;
+SIGNAL Net_6 : bit;
+SIGNAL Net_20 : bit;
+SIGNAL \SampleTimer:capture\ : bit;
+SIGNAL \SampleTimer:count\ : bit;
+SIGNAL \SampleTimer:reload\ : bit;
+SIGNAL \SampleTimer:stop\ : bit;
+SIGNAL \SampleTimer:start\ : bit;
+SIGNAL Net_18 : bit;
+SIGNAL Net_19 : bit;
+SIGNAL Net_42 : bit;
+SIGNAL \SampleTimer:Net_1\ : bit;
+SIGNAL \SampleTimer:Net_2\ : bit;
+SIGNAL Net_16 : bit;
+SIGNAL one : bit;
+SIGNAL zero : bit;
+SIGNAL tmpFB_0__Pin_SCK_net_0 : bit;
+SIGNAL tmpIO_0__Pin_SCK_net_0 : bit;
+TERMINAL tmpSIOVREF__Pin_SCK_net_0 : bit;
+SIGNAL tmpFB_0__Pin_DIN_net_0 : bit;
+SIGNAL tmpIO_0__Pin_DIN_net_0 : bit;
+TERMINAL tmpSIOVREF__Pin_DIN_net_0 : bit;
+SIGNAL tmpFB_0__Batteri_PIN_net_0 : bit;
+TERMINAL Net_117 : bit;
+SIGNAL tmpIO_0__Batteri_PIN_net_0 : bit;
+TERMINAL tmpSIOVREF__Batteri_PIN_net_0 : bit;
+SIGNAL \UART_1:Net_847\ : bit;
+SIGNAL \UART_1:clock_wire\ : bit;
+SIGNAL \UART_1:Net_22\ : bit;
+SIGNAL \UART_1:Net_23\ : bit;
+SIGNAL \UART_1:tx_wire\ : bit;
+SIGNAL \UART_1:tmpFB_0__tx_net_0\ : bit;
+SIGNAL \UART_1:tmpIO_0__tx_net_0\ : bit;
+TERMINAL \UART_1:tmpSIOVREF__tx_net_0\ : bit;
+SIGNAL \UART_1:Net_1172\ : bit;
+SIGNAL \UART_1:tmpIO_0__rx_net_0\ : bit;
+TERMINAL \UART_1:tmpSIOVREF__rx_net_0\ : bit;
+SIGNAL \UART_1:rx_wire\ : bit;
+SIGNAL \UART_1:cts_wire\ : bit;
+SIGNAL \UART_1:intr_wire\ : bit;
+SIGNAL \UART_1:rts_wire\ : bit;
+SIGNAL \UART_1:tx_en_wire\ : bit;
+SIGNAL \UART_1:Net_145\ : bit;
+SIGNAL \UART_1:Net_146\ : bit;
+SIGNAL \UART_1:Net_154\ : bit;
+SIGNAL \UART_1:Net_155_3\ : bit;
+SIGNAL \UART_1:Net_155_2\ : bit;
+SIGNAL \UART_1:Net_155_1\ : bit;
+SIGNAL \UART_1:Net_155_0\ : bit;
+SIGNAL \UART_1:Net_156\ : bit;
+SIGNAL \UART_1:Net_157\ : bit;
+SIGNAL Net_80 : bit;
+SIGNAL Net_79 : bit;
+SIGNAL \UART_1:Net_161\ : bit;
+SIGNAL Net_77 : bit;
+SIGNAL Net_76 : bit;
+SIGNAL Net_82 : bit;
+SIGNAL Net_83 : bit;
+SIGNAL Net_75 : bit;
+SIGNAL \Batteri_ADC:Net_428\ : bit;
+TERMINAL \Batteri_ADC:muxoutPlus\ : bit;
+TERMINAL \Batteri_ADC:vinPlus_0\ : bit;
+TERMINAL \Batteri_ADC:muxoutMinus\ : bit;
+TERMINAL \Batteri_ADC:vinMinus_0\ : bit;
+TERMINAL \Batteri_ADC:Net_339_0\ : bit;
+TERMINAL \Batteri_ADC:Net_340_0\ : bit;
+TERMINAL \Batteri_ADC:vinNeg_0\ : bit;
+TERMINAL \Batteri_ADC:Net_21_0\ : bit;
+SIGNAL \Batteri_ADC:Net_40\ : bit;
+SIGNAL \Batteri_ADC:Net_41\ : bit;
+SIGNAL \Batteri_ADC:Net_42\ : bit;
+SIGNAL \Batteri_ADC:Net_43\ : bit;
+SIGNAL \Batteri_ADC:st_sel_1\ : bit;
+SIGNAL \Batteri_ADC:st_sel_0\ : bit;
+SIGNAL \Batteri_ADC:sarClock\ : bit;
+SIGNAL \Batteri_ADC:Net_415\ : bit;
+SIGNAL \Batteri_ADC:Net_29\ : bit;
+TERMINAL \Batteri_ADC:Net_408\ : bit;
+TERMINAL \Batteri_ADC:Net_102\ : bit;
+SIGNAL \Batteri_ADC:Net_423\ : bit;
+SIGNAL \Batteri_ADC:Net_34\ : bit;
+SIGNAL \Batteri_ADC:Net_33\ : bit;
+TERMINAL \Batteri_ADC:vref\ : bit;
+SIGNAL Net_106 : bit;
+SIGNAL Net_108 : bit;
+SIGNAL Net_110 : bit;
+SIGNAL Net_105 : bit;
+SIGNAL Net_109_11 : bit;
+SIGNAL Net_109_10 : bit;
+SIGNAL Net_109_9 : bit;
+SIGNAL Net_109_8 : bit;
+SIGNAL Net_109_7 : bit;
+SIGNAL Net_109_6 : bit;
+SIGNAL Net_109_5 : bit;
+SIGNAL Net_109_4 : bit;
+SIGNAL Net_109_3 : bit;
+SIGNAL Net_109_2 : bit;
+SIGNAL Net_109_1 : bit;
+SIGNAL Net_109_0 : bit;
+SIGNAL Net_107_3 : bit;
+SIGNAL Net_107_2 : bit;
+SIGNAL Net_107_1 : bit;
+SIGNAL Net_107_0 : bit;
+TERMINAL \Batteri_ADC:Net_107\ : bit;
+TERMINAL \Batteri_ADC:vinPlus_1\ : bit;
+TERMINAL \Batteri_ADC:Net_110\ : bit;
+TERMINAL \Batteri_ADC:vinPlus_2\ : bit;
+TERMINAL \Batteri_ADC:Net_113\ : bit;
+TERMINAL \Batteri_ADC:vinPlus_3\ : bit;
+TERMINAL \Batteri_ADC:Net_115\ : bit;
+TERMINAL \Batteri_ADC:vinPlus_4\ : bit;
+TERMINAL \Batteri_ADC:Net_117\ : bit;
+TERMINAL \Batteri_ADC:vinPlus_5\ : bit;
+TERMINAL \Batteri_ADC:Net_119\ : bit;
+TERMINAL \Batteri_ADC:vinPlus_6\ : bit;
+TERMINAL \Batteri_ADC:Net_121\ : bit;
+TERMINAL \Batteri_ADC:vinPlus_7\ : bit;
+TERMINAL \Batteri_ADC:Net_123\ : bit;
+TERMINAL \Batteri_ADC:vinPlus_8\ : bit;
+TERMINAL \Batteri_ADC:Net_125\ : bit;
+TERMINAL \Batteri_ADC:vinPlus_9\ : bit;
+TERMINAL \Batteri_ADC:Net_127\ : bit;
+TERMINAL \Batteri_ADC:vinPlus_10\ : bit;
+TERMINAL \Batteri_ADC:Net_129\ : bit;
+TERMINAL \Batteri_ADC:vinPlus_11\ : bit;
+TERMINAL \Batteri_ADC:Net_131\ : bit;
+TERMINAL \Batteri_ADC:vinPlus_12\ : bit;
+TERMINAL \Batteri_ADC:Net_133\ : bit;
+TERMINAL \Batteri_ADC:vinPlus_13\ : bit;
+TERMINAL \Batteri_ADC:Net_135\ : bit;
+TERMINAL \Batteri_ADC:vinPlus_14\ : bit;
+TERMINAL \Batteri_ADC:Net_137\ : bit;
+TERMINAL \Batteri_ADC:vinPlus_15\ : bit;
+TERMINAL \Batteri_ADC:Net_139\ : bit;
+TERMINAL \Batteri_ADC:vinPlus_16\ : bit;
+TERMINAL \Batteri_ADC:Net_142\ : bit;
+TERMINAL \Batteri_ADC:vinPlus_17\ : bit;
+TERMINAL \Batteri_ADC:Net_144\ : bit;
+TERMINAL \Batteri_ADC:vinPlus_18\ : bit;
+TERMINAL \Batteri_ADC:Net_146\ : bit;
+TERMINAL \Batteri_ADC:vinPlus_19\ : bit;
+TERMINAL \Batteri_ADC:Net_148\ : bit;
+TERMINAL \Batteri_ADC:vinPlus_20\ : bit;
+TERMINAL \Batteri_ADC:Net_150\ : bit;
+TERMINAL \Batteri_ADC:vinPlus_21\ : bit;
+TERMINAL \Batteri_ADC:Net_152\ : bit;
+TERMINAL \Batteri_ADC:vinPlus_22\ : bit;
+TERMINAL \Batteri_ADC:Net_154\ : bit;
+TERMINAL \Batteri_ADC:vinPlus_23\ : bit;
+TERMINAL \Batteri_ADC:Net_156\ : bit;
+TERMINAL \Batteri_ADC:vinPlus_24\ : bit;
+TERMINAL \Batteri_ADC:Net_158\ : bit;
+TERMINAL \Batteri_ADC:vinPlus_25\ : bit;
+TERMINAL \Batteri_ADC:Net_160\ : bit;
+TERMINAL \Batteri_ADC:vinPlus_26\ : bit;
+TERMINAL \Batteri_ADC:Net_162\ : bit;
+TERMINAL \Batteri_ADC:vinPlus_27\ : bit;
+TERMINAL \Batteri_ADC:Net_164\ : bit;
+TERMINAL \Batteri_ADC:vinPlus_28\ : bit;
+TERMINAL \Batteri_ADC:Net_166\ : bit;
+TERMINAL \Batteri_ADC:vinPlus_29\ : bit;
+TERMINAL \Batteri_ADC:Net_168\ : bit;
+TERMINAL \Batteri_ADC:vinPlus_30\ : bit;
+TERMINAL \Batteri_ADC:Net_170\ : bit;
+TERMINAL \Batteri_ADC:vinPlus_31\ : bit;
+TERMINAL \Batteri_ADC:Net_172\ : bit;
+TERMINAL \Batteri_ADC:vinPlus_32\ : bit;
+TERMINAL \Batteri_ADC:Net_180\ : bit;
+TERMINAL \Batteri_ADC:vinPlus_33\ : bit;
+TERMINAL \Batteri_ADC:Net_181\ : bit;
+TERMINAL \Batteri_ADC:vinPlus_34\ : bit;
+TERMINAL \Batteri_ADC:Net_182\ : bit;
+TERMINAL \Batteri_ADC:vinPlus_35\ : bit;
+TERMINAL \Batteri_ADC:Net_183\ : bit;
+TERMINAL \Batteri_ADC:vinPlus_36\ : bit;
+TERMINAL \Batteri_ADC:Net_184\ : bit;
+TERMINAL \Batteri_ADC:vinPlus_37\ : bit;
+TERMINAL \Batteri_ADC:Net_185\ : bit;
+TERMINAL \Batteri_ADC:vinPlus_38\ : bit;
+TERMINAL \Batteri_ADC:Net_186\ : bit;
+TERMINAL \Batteri_ADC:vinPlus_39\ : bit;
+TERMINAL \Batteri_ADC:Net_187\ : bit;
+TERMINAL \Batteri_ADC:vinPlus_40\ : bit;
+TERMINAL \Batteri_ADC:Net_188\ : bit;
+TERMINAL \Batteri_ADC:vinPlus_41\ : bit;
+TERMINAL \Batteri_ADC:Net_189\ : bit;
+TERMINAL \Batteri_ADC:vinPlus_42\ : bit;
+TERMINAL \Batteri_ADC:Net_190\ : bit;
+TERMINAL \Batteri_ADC:vinPlus_43\ : bit;
+TERMINAL \Batteri_ADC:Net_191\ : bit;
+TERMINAL \Batteri_ADC:vinPlus_44\ : bit;
+TERMINAL \Batteri_ADC:Net_192\ : bit;
+TERMINAL \Batteri_ADC:vinPlus_45\ : bit;
+TERMINAL \Batteri_ADC:Net_193\ : bit;
+TERMINAL \Batteri_ADC:vinPlus_46\ : bit;
+TERMINAL \Batteri_ADC:Net_194\ : bit;
+TERMINAL \Batteri_ADC:vinPlus_47\ : bit;
+TERMINAL \Batteri_ADC:Net_195\ : bit;
+TERMINAL \Batteri_ADC:vinPlus_48\ : bit;
+TERMINAL \Batteri_ADC:Net_196\ : bit;
+TERMINAL \Batteri_ADC:vinPlus_49\ : bit;
+TERMINAL \Batteri_ADC:Net_197\ : bit;
+TERMINAL \Batteri_ADC:vinPlus_50\ : bit;
+TERMINAL \Batteri_ADC:Net_198\ : bit;
+TERMINAL \Batteri_ADC:vinPlus_51\ : bit;
+TERMINAL \Batteri_ADC:Net_199\ : bit;
+TERMINAL \Batteri_ADC:vinPlus_52\ : bit;
+TERMINAL \Batteri_ADC:Net_200\ : bit;
+TERMINAL \Batteri_ADC:vinPlus_53\ : bit;
+TERMINAL \Batteri_ADC:Net_201\ : bit;
+TERMINAL \Batteri_ADC:vinPlus_54\ : bit;
+TERMINAL \Batteri_ADC:Net_202\ : bit;
+TERMINAL \Batteri_ADC:vinPlus_55\ : bit;
+TERMINAL \Batteri_ADC:Net_203\ : bit;
+TERMINAL \Batteri_ADC:vinPlus_56\ : bit;
+TERMINAL \Batteri_ADC:Net_204\ : bit;
+TERMINAL \Batteri_ADC:vinPlus_57\ : bit;
+TERMINAL \Batteri_ADC:Net_205\ : bit;
+TERMINAL \Batteri_ADC:vinPlus_58\ : bit;
+TERMINAL \Batteri_ADC:Net_206\ : bit;
+TERMINAL \Batteri_ADC:vinPlus_59\ : bit;
+TERMINAL \Batteri_ADC:Net_207\ : bit;
+TERMINAL \Batteri_ADC:vinPlus_60\ : bit;
+TERMINAL \Batteri_ADC:Net_208\ : bit;
+TERMINAL \Batteri_ADC:vinPlus_61\ : bit;
+TERMINAL \Batteri_ADC:Net_209\ : bit;
+TERMINAL \Batteri_ADC:vinPlus_62\ : bit;
+TERMINAL \Batteri_ADC:Net_210\ : bit;
+TERMINAL \Batteri_ADC:vinPlus_63\ : bit;
+TERMINAL \Batteri_ADC:Net_211\ : bit;
+TERMINAL Net_115 : bit;
+TERMINAL \Batteri_ADC:Net_213\ : bit;
+TERMINAL \Batteri_ADC:vinMinus_1\ : bit;
+TERMINAL \Batteri_ADC:Net_218\ : bit;
+TERMINAL \Batteri_ADC:vinMinus_2\ : bit;
+TERMINAL \Batteri_ADC:Net_220\ : bit;
+TERMINAL \Batteri_ADC:vinMinus_3\ : bit;
+TERMINAL \Batteri_ADC:Net_222\ : bit;
+TERMINAL \Batteri_ADC:vinMinus_4\ : bit;
+TERMINAL \Batteri_ADC:Net_224\ : bit;
+TERMINAL \Batteri_ADC:vinMinus_5\ : bit;
+TERMINAL \Batteri_ADC:Net_226\ : bit;
+TERMINAL \Batteri_ADC:vinMinus_6\ : bit;
+TERMINAL \Batteri_ADC:Net_228\ : bit;
+TERMINAL \Batteri_ADC:vinMinus_7\ : bit;
+TERMINAL \Batteri_ADC:Net_230\ : bit;
+TERMINAL \Batteri_ADC:vinMinus_8\ : bit;
+TERMINAL \Batteri_ADC:Net_232\ : bit;
+TERMINAL \Batteri_ADC:vinMinus_9\ : bit;
+TERMINAL \Batteri_ADC:Net_234\ : bit;
+TERMINAL \Batteri_ADC:vinMinus_10\ : bit;
+TERMINAL \Batteri_ADC:Net_236\ : bit;
+TERMINAL \Batteri_ADC:vinMinus_11\ : bit;
+TERMINAL \Batteri_ADC:Net_238\ : bit;
+TERMINAL \Batteri_ADC:vinMinus_12\ : bit;
+TERMINAL \Batteri_ADC:Net_240\ : bit;
+TERMINAL \Batteri_ADC:vinMinus_13\ : bit;
+TERMINAL \Batteri_ADC:Net_242\ : bit;
+TERMINAL \Batteri_ADC:vinMinus_14\ : bit;
+TERMINAL \Batteri_ADC:Net_244\ : bit;
+TERMINAL \Batteri_ADC:vinMinus_15\ : bit;
+TERMINAL \Batteri_ADC:Net_246\ : bit;
+TERMINAL \Batteri_ADC:vinMinus_16\ : bit;
+TERMINAL \Batteri_ADC:Net_248\ : bit;
+TERMINAL \Batteri_ADC:vinMinus_17\ : bit;
+TERMINAL \Batteri_ADC:Net_250\ : bit;
+TERMINAL \Batteri_ADC:vinMinus_18\ : bit;
+TERMINAL \Batteri_ADC:Net_252\ : bit;
+TERMINAL \Batteri_ADC:vinMinus_19\ : bit;
+TERMINAL \Batteri_ADC:Net_254\ : bit;
+TERMINAL \Batteri_ADC:vinMinus_20\ : bit;
+TERMINAL \Batteri_ADC:Net_256\ : bit;
+TERMINAL \Batteri_ADC:vinMinus_21\ : bit;
+TERMINAL \Batteri_ADC:Net_258\ : bit;
+TERMINAL \Batteri_ADC:vinMinus_22\ : bit;
+TERMINAL \Batteri_ADC:Net_260\ : bit;
+TERMINAL \Batteri_ADC:vinMinus_23\ : bit;
+TERMINAL \Batteri_ADC:Net_262\ : bit;
+TERMINAL \Batteri_ADC:vinMinus_24\ : bit;
+TERMINAL \Batteri_ADC:Net_264\ : bit;
+TERMINAL \Batteri_ADC:vinMinus_25\ : bit;
+TERMINAL \Batteri_ADC:Net_266\ : bit;
+TERMINAL \Batteri_ADC:vinMinus_26\ : bit;
+TERMINAL \Batteri_ADC:Net_268\ : bit;
+TERMINAL \Batteri_ADC:vinMinus_27\ : bit;
+TERMINAL \Batteri_ADC:Net_270\ : bit;
+TERMINAL \Batteri_ADC:vinMinus_28\ : bit;
+TERMINAL \Batteri_ADC:Net_272\ : bit;
+TERMINAL \Batteri_ADC:vinMinus_29\ : bit;
+TERMINAL \Batteri_ADC:Net_274\ : bit;
+TERMINAL \Batteri_ADC:vinMinus_30\ : bit;
+TERMINAL \Batteri_ADC:Net_276\ : bit;
+TERMINAL \Batteri_ADC:vinMinus_31\ : bit;
+TERMINAL \Batteri_ADC:Net_278\ : bit;
+TERMINAL \Batteri_ADC:vinMinus_32\ : bit;
+TERMINAL \Batteri_ADC:Net_285\ : bit;
+TERMINAL \Batteri_ADC:vinMinus_33\ : bit;
+TERMINAL \Batteri_ADC:Net_286\ : bit;
+TERMINAL \Batteri_ADC:vinMinus_34\ : bit;
+TERMINAL \Batteri_ADC:Net_287\ : bit;
+TERMINAL \Batteri_ADC:vinMinus_35\ : bit;
+TERMINAL \Batteri_ADC:Net_288\ : bit;
+TERMINAL \Batteri_ADC:vinMinus_36\ : bit;
+TERMINAL \Batteri_ADC:Net_289\ : bit;
+TERMINAL \Batteri_ADC:vinMinus_37\ : bit;
+TERMINAL \Batteri_ADC:Net_290\ : bit;
+TERMINAL \Batteri_ADC:vinMinus_38\ : bit;
+TERMINAL \Batteri_ADC:Net_291\ : bit;
+TERMINAL \Batteri_ADC:vinMinus_39\ : bit;
+TERMINAL \Batteri_ADC:Net_292\ : bit;
+TERMINAL \Batteri_ADC:vinMinus_40\ : bit;
+TERMINAL \Batteri_ADC:Net_293\ : bit;
+TERMINAL \Batteri_ADC:vinMinus_41\ : bit;
+TERMINAL \Batteri_ADC:Net_294\ : bit;
+TERMINAL \Batteri_ADC:vinMinus_42\ : bit;
+TERMINAL \Batteri_ADC:Net_295\ : bit;
+TERMINAL \Batteri_ADC:vinMinus_43\ : bit;
+TERMINAL \Batteri_ADC:Net_296\ : bit;
+TERMINAL \Batteri_ADC:vinMinus_44\ : bit;
+TERMINAL \Batteri_ADC:Net_297\ : bit;
+TERMINAL \Batteri_ADC:vinMinus_45\ : bit;
+TERMINAL \Batteri_ADC:Net_298\ : bit;
+TERMINAL \Batteri_ADC:vinMinus_46\ : bit;
+TERMINAL \Batteri_ADC:Net_299\ : bit;
+TERMINAL \Batteri_ADC:vinMinus_47\ : bit;
+TERMINAL \Batteri_ADC:Net_300\ : bit;
+TERMINAL \Batteri_ADC:vinMinus_48\ : bit;
+TERMINAL \Batteri_ADC:Net_301\ : bit;
+TERMINAL \Batteri_ADC:vinMinus_49\ : bit;
+TERMINAL \Batteri_ADC:Net_302\ : bit;
+TERMINAL \Batteri_ADC:vinMinus_50\ : bit;
+TERMINAL \Batteri_ADC:Net_303\ : bit;
+TERMINAL \Batteri_ADC:vinMinus_51\ : bit;
+TERMINAL \Batteri_ADC:Net_304\ : bit;
+TERMINAL \Batteri_ADC:vinMinus_52\ : bit;
+TERMINAL \Batteri_ADC:Net_305\ : bit;
+TERMINAL \Batteri_ADC:vinMinus_53\ : bit;
+TERMINAL \Batteri_ADC:Net_306\ : bit;
+TERMINAL \Batteri_ADC:vinMinus_54\ : bit;
+TERMINAL \Batteri_ADC:Net_307\ : bit;
+TERMINAL \Batteri_ADC:vinMinus_55\ : bit;
+TERMINAL \Batteri_ADC:Net_308\ : bit;
+TERMINAL \Batteri_ADC:vinMinus_56\ : bit;
+TERMINAL \Batteri_ADC:Net_309\ : bit;
+TERMINAL \Batteri_ADC:vinMinus_57\ : bit;
+TERMINAL \Batteri_ADC:Net_310\ : bit;
+TERMINAL \Batteri_ADC:vinMinus_58\ : bit;
+TERMINAL \Batteri_ADC:Net_311\ : bit;
+TERMINAL \Batteri_ADC:vinMinus_59\ : bit;
+TERMINAL \Batteri_ADC:Net_312\ : bit;
+TERMINAL \Batteri_ADC:vinMinus_60\ : bit;
+TERMINAL \Batteri_ADC:Net_313\ : bit;
+TERMINAL \Batteri_ADC:vinMinus_61\ : bit;
+TERMINAL \Batteri_ADC:Net_314\ : bit;
+TERMINAL \Batteri_ADC:vinMinus_62\ : bit;
+TERMINAL \Batteri_ADC:Net_315\ : bit;
+TERMINAL \Batteri_ADC:vinMinus_63\ : bit;
+TERMINAL \Batteri_ADC:Net_316\ : bit;
+TERMINAL \Batteri_ADC:Net_331\ : bit;
+TERMINAL \Batteri_ADC:vinNeg_1\ : bit;
+TERMINAL \Batteri_ADC:Net_345\ : bit;
+TERMINAL \Batteri_ADC:vinNeg_2\ : bit;
+TERMINAL \Batteri_ADC:Net_347\ : bit;
+TERMINAL \Batteri_ADC:vinNeg_3\ : bit;
+TERMINAL \Batteri_ADC:Net_349\ : bit;
+TERMINAL \Batteri_ADC:vrefBus_0\ : bit;
+TERMINAL \Batteri_ADC:Net_456\ : bit;
+TERMINAL \Batteri_ADC:vrefBus_1\ : bit;
+TERMINAL \Batteri_ADC:Net_457\ : bit;
+TERMINAL \Batteri_ADC:vrefBus_2\ : bit;
+TERMINAL \Batteri_ADC:Net_458\ : bit;
+TERMINAL \Batteri_ADC:vrefBus_3\ : bit;
+TERMINAL \Batteri_ADC:Net_459\ : bit;
+TERMINAL \Batteri_ADC:Net_1448\ : bit;
+SIGNAL Net_111 : bit;
+TERMINAL Net_112_0 : bit;
+TERMINAL Net_112_1 : bit;
+TERMINAL \Batteri_ADC:Net_1379\ : bit;
+TERMINAL \Batteri_ADC:Net_1385\ : bit;
+TERMINAL \Batteri_ADC:Net_1388\ : bit;
+TERMINAL \Batteri_ADC:Net_1382\ : bit;
+TERMINAL \Batteri_ADC:Net_105\ : bit;
+TERMINAL Net_114 : bit;
+TERMINAL Net_113 : bit;
+BEGIN
+
+one <=  ('1') ;
+
+zero <=  ('0') ;
+
+\ADC_Timer:TCPWM\:cy_mxs40_tcpwm_v1_0
+	GENERIC MAP(cy_registers=>"",
+		width=>16,
+		exact_width=>'0')
+	PORT MAP(clock=>Net_10,
+		capture=>zero,
+		count=>one,
+		reload=>zero,
+		stop=>zero,
+		start=>zero,
+		tr_underflow=>Net_8,
+		tr_compare_match=>Net_9,
+		tr_overflow=>Net_41,
+		line_compl=>\ADC_Timer:Net_1\,
+		line=>\ADC_Timer:Net_2\,
+		interrupt=>Net_6);
+\SampleTimer:TCPWM\:cy_mxs40_tcpwm_v1_0
+	GENERIC MAP(cy_registers=>"",
+		width=>16,
+		exact_width=>'0')
+	PORT MAP(clock=>Net_20,
+		capture=>zero,
+		count=>one,
+		reload=>zero,
+		stop=>zero,
+		start=>zero,
+		tr_underflow=>Net_18,
+		tr_compare_match=>Net_19,
+		tr_overflow=>Net_42,
+		line_compl=>\SampleTimer:Net_1\,
+		line=>\SampleTimer:Net_2\,
+		interrupt=>Net_16);
+Clock_1:cy_clock_v1_0
+	GENERIC MAP(cy_registers=>"",
+		id=>"c11ea385-9708-4e06-a511-ce57d474b80f",
+		source_clock_id=>"2FB4EC85-8328-4C5A-9ED9-8B63060178EB",
+		divisor=>0,
+		period=>"41666666.6666667",
+		is_direct=>'0',
+		is_digital=>'0')
+	PORT MAP(clock_out=>Net_10,
+		dig_domain_out=>open);
+Clock_2:cy_clock_v1_0
+	GENERIC MAP(cy_registers=>"",
+		id=>"438a52e4-6bfe-4ed5-b22f-1a0ac3f1833a",
+		source_clock_id=>"2FB4EC85-8328-4C5A-9ED9-8B63060178EB",
+		divisor=>0,
+		period=>"10000000000",
+		is_direct=>'0',
+		is_digital=>'0')
+	PORT MAP(clock_out=>Net_20,
+		dig_domain_out=>open);
+isr_timer:cy_mxs40_isr_v1_0
+	GENERIC MAP(cy_registers=>"",
+		deepsleep_required=>'0',
+		int_type=>"00")
+	PORT MAP(int_signal=>Net_41);
+sampleEvent:cy_mxs40_isr_v1_0
+	GENERIC MAP(cy_registers=>"",
+		deepsleep_required=>'0',
+		int_type=>"00")
+	PORT MAP(int_signal=>Net_42);
+Pin_SCK:cy_mxs40_gpio_v1_0
+	GENERIC MAP(cy_registers=>"",
+		width=>1,
+		sio_grp_cnt=>0,
+		id=>"a61270bc-07ec-447d-ac9e-34cfe85c30e9",
+		drive_mode=>"6",
+		ibuf_enabled=>"0",
+		init_dr_st=>"0",
+		input_sync=>"0",
+		intr_mode=>"0",
+		io_voltage=>"",
+		output_conn=>"0",
+		oe_conn=>"0",
+		output_sync=>"0",
+		oe_sync=>"0",
+		drive_strength=>"0",
+		max_frequency=>"100",
+		output_current_cap=>"8",
+		i2c_mode=>"0",
+		pin_aliases=>"",
+		pin_mode=>"O",
+		slew_rate=>"0",
+		vtrip=>"0",
+		use_annotation=>"0",
+		hotswap_needed=>"0")
+	PORT MAP(oe=>(one),
+		y=>(zero),
+		fb=>(tmpFB_0__Pin_SCK_net_0),
+		analog=>(open),
+		io=>(tmpIO_0__Pin_SCK_net_0),
+		annotation=>(open),
+		siovref=>(tmpSIOVREF__Pin_SCK_net_0));
+Pin_DIN:cy_mxs40_gpio_v1_0
+	GENERIC MAP(cy_registers=>"",
+		width=>1,
+		sio_grp_cnt=>0,
+		id=>"4cca878b-77b5-471d-8aeb-ad6925202455",
+		drive_mode=>"0",
+		ibuf_enabled=>"1",
+		init_dr_st=>"0",
+		input_sync=>"0",
+		intr_mode=>"0",
+		io_voltage=>"",
+		output_conn=>"0",
+		oe_conn=>"0",
+		output_sync=>"0",
+		oe_sync=>"0",
+		drive_strength=>"0",
+		max_frequency=>"100",
+		output_current_cap=>"8",
+		i2c_mode=>"0",
+		pin_aliases=>"",
+		pin_mode=>"I",
+		slew_rate=>"0",
+		vtrip=>"0",
+		use_annotation=>"0",
+		hotswap_needed=>"0")
+	PORT MAP(oe=>(one),
+		y=>(zero),
+		fb=>(tmpFB_0__Pin_DIN_net_0),
+		analog=>(open),
+		io=>(tmpIO_0__Pin_DIN_net_0),
+		annotation=>(open),
+		siovref=>(tmpSIOVREF__Pin_DIN_net_0));
+Batteri_PIN:cy_mxs40_gpio_v1_0
+	GENERIC MAP(cy_registers=>"",
+		width=>1,
+		sio_grp_cnt=>0,
+		id=>"0113321b-4a37-46f6-8407-2f8646c68756",
+		drive_mode=>"0",
+		ibuf_enabled=>"0",
+		init_dr_st=>"1",
+		input_sync=>"0",
+		intr_mode=>"0",
+		io_voltage=>"",
+		output_conn=>"0",
+		oe_conn=>"0",
+		output_sync=>"0",
+		oe_sync=>"0",
+		drive_strength=>"0",
+		max_frequency=>"100",
+		output_current_cap=>"8",
+		i2c_mode=>"0",
+		pin_aliases=>"",
+		pin_mode=>"A",
+		slew_rate=>"0",
+		vtrip=>"0",
+		use_annotation=>"0",
+		hotswap_needed=>"0")
+	PORT MAP(oe=>(one),
+		y=>(zero),
+		fb=>(tmpFB_0__Batteri_PIN_net_0),
+		analog=>Net_117,
+		io=>(tmpIO_0__Batteri_PIN_net_0),
+		annotation=>(open),
+		siovref=>(tmpSIOVREF__Batteri_PIN_net_0));
+\UART_1:SCBCLK\:cy_clock_v1_0
+	GENERIC MAP(cy_registers=>"",
+		id=>"5d48bba3-23da-427d-a01e-4eae2d961847/b68e5b9d-7828-482d-a282-930f990e3b3e",
+		source_clock_id=>"",
+		divisor=>0,
+		period=>"723379629.62963",
+		is_direct=>'0',
+		is_digital=>'0')
+	PORT MAP(clock_out=>\UART_1:Net_847\,
+		dig_domain_out=>open);
+\UART_1:tx\:cy_mxs40_gpio_v1_0
+	GENERIC MAP(cy_registers=>"",
+		width=>1,
+		sio_grp_cnt=>0,
+		id=>"5d48bba3-23da-427d-a01e-4eae2d961847/65f3af6c-759b-4ccb-8c66-5c95ba1f5f4f",
+		drive_mode=>"6",
+		ibuf_enabled=>"0",
+		init_dr_st=>"1",
+		input_sync=>"0",
+		intr_mode=>"0",
+		io_voltage=>"",
+		output_conn=>"1",
+		oe_conn=>"0",
+		output_sync=>"0",
+		oe_sync=>"0",
+		drive_strength=>"0",
+		max_frequency=>"100",
+		output_current_cap=>"8",
+		i2c_mode=>"0",
+		pin_aliases=>"",
+		pin_mode=>"O",
+		slew_rate=>"0",
+		vtrip=>"0",
+		use_annotation=>"0",
+		hotswap_needed=>"0")
+	PORT MAP(oe=>(one),
+		y=>\UART_1:tx_wire\,
+		fb=>(\UART_1:tmpFB_0__tx_net_0\),
+		analog=>(open),
+		io=>(\UART_1:tmpIO_0__tx_net_0\),
+		annotation=>(open),
+		siovref=>(\UART_1:tmpSIOVREF__tx_net_0\));
+\UART_1:rx\:cy_mxs40_gpio_v1_0
+	GENERIC MAP(cy_registers=>"",
+		width=>1,
+		sio_grp_cnt=>0,
+		id=>"5d48bba3-23da-427d-a01e-4eae2d961847/b7e8018e-1ef7-49c0-b5a5-61641a03e31c",
+		drive_mode=>"0",
+		ibuf_enabled=>"1",
+		init_dr_st=>"1",
+		input_sync=>"0",
+		intr_mode=>"0",
+		io_voltage=>"",
+		output_conn=>"0",
+		oe_conn=>"0",
+		output_sync=>"0",
+		oe_sync=>"0",
+		drive_strength=>"0",
+		max_frequency=>"100",
+		output_current_cap=>"8",
+		i2c_mode=>"0",
+		pin_aliases=>"",
+		pin_mode=>"I",
+		slew_rate=>"0",
+		vtrip=>"0",
+		use_annotation=>"0",
+		hotswap_needed=>"0")
+	PORT MAP(oe=>(one),
+		y=>(zero),
+		fb=>\UART_1:Net_1172\,
+		analog=>(open),
+		io=>(\UART_1:tmpIO_0__rx_net_0\),
+		annotation=>(open),
+		siovref=>(\UART_1:tmpSIOVREF__rx_net_0\));
+\UART_1:SCB_IRQ\:cy_mxs40_isr_v1_0
+	GENERIC MAP(cy_registers=>"",
+		deepsleep_required=>'0',
+		int_type=>"10")
+	PORT MAP(int_signal=>\UART_1:intr_wire\);
+\UART_1:SCB\:cy_mxs40_scb_v1_10
+	GENERIC MAP(cy_registers=>"",
+		requires_io_preconfigure=>'0',
+		mode=>2,
+		master=>'0')
+	PORT MAP(clock=>\UART_1:Net_847\,
+		uart_rx=>\UART_1:Net_1172\,
+		uart_tx=>\UART_1:tx_wire\,
+		uart_rts=>\UART_1:rts_wire\,
+		uart_cts=>zero,
+		uart_tx_en=>\UART_1:tx_en_wire\,
+		i2c_scl=>\UART_1:Net_145\,
+		i2c_sda=>\UART_1:Net_146\,
+		spi_clk_m=>\UART_1:Net_154\,
+		spi_clk_s=>zero,
+		spi_select_m=>(\UART_1:Net_155_3\, \UART_1:Net_155_2\, \UART_1:Net_155_1\, \UART_1:Net_155_0\),
+		spi_select_s=>zero,
+		spi_mosi_m=>\UART_1:Net_156\,
+		spi_miso_m=>zero,
+		spi_mosi_s=>zero,
+		spi_miso_s=>\UART_1:Net_157\,
+		interrupt=>\UART_1:intr_wire\,
+		tr_tx_req=>Net_80,
+		tr_rx_req=>Net_79,
+		tr_i2c_scl_filtered=>\UART_1:Net_161\);
+\Batteri_ADC:intSarClock\:cy_clock_v1_0
+	GENERIC MAP(cy_registers=>"",
+		id=>"4136d59c-f58e-49f1-9eed-ebf4859e3684/f7143d07-534d-4542-813a-8bb23ceb1ae9",
+		source_clock_id=>"2FB4EC85-8328-4C5A-9ED9-8B63060178EB",
+		divisor=>0,
+		period=>"1000000000",
+		is_direct=>'0',
+		is_digital=>'0')
+	PORT MAP(clock_out=>\Batteri_ADC:Net_428\,
+		dig_domain_out=>open);
+\Batteri_ADC:vplusMux_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:muxoutPlus\,
+		signal2=>\Batteri_ADC:vinPlus_0\);
+\Batteri_ADC:vminusMux_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:muxoutMinus\,
+		signal2=>\Batteri_ADC:vinMinus_0\);
+\Batteri_ADC:vinPlusConnect:bus_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>(\Batteri_ADC:vinPlus_0\),
+		signal2=>(\Batteri_ADC:Net_339_0\));
+\Batteri_ADC:vinMinusConnect:bus_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>(\Batteri_ADC:vinMinus_0\),
+		signal2=>(\Batteri_ADC:Net_340_0\));
+\Batteri_ADC:vinNegConnect:bus_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>(\Batteri_ADC:vinNeg_0\),
+		signal2=>(\Batteri_ADC:Net_21_0\));
+\Batteri_ADC:extVrefMux_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:Net_408\,
+		signal2=>\Batteri_ADC:Net_102\);
+\Batteri_ADC:IRQ\:cy_mxs40_isr_v1_0
+	GENERIC MAP(cy_registers=>"",
+		deepsleep_required=>'0',
+		int_type=>"10")
+	PORT MAP(int_signal=>\Batteri_ADC:Net_423\);
+\Batteri_ADC:vinPlusMux_0_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinPlus_0\,
+		signal2=>Net_117);
+\Batteri_ADC:SAR\:cy_mxs40_sar_v1_0
+	GENERIC MAP(cy_registers=>"",
+		edge_trigger=>'0')
+	PORT MAP(vplus=>\Batteri_ADC:muxoutPlus\,
+		vminus=>\Batteri_ADC:muxoutMinus\,
+		vref=>\Batteri_ADC:vref\,
+		ext_vref=>\Batteri_ADC:Net_408\,
+		dsi_sar_sample_done=>Net_106,
+		dsi_sar_chan_id_valid=>Net_108,
+		dsi_sar_data_valid=>Net_110,
+		tr_sar_out=>Net_105,
+		dsi_sar_data=>(Net_109_11, Net_109_10, Net_109_9, Net_109_8,
+			Net_109_7, Net_109_6, Net_109_5, Net_109_4,
+			Net_109_3, Net_109_2, Net_109_1, Net_109_0),
+		dsi_sar_chan_id=>(Net_107_3, Net_107_2, Net_107_1, Net_107_0),
+		dsi_sar_cfg_st_sel=>(zero, zero),
+		dsi_sar_cfg_average=>zero,
+		dsi_sar_cfg_differential=>zero,
+		dsi_sar_sw_negvref=>zero,
+		dsi_sar_data_hilo_sel=>zero,
+		tr_sar_in=>zero,
+		clock=>\Batteri_ADC:Net_428\,
+		interrupt=>\Batteri_ADC:Net_423\);
+\Batteri_ADC:cy_analog_noconnect_133\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_107\);
+\Batteri_ADC:vinPlusMux_1_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinPlus_1\,
+		signal2=>\Batteri_ADC:Net_110\);
+\Batteri_ADC:cy_analog_noconnect_134\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_110\);
+\Batteri_ADC:vinPlusMux_2_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinPlus_2\,
+		signal2=>\Batteri_ADC:Net_113\);
+\Batteri_ADC:cy_analog_noconnect_135\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_113\);
+\Batteri_ADC:vinPlusMux_3_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinPlus_3\,
+		signal2=>\Batteri_ADC:Net_115\);
+\Batteri_ADC:cy_analog_noconnect_136\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_115\);
+\Batteri_ADC:vinPlusMux_4_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinPlus_4\,
+		signal2=>\Batteri_ADC:Net_117\);
+\Batteri_ADC:cy_analog_noconnect_137\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_117\);
+\Batteri_ADC:vinPlusMux_5_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinPlus_5\,
+		signal2=>\Batteri_ADC:Net_119\);
+\Batteri_ADC:cy_analog_noconnect_138\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_119\);
+\Batteri_ADC:vinPlusMux_6_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinPlus_6\,
+		signal2=>\Batteri_ADC:Net_121\);
+\Batteri_ADC:cy_analog_noconnect_139\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_121\);
+\Batteri_ADC:vinPlusMux_7_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinPlus_7\,
+		signal2=>\Batteri_ADC:Net_123\);
+\Batteri_ADC:cy_analog_noconnect_140\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_123\);
+\Batteri_ADC:vinPlusMux_8_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinPlus_8\,
+		signal2=>\Batteri_ADC:Net_125\);
+\Batteri_ADC:cy_analog_noconnect_141\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_125\);
+\Batteri_ADC:vinPlusMux_9_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinPlus_9\,
+		signal2=>\Batteri_ADC:Net_127\);
+\Batteri_ADC:cy_analog_noconnect_142\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_127\);
+\Batteri_ADC:vinPlusMux_10_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinPlus_10\,
+		signal2=>\Batteri_ADC:Net_129\);
+\Batteri_ADC:cy_analog_noconnect_143\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_129\);
+\Batteri_ADC:vinPlusMux_11_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinPlus_11\,
+		signal2=>\Batteri_ADC:Net_131\);
+\Batteri_ADC:cy_analog_noconnect_144\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_131\);
+\Batteri_ADC:vinPlusMux_12_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinPlus_12\,
+		signal2=>\Batteri_ADC:Net_133\);
+\Batteri_ADC:cy_analog_noconnect_145\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_133\);
+\Batteri_ADC:vinPlusMux_13_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinPlus_13\,
+		signal2=>\Batteri_ADC:Net_135\);
+\Batteri_ADC:cy_analog_noconnect_146\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_135\);
+\Batteri_ADC:vinPlusMux_14_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinPlus_14\,
+		signal2=>\Batteri_ADC:Net_137\);
+\Batteri_ADC:cy_analog_noconnect_147\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_137\);
+\Batteri_ADC:vinPlusMux_15_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinPlus_15\,
+		signal2=>\Batteri_ADC:Net_139\);
+\Batteri_ADC:cy_analog_noconnect_148\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_139\);
+\Batteri_ADC:vinPlusMux_16_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinPlus_16\,
+		signal2=>\Batteri_ADC:Net_142\);
+\Batteri_ADC:cy_analog_noconnect_149\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_142\);
+\Batteri_ADC:vinPlusMux_17_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinPlus_17\,
+		signal2=>\Batteri_ADC:Net_144\);
+\Batteri_ADC:cy_analog_noconnect_150\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_144\);
+\Batteri_ADC:vinPlusMux_18_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinPlus_18\,
+		signal2=>\Batteri_ADC:Net_146\);
+\Batteri_ADC:cy_analog_noconnect_151\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_146\);
+\Batteri_ADC:vinPlusMux_19_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinPlus_19\,
+		signal2=>\Batteri_ADC:Net_148\);
+\Batteri_ADC:cy_analog_noconnect_152\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_148\);
+\Batteri_ADC:vinPlusMux_20_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinPlus_20\,
+		signal2=>\Batteri_ADC:Net_150\);
+\Batteri_ADC:cy_analog_noconnect_153\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_150\);
+\Batteri_ADC:vinPlusMux_21_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinPlus_21\,
+		signal2=>\Batteri_ADC:Net_152\);
+\Batteri_ADC:cy_analog_noconnect_154\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_152\);
+\Batteri_ADC:vinPlusMux_22_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinPlus_22\,
+		signal2=>\Batteri_ADC:Net_154\);
+\Batteri_ADC:cy_analog_noconnect_155\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_154\);
+\Batteri_ADC:vinPlusMux_23_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinPlus_23\,
+		signal2=>\Batteri_ADC:Net_156\);
+\Batteri_ADC:cy_analog_noconnect_156\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_156\);
+\Batteri_ADC:vinPlusMux_24_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinPlus_24\,
+		signal2=>\Batteri_ADC:Net_158\);
+\Batteri_ADC:cy_analog_noconnect_157\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_158\);
+\Batteri_ADC:vinPlusMux_25_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinPlus_25\,
+		signal2=>\Batteri_ADC:Net_160\);
+\Batteri_ADC:cy_analog_noconnect_158\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_160\);
+\Batteri_ADC:vinPlusMux_26_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinPlus_26\,
+		signal2=>\Batteri_ADC:Net_162\);
+\Batteri_ADC:cy_analog_noconnect_159\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_162\);
+\Batteri_ADC:vinPlusMux_27_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinPlus_27\,
+		signal2=>\Batteri_ADC:Net_164\);
+\Batteri_ADC:cy_analog_noconnect_160\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_164\);
+\Batteri_ADC:vinPlusMux_28_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinPlus_28\,
+		signal2=>\Batteri_ADC:Net_166\);
+\Batteri_ADC:cy_analog_noconnect_161\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_166\);
+\Batteri_ADC:vinPlusMux_29_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinPlus_29\,
+		signal2=>\Batteri_ADC:Net_168\);
+\Batteri_ADC:cy_analog_noconnect_162\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_168\);
+\Batteri_ADC:vinPlusMux_30_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinPlus_30\,
+		signal2=>\Batteri_ADC:Net_170\);
+\Batteri_ADC:cy_analog_noconnect_163\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_170\);
+\Batteri_ADC:vinPlusMux_31_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinPlus_31\,
+		signal2=>\Batteri_ADC:Net_172\);
+\Batteri_ADC:cy_analog_noconnect_164\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_172\);
+\Batteri_ADC:vinPlusMux_32_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinPlus_32\,
+		signal2=>\Batteri_ADC:Net_180\);
+\Batteri_ADC:cy_analog_noconnect_165\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_180\);
+\Batteri_ADC:vinPlusMux_33_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinPlus_33\,
+		signal2=>\Batteri_ADC:Net_181\);
+\Batteri_ADC:cy_analog_noconnect_166\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_181\);
+\Batteri_ADC:vinPlusMux_34_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinPlus_34\,
+		signal2=>\Batteri_ADC:Net_182\);
+\Batteri_ADC:cy_analog_noconnect_167\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_182\);
+\Batteri_ADC:vinPlusMux_35_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinPlus_35\,
+		signal2=>\Batteri_ADC:Net_183\);
+\Batteri_ADC:cy_analog_noconnect_168\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_183\);
+\Batteri_ADC:vinPlusMux_36_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinPlus_36\,
+		signal2=>\Batteri_ADC:Net_184\);
+\Batteri_ADC:cy_analog_noconnect_169\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_184\);
+\Batteri_ADC:vinPlusMux_37_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinPlus_37\,
+		signal2=>\Batteri_ADC:Net_185\);
+\Batteri_ADC:cy_analog_noconnect_170\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_185\);
+\Batteri_ADC:vinPlusMux_38_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinPlus_38\,
+		signal2=>\Batteri_ADC:Net_186\);
+\Batteri_ADC:cy_analog_noconnect_171\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_186\);
+\Batteri_ADC:vinPlusMux_39_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinPlus_39\,
+		signal2=>\Batteri_ADC:Net_187\);
+\Batteri_ADC:cy_analog_noconnect_172\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_187\);
+\Batteri_ADC:vinPlusMux_40_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinPlus_40\,
+		signal2=>\Batteri_ADC:Net_188\);
+\Batteri_ADC:cy_analog_noconnect_173\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_188\);
+\Batteri_ADC:vinPlusMux_41_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinPlus_41\,
+		signal2=>\Batteri_ADC:Net_189\);
+\Batteri_ADC:cy_analog_noconnect_174\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_189\);
+\Batteri_ADC:vinPlusMux_42_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinPlus_42\,
+		signal2=>\Batteri_ADC:Net_190\);
+\Batteri_ADC:cy_analog_noconnect_175\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_190\);
+\Batteri_ADC:vinPlusMux_43_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinPlus_43\,
+		signal2=>\Batteri_ADC:Net_191\);
+\Batteri_ADC:cy_analog_noconnect_176\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_191\);
+\Batteri_ADC:vinPlusMux_44_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinPlus_44\,
+		signal2=>\Batteri_ADC:Net_192\);
+\Batteri_ADC:cy_analog_noconnect_177\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_192\);
+\Batteri_ADC:vinPlusMux_45_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinPlus_45\,
+		signal2=>\Batteri_ADC:Net_193\);
+\Batteri_ADC:cy_analog_noconnect_178\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_193\);
+\Batteri_ADC:vinPlusMux_46_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinPlus_46\,
+		signal2=>\Batteri_ADC:Net_194\);
+\Batteri_ADC:cy_analog_noconnect_179\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_194\);
+\Batteri_ADC:vinPlusMux_47_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinPlus_47\,
+		signal2=>\Batteri_ADC:Net_195\);
+\Batteri_ADC:cy_analog_noconnect_180\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_195\);
+\Batteri_ADC:vinPlusMux_48_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinPlus_48\,
+		signal2=>\Batteri_ADC:Net_196\);
+\Batteri_ADC:cy_analog_noconnect_181\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_196\);
+\Batteri_ADC:vinPlusMux_49_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinPlus_49\,
+		signal2=>\Batteri_ADC:Net_197\);
+\Batteri_ADC:cy_analog_noconnect_182\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_197\);
+\Batteri_ADC:vinPlusMux_50_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinPlus_50\,
+		signal2=>\Batteri_ADC:Net_198\);
+\Batteri_ADC:cy_analog_noconnect_183\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_198\);
+\Batteri_ADC:vinPlusMux_51_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinPlus_51\,
+		signal2=>\Batteri_ADC:Net_199\);
+\Batteri_ADC:cy_analog_noconnect_184\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_199\);
+\Batteri_ADC:vinPlusMux_52_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinPlus_52\,
+		signal2=>\Batteri_ADC:Net_200\);
+\Batteri_ADC:cy_analog_noconnect_185\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_200\);
+\Batteri_ADC:vinPlusMux_53_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinPlus_53\,
+		signal2=>\Batteri_ADC:Net_201\);
+\Batteri_ADC:cy_analog_noconnect_186\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_201\);
+\Batteri_ADC:vinPlusMux_54_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinPlus_54\,
+		signal2=>\Batteri_ADC:Net_202\);
+\Batteri_ADC:cy_analog_noconnect_187\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_202\);
+\Batteri_ADC:vinPlusMux_55_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinPlus_55\,
+		signal2=>\Batteri_ADC:Net_203\);
+\Batteri_ADC:cy_analog_noconnect_188\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_203\);
+\Batteri_ADC:vinPlusMux_56_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinPlus_56\,
+		signal2=>\Batteri_ADC:Net_204\);
+\Batteri_ADC:cy_analog_noconnect_189\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_204\);
+\Batteri_ADC:vinPlusMux_57_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinPlus_57\,
+		signal2=>\Batteri_ADC:Net_205\);
+\Batteri_ADC:cy_analog_noconnect_190\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_205\);
+\Batteri_ADC:vinPlusMux_58_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinPlus_58\,
+		signal2=>\Batteri_ADC:Net_206\);
+\Batteri_ADC:cy_analog_noconnect_191\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_206\);
+\Batteri_ADC:vinPlusMux_59_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinPlus_59\,
+		signal2=>\Batteri_ADC:Net_207\);
+\Batteri_ADC:cy_analog_noconnect_192\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_207\);
+\Batteri_ADC:vinPlusMux_60_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinPlus_60\,
+		signal2=>\Batteri_ADC:Net_208\);
+\Batteri_ADC:cy_analog_noconnect_193\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_208\);
+\Batteri_ADC:vinPlusMux_61_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinPlus_61\,
+		signal2=>\Batteri_ADC:Net_209\);
+\Batteri_ADC:cy_analog_noconnect_194\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_209\);
+\Batteri_ADC:vinPlusMux_62_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinPlus_62\,
+		signal2=>\Batteri_ADC:Net_210\);
+\Batteri_ADC:cy_analog_noconnect_195\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_210\);
+\Batteri_ADC:vinPlusMux_63_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinPlus_63\,
+		signal2=>\Batteri_ADC:Net_211\);
+\Batteri_ADC:cy_analog_noconnect_196\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_211\);
+\Batteri_ADC:vinMinusMux_0_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinMinus_0\,
+		signal2=>Net_115);
+\Batteri_ADC:cy_analog_noconnect_1\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_213\);
+\Batteri_ADC:vinMinusMux_1_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinMinus_1\,
+		signal2=>\Batteri_ADC:Net_218\);
+\Batteri_ADC:cy_analog_noconnect_2\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_218\);
+\Batteri_ADC:vinMinusMux_2_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinMinus_2\,
+		signal2=>\Batteri_ADC:Net_220\);
+\Batteri_ADC:cy_analog_noconnect_3\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_220\);
+\Batteri_ADC:vinMinusMux_3_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinMinus_3\,
+		signal2=>\Batteri_ADC:Net_222\);
+\Batteri_ADC:cy_analog_noconnect_4\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_222\);
+\Batteri_ADC:vinMinusMux_4_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinMinus_4\,
+		signal2=>\Batteri_ADC:Net_224\);
+\Batteri_ADC:cy_analog_noconnect_5\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_224\);
+\Batteri_ADC:vinMinusMux_5_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinMinus_5\,
+		signal2=>\Batteri_ADC:Net_226\);
+\Batteri_ADC:cy_analog_noconnect_6\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_226\);
+\Batteri_ADC:vinMinusMux_6_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinMinus_6\,
+		signal2=>\Batteri_ADC:Net_228\);
+\Batteri_ADC:cy_analog_noconnect_7\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_228\);
+\Batteri_ADC:vinMinusMux_7_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinMinus_7\,
+		signal2=>\Batteri_ADC:Net_230\);
+\Batteri_ADC:cy_analog_noconnect_8\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_230\);
+\Batteri_ADC:vinMinusMux_8_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinMinus_8\,
+		signal2=>\Batteri_ADC:Net_232\);
+\Batteri_ADC:cy_analog_noconnect_9\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_232\);
+\Batteri_ADC:vinMinusMux_9_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinMinus_9\,
+		signal2=>\Batteri_ADC:Net_234\);
+\Batteri_ADC:cy_analog_noconnect_10\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_234\);
+\Batteri_ADC:vinMinusMux_10_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinMinus_10\,
+		signal2=>\Batteri_ADC:Net_236\);
+\Batteri_ADC:cy_analog_noconnect_11\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_236\);
+\Batteri_ADC:vinMinusMux_11_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinMinus_11\,
+		signal2=>\Batteri_ADC:Net_238\);
+\Batteri_ADC:cy_analog_noconnect_12\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_238\);
+\Batteri_ADC:vinMinusMux_12_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinMinus_12\,
+		signal2=>\Batteri_ADC:Net_240\);
+\Batteri_ADC:cy_analog_noconnect_13\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_240\);
+\Batteri_ADC:vinMinusMux_13_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinMinus_13\,
+		signal2=>\Batteri_ADC:Net_242\);
+\Batteri_ADC:cy_analog_noconnect_14\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_242\);
+\Batteri_ADC:vinMinusMux_14_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinMinus_14\,
+		signal2=>\Batteri_ADC:Net_244\);
+\Batteri_ADC:cy_analog_noconnect_15\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_244\);
+\Batteri_ADC:vinMinusMux_15_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinMinus_15\,
+		signal2=>\Batteri_ADC:Net_246\);
+\Batteri_ADC:cy_analog_noconnect_16\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_246\);
+\Batteri_ADC:vinMinusMux_16_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinMinus_16\,
+		signal2=>\Batteri_ADC:Net_248\);
+\Batteri_ADC:cy_analog_noconnect_17\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_248\);
+\Batteri_ADC:vinMinusMux_17_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinMinus_17\,
+		signal2=>\Batteri_ADC:Net_250\);
+\Batteri_ADC:cy_analog_noconnect_18\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_250\);
+\Batteri_ADC:vinMinusMux_18_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinMinus_18\,
+		signal2=>\Batteri_ADC:Net_252\);
+\Batteri_ADC:cy_analog_noconnect_19\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_252\);
+\Batteri_ADC:vinMinusMux_19_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinMinus_19\,
+		signal2=>\Batteri_ADC:Net_254\);
+\Batteri_ADC:cy_analog_noconnect_20\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_254\);
+\Batteri_ADC:vinMinusMux_20_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinMinus_20\,
+		signal2=>\Batteri_ADC:Net_256\);
+\Batteri_ADC:cy_analog_noconnect_21\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_256\);
+\Batteri_ADC:vinMinusMux_21_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinMinus_21\,
+		signal2=>\Batteri_ADC:Net_258\);
+\Batteri_ADC:cy_analog_noconnect_22\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_258\);
+\Batteri_ADC:vinMinusMux_22_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinMinus_22\,
+		signal2=>\Batteri_ADC:Net_260\);
+\Batteri_ADC:cy_analog_noconnect_23\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_260\);
+\Batteri_ADC:vinMinusMux_23_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinMinus_23\,
+		signal2=>\Batteri_ADC:Net_262\);
+\Batteri_ADC:cy_analog_noconnect_24\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_262\);
+\Batteri_ADC:vinMinusMux_24_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinMinus_24\,
+		signal2=>\Batteri_ADC:Net_264\);
+\Batteri_ADC:cy_analog_noconnect_25\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_264\);
+\Batteri_ADC:vinMinusMux_25_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinMinus_25\,
+		signal2=>\Batteri_ADC:Net_266\);
+\Batteri_ADC:cy_analog_noconnect_26\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_266\);
+\Batteri_ADC:vinMinusMux_26_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinMinus_26\,
+		signal2=>\Batteri_ADC:Net_268\);
+\Batteri_ADC:cy_analog_noconnect_27\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_268\);
+\Batteri_ADC:vinMinusMux_27_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinMinus_27\,
+		signal2=>\Batteri_ADC:Net_270\);
+\Batteri_ADC:cy_analog_noconnect_28\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_270\);
+\Batteri_ADC:vinMinusMux_28_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinMinus_28\,
+		signal2=>\Batteri_ADC:Net_272\);
+\Batteri_ADC:cy_analog_noconnect_29\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_272\);
+\Batteri_ADC:vinMinusMux_29_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinMinus_29\,
+		signal2=>\Batteri_ADC:Net_274\);
+\Batteri_ADC:cy_analog_noconnect_30\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_274\);
+\Batteri_ADC:vinMinusMux_30_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinMinus_30\,
+		signal2=>\Batteri_ADC:Net_276\);
+\Batteri_ADC:cy_analog_noconnect_31\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_276\);
+\Batteri_ADC:vinMinusMux_31_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinMinus_31\,
+		signal2=>\Batteri_ADC:Net_278\);
+\Batteri_ADC:cy_analog_noconnect_32\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_278\);
+\Batteri_ADC:vinMinusMux_32_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinMinus_32\,
+		signal2=>\Batteri_ADC:Net_285\);
+\Batteri_ADC:cy_analog_noconnect_33\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_285\);
+\Batteri_ADC:vinMinusMux_33_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinMinus_33\,
+		signal2=>\Batteri_ADC:Net_286\);
+\Batteri_ADC:cy_analog_noconnect_34\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_286\);
+\Batteri_ADC:vinMinusMux_34_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinMinus_34\,
+		signal2=>\Batteri_ADC:Net_287\);
+\Batteri_ADC:cy_analog_noconnect_35\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_287\);
+\Batteri_ADC:vinMinusMux_35_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinMinus_35\,
+		signal2=>\Batteri_ADC:Net_288\);
+\Batteri_ADC:cy_analog_noconnect_36\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_288\);
+\Batteri_ADC:vinMinusMux_36_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinMinus_36\,
+		signal2=>\Batteri_ADC:Net_289\);
+\Batteri_ADC:cy_analog_noconnect_37\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_289\);
+\Batteri_ADC:vinMinusMux_37_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinMinus_37\,
+		signal2=>\Batteri_ADC:Net_290\);
+\Batteri_ADC:cy_analog_noconnect_38\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_290\);
+\Batteri_ADC:vinMinusMux_38_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinMinus_38\,
+		signal2=>\Batteri_ADC:Net_291\);
+\Batteri_ADC:cy_analog_noconnect_39\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_291\);
+\Batteri_ADC:vinMinusMux_39_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinMinus_39\,
+		signal2=>\Batteri_ADC:Net_292\);
+\Batteri_ADC:cy_analog_noconnect_40\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_292\);
+\Batteri_ADC:vinMinusMux_40_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinMinus_40\,
+		signal2=>\Batteri_ADC:Net_293\);
+\Batteri_ADC:cy_analog_noconnect_41\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_293\);
+\Batteri_ADC:vinMinusMux_41_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinMinus_41\,
+		signal2=>\Batteri_ADC:Net_294\);
+\Batteri_ADC:cy_analog_noconnect_42\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_294\);
+\Batteri_ADC:vinMinusMux_42_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinMinus_42\,
+		signal2=>\Batteri_ADC:Net_295\);
+\Batteri_ADC:cy_analog_noconnect_43\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_295\);
+\Batteri_ADC:vinMinusMux_43_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinMinus_43\,
+		signal2=>\Batteri_ADC:Net_296\);
+\Batteri_ADC:cy_analog_noconnect_44\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_296\);
+\Batteri_ADC:vinMinusMux_44_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinMinus_44\,
+		signal2=>\Batteri_ADC:Net_297\);
+\Batteri_ADC:cy_analog_noconnect_45\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_297\);
+\Batteri_ADC:vinMinusMux_45_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinMinus_45\,
+		signal2=>\Batteri_ADC:Net_298\);
+\Batteri_ADC:cy_analog_noconnect_46\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_298\);
+\Batteri_ADC:vinMinusMux_46_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinMinus_46\,
+		signal2=>\Batteri_ADC:Net_299\);
+\Batteri_ADC:cy_analog_noconnect_47\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_299\);
+\Batteri_ADC:vinMinusMux_47_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinMinus_47\,
+		signal2=>\Batteri_ADC:Net_300\);
+\Batteri_ADC:cy_analog_noconnect_48\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_300\);
+\Batteri_ADC:vinMinusMux_48_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinMinus_48\,
+		signal2=>\Batteri_ADC:Net_301\);
+\Batteri_ADC:cy_analog_noconnect_49\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_301\);
+\Batteri_ADC:vinMinusMux_49_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinMinus_49\,
+		signal2=>\Batteri_ADC:Net_302\);
+\Batteri_ADC:cy_analog_noconnect_50\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_302\);
+\Batteri_ADC:vinMinusMux_50_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinMinus_50\,
+		signal2=>\Batteri_ADC:Net_303\);
+\Batteri_ADC:cy_analog_noconnect_51\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_303\);
+\Batteri_ADC:vinMinusMux_51_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinMinus_51\,
+		signal2=>\Batteri_ADC:Net_304\);
+\Batteri_ADC:cy_analog_noconnect_52\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_304\);
+\Batteri_ADC:vinMinusMux_52_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinMinus_52\,
+		signal2=>\Batteri_ADC:Net_305\);
+\Batteri_ADC:cy_analog_noconnect_53\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_305\);
+\Batteri_ADC:vinMinusMux_53_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinMinus_53\,
+		signal2=>\Batteri_ADC:Net_306\);
+\Batteri_ADC:cy_analog_noconnect_54\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_306\);
+\Batteri_ADC:vinMinusMux_54_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinMinus_54\,
+		signal2=>\Batteri_ADC:Net_307\);
+\Batteri_ADC:cy_analog_noconnect_55\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_307\);
+\Batteri_ADC:vinMinusMux_55_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinMinus_55\,
+		signal2=>\Batteri_ADC:Net_308\);
+\Batteri_ADC:cy_analog_noconnect_56\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_308\);
+\Batteri_ADC:vinMinusMux_56_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinMinus_56\,
+		signal2=>\Batteri_ADC:Net_309\);
+\Batteri_ADC:cy_analog_noconnect_57\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_309\);
+\Batteri_ADC:vinMinusMux_57_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinMinus_57\,
+		signal2=>\Batteri_ADC:Net_310\);
+\Batteri_ADC:cy_analog_noconnect_58\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_310\);
+\Batteri_ADC:vinMinusMux_58_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinMinus_58\,
+		signal2=>\Batteri_ADC:Net_311\);
+\Batteri_ADC:cy_analog_noconnect_59\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_311\);
+\Batteri_ADC:vinMinusMux_59_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinMinus_59\,
+		signal2=>\Batteri_ADC:Net_312\);
+\Batteri_ADC:cy_analog_noconnect_60\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_312\);
+\Batteri_ADC:vinMinusMux_60_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinMinus_60\,
+		signal2=>\Batteri_ADC:Net_313\);
+\Batteri_ADC:cy_analog_noconnect_61\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_313\);
+\Batteri_ADC:vinMinusMux_61_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinMinus_61\,
+		signal2=>\Batteri_ADC:Net_314\);
+\Batteri_ADC:cy_analog_noconnect_62\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_314\);
+\Batteri_ADC:vinMinusMux_62_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinMinus_62\,
+		signal2=>\Batteri_ADC:Net_315\);
+\Batteri_ADC:cy_analog_noconnect_63\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_315\);
+\Batteri_ADC:vinMinusMux_63_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinMinus_63\,
+		signal2=>\Batteri_ADC:Net_316\);
+\Batteri_ADC:cy_analog_noconnect_64\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_316\);
+\Batteri_ADC:vinNegMux_0_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinNeg_0\,
+		signal2=>\Batteri_ADC:Net_331\);
+\Batteri_ADC:cy_analog_noconnect_65\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_331\);
+\Batteri_ADC:vinNegMux_1_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinNeg_1\,
+		signal2=>\Batteri_ADC:Net_345\);
+\Batteri_ADC:cy_analog_noconnect_66\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_345\);
+\Batteri_ADC:vinNegMux_2_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinNeg_2\,
+		signal2=>\Batteri_ADC:Net_347\);
+\Batteri_ADC:cy_analog_noconnect_67\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_347\);
+\Batteri_ADC:vinNegMux_3_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vinNeg_3\,
+		signal2=>\Batteri_ADC:Net_349\);
+\Batteri_ADC:cy_analog_noconnect_68\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_349\);
+\Batteri_ADC:vrefMux_0_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vrefBus_0\,
+		signal2=>\Batteri_ADC:Net_456\);
+\Batteri_ADC:cy_analog_noconnect_71\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_456\);
+\Batteri_ADC:vrefMux_1_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vrefBus_1\,
+		signal2=>\Batteri_ADC:Net_457\);
+\Batteri_ADC:cy_analog_noconnect_72\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_457\);
+\Batteri_ADC:vrefMux_2_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vrefBus_2\,
+		signal2=>\Batteri_ADC:Net_458\);
+\Batteri_ADC:cy_analog_noconnect_73\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_458\);
+\Batteri_ADC:vrefMux_3_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vrefBus_3\,
+		signal2=>\Batteri_ADC:Net_459\);
+\Batteri_ADC:cy_analog_noconnect_74\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_459\);
+\Batteri_ADC:vrefMuxRemoved_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Batteri_ADC:vref\,
+		signal2=>\Batteri_ADC:Net_1448\);
+\Batteri_ADC:cy_analog_noconnect_87\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_1448\);
+\Batteri_ADC:cy_analog_noconnect_fvint\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>Net_112_0);
+\Batteri_ADC:cy_analog_noconnect_fvint_1\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>Net_112_1);
+\Batteri_ADC:vRef_4\:cy_vref_v1_0
+	GENERIC MAP(guid=>"6E0C5DC9-D531-4D01-9B49-536487FE4A82",
+		name=>"Bandgap Reference",
+		autoenable=>'1',
+		ignoresleep=>'0')
+	PORT MAP(vout=>\Batteri_ADC:Net_1379\);
+\Batteri_ADC:vRef_6\:cy_vref_v1_0
+	GENERIC MAP(guid=>"6E0C5DC9-D531-4D01-9B49-536487FE4A82",
+		name=>"Bandgap Reference",
+		autoenable=>'1',
+		ignoresleep=>'0')
+	PORT MAP(vout=>\Batteri_ADC:Net_1385\);
+\Batteri_ADC:vRef_7\:cy_vref_v1_0
+	GENERIC MAP(guid=>"6E0C5DC9-D531-4D01-9B49-536487FE4A82",
+		name=>"Bandgap Reference",
+		autoenable=>'1',
+		ignoresleep=>'0')
+	PORT MAP(vout=>\Batteri_ADC:Net_1388\);
+\Batteri_ADC:vRef_5\:cy_vref_v1_0
+	GENERIC MAP(guid=>"6E0C5DC9-D531-4D01-9B49-536487FE4A82",
+		name=>"Bandgap Reference",
+		autoenable=>'1',
+		ignoresleep=>'0')
+	PORT MAP(vout=>\Batteri_ADC:Net_1382\);
+\Batteri_ADC:vRef_8\:cy_vref_v1_0
+	GENERIC MAP(guid=>"A74A229D-E18B-4A00-BEEC-CCDCB446AC07 ",
+		name=>"",
+		autoenable=>'1',
+		ignoresleep=>'0')
+	PORT MAP(vout=>\Batteri_ADC:Net_102\);
+\Batteri_ADC:cy_analog_noconnect_69\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Batteri_ADC:Net_105\);
+\Batteri_ADC:vagnd__cy_connect_v1_0\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>Net_114,
+		signal2=>Net_113);
+vRef_1:cy_vref_v1_0
+	GENERIC MAP(guid=>"6E0C5DC9-D531-4D01-9B49-536487FE4A82",
+		name=>"Bandgap Reference",
+		autoenable=>'1',
+		ignoresleep=>'0')
+	PORT MAP(vout=>Net_115);
+
+END R_T_L;

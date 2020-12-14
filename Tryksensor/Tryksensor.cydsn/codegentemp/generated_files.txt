@@ -36,6 +36,13 @@
   <file name="C:\Users\cring\Documents\GitHub\PRJ4\Tryksensor\Tryksensor.cydsn\codegentemp\Pin_SCK_aliases.h" value="HEADER;;;;;Pin_SCK" />
   <file name="C:\Users\cring\Documents\GitHub\PRJ4\Tryksensor\Tryksensor.cydsn\codegentemp\Pin_SCK.c" value="SOURCE_C;CortexM3;;;;Pin_SCK" />
   <file name="C:\Users\cring\Documents\GitHub\PRJ4\Tryksensor\Tryksensor.cydsn\codegentemp\Pin_SCK.h" value="HEADER;;;;;Pin_SCK" />
+  <file name="C:\Users\cring\Documents\GitHub\PRJ4\Tryksensor\Tryksensor.cydsn\codegentemp\timer_clock_1.c" value="SOURCE_C;CortexM3;;;;timer_clock_1" />
+  <file name="C:\Users\cring\Documents\GitHub\PRJ4\Tryksensor\Tryksensor.cydsn\codegentemp\timer_clock_1.h" value="HEADER;;;;;timer_clock_1" />
+  <file name="C:\Users\cring\Documents\GitHub\PRJ4\Tryksensor\Tryksensor.cydsn\codegentemp\SampleTimer.c" value="SOURCE_C;CortexM3;;;;SampleTimer" />
+  <file name="C:\Users\cring\Documents\GitHub\PRJ4\Tryksensor\Tryksensor.cydsn\codegentemp\SampleTimer.h" value="HEADER;;;;;SampleTimer" />
+  <file name="C:\Users\cring\Documents\GitHub\PRJ4\Tryksensor\Tryksensor.cydsn\codegentemp\SampleTimer_PM.c" value="SOURCE_C;CortexM3;;;;SampleTimer" />
+  <file name="C:\Users\cring\Documents\GitHub\PRJ4\Tryksensor\Tryksensor.cydsn\codegentemp\sampleEvent.c" value="SOURCE_C;CortexM3;;;;sampleEvent" />
+  <file name="C:\Users\cring\Documents\GitHub\PRJ4\Tryksensor\Tryksensor.cydsn\codegentemp\sampleEvent.h" value="HEADER;;;;;sampleEvent" />
   <file name="C:\Users\cring\Documents\GitHub\PRJ4\Tryksensor\Tryksensor.cydsn\codegentemp\UART_1_IntClock.c" value="SOURCE_C;CortexM3;;;;UART_1_IntClock" />
   <file name="C:\Users\cring\Documents\GitHub\PRJ4\Tryksensor\Tryksensor.cydsn\codegentemp\UART_1_IntClock.h" value="HEADER;;;;;UART_1_IntClock" />
   <file name="C:\Users\cring\Documents\GitHub\PRJ4\Tryksensor\Tryksensor.cydsn\codegentemp\cm3gcc.ld" value="LINKER_SCRIPT;;;b98f980c-3bd1-4fc7-a887-c56a20a46fdd;;cy_boot" />

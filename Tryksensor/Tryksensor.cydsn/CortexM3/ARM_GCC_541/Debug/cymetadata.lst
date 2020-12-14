@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccHLZkai.s 			page 1
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccokIVkg.s 			page 1
 
 
    1              		.syntax unified
@@ -23,1628 +23,1920 @@ ARM GAS  C:\Users\cring\AppData\Local\Temp\ccHLZkai.s 			page 1
   20              		.section	.cyconfigecc,"a",%progbits
   21              		.align	2
   22              		.type	cy_meta_configecc, %object
-  23              		.size	cy_meta_configecc, 1104
+  23              		.size	cy_meta_configecc, 1364
   24              	cy_meta_configecc:
-  25 0000 01       		.byte	1
-  26 0001 64       		.byte	100
+  25 0000 02       		.byte	2
+  26 0001 52       		.byte	82
   27 0002 00       		.byte	0
   28 0003 40       		.byte	64
-  29 0004 03       		.byte	3
-  30 0005 65       		.byte	101
+  29 0004 02       		.byte	2
+  30 0005 64       		.byte	100
   31 0006 00       		.byte	0
   32 0007 40       		.byte	64
-  33 0008 29       		.byte	41
-  34 0009 09       		.byte	9
-  35 000a 01       		.byte	1
+  33 0008 03       		.byte	3
+  34 0009 65       		.byte	101
+  35 000a 00       		.byte	0
   36 000b 40       		.byte	64
-  37 000c 36       		.byte	54
-  38 000d 14       		.byte	20
+  37 000c 01       		.byte	1
+  38 000d 05       		.byte	5
   39 000e 01       		.byte	1
   40 000f 40       		.byte	64
-  41 0010 18       		.byte	24
-  42 0011 15       		.byte	21
+  41 0010 10       		.byte	16
+  42 0011 08       		.byte	8
   43 0012 01       		.byte	1
   44 0013 40       		.byte	64
-  45 0014 01       		.byte	1
-  46 0015 17       		.byte	23
+  45 0014 3D       		.byte	61
+  46 0015 09       		.byte	9
   47 0016 01       		.byte	1
   48 0017 40       		.byte	64
-  49 0018 52       		.byte	82
-  50 0019 18       		.byte	24
+  49 0018 28       		.byte	40
+  50 0019 0A       		.byte	10
   51 001a 01       		.byte	1
   52 001b 40       		.byte	64
-  53 001c 38       		.byte	56
-  54 001d 19       		.byte	25
+  53 001c 22       		.byte	34
+  54 001d 0B       		.byte	11
   55 001e 01       		.byte	1
   56 001f 40       		.byte	64
-  57 0020 4E       		.byte	78
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccHLZkai.s 			page 2
+  57 0020 02       		.byte	2
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccokIVkg.s 			page 2
 
 
-  58 0021 1A       		.byte	26
+  58 0021 15       		.byte	21
   59 0022 01       		.byte	1
   60 0023 40       		.byte	64
-  61 0024 42       		.byte	66
-  62 0025 1B       		.byte	27
+  61 0024 37       		.byte	55
+  62 0025 16       		.byte	22
   63 0026 01       		.byte	1
   64 0027 40       		.byte	64
-  65 0028 03       		.byte	3
-  66 0029 40       		.byte	64
+  65 0028 14       		.byte	20
+  66 0029 17       		.byte	23
   67 002a 01       		.byte	1
   68 002b 40       		.byte	64
-  69 002c 01       		.byte	1
-  70 002d 41       		.byte	65
+  69 002c 62       		.byte	98
+  70 002d 18       		.byte	24
   71 002e 01       		.byte	1
   72 002f 40       		.byte	64
-  73 0030 01       		.byte	1
-  74 0031 42       		.byte	66
+  73 0030 3E       		.byte	62
+  74 0031 19       		.byte	25
   75 0032 01       		.byte	1
   76 0033 40       		.byte	64
-  77 0034 01       		.byte	1
-  78 0035 43       		.byte	67
+  77 0034 40       		.byte	64
+  78 0035 1A       		.byte	26
   79 0036 01       		.byte	1
   80 0037 40       		.byte	64
-  81 0038 02       		.byte	2
-  82 0039 48       		.byte	72
+  81 0038 42       		.byte	66
+  82 0039 1B       		.byte	27
   83 003a 01       		.byte	1
   84 003b 40       		.byte	64
   85 003c 03       		.byte	3
-  86 003d 49       		.byte	73
+  86 003d 40       		.byte	64
   87 003e 01       		.byte	1
   88 003f 40       		.byte	64
-  89 0040 07       		.byte	7
-  90 0041 4D       		.byte	77
+  89 0040 02       		.byte	2
+  90 0041 41       		.byte	65
   91 0042 01       		.byte	1
   92 0043 40       		.byte	64
-  93 0044 06       		.byte	6
-  94 0045 50       		.byte	80
+  93 0044 04       		.byte	4
+  94 0045 42       		.byte	66
   95 0046 01       		.byte	1
   96 0047 40       		.byte	64
   97 0048 01       		.byte	1
-  98 0049 51       		.byte	81
+  98 0049 43       		.byte	67
   99 004a 01       		.byte	1
  100 004b 40       		.byte	64
- 101 004c 89       		.byte	-119
- 102 004d 72       		.byte	114
- 103 004e 85       		.byte	-123
- 104 004f 0D       		.byte	13
- 105 0050 89       		.byte	-119
- 106 0051 38       		.byte	56
- 107 0052 8B       		.byte	-117
- 108 0053 0F       		.byte	15
- 109 0054 00       		.byte	0
- 110 0055 40       		.byte	64
- 111 0056 02       		.byte	2
- 112 0057 20       		.byte	32
- 113 0058 03       		.byte	3
- 114 0059 88       		.byte	-120
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccHLZkai.s 			page 3
+ 101 004c 01       		.byte	1
+ 102 004d 48       		.byte	72
+ 103 004e 01       		.byte	1
+ 104 004f 40       		.byte	64
+ 105 0050 03       		.byte	3
+ 106 0051 49       		.byte	73
+ 107 0052 01       		.byte	1
+ 108 0053 40       		.byte	64
+ 109 0054 07       		.byte	7
+ 110 0055 4D       		.byte	77
+ 111 0056 01       		.byte	1
+ 112 0057 40       		.byte	64
+ 113 0058 07       		.byte	7
+ 114 0059 50       		.byte	80
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccokIVkg.s 			page 3
 
 
- 115 005a 08       		.byte	8
- 116 005b 88       		.byte	-120
- 117 005c 0A       		.byte	10
- 118 005d 40       		.byte	64
- 119 005e 0B       		.byte	11
- 120 005f 04       		.byte	4
- 121 0060 10       		.byte	16
- 122 0061 40       		.byte	64
- 123 0062 11       		.byte	17
- 124 0063 14       		.byte	20
- 125 0064 18       		.byte	24
- 126 0065 04       		.byte	4
- 127 0066 19       		.byte	25
- 128 0067 40       		.byte	64
- 129 0068 1B       		.byte	27
- 130 0069 09       		.byte	9
- 131 006a 20       		.byte	32
- 132 006b 41       		.byte	65
- 133 006c 21       		.byte	33
- 134 006d 10       		.byte	16
- 135 006e 22       		.byte	34
+ 115 005a 01       		.byte	1
+ 116 005b 40       		.byte	64
+ 117 005c 01       		.byte	1
+ 118 005d 51       		.byte	81
+ 119 005e 01       		.byte	1
+ 120 005f 40       		.byte	64
+ 121 0060 61       		.byte	97
+ 122 0061 80       		.byte	-128
+ 123 0062 64       		.byte	100
+ 124 0063 40       		.byte	64
+ 125 0064 89       		.byte	-119
+ 126 0065 72       		.byte	114
+ 127 0066 8A       		.byte	-118
+ 128 0067 38       		.byte	56
+ 129 0068 87       		.byte	-121
+ 130 0069 0D       		.byte	13
+ 131 006a 89       		.byte	-119
+ 132 006b 0D       		.byte	13
+ 133 006c 8A       		.byte	-118
+ 134 006d 0F       		.byte	15
+ 135 006e E2       		.byte	-30
  136 006f 04       		.byte	4
- 137 0070 23       		.byte	35
- 138 0071 04       		.byte	4
- 139 0072 28       		.byte	40
- 140 0073 A8       		.byte	-88
- 141 0074 29       		.byte	41
- 142 0075 63       		.byte	99
- 143 0076 30       		.byte	48
- 144 0077 40       		.byte	64
- 145 0078 31       		.byte	49
- 146 0079 98       		.byte	-104
- 147 007a 38       		.byte	56
- 148 007b 68       		.byte	104
- 149 007c 3B       		.byte	59
- 150 007d 01       		.byte	1
- 151 007e 40       		.byte	64
- 152 007f 41       		.byte	65
- 153 0080 41       		.byte	65
- 154 0081 10       		.byte	16
- 155 0082 49       		.byte	73
- 156 0083 40       		.byte	64
- 157 0084 4A       		.byte	74
- 158 0085 24       		.byte	36
- 159 0086 4B       		.byte	75
- 160 0087 40       		.byte	64
- 161 0088 53       		.byte	83
- 162 0089 80       		.byte	-128
- 163 008a 5A       		.byte	90
- 164 008b 08       		.byte	8
- 165 008c 69       		.byte	105
- 166 008d 14       		.byte	20
- 167 008e 6A       		.byte	106
- 168 008f 40       		.byte	64
- 169 0090 70       		.byte	112
- 170 0091 14       		.byte	20
- 171 0092 73       		.byte	115
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccHLZkai.s 			page 4
+ 137 0070 40       		.byte	64
+ 138 0071 03       		.byte	3
+ 139 0072 45       		.byte	69
+ 140 0073 04       		.byte	4
+ 141 0074 49       		.byte	73
+ 142 0075 FF       		.byte	-1
+ 143 0076 4A       		.byte	74
+ 144 0077 07       		.byte	7
+ 145 0078 4B       		.byte	75
+ 146 0079 FF       		.byte	-1
+ 147 007a 4C       		.byte	76
+ 148 007b 40       		.byte	64
+ 149 007c 4D       		.byte	77
+ 150 007d 20       		.byte	32
+ 151 007e 4E       		.byte	78
+ 152 007f F0       		.byte	-16
+ 153 0080 4F       		.byte	79
+ 154 0081 05       		.byte	5
+ 155 0082 50       		.byte	80
+ 156 0083 08       		.byte	8
+ 157 0084 5A       		.byte	90
+ 158 0085 04       		.byte	4
+ 159 0086 5F       		.byte	95
+ 160 0087 01       		.byte	1
+ 161 0088 60       		.byte	96
+ 162 0089 40       		.byte	64
+ 163 008a 61       		.byte	97
+ 164 008b A8       		.byte	-88
+ 165 008c 62       		.byte	98
+ 166 008d 40       		.byte	64
+ 167 008e 63       		.byte	99
+ 168 008f 20       		.byte	32
+ 169 0090 00       		.byte	0
+ 170 0091 02       		.byte	2
+ 171 0092 03       		.byte	3
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccokIVkg.s 			page 4
 
 
- 172 0093 01       		.byte	1
- 173 0094 C0       		.byte	-64
- 174 0095 0F       		.byte	15
- 175 0096 C2       		.byte	-62
- 176 0097 0F       		.byte	15
- 177 0098 C4       		.byte	-60
- 178 0099 0E       		.byte	14
- 179 009a CA       		.byte	-54
- 180 009b 0F       		.byte	15
- 181 009c CC       		.byte	-52
- 182 009d 0E       		.byte	14
- 183 009e CE       		.byte	-50
- 184 009f 0F       		.byte	15
- 185 00a0 D0       		.byte	-48
- 186 00a1 0D       		.byte	13
- 187 00a2 D2       		.byte	-46
- 188 00a3 0C       		.byte	12
- 189 00a4 D6       		.byte	-42
- 190 00a5 02       		.byte	2
- 191 00a6 02       		.byte	2
- 192 00a7 01       		.byte	1
- 193 00a8 1E       		.byte	30
+ 172 0093 2A       		.byte	42
+ 173 0094 0A       		.byte	10
+ 174 0095 55       		.byte	85
+ 175 0096 10       		.byte	16
+ 176 0097 11       		.byte	17
+ 177 0098 11       		.byte	17
+ 178 0099 21       		.byte	33
+ 179 009a 12       		.byte	18
+ 180 009b 02       		.byte	2
+ 181 009c 19       		.byte	25
+ 182 009d 1A       		.byte	26
+ 183 009e 1A       		.byte	26
+ 184 009f 20       		.byte	32
+ 185 00a0 1B       		.byte	27
+ 186 00a1 08       		.byte	8
+ 187 00a2 20       		.byte	32
+ 188 00a3 02       		.byte	2
+ 189 00a4 21       		.byte	33
+ 190 00a5 80       		.byte	-128
+ 191 00a6 22       		.byte	34
+ 192 00a7 24       		.byte	36
+ 193 00a8 28       		.byte	40
  194 00a9 01       		.byte	1
- 195 00aa 30       		.byte	48
- 196 00ab 01       		.byte	1
- 197 00ac 40       		.byte	64
- 198 00ad 51       		.byte	81
- 199 00ae 49       		.byte	73
- 200 00af FF       		.byte	-1
- 201 00b0 4A       		.byte	74
- 202 00b1 FF       		.byte	-1
- 203 00b2 4B       		.byte	75
- 204 00b3 FF       		.byte	-1
- 205 00b4 4F       		.byte	79
- 206 00b5 01       		.byte	1
- 207 00b6 50       		.byte	80
- 208 00b7 18       		.byte	24
- 209 00b8 58       		.byte	88
- 210 00b9 04       		.byte	4
- 211 00ba 5A       		.byte	90
- 212 00bb 04       		.byte	4
- 213 00bc 5C       		.byte	92
- 214 00bd 09       		.byte	9
- 215 00be 5D       		.byte	93
- 216 00bf 09       		.byte	9
- 217 00c0 5F       		.byte	95
- 218 00c1 01       		.byte	1
- 219 00c2 60       		.byte	96
- 220 00c3 40       		.byte	64
- 221 00c4 62       		.byte	98
- 222 00c5 40       		.byte	64
- 223 00c6 64       		.byte	100
- 224 00c7 40       		.byte	64
- 225 00c8 65       		.byte	101
- 226 00c9 40       		.byte	64
- 227 00ca 66       		.byte	102
- 228 00cb 80       		.byte	-128
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccHLZkai.s 			page 5
+ 195 00aa 29       		.byte	41
+ 196 00ab 08       		.byte	8
+ 197 00ac 2A       		.byte	42
+ 198 00ad 10       		.byte	16
+ 199 00ae 32       		.byte	50
+ 200 00af 44       		.byte	68
+ 201 00b0 33       		.byte	51
+ 202 00b1 20       		.byte	32
+ 203 00b2 38       		.byte	56
+ 204 00b3 40       		.byte	64
+ 205 00b4 39       		.byte	57
+ 206 00b5 14       		.byte	20
+ 207 00b6 40       		.byte	64
+ 208 00b7 41       		.byte	65
+ 209 00b8 43       		.byte	67
+ 210 00b9 20       		.byte	32
+ 211 00ba 45       		.byte	69
+ 212 00bb 08       		.byte	8
+ 213 00bc 48       		.byte	72
+ 214 00bd 01       		.byte	1
+ 215 00be 4B       		.byte	75
+ 216 00bf 10       		.byte	16
+ 217 00c0 4F       		.byte	79
+ 218 00c1 08       		.byte	8
+ 219 00c2 50       		.byte	80
+ 220 00c3 04       		.byte	4
+ 221 00c4 52       		.byte	82
+ 222 00c5 10       		.byte	16
+ 223 00c6 57       		.byte	87
+ 224 00c7 10       		.byte	16
+ 225 00c8 59       		.byte	89
+ 226 00c9 10       		.byte	16
+ 227 00ca 69       		.byte	105
+ 228 00cb 14       		.byte	20
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccokIVkg.s 			page 5
 
 
- 229 00cc 68       		.byte	104
+ 229 00cc 6A       		.byte	106
  230 00cd 80       		.byte	-128
- 231 00ce 6A       		.byte	106
- 232 00cf 80       		.byte	-128
- 233 00d0 6C       		.byte	108
- 234 00d1 80       		.byte	-128
- 235 00d2 6E       		.byte	110
- 236 00d3 80       		.byte	-128
- 237 00d4 9E       		.byte	-98
- 238 00d5 01       		.byte	1
- 239 00d6 AE       		.byte	-82
- 240 00d7 01       		.byte	1
- 241 00d8 B0       		.byte	-80
- 242 00d9 01       		.byte	1
- 243 00da BE       		.byte	-66
+ 231 00ce 70       		.byte	112
+ 232 00cf 20       		.byte	32
+ 233 00d0 72       		.byte	114
+ 234 00d1 15       		.byte	21
+ 235 00d2 73       		.byte	115
+ 236 00d3 20       		.byte	32
+ 237 00d4 90       		.byte	-112
+ 238 00d5 40       		.byte	64
+ 239 00d6 93       		.byte	-109
+ 240 00d7 10       		.byte	16
+ 241 00d8 94       		.byte	-108
+ 242 00d9 08       		.byte	8
+ 243 00da 95       		.byte	-107
  244 00db 01       		.byte	1
- 245 00dc C0       		.byte	-64
- 246 00dd 41       		.byte	65
- 247 00de C5       		.byte	-59
- 248 00df EC       		.byte	-20
- 249 00e0 C6       		.byte	-58
+ 245 00dc 96       		.byte	-106
+ 246 00dd 21       		.byte	33
+ 247 00de 9C       		.byte	-100
+ 248 00df 12       		.byte	18
+ 249 00e0 9D       		.byte	-99
  250 00e1 02       		.byte	2
- 251 00e2 C8       		.byte	-56
- 252 00e3 07       		.byte	7
- 253 00e4 C9       		.byte	-55
- 254 00e5 FF       		.byte	-1
- 255 00e6 CA       		.byte	-54
- 256 00e7 FF       		.byte	-1
- 257 00e8 CB       		.byte	-53
- 258 00e9 FF       		.byte	-1
- 259 00ea CD       		.byte	-51
- 260 00eb 83       		.byte	-125
- 261 00ec CE       		.byte	-50
- 262 00ed 03       		.byte	3
- 263 00ee CF       		.byte	-49
- 264 00ef 01       		.byte	1
- 265 00f0 D0       		.byte	-48
- 266 00f1 18       		.byte	24
- 267 00f2 D2       		.byte	-46
- 268 00f3 80       		.byte	-128
- 269 00f4 D4       		.byte	-44
- 270 00f5 01       		.byte	1
- 271 00f6 D8       		.byte	-40
+ 251 00e2 9F       		.byte	-97
+ 252 00e3 20       		.byte	32
+ 253 00e4 A1       		.byte	-95
+ 254 00e5 10       		.byte	16
+ 255 00e6 A2       		.byte	-94
+ 256 00e7 02       		.byte	2
+ 257 00e8 A3       		.byte	-93
+ 258 00e9 20       		.byte	32
+ 259 00ea A4       		.byte	-92
+ 260 00eb 20       		.byte	32
+ 261 00ec A5       		.byte	-91
+ 262 00ed 80       		.byte	-128
+ 263 00ee A6       		.byte	-90
+ 264 00ef 20       		.byte	32
+ 265 00f0 A7       		.byte	-89
+ 266 00f1 02       		.byte	2
+ 267 00f2 B4       		.byte	-76
+ 268 00f3 40       		.byte	64
+ 269 00f4 B5       		.byte	-75
+ 270 00f5 10       		.byte	16
+ 271 00f6 B6       		.byte	-74
  272 00f7 04       		.byte	4
- 273 00f8 DA       		.byte	-38
- 274 00f9 04       		.byte	4
- 275 00fa DB       		.byte	-37
- 276 00fb 04       		.byte	4
- 277 00fc DD       		.byte	-35
- 278 00fd 99       		.byte	-103
- 279 00fe DF       		.byte	-33
- 280 00ff 01       		.byte	1
- 281 0100 E0       		.byte	-32
- 282 0101 40       		.byte	64
- 283 0102 E2       		.byte	-30
- 284 0103 40       		.byte	64
- 285 0104 E4       		.byte	-28
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccHLZkai.s 			page 6
+ 273 00f8 C0       		.byte	-64
+ 274 00f9 0F       		.byte	15
+ 275 00fa C2       		.byte	-62
+ 276 00fb 0F       		.byte	15
+ 277 00fc C4       		.byte	-60
+ 278 00fd 0F       		.byte	15
+ 279 00fe CA       		.byte	-54
+ 280 00ff 0E       		.byte	14
+ 281 0100 CC       		.byte	-52
+ 282 0101 0E       		.byte	14
+ 283 0102 CE       		.byte	-50
+ 284 0103 0E       		.byte	14
+ 285 0104 D0       		.byte	-48
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccokIVkg.s 			page 6
 
 
- 286 0105 40       		.byte	64
- 287 0106 E5       		.byte	-27
- 288 0107 40       		.byte	64
- 289 0108 E6       		.byte	-26
- 290 0109 80       		.byte	-128
- 291 010a E8       		.byte	-24
- 292 010b 80       		.byte	-128
- 293 010c EA       		.byte	-22
- 294 010d 80       		.byte	-128
- 295 010e EC       		.byte	-20
- 296 010f 80       		.byte	-128
- 297 0110 EE       		.byte	-18
- 298 0111 80       		.byte	-128
- 299 0112 00       		.byte	0
- 300 0113 02       		.byte	2
- 301 0114 09       		.byte	9
- 302 0115 80       		.byte	-128
- 303 0116 0D       		.byte	13
- 304 0117 80       		.byte	-128
- 305 0118 17       		.byte	23
- 306 0119 80       		.byte	-128
- 307 011a 1A       		.byte	26
- 308 011b 80       		.byte	-128
- 309 011c 1E       		.byte	30
- 310 011d 80       		.byte	-128
- 311 011e 41       		.byte	65
- 312 011f 80       		.byte	-128
- 313 0120 45       		.byte	69
- 314 0121 80       		.byte	-128
- 315 0122 46       		.byte	70
- 316 0123 40       		.byte	64
- 317 0124 48       		.byte	72
- 318 0125 01       		.byte	1
- 319 0126 4D       		.byte	77
- 320 0127 05       		.byte	5
- 321 0128 55       		.byte	85
- 322 0129 80       		.byte	-128
- 323 012a 5D       		.byte	93
- 324 012b 05       		.byte	5
- 325 012c 5E       		.byte	94
- 326 012d 80       		.byte	-128
- 327 012e 74       		.byte	116
+ 286 0105 4D       		.byte	77
+ 287 0106 D2       		.byte	-46
+ 288 0107 0C       		.byte	12
+ 289 0108 D6       		.byte	-42
+ 290 0109 04       		.byte	4
+ 291 010a 01       		.byte	1
+ 292 010b 06       		.byte	6
+ 293 010c 03       		.byte	3
+ 294 010d 01       		.byte	1
+ 295 010e 04       		.byte	4
+ 296 010f 1F       		.byte	31
+ 297 0110 07       		.byte	7
+ 298 0111 08       		.byte	8
+ 299 0112 08       		.byte	8
+ 300 0113 13       		.byte	19
+ 301 0114 0A       		.byte	10
+ 302 0115 0C       		.byte	12
+ 303 0116 0B       		.byte	11
+ 304 0117 08       		.byte	8
+ 305 0118 0C       		.byte	12
+ 306 0119 02       		.byte	2
+ 307 011a 0D       		.byte	13
+ 308 011b 01       		.byte	1
+ 309 011c 0F       		.byte	15
+ 310 011d 06       		.byte	6
+ 311 011e 12       		.byte	18
+ 312 011f 13       		.byte	19
+ 313 0120 14       		.byte	20
+ 314 0121 1C       		.byte	28
+ 315 0122 15       		.byte	21
+ 316 0123 06       		.byte	6
+ 317 0124 16       		.byte	22
+ 318 0125 03       		.byte	3
+ 319 0126 18       		.byte	24
+ 320 0127 04       		.byte	4
+ 321 0128 19       		.byte	25
+ 322 0129 02       		.byte	2
+ 323 012a 1C       		.byte	28
+ 324 012b 08       		.byte	8
+ 325 012c 1F       		.byte	31
+ 326 012d 01       		.byte	1
+ 327 012e 20       		.byte	32
  328 012f 01       		.byte	1
- 329 0130 76       		.byte	118
- 330 0131 40       		.byte	64
- 331 0132 77       		.byte	119
- 332 0133 80       		.byte	-128
- 333 0134 82       		.byte	-126
- 334 0135 40       		.byte	64
- 335 0136 C0       		.byte	-64
- 336 0137 08       		.byte	8
- 337 0138 C2       		.byte	-62
- 338 0139 81       		.byte	-127
- 339 013a C4       		.byte	-60
- 340 013b 80       		.byte	-128
- 341 013c D0       		.byte	-48
- 342 013d 98       		.byte	-104
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccHLZkai.s 			page 7
+ 329 0130 21       		.byte	33
+ 330 0131 04       		.byte	4
+ 331 0132 24       		.byte	36
+ 332 0133 03       		.byte	3
+ 333 0134 28       		.byte	40
+ 334 0135 0C       		.byte	12
+ 335 0136 29       		.byte	41
+ 336 0137 07       		.byte	7
+ 337 0138 2C       		.byte	44
+ 338 0139 0F       		.byte	15
+ 339 013a 2D       		.byte	45
+ 340 013b 06       		.byte	6
+ 341 013c 2E       		.byte	46
+ 342 013d 10       		.byte	16
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccokIVkg.s 			page 7
 
 
- 343 013e D2       		.byte	-46
- 344 013f 08       		.byte	8
- 345 0140 D6       		.byte	-42
- 346 0141 D0       		.byte	-48
- 347 0142 E6       		.byte	-26
- 348 0143 10       		.byte	16
- 349 0144 06       		.byte	6
- 350 0145 01       		.byte	1
- 351 0146 0A       		.byte	10
- 352 0147 03       		.byte	3
- 353 0148 0B       		.byte	11
- 354 0149 0D       		.byte	13
- 355 014a 11       		.byte	17
- 356 014b 32       		.byte	50
- 357 014c 13       		.byte	19
- 358 014d 0C       		.byte	12
- 359 014e 16       		.byte	22
- 360 014f 05       		.byte	5
- 361 0150 17       		.byte	23
- 362 0151 30       		.byte	48
- 363 0152 20       		.byte	32
- 364 0153 06       		.byte	6
- 365 0154 22       		.byte	34
- 366 0155 01       		.byte	1
- 367 0156 25       		.byte	37
- 368 0157 07       		.byte	7
- 369 0158 26       		.byte	38
- 370 0159 06       		.byte	6
- 371 015a 27       		.byte	39
- 372 015b 38       		.byte	56
- 373 015c 29       		.byte	41
- 374 015d 07       		.byte	7
- 375 015e 2B       		.byte	43
- 376 015f 18       		.byte	24
- 377 0160 2E       		.byte	46
- 378 0161 02       		.byte	2
- 379 0162 2F       		.byte	47
- 380 0163 20       		.byte	32
- 381 0164 33       		.byte	51
- 382 0165 03       		.byte	3
- 383 0166 34       		.byte	52
- 384 0167 07       		.byte	7
- 385 0168 37       		.byte	55
- 386 0169 3C       		.byte	60
- 387 016a 39       		.byte	57
- 388 016b 08       		.byte	8
- 389 016c 3A       		.byte	58
- 390 016d 20       		.byte	32
- 391 016e 3B       		.byte	59
- 392 016f 80       		.byte	-128
- 393 0170 3F       		.byte	63
- 394 0171 04       		.byte	4
- 395 0172 40       		.byte	64
- 396 0173 02       		.byte	2
- 397 0174 47       		.byte	71
- 398 0175 40       		.byte	64
- 399 0176 49       		.byte	73
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccHLZkai.s 			page 8
+ 343 013e 2F       		.byte	47
+ 344 013f 01       		.byte	1
+ 345 0140 30       		.byte	48
+ 346 0141 0F       		.byte	15
+ 347 0142 31       		.byte	49
+ 348 0143 07       		.byte	7
+ 349 0144 32       		.byte	50
+ 350 0145 1C       		.byte	28
+ 351 0146 37       		.byte	55
+ 352 0147 08       		.byte	8
+ 353 0148 3A       		.byte	58
+ 354 0149 22       		.byte	34
+ 355 014a 3B       		.byte	59
+ 356 014b 02       		.byte	2
+ 357 014c 3F       		.byte	63
+ 358 014d 40       		.byte	64
+ 359 014e 54       		.byte	84
+ 360 014f 18       		.byte	24
+ 361 0150 56       		.byte	86
+ 362 0151 04       		.byte	4
+ 363 0152 58       		.byte	88
+ 364 0153 04       		.byte	4
+ 365 0154 59       		.byte	89
+ 366 0155 04       		.byte	4
+ 367 0156 5B       		.byte	91
+ 368 0157 04       		.byte	4
+ 369 0158 5F       		.byte	95
+ 370 0159 01       		.byte	1
+ 371 015a 02       		.byte	2
+ 372 015b 04       		.byte	4
+ 373 015c 03       		.byte	3
+ 374 015d 22       		.byte	34
+ 375 015e 08       		.byte	8
+ 376 015f 40       		.byte	64
+ 377 0160 09       		.byte	9
+ 378 0161 20       		.byte	32
+ 379 0162 0A       		.byte	10
+ 380 0163 A1       		.byte	-95
+ 381 0164 10       		.byte	16
+ 382 0165 14       		.byte	20
+ 383 0166 11       		.byte	17
+ 384 0167 01       		.byte	1
+ 385 0168 12       		.byte	18
+ 386 0169 02       		.byte	2
+ 387 016a 13       		.byte	19
+ 388 016b 20       		.byte	32
+ 389 016c 18       		.byte	24
+ 390 016d E0       		.byte	-32
+ 391 016e 19       		.byte	25
+ 392 016f 10       		.byte	16
+ 393 0170 1B       		.byte	27
+ 394 0171 20       		.byte	32
+ 395 0172 21       		.byte	33
+ 396 0173 01       		.byte	1
+ 397 0174 22       		.byte	34
+ 398 0175 82       		.byte	-126
+ 399 0176 28       		.byte	40
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccokIVkg.s 			page 8
 
 
- 400 0177 FF       		.byte	-1
- 401 0178 4A       		.byte	74
- 402 0179 07       		.byte	7
- 403 017a 4B       		.byte	75
- 404 017b FF       		.byte	-1
- 405 017c 4C       		.byte	76
- 406 017d 40       		.byte	64
- 407 017e 4D       		.byte	77
- 408 017f 20       		.byte	32
- 409 0180 4E       		.byte	78
- 410 0181 F0       		.byte	-16
- 411 0182 4F       		.byte	79
- 412 0183 05       		.byte	5
- 413 0184 50       		.byte	80
- 414 0185 08       		.byte	8
- 415 0186 58       		.byte	88
- 416 0187 04       		.byte	4
- 417 0188 59       		.byte	89
- 418 0189 04       		.byte	4
- 419 018a 5A       		.byte	90
- 420 018b 04       		.byte	4
- 421 018c 5F       		.byte	95
- 422 018d 01       		.byte	1
- 423 018e 60       		.byte	96
- 424 018f 40       		.byte	64
- 425 0190 61       		.byte	97
- 426 0191 A8       		.byte	-88
- 427 0192 62       		.byte	98
- 428 0193 40       		.byte	64
- 429 0194 63       		.byte	99
- 430 0195 20       		.byte	32
- 431 0196 80       		.byte	-128
- 432 0197 24       		.byte	36
- 433 0198 81       		.byte	-127
- 434 0199 10       		.byte	16
- 435 019a 84       		.byte	-124
- 436 019b 1C       		.byte	28
- 437 019c 85       		.byte	-123
- 438 019d 18       		.byte	24
- 439 019e 86       		.byte	-122
- 440 019f 62       		.byte	98
- 441 01a0 89       		.byte	-119
+ 400 0177 42       		.byte	66
+ 401 0178 29       		.byte	41
+ 402 0179 10       		.byte	16
+ 403 017a 30       		.byte	48
+ 404 017b 24       		.byte	36
+ 405 017c 31       		.byte	49
+ 406 017d A0       		.byte	-96
+ 407 017e 32       		.byte	50
+ 408 017f 40       		.byte	64
+ 409 0180 38       		.byte	56
+ 410 0181 68       		.byte	104
+ 411 0182 39       		.byte	57
+ 412 0183 02       		.byte	2
+ 413 0184 3B       		.byte	59
+ 414 0185 10       		.byte	16
+ 415 0186 59       		.byte	89
+ 416 0187 02       		.byte	2
+ 417 0188 62       		.byte	98
+ 418 0189 A0       		.byte	-96
+ 419 018a 63       		.byte	99
+ 420 018b 80       		.byte	-128
+ 421 018c 83       		.byte	-125
+ 422 018d 40       		.byte	64
+ 423 018e C0       		.byte	-64
+ 424 018f 07       		.byte	7
+ 425 0190 C2       		.byte	-62
+ 426 0191 0F       		.byte	15
+ 427 0192 C4       		.byte	-60
+ 428 0193 0F       		.byte	15
+ 429 0194 CA       		.byte	-54
+ 430 0195 0D       		.byte	13
+ 431 0196 CC       		.byte	-52
+ 432 0197 0E       		.byte	14
+ 433 0198 CE       		.byte	-50
+ 434 0199 0F       		.byte	15
+ 435 019a D6       		.byte	-42
+ 436 019b 01       		.byte	1
+ 437 019c D8       		.byte	-40
+ 438 019d 0D       		.byte	13
+ 439 019e AF       		.byte	-81
+ 440 019f 40       		.byte	64
+ 441 01a0 EE       		.byte	-18
  442 01a1 08       		.byte	8
- 443 01a2 8A       		.byte	-118
- 444 01a3 04       		.byte	4
- 445 01a4 8C       		.byte	-116
- 446 01a5 7F       		.byte	127
- 447 01a6 8D       		.byte	-115
- 448 01a7 1F       		.byte	31
- 449 01a8 90       		.byte	-112
- 450 01a9 67       		.byte	103
- 451 01aa 91       		.byte	-111
- 452 01ab 07       		.byte	7
- 453 01ac 92       		.byte	-110
- 454 01ad 18       		.byte	24
- 455 01ae 93       		.byte	-109
- 456 01af 18       		.byte	24
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccHLZkai.s 			page 9
+ 443 01a2 02       		.byte	2
+ 444 01a3 01       		.byte	1
+ 445 01a4 12       		.byte	18
+ 446 01a5 01       		.byte	1
+ 447 01a6 36       		.byte	54
+ 448 01a7 01       		.byte	1
+ 449 01a8 40       		.byte	64
+ 450 01a9 45       		.byte	69
+ 451 01aa 49       		.byte	73
+ 452 01ab FF       		.byte	-1
+ 453 01ac 4A       		.byte	74
+ 454 01ad FF       		.byte	-1
+ 455 01ae 4B       		.byte	75
+ 456 01af FF       		.byte	-1
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccokIVkg.s 			page 9
 
 
- 457 01b0 94       		.byte	-108
- 458 01b1 40       		.byte	64
- 459 01b2 95       		.byte	-107
- 460 01b3 02       		.byte	2
- 461 01b4 98       		.byte	-104
- 462 01b5 60       		.byte	96
- 463 01b6 99       		.byte	-103
- 464 01b7 03       		.byte	3
- 465 01b8 9C       		.byte	-100
- 466 01b9 7C       		.byte	124
- 467 01ba 9E       		.byte	-98
- 468 01bb 01       		.byte	1
- 469 01bc A0       		.byte	-96
- 470 01bd 10       		.byte	16
- 471 01be A1       		.byte	-95
- 472 01bf 18       		.byte	24
- 473 01c0 A3       		.byte	-93
- 474 01c1 07       		.byte	7
- 475 01c2 A4       		.byte	-92
- 476 01c3 08       		.byte	8
- 477 01c4 A5       		.byte	-91
- 478 01c5 01       		.byte	1
- 479 01c6 A8       		.byte	-88
- 480 01c7 18       		.byte	24
- 481 01c8 A9       		.byte	-87
- 482 01c9 18       		.byte	24
- 483 01ca AB       		.byte	-85
- 484 01cb 07       		.byte	7
- 485 01cc AE       		.byte	-82
- 486 01cd 63       		.byte	99
- 487 01ce AF       		.byte	-81
- 488 01cf 07       		.byte	7
- 489 01d0 B0       		.byte	-80
- 490 01d1 78       		.byte	120
- 491 01d2 B1       		.byte	-79
- 492 01d3 03       		.byte	3
- 493 01d4 B4       		.byte	-76
- 494 01d5 1F       		.byte	31
- 495 01d6 B7       		.byte	-73
- 496 01d7 1C       		.byte	28
- 497 01d8 BA       		.byte	-70
- 498 01d9 22       		.byte	34
- 499 01da BB       		.byte	-69
- 500 01db 80       		.byte	-128
- 501 01dc D4       		.byte	-44
- 502 01dd 18       		.byte	24
- 503 01de D6       		.byte	-42
- 504 01df 04       		.byte	4
- 505 01e0 D8       		.byte	-40
- 506 01e1 04       		.byte	4
- 507 01e2 D9       		.byte	-39
- 508 01e3 04       		.byte	4
- 509 01e4 DB       		.byte	-37
- 510 01e5 04       		.byte	4
- 511 01e6 DF       		.byte	-33
- 512 01e7 01       		.byte	1
- 513 01e8 00       		.byte	0
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccHLZkai.s 			page 10
+ 457 01b0 4F       		.byte	79
+ 458 01b1 01       		.byte	1
+ 459 01b2 50       		.byte	80
+ 460 01b3 18       		.byte	24
+ 461 01b4 52       		.byte	82
+ 462 01b5 80       		.byte	-128
+ 463 01b6 58       		.byte	88
+ 464 01b7 04       		.byte	4
+ 465 01b8 5A       		.byte	90
+ 466 01b9 04       		.byte	4
+ 467 01ba 5B       		.byte	91
+ 468 01bb 04       		.byte	4
+ 469 01bc 5C       		.byte	92
+ 470 01bd 01       		.byte	1
+ 471 01be 5D       		.byte	93
+ 472 01bf 11       		.byte	17
+ 473 01c0 5F       		.byte	95
+ 474 01c1 01       		.byte	1
+ 475 01c2 60       		.byte	96
+ 476 01c3 40       		.byte	64
+ 477 01c4 62       		.byte	98
+ 478 01c5 40       		.byte	64
+ 479 01c6 64       		.byte	100
+ 480 01c7 40       		.byte	64
+ 481 01c8 65       		.byte	101
+ 482 01c9 40       		.byte	64
+ 483 01ca 66       		.byte	102
+ 484 01cb 80       		.byte	-128
+ 485 01cc 68       		.byte	104
+ 486 01cd 80       		.byte	-128
+ 487 01ce 6A       		.byte	106
+ 488 01cf 80       		.byte	-128
+ 489 01d0 6C       		.byte	108
+ 490 01d1 80       		.byte	-128
+ 491 01d2 6E       		.byte	110
+ 492 01d3 80       		.byte	-128
+ 493 01d4 82       		.byte	-126
+ 494 01d5 01       		.byte	1
+ 495 01d6 8E       		.byte	-114
+ 496 01d7 01       		.byte	1
+ 497 01d8 B6       		.byte	-74
+ 498 01d9 01       		.byte	1
+ 499 01da BE       		.byte	-66
+ 500 01db 40       		.byte	64
+ 501 01dc C0       		.byte	-64
+ 502 01dd 14       		.byte	20
+ 503 01de C5       		.byte	-59
+ 504 01df EC       		.byte	-20
+ 505 01e0 C7       		.byte	-57
+ 506 01e1 20       		.byte	32
+ 507 01e2 C8       		.byte	-56
+ 508 01e3 23       		.byte	35
+ 509 01e4 C9       		.byte	-55
+ 510 01e5 FF       		.byte	-1
+ 511 01e6 CA       		.byte	-54
+ 512 01e7 FF       		.byte	-1
+ 513 01e8 CB       		.byte	-53
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccokIVkg.s 			page 10
 
 
- 514 01e9 40       		.byte	64
- 515 01ea 03       		.byte	3
- 516 01eb A8       		.byte	-88
- 517 01ec 06       		.byte	6
- 518 01ed 28       		.byte	40
- 519 01ee 09       		.byte	9
- 520 01ef 88       		.byte	-120
- 521 01f0 0A       		.byte	10
- 522 01f1 44       		.byte	68
- 523 01f2 0E       		.byte	14
- 524 01f3 10       		.byte	16
- 525 01f4 10       		.byte	16
- 526 01f5 01       		.byte	1
- 527 01f6 12       		.byte	18
- 528 01f7 14       		.byte	20
- 529 01f8 13       		.byte	19
- 530 01f9 41       		.byte	65
- 531 01fa 16       		.byte	22
- 532 01fb 01       		.byte	1
- 533 01fc 17       		.byte	23
- 534 01fd 09       		.byte	9
- 535 01fe 19       		.byte	25
- 536 01ff 21       		.byte	33
- 537 0200 1A       		.byte	26
+ 514 01e9 FF       		.byte	-1
+ 515 01ea CD       		.byte	-51
+ 516 01eb 83       		.byte	-125
+ 517 01ec CE       		.byte	-50
+ 518 01ed 03       		.byte	3
+ 519 01ee CF       		.byte	-49
+ 520 01ef 01       		.byte	1
+ 521 01f0 D0       		.byte	-48
+ 522 01f1 18       		.byte	24
+ 523 01f2 D4       		.byte	-44
+ 524 01f3 01       		.byte	1
+ 525 01f4 D8       		.byte	-40
+ 526 01f5 04       		.byte	4
+ 527 01f6 DA       		.byte	-38
+ 528 01f7 04       		.byte	4
+ 529 01f8 DB       		.byte	-37
+ 530 01f9 04       		.byte	4
+ 531 01fa DD       		.byte	-35
+ 532 01fb 11       		.byte	17
+ 533 01fc DF       		.byte	-33
+ 534 01fd 01       		.byte	1
+ 535 01fe E0       		.byte	-32
+ 536 01ff 40       		.byte	64
+ 537 0200 E2       		.byte	-30
  538 0201 40       		.byte	64
- 539 0202 1B       		.byte	27
- 540 0203 20       		.byte	32
- 541 0204 1F       		.byte	31
- 542 0205 10       		.byte	16
- 543 0206 21       		.byte	33
+ 539 0202 E4       		.byte	-28
+ 540 0203 40       		.byte	64
+ 541 0204 E5       		.byte	-27
+ 542 0205 40       		.byte	64
+ 543 0206 E6       		.byte	-26
  544 0207 80       		.byte	-128
- 545 0208 22       		.byte	34
- 546 0209 01       		.byte	1
- 547 020a 27       		.byte	39
- 548 020b 21       		.byte	33
- 549 020c 28       		.byte	40
- 550 020d 61       		.byte	97
- 551 020e 29       		.byte	41
- 552 020f 20       		.byte	32
- 553 0210 2E       		.byte	46
- 554 0211 18       		.byte	24
- 555 0212 2F       		.byte	47
- 556 0213 16       		.byte	22
- 557 0214 31       		.byte	49
- 558 0215 19       		.byte	25
- 559 0216 37       		.byte	55
- 560 0217 09       		.byte	9
- 561 0218 38       		.byte	56
- 562 0219 68       		.byte	104
- 563 021a 3A       		.byte	58
- 564 021b 14       		.byte	20
- 565 021c 3B       		.byte	59
- 566 021d 01       		.byte	1
- 567 021e 3F       		.byte	63
- 568 021f 20       		.byte	32
- 569 0220 47       		.byte	71
- 570 0221 20       		.byte	32
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccHLZkai.s 			page 11
+ 545 0208 E8       		.byte	-24
+ 546 0209 80       		.byte	-128
+ 547 020a EA       		.byte	-22
+ 548 020b 80       		.byte	-128
+ 549 020c EC       		.byte	-20
+ 550 020d 80       		.byte	-128
+ 551 020e EE       		.byte	-18
+ 552 020f 80       		.byte	-128
+ 553 0210 02       		.byte	2
+ 554 0211 42       		.byte	66
+ 555 0212 06       		.byte	6
+ 556 0213 40       		.byte	64
+ 557 0214 0D       		.byte	13
+ 558 0215 02       		.byte	2
+ 559 0216 19       		.byte	25
+ 560 0217 40       		.byte	64
+ 561 0218 1F       		.byte	31
+ 562 0219 40       		.byte	64
+ 563 021a 41       		.byte	65
+ 564 021b 02       		.byte	2
+ 565 021c 43       		.byte	67
+ 566 021d 40       		.byte	64
+ 567 021e 46       		.byte	70
+ 568 021f 40       		.byte	64
+ 569 0220 49       		.byte	73
+ 570 0221 05       		.byte	5
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccokIVkg.s 			page 11
 
 
- 571 0222 56       		.byte	86
- 572 0223 21       		.byte	33
- 573 0224 57       		.byte	87
- 574 0225 12       		.byte	18
- 575 0226 5A       		.byte	90
+ 571 0222 4E       		.byte	78
+ 572 0223 02       		.byte	2
+ 573 0224 51       		.byte	81
+ 574 0225 02       		.byte	2
+ 575 0226 52       		.byte	82
  576 0227 02       		.byte	2
- 577 0228 60       		.byte	96
- 578 0229 04       		.byte	4
- 579 022a 62       		.byte	98
- 580 022b 02       		.byte	2
- 581 022c 63       		.byte	99
- 582 022d 02       		.byte	2
- 583 022e 8E       		.byte	-114
- 584 022f 02       		.byte	2
- 585 0230 90       		.byte	-112
- 586 0231 6C       		.byte	108
- 587 0232 91       		.byte	-111
- 588 0233 14       		.byte	20
- 589 0234 93       		.byte	-109
- 590 0235 41       		.byte	65
- 591 0236 98       		.byte	-104
- 592 0237 40       		.byte	64
- 593 0238 9C       		.byte	-100
- 594 0239 20       		.byte	32
- 595 023a 9D       		.byte	-99
- 596 023b 31       		.byte	49
- 597 023c A3       		.byte	-93
- 598 023d 01       		.byte	1
- 599 023e A5       		.byte	-91
- 600 023f 88       		.byte	-120
- 601 0240 B5       		.byte	-75
- 602 0241 02       		.byte	2
- 603 0242 B6       		.byte	-74
- 604 0243 04       		.byte	4
- 605 0244 C0       		.byte	-64
- 606 0245 6F       		.byte	111
- 607 0246 C2       		.byte	-62
- 608 0247 2F       		.byte	47
- 609 0248 C4       		.byte	-60
- 610 0249 BF       		.byte	-65
- 611 024a CA       		.byte	-54
- 612 024b 7F       		.byte	127
- 613 024c CC       		.byte	-52
- 614 024d C7       		.byte	-57
- 615 024e CE       		.byte	-50
- 616 024f 2F       		.byte	47
- 617 0250 D0       		.byte	-48
- 618 0251 20       		.byte	32
- 619 0252 D6       		.byte	-42
+ 577 0228 59       		.byte	89
+ 578 0229 45       		.byte	69
+ 579 022a 76       		.byte	118
+ 580 022b 40       		.byte	64
+ 581 022c 77       		.byte	119
+ 582 022d 40       		.byte	64
+ 583 022e C0       		.byte	-64
+ 584 022f 19       		.byte	25
+ 585 0230 C2       		.byte	-62
+ 586 0231 10       		.byte	16
+ 587 0232 D0       		.byte	-48
+ 588 0233 89       		.byte	-119
+ 589 0234 D2       		.byte	-46
+ 590 0235 10       		.byte	16
+ 591 0236 D6       		.byte	-42
+ 592 0237 0B       		.byte	11
+ 593 0238 00       		.byte	0
+ 594 0239 06       		.byte	6
+ 595 023a 07       		.byte	7
+ 596 023b 08       		.byte	8
+ 597 023c 0B       		.byte	11
+ 598 023d 03       		.byte	3
+ 599 023e 11       		.byte	17
+ 600 023f 01       		.byte	1
+ 601 0240 12       		.byte	18
+ 602 0241 01       		.byte	1
+ 603 0242 13       		.byte	19
+ 604 0243 06       		.byte	6
+ 605 0244 15       		.byte	21
+ 606 0245 0C       		.byte	12
+ 607 0246 16       		.byte	22
+ 608 0247 02       		.byte	2
+ 609 0248 17       		.byte	23
+ 610 0249 03       		.byte	3
+ 611 024a 20       		.byte	32
+ 612 024b 06       		.byte	6
+ 613 024c 23       		.byte	35
+ 614 024d 0C       		.byte	12
+ 615 024e 24       		.byte	36
+ 616 024f 04       		.byte	4
+ 617 0250 2A       		.byte	42
+ 618 0251 01       		.byte	1
+ 619 0252 2D       		.byte	45
  620 0253 01       		.byte	1
- 621 0254 D8       		.byte	-40
- 622 0255 0D       		.byte	13
- 623 0256 E6       		.byte	-26
- 624 0257 10       		.byte	16
- 625 0258 00       		.byte	0
- 626 0259 02       		.byte	2
- 627 025a 02       		.byte	2
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccHLZkai.s 			page 12
+ 621 0254 2F       		.byte	47
+ 622 0255 0E       		.byte	14
+ 623 0256 32       		.byte	50
+ 624 0257 06       		.byte	6
+ 625 0258 34       		.byte	52
+ 626 0259 01       		.byte	1
+ 627 025a 35       		.byte	53
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccokIVkg.s 			page 12
 
 
- 628 025b 09       		.byte	9
- 629 025c 04       		.byte	4
- 630 025d 01       		.byte	1
- 631 025e 05       		.byte	5
- 632 025f 03       		.byte	3
- 633 0260 06       		.byte	6
- 634 0261 06       		.byte	6
- 635 0262 09       		.byte	9
- 636 0263 03       		.byte	3
- 637 0264 14       		.byte	20
- 638 0265 04       		.byte	4
- 639 0266 15       		.byte	21
- 640 0267 02       		.byte	2
- 641 0268 16       		.byte	22
- 642 0269 01       		.byte	1
- 643 026a 17       		.byte	23
+ 628 025b 0F       		.byte	15
+ 629 025c 38       		.byte	56
+ 630 025d 08       		.byte	8
+ 631 025e 3B       		.byte	59
+ 632 025f 20       		.byte	32
+ 633 0260 3E       		.byte	62
+ 634 0261 04       		.byte	4
+ 635 0262 40       		.byte	64
+ 636 0263 56       		.byte	86
+ 637 0264 49       		.byte	73
+ 638 0265 FF       		.byte	-1
+ 639 0266 4A       		.byte	74
+ 640 0267 FF       		.byte	-1
+ 641 0268 4B       		.byte	75
+ 642 0269 FF       		.byte	-1
+ 643 026a 4F       		.byte	79
  644 026b 01       		.byte	1
- 645 026c 1D       		.byte	29
- 646 026d 04       		.byte	4
- 647 026e 24       		.byte	36
- 648 026f 07       		.byte	7
- 649 0270 25       		.byte	37
- 650 0271 01       		.byte	1
- 651 0272 27       		.byte	39
- 652 0273 02       		.byte	2
- 653 0274 28       		.byte	40
- 654 0275 07       		.byte	7
- 655 0276 31       		.byte	49
- 656 0277 04       		.byte	4
- 657 0278 32       		.byte	50
- 658 0279 08       		.byte	8
- 659 027a 33       		.byte	51
- 660 027b 03       		.byte	3
- 661 027c 34       		.byte	52
- 662 027d 07       		.byte	7
- 663 027e 3F       		.byte	63
- 664 027f 01       		.byte	1
- 665 0280 58       		.byte	88
- 666 0281 04       		.byte	4
- 667 0282 59       		.byte	89
- 668 0283 04       		.byte	4
- 669 0284 5F       		.byte	95
- 670 0285 01       		.byte	1
- 671 0286 81       		.byte	-127
- 672 0287 50       		.byte	80
- 673 0288 84       		.byte	-124
- 674 0289 06       		.byte	6
- 675 028a 85       		.byte	-123
- 676 028b B1       		.byte	-79
- 677 028c 86       		.byte	-122
- 678 028d 18       		.byte	24
- 679 028e 87       		.byte	-121
- 680 028f 44       		.byte	68
- 681 0290 88       		.byte	-120
- 682 0291 06       		.byte	6
- 683 0292 89       		.byte	-119
- 684 0293 02       		.byte	2
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccHLZkai.s 			page 13
+ 645 026c 50       		.byte	80
+ 646 026d 18       		.byte	24
+ 647 026e 58       		.byte	88
+ 648 026f 04       		.byte	4
+ 649 0270 59       		.byte	89
+ 650 0271 04       		.byte	4
+ 651 0272 5A       		.byte	90
+ 652 0273 04       		.byte	4
+ 653 0274 5C       		.byte	92
+ 654 0275 09       		.byte	9
+ 655 0276 5D       		.byte	93
+ 656 0277 09       		.byte	9
+ 657 0278 5F       		.byte	95
+ 658 0279 01       		.byte	1
+ 659 027a 60       		.byte	96
+ 660 027b 40       		.byte	64
+ 661 027c 62       		.byte	98
+ 662 027d 40       		.byte	64
+ 663 027e 64       		.byte	100
+ 664 027f 40       		.byte	64
+ 665 0280 65       		.byte	101
+ 666 0281 40       		.byte	64
+ 667 0282 66       		.byte	102
+ 668 0283 80       		.byte	-128
+ 669 0284 68       		.byte	104
+ 670 0285 80       		.byte	-128
+ 671 0286 6A       		.byte	106
+ 672 0287 80       		.byte	-128
+ 673 0288 6C       		.byte	108
+ 674 0289 80       		.byte	-128
+ 675 028a 6E       		.byte	110
+ 676 028b 80       		.byte	-128
+ 677 028c 80       		.byte	-128
+ 678 028d 09       		.byte	9
+ 679 028e 81       		.byte	-127
+ 680 028f 03       		.byte	3
+ 681 0290 82       		.byte	-126
+ 682 0291 46       		.byte	70
+ 683 0292 83       		.byte	-125
+ 684 0293 0C       		.byte	12
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccokIVkg.s 			page 13
 
 
- 685 0294 8A       		.byte	-118
- 686 0295 08       		.byte	8
+ 685 0294 89       		.byte	-119
+ 686 0295 03       		.byte	3
  687 0296 8B       		.byte	-117
- 688 0297 80       		.byte	-128
- 689 0298 91       		.byte	-111
- 690 0299 70       		.byte	112
- 691 029a 93       		.byte	-109
- 692 029b 89       		.byte	-119
- 693 029c 94       		.byte	-108
- 694 029d 06       		.byte	6
- 695 029e 95       		.byte	-107
- 696 029f 24       		.byte	36
- 697 02a0 96       		.byte	-106
- 698 02a1 08       		.byte	8
- 699 02a2 97       		.byte	-105
- 700 02a3 40       		.byte	64
- 701 02a4 9C       		.byte	-100
- 702 02a5 01       		.byte	1
- 703 02a6 9F       		.byte	-97
- 704 02a7 0C       		.byte	12
- 705 02a8 A0       		.byte	-96
- 706 02a9 14       		.byte	20
- 707 02aa A2       		.byte	-94
- 708 02ab 08       		.byte	8
- 709 02ac A6       		.byte	-90
- 710 02ad 0A       		.byte	10
- 711 02ae A7       		.byte	-89
- 712 02af 80       		.byte	-128
- 713 02b0 A9       		.byte	-87
- 714 02b1 C1       		.byte	-63
- 715 02b2 AA       		.byte	-86
- 716 02b3 10       		.byte	16
- 717 02b4 AB       		.byte	-85
- 718 02b5 30       		.byte	48
- 719 02b6 AD       		.byte	-83
- 720 02b7 40       		.byte	64
- 721 02b8 B2       		.byte	-78
- 722 02b9 1E       		.byte	30
- 723 02ba B3       		.byte	-77
- 724 02bb 80       		.byte	-128
- 725 02bc B4       		.byte	-76
- 726 02bd 01       		.byte	1
- 727 02be B5       		.byte	-75
- 728 02bf 03       		.byte	3
- 729 02c0 B7       		.byte	-73
- 730 02c1 7C       		.byte	124
- 731 02c2 B9       		.byte	-71
- 732 02c3 20       		.byte	32
- 733 02c4 BA       		.byte	-70
- 734 02c5 08       		.byte	8
- 735 02c6 BE       		.byte	-66
- 736 02c7 10       		.byte	16
- 737 02c8 BF       		.byte	-65
- 738 02c9 04       		.byte	4
- 739 02ca C0       		.byte	-64
- 740 02cb 63       		.byte	99
- 741 02cc C1       		.byte	-63
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccHLZkai.s 			page 14
+ 688 0297 04       		.byte	4
+ 689 0298 8C       		.byte	-116
+ 690 0299 12       		.byte	18
+ 691 029a 8E       		.byte	-114
+ 692 029b 45       		.byte	69
+ 693 029c 8F       		.byte	-113
+ 694 029d 10       		.byte	16
+ 695 029e 97       		.byte	-105
+ 696 029f 10       		.byte	16
+ 697 02a0 98       		.byte	-104
+ 698 02a1 04       		.byte	4
+ 699 02a2 99       		.byte	-103
+ 700 02a3 0A       		.byte	10
+ 701 02a4 9A       		.byte	-102
+ 702 02a5 38       		.byte	56
+ 703 02a6 9B       		.byte	-101
+ 704 02a7 04       		.byte	4
+ 705 02a8 9F       		.byte	-97
+ 706 02a9 08       		.byte	8
+ 707 02aa A1       		.byte	-95
+ 708 02ab 03       		.byte	3
+ 709 02ac A3       		.byte	-93
+ 710 02ad 04       		.byte	4
+ 711 02ae A4       		.byte	-92
+ 712 02af 1F       		.byte	31
+ 713 02b0 A7       		.byte	-89
+ 714 02b1 05       		.byte	5
+ 715 02b2 A8       		.byte	-88
+ 716 02b3 1F       		.byte	31
+ 717 02b4 B0       		.byte	-80
+ 718 02b5 03       		.byte	3
+ 719 02b6 B1       		.byte	-79
+ 720 02b7 0F       		.byte	15
+ 721 02b8 B4       		.byte	-76
+ 722 02b9 1C       		.byte	28
+ 723 02ba B6       		.byte	-74
+ 724 02bb 60       		.byte	96
+ 725 02bc B7       		.byte	-73
+ 726 02bd 10       		.byte	16
+ 727 02be BB       		.byte	-69
+ 728 02bf 02       		.byte	2
+ 729 02c0 BE       		.byte	-66
+ 730 02c1 40       		.byte	64
+ 731 02c2 BF       		.byte	-65
+ 732 02c3 40       		.byte	64
+ 733 02c4 C0       		.byte	-64
+ 734 02c5 56       		.byte	86
+ 735 02c6 C5       		.byte	-59
+ 736 02c7 EC       		.byte	-20
+ 737 02c8 C7       		.byte	-57
+ 738 02c9 02       		.byte	2
+ 739 02ca C8       		.byte	-56
+ 740 02cb 13       		.byte	19
+ 741 02cc C9       		.byte	-55
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccokIVkg.s 			page 14
 
 
- 742 02cd 02       		.byte	2
- 743 02ce C5       		.byte	-59
- 744 02cf E0       		.byte	-32
- 745 02d0 C6       		.byte	-58
- 746 02d1 C0       		.byte	-64
- 747 02d2 C7       		.byte	-57
- 748 02d3 B0       		.byte	-80
- 749 02d4 C8       		.byte	-56
- 750 02d5 2A       		.byte	42
- 751 02d6 C9       		.byte	-55
- 752 02d7 FF       		.byte	-1
- 753 02d8 CA       		.byte	-54
- 754 02d9 FF       		.byte	-1
- 755 02da CB       		.byte	-53
- 756 02db FF       		.byte	-1
- 757 02dc CE       		.byte	-50
- 758 02dd F0       		.byte	-16
- 759 02de CF       		.byte	-49
- 760 02df 44       		.byte	68
- 761 02e0 D0       		.byte	-48
- 762 02e1 0C       		.byte	12
- 763 02e2 D4       		.byte	-44
- 764 02e3 01       		.byte	1
- 765 02e4 D8       		.byte	-40
+ 742 02cd FF       		.byte	-1
+ 743 02ce CA       		.byte	-54
+ 744 02cf FF       		.byte	-1
+ 745 02d0 CB       		.byte	-53
+ 746 02d1 FF       		.byte	-1
+ 747 02d2 CD       		.byte	-51
+ 748 02d3 83       		.byte	-125
+ 749 02d4 CE       		.byte	-50
+ 750 02d5 03       		.byte	3
+ 751 02d6 CF       		.byte	-49
+ 752 02d7 01       		.byte	1
+ 753 02d8 D0       		.byte	-48
+ 754 02d9 18       		.byte	24
+ 755 02da D2       		.byte	-46
+ 756 02db 80       		.byte	-128
+ 757 02dc D4       		.byte	-44
+ 758 02dd 01       		.byte	1
+ 759 02de D8       		.byte	-40
+ 760 02df 04       		.byte	4
+ 761 02e0 D9       		.byte	-39
+ 762 02e1 04       		.byte	4
+ 763 02e2 DA       		.byte	-38
+ 764 02e3 04       		.byte	4
+ 765 02e4 DB       		.byte	-37
  766 02e5 04       		.byte	4
- 767 02e6 D9       		.byte	-39
- 768 02e7 04       		.byte	4
- 769 02e8 DA       		.byte	-38
- 770 02e9 04       		.byte	4
- 771 02ea DB       		.byte	-37
- 772 02eb 04       		.byte	4
- 773 02ec DF       		.byte	-33
- 774 02ed 01       		.byte	1
- 775 02ee E6       		.byte	-26
- 776 02ef C0       		.byte	-64
- 777 02f0 EA       		.byte	-22
+ 767 02e6 DD       		.byte	-35
+ 768 02e7 99       		.byte	-103
+ 769 02e8 DF       		.byte	-33
+ 770 02e9 01       		.byte	1
+ 771 02ea E0       		.byte	-32
+ 772 02eb 40       		.byte	64
+ 773 02ec E2       		.byte	-30
+ 774 02ed 40       		.byte	64
+ 775 02ee E4       		.byte	-28
+ 776 02ef 40       		.byte	64
+ 777 02f0 E5       		.byte	-27
  778 02f1 40       		.byte	64
- 779 02f2 EB       		.byte	-21
- 780 02f3 02       		.byte	2
- 781 02f4 00       		.byte	0
- 782 02f5 04       		.byte	4
- 783 02f6 03       		.byte	3
+ 779 02f2 E6       		.byte	-26
+ 780 02f3 80       		.byte	-128
+ 781 02f4 E8       		.byte	-24
+ 782 02f5 80       		.byte	-128
+ 783 02f6 EA       		.byte	-22
  784 02f7 80       		.byte	-128
- 785 02f8 05       		.byte	5
- 786 02f9 04       		.byte	4
- 787 02fa 06       		.byte	6
- 788 02fb 08       		.byte	8
- 789 02fc 09       		.byte	9
- 790 02fd 08       		.byte	8
- 791 02fe 0E       		.byte	14
- 792 02ff 10       		.byte	16
- 793 0300 0F       		.byte	15
- 794 0301 21       		.byte	33
- 795 0302 11       		.byte	17
- 796 0303 14       		.byte	20
- 797 0304 14       		.byte	20
- 798 0305 08       		.byte	8
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccHLZkai.s 			page 15
+ 785 02f8 EC       		.byte	-20
+ 786 02f9 80       		.byte	-128
+ 787 02fa EE       		.byte	-18
+ 788 02fb 80       		.byte	-128
+ 789 02fc 00       		.byte	0
+ 790 02fd 42       		.byte	66
+ 791 02fe 01       		.byte	1
+ 792 02ff 01       		.byte	1
+ 793 0300 05       		.byte	5
+ 794 0301 02       		.byte	2
+ 795 0302 06       		.byte	6
+ 796 0303 80       		.byte	-128
+ 797 0304 07       		.byte	7
+ 798 0305 40       		.byte	64
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccokIVkg.s 			page 15
 
 
- 799 0306 16       		.byte	22
- 800 0307 20       		.byte	32
- 801 0308 17       		.byte	23
- 802 0309 01       		.byte	1
- 803 030a 18       		.byte	24
+ 799 0306 08       		.byte	8
+ 800 0307 10       		.byte	16
+ 801 0308 0A       		.byte	10
+ 802 0309 04       		.byte	4
+ 803 030a 0D       		.byte	13
  804 030b 04       		.byte	4
- 805 030c 19       		.byte	25
- 806 030d 10       		.byte	16
- 807 030e 1A       		.byte	26
- 808 030f 04       		.byte	4
- 809 0310 1B       		.byte	27
- 810 0311 08       		.byte	8
- 811 0312 1D       		.byte	29
+ 805 030c 0F       		.byte	15
+ 806 030d 60       		.byte	96
+ 807 030e 11       		.byte	17
+ 808 030f 14       		.byte	20
+ 809 0310 15       		.byte	21
+ 810 0311 02       		.byte	2
+ 811 0312 16       		.byte	22
  812 0313 04       		.byte	4
- 813 0314 1E       		.byte	30
- 814 0315 08       		.byte	8
- 815 0316 1F       		.byte	31
- 816 0317 04       		.byte	4
- 817 0318 21       		.byte	33
- 818 0319 08       		.byte	8
- 819 031a 22       		.byte	34
- 820 031b 01       		.byte	1
- 821 031c 25       		.byte	37
- 822 031d 04       		.byte	4
- 823 031e 26       		.byte	38
- 824 031f 80       		.byte	-128
- 825 0320 27       		.byte	39
- 826 0321 08       		.byte	8
- 827 0322 28       		.byte	40
- 828 0323 20       		.byte	32
- 829 0324 2C       		.byte	44
- 830 0325 08       		.byte	8
- 831 0326 2F       		.byte	47
- 832 0327 26       		.byte	38
- 833 0328 31       		.byte	49
- 834 0329 08       		.byte	8
- 835 032a 32       		.byte	50
- 836 032b 80       		.byte	-128
- 837 032c 34       		.byte	52
- 838 032d 08       		.byte	8
- 839 032e 36       		.byte	54
+ 813 0314 17       		.byte	23
+ 814 0315 05       		.byte	5
+ 815 0316 18       		.byte	24
+ 816 0317 41       		.byte	65
+ 817 0318 1A       		.byte	26
+ 818 0319 04       		.byte	4
+ 819 031a 1B       		.byte	27
+ 820 031b 02       		.byte	2
+ 821 031c 1D       		.byte	29
+ 822 031d 08       		.byte	8
+ 823 031e 1F       		.byte	31
+ 824 031f 20       		.byte	32
+ 825 0320 21       		.byte	33
+ 826 0321 03       		.byte	3
+ 827 0322 22       		.byte	34
+ 828 0323 40       		.byte	64
+ 829 0324 25       		.byte	37
+ 830 0325 20       		.byte	32
+ 831 0326 27       		.byte	39
+ 832 0327 04       		.byte	4
+ 833 0328 29       		.byte	41
+ 834 0329 02       		.byte	2
+ 835 032a 2B       		.byte	43
+ 836 032b 10       		.byte	16
+ 837 032c 2C       		.byte	44
+ 838 032d 40       		.byte	64
+ 839 032e 2E       		.byte	46
  840 032f 80       		.byte	-128
- 841 0330 37       		.byte	55
- 842 0331 09       		.byte	9
- 843 0332 39       		.byte	57
- 844 0333 14       		.byte	20
- 845 0334 3E       		.byte	62
- 846 0335 28       		.byte	40
- 847 0336 3F       		.byte	63
- 848 0337 02       		.byte	2
- 849 0338 46       		.byte	70
- 850 0339 28       		.byte	40
- 851 033a 4C       		.byte	76
- 852 033b 08       		.byte	8
- 853 033c 4F       		.byte	79
- 854 033d 01       		.byte	1
- 855 033e 57       		.byte	87
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccHLZkai.s 			page 16
+ 841 0330 2F       		.byte	47
+ 842 0331 40       		.byte	64
+ 843 0332 30       		.byte	48
+ 844 0333 40       		.byte	64
+ 845 0334 31       		.byte	49
+ 846 0335 20       		.byte	32
+ 847 0336 32       		.byte	50
+ 848 0337 08       		.byte	8
+ 849 0338 37       		.byte	55
+ 850 0339 05       		.byte	5
+ 851 033a 38       		.byte	56
+ 852 033b 20       		.byte	32
+ 853 033c 39       		.byte	57
+ 854 033d 02       		.byte	2
+ 855 033e 3B       		.byte	59
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccokIVkg.s 			page 16
 
 
- 856 033f 31       		.byte	49
- 857 0340 5D       		.byte	93
- 858 0341 80       		.byte	-128
- 859 0342 5E       		.byte	94
- 860 0343 18       		.byte	24
- 861 0344 5F       		.byte	95
- 862 0345 01       		.byte	1
- 863 0346 86       		.byte	-122
- 864 0347 01       		.byte	1
- 865 0348 8C       		.byte	-116
- 866 0349 20       		.byte	32
- 867 034a 8D       		.byte	-115
- 868 034b 84       		.byte	-124
- 869 034c 8F       		.byte	-113
- 870 034d 80       		.byte	-128
- 871 034e 91       		.byte	-111
- 872 034f 14       		.byte	20
- 873 0350 96       		.byte	-106
- 874 0351 04       		.byte	4
- 875 0352 97       		.byte	-105
- 876 0353 08       		.byte	8
- 877 0354 9A       		.byte	-102
- 878 0355 28       		.byte	40
- 879 0356 9B       		.byte	-101
+ 856 033f 40       		.byte	64
+ 857 0340 3F       		.byte	63
+ 858 0341 28       		.byte	40
+ 859 0342 49       		.byte	73
+ 860 0343 05       		.byte	5
+ 861 0344 4A       		.byte	74
+ 862 0345 08       		.byte	8
+ 863 0346 4B       		.byte	75
+ 864 0347 40       		.byte	64
+ 865 0348 4E       		.byte	78
+ 866 0349 08       		.byte	8
+ 867 034a 4F       		.byte	79
+ 868 034b 40       		.byte	64
+ 869 034c 52       		.byte	82
+ 870 034d 0C       		.byte	12
+ 871 034e 59       		.byte	89
+ 872 034f 05       		.byte	5
+ 873 0350 5A       		.byte	90
+ 874 0351 80       		.byte	-128
+ 875 0352 73       		.byte	115
+ 876 0353 40       		.byte	64
+ 877 0354 91       		.byte	-111
+ 878 0355 14       		.byte	20
+ 879 0356 94       		.byte	-108
  880 0357 01       		.byte	1
- 881 0358 9C       		.byte	-100
- 882 0359 20       		.byte	32
- 883 035a 9D       		.byte	-99
- 884 035b 10       		.byte	16
- 885 035c 9F       		.byte	-97
- 886 035d 08       		.byte	8
+ 881 0358 95       		.byte	-107
+ 882 0359 01       		.byte	1
+ 883 035a 96       		.byte	-106
+ 884 035b 40       		.byte	64
+ 885 035c 9C       		.byte	-100
+ 886 035d 10       		.byte	16
  887 035e A3       		.byte	-93
- 888 035f 02       		.byte	2
+ 888 035f 14       		.byte	20
  889 0360 A5       		.byte	-91
  890 0361 08       		.byte	8
  891 0362 A7       		.byte	-89
- 892 0363 88       		.byte	-120
- 893 0364 C0       		.byte	-64
- 894 0365 6C       		.byte	108
- 895 0366 C2       		.byte	-62
- 896 0367 A4       		.byte	-92
- 897 0368 C4       		.byte	-60
- 898 0369 76       		.byte	118
- 899 036a CA       		.byte	-54
- 900 036b 72       		.byte	114
- 901 036c CC       		.byte	-52
- 902 036d DA       		.byte	-38
- 903 036e CE       		.byte	-50
- 904 036f E6       		.byte	-26
- 905 0370 D0       		.byte	-48
- 906 0371 60       		.byte	96
- 907 0372 D2       		.byte	-46
- 908 0373 20       		.byte	32
- 909 0374 D6       		.byte	-42
- 910 0375 F0       		.byte	-16
- 911 0376 E4       		.byte	-28
- 912 0377 02       		.byte	2
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccHLZkai.s 			page 17
+ 892 0363 02       		.byte	2
+ 893 0364 B4       		.byte	-76
+ 894 0365 02       		.byte	2
+ 895 0366 B7       		.byte	-73
+ 896 0367 08       		.byte	8
+ 897 0368 C0       		.byte	-64
+ 898 0369 19       		.byte	25
+ 899 036a C2       		.byte	-62
+ 900 036b 32       		.byte	50
+ 901 036c C4       		.byte	-60
+ 902 036d 76       		.byte	118
+ 903 036e CA       		.byte	-54
+ 904 036f 93       		.byte	-109
+ 905 0370 CC       		.byte	-52
+ 906 0371 CE       		.byte	-50
+ 907 0372 CE       		.byte	-50
+ 908 0373 6D       		.byte	109
+ 909 0374 D2       		.byte	-46
+ 910 0375 3C       		.byte	60
+ 911 0376 D6       		.byte	-42
+ 912 0377 0B       		.byte	11
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccokIVkg.s 			page 17
 
 
- 913 0378 33       		.byte	51
- 914 0379 40       		.byte	64
- 915 037a 37       		.byte	55
- 916 037b 80       		.byte	-128
- 917 037c CC       		.byte	-52
- 918 037d 30       		.byte	48
- 919 037e 9F       		.byte	-97
- 920 037f C0       		.byte	-64
- 921 0380 9F       		.byte	-97
- 922 0381 C0       		.byte	-64
- 923 0382 9F       		.byte	-97
- 924 0383 C0       		.byte	-64
- 925 0384 8F       		.byte	-113
- 926 0385 80       		.byte	-128
- 927 0386 9F       		.byte	-97
- 928 0387 C0       		.byte	-64
- 929 0388 83       		.byte	-125
- 930 0389 40       		.byte	64
- 931 038a 9F       		.byte	-97
- 932 038b 40       		.byte	64
- 933 038c E6       		.byte	-26
- 934 038d 80       		.byte	-128
- 935 038e 12       		.byte	18
- 936 038f 80       		.byte	-128
- 937 0390 74       		.byte	116
- 938 0391 04       		.byte	4
- 939 0392 84       		.byte	-124
- 940 0393 04       		.byte	4
- 941 0394 8E       		.byte	-114
- 942 0395 80       		.byte	-128
- 943 0396 C4       		.byte	-60
- 944 0397 08       		.byte	8
- 945 0398 DE       		.byte	-34
- 946 0399 04       		.byte	4
- 947 039a E2       		.byte	-30
+ 913 0378 02       		.byte	2
+ 914 0379 01       		.byte	1
+ 915 037a 07       		.byte	7
+ 916 037b 01       		.byte	1
+ 917 037c 0A       		.byte	10
+ 918 037d 06       		.byte	6
+ 919 037e 0B       		.byte	11
+ 920 037f 01       		.byte	1
+ 921 0380 0C       		.byte	12
+ 922 0381 18       		.byte	24
+ 923 0382 0E       		.byte	14
+ 924 0383 22       		.byte	34
+ 925 0384 10       		.byte	16
+ 926 0385 20       		.byte	32
+ 927 0386 11       		.byte	17
+ 928 0387 01       		.byte	1
+ 929 0388 12       		.byte	18
+ 930 0389 18       		.byte	24
+ 931 038a 14       		.byte	20
+ 932 038b 20       		.byte	32
+ 933 038c 17       		.byte	23
+ 934 038d 01       		.byte	1
+ 935 038e 1C       		.byte	28
+ 936 038f 12       		.byte	18
+ 937 0390 1D       		.byte	29
+ 938 0391 01       		.byte	1
+ 939 0392 1E       		.byte	30
+ 940 0393 20       		.byte	32
+ 941 0394 24       		.byte	36
+ 942 0395 28       		.byte	40
+ 943 0396 25       		.byte	37
+ 944 0397 04       		.byte	4
+ 945 0398 28       		.byte	40
+ 946 0399 38       		.byte	56
+ 947 039a 29       		.byte	41
  948 039b 02       		.byte	2
- 949 039c 00       		.byte	0
- 950 039d 01       		.byte	1
- 951 039e 0C       		.byte	12
+ 949 039c 2A       		.byte	42
+ 950 039d 04       		.byte	4
+ 951 039e 30       		.byte	48
  952 039f 01       		.byte	1
- 953 03a0 10       		.byte	16
+ 953 03a0 31       		.byte	49
  954 03a1 01       		.byte	1
- 955 03a2 11       		.byte	17
- 956 03a3 01       		.byte	1
- 957 03a4 1B       		.byte	27
- 958 03a5 01       		.byte	1
- 959 03a6 1C       		.byte	28
- 960 03a7 01       		.byte	1
- 961 03a8 00       		.byte	0
- 962 03a9 0F       		.byte	15
- 963 03aa 00       		.byte	0
- 964 03ab 00       		.byte	0
- 965 03ac 80       		.byte	-128
- 966 03ad 80       		.byte	-128
- 967 03ae 00       		.byte	0
- 968 03af 00       		.byte	0
- 969 03b0 40       		.byte	64
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccHLZkai.s 			page 18
+ 955 03a2 32       		.byte	50
+ 956 03a3 3E       		.byte	62
+ 957 03a4 33       		.byte	51
+ 958 03a5 02       		.byte	2
+ 959 03a6 35       		.byte	53
+ 960 03a7 04       		.byte	4
+ 961 03a8 3F       		.byte	63
+ 962 03a9 15       		.byte	21
+ 963 03aa 40       		.byte	64
+ 964 03ab 13       		.byte	19
+ 965 03ac 41       		.byte	65
+ 966 03ad 05       		.byte	5
+ 967 03ae 45       		.byte	69
+ 968 03af 0B       		.byte	11
+ 969 03b0 46       		.byte	70
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccokIVkg.s 			page 18
 
 
- 970 03b1 00       		.byte	0
- 971 03b2 00       		.byte	0
- 972 03b3 00       		.byte	0
- 973 03b4 00       		.byte	0
- 974 03b5 04       		.byte	4
- 975 03b6 02       		.byte	2
- 976 03b7 00       		.byte	0
- 977 03b8 00       		.byte	0
- 978 03b9 06       		.byte	6
- 979 03ba 04       		.byte	4
- 980 03bb 00       		.byte	0
- 981 03bc 00       		.byte	0
- 982 03bd 02       		.byte	2
- 983 03be 02       		.byte	2
- 984 03bf 00       		.byte	0
- 985 03c0 08       		.byte	8
- 986 03c1 0F       		.byte	15
- 987 03c2 00       		.byte	0
- 988 03c3 00       		.byte	0
- 989 03c4 01       		.byte	1
- 990 03c5 00       		.byte	0
- 991 03c6 00       		.byte	0
- 992 03c7 00       		.byte	0
- 993 03c8 00       		.byte	0
- 994 03c9 00       		.byte	0
- 995 03ca 08       		.byte	8
- 996 03cb 20       		.byte	32
- 997 03cc 00       		.byte	0
- 998 03cd 00       		.byte	0
- 999 03ce 04       		.byte	4
- 1000 03cf 10       		.byte	16
- 1001 03d0 08       		.byte	8
- 1002 03d1 0E       		.byte	14
- 1003 03d2 00       		.byte	0
- 1004 03d3 01       		.byte	1
- 1005 03d4 00       		.byte	0
- 1006 03d5 09       		.byte	9
- 1007 03d6 08       		.byte	8
- 1008 03d7 06       		.byte	6
- 1009 03d8 01       		.byte	1
- 1010 03d9 00       		.byte	0
- 1011 03da 00       		.byte	0
- 1012 03db 20       		.byte	32
- 1013 03dc 01       		.byte	1
- 1014 03dd 0F       		.byte	15
- 1015 03de 00       		.byte	0
- 1016 03df 00       		.byte	0
- 1017 03e0 00       		.byte	0
- 1018 03e1 00       		.byte	0
- 1019 03e2 00       		.byte	0
- 1020 03e3 01       		.byte	1
- 1021 03e4 04       		.byte	4
- 1022 03e5 00       		.byte	0
- 1023 03e6 08       		.byte	8
- 1024 03e7 08       		.byte	8
- 1025 03e8 02       		.byte	2
- 1026 03e9 07       		.byte	7
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccHLZkai.s 			page 19
+ 970 03b1 C0       		.byte	-64
+ 971 03b2 47       		.byte	71
+ 972 03b3 0E       		.byte	14
+ 973 03b4 48       		.byte	72
+ 974 03b5 19       		.byte	25
+ 975 03b6 49       		.byte	73
+ 976 03b7 FF       		.byte	-1
+ 977 03b8 4A       		.byte	74
+ 978 03b9 FF       		.byte	-1
+ 979 03ba 4B       		.byte	75
+ 980 03bb FF       		.byte	-1
+ 981 03bc 4E       		.byte	78
+ 982 03bd F0       		.byte	-16
+ 983 03be 4F       		.byte	79
+ 984 03bf 44       		.byte	68
+ 985 03c0 50       		.byte	80
+ 986 03c1 0C       		.byte	12
+ 987 03c2 54       		.byte	84
+ 988 03c3 01       		.byte	1
+ 989 03c4 58       		.byte	88
+ 990 03c5 04       		.byte	4
+ 991 03c6 59       		.byte	89
+ 992 03c7 04       		.byte	4
+ 993 03c8 5A       		.byte	90
+ 994 03c9 04       		.byte	4
+ 995 03ca 5B       		.byte	91
+ 996 03cb 04       		.byte	4
+ 997 03cc 5F       		.byte	95
+ 998 03cd 01       		.byte	1
+ 999 03ce 66       		.byte	102
+ 1000 03cf C0       		.byte	-64
+ 1001 03d0 6A       		.byte	106
+ 1002 03d1 40       		.byte	64
+ 1003 03d2 6B       		.byte	107
+ 1004 03d3 02       		.byte	2
+ 1005 03d4 87       		.byte	-121
+ 1006 03d5 02       		.byte	2
+ 1007 03d6 8B       		.byte	-117
+ 1008 03d7 01       		.byte	1
+ 1009 03d8 90       		.byte	-112
+ 1010 03d9 01       		.byte	1
+ 1011 03da 94       		.byte	-108
+ 1012 03db 02       		.byte	2
+ 1013 03dc 95       		.byte	-107
+ 1014 03dd 06       		.byte	6
+ 1015 03de 97       		.byte	-105
+ 1016 03df 01       		.byte	1
+ 1017 03e0 9C       		.byte	-100
+ 1018 03e1 01       		.byte	1
+ 1019 03e2 9F       		.byte	-97
+ 1020 03e3 03       		.byte	3
+ 1021 03e4 A3       		.byte	-93
+ 1022 03e5 06       		.byte	6
+ 1023 03e6 A6       		.byte	-90
+ 1024 03e7 01       		.byte	1
+ 1025 03e8 AF       		.byte	-81
+ 1026 03e9 05       		.byte	5
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccokIVkg.s 			page 19
 
 
- 1027 03ea 01       		.byte	1
- 1028 03eb 30       		.byte	48
- 1029 03ec 08       		.byte	8
- 1030 03ed 00       		.byte	0
- 1031 03ee 00       		.byte	0
- 1032 03ef 02       		.byte	2
- 1033 03f0 00       		.byte	0
- 1034 03f1 00       		.byte	0
- 1035 03f2 11       		.byte	17
- 1036 03f3 44       		.byte	68
- 1037 03f4 65       		.byte	101
+ 1027 03ea B1       		.byte	-79
+ 1028 03eb 07       		.byte	7
+ 1029 03ec B6       		.byte	-74
+ 1030 03ed 03       		.byte	3
+ 1031 03ee B8       		.byte	-72
+ 1032 03ef 80       		.byte	-128
+ 1033 03f0 BB       		.byte	-69
+ 1034 03f1 02       		.byte	2
+ 1035 03f2 D8       		.byte	-40
+ 1036 03f3 04       		.byte	4
+ 1037 03f4 D9       		.byte	-39
  1038 03f5 04       		.byte	4
- 1039 03f6 02       		.byte	2
- 1040 03f7 00       		.byte	0
- 1041 03f8 01       		.byte	1
- 1042 03f9 0C       		.byte	12
- 1043 03fa 0E       		.byte	14
- 1044 03fb 00       		.byte	0
- 1045 03fc 05       		.byte	5
- 1046 03fd FF       		.byte	-1
- 1047 03fe FF       		.byte	-1
- 1048 03ff FF       		.byte	-1
- 1049 0400 62       		.byte	98
- 1050 0401 A0       		.byte	-96
- 1051 0402 F0       		.byte	-16
- 1052 0403 41       		.byte	65
- 1053 0404 0C       		.byte	12
- 1054 0405 00       		.byte	0
- 1055 0406 00       		.byte	0
- 1056 0407 00       		.byte	0
- 1057 0408 00       		.byte	0
- 1058 0409 00       		.byte	0
- 1059 040a 02       		.byte	2
- 1060 040b 12       		.byte	18
- 1061 040c 04       		.byte	4
- 1062 040d 04       		.byte	4
- 1063 040e 04       		.byte	4
+ 1039 03f6 DF       		.byte	-33
+ 1040 03f7 01       		.byte	1
+ 1041 03f8 00       		.byte	0
+ 1042 03f9 12       		.byte	18
+ 1043 03fa 01       		.byte	1
+ 1044 03fb 80       		.byte	-128
+ 1045 03fc 04       		.byte	4
+ 1046 03fd 20       		.byte	32
+ 1047 03fe 05       		.byte	5
+ 1048 03ff 20       		.byte	32
+ 1049 0400 08       		.byte	8
+ 1050 0401 02       		.byte	2
+ 1051 0402 09       		.byte	9
+ 1052 0403 06       		.byte	6
+ 1053 0404 0A       		.byte	10
+ 1054 0405 01       		.byte	1
+ 1055 0406 0D       		.byte	13
+ 1056 0407 02       		.byte	2
+ 1057 0408 0E       		.byte	14
+ 1058 0409 02       		.byte	2
+ 1059 040a 0F       		.byte	15
+ 1060 040b 20       		.byte	32
+ 1061 040c 10       		.byte	16
+ 1062 040d 28       		.byte	40
+ 1063 040e 17       		.byte	23
  1064 040f 04       		.byte	4
- 1065 0410 00       		.byte	0
- 1066 0411 00       		.byte	0
- 1067 0412 00       		.byte	0
- 1068 0413 01       		.byte	1
- 1069 0414 00       		.byte	0
- 1070 0415 00       		.byte	0
- 1071 0416 00       		.byte	0
- 1072 0417 00       		.byte	0
- 1073 0418 00       		.byte	0
- 1074 0419 00       		.byte	0
- 1075 041a 40       		.byte	64
- 1076 041b 02       		.byte	2
- 1077 041c 00       		.byte	0
- 1078 041d 10       		.byte	16
- 1079 041e 30       		.byte	48
- 1080 041f 10       		.byte	16
- 1081 0420 00       		.byte	0
- 1082 0421 10       		.byte	16
- 1083 0422 10       		.byte	16
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccHLZkai.s 			page 20
+ 1065 0410 18       		.byte	24
+ 1066 0411 10       		.byte	16
+ 1067 0412 19       		.byte	25
+ 1068 0413 08       		.byte	8
+ 1069 0414 1A       		.byte	26
+ 1070 0415 40       		.byte	64
+ 1071 0416 1E       		.byte	30
+ 1072 0417 01       		.byte	1
+ 1073 0418 1F       		.byte	31
+ 1074 0419 40       		.byte	64
+ 1075 041a 22       		.byte	34
+ 1076 041b 24       		.byte	36
+ 1077 041c 23       		.byte	35
+ 1078 041d 80       		.byte	-128
+ 1079 041e 26       		.byte	38
+ 1080 041f 01       		.byte	1
+ 1081 0420 27       		.byte	39
+ 1082 0421 40       		.byte	64
+ 1083 0422 29       		.byte	41
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccokIVkg.s 			page 20
 
 
- 1084 0423 12       		.byte	18
- 1085 0424 00       		.byte	0
- 1086 0425 00       		.byte	0
- 1087 0426 00       		.byte	0
- 1088 0427 00       		.byte	0
- 1089 0428 00       		.byte	0
- 1090 0429 00       		.byte	0
- 1091 042a 00       		.byte	0
- 1092 042b 00       		.byte	0
- 1093 042c 00       		.byte	0
- 1094 042d 00       		.byte	0
- 1095 042e 00       		.byte	0
- 1096 042f 00       		.byte	0
- 1097 0430 00       		.byte	0
- 1098 0431 00       		.byte	0
- 1099 0432 00       		.byte	0
- 1100 0433 00       		.byte	0
- 1101 0434 40       		.byte	64
- 1102 0435 80       		.byte	-128
- 1103 0436 80       		.byte	-128
- 1104 0437 00       		.byte	0
- 1105 0438 00       		.byte	0
- 1106 0439 00       		.byte	0
- 1107 043a 00       		.byte	0
- 1108 043b 00       		.byte	0
- 1109 043c 80       		.byte	-128
- 1110 043d 00       		.byte	0
- 1111 043e 40       		.byte	64
- 1112 043f 80       		.byte	-128
- 1113 0440 80       		.byte	-128
- 1114 0441 00       		.byte	0
- 1115 0442 80       		.byte	-128
- 1116 0443 00       		.byte	0
- 1117 0444 00       		.byte	0
- 1118 0445 00       		.byte	0
- 1119 0446 00       		.byte	0
- 1120 0447 00       		.byte	0
- 1121 0448 00       		.byte	0
- 1122 0449 0B       		.byte	11
- 1123 044a 0B       		.byte	11
- 1124 044b 00       		.byte	0
- 1125 044c 00       		.byte	0
- 1126 044d 00       		.byte	0
- 1127 044e 00       		.byte	0
- 1128 044f 00       		.byte	0
- 1129              		.global	cy_meta_custnvl
- 1130              		.section	.cycustnvl,"a",%progbits
- 1131              		.align	2
- 1132              		.type	cy_meta_custnvl, %object
- 1133              		.size	cy_meta_custnvl, 4
- 1134              	cy_meta_custnvl:
- 1135 0000 00       		.byte	0
- 1136 0001 00       		.byte	0
- 1137 0002 40       		.byte	64
- 1138 0003 05       		.byte	5
- 1139              		.global	cy_meta_wonvl
- 1140              		.section	.cywolatch,"a",%progbits
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccHLZkai.s 			page 21
+ 1084 0423 08       		.byte	8
+ 1085 0424 2B       		.byte	43
+ 1086 0425 08       		.byte	8
+ 1087 0426 2F       		.byte	47
+ 1088 0427 42       		.byte	66
+ 1089 0428 30       		.byte	48
+ 1090 0429 08       		.byte	8
+ 1091 042a 31       		.byte	49
+ 1092 042b 02       		.byte	2
+ 1093 042c 33       		.byte	51
+ 1094 042d 46       		.byte	70
+ 1095 042e 35       		.byte	53
+ 1096 042f 80       		.byte	-128
+ 1097 0430 37       		.byte	55
+ 1098 0431 44       		.byte	68
+ 1099 0432 38       		.byte	56
+ 1100 0433 20       		.byte	32
+ 1101 0434 39       		.byte	57
+ 1102 0435 08       		.byte	8
+ 1103 0436 3D       		.byte	61
+ 1104 0437 08       		.byte	8
+ 1105 0438 3F       		.byte	63
+ 1106 0439 28       		.byte	40
+ 1107 043a 40       		.byte	64
+ 1108 043b 02       		.byte	2
+ 1109 043c 41       		.byte	65
+ 1110 043d 04       		.byte	4
+ 1111 043e 48       		.byte	72
+ 1112 043f 20       		.byte	32
+ 1113 0440 4A       		.byte	74
+ 1114 0441 01       		.byte	1
+ 1115 0442 50       		.byte	80
+ 1116 0443 10       		.byte	16
+ 1117 0444 53       		.byte	83
+ 1118 0445 08       		.byte	8
+ 1119 0446 59       		.byte	89
+ 1120 0447 20       		.byte	32
+ 1121 0448 5A       		.byte	90
+ 1122 0449 0A       		.byte	10
+ 1123 044a 5B       		.byte	91
+ 1124 044b 80       		.byte	-128
+ 1125 044c 82       		.byte	-126
+ 1126 044d 20       		.byte	32
+ 1127 044e 86       		.byte	-122
+ 1128 044f 01       		.byte	1
+ 1129 0450 87       		.byte	-121
+ 1130 0451 08       		.byte	8
+ 1131 0452 88       		.byte	-120
+ 1132 0453 01       		.byte	1
+ 1133 0454 91       		.byte	-111
+ 1134 0455 08       		.byte	8
+ 1135 0456 94       		.byte	-108
+ 1136 0457 20       		.byte	32
+ 1137 0458 96       		.byte	-106
+ 1138 0459 40       		.byte	64
+ 1139 045a 97       		.byte	-105
+ 1140 045b 80       		.byte	-128
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccokIVkg.s 			page 21
 
 
- 1141              		.align	2
- 1142              		.type	cy_meta_wonvl, %object
- 1143              		.size	cy_meta_wonvl, 4
- 1144              	cy_meta_wonvl:
- 1145 0000 BC       		.byte	-68
- 1146 0001 90       		.byte	-112
- 1147 0002 AC       		.byte	-84
- 1148 0003 AF       		.byte	-81
- 1149              		.global	cy_meta_flashprotect
- 1150              		.section	.cyflashprotect,"a",%progbits
- 1151              		.align	2
- 1152              		.type	cy_meta_flashprotect, %object
- 1153              		.size	cy_meta_flashprotect, 256
- 1154              	cy_meta_flashprotect:
- 1155 0000 00000000 		.space	256
- 1155      00000000 
- 1155      00000000 
- 1155      00000000 
- 1155      00000000 
- 1156              		.global	cy_metadata
- 1157              		.section	.cymeta,"a",%progbits
- 1158              		.align	2
- 1159              		.type	cy_metadata, %object
- 1160              		.size	cy_metadata, 12
- 1161              	cy_metadata:
- 1162 0000 00       		.byte	0
- 1163 0001 01       		.byte	1
- 1164 0002 2E       		.byte	46
- 1165 0003 16       		.byte	22
- 1166 0004 10       		.byte	16
- 1167 0005 69       		.byte	105
- 1168 0006 00       		.byte	0
- 1169 0007 01       		.byte	1
- 1170 0008 00       		.byte	0
- 1171 0009 00       		.byte	0
- 1172 000a 00       		.byte	0
- 1173 000b 00       		.byte	0
- 1174              		.text
- 1175              	.Letext0:
- 1176              		.file 1 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
- 1177              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
- 1178              		.file 3 "Generated_Source\\PSoC5\\cymetadata.c"
- 1179              		.section	.debug_info,"",%progbits
- 1180              	.Ldebug_info0:
- 1181 0000 31010000 		.4byte	0x131
- 1182 0004 0400     		.2byte	0x4
- 1183 0006 00000000 		.4byte	.Ldebug_abbrev0
- 1184 000a 04       		.byte	0x4
- 1185 000b 01       		.uleb128 0x1
- 1186 000c 4B000000 		.4byte	.LASF17
- 1187 0010 0C       		.byte	0xc
- 1188 0011 BF010000 		.4byte	.LASF18
- 1189 0015 0A000000 		.4byte	.LASF19
- 1190 0019 00000000 		.4byte	.Ldebug_line0
- 1191 001d 02       		.uleb128 0x2
- 1192 001e 01       		.byte	0x1
- 1193 001f 06       		.byte	0x6
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccHLZkai.s 			page 22
+ 1141 045c 9B       		.byte	-101
+ 1142 045d 04       		.byte	4
+ 1143 045e 9F       		.byte	-97
+ 1144 045f 40       		.byte	64
+ 1145 0460 A1       		.byte	-95
+ 1146 0461 02       		.byte	2
+ 1147 0462 A3       		.byte	-93
+ 1148 0463 14       		.byte	20
+ 1149 0464 A4       		.byte	-92
+ 1150 0465 01       		.byte	1
+ 1151 0466 AF       		.byte	-81
+ 1152 0467 20       		.byte	32
+ 1153 0468 C0       		.byte	-64
+ 1154 0469 0B       		.byte	11
+ 1155 046a C2       		.byte	-62
+ 1156 046b BD       		.byte	-67
+ 1157 046c C4       		.byte	-60
+ 1158 046d 26       		.byte	38
+ 1159 046e CA       		.byte	-54
+ 1160 046f 96       		.byte	-106
+ 1161 0470 CC       		.byte	-52
+ 1162 0471 5B       		.byte	91
+ 1163 0472 CE       		.byte	-50
+ 1164 0473 66       		.byte	102
+ 1165 0474 D0       		.byte	-48
+ 1166 0475 0A       		.byte	10
+ 1167 0476 D2       		.byte	-46
+ 1168 0477 08       		.byte	8
+ 1169 0478 D6       		.byte	-42
+ 1170 0479 0F       		.byte	15
+ 1171 047a E4       		.byte	-28
+ 1172 047b 01       		.byte	1
+ 1173 047c 33       		.byte	51
+ 1174 047d 22       		.byte	34
+ 1175 047e 35       		.byte	53
+ 1176 047f 80       		.byte	-128
+ 1177 0480 CC       		.byte	-52
+ 1178 0481 70       		.byte	112
+ 1179 0482 9D       		.byte	-99
+ 1180 0483 80       		.byte	-128
+ 1181 0484 A7       		.byte	-89
+ 1182 0485 22       		.byte	34
+ 1183 0486 81       		.byte	-127
+ 1184 0487 80       		.byte	-128
+ 1185 0488 9D       		.byte	-99
+ 1186 0489 80       		.byte	-128
+ 1187 048a A7       		.byte	-89
+ 1188 048b 22       		.byte	34
+ 1189 048c E2       		.byte	-30
+ 1190 048d 20       		.byte	32
+ 1191 048e A7       		.byte	-89
+ 1192 048f 22       		.byte	34
+ 1193 0490 A7       		.byte	-89
+ 1194 0491 22       		.byte	34
+ 1195 0492 AF       		.byte	-81
+ 1196 0493 22       		.byte	34
+ 1197 0494 EA       		.byte	-22
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccokIVkg.s 			page 22
 
 
- 1194 0020 B3010000 		.4byte	.LASF0
- 1195 0024 03       		.uleb128 0x3
- 1196 0025 00000000 		.4byte	.LASF9
- 1197 0029 01       		.byte	0x1
- 1198 002a 1D       		.byte	0x1d
- 1199 002b 2F000000 		.4byte	0x2f
- 1200 002f 02       		.uleb128 0x2
- 1201 0030 01       		.byte	0x1
- 1202 0031 08       		.byte	0x8
- 1203 0032 E5000000 		.4byte	.LASF1
- 1204 0036 02       		.uleb128 0x2
- 1205 0037 02       		.byte	0x2
- 1206 0038 05       		.byte	0x5
- 1207 0039 A0010000 		.4byte	.LASF2
- 1208 003d 02       		.uleb128 0x2
- 1209 003e 02       		.byte	0x2
- 1210 003f 07       		.byte	0x7
- 1211 0040 05010000 		.4byte	.LASF3
- 1212 0044 02       		.uleb128 0x2
- 1213 0045 04       		.byte	0x4
- 1214 0046 05       		.byte	0x5
- 1215 0047 AA010000 		.4byte	.LASF4
- 1216 004b 02       		.uleb128 0x2
- 1217 004c 04       		.byte	0x4
- 1218 004d 07       		.byte	0x7
- 1219 004e F3000000 		.4byte	.LASF5
- 1220 0052 02       		.uleb128 0x2
- 1221 0053 08       		.byte	0x8
- 1222 0054 05       		.byte	0x5
- 1223 0055 92010000 		.4byte	.LASF6
- 1224 0059 02       		.uleb128 0x2
- 1225 005a 08       		.byte	0x8
- 1226 005b 07       		.byte	0x7
- 1227 005c 47010000 		.4byte	.LASF7
- 1228 0060 04       		.uleb128 0x4
- 1229 0061 04       		.byte	0x4
- 1230 0062 05       		.byte	0x5
- 1231 0063 696E7400 		.ascii	"int\000"
- 1232 0067 02       		.uleb128 0x2
- 1233 0068 04       		.byte	0x4
- 1234 0069 07       		.byte	0x7
- 1235 006a 3A010000 		.4byte	.LASF8
- 1236 006e 03       		.uleb128 0x3
- 1237 006f 5E010000 		.4byte	.LASF10
- 1238 0073 02       		.byte	0x2
- 1239 0074 18       		.byte	0x18
- 1240 0075 24000000 		.4byte	0x24
- 1241 0079 05       		.uleb128 0x5
- 1242 007a 91000000 		.4byte	0x91
- 1243 007e 8A000000 		.4byte	0x8a
- 1244 0082 06       		.uleb128 0x6
- 1245 0083 8A000000 		.4byte	0x8a
- 1246 0087 4F04     		.2byte	0x44f
- 1247 0089 00       		.byte	0
- 1248 008a 02       		.uleb128 0x2
- 1249 008b 04       		.byte	0x4
- 1250 008c 07       		.byte	0x7
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccHLZkai.s 			page 23
+ 1198 0495 10       		.byte	16
+ 1199 0496 EE       		.byte	-18
+ 1200 0497 10       		.byte	16
+ 1201 0498 10       		.byte	16
+ 1202 0499 40       		.byte	64
+ 1203 049a 70       		.byte	112
+ 1204 049b 04       		.byte	4
+ 1205 049c 80       		.byte	-128
+ 1206 049d 04       		.byte	4
+ 1207 049e 88       		.byte	-120
+ 1208 049f 40       		.byte	64
+ 1209 04a0 C4       		.byte	-60
+ 1210 04a1 08       		.byte	8
+ 1211 04a2 DC       		.byte	-36
+ 1212 04a3 01       		.byte	1
+ 1213 04a4 E2       		.byte	-30
+ 1214 04a5 01       		.byte	1
+ 1215 04a6 00       		.byte	0
+ 1216 04a7 01       		.byte	1
+ 1217 04a8 0C       		.byte	12
+ 1218 04a9 01       		.byte	1
+ 1219 04aa 10       		.byte	16
+ 1220 04ab 03       		.byte	3
+ 1221 04ac 11       		.byte	17
+ 1222 04ad 01       		.byte	1
+ 1223 04ae 1A       		.byte	26
+ 1224 04af 02       		.byte	2
+ 1225 04b0 1C       		.byte	28
+ 1226 04b1 01       		.byte	1
+ 1227 04b2 1D       		.byte	29
+ 1228 04b3 01       		.byte	1
+ 1229 04b4 00       		.byte	0
+ 1230 04b5 3F       		.byte	63
+ 1231 04b6 00       		.byte	0
+ 1232 04b7 00       		.byte	0
+ 1233 04b8 00       		.byte	0
+ 1234 04b9 00       		.byte	0
+ 1235 04ba C3       		.byte	-61
+ 1236 04bb 00       		.byte	0
+ 1237 04bc FF       		.byte	-1
+ 1238 04bd 04       		.byte	4
+ 1239 04be 00       		.byte	0
+ 1240 04bf 00       		.byte	0
+ 1241 04c0 3C       		.byte	60
+ 1242 04c1 04       		.byte	4
+ 1243 04c2 C2       		.byte	-62
+ 1244 04c3 00       		.byte	0
+ 1245 04c4 80       		.byte	-128
+ 1246 04c5 02       		.byte	2
+ 1247 04c6 00       		.byte	0
+ 1248 04c7 00       		.byte	0
+ 1249 04c8 00       		.byte	0
+ 1250 04c9 00       		.byte	0
+ 1251 04ca 04       		.byte	4
+ 1252 04cb 00       		.byte	0
+ 1253 04cc 18       		.byte	24
+ 1254 04cd 00       		.byte	0
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccokIVkg.s 			page 23
 
 
- 1251 008d 89010000 		.4byte	.LASF11
- 1252 0091 07       		.uleb128 0x7
- 1253 0092 6E000000 		.4byte	0x6e
- 1254 0096 08       		.uleb128 0x8
- 1255 0097 28010000 		.4byte	.LASF12
- 1256 009b 03       		.byte	0x3
- 1257 009c 1F       		.byte	0x1f
- 1258 009d A7000000 		.4byte	0xa7
- 1259 00a1 05       		.uleb128 0x5
- 1260 00a2 03       		.byte	0x3
- 1261 00a3 00000000 		.4byte	cy_meta_configecc
- 1262 00a7 07       		.uleb128 0x7
- 1263 00a8 79000000 		.4byte	0x79
- 1264 00ac 05       		.uleb128 0x5
- 1265 00ad 91000000 		.4byte	0x91
- 1266 00b1 BC000000 		.4byte	0xbc
- 1267 00b5 09       		.uleb128 0x9
- 1268 00b6 8A000000 		.4byte	0x8a
- 1269 00ba 03       		.byte	0x3
- 1270 00bb 00       		.byte	0
- 1271 00bc 08       		.uleb128 0x8
- 1272 00bd 18010000 		.4byte	.LASF13
- 1273 00c1 03       		.byte	0x3
- 1274 00c2 B6       		.byte	0xb6
- 1275 00c3 CD000000 		.4byte	0xcd
- 1276 00c7 05       		.uleb128 0x5
- 1277 00c8 03       		.byte	0x3
- 1278 00c9 00000000 		.4byte	cy_meta_custnvl
- 1279 00cd 07       		.uleb128 0x7
- 1280 00ce AC000000 		.4byte	0xac
- 1281 00d2 08       		.uleb128 0x8
- 1282 00d3 7B010000 		.4byte	.LASF14
- 1283 00d7 03       		.byte	0x3
- 1284 00d8 C4       		.byte	0xc4
- 1285 00d9 E3000000 		.4byte	0xe3
- 1286 00dd 05       		.uleb128 0x5
- 1287 00de 03       		.byte	0x3
- 1288 00df 00000000 		.4byte	cy_meta_wonvl
- 1289 00e3 07       		.uleb128 0x7
- 1290 00e4 AC000000 		.4byte	0xac
- 1291 00e8 05       		.uleb128 0x5
- 1292 00e9 91000000 		.4byte	0x91
- 1293 00ed F8000000 		.4byte	0xf8
- 1294 00f1 09       		.uleb128 0x9
- 1295 00f2 8A000000 		.4byte	0x8a
- 1296 00f6 FF       		.byte	0xff
- 1297 00f7 00       		.byte	0
- 1298 00f8 08       		.uleb128 0x8
- 1299 00f9 66010000 		.4byte	.LASF15
- 1300 00fd 03       		.byte	0x3
- 1301 00fe D2       		.byte	0xd2
- 1302 00ff 09010000 		.4byte	0x109
- 1303 0103 05       		.uleb128 0x5
- 1304 0104 03       		.byte	0x3
- 1305 0105 00000000 		.4byte	cy_meta_flashprotect
- 1306 0109 07       		.uleb128 0x7
- 1307 010a E8000000 		.4byte	0xe8
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccHLZkai.s 			page 24
+ 1255 04ce 00       		.byte	0
+ 1256 04cf 01       		.byte	1
+ 1257 04d0 08       		.byte	8
+ 1258 04d1 02       		.byte	2
+ 1259 04d2 00       		.byte	0
+ 1260 04d3 00       		.byte	0
+ 1261 04d4 10       		.byte	16
+ 1262 04d5 04       		.byte	4
+ 1263 04d6 00       		.byte	0
+ 1264 04d7 00       		.byte	0
+ 1265 04d8 44       		.byte	68
+ 1266 04d9 00       		.byte	0
+ 1267 04da 00       		.byte	0
+ 1268 04db 00       		.byte	0
+ 1269 04dc C0       		.byte	-64
+ 1270 04dd 00       		.byte	0
+ 1271 04de 00       		.byte	0
+ 1272 04df 02       		.byte	2
+ 1273 04e0 E7       		.byte	-25
+ 1274 04e1 00       		.byte	0
+ 1275 04e2 18       		.byte	24
+ 1276 04e3 01       		.byte	1
+ 1277 04e4 3C       		.byte	60
+ 1278 04e5 00       		.byte	0
+ 1279 04e6 C1       		.byte	-63
+ 1280 04e7 02       		.byte	2
+ 1281 04e8 C0       		.byte	-64
+ 1282 04e9 00       		.byte	0
+ 1283 04ea 1F       		.byte	31
+ 1284 04eb 02       		.byte	2
+ 1285 04ec 20       		.byte	32
+ 1286 04ed 01       		.byte	1
+ 1287 04ee 00       		.byte	0
+ 1288 04ef 04       		.byte	4
+ 1289 04f0 00       		.byte	0
+ 1290 04f1 08       		.byte	8
+ 1291 04f2 08       		.byte	8
+ 1292 04f3 00       		.byte	0
+ 1293 04f4 00       		.byte	0
+ 1294 04f5 00       		.byte	0
+ 1295 04f6 10       		.byte	16
+ 1296 04f7 10       		.byte	16
+ 1297 04f8 45       		.byte	69
+ 1298 04f9 02       		.byte	2
+ 1299 04fa 06       		.byte	6
+ 1300 04fb 00       		.byte	0
+ 1301 04fc 01       		.byte	1
+ 1302 04fd 00       		.byte	0
+ 1303 04fe E0       		.byte	-32
+ 1304 04ff 0C       		.byte	12
+ 1305 0500 18       		.byte	24
+ 1306 0501 FF       		.byte	-1
+ 1307 0502 FF       		.byte	-1
+ 1308 0503 FF       		.byte	-1
+ 1309 0504 62       		.byte	98
+ 1310 0505 A0       		.byte	-96
+ 1311 0506 F0       		.byte	-16
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccokIVkg.s 			page 24
 
 
- 1308 010e 05       		.uleb128 0x5
- 1309 010f 91000000 		.4byte	0x91
- 1310 0113 1E010000 		.4byte	0x11e
- 1311 0117 09       		.uleb128 0x9
- 1312 0118 8A000000 		.4byte	0x8a
- 1313 011c 0B       		.byte	0xb
- 1314 011d 00       		.byte	0
- 1315 011e 08       		.uleb128 0x8
- 1316 011f D9000000 		.4byte	.LASF16
- 1317 0123 03       		.byte	0x3
- 1318 0124 FF       		.byte	0xff
- 1319 0125 2F010000 		.4byte	0x12f
- 1320 0129 05       		.uleb128 0x5
- 1321 012a 03       		.byte	0x3
- 1322 012b 00000000 		.4byte	cy_metadata
- 1323 012f 07       		.uleb128 0x7
- 1324 0130 0E010000 		.4byte	0x10e
- 1325 0134 00       		.byte	0
- 1326              		.section	.debug_abbrev,"",%progbits
- 1327              	.Ldebug_abbrev0:
- 1328 0000 01       		.uleb128 0x1
- 1329 0001 11       		.uleb128 0x11
- 1330 0002 01       		.byte	0x1
- 1331 0003 25       		.uleb128 0x25
- 1332 0004 0E       		.uleb128 0xe
- 1333 0005 13       		.uleb128 0x13
- 1334 0006 0B       		.uleb128 0xb
- 1335 0007 03       		.uleb128 0x3
- 1336 0008 0E       		.uleb128 0xe
- 1337 0009 1B       		.uleb128 0x1b
- 1338 000a 0E       		.uleb128 0xe
- 1339 000b 10       		.uleb128 0x10
- 1340 000c 17       		.uleb128 0x17
- 1341 000d 00       		.byte	0
- 1342 000e 00       		.byte	0
- 1343 000f 02       		.uleb128 0x2
- 1344 0010 24       		.uleb128 0x24
- 1345 0011 00       		.byte	0
- 1346 0012 0B       		.uleb128 0xb
- 1347 0013 0B       		.uleb128 0xb
- 1348 0014 3E       		.uleb128 0x3e
- 1349 0015 0B       		.uleb128 0xb
- 1350 0016 03       		.uleb128 0x3
- 1351 0017 0E       		.uleb128 0xe
- 1352 0018 00       		.byte	0
- 1353 0019 00       		.byte	0
- 1354 001a 03       		.uleb128 0x3
- 1355 001b 16       		.uleb128 0x16
- 1356 001c 00       		.byte	0
- 1357 001d 03       		.uleb128 0x3
- 1358 001e 0E       		.uleb128 0xe
- 1359 001f 3A       		.uleb128 0x3a
- 1360 0020 0B       		.uleb128 0xb
- 1361 0021 3B       		.uleb128 0x3b
- 1362 0022 0B       		.uleb128 0xb
- 1363 0023 49       		.uleb128 0x49
- 1364 0024 13       		.uleb128 0x13
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccHLZkai.s 			page 25
+ 1312 0507 41       		.byte	65
+ 1313 0508 0C       		.byte	12
+ 1314 0509 00       		.byte	0
+ 1315 050a 00       		.byte	0
+ 1316 050b 00       		.byte	0
+ 1317 050c 00       		.byte	0
+ 1318 050d 00       		.byte	0
+ 1319 050e 02       		.byte	2
+ 1320 050f 11       		.byte	17
+ 1321 0510 04       		.byte	4
+ 1322 0511 04       		.byte	4
+ 1323 0512 04       		.byte	4
+ 1324 0513 04       		.byte	4
+ 1325 0514 00       		.byte	0
+ 1326 0515 00       		.byte	0
+ 1327 0516 00       		.byte	0
+ 1328 0517 01       		.byte	1
+ 1329 0518 00       		.byte	0
+ 1330 0519 00       		.byte	0
+ 1331 051a 00       		.byte	0
+ 1332 051b 00       		.byte	0
+ 1333 051c 00       		.byte	0
+ 1334 051d 00       		.byte	0
+ 1335 051e 40       		.byte	64
+ 1336 051f 02       		.byte	2
+ 1337 0520 00       		.byte	0
+ 1338 0521 10       		.byte	16
+ 1339 0522 30       		.byte	48
+ 1340 0523 10       		.byte	16
+ 1341 0524 00       		.byte	0
+ 1342 0525 10       		.byte	16
+ 1343 0526 10       		.byte	16
+ 1344 0527 12       		.byte	18
+ 1345 0528 00       		.byte	0
+ 1346 0529 00       		.byte	0
+ 1347 052a 00       		.byte	0
+ 1348 052b 00       		.byte	0
+ 1349 052c 00       		.byte	0
+ 1350 052d 00       		.byte	0
+ 1351 052e 00       		.byte	0
+ 1352 052f 00       		.byte	0
+ 1353 0530 00       		.byte	0
+ 1354 0531 00       		.byte	0
+ 1355 0532 00       		.byte	0
+ 1356 0533 00       		.byte	0
+ 1357 0534 00       		.byte	0
+ 1358 0535 00       		.byte	0
+ 1359 0536 00       		.byte	0
+ 1360 0537 00       		.byte	0
+ 1361 0538 40       		.byte	64
+ 1362 0539 80       		.byte	-128
+ 1363 053a 80       		.byte	-128
+ 1364 053b 00       		.byte	0
+ 1365 053c 00       		.byte	0
+ 1366 053d 00       		.byte	0
+ 1367 053e 00       		.byte	0
+ 1368 053f 00       		.byte	0
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccokIVkg.s 			page 25
 
 
- 1365 0025 00       		.byte	0
- 1366 0026 00       		.byte	0
- 1367 0027 04       		.uleb128 0x4
- 1368 0028 24       		.uleb128 0x24
- 1369 0029 00       		.byte	0
- 1370 002a 0B       		.uleb128 0xb
- 1371 002b 0B       		.uleb128 0xb
- 1372 002c 3E       		.uleb128 0x3e
- 1373 002d 0B       		.uleb128 0xb
- 1374 002e 03       		.uleb128 0x3
- 1375 002f 08       		.uleb128 0x8
- 1376 0030 00       		.byte	0
- 1377 0031 00       		.byte	0
- 1378 0032 05       		.uleb128 0x5
- 1379 0033 01       		.uleb128 0x1
- 1380 0034 01       		.byte	0x1
- 1381 0035 49       		.uleb128 0x49
- 1382 0036 13       		.uleb128 0x13
- 1383 0037 01       		.uleb128 0x1
- 1384 0038 13       		.uleb128 0x13
- 1385 0039 00       		.byte	0
- 1386 003a 00       		.byte	0
- 1387 003b 06       		.uleb128 0x6
- 1388 003c 21       		.uleb128 0x21
- 1389 003d 00       		.byte	0
- 1390 003e 49       		.uleb128 0x49
- 1391 003f 13       		.uleb128 0x13
- 1392 0040 2F       		.uleb128 0x2f
- 1393 0041 05       		.uleb128 0x5
- 1394 0042 00       		.byte	0
- 1395 0043 00       		.byte	0
- 1396 0044 07       		.uleb128 0x7
- 1397 0045 26       		.uleb128 0x26
- 1398 0046 00       		.byte	0
- 1399 0047 49       		.uleb128 0x49
- 1400 0048 13       		.uleb128 0x13
- 1401 0049 00       		.byte	0
- 1402 004a 00       		.byte	0
- 1403 004b 08       		.uleb128 0x8
- 1404 004c 34       		.uleb128 0x34
- 1405 004d 00       		.byte	0
- 1406 004e 03       		.uleb128 0x3
- 1407 004f 0E       		.uleb128 0xe
- 1408 0050 3A       		.uleb128 0x3a
- 1409 0051 0B       		.uleb128 0xb
- 1410 0052 3B       		.uleb128 0x3b
- 1411 0053 0B       		.uleb128 0xb
- 1412 0054 49       		.uleb128 0x49
- 1413 0055 13       		.uleb128 0x13
- 1414 0056 3F       		.uleb128 0x3f
- 1415 0057 19       		.uleb128 0x19
- 1416 0058 02       		.uleb128 0x2
- 1417 0059 18       		.uleb128 0x18
- 1418 005a 00       		.byte	0
- 1419 005b 00       		.byte	0
- 1420 005c 09       		.uleb128 0x9
- 1421 005d 21       		.uleb128 0x21
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccHLZkai.s 			page 26
+ 1369 0540 80       		.byte	-128
+ 1370 0541 00       		.byte	0
+ 1371 0542 40       		.byte	64
+ 1372 0543 80       		.byte	-128
+ 1373 0544 80       		.byte	-128
+ 1374 0545 00       		.byte	0
+ 1375 0546 80       		.byte	-128
+ 1376 0547 00       		.byte	0
+ 1377 0548 00       		.byte	0
+ 1378 0549 00       		.byte	0
+ 1379 054a 00       		.byte	0
+ 1380 054b 00       		.byte	0
+ 1381 054c 00       		.byte	0
+ 1382 054d 0B       		.byte	11
+ 1383 054e 0B       		.byte	11
+ 1384 054f 00       		.byte	0
+ 1385 0550 00       		.byte	0
+ 1386 0551 00       		.byte	0
+ 1387 0552 00       		.byte	0
+ 1388 0553 00       		.byte	0
+ 1389              		.global	cy_meta_custnvl
+ 1390              		.section	.cycustnvl,"a",%progbits
+ 1391              		.align	2
+ 1392              		.type	cy_meta_custnvl, %object
+ 1393              		.size	cy_meta_custnvl, 4
+ 1394              	cy_meta_custnvl:
+ 1395 0000 00       		.byte	0
+ 1396 0001 00       		.byte	0
+ 1397 0002 40       		.byte	64
+ 1398 0003 05       		.byte	5
+ 1399              		.global	cy_meta_wonvl
+ 1400              		.section	.cywolatch,"a",%progbits
+ 1401              		.align	2
+ 1402              		.type	cy_meta_wonvl, %object
+ 1403              		.size	cy_meta_wonvl, 4
+ 1404              	cy_meta_wonvl:
+ 1405 0000 BC       		.byte	-68
+ 1406 0001 90       		.byte	-112
+ 1407 0002 AC       		.byte	-84
+ 1408 0003 AF       		.byte	-81
+ 1409              		.global	cy_meta_flashprotect
+ 1410              		.section	.cyflashprotect,"a",%progbits
+ 1411              		.align	2
+ 1412              		.type	cy_meta_flashprotect, %object
+ 1413              		.size	cy_meta_flashprotect, 256
+ 1414              	cy_meta_flashprotect:
+ 1415 0000 00000000 		.space	256
+ 1415      00000000 
+ 1415      00000000 
+ 1415      00000000 
+ 1415      00000000 
+ 1416              		.global	cy_metadata
+ 1417              		.section	.cymeta,"a",%progbits
+ 1418              		.align	2
+ 1419              		.type	cy_metadata, %object
+ 1420              		.size	cy_metadata, 12
+ 1421              	cy_metadata:
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccokIVkg.s 			page 26
 
 
- 1422 005e 00       		.byte	0
- 1423 005f 49       		.uleb128 0x49
- 1424 0060 13       		.uleb128 0x13
- 1425 0061 2F       		.uleb128 0x2f
- 1426 0062 0B       		.uleb128 0xb
- 1427 0063 00       		.byte	0
- 1428 0064 00       		.byte	0
- 1429 0065 00       		.byte	0
- 1430              		.section	.debug_aranges,"",%progbits
- 1431 0000 14000000 		.4byte	0x14
- 1432 0004 0200     		.2byte	0x2
- 1433 0006 00000000 		.4byte	.Ldebug_info0
- 1434 000a 04       		.byte	0x4
- 1435 000b 00       		.byte	0
- 1436 000c 0000     		.2byte	0
- 1437 000e 0000     		.2byte	0
- 1438 0010 00000000 		.4byte	0
- 1439 0014 00000000 		.4byte	0
- 1440              		.section	.debug_line,"",%progbits
- 1441              	.Ldebug_line0:
- 1442 0000 3D010000 		.section	.debug_str,"MS",%progbits,1
- 1442      02003701 
- 1442      00000201 
- 1442      FB0E0D00 
- 1442      01010101 
- 1443              	.LASF9:
- 1444 0000 5F5F7569 		.ascii	"__uint8_t\000"
- 1444      6E74385F 
- 1444      7400
- 1445              	.LASF19:
- 1446 000a 433A5C55 		.ascii	"C:\\Users\\cring\\Documents\\GitHub\\PRJ4\\Tryksens"
- 1446      73657273 
- 1446      5C637269 
- 1446      6E675C44 
- 1446      6F63756D 
- 1447 0037 6F725C54 		.ascii	"or\\Tryksensor.cydsn\000"
- 1447      72796B73 
- 1447      656E736F 
- 1447      722E6379 
- 1447      64736E00 
- 1448              	.LASF17:
- 1449 004b 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 1449      43313120 
- 1449      352E342E 
- 1449      31203230 
- 1449      31363036 
- 1450 007e 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
- 1450      20726576 
- 1450      6973696F 
- 1450      6E203233 
- 1450      37373135 
- 1451 00b1 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
- 1451      66756E63 
- 1451      74696F6E 
- 1451      2D736563 
- 1451      74696F6E 
- 1452              	.LASF16:
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccHLZkai.s 			page 27
+ 1422 0000 00       		.byte	0
+ 1423 0001 01       		.byte	1
+ 1424 0002 2E       		.byte	46
+ 1425 0003 16       		.byte	22
+ 1426 0004 10       		.byte	16
+ 1427 0005 69       		.byte	105
+ 1428 0006 00       		.byte	0
+ 1429 0007 01       		.byte	1
+ 1430 0008 00       		.byte	0
+ 1431 0009 00       		.byte	0
+ 1432 000a 00       		.byte	0
+ 1433 000b 00       		.byte	0
+ 1434              		.text
+ 1435              	.Letext0:
+ 1436              		.file 1 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
+ 1437              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
+ 1438              		.file 3 "Generated_Source\\PSoC5\\cymetadata.c"
+ 1439              		.section	.debug_info,"",%progbits
+ 1440              	.Ldebug_info0:
+ 1441 0000 32010000 		.4byte	0x132
+ 1442 0004 0400     		.2byte	0x4
+ 1443 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 1444 000a 04       		.byte	0x4
+ 1445 000b 01       		.uleb128 0x1
+ 1446 000c 4B000000 		.4byte	.LASF17
+ 1447 0010 0C       		.byte	0xc
+ 1448 0011 BF010000 		.4byte	.LASF18
+ 1449 0015 0A000000 		.4byte	.LASF19
+ 1450 0019 00000000 		.4byte	.Ldebug_line0
+ 1451 001d 02       		.uleb128 0x2
+ 1452 001e 01       		.byte	0x1
+ 1453 001f 06       		.byte	0x6
+ 1454 0020 B3010000 		.4byte	.LASF0
+ 1455 0024 03       		.uleb128 0x3
+ 1456 0025 00000000 		.4byte	.LASF9
+ 1457 0029 01       		.byte	0x1
+ 1458 002a 1D       		.byte	0x1d
+ 1459 002b 2F000000 		.4byte	0x2f
+ 1460 002f 02       		.uleb128 0x2
+ 1461 0030 01       		.byte	0x1
+ 1462 0031 08       		.byte	0x8
+ 1463 0032 E5000000 		.4byte	.LASF1
+ 1464 0036 02       		.uleb128 0x2
+ 1465 0037 02       		.byte	0x2
+ 1466 0038 05       		.byte	0x5
+ 1467 0039 A0010000 		.4byte	.LASF2
+ 1468 003d 02       		.uleb128 0x2
+ 1469 003e 02       		.byte	0x2
+ 1470 003f 07       		.byte	0x7
+ 1471 0040 05010000 		.4byte	.LASF3
+ 1472 0044 02       		.uleb128 0x2
+ 1473 0045 04       		.byte	0x4
+ 1474 0046 05       		.byte	0x5
+ 1475 0047 AA010000 		.4byte	.LASF4
+ 1476 004b 02       		.uleb128 0x2
+ 1477 004c 04       		.byte	0x4
+ 1478 004d 07       		.byte	0x7
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccokIVkg.s 			page 27
 
 
- 1453 00d9 63795F6D 		.ascii	"cy_metadata\000"
- 1453      65746164 
- 1453      61746100 
- 1454              	.LASF1:
- 1455 00e5 756E7369 		.ascii	"unsigned char\000"
- 1455      676E6564 
- 1455      20636861 
- 1455      7200
- 1456              	.LASF5:
- 1457 00f3 6C6F6E67 		.ascii	"long unsigned int\000"
- 1457      20756E73 
- 1457      69676E65 
- 1457      6420696E 
- 1457      7400
- 1458              	.LASF3:
- 1459 0105 73686F72 		.ascii	"short unsigned int\000"
- 1459      7420756E 
- 1459      7369676E 
- 1459      65642069 
- 1459      6E7400
- 1460              	.LASF13:
- 1461 0118 63795F6D 		.ascii	"cy_meta_custnvl\000"
- 1461      6574615F 
- 1461      63757374 
- 1461      6E766C00 
- 1462              	.LASF12:
- 1463 0128 63795F6D 		.ascii	"cy_meta_configecc\000"
- 1463      6574615F 
- 1463      636F6E66 
- 1463      69676563 
- 1463      6300
- 1464              	.LASF8:
- 1465 013a 756E7369 		.ascii	"unsigned int\000"
- 1465      676E6564 
- 1465      20696E74 
- 1465      00
- 1466              	.LASF7:
- 1467 0147 6C6F6E67 		.ascii	"long long unsigned int\000"
- 1467      206C6F6E 
- 1467      6720756E 
- 1467      7369676E 
- 1467      65642069 
- 1468              	.LASF10:
- 1469 015e 75696E74 		.ascii	"uint8_t\000"
- 1469      385F7400 
- 1470              	.LASF15:
- 1471 0166 63795F6D 		.ascii	"cy_meta_flashprotect\000"
- 1471      6574615F 
- 1471      666C6173 
- 1471      6870726F 
- 1471      74656374 
- 1472              	.LASF14:
- 1473 017b 63795F6D 		.ascii	"cy_meta_wonvl\000"
- 1473      6574615F 
- 1473      776F6E76 
- 1473      6C00
- 1474              	.LASF11:
-ARM GAS  C:\Users\cring\AppData\Local\Temp\ccHLZkai.s 			page 28
+ 1479 004e F3000000 		.4byte	.LASF5
+ 1480 0052 02       		.uleb128 0x2
+ 1481 0053 08       		.byte	0x8
+ 1482 0054 05       		.byte	0x5
+ 1483 0055 92010000 		.4byte	.LASF6
+ 1484 0059 02       		.uleb128 0x2
+ 1485 005a 08       		.byte	0x8
+ 1486 005b 07       		.byte	0x7
+ 1487 005c 47010000 		.4byte	.LASF7
+ 1488 0060 04       		.uleb128 0x4
+ 1489 0061 04       		.byte	0x4
+ 1490 0062 05       		.byte	0x5
+ 1491 0063 696E7400 		.ascii	"int\000"
+ 1492 0067 02       		.uleb128 0x2
+ 1493 0068 04       		.byte	0x4
+ 1494 0069 07       		.byte	0x7
+ 1495 006a 3A010000 		.4byte	.LASF8
+ 1496 006e 03       		.uleb128 0x3
+ 1497 006f 5E010000 		.4byte	.LASF10
+ 1498 0073 02       		.byte	0x2
+ 1499 0074 18       		.byte	0x18
+ 1500 0075 24000000 		.4byte	0x24
+ 1501 0079 05       		.uleb128 0x5
+ 1502 007a 91000000 		.4byte	0x91
+ 1503 007e 8A000000 		.4byte	0x8a
+ 1504 0082 06       		.uleb128 0x6
+ 1505 0083 8A000000 		.4byte	0x8a
+ 1506 0087 5305     		.2byte	0x553
+ 1507 0089 00       		.byte	0
+ 1508 008a 02       		.uleb128 0x2
+ 1509 008b 04       		.byte	0x4
+ 1510 008c 07       		.byte	0x7
+ 1511 008d 89010000 		.4byte	.LASF11
+ 1512 0091 07       		.uleb128 0x7
+ 1513 0092 6E000000 		.4byte	0x6e
+ 1514 0096 08       		.uleb128 0x8
+ 1515 0097 28010000 		.4byte	.LASF12
+ 1516 009b 03       		.byte	0x3
+ 1517 009c 1F       		.byte	0x1f
+ 1518 009d A7000000 		.4byte	0xa7
+ 1519 00a1 05       		.uleb128 0x5
+ 1520 00a2 03       		.byte	0x3
+ 1521 00a3 00000000 		.4byte	cy_meta_configecc
+ 1522 00a7 07       		.uleb128 0x7
+ 1523 00a8 79000000 		.4byte	0x79
+ 1524 00ac 05       		.uleb128 0x5
+ 1525 00ad 91000000 		.4byte	0x91
+ 1526 00b1 BC000000 		.4byte	0xbc
+ 1527 00b5 09       		.uleb128 0x9
+ 1528 00b6 8A000000 		.4byte	0x8a
+ 1529 00ba 03       		.byte	0x3
+ 1530 00bb 00       		.byte	0
+ 1531 00bc 08       		.uleb128 0x8
+ 1532 00bd 18010000 		.4byte	.LASF13
+ 1533 00c1 03       		.byte	0x3
+ 1534 00c2 D7       		.byte	0xd7
+ 1535 00c3 CD000000 		.4byte	0xcd
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccokIVkg.s 			page 28
 
 
- 1475 0189 73697A65 		.ascii	"sizetype\000"
- 1475      74797065 
- 1475      00
- 1476              	.LASF6:
- 1477 0192 6C6F6E67 		.ascii	"long long int\000"
- 1477      206C6F6E 
- 1477      6720696E 
- 1477      7400
- 1478              	.LASF2:
- 1479 01a0 73686F72 		.ascii	"short int\000"
- 1479      7420696E 
- 1479      7400
- 1480              	.LASF4:
- 1481 01aa 6C6F6E67 		.ascii	"long int\000"
- 1481      20696E74 
- 1481      00
- 1482              	.LASF0:
- 1483 01b3 7369676E 		.ascii	"signed char\000"
- 1483      65642063 
- 1483      68617200 
- 1484              	.LASF18:
- 1485 01bf 47656E65 		.ascii	"Generated_Source\\PSoC5\\cymetadata.c\000"
- 1485      72617465 
- 1485      645F536F 
- 1485      75726365 
- 1485      5C50536F 
- 1486              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
+ 1536 00c7 05       		.uleb128 0x5
+ 1537 00c8 03       		.byte	0x3
+ 1538 00c9 00000000 		.4byte	cy_meta_custnvl
+ 1539 00cd 07       		.uleb128 0x7
+ 1540 00ce AC000000 		.4byte	0xac
+ 1541 00d2 08       		.uleb128 0x8
+ 1542 00d3 7B010000 		.4byte	.LASF14
+ 1543 00d7 03       		.byte	0x3
+ 1544 00d8 E5       		.byte	0xe5
+ 1545 00d9 E3000000 		.4byte	0xe3
+ 1546 00dd 05       		.uleb128 0x5
+ 1547 00de 03       		.byte	0x3
+ 1548 00df 00000000 		.4byte	cy_meta_wonvl
+ 1549 00e3 07       		.uleb128 0x7
+ 1550 00e4 AC000000 		.4byte	0xac
+ 1551 00e8 05       		.uleb128 0x5
+ 1552 00e9 91000000 		.4byte	0x91
+ 1553 00ed F8000000 		.4byte	0xf8
+ 1554 00f1 09       		.uleb128 0x9
+ 1555 00f2 8A000000 		.4byte	0x8a
+ 1556 00f6 FF       		.byte	0xff
+ 1557 00f7 00       		.byte	0
+ 1558 00f8 08       		.uleb128 0x8
+ 1559 00f9 66010000 		.4byte	.LASF15
+ 1560 00fd 03       		.byte	0x3
+ 1561 00fe F3       		.byte	0xf3
+ 1562 00ff 09010000 		.4byte	0x109
+ 1563 0103 05       		.uleb128 0x5
+ 1564 0104 03       		.byte	0x3
+ 1565 0105 00000000 		.4byte	cy_meta_flashprotect
+ 1566 0109 07       		.uleb128 0x7
+ 1567 010a E8000000 		.4byte	0xe8
+ 1568 010e 05       		.uleb128 0x5
+ 1569 010f 91000000 		.4byte	0x91
+ 1570 0113 1E010000 		.4byte	0x11e
+ 1571 0117 09       		.uleb128 0x9
+ 1572 0118 8A000000 		.4byte	0x8a
+ 1573 011c 0B       		.byte	0xb
+ 1574 011d 00       		.byte	0
+ 1575 011e 0A       		.uleb128 0xa
+ 1576 011f D9000000 		.4byte	.LASF16
+ 1577 0123 03       		.byte	0x3
+ 1578 0124 2001     		.2byte	0x120
+ 1579 0126 30010000 		.4byte	0x130
+ 1580 012a 05       		.uleb128 0x5
+ 1581 012b 03       		.byte	0x3
+ 1582 012c 00000000 		.4byte	cy_metadata
+ 1583 0130 07       		.uleb128 0x7
+ 1584 0131 0E010000 		.4byte	0x10e
+ 1585 0135 00       		.byte	0
+ 1586              		.section	.debug_abbrev,"",%progbits
+ 1587              	.Ldebug_abbrev0:
+ 1588 0000 01       		.uleb128 0x1
+ 1589 0001 11       		.uleb128 0x11
+ 1590 0002 01       		.byte	0x1
+ 1591 0003 25       		.uleb128 0x25
+ 1592 0004 0E       		.uleb128 0xe
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccokIVkg.s 			page 29
+
+
+ 1593 0005 13       		.uleb128 0x13
+ 1594 0006 0B       		.uleb128 0xb
+ 1595 0007 03       		.uleb128 0x3
+ 1596 0008 0E       		.uleb128 0xe
+ 1597 0009 1B       		.uleb128 0x1b
+ 1598 000a 0E       		.uleb128 0xe
+ 1599 000b 10       		.uleb128 0x10
+ 1600 000c 17       		.uleb128 0x17
+ 1601 000d 00       		.byte	0
+ 1602 000e 00       		.byte	0
+ 1603 000f 02       		.uleb128 0x2
+ 1604 0010 24       		.uleb128 0x24
+ 1605 0011 00       		.byte	0
+ 1606 0012 0B       		.uleb128 0xb
+ 1607 0013 0B       		.uleb128 0xb
+ 1608 0014 3E       		.uleb128 0x3e
+ 1609 0015 0B       		.uleb128 0xb
+ 1610 0016 03       		.uleb128 0x3
+ 1611 0017 0E       		.uleb128 0xe
+ 1612 0018 00       		.byte	0
+ 1613 0019 00       		.byte	0
+ 1614 001a 03       		.uleb128 0x3
+ 1615 001b 16       		.uleb128 0x16
+ 1616 001c 00       		.byte	0
+ 1617 001d 03       		.uleb128 0x3
+ 1618 001e 0E       		.uleb128 0xe
+ 1619 001f 3A       		.uleb128 0x3a
+ 1620 0020 0B       		.uleb128 0xb
+ 1621 0021 3B       		.uleb128 0x3b
+ 1622 0022 0B       		.uleb128 0xb
+ 1623 0023 49       		.uleb128 0x49
+ 1624 0024 13       		.uleb128 0x13
+ 1625 0025 00       		.byte	0
+ 1626 0026 00       		.byte	0
+ 1627 0027 04       		.uleb128 0x4
+ 1628 0028 24       		.uleb128 0x24
+ 1629 0029 00       		.byte	0
+ 1630 002a 0B       		.uleb128 0xb
+ 1631 002b 0B       		.uleb128 0xb
+ 1632 002c 3E       		.uleb128 0x3e
+ 1633 002d 0B       		.uleb128 0xb
+ 1634 002e 03       		.uleb128 0x3
+ 1635 002f 08       		.uleb128 0x8
+ 1636 0030 00       		.byte	0
+ 1637 0031 00       		.byte	0
+ 1638 0032 05       		.uleb128 0x5
+ 1639 0033 01       		.uleb128 0x1
+ 1640 0034 01       		.byte	0x1
+ 1641 0035 49       		.uleb128 0x49
+ 1642 0036 13       		.uleb128 0x13
+ 1643 0037 01       		.uleb128 0x1
+ 1644 0038 13       		.uleb128 0x13
+ 1645 0039 00       		.byte	0
+ 1646 003a 00       		.byte	0
+ 1647 003b 06       		.uleb128 0x6
+ 1648 003c 21       		.uleb128 0x21
+ 1649 003d 00       		.byte	0
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccokIVkg.s 			page 30
+
+
+ 1650 003e 49       		.uleb128 0x49
+ 1651 003f 13       		.uleb128 0x13
+ 1652 0040 2F       		.uleb128 0x2f
+ 1653 0041 05       		.uleb128 0x5
+ 1654 0042 00       		.byte	0
+ 1655 0043 00       		.byte	0
+ 1656 0044 07       		.uleb128 0x7
+ 1657 0045 26       		.uleb128 0x26
+ 1658 0046 00       		.byte	0
+ 1659 0047 49       		.uleb128 0x49
+ 1660 0048 13       		.uleb128 0x13
+ 1661 0049 00       		.byte	0
+ 1662 004a 00       		.byte	0
+ 1663 004b 08       		.uleb128 0x8
+ 1664 004c 34       		.uleb128 0x34
+ 1665 004d 00       		.byte	0
+ 1666 004e 03       		.uleb128 0x3
+ 1667 004f 0E       		.uleb128 0xe
+ 1668 0050 3A       		.uleb128 0x3a
+ 1669 0051 0B       		.uleb128 0xb
+ 1670 0052 3B       		.uleb128 0x3b
+ 1671 0053 0B       		.uleb128 0xb
+ 1672 0054 49       		.uleb128 0x49
+ 1673 0055 13       		.uleb128 0x13
+ 1674 0056 3F       		.uleb128 0x3f
+ 1675 0057 19       		.uleb128 0x19
+ 1676 0058 02       		.uleb128 0x2
+ 1677 0059 18       		.uleb128 0x18
+ 1678 005a 00       		.byte	0
+ 1679 005b 00       		.byte	0
+ 1680 005c 09       		.uleb128 0x9
+ 1681 005d 21       		.uleb128 0x21
+ 1682 005e 00       		.byte	0
+ 1683 005f 49       		.uleb128 0x49
+ 1684 0060 13       		.uleb128 0x13
+ 1685 0061 2F       		.uleb128 0x2f
+ 1686 0062 0B       		.uleb128 0xb
+ 1687 0063 00       		.byte	0
+ 1688 0064 00       		.byte	0
+ 1689 0065 0A       		.uleb128 0xa
+ 1690 0066 34       		.uleb128 0x34
+ 1691 0067 00       		.byte	0
+ 1692 0068 03       		.uleb128 0x3
+ 1693 0069 0E       		.uleb128 0xe
+ 1694 006a 3A       		.uleb128 0x3a
+ 1695 006b 0B       		.uleb128 0xb
+ 1696 006c 3B       		.uleb128 0x3b
+ 1697 006d 05       		.uleb128 0x5
+ 1698 006e 49       		.uleb128 0x49
+ 1699 006f 13       		.uleb128 0x13
+ 1700 0070 3F       		.uleb128 0x3f
+ 1701 0071 19       		.uleb128 0x19
+ 1702 0072 02       		.uleb128 0x2
+ 1703 0073 18       		.uleb128 0x18
+ 1704 0074 00       		.byte	0
+ 1705 0075 00       		.byte	0
+ 1706 0076 00       		.byte	0
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccokIVkg.s 			page 31
+
+
+ 1707              		.section	.debug_aranges,"",%progbits
+ 1708 0000 14000000 		.4byte	0x14
+ 1709 0004 0200     		.2byte	0x2
+ 1710 0006 00000000 		.4byte	.Ldebug_info0
+ 1711 000a 04       		.byte	0x4
+ 1712 000b 00       		.byte	0
+ 1713 000c 0000     		.2byte	0
+ 1714 000e 0000     		.2byte	0
+ 1715 0010 00000000 		.4byte	0
+ 1716 0014 00000000 		.4byte	0
+ 1717              		.section	.debug_line,"",%progbits
+ 1718              	.Ldebug_line0:
+ 1719 0000 3D010000 		.section	.debug_str,"MS",%progbits,1
+ 1719      02003701 
+ 1719      00000201 
+ 1719      FB0E0D00 
+ 1719      01010101 
+ 1720              	.LASF9:
+ 1721 0000 5F5F7569 		.ascii	"__uint8_t\000"
+ 1721      6E74385F 
+ 1721      7400
+ 1722              	.LASF19:
+ 1723 000a 433A5C55 		.ascii	"C:\\Users\\cring\\Documents\\GitHub\\PRJ4\\Tryksens"
+ 1723      73657273 
+ 1723      5C637269 
+ 1723      6E675C44 
+ 1723      6F63756D 
+ 1724 0037 6F725C54 		.ascii	"or\\Tryksensor.cydsn\000"
+ 1724      72796B73 
+ 1724      656E736F 
+ 1724      722E6379 
+ 1724      64736E00 
+ 1725              	.LASF17:
+ 1726 004b 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 1726      43313120 
+ 1726      352E342E 
+ 1726      31203230 
+ 1726      31363036 
+ 1727 007e 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 1727      20726576 
+ 1727      6973696F 
+ 1727      6E203233 
+ 1727      37373135 
+ 1728 00b1 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 1728      66756E63 
+ 1728      74696F6E 
+ 1728      2D736563 
+ 1728      74696F6E 
+ 1729              	.LASF16:
+ 1730 00d9 63795F6D 		.ascii	"cy_metadata\000"
+ 1730      65746164 
+ 1730      61746100 
+ 1731              	.LASF1:
+ 1732 00e5 756E7369 		.ascii	"unsigned char\000"
+ 1732      676E6564 
+ 1732      20636861 
+ 1732      7200
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccokIVkg.s 			page 32
+
+
+ 1733              	.LASF5:
+ 1734 00f3 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1734      20756E73 
+ 1734      69676E65 
+ 1734      6420696E 
+ 1734      7400
+ 1735              	.LASF3:
+ 1736 0105 73686F72 		.ascii	"short unsigned int\000"
+ 1736      7420756E 
+ 1736      7369676E 
+ 1736      65642069 
+ 1736      6E7400
+ 1737              	.LASF13:
+ 1738 0118 63795F6D 		.ascii	"cy_meta_custnvl\000"
+ 1738      6574615F 
+ 1738      63757374 
+ 1738      6E766C00 
+ 1739              	.LASF12:
+ 1740 0128 63795F6D 		.ascii	"cy_meta_configecc\000"
+ 1740      6574615F 
+ 1740      636F6E66 
+ 1740      69676563 
+ 1740      6300
+ 1741              	.LASF8:
+ 1742 013a 756E7369 		.ascii	"unsigned int\000"
+ 1742      676E6564 
+ 1742      20696E74 
+ 1742      00
+ 1743              	.LASF7:
+ 1744 0147 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1744      206C6F6E 
+ 1744      6720756E 
+ 1744      7369676E 
+ 1744      65642069 
+ 1745              	.LASF10:
+ 1746 015e 75696E74 		.ascii	"uint8_t\000"
+ 1746      385F7400 
+ 1747              	.LASF15:
+ 1748 0166 63795F6D 		.ascii	"cy_meta_flashprotect\000"
+ 1748      6574615F 
+ 1748      666C6173 
+ 1748      6870726F 
+ 1748      74656374 
+ 1749              	.LASF14:
+ 1750 017b 63795F6D 		.ascii	"cy_meta_wonvl\000"
+ 1750      6574615F 
+ 1750      776F6E76 
+ 1750      6C00
+ 1751              	.LASF11:
+ 1752 0189 73697A65 		.ascii	"sizetype\000"
+ 1752      74797065 
+ 1752      00
+ 1753              	.LASF6:
+ 1754 0192 6C6F6E67 		.ascii	"long long int\000"
+ 1754      206C6F6E 
+ 1754      6720696E 
+ 1754      7400
+ARM GAS  C:\Users\cring\AppData\Local\Temp\ccokIVkg.s 			page 33
+
+
+ 1755              	.LASF2:
+ 1756 01a0 73686F72 		.ascii	"short int\000"
+ 1756      7420696E 
+ 1756      7400
+ 1757              	.LASF4:
+ 1758 01aa 6C6F6E67 		.ascii	"long int\000"
+ 1758      20696E74 
+ 1758      00
+ 1759              	.LASF0:
+ 1760 01b3 7369676E 		.ascii	"signed char\000"
+ 1760      65642063 
+ 1760      68617200 
+ 1761              	.LASF18:
+ 1762 01bf 47656E65 		.ascii	"Generated_Source\\PSoC5\\cymetadata.c\000"
+ 1762      72617465 
+ 1762      645F536F 
+ 1762      75726365 
+ 1762      5C50536F 
+ 1763              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
