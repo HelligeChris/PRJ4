@@ -1,6 +1,6 @@
 // ======================================================================
 // TrykControl.v generated from TopDesign.cysch
-// 12/15/2020 at 18:16
+// 12/16/2020 at 17:04
 // This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 // ======================================================================
 
@@ -1841,6 +1841,7 @@ module top ;
           wire  Net_77;
           wire  Net_74;
           wire  Net_78;
+    electrical  Net_117;
           wire  Net_38;
           wire  Net_40;
           wire  Net_18;
@@ -1861,7 +1862,6 @@ module top ;
           wire  Net_5;
           wire  Net_180;
           wire  Net_10;
-    electrical  Net_117;
           wire  Net_42;
           wire  Net_20;
 

@@ -103,7 +103,7 @@ uint32 getVaegt(uint16 periode_ms)
         vaegt += dataPtr[i];
     }
     vaegt /= samples;
-    
+    /*
     for(int i = 0; i<samples; i++)
     {
         dataPtr[i] -= vaegt;
@@ -114,6 +114,9 @@ uint32 getVaegt(uint16 periode_ms)
     {
         vaegt += abs(dataPtr[i]);
     }
-    vaegt /= samples;
+    vaegt /= samples;*/
+    vaegt -= 2467901;
+    vaegt /= 25308/1000;
+    
     return vaegt;
 }

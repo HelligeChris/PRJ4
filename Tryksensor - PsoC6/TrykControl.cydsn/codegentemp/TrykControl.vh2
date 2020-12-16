@@ -2,7 +2,7 @@
 --	Conversion of TrykControl.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Tue Dec 15 18:17:01 2020
+--	Wed Dec 16 17:04:32 2020
 --
 
 USE cypress.cypress.all;
