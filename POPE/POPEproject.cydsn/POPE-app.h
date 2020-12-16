@@ -9,6 +9,8 @@
  *
  * ========================================
 */
+#pragma once
+
 #include "common.h"
 #include "trykControl.h"
 #include "kadenceControl.h"

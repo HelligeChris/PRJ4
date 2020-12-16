@@ -70,14 +70,17 @@ void initTrykSensor()
     NVIC_EnableIRQ(sampleEvent_cfg.intrSrc);
     
     //dataFilterPtr = malloc(sizeof(float));
-    dataPtr = malloc(sizeof(int32));
+    dataPtr = malloc(sizeof(int32)*5000);
 }
 
+#include "VT100Terminal.h"
 
 uint32 getVaegt(uint16 periode_ms)
-{
-samples = (periode_ms * fs)/1000;
+{    
+    samples = (periode_ms * fs)/1000;
+    __disable_irq();
     realloc(dataPtr, sizeof(int32)*samples);
+    __enable_irq();
     
     SampleTimer_SetCounter(0);
     sampleCounter = 0;
@@ -115,7 +118,8 @@ samples = (periode_ms * fs)/1000;
         vaegt += abs(dataPtr[i]);
     }
     vaegt /= samples;*/
-    vaegt -= 2467901;
+    vaegt -= 3667901;
     vaegt /= 25308/1000;
+    //vaegt = vaegt < 0 ? 0 : vaegt;
     return vaegt;
 }

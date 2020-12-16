@@ -20,6 +20,7 @@
 #include "i2cFunctions.h"
 #include "kadenceControl.h"
 #include "POPE-app.h"
+#include "trykControl.h"
 
 /********************************************************************************
     SIMULERING

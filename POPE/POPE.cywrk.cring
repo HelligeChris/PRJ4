@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="POPE\POPEproject\Host Files\Source Files\HostMain.c">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="POPE\POPEproject\Host Files\Header Files\batteriControl.h">
 <ExpandedNodeIds>
 <v>POPE</v>
 <v>POPE\POPEproject</v>
@@ -89,9 +89,6 @@
 <v>POPE\POPEproject\Generated_Source\PSoC6</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
-<v>POPE\POPEproject\CM4 (Core 1)\ARM IAR Generic\cy8c6xx7_cm4_dual.icf</v>
-<v>POPE\POPEproject\CM4 (Core 1)\ARM MDK Generic</v>
-<v>POPE\POPEproject\CM4 (Core 1)\ARM MDK Generic\cy8c6xx7_cm4_dual.scat</v>
 <v>POPE\POPEproject\CM4 (Core 1)\Header Files</v>
 <v>POPE\POPEproject\CM4 (Core 1)\Source Files</v>
 <v>POPE\POPEproject\CM4 (Core 1)\Source Files\ARM GCC Generic</v>
@@ -127,6 +124,9 @@
 <v>POPE\POPEproject\Shared Files\cy_ble_config.h</v>
 <v>POPE\POPEproject\Shared Files\cyapicallbacks.h</v>
 <v>POPE\POPEproject\Shared Files\system_psoc6.h</v>
+<v>POPE\POPEproject\Generated_Source</v>
+<v>POPE\POPEproject\Generated_Source\PSoC6</v>
+<v>POPE\POPEproject\Generated_Source\PSoC6\pdl</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">

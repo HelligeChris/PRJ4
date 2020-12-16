@@ -24,21 +24,29 @@ void lowPowerMode()
     //
 }
 
-
 uint16_t getPower()
 {
-    uint16_t power = 0;
-    uint8_t crankLength = 175;  //mm
+    float power = 0;
+    float crankLength = 0.175;  //m
     float* kadence = CS_getKadence();
-    uint16_t periode = (uint16_t)kadence[2];
-    uint16_t mass = getVaegt(periode);
+    uint16 periode = (uint16)(kadence[2]*1000);
+    periode = 1000;
+    periode = periode > 5000 ? 5000 : periode;
     
+    uint16_t mass = getVaegt(periode);
+
+    sprintf(uart_string, "Mass: %i", mass);
+    UARTprint("20",uart_string);
+    mass /= 1000;
     /* Udregninger */
-    uint16_t torque = mass * pow(crankLength*2*M_PI, 2) / pow(periode, 2);
-    uint16_t angVeloc = 2*M_PI / periode;
+    float torque = mass * pow(crankLength*2*M_PI, 2) / pow(periode/1000, 2);
+    float angVeloc = 2*M_PI / (periode/1000);
     
     //udregn power
     power = torque * angVeloc;
+    
+    sprintf(uart_string, "Udregnet watt: %f", power);
+    UARTprint("21",uart_string);
     return power;
 }
 
@@ -58,6 +66,8 @@ void startIdleCountdown()
 {
     Cy_SysInt_Init(&idleInt_cfg, idleIntHandler);
     idleTimer_Start();
+    idleCounter = 0;
+    idleTimer_SetCounter(0);
 }
 
 
