@@ -44,5 +44,23 @@
         .intrPriority = idleInt__INTC_CORTEXM4_PRIORITY
     };
 
+    /* isr_timer */
+    const cy_stc_sysint_t isr_timer_cfg = {
+        .intrSrc = (IRQn_Type)isr_timer__INTC_NUMBER,
+        .intrPriority = isr_timer__INTC_CORTEXM4_PRIORITY
+    };
+
+    /* sampleEvent */
+    const cy_stc_sysint_t sampleEvent_cfg = {
+        .intrSrc = (IRQn_Type)sampleEvent__INTC_NUMBER,
+        .intrPriority = sampleEvent__INTC_CORTEXM4_PRIORITY
+    };
+
+    /* Batteri_ADC_IRQ */
+    const cy_stc_sysint_t Batteri_ADC_IRQ_cfg = {
+        .intrSrc = (IRQn_Type)Batteri_ADC_IRQ__INTC_NUMBER,
+        .intrPriority = Batteri_ADC_IRQ__INTC_CORTEXM4_PRIORITY
+    };
+
 #endif /* ((__CORTEX_M == 4) && (CY_CORE_ID == 0)) */
 

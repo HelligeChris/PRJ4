@@ -24,6 +24,7 @@
 #include "cy_lvd.h"
 #include "cy_profile.h"
 #include "cy_prot.h"
+#include "cy_sar.h"
 #include "cy_scb_common.h"
 #include "cy_scb_i2c.h"
 #include "cy_scb_ezi2c.h"
@@ -164,8 +165,14 @@
 #include "idleTimer.h"
 #include "Clock_1.h"
 #include "I2C_MPU6050.h"
+#include "ADC_Timer.h"
+#include "SampleTimer.h"
+#include "Clock_2.h"
+#include "Clock_3.h"
+#include "Batteri_ADC.h"
 #include "UART_DEB_SCBCLK.h"
 #include "I2C_MPU6050_SCBCLK.h"
+#include "Batteri_ADC_intSarClock.h"
 
 /*[]*/
 

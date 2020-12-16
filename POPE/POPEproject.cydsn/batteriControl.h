@@ -1,23 +1,22 @@
-/* ========================================
- *
- * Copyright YOUR COMPANY, THE YEAR
- * All Rights Reserved
- * UNPUBLISHED, LICENSED SOFTWARE.
- *
- * CONFIDENTIAL AND PROPRIETARY INFORMATION
- * WHICH IS THE PROPERTY OF your company.
- *
- * ========================================
-*/
 #pragma once
-#include "common.h"
+#include "project.h"
 
-typedef struct batteriCtrl
-{
-    uint16 mV;
-    
-}batteriCtrl;
-
+uint16 mV;
 
 uint16 getVoltageLevel_mV();
-/* [] END OF FILE */
+
+uint16 getVoltageLevel_mV()
+{
+    //Starter Batteri ADC konvertering
+    Batteri_ADC_Start();
+    Batteri_ADC_StartConvert();
+    //Venter på Batteri ADC konvertering er færdig
+    Batteri_ADC_IsEndConversion(1);
+    //Stopper ADC konvertering
+    Batteri_ADC_StopConvert();
+    //Konvertere resultatet fra Batteri ADC til mV
+    mV = Batteri_ADC_CountsTo_mVolts(0, Batteri_ADC_GetResult16(0));
+    //Stopper Batteri ADC
+    Batteri_ADC_Stop();
+    return mV;
+}

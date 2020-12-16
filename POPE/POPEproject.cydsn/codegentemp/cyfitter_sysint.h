@@ -26,6 +26,30 @@
 #define idleInt_INTC_CORTEXM4_PRIORITY 7u
 #define idleInt_INTC_NUMBER 122u
 
+/* isr_timer */
+#define isr_timer__INTC_CORTEXM4_ASSIGNED 1
+#define isr_timer__INTC_CORTEXM4_PRIORITY 7u
+#define isr_timer__INTC_NUMBER 123u
+#define isr_timer_INTC_CORTEXM4_ASSIGNED 1
+#define isr_timer_INTC_CORTEXM4_PRIORITY 7u
+#define isr_timer_INTC_NUMBER 123u
+
+/* sampleEvent */
+#define sampleEvent__INTC_CORTEXM4_ASSIGNED 1
+#define sampleEvent__INTC_CORTEXM4_PRIORITY 7u
+#define sampleEvent__INTC_NUMBER 124u
+#define sampleEvent_INTC_CORTEXM4_ASSIGNED 1
+#define sampleEvent_INTC_CORTEXM4_PRIORITY 7u
+#define sampleEvent_INTC_NUMBER 124u
+
+/* Batteri_ADC_IRQ */
+#define Batteri_ADC_IRQ__INTC_CORTEXM4_ASSIGNED 1
+#define Batteri_ADC_IRQ__INTC_CORTEXM4_PRIORITY 7u
+#define Batteri_ADC_IRQ__INTC_NUMBER 138u
+#define Batteri_ADC_IRQ_INTC_CORTEXM4_ASSIGNED 1
+#define Batteri_ADC_IRQ_INTC_CORTEXM4_PRIORITY 7u
+#define Batteri_ADC_IRQ_INTC_NUMBER 138u
+
 /* BLE_PM_bless_isr */
 #define BLE_PM_bless_isr__INTC_CORTEXM0P_ASSIGNED 1
 #define BLE_PM_bless_isr__INTC_CORTEXM0P_MUX 3u

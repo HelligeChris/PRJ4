@@ -29,6 +29,16 @@
 #define Clock_1__DIV_NUM 0
 #define Clock_1__DIV_TYPE CY_SYSCLK_DIV_8_BIT
 
+/* Clock_2 */
+#define Clock_2__DIV_IDX 24
+#define Clock_2__DIV_NUM 0
+#define Clock_2__DIV_TYPE CY_SYSCLK_DIV_16_5_BIT
+
+/* Clock_3 */
+#define Clock_3__DIV_IDX 8
+#define Clock_3__DIV_NUM 0
+#define Clock_3__DIV_TYPE CY_SYSCLK_DIV_16_BIT
+
 /* UART_DEB */
 #define UART_DEB_SCB__HW SCB5
 #define UART_DEB_SCB__IDX 5
@@ -40,11 +50,25 @@
 #define UART_DEB_SCBCLK__DIV_NUM 2
 #define UART_DEB_SCBCLK__DIV_TYPE CY_SYSCLK_DIV_8_BIT
 
+/* ADC_Timer */
+#define ADC_Timer_TCPWM__CNT_HW TCPWM0_CNT0
+#define ADC_Timer_TCPWM__CNT_IDX 0u
+#define ADC_Timer_TCPWM__HW TCPWM0
+#define ADC_Timer_TCPWM__IDX 0u
+
 /* idleTimer */
-#define idleTimer_TCPWM__CNT_HW TCPWM0_CNT0
-#define idleTimer_TCPWM__CNT_IDX 0u
+#define idleTimer_TCPWM__CNT_HW TCPWM0_CNT1
+#define idleTimer_TCPWM__CNT_IDX 1u
 #define idleTimer_TCPWM__HW TCPWM0
 #define idleTimer_TCPWM__IDX 0u
+
+/* Batteri_ADC */
+#define Batteri_ADC_intSarClock__DIV_IDX 3
+#define Batteri_ADC_intSarClock__DIV_NUM 3
+#define Batteri_ADC_intSarClock__DIV_TYPE CY_SYSCLK_DIV_8_BIT
+#define Batteri_ADC_SAR__HW SAR
+#define Batteri_ADC_SAR__IDX 0
+#define Batteri_ADC_SAR__TR_SAR_IN TRIG6_OUT_PASS_TR_SAR_IN
 
 /* I2C_MPU6050 */
 #define I2C_MPU6050_SCB__HW SCB6
@@ -56,6 +80,12 @@
 #define I2C_MPU6050_SCBCLK__DIV_IDX 1
 #define I2C_MPU6050_SCBCLK__DIV_NUM 1
 #define I2C_MPU6050_SCBCLK__DIV_TYPE CY_SYSCLK_DIV_8_BIT
+
+/* SampleTimer */
+#define SampleTimer_TCPWM__CNT_HW TCPWM0_CNT2
+#define SampleTimer_TCPWM__CNT_IDX 2u
+#define SampleTimer_TCPWM__HW TCPWM0
+#define SampleTimer_TCPWM__IDX 0u
 
 /* Miscellaneous */
 #define CPUSS__CTI_TR_IN_0 TRIG5_OUT_CPUSS_CTI_TR_IN0

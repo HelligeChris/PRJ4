@@ -34,6 +34,15 @@
     #define idleInt__INTC_ASSIGNED 1u
     extern const cy_stc_sysint_t idleInt_cfg;
 
+    #define isr_timer__INTC_ASSIGNED 1u
+    extern const cy_stc_sysint_t isr_timer_cfg;
+
+    #define sampleEvent__INTC_ASSIGNED 1u
+    extern const cy_stc_sysint_t sampleEvent_cfg;
+
+    #define Batteri_ADC_IRQ__INTC_ASSIGNED 1u
+    extern const cy_stc_sysint_t Batteri_ADC_IRQ_cfg;
+
 #endif /* ((__CORTEX_M == 4) && (CY_CORE_ID == 0)) */
 
 
