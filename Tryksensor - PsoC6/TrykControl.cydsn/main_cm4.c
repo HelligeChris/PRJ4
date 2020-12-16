@@ -33,7 +33,7 @@ int main(void)
         //sprintf(buf, "%i\r\n", ADC_read());
         sprintf(buf, "%i\r\n", getVaegt(100));
         //sprintf(buf, "%d\r\n", getVoltageLevel_mV());
-        UART_1_PutString(buf);
+        UARTprint(buf);
         /* Place your application code here. */
     }
 }

@@ -18,5 +18,6 @@ uint16 getVoltageLevel_mV()
     mV = Batteri_ADC_CountsTo_mVolts(0, Batteri_ADC_GetResult16(0));
     //Stopper Batteri ADC
     Batteri_ADC_Stop();
+    mV = (mV*100)/4200;
     return mV;
 }
