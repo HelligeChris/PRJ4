@@ -72,10 +72,7 @@ void initTrykSensor()
     //dataFilterPtr = malloc(sizeof(float));
     dataPtr = malloc(sizeof(int32));
 }
-void calibrateTrykSensor()
-{
-    
-}
+
 
 uint32 getVaegt(uint16 periode_ms)
 {

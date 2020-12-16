@@ -1,6 +1,7 @@
 # TrykControl
-# 2020-12-14 14:51:09Z
+# 2020-12-15 17:17:11Z
 
+dont_use_location SMIF -1 -1 0
 dont_use_location p4usbcell -1 -1 0
 dont_use_location USB -1 -1 0
 dont_use_location usbcell -1 -1 0
@@ -9,16 +10,16 @@ set_location "ClockBlock" Clock -1 -1 0
 set_location "CPUSS" CPUSS -1 -1 0
 set_io "CY_CPUSS_SWJ_SWCLK_TCLK(0)" iocell 6 7
 set_io "CY_CPUSS_SWJ_SWDIO_TMS(0)" iocell 6 6
-set_io "Pin_SCK(0)" iocell 0 1
-set_io "Pin_DIN(0)" iocell 0 0
-set_io "Batteri_PIN(0)" iocell 10 2
-set_io "\UART_1:tx(0)\" iocell 0 3
-set_io "\UART_1:rx(0)\" iocell 0 2
+set_io "Pin_SCK(0)" iocell 10 5
+set_io "Pin_DIN(0)" iocell 10 6
+set_io "Batteri_PIN(0)" iocell 9 0
+set_io "\UART_1:tx(0)\" iocell 5 1
+set_io "\UART_1:rx(0)\" iocell 5 0
 set_location "\ADC_Timer:TCPWM\" TCPWM -1 -1 0
 set_location "\SampleTimer:TCPWM\" TCPWM -1 -1 1
 set_location "isr_timer" interrupt -1 -1 122
 set_location "sampleEvent" interrupt -1 -1 123
-set_location "\UART_1:SCB_IRQ\" interrupt -1 -1 41
-set_location "\UART_1:SCB\" SCB -1 -1 0
+set_location "\UART_1:SCB_IRQ\" interrupt -1 -1 46
+set_location "\UART_1:SCB\" SCB -1 -1 5
 set_location "\Batteri_ADC:IRQ\" interrupt -1 -1 138
 set_location "\Batteri_ADC:SAR\" SARADC -1 -1 0

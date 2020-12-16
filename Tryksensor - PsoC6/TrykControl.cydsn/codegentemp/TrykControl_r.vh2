@@ -1,15 +1,14 @@
 -- Project:   TrykControl
--- Generated: 12/14/2020 15:51:09
+-- Generated: 12/15/2020 18:17:11
 -- PSoC Creator  4.4
 
 ENTITY TrykControl IS
     PORT(
-        Pin_SCK(0)_PAD : OUT std_ulogic;
+        Pin_SCK(0)_PAD : INOUT std_ulogic;
         Pin_DIN(0)_PAD : IN std_ulogic;
         \UART_1:tx(0)_PAD\ : OUT std_ulogic;
         \UART_1:rx(0)_PAD\ : IN std_ulogic);
     ATTRIBUTE voltage_VBACKUP OF __DEFAULT__ : ENTITY IS 3.3e0;
-    ATTRIBUTE voltage_VDD_NS OF __DEFAULT__ : ENTITY IS 3.3e0;
     ATTRIBUTE voltage_VDDA_CSD OF __DEFAULT__ : ENTITY IS 3.3e0;
     ATTRIBUTE voltage_VDDIO_A OF __DEFAULT__ : ENTITY IS 3.3e0;
     ATTRIBUTE voltage_VDDA OF __DEFAULT__ : ENTITY IS 3.3e0;
@@ -18,9 +17,7 @@ ENTITY TrykControl IS
     ATTRIBUTE voltage_VDDIO_0 OF __DEFAULT__ : ENTITY IS 3.3e0;
     ATTRIBUTE voltage_VDDIO_0_RCV OF __DEFAULT__ : ENTITY IS 3.3e0;
     ATTRIBUTE voltage_VDDIO_1 OF __DEFAULT__ : ENTITY IS 3.3e0;
-    ATTRIBUTE voltage_VDDR_HVL_2 OF __DEFAULT__ : ENTITY IS 3.3e0;
-    ATTRIBUTE voltage_VDDR_HVL_3 OF __DEFAULT__ : ENTITY IS 3.3e0;
-    ATTRIBUTE voltage_vddd OF __DEFAULT__ : ENTITY IS 3.3e0;
+    ATTRIBUTE voltage_VDD_NS OF __DEFAULT__ : ENTITY IS 3.3e0;
 END TrykControl;
 
 ARCHITECTURE __DEFAULT__ OF TrykControl IS
@@ -69,18 +66,18 @@ ARCHITECTURE __DEFAULT__ OF TrykControl IS
     SIGNAL Net_10_ff11 : bit;
     ATTRIBUTE global_signal OF Net_10_ff11 : SIGNAL IS true;
     SIGNAL Net_110 : bit;
+    SIGNAL Net_129 : bit;
+    SIGNAL Net_146 : bit;
+    SIGNAL Net_148 : bit;
     SIGNAL Net_16 : bit;
     SIGNAL Net_18 : bit;
+    SIGNAL Net_180 : bit;
     SIGNAL Net_19 : bit;
     SIGNAL Net_20_ff12 : bit;
     ATTRIBUTE global_signal OF Net_20_ff12 : SIGNAL IS true;
-    SIGNAL Net_41 : bit;
     SIGNAL Net_42 : bit;
-    SIGNAL Net_6 : bit;
     SIGNAL Net_79 : bit;
-    SIGNAL Net_8 : bit;
     SIGNAL Net_80 : bit;
-    SIGNAL Net_9 : bit;
     SIGNAL Pin_DIN(0)__PA : bit;
     SIGNAL Pin_SCK(0)__PA : bit;
     SIGNAL \ADC_Timer:Net_1\ : bit;
@@ -116,21 +113,21 @@ ARCHITECTURE __DEFAULT__ OF TrykControl IS
     ATTRIBUTE lib_model OF CY_CPUSS_SWJ_SWDIO_TMS(0) : LABEL IS "iocell2";
     ATTRIBUTE Location OF CY_CPUSS_SWJ_SWDIO_TMS(0) : LABEL IS "P6[6]";
     ATTRIBUTE lib_model OF Pin_SCK(0) : LABEL IS "iocell3";
-    ATTRIBUTE Location OF Pin_SCK(0) : LABEL IS "P0[1]";
+    ATTRIBUTE Location OF Pin_SCK(0) : LABEL IS "P10[5]";
     ATTRIBUTE lib_model OF Pin_DIN(0) : LABEL IS "iocell4";
-    ATTRIBUTE Location OF Pin_DIN(0) : LABEL IS "P0[0]";
+    ATTRIBUTE Location OF Pin_DIN(0) : LABEL IS "P10[6]";
     ATTRIBUTE lib_model OF Batteri_PIN(0) : LABEL IS "iocell5";
-    ATTRIBUTE Location OF Batteri_PIN(0) : LABEL IS "P10[2]";
+    ATTRIBUTE Location OF Batteri_PIN(0) : LABEL IS "P9[0]";
     ATTRIBUTE lib_model OF \UART_1:tx(0)\ : LABEL IS "iocell6";
-    ATTRIBUTE Location OF \UART_1:tx(0)\ : LABEL IS "P0[3]";
+    ATTRIBUTE Location OF \UART_1:tx(0)\ : LABEL IS "P5[1]";
     ATTRIBUTE lib_model OF \UART_1:rx(0)\ : LABEL IS "iocell7";
-    ATTRIBUTE Location OF \UART_1:rx(0)\ : LABEL IS "P0[2]";
+    ATTRIBUTE Location OF \UART_1:rx(0)\ : LABEL IS "P5[0]";
     ATTRIBUTE Location OF \ADC_Timer:TCPWM\ : LABEL IS "F(TCPWM,0)";
     ATTRIBUTE Location OF \SampleTimer:TCPWM\ : LABEL IS "F(TCPWM,1)";
     ATTRIBUTE Location OF isr_timer : LABEL IS "[IntrContainer=(0)][IntrId=(122)]";
     ATTRIBUTE Location OF sampleEvent : LABEL IS "[IntrContainer=(0)][IntrId=(123)]";
-    ATTRIBUTE Location OF \UART_1:SCB_IRQ\ : LABEL IS "[IntrContainer=(0)][IntrId=(41)]";
-    ATTRIBUTE Location OF \UART_1:SCB\ : LABEL IS "F(SCB,0)";
+    ATTRIBUTE Location OF \UART_1:SCB_IRQ\ : LABEL IS "[IntrContainer=(0)][IntrId=(46)]";
+    ATTRIBUTE Location OF \UART_1:SCB\ : LABEL IS "F(SCB,5)";
     ATTRIBUTE Location OF \Batteri_ADC:IRQ\ : LABEL IS "[IntrContainer=(0)][IntrId=(138)]";
     ATTRIBUTE Location OF \Batteri_ADC:SAR\ : LABEL IS "F(SARADC,0)";
     COMPONENT CLK_GEN
@@ -554,9 +551,10 @@ BEGIN
             wco => ClockBlock_WCO,
             lfclk => ClockBlock_LFClk,
             ff_div_11 => Net_10_ff11,
-            ff_div_0 => \UART_1:Net_847_ff0\,
+            ff_div_0 => open,
             ff_div_49 => \Batteri_ADC:Net_428_ff49\,
             ff_div_12 => Net_20_ff12,
+            ff_div_5 => \UART_1:Net_847_ff0\,
             periclk_App => periclk_App);
 
     CPUSS:CPUSS
@@ -677,7 +675,7 @@ BEGIN
             drive_strength => "0",
             hotswap_needed => "0",
             i2c_mode => "0",
-            ibuf_enabled => "0",
+            ibuf_enabled => "1",
             id => "a61270bc-07ec-447d-ac9e-34cfe85c30e9",
             init_dr_st => "0",
             input_sync => "0",
@@ -954,12 +952,12 @@ BEGIN
             reload => '0',
             stop => '0',
             start => '0',
-            tr_underflow => Net_8,
-            tr_compare_match => Net_9,
-            tr_overflow => Net_41,
+            tr_underflow => Net_146,
+            tr_compare_match => Net_129,
+            tr_overflow => Net_180,
             line_compl => \ADC_Timer:Net_1\,
             line => \ADC_Timer:Net_2\,
-            interrupt => Net_6);
+            interrupt => Net_148);
 
     \SampleTimer:TCPWM\:TCPWM
         GENERIC MAP(
@@ -986,7 +984,7 @@ BEGIN
             deepsleep_required => 0,
             int_type => "00")
         PORT MAP(
-            interrupt => Net_41,
+            interrupt => Net_180,
             clock => ClockBlock_PeriClk);
 
     sampleEvent:interrupt

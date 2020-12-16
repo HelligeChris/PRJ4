@@ -50,7 +50,7 @@ static const cy_stc_sar_config_t Batteri_ADC_hwConfigs[Batteri_ADC_TOTAL_CONFIGS
         .rangeCond          = Batteri_ADC_CFG0_RANGE_COND_INIT,
         .chanEn             = Batteri_ADC_CFG0_CHANNEL_EN,
         .chanConfig         = {((uint32_t) (0 << SAR_CHAN_CONFIG_SAMPLE_TIME_SEL_Pos)
-        | SAR_CHAN_CONFIG_DIFFERENTIAL_EN_Msk),
+        | SAR_CHAN_CONFIG_AVG_EN_Msk),
         CY_SAR_DEINIT,
         CY_SAR_DEINIT,
         CY_SAR_DEINIT,

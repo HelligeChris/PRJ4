@@ -17,11 +17,11 @@ int samples;
 int sampleCounter = 0;
 int readDataFlag = 0;
 
-CY_ISR(sampleEvent_handler)
+void sampleEvent_handler()
 {
     if(samples < sampleCounter)
     {
-        SampleTimer_Stop();;
+        SampleTimer_Disable();
         sampleControl = Done;
         return;   
     }
@@ -66,25 +66,20 @@ float* filter(int32* trykdata)
 void initTrykSensor()
 {
     ADC_init(128);
-    sampleEvent_StartEx(sampleEvent_handler);
-    SampleTimer_Init();
+    Cy_SysInt_Init(&sampleEvent_cfg, sampleEvent_handler);
+    NVIC_EnableIRQ(sampleEvent_cfg.intrSrc);
     
     //dataFilterPtr = malloc(sizeof(float));
     dataPtr = malloc(sizeof(int32));
 }
-void calibrateTrykSensor()
-{
-    
-}
+
 
 uint32 getVaegt(uint16 periode_ms)
 {
     samples = (periode_ms * fs)/1000;
     realloc(dataPtr, sizeof(int32)*samples);
     
-    
-    
-    SampleTimer_ClearFIFO();
+    SampleTimer_SetCounter(0);
     sampleCounter = 0;
     readDataFlag = 0;
     SampleTimer_Start();
@@ -113,7 +108,6 @@ uint32 getVaegt(uint16 periode_ms)
     {
         dataPtr[i] -= vaegt;
     }
-    
     
     vaegt = 0;
     for(int i = 0; i<samples; i++)

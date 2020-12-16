@@ -28,7 +28,7 @@ uint8_t ADC_Timer_initVar = 0U;
 */ 
 cy_stc_tcpwm_counter_config_t const ADC_Timer_config =
 {
-        .period = 32768UL,
+        .period = 0UL,
         .clockPrescaler = 0UL,
         .runMode = 0UL,
         .countDirection = 0UL,
@@ -36,7 +36,7 @@ cy_stc_tcpwm_counter_config_t const ADC_Timer_config =
         .compare0 = 16384UL,
         .compare1 = 16384UL,
         .enableCompareSwap = false,
-        .interruptSources = 0UL,
+        .interruptSources = 1UL,
         .captureInputMode = 3UL,
         .captureInput = CY_TCPWM_INPUT_CREATOR,
         .reloadInputMode = 3UL,

@@ -15,6 +15,7 @@ state DataRX;
 //Default gain = 128
 int gain_ = 50;
 int counter = 0;
+int period_ns_;
 
 signed int Datain[SIZE] = {0};
 int Dataindex = 0;
@@ -32,36 +33,37 @@ void inv_pin()
 
 void isr_timer_handler()
 {
-    Timer_1_Stop();
     
     //Stopper dataoverførelse og bestemmer hvilket gain næste dataoverførelse har
     if (counter == (gain_))
     {
-        Timer_1_Stop();
+        ADC_Timer_Disable();
+        ADC_Timer_ClearInterrupt(isr_timer_cfg.intrSrc);
         Cy_GPIO_Write(Pin_DIN_0_PORT, Pin_DIN_0_NUM, 1);
         DataRX = Done;
-        Cy_GPIO_Write(Pin_SCK_0_PORT, Pin_SCK_0_NUM, 1);
-        return 0;
+        Cy_GPIO_Write(Pin_SCK_0_PORT, Pin_SCK_0_NUM, 0);
+        return;
     }
-    
-    
+    ADC_Timer_SetPeriod((int)(period_ns_/100)-1);
+
     inv_pin();
     
     //Læser de første 24 databit
-    if ((!Pin_SCK_Read()) && (counter < (SIZE*2)))
+    if ((!Cy_GPIO_Read(Pin_SCK_0_PORT, Pin_SCK_NUM)) && (counter < (SIZE*2)))
     {
         Datain[Dataindex] = Cy_GPIO_Read(Pin_DIN_0_PORT, Pin_DIN_0_NUM);
         Dataindex++;
     }
     
     counter++;
-    ADC_Timer_Start();
 }
 
 int* send(int gain, uint period_ns)
 {
     //Sætter puls længde
-    ADC_Timer_SetPeriod((int)(period_ns/1000)*12*2);
+    period_ns_ = period_ns;
+    ADC_Timer_SetPeriod((int)(period_ns_/100)-1);
+
     //Sikre gain ikke kan være en ugyldig værdig
     if (gain == 128)
     {
@@ -76,14 +78,14 @@ int* send(int gain, uint period_ns)
     }
     
     //Venter på HX711 er klar til at sende/modtage data
-    while(Pin_DIN_Read());
+    while(Cy_GPIO_Read(Pin_DIN_0_PORT, Pin_DIN_0_NUM));
     DataRX = Sending_DATA;
 
     //Initialisere dataoverførelse
     Dataindex = 0;
     counter = 0;
     Cy_GPIO_Write(Pin_SCK_0_PORT, Pin_SCK_0_NUM, 0);
-    ADC_Timer_SetPeriod(0);
+    ADC_Timer_SetCounter(0);
     //Starter dataoverførelse
     ADC_Timer_Start();
     //Venter på dataoverførelse er afsluttet
@@ -96,8 +98,8 @@ int* send(int gain, uint period_ns)
 
 void ADC_init()
 {
-    ADC_Timer_Init(ADC_Timer_config);
     Cy_SysInt_Init(&isr_timer_cfg, isr_timer_handler);
+    NVIC_EnableIRQ(isr_timer_cfg.intrSrc);
     
     Cy_GPIO_Write(Pin_SCK_0_PORT, Pin_SCK_0_NUM, 0);
     Cy_GPIO_Write(Pin_DIN_0_PORT, Pin_DIN_0_NUM, 0);

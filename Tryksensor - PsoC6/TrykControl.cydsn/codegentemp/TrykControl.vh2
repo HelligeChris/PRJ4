@@ -2,7 +2,7 @@
 --	Conversion of TrykControl.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Mon Dec 14 15:51:00 2020
+--	Tue Dec 15 18:17:01 2020
 --
 
 USE cypress.cypress.all;
@@ -18,12 +18,12 @@ SIGNAL \ADC_Timer:count\ : bit;
 SIGNAL \ADC_Timer:reload\ : bit;
 SIGNAL \ADC_Timer:stop\ : bit;
 SIGNAL \ADC_Timer:start\ : bit;
-SIGNAL Net_8 : bit;
-SIGNAL Net_9 : bit;
-SIGNAL Net_41 : bit;
+SIGNAL Net_146 : bit;
+SIGNAL Net_129 : bit;
+SIGNAL Net_180 : bit;
 SIGNAL \ADC_Timer:Net_1\ : bit;
 SIGNAL \ADC_Timer:Net_2\ : bit;
-SIGNAL Net_6 : bit;
+SIGNAL Net_148 : bit;
 SIGNAL Net_20 : bit;
 SIGNAL \SampleTimer:capture\ : bit;
 SIGNAL \SampleTimer:count\ : bit;
@@ -85,10 +85,10 @@ SIGNAL \Batteri_ADC:Net_428\ : bit;
 TERMINAL \Batteri_ADC:muxoutPlus\ : bit;
 TERMINAL \Batteri_ADC:vinPlus_0\ : bit;
 TERMINAL \Batteri_ADC:muxoutMinus\ : bit;
-TERMINAL \Batteri_ADC:vinMinus_0\ : bit;
-TERMINAL \Batteri_ADC:Net_339_0\ : bit;
-TERMINAL \Batteri_ADC:Net_340_0\ : bit;
 TERMINAL \Batteri_ADC:vinNeg_0\ : bit;
+TERMINAL \Batteri_ADC:Net_339_0\ : bit;
+TERMINAL \Batteri_ADC:vinMinus_0\ : bit;
+TERMINAL \Batteri_ADC:Net_340_0\ : bit;
 TERMINAL \Batteri_ADC:Net_21_0\ : bit;
 SIGNAL \Batteri_ADC:Net_40\ : bit;
 SIGNAL \Batteri_ADC:Net_41\ : bit;
@@ -100,7 +100,7 @@ SIGNAL \Batteri_ADC:sarClock\ : bit;
 SIGNAL \Batteri_ADC:Net_415\ : bit;
 SIGNAL \Batteri_ADC:Net_29\ : bit;
 TERMINAL \Batteri_ADC:Net_408\ : bit;
-TERMINAL \Batteri_ADC:Net_102\ : bit;
+TERMINAL \Batteri_ADC:Net_105\ : bit;
 SIGNAL \Batteri_ADC:Net_423\ : bit;
 SIGNAL \Batteri_ADC:Net_34\ : bit;
 SIGNAL \Batteri_ADC:Net_33\ : bit;
@@ -252,7 +252,6 @@ TERMINAL \Batteri_ADC:vinPlus_62\ : bit;
 TERMINAL \Batteri_ADC:Net_210\ : bit;
 TERMINAL \Batteri_ADC:vinPlus_63\ : bit;
 TERMINAL \Batteri_ADC:Net_211\ : bit;
-TERMINAL Net_115 : bit;
 TERMINAL \Batteri_ADC:Net_213\ : bit;
 TERMINAL \Batteri_ADC:vinMinus_1\ : bit;
 TERMINAL \Batteri_ADC:Net_218\ : bit;
@@ -403,7 +402,7 @@ TERMINAL \Batteri_ADC:Net_1379\ : bit;
 TERMINAL \Batteri_ADC:Net_1385\ : bit;
 TERMINAL \Batteri_ADC:Net_1388\ : bit;
 TERMINAL \Batteri_ADC:Net_1382\ : bit;
-TERMINAL \Batteri_ADC:Net_105\ : bit;
+TERMINAL \Batteri_ADC:Net_102\ : bit;
 TERMINAL Net_114 : bit;
 TERMINAL Net_113 : bit;
 BEGIN
@@ -422,12 +421,12 @@ zero <=  ('0') ;
 		reload=>zero,
 		stop=>zero,
 		start=>zero,
-		tr_underflow=>Net_8,
-		tr_compare_match=>Net_9,
-		tr_overflow=>Net_41,
+		tr_underflow=>Net_146,
+		tr_compare_match=>Net_129,
+		tr_overflow=>Net_180,
 		line_compl=>\ADC_Timer:Net_1\,
 		line=>\ADC_Timer:Net_2\,
-		interrupt=>Net_6);
+		interrupt=>Net_148);
 \SampleTimer:TCPWM\:cy_mxs40_tcpwm_v1_0
 	GENERIC MAP(cy_registers=>"",
 		width=>16,
@@ -449,7 +448,7 @@ Clock_1:cy_clock_v1_0
 		id=>"c11ea385-9708-4e06-a511-ce57d474b80f",
 		source_clock_id=>"2FB4EC85-8328-4C5A-9ED9-8B63060178EB",
 		divisor=>0,
-		period=>"41666666.6666667",
+		period=>"50000000",
 		is_direct=>'0',
 		is_digital=>'0')
 	PORT MAP(clock_out=>Net_10,
@@ -468,7 +467,7 @@ isr_timer:cy_mxs40_isr_v1_0
 	GENERIC MAP(cy_registers=>"",
 		deepsleep_required=>'0',
 		int_type=>"00")
-	PORT MAP(int_signal=>Net_41);
+	PORT MAP(int_signal=>Net_180);
 sampleEvent:cy_mxs40_isr_v1_0
 	GENERIC MAP(cy_registers=>"",
 		deepsleep_required=>'0',
@@ -480,7 +479,7 @@ Pin_SCK:cy_mxs40_gpio_v1_0
 		sio_grp_cnt=>0,
 		id=>"a61270bc-07ec-447d-ac9e-34cfe85c30e9",
 		drive_mode=>"6",
-		ibuf_enabled=>"0",
+		ibuf_enabled=>"1",
 		init_dr_st=>"0",
 		input_sync=>"0",
 		intr_mode=>"0",
@@ -494,7 +493,7 @@ Pin_SCK:cy_mxs40_gpio_v1_0
 		output_current_cap=>"8",
 		i2c_mode=>"0",
 		pin_aliases=>"",
-		pin_mode=>"O",
+		pin_mode=>"IO",
 		slew_rate=>"0",
 		vtrip=>"0",
 		use_annotation=>"0",
@@ -693,7 +692,7 @@ Batteri_PIN:cy_mxs40_gpio_v1_0
 	GENERIC MAP(sig_width=>1,
 		is_net_join=>'0')
 	PORT MAP(signal1=>\Batteri_ADC:muxoutMinus\,
-		signal2=>\Batteri_ADC:vinMinus_0\);
+		signal2=>\Batteri_ADC:vinNeg_0\);
 \Batteri_ADC:vinPlusConnect:bus_connect\:cy_connect_v1_0
 	GENERIC MAP(sig_width=>1,
 		is_net_join=>'0')
@@ -713,7 +712,7 @@ Batteri_PIN:cy_mxs40_gpio_v1_0
 	GENERIC MAP(sig_width=>1,
 		is_net_join=>'0')
 	PORT MAP(signal1=>\Batteri_ADC:Net_408\,
-		signal2=>\Batteri_ADC:Net_102\);
+		signal2=>\Batteri_ADC:Net_105\);
 \Batteri_ADC:IRQ\:cy_mxs40_isr_v1_0
 	GENERIC MAP(cy_registers=>"",
 		deepsleep_required=>'0',
@@ -1194,7 +1193,7 @@ Batteri_PIN:cy_mxs40_gpio_v1_0
 	GENERIC MAP(sig_width=>1,
 		is_net_join=>'0')
 	PORT MAP(signal1=>\Batteri_ADC:vinMinus_0\,
-		signal2=>Net_115);
+		signal2=>\Batteri_ADC:Net_213\);
 \Batteri_ADC:cy_analog_noconnect_1\:cy_analog_noconnect_v1_0
 	PORT MAP(noconnect=>\Batteri_ADC:Net_213\);
 \Batteri_ADC:vinMinusMux_1_connect\:cy_connect_v1_0
@@ -1742,11 +1741,5 @@ Batteri_PIN:cy_mxs40_gpio_v1_0
 		is_net_join=>'0')
 	PORT MAP(signal1=>Net_114,
 		signal2=>Net_113);
-vRef_1:cy_vref_v1_0
-	GENERIC MAP(guid=>"6E0C5DC9-D531-4D01-9B49-536487FE4A82",
-		name=>"Bandgap Reference",
-		autoenable=>'1',
-		ignoresleep=>'0')
-	PORT MAP(vout=>Net_115);
 
 END R_T_L;

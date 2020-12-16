@@ -21,20 +21,20 @@
 #include "cyfitter_sysint.h"
 
 /* UART_1 */
-#define UART_1_SCB__HW SCB0
-#define UART_1_SCB__IDX 0
+#define UART_1_SCB__HW SCB5
+#define UART_1_SCB__IDX 5
 #define UART_1_SCB__SS0_POSITION 0u
 #define UART_1_SCB__SS1_POSITION 1u
 #define UART_1_SCB__SS2_POSITION 2u
 #define UART_1_SCB__SS3_POSITION 3u
-#define UART_1_SCBCLK__DIV_IDX 1
-#define UART_1_SCBCLK__DIV_NUM 1
+#define UART_1_SCBCLK__DIV_IDX 0
+#define UART_1_SCBCLK__DIV_NUM 0
 #define UART_1_SCBCLK__DIV_TYPE CY_SYSCLK_DIV_8_BIT
 
 /* Clock_1 */
-#define Clock_1__DIV_IDX 0
+#define Clock_1__DIV_IDX 24
 #define Clock_1__DIV_NUM 0
-#define Clock_1__DIV_TYPE CY_SYSCLK_DIV_8_BIT
+#define Clock_1__DIV_TYPE CY_SYSCLK_DIV_16_5_BIT
 
 /* Clock_2 */
 #define Clock_2__DIV_IDX 8
@@ -48,8 +48,8 @@
 #define ADC_Timer_TCPWM__IDX 0u
 
 /* Batteri_ADC */
-#define Batteri_ADC_intSarClock__DIV_IDX 2
-#define Batteri_ADC_intSarClock__DIV_NUM 2
+#define Batteri_ADC_intSarClock__DIV_IDX 1
+#define Batteri_ADC_intSarClock__DIV_NUM 1
 #define Batteri_ADC_intSarClock__DIV_TYPE CY_SYSCLK_DIV_8_BIT
 #define Batteri_ADC_SAR__HW SAR
 #define Batteri_ADC_SAR__IDX 0
@@ -121,7 +121,7 @@
 #define CYDEV_CHIP_FAMILY_PSOC6 4u
 #define CYDEV_CHIP_FAMILY_UNKNOWN 0u
 #define CYDEV_CHIP_FAMILY_USED CYDEV_CHIP_FAMILY_PSOC6
-#define CYDEV_CHIP_JTAG_ID 0xE2072100u
+#define CYDEV_CHIP_JTAG_ID 0xE2F02100u
 #define CYDEV_CHIP_MEMBER_3A 1u
 #define CYDEV_CHIP_MEMBER_4A 26u
 #define CYDEV_CHIP_MEMBER_4AA 25u
@@ -323,18 +323,8 @@
 #define CYDEV_VBAC_SUPPLY CYDEV_VBAC_SUPPLY_VDDD
 #define CYDEV_VBACKUP 3.3
 #define CYDEV_VBACKUP_MV 3300
-#define CYDEV_VDD_NS 3.3
-#define CYDEV_VDD_NS_MV 3300
-#define CYDEV_VDDA 3.3
-#define CYDEV_VDDA_MV 3300
-#define CYDEV_VDDD 3.3
-#define CYDEV_VDDD_MV 3300
-#define CYDEV_VDDIO0 3.3
-#define CYDEV_VDDIO0_MV 3300
-#define CYDEV_VDDIO1 3.3
-#define CYDEV_VDDIO1_MV 3300
-#define CYDEV_VDDR_HVL 3.3
-#define CYDEV_VDDR_HVL_MV 3300
+#define CYDEV_VDD 3.3
+#define CYDEV_VDD_MV 3300
 #define CYDEV_BOOTLOADER_ENABLE 0
 
 #endif /* INCLUDED_CYFITTER_H */
