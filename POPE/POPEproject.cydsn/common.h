@@ -24,7 +24,7 @@
 /********************************************************************************
     SIMULERING
 *********************************************************************************/
-#define SIMULATE 1
+#define SIMULATE 0
     
 //Conditional Compilation Parameters
 #define ENABLED 1u

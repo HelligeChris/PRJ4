@@ -1,5 +1,5 @@
 # POPEproject
-# 2020-12-16 15:17:35Z
+# 2020-12-16 16:56:43Z
 
 dont_use_location SMIF -1 -1 0
 dont_use_location p4usbcell -1 -1 0
@@ -18,9 +18,9 @@ set_io "\UART_DEB:tx(0)\" iocell 5 1
 set_io "\UART_DEB:rx(0)\" iocell 5 0
 set_io "\I2C_MPU6050:scl(0)\" iocell 6 4
 set_io "\I2C_MPU6050:sda(0)\" iocell 6 5
-set_io "Batteri_PIN(0)" iocell 10 2
-set_io "Pin_DIN(0)" iocell 0 4
-set_io "Pin_SCK(0)" iocell 0 5
+set_io "Batteri_PIN(0)" iocell 10 0
+set_io "Pin_DIN(0)" iocell 10 6
+set_io "Pin_SCK(0)" iocell 10 5
 set_location "\BLE_PM:cy_mxs40_ble\" BLE -1 -1 0
 set_location "\BLE_PM:bless_isr\" interrupt -1 -1 24
 set_location "\UART_DEB:SCB\" SCB -1 -1 5

@@ -35,12 +35,14 @@ int HostMain(void)
     
     while(1)
     {
+        uint16 power = 0;
         Cy_BLE_ProcessEvents();     //skal kaldes hvert loop
         
         timeOut = BLE_checkTimer(); //Hent data 1 gang i sekundet
         #if (SIMULATE != 1)
             if(timeOut){
-                //getPower();
+                //power = getPower();
+                power = 50;
                 //getBattery();
             }
         #endif
@@ -48,7 +50,7 @@ int HostMain(void)
             getData(timeOut);       //simulering
         #endif
         
-        BLE_sendBattery(battery);
+        BLE_sendBattery(50);
         BLE_sendPower(power);
         
         if(testKadence() == true)

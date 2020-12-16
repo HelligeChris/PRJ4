@@ -2,7 +2,7 @@
 --	Conversion of POPEproject.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Wed Dec 16 16:17:20 2020
+--	Wed Dec 16 17:56:33 2020
 --
 
 USE cypress.cypress.all;
