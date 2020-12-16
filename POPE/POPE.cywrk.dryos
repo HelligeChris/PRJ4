@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="POPE\POPEproject\Host Files\Source Files\BLE-communication.c">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="POPE\POPEproject\Host Files\Source Files\POPE-app.c">
 <ExpandedNodeIds>
 <v>POPE</v>
 <v>POPE\POPEproject</v>
@@ -87,6 +87,10 @@
 <v>POPE\POPEproject\Generated_Source\PSoC6</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
+<v>POPE\POPEproject\CM4 (Core 1)\Source Files\ARM IAR Generic\startup_psoc6_01_cm4.s</v>
+<v>POPE\POPEproject\CM4 (Core 1)\Source Files\ARM MDK Generic</v>
+<v>POPE\POPEproject\CM4 (Core 1)\Source Files\ARM MDK Generic\startup_psoc6_01_cm4.s</v>
+<v>POPE\POPEproject\CM4 (Core 1)\Source Files\main_cm4.c</v>
 <v>POPE\POPEproject\CM4 (Core 1)\Source Files\system_psoc6_cm4.c</v>
 <v>POPE\POPEproject\Host Files</v>
 <v>POPE\POPEproject\Host Files\Header Files</v>
@@ -120,10 +124,6 @@
 <v>POPE\POPEproject\Generated_Source\PSoC6\I2C_MPU6050_SCBCLK</v>
 <v>POPE\POPEproject\Generated_Source\PSoC6\idleTimer</v>
 <v>POPE\POPEproject\Generated_Source\PSoC6\Pins and Interrupts</v>
-<v>POPE\POPEproject\Generated_Source\PSoC6\UART_DEB</v>
-<v>POPE\POPEproject\Generated_Source\PSoC6\UART_DEB_SCBCLK</v>
-<v>POPE\POPEproject\Generated_Source\PSoC6\cycodeshareexport.ld</v>
-<v>POPE\POPEproject\Generated_Source\PSoC6\cycodeshareimport.ld</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
@@ -422,6 +422,11 @@
 <name v=".\POPEproject.cydsn\TopDesign\TopDesign.cysch" />
 <name v=".\POPEproject.cydsn\BLE-communication.h" />
 <name v=".\POPEproject.cydsn\Generated_Source\PSoC6\pdl\middleware\ble\cy_ble_stack.h" />
+<name v=".\POPEproject.cydsn\POPE-app.c" />
+<name v=".\POPEproject.cydsn\Generated_Source\PSoC6\pdl\devices\psoc6\include\cyble_416045_02.h" />
+<name v=".\POPEproject.cydsn\trykControl.c" />
+<name v=".\POPEproject.cydsn\trykControl.h" />
+<name v=".\POPEproject.cydsn\POPE-app.h" />
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -429,7 +434,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1243, 523" SelectedTabbedMdiWindow="7cb85922-9727-469f-b279-65069c2af317"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="121ce316-47dd-446f-a5ed-45703a573bb8" /><DocumentWindow Key="C:\Users\dryos\Documents\GitHub\PRJ4\POPE\POPEproject.cydsn\HostMain.c" Guid="c5d972ba-dca6-4f61-9067-d6c26cf3cb4e" /><DocumentWindow Key="C:\Users\dryos\Documents\GitHub\PRJ4\POPE\POPEproject.cydsn\common.h" Guid="297b756e-2975-44d5-b3b4-a7003a3ffc1f" /><DocumentWindow Key="C:\Users\dryos\Documents\GitHub\PRJ4\POPE\POPEproject.cydsn\kadenceControl.c" Guid="25e53ec7-40fd-4935-a5c8-66bdae8fce6a" /><DocumentWindow Key="C:\Users\dryos\Documents\GitHub\PRJ4\POPE\POPEproject.cydsn\BLE-communication.c" Guid="d32d227a-3305-48eb-9b08-701e5528f083" /><DocumentWindow Key="C:\Users\dryos\Documents\GitHub\PRJ4\POPE\POPEproject.cydsn\TopDesign\TopDesign.cysch" Guid="1c95f5f3-4403-4cc3-8e7a-fb58058ebbda" /><DocumentWindow Key="C:\Users\dryos\Documents\GitHub\PRJ4\POPE\POPEproject.cydsn\BLE-communication.h" Guid="26d26d45-0a5c-4135-afd3-bc896fbd122a" /><DocumentWindow Key="C:\Users\dryos\Documents\GitHub\PRJ4\POPE\POPEproject.cydsn\Generated_Source\PSoC6\pdl\middleware\ble\cy_ble_stack.h" Guid="7cb85922-9727-469f-b279-65069c2af317" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1243, 523" SelectedTabbedMdiWindow="ce13291b-1e40-4783-9c0b-86ced56ea30a"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="121ce316-47dd-446f-a5ed-45703a573bb8" /><DocumentWindow Key="C:\Users\dryos\Documents\GitHub\PRJ4\POPE\POPEproject.cydsn\HostMain.c" Guid="c5d972ba-dca6-4f61-9067-d6c26cf3cb4e" /><DocumentWindow Key="C:\Users\dryos\Documents\GitHub\PRJ4\POPE\POPEproject.cydsn\common.h" Guid="297b756e-2975-44d5-b3b4-a7003a3ffc1f" /><DocumentWindow Key="C:\Users\dryos\Documents\GitHub\PRJ4\POPE\POPEproject.cydsn\kadenceControl.c" Guid="25e53ec7-40fd-4935-a5c8-66bdae8fce6a" /><DocumentWindow Key="C:\Users\dryos\Documents\GitHub\PRJ4\POPE\POPEproject.cydsn\BLE-communication.c" Guid="d32d227a-3305-48eb-9b08-701e5528f083" /><DocumentWindow Key="C:\Users\dryos\Documents\GitHub\PRJ4\POPE\POPEproject.cydsn\TopDesign\TopDesign.cysch" Guid="1c95f5f3-4403-4cc3-8e7a-fb58058ebbda" /><DocumentWindow Key="C:\Users\dryos\Documents\GitHub\PRJ4\POPE\POPEproject.cydsn\BLE-communication.h" Guid="26d26d45-0a5c-4135-afd3-bc896fbd122a" /><DocumentWindow Key="C:\Users\dryos\Documents\GitHub\PRJ4\POPE\POPEproject.cydsn\Generated_Source\PSoC6\pdl\middleware\ble\cy_ble_stack.h" Guid="7cb85922-9727-469f-b279-65069c2af317" /><DocumentWindow Key="C:\Users\dryos\Documents\GitHub\PRJ4\POPE\POPEproject.cydsn\POPE-app.c" Guid="ce13291b-1e40-4783-9c0b-86ced56ea30a" /><DocumentWindow Key="C:\Users\dryos\Documents\GitHub\PRJ4\POPE\POPEproject.cydsn\Generated_Source\PSoC6\pdl\devices\psoc6\include\cyble_416045_02.h" Guid="9c671216-9118-4115-8b9c-774a8c454c20" /><DocumentWindow Key="C:\Users\dryos\Documents\GitHub\PRJ4\POPE\POPEproject.cydsn\trykControl.c" Guid="da09d949-9967-4d2c-879e-e5bafe2d269b" /><DocumentWindow Key="C:\Users\dryos\Documents\GitHub\PRJ4\POPE\POPEproject.cydsn\trykControl.h" Guid="99cd0e61-7fe6-49ed-b8a0-43a47261c16d" /><DocumentWindow Key="C:\Users\dryos\Documents\GitHub\PRJ4\POPE\POPEproject.cydsn\POPE-app.h" Guid="885409a7-e5ea-441c-b800-c5071ac6679c" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

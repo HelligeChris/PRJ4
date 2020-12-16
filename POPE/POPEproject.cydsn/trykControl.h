@@ -15,10 +15,9 @@
 typedef struct trykCtrl
 {
     uint32 vaegt;
-    
 }trykCtrl;
 
 void initTrykSensor();
 void calibrateTrykSensor();
-uint32 getVaegt(char kredsloeb);
+uint32 getVaegt(uint16_t periode);
 /* [] END OF FILE */

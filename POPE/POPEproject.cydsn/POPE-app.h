@@ -12,6 +12,7 @@
 #include "common.h"
 #include "trykControl.h"
 #include "kadenceControl.h"
+#include <math.h>
 
 void lowPowerMode();
 uint16_t getPower();
