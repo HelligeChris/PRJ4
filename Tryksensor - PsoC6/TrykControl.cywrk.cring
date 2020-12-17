@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="TrykControl\TrykControl\CM4 (Core 1)\Header Files\VT100Terminal.h">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="TrykControl\TrykControl\TopDesign">
 <ExpandedNodeIds>
 <v>TrykControl</v>
 <v>TrykControl\TrykControl</v>
@@ -26,6 +26,7 @@
 <v>TrykControl\TrykControl\TrykControl.cydwr\Interrupts</v>
 <v>TrykControl\TrykControl\TrykControl.cydwr\System</v>
 <v>TrykControl\TrykControl\TrykControl.cydwr\Directives</v>
+<v>TrykControl\TrykControl\CM0p (Core 0)</v>
 <v>TrykControl\TrykControl\CM0p (Core 0)\ARM GCC Generic</v>
 <v>TrykControl\TrykControl\CM0p (Core 0)\ARM GCC Generic\cy8c6xx7_cm0plus.ld</v>
 <v>TrykControl\TrykControl\CM0p (Core 0)\ARM IAR Generic</v>
@@ -66,51 +67,12 @@
 <v>TrykControl\TrykControl\CM4 (Core 1)\Source Files\system_psoc6_cm4.c</v>
 <v>TrykControl\TrykControl\CM4 (Core 1)\Source Files\trykControl.c</v>
 <v>TrykControl\TrykControl\CM4 (Core 1)\Source Files\VT100Terminal.c</v>
-<v>TrykControl\TrykControl\Shared Files</v>
 <v>TrykControl\TrykControl\Shared Files\cyapicallbacks.h</v>
 <v>TrykControl\TrykControl\Shared Files\system_psoc6.h</v>
+<v>TrykControl\TrykControl\Generated_Source</v>
 <v>TrykControl\TrykControl\Generated_Source\PSoC6</v>
 </ExpandedNodeIds>
-<VisibleNodeIds>
-<v>TrykControl</v>
-<v>TrykControl\TrykControl</v>
-<v>TrykControl\TrykControl\TopDesign</v>
-<v>TrykControl\TrykControl\TrykControl.cydwr</v>
-<v>TrykControl\TrykControl\TrykControl.cydwr\Pins</v>
-<v>TrykControl\TrykControl\TrykControl.cydwr\Analog</v>
-<v>TrykControl\TrykControl\TrykControl.cydwr\DMA</v>
-<v>TrykControl\TrykControl\TrykControl.cydwr\Clocks</v>
-<v>TrykControl\TrykControl\TrykControl.cydwr\Interrupts</v>
-<v>TrykControl\TrykControl\TrykControl.cydwr\System</v>
-<v>TrykControl\TrykControl\TrykControl.cydwr\Directives</v>
-<v>TrykControl\TrykControl\CM0p (Core 0)</v>
-<v>TrykControl\TrykControl\CM4 (Core 1)</v>
-<v>TrykControl\TrykControl\CM4 (Core 1)\ARM GCC Generic</v>
-<v>TrykControl\TrykControl\CM4 (Core 1)\ARM GCC Generic\cy8c6xx7_cm4_dual.ld</v>
-<v>TrykControl\TrykControl\CM4 (Core 1)\ARM IAR Generic</v>
-<v>TrykControl\TrykControl\CM4 (Core 1)\ARM IAR Generic\cy8c6xx7_cm4_dual.icf</v>
-<v>TrykControl\TrykControl\CM4 (Core 1)\ARM MDK Generic</v>
-<v>TrykControl\TrykControl\CM4 (Core 1)\ARM MDK Generic\cy8c6xx7_cm4_dual.scat</v>
-<v>TrykControl\TrykControl\CM4 (Core 1)\Header Files</v>
-<v>TrykControl\TrykControl\CM4 (Core 1)\Header Files\ADCserial.h</v>
-<v>TrykControl\TrykControl\CM4 (Core 1)\Header Files\BatteriControl.h</v>
-<v>TrykControl\TrykControl\CM4 (Core 1)\Header Files\trykControl.h</v>
-<v>TrykControl\TrykControl\CM4 (Core 1)\Header Files\VT100Terminal.h</v>
-<v>TrykControl\TrykControl\CM4 (Core 1)\Source Files</v>
-<v>TrykControl\TrykControl\CM4 (Core 1)\Source Files\ARM GCC Generic</v>
-<v>TrykControl\TrykControl\CM4 (Core 1)\Source Files\ARM GCC Generic\startup_psoc6_01_cm4.S</v>
-<v>TrykControl\TrykControl\CM4 (Core 1)\Source Files\ARM IAR Generic</v>
-<v>TrykControl\TrykControl\CM4 (Core 1)\Source Files\ARM IAR Generic\startup_psoc6_01_cm4.s</v>
-<v>TrykControl\TrykControl\CM4 (Core 1)\Source Files\ARM MDK Generic</v>
-<v>TrykControl\TrykControl\CM4 (Core 1)\Source Files\ARM MDK Generic\startup_psoc6_01_cm4.s</v>
-<v>TrykControl\TrykControl\CM4 (Core 1)\Source Files\ADCserial.c</v>
-<v>TrykControl\TrykControl\CM4 (Core 1)\Source Files\main_cm4.c</v>
-<v>TrykControl\TrykControl\CM4 (Core 1)\Source Files\system_psoc6_cm4.c</v>
-<v>TrykControl\TrykControl\CM4 (Core 1)\Source Files\trykControl.c</v>
-<v>TrykControl\TrykControl\CM4 (Core 1)\Source Files\VT100Terminal.c</v>
-<v>TrykControl\TrykControl\Shared Files</v>
-<v>TrykControl\TrykControl\Shared Files\cyapicallbacks.h</v>
-</VisibleNodeIds>
+<VisibleNodeIds />
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
 <ExpandedNodeIds>
@@ -119,12 +81,7 @@
 <v>TrykControl\TrykControl\TopDesign</v>
 <v>TrykControl\TrykControl\TopDesign\TopDesign.cysch</v>
 </ExpandedNodeIds>
-<VisibleNodeIds>
-<v>TrykControl</v>
-<v>TrykControl\TrykControl</v>
-<v>TrykControl\TrykControl\TopDesign</v>
-<v>TrykControl\TrykControl\TopDesign\TopDesign.cysch</v>
-</VisibleNodeIds>
+<VisibleNodeIds />
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
 <ExpandedNodeIds>
@@ -234,46 +191,7 @@
 <v>TrykControl\TrykControl\TrykControl.rpt</v>
 <v>TrykControl\TrykControl\TrykControl_timing.html</v>
 </ExpandedNodeIds>
-<VisibleNodeIds>
-<v>TrykControl</v>
-<v>TrykControl\TrykControl</v>
-<v>TrykControl\TrykControl\CortexM0p</v>
-<v>TrykControl\TrykControl\CortexM0p\ARM_GCC_541</v>
-<v>TrykControl\TrykControl\CortexM0p\ARM_GCC_541\Debug</v>
-<v>TrykControl\TrykControl\CortexM0p\ARM_GCC_541\Debug\Listing Files</v>
-<v>TrykControl\TrykControl\CortexM0p\ARM_GCC_541\Debug\Listing Files\ADC_Timer.lst</v>
-<v>TrykControl\TrykControl\CortexM0p\ARM_GCC_541\Debug\Listing Files\Batteri_ADC.lst</v>
-<v>TrykControl\TrykControl\CortexM0p\ARM_GCC_541\Debug\Listing Files\Batteri_ADC_INIT.lst</v>
-<v>TrykControl\TrykControl\CortexM0p\ARM_GCC_541\Debug\Listing Files\Batteri_ADC_INT.lst</v>
-<v>TrykControl\TrykControl\CortexM0p\ARM_GCC_541\Debug\Listing Files\Batteri_ADC_PM.lst</v>
-<v>TrykControl\TrykControl\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_clk.lst</v>
-<v>TrykControl\TrykControl\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_device.lst</v>
-<v>TrykControl\TrykControl\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_efuse.lst</v>
-<v>TrykControl\TrykControl\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_flash.lst</v>
-<v>TrykControl\TrykControl\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_gpio.lst</v>
-<v>TrykControl\TrykControl\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ipc_drv.lst</v>
-<v>TrykControl\TrykControl\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ipc_pipe.lst</v>
-<v>TrykControl\TrykControl\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ipc_sema.lst</v>
-<v>TrykControl\TrykControl\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_lvd.lst</v>
-<v>TrykControl\TrykControl\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_profile.lst</v>
-<v>TrykControl\TrykControl\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_prot.lst</v>
-<v>TrykControl\TrykControl\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_sar.lst</v>
-<v>TrykControl\TrykControl\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_scb_common.lst</v>
-<v>TrykControl\TrykControl\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_scb_ezi2c.lst</v>
-<v>TrykControl\TrykControl\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_scb_i2c.lst</v>
-<v>TrykControl\TrykControl\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_scb_spi.lst</v>
-<v>TrykControl\TrykControl\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_scb_uart.lst</v>
-<v>TrykControl\TrykControl\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_sysanalog.lst</v>
-<v>TrykControl\TrykControl\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_sysclk.lst</v>
-<v>TrykControl\TrykControl\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_sysint.lst</v>
-<v>TrykControl\TrykControl\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_syslib.lst</v>
-<v>TrykControl\TrykControl\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_syslib_gcc.lst</v>
-<v>TrykControl\TrykControl\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_syspm.lst</v>
-<v>TrykControl\TrykControl\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_systick.lst</v>
-<v>TrykControl\TrykControl\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_tcpwm_counter.lst</v>
-<v>TrykControl\TrykControl\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_tcpwm_pwm.lst</v>
-<v>TrykControl\TrykControl\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_tcpwm_quaddec.lst</v>
-</VisibleNodeIds>
+<VisibleNodeIds />
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
 <TreeKeysV2>
@@ -299,24 +217,7 @@
 <v>TrykControl\TrykControl\TCPWM_Counter_PDL_v1_0</v>
 <v>TrykControl\TrykControl\TCPWM_Counter_PDL_v1_0\TCPWM_Counter_PDL_v1_0.pdf</v>
 </ExpandedNodeIds>
-<VisibleNodeIds>
-<v>TrykControl</v>
-<v>TrykControl\TrykControl</v>
-<v>TrykControl\TrykControl\PSoC 6 Architecture TRM</v>
-<v>TrykControl\TrykControl\PSoC 63 Family Datasheet</v>
-<v>TrykControl\TrykControl\Peripheral Driver Library</v>
-<v>TrykControl\TrykControl\System Reference Guides</v>
-<v>TrykControl\TrykControl\GPIO_PDL_v1_0</v>
-<v>TrykControl\TrykControl\GPIO_PDL_v1_0\GPIO_PDL_v1_0.pdf</v>
-<v>TrykControl\TrykControl\Scan_ADC_P6_v3_10.pdf</v>
-<v>TrykControl\TrykControl\SCB_UART_PDL_v2_0.pdf</v>
-<v>TrykControl\TrykControl\SysClk_PDL_v1_0</v>
-<v>TrykControl\TrykControl\SysClk_PDL_v1_0\SysClk_PDL_v1_0.pdf</v>
-<v>TrykControl\TrykControl\SysInt_PDL_v1_0</v>
-<v>TrykControl\TrykControl\SysInt_PDL_v1_0\SysInt_PDL_v1_0.pdf</v>
-<v>TrykControl\TrykControl\TCPWM_Counter_PDL_v1_0</v>
-<v>TrykControl\TrykControl\TCPWM_Counter_PDL_v1_0\TCPWM_Counter_PDL_v1_0.pdf</v>
-</VisibleNodeIds>
+<VisibleNodeIds />
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStatesV2>
 </CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35>
@@ -337,6 +238,8 @@
 <name v=".\TrykControl.cydsn\trykControl.c" />
 <name v=".\TrykControl.cydsn\trykControl.h" />
 <name v=".\TrykControl.cydsn\BatteriControl.h" />
+<name v=".\TrykControl.cydsn\VT100Terminal.c" />
+<name v=".\TrykControl.cydsn\VT100Terminal.h" />
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -344,7 +247,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Vertical"><TabbedMdiContainer Size="1117, 510" SelectedTabbedMdiWindow="ccb98807-eb43-433b-83e0-8a5bd96945aa"><DocumentWindow Key="C:\Users\cring\Documents\GitHub\PRJ4\Tryksensor - PsoC6\TrykControl.cydsn\TopDesign\TopDesign.cysch" Guid="fdfeae50-01bf-42a4-ad5e-8bcec19b6613" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\PRJ4\Tryksensor - PsoC6\TrykControl.cydsn\ADCserial.c" Guid="f5bc5529-7228-4c61-9838-0ccea0d65f30" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\PRJ4\Tryksensor - PsoC6\TrykControl.cydsn\ADCserial.h" Guid="59ac3caa-2f94-421e-acc7-e04b621b6972" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\PRJ4\Tryksensor - PsoC6\TrykControl.cydsn\Generated_Source\PSoC6\ADC_Timer.h" Guid="d6100c7c-e4f6-4a44-8224-ceb1ce342cac" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\PRJ4\Tryksensor - PsoC6\TrykControl.cydsn\Generated_Source\PSoC6\pdl\drivers\peripheral\tcpwm\cy_tcpwm.h" Guid="4152614b-66b8-4caa-a97f-97866cb66c07" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\PRJ4\Tryksensor - PsoC6\TrykControl.cydsn\TrykControl.cydwr" Guid="11836222-b17a-4deb-af51-dafcc2c5f323" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\PRJ4\Tryksensor - PsoC6\TrykControl.cydsn\main_cm4.c" Guid="abbf7d1e-99f3-49ba-9e61-5fa10856eb6b" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\PRJ4\Tryksensor - PsoC6\TrykControl.cydsn\mdk\startup_psoc6_01_cm4.s" Guid="4c11c28f-a53c-4d3b-99b1-1d9bb45f4cc1" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\PRJ4\Tryksensor - PsoC6\TrykControl.cydsn\Generated_Source\PSoC6\pdl\drivers\peripheral\syslib\gcc\cy_syslib_gcc.S" Guid="600b1a59-ae70-4103-9a37-e69aaf5a2577" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\PRJ4\Tryksensor - PsoC6\TrykControl.cydsn\trykControl.c" Guid="ca3b1e29-8d99-4623-b6b2-a022ea6d5e8c" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\PRJ4\Tryksensor - PsoC6\TrykControl.cydsn\trykControl.h" Guid="e3efcd7c-be2c-4ab9-95f5-5c8a317367d3" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\PRJ4\Tryksensor - PsoC6\TrykControl.cydsn\BatteriControl.h" Guid="ccb98807-eb43-433b-83e0-8a5bd96945aa" /><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="a81e21bb-5e2e-400c-9cbf-968a63daa365" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Vertical"><TabbedMdiContainer Size="1117, 510" SelectedTabbedMdiWindow="ccb98807-eb43-433b-83e0-8a5bd96945aa"><DocumentWindow Key="C:\Users\cring\Documents\GitHub\PRJ4\Tryksensor - PsoC6\TrykControl.cydsn\TopDesign\TopDesign.cysch" Guid="fdfeae50-01bf-42a4-ad5e-8bcec19b6613" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\PRJ4\Tryksensor - PsoC6\TrykControl.cydsn\ADCserial.c" Guid="f5bc5529-7228-4c61-9838-0ccea0d65f30" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\PRJ4\Tryksensor - PsoC6\TrykControl.cydsn\ADCserial.h" Guid="59ac3caa-2f94-421e-acc7-e04b621b6972" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\PRJ4\Tryksensor - PsoC6\TrykControl.cydsn\Generated_Source\PSoC6\ADC_Timer.h" Guid="d6100c7c-e4f6-4a44-8224-ceb1ce342cac" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\PRJ4\Tryksensor - PsoC6\TrykControl.cydsn\Generated_Source\PSoC6\pdl\drivers\peripheral\tcpwm\cy_tcpwm.h" Guid="4152614b-66b8-4caa-a97f-97866cb66c07" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\PRJ4\Tryksensor - PsoC6\TrykControl.cydsn\TrykControl.cydwr" Guid="11836222-b17a-4deb-af51-dafcc2c5f323" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\PRJ4\Tryksensor - PsoC6\TrykControl.cydsn\main_cm4.c" Guid="abbf7d1e-99f3-49ba-9e61-5fa10856eb6b" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\PRJ4\Tryksensor - PsoC6\TrykControl.cydsn\mdk\startup_psoc6_01_cm4.s" Guid="4c11c28f-a53c-4d3b-99b1-1d9bb45f4cc1" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\PRJ4\Tryksensor - PsoC6\TrykControl.cydsn\Generated_Source\PSoC6\pdl\drivers\peripheral\syslib\gcc\cy_syslib_gcc.S" Guid="600b1a59-ae70-4103-9a37-e69aaf5a2577" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\PRJ4\Tryksensor - PsoC6\TrykControl.cydsn\trykControl.c" Guid="ca3b1e29-8d99-4623-b6b2-a022ea6d5e8c" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\PRJ4\Tryksensor - PsoC6\TrykControl.cydsn\trykControl.h" Guid="e3efcd7c-be2c-4ab9-95f5-5c8a317367d3" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\PRJ4\Tryksensor - PsoC6\TrykControl.cydsn\BatteriControl.h" Guid="ccb98807-eb43-433b-83e0-8a5bd96945aa" /><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="a81e21bb-5e2e-400c-9cbf-968a63daa365" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\PRJ4\Tryksensor - PsoC6\TrykControl.cydsn\VT100Terminal.c" Guid="8ea37b43-f30e-4109-98fd-c83504586f1d" /><DocumentWindow Key="C:\Users\cring\Documents\GitHub\PRJ4\Tryksensor - PsoC6\TrykControl.cydsn\VT100Terminal.h" Guid="6630f5f6-fd3f-48e8-ba35-4905e028d8d3" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

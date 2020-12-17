@@ -25,15 +25,16 @@ int main(void)
     UART_1_Start();
     UART_1_PutString("Startup\n\r");
     initTrykSensor();
+    clearTerm(25);
     
     char buf[40] = {0};
     for(;;)
     {   
         CyDelay(200);
         //sprintf(buf, "%i\r\n", ADC_read());
-        sprintf(buf, "%i\r\n", getVaegt(100));
-        //sprintf(buf, "%d\r\n", getVoltageLevel_mV());
-        UARTprint(buf);
+        //sprintf(buf, "%i\r\n", getVaegt(100));
+        sprintf(buf, "%d%%\r\n", getVoltageLevel_mV());
+        UARTprint("1", buf);
         /* Place your application code here. */
     }
 }

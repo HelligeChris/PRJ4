@@ -30,6 +30,26 @@ void movecursor(char* y, char* x)
     UART_1_PutString("f");
 }
 
+void UARTprint(char* line, char* string)
+{
+    movecursor(line, "0");
+    delline(1);
+    movecursor(line, "0");
+    UART_1_PutString(string);
+}
+
+void clearTerm(int lines)
+{
+    char buf[50];
+        for(int i = 0;i < lines; i++)
+    {
+        sprintf(buf,"%d", i);
+        
+        movecursor(buf, "0");
+        delline(1);
+    }
+}
+
 void setcolor(char color)
 {
     switch(color)

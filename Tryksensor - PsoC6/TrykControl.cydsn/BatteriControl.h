@@ -1,5 +1,6 @@
 #pragma once
 #include "project.h"
+#include "VT100Terminal.h"
 
 uint16 mV;
 
@@ -18,6 +19,11 @@ uint16 getVoltageLevel_mV()
     mV = Batteri_ADC_CountsTo_mVolts(0, Batteri_ADC_GetResult16(0));
     //Stopper Batteri ADC
     Batteri_ADC_Stop();
-    mV = (mV*100)/4200;
+    
+    char buf[40];
+    sprintf(buf, "%d mV\r\n", mV);
+    UARTprint("2", buf);
+    
+    mV = ((mV-3000.0) / (4200.0-3000.0)) * 100;  
     return mV;
 }
