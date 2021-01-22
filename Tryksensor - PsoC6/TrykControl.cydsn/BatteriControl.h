@@ -20,9 +20,9 @@ uint16 getVoltageLevel_mV()
     //Stopper Batteri ADC
     Batteri_ADC_Stop();
     
-    char buf[40];
-    sprintf(buf, "%d mV\r\n", mV);
-    UARTprint("2", buf);
+    //char buf[40];
+    //sprintf(buf, "%d mV\r\n", mV);
+    //UARTprint("2", buf);
     
     mV = ((mV-3000.0) / (4200.0-3000.0)) * 100;  
     return mV;

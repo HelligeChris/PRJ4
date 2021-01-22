@@ -77,7 +77,10 @@ void initTrykSensor()
 uint32 getVaegt(uint16 periode_ms)
 {
     samples = (periode_ms * fs)/1000;
+    
+    __disable_irq();
     realloc(dataPtr, sizeof(int32)*samples);
+    __enable_irq();
     
     SampleTimer_SetCounter(0);
     sampleCounter = 0;
